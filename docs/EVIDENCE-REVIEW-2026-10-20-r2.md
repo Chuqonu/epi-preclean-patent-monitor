@@ -42,3 +42,13 @@
 
 机器可读：`docs/EVIDENCE-REVIEW-2026-10-20-r2.json`  
 合并脚本：`python3 scripts/merge_evidence_r2.py`
+
+## 待核队列卫生（2026-10-20，证据 ask）
+
+历史 r2 曾列 **4** 条待核；live `pending_or_related` 现仅保留 **CN122564748A**（content-pending）。已自队列移除：
+
+- US20260066234A1 — 已升格 core + team_read
+- US12757451B2 — exclude
+- WO2026084898A1 — 基线主表保留，不再列 active 待核
+
+归档见 JSON `pending_archived_from_queue`；CN 附图待补不计入本条 content-pending。

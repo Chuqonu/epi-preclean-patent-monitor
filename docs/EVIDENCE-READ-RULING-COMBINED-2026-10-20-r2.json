@@ -3,7 +3,10 @@
   "date": "2026-10-20",
   "supersedes": "docs/EVIDENCE-READ-RULING-COMBINED-2026-10-20.json",
   "locked_team_read_total": 6,
-  "rule": "本团队已读 = Gate③/EPI 权利要求级阅读（4）+ 基线复核已读 US20260066234A1（core）+ 独立纳入 US12660522B2（revalidated 授权全文）。Preclean 独立 4 条仍不计 team_read。US12757451B2 等待核实，不计入。",
+  "rule": "本团队已读 = Gate③/EPI 权利要求级阅读（4）+ 基线复核已读 US20260066234A1（core）+ 独立纳入 US12660522B2（revalidated 授权全文）。Preclean 独立 4 条仍不计 team_read。active 关联待核仅 CN122564748A；US12757451B2 exclude；WO2026084898A1 不在待核队列。",
+  "pending_active_publication_ids": [
+    "CN122564748A"
+  ],
   "team_read_publication_ids": [
     "US20250327209A1",
     "US20260055532A1",
