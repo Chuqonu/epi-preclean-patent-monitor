@@ -1,0 +1,887 @@
+{
+  "lane": "Preclean",
+  "role": "Preclean检索",
+  "document_type": "frozen_candidates_incremental_sprint_evening",
+  "method_ref": "2026-10-20.4.2-r2",
+  "search_window": "gap_vs_baseline_2025-10_2026-10_plus_near_research_through_evening",
+  "research_through": "2026-10-20",
+  "period_start": "2025-10",
+  "period_end": "2026-10",
+  "frozen_at": "2026-10-20T20:54:06+08:00",
+  "timezone": "Asia/Shanghai",
+  "prior_freeze": "PRECLEAN-FROZEN-2025-11_2026-10.json (6 cands)",
+  "prior_incremental_C": "PRECLEAN-INCREMENTAL-2026-10-19_2026-10-20-frozen.json (empty 0; 近窗0不重计为新发现)",
+  "focus": "晚间A轨：dry/plasma pre-epi preclean + integrated preclean + epi-linked chamber dry clean；缺口申请人 Applied/ASM/Lam/TEL/NAURA/AMEC/拓荆 + CPC H01L21/02041|02057|02658 / C23C16/02；邻近 research_through 2026-10-20",
+  "independence_note": "未读取/抄袭 EPI 候选清单。已知 EPI 晚间 US20260062803A1 仅作“不标为 Preclean 发现”护栏。",
+  "queries_run": [
+    {
+      "id": "N1_near_preclean",
+      "branch": "clue_near_research_through",
+      "query": "(preclean OR \"pre-clean\" OR \"pre clean\") (epitax* OR epitaxial OR SiGe OR \"silicon germanium\")",
+      "after_publication": "20261017",
+      "before_publication": "20261021",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3D%28preclean+OR+%22pre-clean%22+OR+%22pre+clean%22%29+%28epitax%2A+OR+epitaxial+OR+SiGe+OR+%22silicon+germanium%22%29%26after%3Dpublication%3A20261017%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": 0,
+      "returned": 0,
+      "artifact": "/workspace/preclean-search/evening-2026-10-20/raw/N1_near_preclean.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "error": null,
+      "executed_at": "2026-10-20T20:50:29+08:00",
+      "sample_ids": []
+    },
+    {
+      "id": "N2_near_siconi",
+      "branch": "clue_near_research_through",
+      "query": "(\"native oxide\" OR \"oxide removal\" OR Siconi OR SiConi) (epitax* OR epitaxial OR SiGe) (plasma OR NF3 OR NH3 OR HF)",
+      "after_publication": "20261017",
+      "before_publication": "20261021",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3D%28%22native+oxide%22+OR+%22oxide+removal%22+OR+Siconi+OR+SiConi%29+%28epitax%2A+OR+epitaxial+OR+SiGe%29+%28plasma+OR+NF3+OR+NH3+OR+HF%29%26after%3Dpublication%3A20261017%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": 0,
+      "returned": 0,
+      "artifact": "/workspace/preclean-search/evening-2026-10-20/raw/N2_near_siconi.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "error": null,
+      "executed_at": "2026-10-20T20:50:30+08:00",
+      "sample_ids": []
+    },
+    {
+      "id": "N3_near_prior",
+      "branch": "clue_near_research_through",
+      "query": "(\"prior to epitaxial\" OR \"before epitaxial\" OR \"prior to epitaxy\" OR \"before epitaxy\") (clean OR oxide OR plasma OR HF OR NF3)",
+      "after_publication": "20261017",
+      "before_publication": "20261021",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3D%28%22prior+to+epitaxial%22+OR+%22before+epitaxial%22+OR+%22prior+to+epitaxy%22+OR+%22before+epitaxy%22%29+%28clean+OR+oxide+OR+plasma+OR+HF+OR+NF3%29%26after%3Dpublication%3A20261017%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": 0,
+      "returned": 0,
+      "artifact": "/workspace/preclean-search/evening-2026-10-20/raw/N3_near_prior.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "error": null,
+      "executed_at": "2026-10-20T20:50:31+08:00",
+      "sample_ids": []
+    },
+    {
+      "id": "G1_preclean_epi",
+      "branch": "gap_vs_baseline",
+      "query": "(preclean OR \"pre-clean\") (epitax* OR epitaxial OR SiGe)",
+      "after_publication": "20251001",
+      "before_publication": "20261021",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3D%28preclean+OR+%22pre-clean%22%29+%28epitax%2A+OR+epitaxial+OR+SiGe%29%26after%3Dpublication%3A20251001%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": 1013,
+      "returned": 100,
+      "artifact": "/workspace/preclean-search/evening-2026-10-20/raw/G1_preclean_epi.json",
+      "sha256": "17b15e622193fd543ae8c9e56ca387d602bf48ec8a93b1915aa845fae963f791",
+      "error": null,
+      "executed_at": "2026-10-20T20:50:32+08:00",
+      "sample_ids": [
+        "US20260150366A1",
+        "US20250327180A1",
+        "US12652820B2",
+        "US20250366187A1",
+        "US12512324B2"
+      ]
+    },
+    {
+      "id": "G2_siconi",
+      "branch": "gap_vs_baseline",
+      "query": "(Siconi OR SiConi OR \"native oxide removal\") (epitax* OR epitaxial OR SiGe)",
+      "after_publication": "20251001",
+      "before_publication": "20261021",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3D%28Siconi+OR+SiConi+OR+%22native+oxide+removal%22%29+%28epitax%2A+OR+epitaxial+OR+SiGe%29%26after%3Dpublication%3A20251001%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": 383,
+      "returned": 100,
+      "artifact": "/workspace/preclean-search/evening-2026-10-20/raw/G2_siconi.json",
+      "sha256": "8ae001cd5a68202100a99d04e2b18298349be93e527c7acdbd22978d9b2ff8fa",
+      "error": null,
+      "executed_at": "2026-10-20T20:50:33+08:00",
+      "sample_ids": [
+        "KR20260040152A",
+        "US20260150366A1",
+        "US20250324632A1",
+        "US20250331222A1",
+        "US12527064B2"
+      ]
+    },
+    {
+      "id": "G3_integrated",
+      "branch": "gap_vs_baseline",
+      "query": "\"integrated\" (preclean OR \"pre-clean\") (epitaxy OR epitaxial OR CVD)",
+      "after_publication": "20251001",
+      "before_publication": "20261021",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3D%22integrated%22+%28preclean+OR+%22pre-clean%22%29+%28epitaxy+OR+epitaxial+OR+CVD%29%26after%3Dpublication%3A20251001%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": 1396,
+      "returned": 100,
+      "artifact": "/workspace/preclean-search/evening-2026-10-20/raw/G3_integrated.json",
+      "sha256": "52942512d5d0f83de557ece2c182dba5adbeb629d3cb72f2f9b1b1c13bda5dc7",
+      "error": null,
+      "executed_at": "2026-10-20T20:50:34+08:00",
+      "sample_ids": [
+        "KR20260005972A",
+        "US20260150366A1",
+        "CN114556544B",
+        "US20250366187A1",
+        "US12652820B2"
+      ]
+    },
+    {
+      "id": "G4_chamber_dry",
+      "branch": "gap_vs_baseline",
+      "query": "(chamber) (clean OR cleaning) (dry OR plasma OR \"in-situ\") (epitaxy OR epitaxial OR epi)",
+      "after_publication": "20251001",
+      "before_publication": "20261021",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3D%28chamber%29+%28clean+OR+cleaning%29+%28dry+OR+plasma+OR+%22in-situ%22%29+%28epitaxy+OR+epitaxial+OR+epi%29%26after%3Dpublication%3A20251001%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": 15925,
+      "returned": 100,
+      "artifact": "/workspace/preclean-search/evening-2026-10-20/raw/G4_chamber_dry.json",
+      "sha256": "fdaeea5bc85a650a6cce3da7acb9213b506be32d1435ba7832489d52828ca469",
+      "error": null,
+      "executed_at": "2026-10-20T20:50:36+08:00",
+      "sample_ids": [
+        "KR102918757B1",
+        "EP3514266B1",
+        "CN114121747B",
+        "US20250331222A1",
+        "US12550648B2"
+      ]
+    },
+    {
+      "id": "G5_cn",
+      "branch": "gap_vs_baseline",
+      "query": "外延前 (清洗 OR 去氧化 OR 预清洁 OR 预清洗) (等离子体 OR 干法 OR 远程)",
+      "after_publication": "20251001",
+      "before_publication": "20261021",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3D%E5%A4%96%E5%BB%B6%E5%89%8D+%28%E6%B8%85%E6%B4%97+OR+%E5%8E%BB%E6%B0%A7%E5%8C%96+OR+%E9%A2%84%E6%B8%85%E6%B4%81+OR+%E9%A2%84%E6%B8%85%E6%B4%97%29+%28%E7%AD%89%E7%A6%BB%E5%AD%90%E4%BD%93+OR+%E5%B9%B2%E6%B3%95+OR+%E8%BF%9C%E7%A8%8B%29%26after%3Dpublication%3A20251001%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": 2922,
+      "returned": 100,
+      "artifact": "/workspace/preclean-search/evening-2026-10-20/raw/G5_cn.json",
+      "sha256": "78d669ac80dedd0c39b8a810f07c52860034b6cfd6aa0690a0f02e2f27ffe75f",
+      "error": null,
+      "executed_at": "2026-10-20T20:50:38+08:00",
+      "sample_ids": [
+        "CN115763496B",
+        "CN112309843B",
+        "CN114121747B",
+        "CN115997294B",
+        "CN113661566B"
+      ]
+    },
+    {
+      "id": "G6_jp",
+      "branch": "gap_vs_baseline",
+      "query": "(エピタキシャル OR エピ) (プリクリーン OR 前洗浄 OR 自然酸化膜) (プラズマ OR ドライ)",
+      "after_publication": "20251001",
+      "before_publication": "20261021",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3D%28%E3%82%A8%E3%83%94%E3%82%BF%E3%82%AD%E3%82%B7%E3%83%A3%E3%83%AB+OR+%E3%82%A8%E3%83%94%29+%28%E3%83%97%E3%83%AA%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3+OR+%E5%89%8D%E6%B4%97%E6%B5%84+OR+%E8%87%AA%E7%84%B6%E9%85%B8%E5%8C%96%E8%86%9C%29+%28%E3%83%97%E3%83%A9%E3%82%BA%E3%83%9E+OR+%E3%83%89%E3%83%A9%E3%82%A4%29%26after%3Dpublication%3A20251001%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": 1398,
+      "returned": 100,
+      "artifact": "/workspace/preclean-search/evening-2026-10-20/raw/G6_jp.json",
+      "sha256": "ab0f79132d76601ccc944f0b1c7dd4f6de27a6fa6fda0a9832bb69bad63ab495",
+      "error": null,
+      "executed_at": "2026-10-20T20:50:39+08:00",
+      "sample_ids": [
+        "US20260150366A1",
+        "CN114551355B",
+        "JP7852764B2",
+        "CN114078847B",
+        "JP7747833B2"
+      ]
+    },
+    {
+      "id": "G7_kr",
+      "branch": "gap_vs_baseline",
+      "query": "(에피 OR 에피택시) (프리클린 OR 전세정 OR 자연산화막) (플라즈마 OR 건식)",
+      "after_publication": "20251001",
+      "before_publication": "20261021",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3D%28%EC%97%90%ED%94%BC+OR+%EC%97%90%ED%94%BC%ED%83%9D%EC%8B%9C%29+%28%ED%94%84%EB%A6%AC%ED%81%B4%EB%A6%B0+OR+%EC%A0%84%EC%84%B8%EC%A0%95+OR+%EC%9E%90%EC%97%B0%EC%82%B0%ED%99%94%EB%A7%89%29+%28%ED%94%8C%EB%9D%BC%EC%A6%88%EB%A7%88+OR+%EA%B1%B4%EC%8B%9D%29%26after%3Dpublication%3A20251001%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": 5785,
+      "returned": 100,
+      "artifact": "/workspace/preclean-search/evening-2026-10-20/raw/G7_kr.json",
+      "sha256": "299930673764b0f8a950d7c1149d220a5af42b0ddace31e62b5c2765d869dffd",
+      "error": null,
+      "executed_at": "2026-10-20T20:50:40+08:00",
+      "sample_ids": [
+        "KR102975255B1",
+        "KR102985385B1",
+        "US12464863B2",
+        "JP7793776B2",
+        "KR102962067B1"
+      ]
+    },
+    {
+      "id": "A1_amat",
+      "branch": "gap_applicant",
+      "query": "assignee:(\"Applied Materials\") (preclean OR \"pre-clean\" OR Siconi OR \"native oxide\") (epitax* OR epitaxial OR SiGe)",
+      "after_publication": "20251001",
+      "before_publication": "20261021",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3Dassignee%3A%28%22Applied+Materials%22%29+%28preclean+OR+%22pre-clean%22+OR+Siconi+OR+%22native+oxide%22%29+%28epitax%2A+OR+epitaxial+OR+SiGe%29%26after%3Dpublication%3A20251001%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": null,
+      "returned": 0,
+      "artifact": "/workspace/preclean-search/evening-2026-10-20/raw/A1_amat.json",
+      "sha256": "6e820f4031a84dbd22108903ac5ee2141cb5dab454abe628c7931318e33707f3",
+      "error": null,
+      "executed_at": "2026-10-20T20:50:42+08:00",
+      "sample_ids": []
+    },
+    {
+      "id": "A2_asm",
+      "branch": "gap_applicant",
+      "query": "assignee:(\"ASM IP\" OR \"ASM International\" OR \"ASM America\") (preclean OR \"pre-clean\" OR \"native oxide\" OR \"anhydrous\" HF)",
+      "after_publication": "20251001",
+      "before_publication": "20261021",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3Dassignee%3A%28%22ASM+IP%22+OR+%22ASM+International%22+OR+%22ASM+America%22%29+%28preclean+OR+%22pre-clean%22+OR+%22native+oxide%22+OR+%22anhydrous%22+HF%29%26after%3Dpublication%3A20251001%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": null,
+      "returned": 0,
+      "artifact": "/workspace/preclean-search/evening-2026-10-20/raw/A2_asm.json",
+      "sha256": "6e820f4031a84dbd22108903ac5ee2141cb5dab454abe628c7931318e33707f3",
+      "error": null,
+      "executed_at": "2026-10-20T20:50:42+08:00",
+      "sample_ids": []
+    },
+    {
+      "id": "A3_lam",
+      "branch": "gap_applicant",
+      "query": "assignee:(\"Lam Research\") (preclean OR \"pre-clean\" OR \"native oxide\" OR pretreat*) (epitax* OR epitaxial OR SiGe)",
+      "after_publication": "20251001",
+      "before_publication": "20261021",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3Dassignee%3A%28%22Lam+Research%22%29+%28preclean+OR+%22pre-clean%22+OR+%22native+oxide%22+OR+pretreat%2A%29+%28epitax%2A+OR+epitaxial+OR+SiGe%29%26after%3Dpublication%3A20251001%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": null,
+      "returned": 0,
+      "artifact": "/workspace/preclean-search/evening-2026-10-20/raw/A3_lam.json",
+      "sha256": "6e820f4031a84dbd22108903ac5ee2141cb5dab454abe628c7931318e33707f3",
+      "error": null,
+      "executed_at": "2026-10-20T20:50:43+08:00",
+      "sample_ids": []
+    },
+    {
+      "id": "A4_tel",
+      "branch": "gap_applicant",
+      "query": "assignee:(\"Tokyo Electron\") (preclean OR \"pre-clean\" OR \"native oxide\") (epitax* OR epitaxial)",
+      "after_publication": "20251001",
+      "before_publication": "20261021",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3Dassignee%3A%28%22Tokyo+Electron%22%29+%28preclean+OR+%22pre-clean%22+OR+%22native+oxide%22%29+%28epitax%2A+OR+epitaxial%29%26after%3Dpublication%3A20251001%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": null,
+      "returned": 0,
+      "artifact": "/workspace/preclean-search/evening-2026-10-20/raw/A4_tel.json",
+      "sha256": "6e820f4031a84dbd22108903ac5ee2141cb5dab454abe628c7931318e33707f3",
+      "error": null,
+      "executed_at": "2026-10-20T20:50:44+08:00",
+      "sample_ids": []
+    },
+    {
+      "id": "A5_naura",
+      "branch": "gap_applicant",
+      "query": "(assignee:(NAURA OR \"北方华创\" OR \"Beijing NAURA\")) (预清洁 OR 去氧化 OR preclean OR \"native oxide\" OR 外延前)",
+      "after_publication": "20251001",
+      "before_publication": "20261021",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3D%28assignee%3A%28NAURA+OR+%22%E5%8C%97%E6%96%B9%E5%8D%8E%E5%88%9B%22+OR+%22Beijing+NAURA%22%29%29+%28%E9%A2%84%E6%B8%85%E6%B4%81+OR+%E5%8E%BB%E6%B0%A7%E5%8C%96+OR+preclean+OR+%22native+oxide%22+OR+%E5%A4%96%E5%BB%B6%E5%89%8D%29%26after%3Dpublication%3A20251001%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": null,
+      "returned": 0,
+      "artifact": "/workspace/preclean-search/evening-2026-10-20/raw/A5_naura.json",
+      "sha256": "6e820f4031a84dbd22108903ac5ee2141cb5dab454abe628c7931318e33707f3",
+      "error": null,
+      "executed_at": "2026-10-20T20:50:45+08:00",
+      "sample_ids": []
+    },
+    {
+      "id": "A6_amec",
+      "branch": "gap_applicant",
+      "query": "(assignee:(AMEC OR \"中微\" OR \"Advanced Micro-Fabrication\")) (preclean OR 预清洁 OR 去氧化 OR 外延)",
+      "after_publication": "20251001",
+      "before_publication": "20261021",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3D%28assignee%3A%28AMEC+OR+%22%E4%B8%AD%E5%BE%AE%22+OR+%22Advanced+Micro-Fabrication%22%29%29+%28preclean+OR+%E9%A2%84%E6%B8%85%E6%B4%81+OR+%E5%8E%BB%E6%B0%A7%E5%8C%96+OR+%E5%A4%96%E5%BB%B6%29%26after%3Dpublication%3A20251001%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": null,
+      "returned": 0,
+      "artifact": "/workspace/preclean-search/evening-2026-10-20/raw/A6_amec.json",
+      "sha256": "6e820f4031a84dbd22108903ac5ee2141cb5dab454abe628c7931318e33707f3",
+      "error": null,
+      "executed_at": "2026-10-20T20:50:45+08:00",
+      "sample_ids": []
+    },
+    {
+      "id": "A7_piotech",
+      "branch": "gap_applicant",
+      "query": "(assignee:(拓荆 OR Piotech)) (preclean OR 预清洁 OR 去氧化 OR 外延 OR epitaxial)",
+      "after_publication": "20251001",
+      "before_publication": "20261021",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3D%28assignee%3A%28%E6%8B%93%E8%8D%86+OR+Piotech%29%29+%28preclean+OR+%E9%A2%84%E6%B8%85%E6%B4%81+OR+%E5%8E%BB%E6%B0%A7%E5%8C%96+OR+%E5%A4%96%E5%BB%B6+OR+epitaxial%29%26after%3Dpublication%3A20251001%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": null,
+      "returned": 0,
+      "artifact": "/workspace/preclean-search/evening-2026-10-20/raw/A7_piotech.json",
+      "sha256": "6e820f4031a84dbd22108903ac5ee2141cb5dab454abe628c7931318e33707f3",
+      "error": null,
+      "executed_at": "2026-10-20T20:50:46+08:00",
+      "sample_ids": []
+    },
+    {
+      "id": "C1_h01l_clean",
+      "branch": "gap_cpc",
+      "query": "(H01L21/02041 OR H01L21/02057 OR H01L21/02658) (epitax* OR epitaxial OR preclean OR \"native oxide\")",
+      "after_publication": "20251001",
+      "before_publication": "20261021",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3D%28H01L21%2F02041+OR+H01L21%2F02057+OR+H01L21%2F02658%29+%28epitax%2A+OR+epitaxial+OR+preclean+OR+%22native+oxide%22%29%26after%3Dpublication%3A20251001%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": 44,
+      "returned": 44,
+      "artifact": "/workspace/preclean-search/evening-2026-10-20/raw/C1_h01l_clean.json",
+      "sha256": "da97d5fc42e2b658673c8b170393b10c133f19f8aab7c396824a87efa5f9d249",
+      "error": null,
+      "executed_at": "2026-10-20T20:50:47+08:00",
+      "sample_ids": [
+        "US12559704B2",
+        "US20250331222A1",
+        "US12616000B2",
+        "US12500077B2",
+        "KR102882310B1"
+      ]
+    },
+    {
+      "id": "C2_c23c",
+      "branch": "gap_cpc",
+      "query": "C23C16/02 (preclean OR \"pre-clean\" OR \"native oxide\" OR oxide) (epitax* OR epitaxial OR Si)",
+      "after_publication": "20251001",
+      "before_publication": "20261021",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3DC23C16%2F02+%28preclean+OR+%22pre-clean%22+OR+%22native+oxide%22+OR+oxide%29+%28epitax%2A+OR+epitaxial+OR+Si%29%26after%3Dpublication%3A20251001%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": 854,
+      "returned": 100,
+      "artifact": "/workspace/preclean-search/evening-2026-10-20/raw/C2_c23c.json",
+      "sha256": "612fb9e73d58a1e649690215c10405c6c0a1a1c076c71e2d052b124b4914a9a1",
+      "error": null,
+      "executed_at": "2026-10-20T20:50:48+08:00",
+      "sample_ids": [
+        "CN116508134B",
+        "US12588475B2",
+        "US12655516B2",
+        "US12448682B2",
+        "US20260028712A1"
+      ]
+    },
+    {
+      "id": "A1b_amat",
+      "branch": "gap_applicant_retry",
+      "query": "assignee:\"Applied Materials\" (preclean OR \"pre-clean\" OR Siconi OR \"native oxide\") (epitaxial OR epitaxy OR SiGe)",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3Dassignee%3A%22Applied+Materials%22+%28preclean+OR+%22pre-clean%22+OR+Siconi+OR+%22native+oxide%22%29+%28epitaxial+OR+epitaxy+OR+SiGe%29%26after%3Dpublication%3A20251001%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": 1,
+      "returned": 1,
+      "sha256": "27a8012407bc02d5fa7325d166bf3985a1a3530621e2223e8bcc79922f01866d",
+      "error": null,
+      "executed_at": "2026-10-20T20:51:16+08:00"
+    },
+    {
+      "id": "A2b_asm",
+      "branch": "gap_applicant_retry",
+      "query": "assignee:\"ASM IP Holding\" (preclean OR \"pre-clean\" OR \"native oxide\" OR anhydrous)",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3Dassignee%3A%22ASM+IP+Holding%22+%28preclean+OR+%22pre-clean%22+OR+%22native+oxide%22+OR+anhydrous%29%26after%3Dpublication%3A20251001%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": 0,
+      "returned": 0,
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "error": null,
+      "executed_at": "2026-10-20T20:51:16+08:00"
+    },
+    {
+      "id": "A2c_asm",
+      "branch": "gap_applicant_retry",
+      "query": "assignee:\"ASM International\" (preclean OR oxide) (clean OR HF)",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3Dassignee%3A%22ASM+International%22+%28preclean+OR+oxide%29+%28clean+OR+HF%29%26after%3Dpublication%3A20251001%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": 1,
+      "returned": 1,
+      "sha256": "73775175335855b24b31a05e49ec3e0a48ae3ab286bbd6a1f0ace87bd3558fdd",
+      "error": null,
+      "executed_at": "2026-10-20T20:51:17+08:00"
+    },
+    {
+      "id": "A3b_lam",
+      "branch": "gap_applicant_retry",
+      "query": "assignee:\"Lam Research\" (preclean OR \"pre-clean\" OR \"native oxide\" OR pretreat) (epitaxial OR epitaxy OR SiGe)",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3Dassignee%3A%22Lam+Research%22+%28preclean+OR+%22pre-clean%22+OR+%22native+oxide%22+OR+pretreat%29+%28epitaxial+OR+epitaxy+OR+SiGe%29%26after%3Dpublication%3A20251001%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": 0,
+      "returned": 0,
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "error": null,
+      "executed_at": "2026-10-20T20:51:18+08:00"
+    },
+    {
+      "id": "A4b_tel",
+      "branch": "gap_applicant_retry",
+      "query": "assignee:\"Tokyo Electron\" (preclean OR \"pre-clean\" OR \"native oxide\") (epitaxial OR epitaxy)",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3Dassignee%3A%22Tokyo+Electron%22+%28preclean+OR+%22pre-clean%22+OR+%22native+oxide%22%29+%28epitaxial+OR+epitaxy%29%26after%3Dpublication%3A20251001%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": 2,
+      "returned": 2,
+      "sha256": "0dcff46a3c66f201a21fa558a5d899a5e6f24cbe5cef6aa1931044cce650fec9",
+      "error": null,
+      "executed_at": "2026-10-20T20:51:19+08:00"
+    },
+    {
+      "id": "A5b_naura",
+      "branch": "gap_applicant_retry",
+      "query": "assignee:NAURA (preclean OR oxide OR 外延 OR epitaxial)",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3Dassignee%3ANAURA+%28preclean+OR+oxide+OR+%E5%A4%96%E5%BB%B6+OR+epitaxial%29%26after%3Dpublication%3A20251001%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": 1,
+      "returned": 1,
+      "sha256": "1aaa9b778562d17eec0554ffc5648d770671d5e9c9e1681ddace7a1efcae6c0c",
+      "error": null,
+      "executed_at": "2026-10-20T20:51:20+08:00"
+    },
+    {
+      "id": "A5c_naura",
+      "branch": "gap_applicant_retry",
+      "query": "北方华创 (预清洁 OR 去氧化 OR 外延前 OR preclean)",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3D%E5%8C%97%E6%96%B9%E5%8D%8E%E5%88%9B+%28%E9%A2%84%E6%B8%85%E6%B4%81+OR+%E5%8E%BB%E6%B0%A7%E5%8C%96+OR+%E5%A4%96%E5%BB%B6%E5%89%8D+OR+preclean%29%26after%3Dpublication%3A20251001%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": 187,
+      "returned": 100,
+      "sha256": "4c2c06e34ee4eb2be52941e1855dd6525218cca738b79f16aba6e58e5c35039f",
+      "error": null,
+      "executed_at": "2026-10-20T20:51:21+08:00"
+    },
+    {
+      "id": "A6b_amec",
+      "branch": "gap_applicant_retry",
+      "query": "assignee:AMEC (epitaxial OR 外延 OR preclean)",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3Dassignee%3AAMEC+%28epitaxial+OR+%E5%A4%96%E5%BB%B6+OR+preclean%29%26after%3Dpublication%3A20251001%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": 0,
+      "returned": 0,
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "error": null,
+      "executed_at": "2026-10-20T20:51:21+08:00"
+    },
+    {
+      "id": "A6c_amec",
+      "branch": "gap_applicant_retry",
+      "query": "中微 (外延 OR 预清洁 OR preclean)",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3D%E4%B8%AD%E5%BE%AE+%28%E5%A4%96%E5%BB%B6+OR+%E9%A2%84%E6%B8%85%E6%B4%81+OR+preclean%29%26after%3Dpublication%3A20251001%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": 61780,
+      "returned": 100,
+      "sha256": "c4088d6d0a011f7bba934b2754a4f87e3c303ec914d362703cf38239871c4f18",
+      "error": null,
+      "executed_at": "2026-10-20T20:51:23+08:00"
+    },
+    {
+      "id": "A7b_pio",
+      "branch": "gap_applicant_retry",
+      "query": "assignee:Piotech (epitaxial OR 外延 OR preclean)",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3Dassignee%3APiotech+%28epitaxial+OR+%E5%A4%96%E5%BB%B6+OR+preclean%29%26after%3Dpublication%3A20251001%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": 8,
+      "returned": 8,
+      "sha256": "d6e82a4a8ec52a9b3a5d47b8fc818347a5376dcc9ad48ae5a824f7be1495f7a4",
+      "error": null,
+      "executed_at": "2026-10-20T20:51:24+08:00"
+    },
+    {
+      "id": "A7c_pio",
+      "branch": "gap_applicant_retry",
+      "query": "拓荆 (外延 OR 预清洁 OR preclean OR 去氧化)",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3D%E6%8B%93%E8%8D%86+%28%E5%A4%96%E5%BB%B6+OR+%E9%A2%84%E6%B8%85%E6%B4%81+OR+preclean+OR+%E5%8E%BB%E6%B0%A7%E5%8C%96%29%26after%3Dpublication%3A20251001%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": 37,
+      "returned": 37,
+      "sha256": "da5d3216625231f3fffe3d772c4e69c5146a00e281c770579826873498b8464c",
+      "error": null,
+      "executed_at": "2026-10-20T20:51:24+08:00"
+    },
+    {
+      "id": "A8_wonik",
+      "branch": "gap_applicant_retry",
+      "query": "assignee:\"Wonik\" (preclean OR \"native oxide\" OR epitaxial)",
+      "source": "Google Patents xhr",
+      "url": "https://patents.google.com/xhr/query?url=q%3Dassignee%3A%22Wonik%22+%28preclean+OR+%22native+oxide%22+OR+epitaxial%29%26after%3Dpublication%3A20251001%26before%3Dpublication%3A20261021%26num%3D100",
+      "approx_hits": 0,
+      "returned": 0,
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "error": null,
+      "executed_at": "2026-10-20T20:51:25+08:00"
+    },
+    {
+      "id": "D1",
+      "branch": "direct_publication_fetch",
+      "query": "US20260090293A1",
+      "source": "Google Patents HTML",
+      "result_count": 1,
+      "sha256": "f5e0c143783b71f5c4e0fb4bba752a7401eba43db6374fe2adc1a3b4293b4608",
+      "note": null,
+      "source_retrieved_at": "2026-10-20T20:54:06+08:00"
+    },
+    {
+      "id": "D2",
+      "branch": "direct_publication_fetch",
+      "query": "US12660544B2",
+      "source": "USPTO Official Gazette HTML",
+      "result_count": 1,
+      "sha256": "3ca5bc315dfede385622b0fd03bb1f7ae7d8ad44e7b736c82aa6c1cd836c2e9f",
+      "note": "GP HTML 404; used USPTO OG",
+      "source_retrieved_at": "2026-10-20T20:54:06+08:00"
+    },
+    {
+      "id": "D3",
+      "branch": "direct_publication_fetch",
+      "query": "US12757665B2",
+      "source": "USPTO Official Gazette HTML",
+      "result_count": 1,
+      "sha256": "52e71d7cc92a0d620dc36d68eebc89a5ba34519d79586c3ddddf19953c4f837b",
+      "note": "GP HTML 404; used USPTO OG",
+      "source_retrieved_at": "2026-10-20T20:54:06+08:00"
+    },
+    {
+      "id": "D4",
+      "branch": "direct_publication_fetch",
+      "query": "KR102916044B1",
+      "source": "Google Patents HTML",
+      "result_count": 1,
+      "sha256": "98296800f16a15e83781f6cfaa0c3a286853144bd226f4f6e2d92135b26980a0",
+      "note": null,
+      "source_retrieved_at": "2026-10-20T20:54:06+08:00"
+    },
+    {
+      "id": "D5",
+      "branch": "direct_publication_fetch",
+      "query": "US20250327180A1",
+      "source": "Google Patents HTML",
+      "result_count": 1,
+      "sha256": "6d8aa9704fcccf200596035e2ae81c366e5419c53b2b696ab8d02d9195c90025",
+      "note": null,
+      "source_retrieved_at": "2026-10-20T20:54:06+08:00"
+    },
+    {
+      "id": "D6",
+      "branch": "direct_publication_fetch",
+      "query": "EP4216257B1",
+      "source": "Google Patents HTML",
+      "result_count": 1,
+      "sha256": "d5a3125da543525efdf939026dbaca67f5e114c7046f0090af7500ff46f8b629",
+      "note": null,
+      "source_retrieved_at": "2026-10-20T20:54:06+08:00"
+    },
+    {
+      "id": "D7",
+      "branch": "direct_publication_fetch",
+      "query": "TWI918222B",
+      "source": "Google Patents HTML",
+      "result_count": 1,
+      "sha256": "e20e12fbfc2a8f768640fd02ef81d00feb52a7947c39f88c3bf0047ce58be3ab",
+      "note": null,
+      "source_retrieved_at": "2026-10-20T20:54:06+08:00"
+    },
+    {
+      "id": "D8",
+      "branch": "direct_publication_fetch",
+      "query": "KR102904356B1",
+      "source": "Google Patents HTML",
+      "result_count": 1,
+      "sha256": "7767802bcd9b31119ce6aa1f98b6685842c1db6ef389a914c302ad478d39df41",
+      "note": null,
+      "source_retrieved_at": "2026-10-20T20:54:06+08:00"
+    },
+    {
+      "id": "D9",
+      "branch": "direct_publication_fetch",
+      "query": "CN121460468A",
+      "source": "Google Patents HTML",
+      "result_count": 1,
+      "sha256": "e75c75166130e6f3ba5626ef6e1d840c915a8475db0e9f26eb399823d4577ba5",
+      "note": null,
+      "source_retrieved_at": "2026-10-20T20:54:06+08:00"
+    },
+    {
+      "id": "D10",
+      "branch": "direct_publication_fetch",
+      "query": "US20250046596A1",
+      "source": "Google Patents HTML",
+      "result_count": 1,
+      "sha256": "1bf333be52544dce4f9bed4c6c59827f2c994ec42a72e59d24882d6504f7ad61",
+      "note": "out of window clue",
+      "source_retrieved_at": "2026-10-20T20:54:06+08:00"
+    },
+    {
+      "id": "D11",
+      "branch": "direct_publication_fetch",
+      "query": "US20250270735A1",
+      "source": "Google Patents HTML",
+      "result_count": 1,
+      "sha256": "9fa3f8305a4fb2ab50decca35f8c26bb7c105c7c31b33e841add3abbe6b54f14",
+      "note": "out of window clue",
+      "source_retrieved_at": "2026-10-20T20:54:06+08:00"
+    },
+    {
+      "id": "W1",
+      "branch": "websearch_crosscheck",
+      "query": "preclean OR pre-clean OR SiConi epitaxial patent 2025 OR 2026 Applied OR ASM OR Lam",
+      "source": "WebSearch",
+      "result_count": "clues",
+      "note": "clues: US20250046596A1 / US20250270735A1 / US12660544B2 / US12757665B2",
+      "source_retrieved_at": "2026-10-20T20:54:06+08:00"
+    },
+    {
+      "id": "W2",
+      "branch": "websearch_crosscheck",
+      "query": "US20260090293A1 Lam Research preclean epitaxy",
+      "source": "WebSearch",
+      "result_count": "clues",
+      "note": "confirmed stacks+preclean+epi",
+      "source_retrieved_at": "2026-10-20T20:54:06+08:00"
+    },
+    {
+      "id": "W3",
+      "branch": "websearch_crosscheck",
+      "query": "assignee NAURA AMEC 拓荆 preclean 外延 2025 2026",
+      "source": "WebSearch",
+      "result_count": "clues",
+      "note": "product news; EP4216257B1 NAURA preclean chamber; CN121460468A Piotech chamber clean",
+      "source_retrieved_at": "2026-10-20T20:54:06+08:00"
+    },
+    {
+      "id": "NOTE_EPI_US20260062803A1",
+      "branch": "independence_guard",
+      "query": "US20260062803A1",
+      "source": "group_chat_FYI_only",
+      "note": "EPI晚间发现；本冻结不标为 Preclean 新发现、不纳入 candidates",
+      "source_retrieved_at": "2026-10-20T20:54:06+08:00"
+    }
+  ],
+  "sources_tried": [
+    "Google Patents xhr (keyword/CPC/applicant retry)",
+    "WebSearch cross-check",
+    "Google Patents HTML direct ID",
+    "USPTO Official Gazette (ASM US12660544B2 / US12757665B2；因 GP 404)"
+  ],
+  "limitations": [
+    "不宣称零遗漏",
+    "禁止 2025/09 作为监测起点；after:2025-09-30 / after=publication:20251001 仅作检索下界",
+    "近窗 2026-10-17..2026-10-20 Preclean 查询仍 returned=0（与 prior C 空冻结一致，不重计为新发现）",
+    "首轮 assignee:(A OR B) 语法触发 GP user_error；已用简化 assignee:\"X\" 重试",
+    "G4_chamber_dry / G5_cn / G7_kr / A6c_amec 等宽查询召回噪声大，仅作线索，纳入以原文核读为准",
+    "ASM US 授权 GP HTML 404，以 USPTO OG 为准；同族关系依 KR/US20220301856 线索，family_completion_status=open",
+    "未整窗宣称穷尽 Espacenet/CNIPA"
+  ],
+  "stats": {
+    "candidates": 2,
+    "publication_events": 4,
+    "unique_families": 2,
+    "actually_read": 11,
+    "fulltext_read": 0,
+    "pending": 0,
+    "core_events": 4,
+    "related": 3,
+    "excluded": 1,
+    "out_of_window_sightings": 2,
+    "queries_executed": 46
+  },
+  "candidate_count": 2,
+  "event_count": 4,
+  "family_count": 2,
+  "actually_read_count": 11,
+  "pending_count": 0,
+  "count_basis": "candidate_count=candidates[] 行数（include_core 族代表）；event_count=各条 events[] 之和；family_count=family_id 去重；actually_read_count=本晚核读原文/OG 的公开号数（含 related/excluded/窗外）。",
+  "candidates": [
+    {
+      "publication_id": "US20260090293A1",
+      "jurisdiction": "US",
+      "event_type": "publication",
+      "event_date": "2026-03-26",
+      "month": "2026-03",
+      "family_id": "FAM-LAM-STACKS-PRECLEAN-EPI",
+      "family_id_source": "title_assignee_claims",
+      "title_original": "Semiconductor stacks and processes thereof",
+      "applicant_original": "Lam Research Corporation",
+      "applicant_normalized": "Lam",
+      "why_relevant": "Claim 12: precleaning to remove oxide + pretreat + epitaxially depositing in epitaxy chamber + reactor clean；正文大量 preclean/epitaxy/SiGe。缺口申请人 Lam 的外延前干法预清洁+集成腔清洁。",
+      "claims_or_embodiment_basis": "GP claim 12（epitaxially depositing…precleaning…remove an oxide…epitaxy chamber…reactor clean）；摘要与说明书 preclean/pretreat/epi 链。",
+      "disposition": "include_core",
+      "pending_reason": null,
+      "source_url": "https://patents.google.com/patent/US20260090293A1/en",
+      "source_urls": [
+        "https://patents.google.com/patent/US20260090293A1/en"
+      ],
+      "source_sha256": "f5e0c143783b71f5c4e0fb4bba752a7401eba43db6374fe2adc1a3b4293b4608",
+      "source_retrieved_at": "2026-10-20T20:54:06+08:00",
+      "actual_read_spans": [
+        "abstract",
+        "claim_12_epi_preclean_reactor_clean",
+        "keyword_counts_preclean_epitaxy_SiGe"
+      ],
+      "verification_level": "claims_and_abstract",
+      "events": [
+        {
+          "publication_id": "US20260090293A1",
+          "event_type": "publication",
+          "event_date": "2026-03-26",
+          "source_url": "https://patents.google.com/patent/US20260090293A1/en"
+        }
+      ]
+    },
+    {
+      "publication_id": "US12660544B2",
+      "jurisdiction": "US",
+      "event_type": "grant",
+      "event_date": "2026-06-16",
+      "month": "2026-06",
+      "family_id": "FAM-ASM-AHF-PRECLEAN",
+      "family_id_source": "divisional_US12112938_US20220301856_KR102916044",
+      "title_original": "Semiconductor processing preclean methods and apparatus",
+      "applicant_original": "ASM IP Holding B.V.",
+      "applicant_normalized": "ASM",
+      "why_relevant": "无水 HF + 水汽去氧化物的半导体预清洁方法/气路系统（经典 dry oxide preclean，预外延去氧化技术族）。同族含 KR102916044B1（2026-01-21）与 US12757665B2（2026-10-06）。GP 直链 404，以 USPTO OG 官方授权公告核读 claim 1。",
+      "claims_or_embodiment_basis": "USPTO OG claim 1：method for precleaning…anhydrous hydrogen fluoride delivery system…purifier…heater jackets；摘要 oxide removal with AHF+water vapor。",
+      "disposition": "include_core",
+      "pending_reason": null,
+      "source_url": "https://patentsgazette.uspto.gov/week24/OG/html/1547-3/US12660544-20260616.html",
+      "source_urls": [
+        "https://patentsgazette.uspto.gov/week24/OG/html/1547-3/US12660544-20260616.html",
+        "https://patents.google.com/patent/KR102916044B1/en"
+      ],
+      "source_sha256": "3ca5bc315dfede385622b0fd03bb1f7ae7d8ad44e7b736c82aa6c1cd836c2e9f",
+      "source_retrieved_at": "2026-10-20T20:54:06+08:00",
+      "actual_read_spans": [
+        "uspto_og_claim1",
+        "uspto_og_bibliographic",
+        "KR102916044B1_abstract_family"
+      ],
+      "verification_level": "claims_og_and_family_abstract",
+      "note_gp_404": true,
+      "events": [
+        {
+          "publication_id": "KR102916044B1",
+          "event_type": "grant",
+          "event_date": "2026-01-21",
+          "source_url": "https://patents.google.com/patent/KR102916044B1/en",
+          "source_sha256": "98296800f16a15e83781f6cfaa0c3a286853144bd226f4f6e2d92135b26980a0"
+        },
+        {
+          "publication_id": "US12660544B2",
+          "event_type": "grant",
+          "event_date": "2026-06-16",
+          "source_url": "https://patentsgazette.uspto.gov/week24/OG/html/1547-3/US12660544-20260616.html",
+          "source_sha256": "3ca5bc315dfede385622b0fd03bb1f7ae7d8ad44e7b736c82aa6c1cd836c2e9f"
+        },
+        {
+          "publication_id": "US12757665B2",
+          "event_type": "grant",
+          "event_date": "2026-10-06",
+          "source_url": "https://patentsgazette.uspto.gov/week40/OG/html/1551-1/US12757665-20261006.html",
+          "source_sha256": "52e71d7cc92a0d620dc36d68eebc89a5ba34519d79586c3ddddf19953c4f837b"
+        }
+      ]
+    }
+  ],
+  "related_candidates": [
+    {
+      "publication_id": "US20250327180A1",
+      "event_date": "2025-10-23",
+      "applicant": "ASM IP Holding B.V.",
+      "disposition": "related",
+      "why_relevant": "预清洁/刻蚀设备高温涂层；正文涉及 preclean apparatus 与 epitaxial 语境，属设备材料支撑而非工艺主权利要求。",
+      "source_url": "https://patents.google.com/patent/US20250327180A1/en",
+      "source_sha256": "6d8aa9704fcccf200596035e2ae81c366e5419c53b2b696ab8d02d9195c90025"
+    },
+    {
+      "publication_id": "EP4216257B1",
+      "event_date": "2025-10-15",
+      "applicant": "Beijing NAURA Microelectronics Equipment Co Ltd",
+      "disposition": "related",
+      "why_relevant": "半导体 precleaning chamber 收集组件；缺口申请人 NAURA 预清洁腔硬件。正文未检出明确外延耦合。",
+      "source_url": "https://patents.google.com/patent/EP4216257B1/en",
+      "source_sha256": "d5a3125da543525efdf939026dbaca67f5e114c7046f0090af7500ff46f8b629"
+    },
+    {
+      "publication_id": "TWI918222B",
+      "event_date": "2026-03-11",
+      "applicant": "Applied Materials, Inc.",
+      "disposition": "related",
+      "why_relevant": "selective preclean 基座组件；说明书明确外延前去氧化预清洁动机。同族 KR102904356B1（2025-12-26）。",
+      "source_url": "https://patents.google.com/patent/TWI918222B/en",
+      "source_sha256": "e20e12fbfc2a8f768640fd02ef81d00feb52a7947c39f88c3bf0047ce58be3ab",
+      "same_family": [
+        "KR102904356B1"
+      ]
+    }
+  ],
+  "excluded_after_read": [
+    {
+      "publication_id": "CN121460468A",
+      "event_date": "2026-02-03",
+      "applicant": "Piotech Inc / 拓荆",
+      "disposition": "exclude_after_read",
+      "reason": "等离子体腔室清洁+载盘遮挡；已读摘要/标题，未检出外延/epi 关联，不符合 epi-linked chamber dry clean。",
+      "source_url": "https://patents.google.com/patent/CN121460468A/en",
+      "source_sha256": "e75c75166130e6f3ba5626ef6e1d840c915a8475db0e9f26eb399823d4577ba5"
+    }
+  ],
+  "out_of_window_sightings": [
+    {
+      "publication_id": "US20250046596A1",
+      "event_date": "2025-02-06",
+      "reason_not_included": "Integrated epitaxy and preclean system（AMAT）；公开日早于基线 2025-10",
+      "source_sha256": "1bf333be52544dce4f9bed4c6c59827f2c994ec42a72e59d24882d6504f7ad61"
+    },
+    {
+      "publication_id": "US20250270735A1",
+      "event_date": "2025-08-28",
+      "reason_not_included": "Low temperature atmospheric epitaxial process with plasma pre-cleaning（AMAT）；公开日 2025-08 不在基线月",
+      "source_sha256": "9fa3f8305a4fb2ab50decca35f8c26bb7c105c7c31b33e841add3abbe6b54f14"
+    }
+  ],
+  "already_in_prior_freeze_not_recounted": [
+    {
+      "publication_id": "WO2026096517A1",
+      "note": "baseline PRECLEAN-FROZEN"
+    },
+    {
+      "publication_id": "TW202628839A",
+      "note": "baseline PRECLEAN-FROZEN"
+    },
+    {
+      "publication_id": "CN122294515A",
+      "note": "baseline PRECLEAN-FROZEN"
+    },
+    {
+      "publication_id": "CN122069948A",
+      "note": "baseline PRECLEAN-FROZEN"
+    },
+    {
+      "publication_id": "WO2026084898A1",
+      "note": "baseline PRECLEAN-FROZEN"
+    },
+    {
+      "publication_id": "CN122564748A",
+      "note": "baseline PRECLEAN-FROZEN"
+    }
+  ],
+  "coverage_gaps": [
+    "GP 近窗索引可能滞后",
+    "宽 CPC/中文查询噪声高，未对全部 900+ 窗内命中逐篇核读",
+    "AMEC 简化 assignee 查询 0；中微关键词过宽",
+    "US12660544B2/US12757665B2 缺 GP HTML，同族闭合未完"
+  ],
+  "change_history": [
+    {
+      "at": "2026-10-20T20:54:06+08:00",
+      "change": "晚间增量冻结：include_core Lam US20260090293A1 + ASM AHF preclean 族（KR/US×2）；related 3；exclude 拓荆腔清洁无 epi 关联",
+      "by": "Preclean检索"
+    }
+  ],
+  "notes": "无返回≠无相关。禁止宣称零遗漏。Honest empty for near-window 20261017-20 retained as 0 hits."
+}
