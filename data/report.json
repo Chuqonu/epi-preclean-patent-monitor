@@ -30,7 +30,8 @@
     "related": 1,
     "pending": 0,
     "excluded": 0,
-    "figures": 136,
+    "figures": 137,
+    "figures_available": 137,
     "month_family_entries": 122,
     "publication_events": 150,
     "unique_families": 109,
@@ -87,6 +88,12 @@
       "by": "quality-r2-layout",
       "action": "reader_ux_r2",
       "detail": "Layout R2 (CSS/JS): month chrome, multi-figure grid, side-meta, mobile drawer. No figure bytes or display_rotation changes."
+    },
+    {
+      "at": "2026-10-20T12:50:00Z",
+      "by": "epi-gate3-cn-figure-backfill",
+      "action": "attach_cn121693111a_fig1",
+      "detail": "Gate③ EPI CN121693111A Fig.1 DEPATISnet 说明书附图 1/3 (sha 08612a81…); CN122294515A/CN122069948A still open."
     }
   ],
   "months": [
@@ -5177,13 +5184,31 @@
           "reviewer": "epi-evidence-review-r2",
           "reviewed_at": "2026-10-20",
           "family_completion_status": "open",
-          "figures": [],
+          "figures": [
+            {
+              "source_publication_id": "CN121693111A",
+              "figure_number": "图 1",
+              "source_url": "https://patents.google.com/patent/CN121693111A/en",
+              "local_asset_path": "assets/figures/CN121693111A_fig1.png",
+              "width": 1240,
+              "height": 1754,
+              "caption": "CN121693111A 说明书附图 1/3（DEPATISnet CN000121693111A）：本条目挂载图1 外延截面；同页亦含图2 工艺流程，未单独裁切。",
+              "sha256": "08612a81d951205d41ef731eb4fd28f9d2d1e75773c4386b108deb76446482eb",
+              "display_rotation": 0
+            }
+          ],
           "change_history": [
             {
               "at": "2026-10-20T09:31:48Z",
               "by": "evidence-review-r2",
               "action": "independent_add",
               "detail": "独立检索新纳入（非基线导入）。"
+            },
+            {
+              "at": "2026-10-20T12:50:00Z",
+              "by": "epi-gate3-cn-figure-backfill",
+              "action": "attach_fig1_depats",
+              "detail": "Official drawing page 1/3 → assets/figures/CN121693111A_fig1.png (08612a81…)."
             }
           ],
           "family_events": [
