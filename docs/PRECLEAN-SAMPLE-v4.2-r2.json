@@ -1,0 +1,148 @@
+{
+  "role": "Preclean独立检索",
+  "document_type": "FIELD_TEMPLATE_SAMPLE",
+  "method_ref": "2026-10-20.4.2-r2",
+  "status": "SAMPLE_ONLY",
+  "status_note": "假数据 2 条，仅供字段/计数口径校验。非真实检索结果，不作技术纳入依据，禁止当作月度完成。",
+  "period": "2025/10 至 2026/10",
+  "research_through": null,
+  "frozen_at": null,
+  "prepared_at": "2026-10-20T17:15:06+08:00",
+  "timezone": "Asia/Shanghai",
+  "count_basis": "候选数=清单行数；事件数=events 合计；族数=family_id 去重；已读数=actual_read_spans 非空且超出摘要的条目。本 SAMPLE 故意给出可核对小数。",
+  "stats": {
+    "candidates": 2,
+    "publication_events": 3,
+    "unique_families": 2,
+    "events_reviewed": 0,
+    "core_events": 0,
+    "core_families": 0,
+    "related": 0,
+    "pending": 2,
+    "fulltext_read": 0,
+    "figures": 0,
+    "excluded_after_read": 0
+  },
+  "candidates": [
+    {
+      "SAMPLE": true,
+      "publication_id": "SAMPLE-US2026999001A1",
+      "jurisdiction": "US",
+      "event_type": "公开",
+      "event_date": "2026-03-15",
+      "month": "2026-03",
+      "application_id": "SAMPLE-US18/900001",
+      "priority_date": "2025-01-10",
+      "family_id": "SAMPLE-FAM-PC-001",
+      "family_id_source": "sample_placeholder",
+      "title_original": "SAMPLE: Remote plasma native-oxide removal before Si epitaxy",
+      "title_zh": "【SAMPLE】外延前远程等离子体去原生氧化层",
+      "applicant_original": "SAMPLE Applied Materials, Inc.",
+      "applicant_normalized": "Applied Materials (SAMPLE)",
+      "scope_status": "pending",
+      "technology_tags": [
+        "preclean",
+        "remote_plasma",
+        "native_oxide"
+      ],
+      "short_preview": "【SAMPLE】远程等离子体去氧化后转入外延腔。",
+      "technical_summary": "【SAMPLE】假数据：描述 NF3/NH3 远程等离子体去除 native oxide，随后真空集成 Si 外延。",
+      "claims_or_embodiment_basis": "【SAMPLE】未读原文；占位 claims 字段。",
+      "scope_reason": "【SAMPLE】待核：摘要像外延前干法 preclean，需核对 claims/实施方式是否真属外延前而非外延后处理。",
+      "source_urls": [
+        "https://patents.google.com/patent/SAMPLE-US2026999001A1/en",
+        "https://worldwide.espacenet.com/patent/search?q=SAMPLE-US2026999001A1"
+      ],
+      "source_retrieved_at": null,
+      "source_sha256": null,
+      "actual_read_spans": [],
+      "family_completion_status": "open",
+      "figures": [],
+      "search_branch": "SAMPLE_keyword_preclean",
+      "search_failure": null,
+      "pending_reason": "SAMPLE：仅模板演示；未执行真实原文阅读与官方核验。",
+      "independent_of_ref": true,
+      "also_in_ref_preclean_set": false,
+      "events": [
+        {
+          "number": "SAMPLE-US2026999001A1",
+          "date": "2026-03-15",
+          "event": "公开",
+          "source_url": "https://patents.google.com/patent/SAMPLE-US2026999001A1/en"
+        },
+        {
+          "number": "SAMPLE-WO2026999001A1",
+          "date": "2026-03-20",
+          "event": "公开",
+          "source_url": "https://patents.google.com/patent/SAMPLE-WO2026999001A1/en"
+        }
+      ],
+      "reviewer": null,
+      "reviewed_at": null,
+      "change_history": [],
+      "failure_or_pending_reason": "SAMPLE：仅模板演示；未执行真实原文阅读与官方核验。"
+    },
+    {
+      "SAMPLE": true,
+      "publication_id": "SAMPLE-CN121999002A",
+      "jurisdiction": "CN",
+      "event_type": "公开",
+      "event_date": "2026-06-08",
+      "month": "2026-06",
+      "application_id": "SAMPLE-CN202511999002.0",
+      "priority_date": null,
+      "family_id": "SAMPLE-FAM-PC-002",
+      "family_id_source": "sample_placeholder",
+      "title_original": "【SAMPLE】一种外延腔室干法原位清洗方法",
+      "title_zh": "【SAMPLE】外延腔室干法原位清洗",
+      "applicant_original": "SAMPLE 拓荆科技股份有限公司",
+      "applicant_normalized": "Piotech (SAMPLE)",
+      "scope_status": "pending",
+      "technology_tags": [
+        "chamber_dry_clean",
+        "epi_related"
+      ],
+      "short_preview": "【SAMPLE】外延腔体 NF3 干法清洗占位条。",
+      "technical_summary": "【SAMPLE】假数据：腔体干清洁是否与 Si/SiGe 外延流程明确关联待核。",
+      "claims_or_embodiment_basis": "【SAMPLE】未读原文。",
+      "scope_reason": "【SAMPLE】待核：需确认是否与外延流程明确关联的腔体干清洁，而非通用 CVD 腔清洗。",
+      "source_urls": [
+        "https://patents.google.com/patent/SAMPLE-CN121999002A/zh"
+      ],
+      "source_retrieved_at": null,
+      "source_sha256": null,
+      "actual_read_spans": [],
+      "family_completion_status": "open",
+      "figures": [],
+      "search_branch": "SAMPLE_ipc_chamber_clean",
+      "search_failure": "SAMPLE：J-PlatPat 入口未在本演示中调用",
+      "pending_reason": "SAMPLE：关联性待核；无真图；未读原文。",
+      "independent_of_ref": true,
+      "also_in_ref_preclean_set": false,
+      "events": [
+        {
+          "number": "SAMPLE-CN121999002A",
+          "date": "2026-06-08",
+          "event": "公开",
+          "source_url": "https://patents.google.com/patent/SAMPLE-CN121999002A/zh"
+        }
+      ],
+      "reviewer": null,
+      "reviewed_at": null,
+      "change_history": [],
+      "failure_or_pending_reason": "SAMPLE：关联性待核；无真图；未读原文。"
+    }
+  ],
+  "notes": [
+    "全部条目 SAMPLE=true；公开号含 SAMPLE- 前缀。",
+    "禁止零遗漏宣称；本文件非检索交付物。"
+  ],
+  "events_count": 3,
+  "families_count": 2,
+  "actually_read_count": 0,
+  "format_alignment_note": "正式冻结将保留 stats.* 为主，并同步顶层 *_count 别名以便与 EPI 对表；待核字段同时输出 pending_reason 与 failure_or_pending_reason。",
+  "updated_at": "2026-10-20T17:15:54+08:00",
+  "candidate_count": 2,
+  "event_count": 3,
+  "family_count": 2
+}

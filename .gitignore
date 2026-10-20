@@ -1,0 +1,31 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Local scratch / large binaries (keep figures that are intentionally committed)
+*.pdf
+!docs/**/*.pdf
+.tmp/
+.cache/
+node_modules/
+
+# Secrets — never commit
+**/credentials*
+**/*secret*
+**/*token*
+.env.*
+
+# Excel lock / temp
+~$*.xlsx
+ledger/*.tmp.xlsx

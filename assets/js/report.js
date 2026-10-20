@@ -1,0 +1,522 @@
+/**
+ * EPI / Preclean Patent Monitoring Report — independent client renderer.
+ * Loads data/report.json. Does not auto-open closed months on scroll.
+ */
+(function () {
+  "use strict";
+
+  const SIDEBAR_KEY = "epi-preclean-sidebar-width";
+  const SIDEBAR_MIN = 220;
+  const SIDEBAR_MAX = 520;
+
+  const $ = (sel, root) => (root || document).querySelector(sel);
+
+  function esc(s) {
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function text(s) {
+    return esc(s).replace(/\n/g, "<br>");
+  }
+
+
+  function pick(obj, keys, fallback) {
+    for (let i = 0; i < keys.length; i++) {
+      const k = keys[i];
+      if (obj && obj[k] != null && obj[k] !== "") return obj[k];
+    }
+    return fallback;
+  }
+
+  function normFamily(f, monthLabel) {
+    const publication_id = pick(f, ["publication_id", "publication_number"], "");
+    const month = f.month || monthLabel || "";
+    const id = f.id || (month && publication_id ? month + "-" + publication_id : publication_id);
+    const figures = pick(f, ["figures", "images"], []) || [];
+    const mappedFigures = figures.map(function (img) {
+      return {
+        caption: pick(img, ["caption", "display_caption"], ""),
+        display_caption: pick(img, ["display_caption", "caption"], ""),
+        source_url: img.source_url || "",
+        source_publication: pick(img, ["source_publication_id", "source_publication"], ""),
+        figure_label: pick(img, ["figure_number", "figure_label"], ""),
+        width: img.width,
+        height: img.height,
+        path: pick(img, ["local_asset_path", "path"], ""),
+      };
+    });
+    const events = pick(f, ["family_events", "events"], []) || [];
+    const mappedEvents = events.map(function (ev) {
+      return {
+        number: pick(ev, ["publication_id", "number"], ""),
+        date: pick(ev, ["event_date", "date"], ""),
+        event: pick(ev, ["event_type", "event"], ""),
+        source_url: ev.source_url || "",
+        application_number: pick(ev, ["application_id", "application_number"], ""),
+      };
+    });
+    return Object.assign({}, f, {
+      id: id,
+      month: month,
+      publication_number: publication_id,
+      title: pick(f, ["title_zh", "title"], ""),
+      title_original: f.title_original || null,
+      applicant: pick(f, ["applicant_normalized", "applicant"], ""),
+      publication_date: pick(f, ["event_date", "publication_date"], ""),
+      brief: pick(f, ["short_preview", "brief", "technical_summary", "summary"], ""),
+      summary: pick(f, ["technical_summary", "summary", "short_preview"], ""),
+      claims: pick(f, ["claims_or_embodiment_basis", "claims"], ""),
+      relevance: pick(f, ["scope_reason", "relevance"], ""),
+      family_key: pick(f, ["family_id", "family_key"], ""),
+      events: mappedEvents,
+      images: mappedFigures,
+      scope_status: f.scope_status || "",
+      family_completion_status: f.family_completion_status || "",
+      import_tag: f.import_tag || "",
+      discovery_source: f.discovery_source || "",
+    });
+  }
+
+
+  function loadSidebarWidth() {
+    const n = parseInt(localStorage.getItem(SIDEBAR_KEY) || "", 10);
+    if (Number.isFinite(n) && n >= SIDEBAR_MIN && n <= SIDEBAR_MAX) {
+      document.documentElement.style.setProperty("--sidebar-width", n + "px");
+    }
+  }
+
+  function initResizer() {
+    const handle = $("#resizer");
+    if (!handle) return;
+    let dragging = false;
+    let startX = 0;
+    let startW = 0;
+
+    function widthNow() {
+      return parseInt(getComputedStyle(document.documentElement).getPropertyValue("--sidebar-width"), 10) || 320;
+    }
+
+    function onMove(clientX) {
+      if (!dragging) return;
+      const next = Math.min(SIDEBAR_MAX, Math.max(SIDEBAR_MIN, startW + (clientX - startX)));
+      document.documentElement.style.setProperty("--sidebar-width", next + "px");
+    }
+
+    handle.addEventListener("pointerdown", (e) => {
+      dragging = true;
+      startX = e.clientX;
+      startW = widthNow();
+      handle.setPointerCapture(e.pointerId);
+      e.preventDefault();
+    });
+    handle.addEventListener("pointermove", (e) => onMove(e.clientX));
+    handle.addEventListener("pointerup", (e) => {
+      if (!dragging) return;
+      dragging = false;
+      localStorage.setItem(SIDEBAR_KEY, String(widthNow()));
+      try { handle.releasePointerCapture(e.pointerId); } catch (_) {}
+    });
+    handle.addEventListener("keydown", (e) => {
+      const step = e.shiftKey ? 24 : 12;
+      let w = widthNow();
+      if (e.key === "ArrowLeft") w -= step;
+      else if (e.key === "ArrowRight") w += step;
+      else return;
+      w = Math.min(SIDEBAR_MAX, Math.max(SIDEBAR_MIN, w));
+      document.documentElement.style.setProperty("--sidebar-width", w + "px");
+      localStorage.setItem(SIDEBAR_KEY, String(w));
+      e.preventDefault();
+    });
+  }
+
+  function renderSideMeta(data) {
+    const el = $("#side-meta");
+    if (!el) return;
+    const through = data.research_through || "未设定";
+    const prepared = data.prepared_date || "—";
+    el.innerHTML =
+      "<strong>" + esc(data.title || "EPI / Preclean Patent Monitoring Report") + "</strong>" +
+      esc(data.period || "") +
+      " · 截至 " + esc(through) +
+      " · 编制 " + esc(prepared) +
+      "<br>" + esc(data.status_note || "");
+  }
+
+  function countBag(c) {
+    // 候选 / 事件 / 族 / 已读 — four separate honest metrics
+    const candidates = (c.candidates_total != null) ? c.candidates_total
+      : (c.month_family_entries != null ? c.month_family_entries : 0);
+    // Prefer publication_events for 「事件」; events_reviewed is this team's read count
+    const events = (c.publication_events != null) ? c.publication_events
+      : (c.events_core != null ? c.events_core : 0);
+    const families = (c.unique_families != null) ? c.unique_families
+      : (c.families_core != null ? c.families_core : 0);
+    const read = (c.actually_read != null) ? c.actually_read
+      : (c.events_reviewed != null ? c.events_reviewed : 0);
+    return { candidates: candidates, events: events, families: families, read: read };
+  }
+
+  function renderBanner(data) {
+    const el = $("#banner");
+    if (!el) return;
+    const c = data.counts || {};
+    const bag = countBag(c);
+    el.innerHTML =
+      "<div class=\"count-bar\" role=\"group\" aria-label=\"诚实计数：候选 / 事件 / 族 / 已读\">" +
+      "<div class=\"count-item\"><span class=\"count-num\">" + esc(bag.candidates) + "</span><span class=\"count-label\">候选</span></div>" +
+      "<div class=\"count-item\"><span class=\"count-num\">" + esc(bag.events) + "</span><span class=\"count-label\">事件</span></div>" +
+      "<div class=\"count-item\"><span class=\"count-num\">" + esc(bag.families) + "</span><span class=\"count-label\">族</span></div>" +
+      "<div class=\"count-item\"><span class=\"count-num\">" + esc(bag.read) + "</span><span class=\"count-label\">已读</span></div>" +
+      "</div>" +
+      "<div class=\"banner-meta\">" +
+      "<strong>范围</strong> " + esc(data.scope || "") +
+      "<br><strong>排除</strong> " + esc(data.excluded_scope || "") +
+      "<br><span class=\"subtle\">辅计：核心事件 " + esc(c.events_core != null ? c.events_core : 0) +
+      " · 核心族 " + esc(c.families_core != null ? c.families_core : 0) +
+      " · 待核 " + esc(c.pending != null ? c.pending : 0) +
+      " · 关联 " + esc(c.related != null ? c.related : 0) +
+      " · 图 " + esc(c.figures != null ? c.figures : 0) + "</span>" +
+      "<br>" + esc(data.coverage_note || "") +
+      "</div>";
+  }
+
+
+  function renderTree(data) {
+    const tree = $("#tree");
+    if (!tree) return;
+    const months = data.months || [];
+    if (!months.length) {
+      tree.innerHTML = "<p class=\"month-empty\">无月份数据</p>";
+      return;
+    }
+
+    const frag = document.createDocumentFragment();
+    months.forEach((m, idx) => {
+      const details = document.createElement("details");
+      details.className = "month";
+      details.dataset.month = m.month;
+      // Do not auto-open on scroll; only open newest by default if it has content, else leave closed.
+      // Scaffold: leave all closed so empty months stay compact.
+      if (idx === 0 && (m.families || []).length > 0) details.open = true;
+
+      const summary = document.createElement("summary");
+      const count = (m.families || []).length;
+      summary.innerHTML =
+        "<span>" + esc(m.month) + "</span>" +
+        "<span class=\"month-count\">" + count + " 族" +
+        (m.event_count != null ? " · " + m.event_count + " 事件" : "") +
+        "</span>";
+      details.appendChild(summary);
+
+      const body = document.createElement("div");
+      body.className = "month-body";
+      const families = m.families || [];
+      if (!families.length) {
+        body.innerHTML =
+          "<div class=\"month-empty\">" +
+          esc(m.status || "暂无条目") +
+          (m.through_date ? " · 截至 " + esc(m.through_date) : "") +
+          "</div>";
+      } else {
+        families.forEach((raw) => {
+          const f = normFamily(raw, m.month);
+          const a = document.createElement("a");
+          a.className = "mini";
+          a.href = "#" + encodeURIComponent(f.id);
+          a.dataset.target = f.id;
+          a.innerHTML =
+            "<span class=\"mini-date\">" + esc(f.publication_date || "") + "</span>" +
+            "<span class=\"mini-title\">" + esc(f.title || f.publication_number || "") + "</span>" +
+            "<span class=\"mini-meta\">" + esc(f.publication_number || "") +
+            (f.applicant ? " · " + esc(f.applicant) : "") +
+            (f.scope_status ? " · " + esc(f.scope_status) : "") + "</span>" +
+            "<span class=\"mini-brief\">" + esc(f.brief || f.summary || "") + "</span>";
+          a.addEventListener("click", (e) => {
+            e.preventDefault();
+            jumpToPatent(f.id, a);
+          });
+          body.appendChild(a);
+        });
+      }
+      details.appendChild(body);
+      frag.appendChild(details);
+    });
+    tree.innerHTML = "";
+    tree.appendChild(frag);
+  }
+
+  function setActiveMini(id) {
+    document.querySelectorAll(".mini.active").forEach((n) => n.classList.remove("active"));
+    const link = document.querySelector('.mini[data-target="' + CSS.escape(id) + '"]');
+    if (link) link.classList.add("active");
+  }
+
+  function jumpToPatent(id, miniEl) {
+    const page = document.getElementById(id);
+    if (!page) return;
+    // Open only the month that owns this patent; do not touch other months' open state beyond ensuring target's month is open.
+    const monthDetails = miniEl ? miniEl.closest("details.month") : null;
+    if (monthDetails) monthDetails.open = true;
+    setActiveMini(id);
+    page.focus({ preventScroll: true });
+    page.scrollIntoView({ behavior: "smooth", block: "start" });
+    history.replaceState(null, "", "#" + encodeURIComponent(id));
+  }
+
+  function renderEvents(events) {
+    if (!events || !events.length) return "<span class=\"subtle\">—</span>";
+    let html = "<table class=\"events\"><thead><tr><th>号</th><th>日期</th><th>事件</th></tr></thead><tbody>";
+    events.forEach((ev) => {
+      const num = ev.source_url
+        ? "<a href=\"" + esc(ev.source_url) + "\" target=\"_blank\" rel=\"noopener\">" + esc(ev.number) + "</a>"
+        : esc(ev.number);
+      html += "<tr><td>" + num + "</td><td>" + esc(ev.date || "") + "</td><td>" + esc(ev.event || "") + "</td></tr>";
+    });
+    html += "</tbody></table>";
+    return html;
+  }
+
+  function renderFamilyContext(ctx) {
+    if (!ctx || !ctx.length) return "<span class=\"subtle\">—</span>";
+    return ctx.map((c) => esc(c.number) + (c.date ? " (" + esc(c.date) + ")" : "")).join("； ");
+  }
+
+  function figureFailBox(w, h, pub, figLabel, reason) {
+    const meta = [pub, figLabel].filter(Boolean).join(" · ");
+    const why = reason || "真图缺失";
+    return (
+      "<div class=\"fig-fail\" style=\"max-width:" + w + "px;aspect-ratio:" + w + "/" + h + "\" role=\"img\" " +
+      "aria-label=\"图加载失败：" + esc(why) + (meta ? " " + esc(meta) : "") + "\">" +
+      "<div class=\"fig-fail-title\">图加载失败 / " + esc(why) + "</div>" +
+      (meta ? "<div class=\"fig-fail-meta\">" + esc(meta) + "</div>" : "") +
+      "<div class=\"fig-fail-hint\">仅真实专利附图；不用 AI 生成图占位</div>" +
+      "</div>"
+    );
+  }
+
+  function renderImages(images) {
+    if (!images || !images.length) return "";
+    return images.map((img) => {
+      const w = img.width || 640;
+      const h = img.height || 480;
+      const caption =
+        img.display_caption ||
+        img.caption ||
+        [img.source_publication, img.figure_label].filter(Boolean).join(" · ");
+      const pub = img.source_publication || "";
+      const figLabel = img.figure_label || "";
+      const src = img.path || "";
+      let body;
+      if (src) {
+        body =
+          "<img data-src=\"" + esc(src) + "\" width=\"" + w + "\" height=\"" + h +
+          "\" alt=\"" + esc(caption) + "\" loading=\"lazy\" " +
+          "data-fig-pub=\"" + esc(pub) + "\" data-fig-label=\"" + esc(figLabel) + "\">";
+      } else {
+        body = figureFailBox(w, h, pub, figLabel, "真图缺失");
+      }
+      return (
+        "<figure class=\"fig" + (src ? "" : " fig--missing") + "\">" +
+        body +
+        "<figcaption>" + esc(caption) +
+        (img.source_url ? " · <a href=\"" + esc(img.source_url) + "\" target=\"_blank\" rel=\"noopener\">来源</a>" : "") +
+        "</figcaption></figure>"
+      );
+    }).join("");
+  }
+
+  function renderSources(urls) {
+    if (!urls || !urls.length) return "<span class=\"subtle\">—</span>";
+    return "<ul class=\"source-list\">" +
+      urls.map((u) => "<li><a href=\"" + esc(u) + "\" target=\"_blank\" rel=\"noopener\">" + esc(u) + "</a></li>").join("") +
+      "</ul>";
+  }
+
+  function renderPatentPage(f) {
+    const titleBlock =
+      "<span class=\"patent-title\">" + esc(f.title || "") + "</span>" +
+      (f.title_original
+        ? "<span class=\"title-translation\">" + esc(f.title_original) + "</span>"
+        : "");
+
+    return (
+      "<article class=\"patent-page\" id=\"" + esc(f.id) + "\" tabindex=\"-1\" data-month=\"" + esc(f.month || "") + "\">" +
+      "<table class=\"patent-table\">" +
+      "<tr><td colspan=\"2\" class=\"section-title\">" + titleBlock + "</td></tr>" +
+      "<tr><th>公开号</th><td>" + esc(f.publication_number || "") + "</td></tr>" +
+      "<tr><th>申请人</th><td>" + esc(f.applicant || "") + "</td></tr>" +
+      "<tr><th>公开/授权日</th><td>" + esc(f.publication_date || "") +
+      (f.category ? " · " + esc(f.category) : "") + "</td></tr>" +
+      "<tr><th>同族 / 事件</th><td>" +
+      "<div class=\"section-label\">同族关系</div>" + renderFamilyContext(f.family_context) +
+      (f.family_key ? "<div class=\"subtle\">family_key: " + esc(f.family_key) + "</div>" : "") +
+      "<div class=\"section-label\">公开/授权事件</div>" + renderEvents(f.events) +
+      (f.event_note ? "<div class=\"subtle\">" + esc(f.event_note) + "</div>" : "") +
+      "</td></tr>" +
+      "<tr><th>中文技术简介</th><td class=\"section-body\">" + text(f.summary || f.brief || "") +
+      (f.purpose ? "<div class=\"section-label\">目的</div>" + text(f.purpose) : "") +
+      (f.novelty ? "<div class=\"section-label\">要点</div>" + text(f.novelty) : "") +
+      (f.use ? "<div class=\"section-label\">用途</div>" + text(f.use) : "") +
+      "</td></tr>" +
+      "<tr><th>关键权利要求 / 实施方式</th><td class=\"section-body claim-text\">" +
+      text(f.claims || "—") + "</td></tr>" +
+      "<tr><th>相关性</th><td>" + text(f.relevance || "") +
+      (f.scope_status ? "<div class=\"subtle\">scope_status: " + esc(f.scope_status) + "</div>" : "") +
+      (f.family_completion_status ? "<div class=\"subtle\">family_completion_status: " + esc(f.family_completion_status) + "</div>" : "") +
+      (f.import_tag || f.discovery_source
+        ? "<div class=\"subtle import-tag\">来源标记：" + esc(f.import_tag || "") +
+          (f.discovery_source ? " · discovery_source=" + esc(f.discovery_source) : "") +
+          "（非本团队独立发现）</div>"
+        : "") +
+      (f.verification ? "<div class=\"subtle\">核验：" + esc(f.verification) + "</div>" : "") +
+      "</td></tr>" +
+      "<tr><th>来源链接</th><td>" + renderSources(f.source_urls) + "</td></tr>" +
+      "<tr><th>附图</th><td class=\"section-body\">" +
+      (renderImages(f.images) || "<span class=\"subtle\">无附图（不得用生成图替代）</span>") +
+      "</td></tr>" +
+      "</table></article>"
+    );
+  }
+
+  function renderContent(data) {
+    const main = $("#content");
+    if (!main) return;
+    const pages = [];
+    (data.months || []).forEach((m) => {
+      (m.families || []).forEach((raw) => pages.push(renderPatentPage(normFamily(raw, m.month))));
+    });
+    if (!pages.length) {
+      main.innerHTML =
+        "<div class=\"empty-state\">" +
+        "<p><strong>尚无专利条目</strong></p>" +
+        "<p>月份目录已就位（" + esc((data.period_start || "") + "–" + (data.period_end || "")) +
+        "）。待独立检索与 Codex 材料填入 <code>data/report.json</code> 后刷新本页。</p>" +
+        "<p>空月 ≠ 零命中。检索失败与待核须保留原因。</p>" +
+        "</div>";
+      return;
+    }
+    main.innerHTML = pages.join("");
+  }
+
+  function swapImgToFail(img, reason) {
+    const figure = img.closest("figure.fig");
+    const w = parseInt(img.getAttribute("width"), 10) || 640;
+    const h = parseInt(img.getAttribute("height"), 10) || 480;
+    const pub = img.getAttribute("data-fig-pub") || "";
+    const figLabel = img.getAttribute("data-fig-label") || "";
+    const wrap = document.createElement("div");
+    wrap.innerHTML = figureFailBox(w, h, pub, figLabel, reason || "路径损坏");
+    const box = wrap.firstChild;
+    img.replaceWith(box);
+    if (figure) figure.classList.add("fig--missing");
+  }
+
+  function initLazyImages() {
+    const imgs = document.querySelectorAll("img[data-src]");
+    if (!imgs.length) return;
+
+    function reveal(img) {
+      const src = img.getAttribute("data-src");
+      if (!src) {
+        swapImgToFail(img, "真图缺失");
+        return;
+      }
+      img.onerror = function () {
+        swapImgToFail(img, "路径损坏");
+      };
+      img.src = src;
+      img.removeAttribute("data-src");
+    }
+
+    if (!("IntersectionObserver" in window)) {
+      imgs.forEach(reveal);
+      return;
+    }
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            reveal(e.target);
+            io.unobserve(e.target);
+          }
+        });
+      },
+      { rootMargin: "600px 0px" }
+    );
+    imgs.forEach((img) => io.observe(img));
+  }
+
+
+  /**
+   * Observe patent pages for active TOC highlight.
+   * Intentionally does NOT open closed <details> months while scrolling.
+   */
+  function initScrollSpy() {
+    const pages = document.querySelectorAll(".patent-page");
+    if (!pages.length || !("IntersectionObserver" in window)) return;
+    const visible = new Map();
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) visible.set(e.target.id, e.intersectionRatio);
+          else visible.delete(e.target.id);
+        });
+        let bestId = null;
+        let bestRatio = 0;
+        visible.forEach((ratio, id) => {
+          if (ratio > bestRatio) {
+            bestRatio = ratio;
+            bestId = id;
+          }
+        });
+        if (bestId) setActiveMini(bestId);
+        // No details.open = true here — scroll must not auto-expand closed months.
+      },
+      { rootMargin: "-20% 0px -55% 0px", threshold: [0, 0.1, 0.25, 0.5] }
+    );
+    pages.forEach((p) => io.observe(p));
+  }
+
+  async function main() {
+    loadSidebarWidth();
+    initResizer();
+
+    let data;
+    try {
+      const res = await fetch("data/report.json", { cache: "no-store" });
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      data = await res.json();
+    } catch (err) {
+      $("#content").innerHTML =
+        "<div class=\"empty-state\"><p>无法加载 <code>data/report.json</code>：" +
+        esc(err.message) +
+        "</p><p>请用本地静态服务器打开（见 README），不要直接用 file://。</p></div>";
+      return;
+    }
+
+    document.title = data.browser_title || data.title || document.title;
+    renderSideMeta(data);
+    renderBanner(data);
+    renderTree(data);
+    renderContent(data);
+    initLazyImages();
+    initScrollSpy();
+
+    if (location.hash) {
+      const id = decodeURIComponent(location.hash.slice(1));
+      const mini = document.querySelector('.mini[data-target="' + CSS.escape(id) + '"]');
+      if (mini) jumpToPatent(id, mini);
+    }
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", main);
+  } else {
+    main();
+  }
+})();

@@ -1,0 +1,134 @@
+{
+  "lane": "EPI",
+  "document_type": "SAMPLE",
+  "note": "假数据样例，仅校验字段与计数口径；非真实检索结果，不得纳入报告。",
+  "handoff": "v4.2-r2",
+  "search_window": "SAMPLE-only",
+  "research_through": null,
+  "stats": {
+    "candidates": 2,
+    "publication_events": 3,
+    "unique_families": 2,
+    "actually_read": 0,
+    "fulltext_read": 0,
+    "pending": 2,
+    "core_events": 0,
+    "related": 0,
+    "excluded": 0
+  },
+  "candidate_count": 2,
+  "event_count": 3,
+  "family_count": 2,
+  "actually_read_count": 0,
+  "pending_count": 2,
+  "candidates": [
+    {
+      "sample": true,
+      "publication_id": "US99999999A1",
+      "jurisdiction": "US",
+      "event_type": "publication",
+      "event_date": "2026-10-15",
+      "month": "2026-10",
+      "application_id": "US99/999,999",
+      "priority_date": null,
+      "family_id": "SAMPLE-FAM-001",
+      "family_id_source": "sample",
+      "title_original": "[SAMPLE] Selective silicon epitaxy chamber with dual-zone gas injector",
+      "title_zh": "【样例】带双区气体喷头的选择性硅外延腔体",
+      "applicant_original": "Sample Applied Materials Demo Inc.",
+      "applicant_normalized": "SAMPLE-AMAT",
+      "scope_status": "pending",
+      "technology_tags": [
+        "epi_chamber",
+        "gas_injector",
+        "SEG"
+      ],
+      "short_preview": "【SAMPLE】双区喷头改善选择性外延均匀性（假数据）。",
+      "technical_summary": "【SAMPLE】虚构条目：腔体内侧壁喷头分区供气，用于 Si/SiGe 选择性外延。",
+      "claims_or_embodiment_basis": null,
+      "scope_reason": "标题与摘要指向 Si 选择性外延设备结构；原文未读，暂不能定核心纳入。",
+      "disposition": "pending",
+      "disposition_reason": "SAMPLE：未读权利要求与实施方式",
+      "pending_reason": "样例未执行真实检索；待核原因字段演示：原文未取得/未读",
+      "failure_or_pending_reason": "样例未执行真实检索；待核原因字段演示：原文未取得/未读",
+      "source_urls": [
+        "https://patents.google.com/patent/US99999999A1/en"
+      ],
+      "source_retrieved_at": null,
+      "source_sha256": null,
+      "actual_read_spans": [],
+      "verification_level": "bibliographic",
+      "family_completion_status": "pending",
+      "reviewer": null,
+      "reviewed_at": null,
+      "change_history": [],
+      "figures": [],
+      "search_entry": "SAMPLE-template-check",
+      "events": [
+        {
+          "publication_id": "US99999999A1",
+          "event_type": "publication",
+          "event_date": "2026-10-15",
+          "source_url": "https://patents.google.com/patent/US99999999A1/en"
+        },
+        {
+          "publication_id": "TW99999999A",
+          "event_type": "publication",
+          "event_date": "2026-10-20",
+          "source_url": "https://patents.google.com/patent/TW99999999A/zh"
+        }
+      ]
+    },
+    {
+      "sample": true,
+      "publication_id": "CN209999999A",
+      "jurisdiction": "CN",
+      "event_type": "publication",
+      "event_date": "2026-10-08",
+      "month": "2026-10",
+      "application_id": "CN202699999999.9",
+      "priority_date": null,
+      "family_id": "SAMPLE-FAM-002",
+      "family_id_source": "sample",
+      "title_original": "一种硅锗外延源气体分配盘及外延设备",
+      "title_zh": "【样例】一种硅锗外延源气体分配盘及外延设备",
+      "applicant_original": "样例北方华创演示有限公司",
+      "applicant_normalized": "SAMPLE-NAURA",
+      "scope_status": "pending",
+      "technology_tags": [
+        "epi_equipment",
+        "source_gas",
+        "SiGe"
+      ],
+      "short_preview": "【SAMPLE】源气体分配盘结构（假数据）。",
+      "technical_summary": "【SAMPLE】虚构条目：SiGe 外延腔源气体分配盘流场设计。",
+      "claims_or_embodiment_basis": null,
+      "scope_reason": "名称指向 SiGe 外延设备与源气体路径；属 EPI 设备结构候选方向，原文未核。",
+      "disposition": "pending",
+      "disposition_reason": "SAMPLE：仅书目级字段，待读原文",
+      "pending_reason": "样例：官方原文链接为占位 URL，真实检索时须替换并可访问",
+      "failure_or_pending_reason": "样例：官方原文链接为占位 URL，真实检索时须替换并可访问",
+      "source_urls": [
+        "https://patents.google.com/patent/CN209999999A/zh"
+      ],
+      "source_retrieved_at": null,
+      "source_sha256": null,
+      "actual_read_spans": [],
+      "verification_level": "bibliographic",
+      "family_completion_status": "open",
+      "reviewer": null,
+      "reviewed_at": null,
+      "change_history": [],
+      "figures": [],
+      "search_entry": "SAMPLE-template-check",
+      "events": [
+        {
+          "publication_id": "CN209999999A",
+          "event_type": "publication",
+          "event_date": "2026-10-08",
+          "source_url": "https://patents.google.com/patent/CN209999999A/zh"
+        }
+      ]
+    }
+  ]
+}
