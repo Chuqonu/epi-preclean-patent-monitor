@@ -14,5 +14,20 @@
     "US12757451B2",
     "WO2026084898A1",
     "CN122564748A"
+  ],
+  "content_gap_inclusions": [
+    {
+      "publication_id": "US20250311241A1",
+      "scope_status": "related",
+      "month": "2025-10",
+      "source": "docs/EPI-INCREMENTAL-SPRINT-gap-2026-10-20.json"
+    },
+    {
+      "publication_id": "US12757648B2",
+      "scope_status": "core",
+      "month": "2026-10",
+      "grant_only": true,
+      "source": "docs/EPI-INCREMENTAL-SPRINT-gap-2026-10-20.json"
+    }
   ]
 }

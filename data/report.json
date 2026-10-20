@@ -14,26 +14,28 @@
   "status_note": "初版：基线 + Gate③ 增量。本团队已读锁定 6（r2 ruling）。",
   "notes": [
     "本团队已读锁定 6（见 EVIDENCE-READ-RULING-COMBINED-2026-10-20-r2.json）。",
+    "本团队已读锁定 6（见 EVIDENCE-READ-RULING-COMBINED-2026-10-20-r2.json）。",
     "初版 = 基线 imported baseline + 独立检索增量（discovery_source=independent_search）。",
     "基线对照命中（US12526971B2 等）仅 confirmation，不改为独立发现。",
     "FAM-merge-hybrid-preclean：WO2026096517A1 + TW202628839A。",
     "待核队列见 pending_or_related；不入主表为新接受的 4 条。",
-    "附图仍以真实 PNG 为准；多数引用待补 local_asset_path。"
+    "附图仍以真实 PNG 为准；多数引用待补 local_asset_path。",
+    "Sprint gap A（2026-10-20）：已纳入 TEL US20250311241A1（related）与 US12757648B2（core，2026-10 授权）。"
   ],
   "counts": {
-    "candidates_total": 120,
+    "candidates_total": 122,
     "events_reviewed": 6,
-    "events_core": 148,
-    "families_core": 107,
-    "related": 0,
+    "events_core": 150,
+    "families_core": 108,
+    "related": 1,
     "pending": 4,
     "excluded": 0,
     "figures": 130,
-    "month_family_entries": 120,
-    "publication_events": 148,
-    "unique_families": 107,
+    "month_family_entries": 122,
+    "publication_events": 150,
+    "unique_families": 109,
     "actually_read": 6,
-    "unique_publication_ids": 148
+    "unique_publication_ids": 150
   },
   "search_coverage": [],
   "pending_or_related": [
@@ -128,172 +130,6 @@
       "status": "基线已导入｜当月未完结",
       "through_date": "2026-10-19",
       "families": [
-        {
-          "publication_id": "US20260304810A1",
-          "jurisdiction": "US",
-          "event_type": "publication",
-          "event_date": "2026-10-01",
-          "application_id": "US19/630,734",
-          "priority_date": "2025-04-01",
-          "family_id": "US20260304810A1",
-          "family_id_source": "reference_report",
-          "title_original": "Reduction of interface resistance between silicon nanosheets and highly doped source/drain regions in nanosheet devices",
-          "title_zh": "Si纳米片界面的刻蚀回退与掺杂外延",
-          "applicant_original": null,
-          "applicant_normalized": "ASM IP Holding B.V.",
-          "scope_status": "core",
-          "technology_tags": [
-            "epi"
-          ],
-          "short_preview": "先对 Si/SiGe 堆栈中的 Si 纳米片进行回退刻蚀，在凹口中生长掺杂材料，再形成与该材料接触的源漏外延填充。这些步骤在同一反应腔中连续完成，用于改善界面电阻。",
-          "technical_summary": "先对 Si/SiGe 堆栈中的 Si 纳米片进行回退刻蚀，在凹口中生长掺杂材料，再形成与该材料接触的源漏外延填充。这些步骤在同一反应腔中连续完成，用于改善界面电阻。",
-          "claims_or_embodiment_basis": "独立方法1要求Si/SiGe堆栈中Si纳米片凹口刻蚀、在凹口内第一次掺杂沉积、再第二次掺杂沉积形成与第一材料接触的源漏填充，且在同一反应腔内完成。19为按该刻蚀与两步沉积获得的器件主题；21为适于执行方法的反应腔主题。Cl2在从属8/9；相同温度/压力为披露实施例，不能写成独立1的必需限制。",
-          "scope_reason": "技术全文与当前权利要求已核对",
-          "source_urls": [
-            "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260304810"
-          ],
-          "source_retrieved_at": null,
-          "source_sha256": null,
-          "actual_read_spans": [],
-          "reviewer": null,
-          "reviewed_at": null,
-          "family_completion_status": "pending",
-          "figures": [
-            {
-              "source_publication_id": "US20260304810A1",
-              "figure_number": "Figs. 3A–3D",
-              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260304810",
-              "local_asset_path": "assets/figures/recovered/49bffa304669a1a82043601e23e9a25bdd457176f3d0889becd07e5515361287.webp",
-              "width": 2000,
-              "height": 983,
-              "caption": "US20260304810A1 原始专利附图，Figs. 3A–3D（原始PDF第4页）。",
-              "asset_sha256": "49bffa304669a1a82043601e23e9a25bdd457176f3d0889becd07e5515361287",
-              "source_original_sha256": "e9faf140e89d891d7b435d919b36135afc5f93980ae582da0b67b1342587c70e",
-              "source_display_sha256": "49bffa304669a1a82043601e23e9a25bdd457176f3d0889becd07e5515361287",
-              "pdf_page": 4,
-              "display_rotation": 0,
-              "source_geometry": {}
-            }
-          ],
-          "change_history": [
-            {
-              "at": "2026-10-20T17:30:00+08:00",
-              "by": "baseline-import",
-              "action": "import",
-              "detail": "Imported from Dot reference report; not this team's independent discovery."
-            }
-          ],
-          "family_events": [
-            {
-              "publication_id": "US20260304810A1",
-              "event_date": "2026-10-01",
-              "event_type": "publication",
-              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260304810",
-              "application_id": "US19/630,734"
-            }
-          ],
-          "id": "2026-10-US20260304810A1",
-          "month": "2026-10",
-          "import_tag": "imported baseline",
-          "discovery_source": "reference_report",
-          "purpose": "降低Si纳米片与高掺杂源漏区之间的界面电阻。",
-          "novelty": "在同一腔室内，依次完成 Si 纳米片回退刻蚀、凹口中的第一掺杂沉积，以及源漏的第二掺杂沉积。",
-          "use": "Si/SiGe 纳米片/GAA器件源漏外延。",
-          "event_note": null,
-          "family_context": null,
-          "verification": "技术全文与当前权利要求已核对",
-          "category": "EPI 工艺",
-          "reference_source_status": "官方当期PDF技术说明、书目及完整权利要求已核对"
-        },
-        {
-          "publication_id": "US12757647B2",
-          "jurisdiction": "US",
-          "event_type": "grant",
-          "event_date": "2026-10-06",
-          "application_id": "US18/304,125",
-          "priority_date": "2022-04-28",
-          "family_id": "88477374",
-          "family_id_source": "reference_report",
-          "title_original": "Method of selectively forming crystalline boron-doped silicon germanium on a surface",
-          "title_zh": "利用晶面差异循环生长并刻蚀SiGe:B实现底部填充",
-          "applicant_original": null,
-          "applicant_normalized": "ASM IP Holding B.V.",
-          "scope_status": "core",
-          "technology_tags": [
-            "epi"
-          ],
-          "short_preview": "在同种单晶材料的不同晶面上循环沉积SiGe:B：Si{100}表面生长外延材料，另一取向表面形成非外延材料并被刻蚀，以支持沟槽自下而上填充。",
-          "technical_summary": "在同种单晶材料的不同晶面上循环沉积SiGe:B：Si{100}表面生长外延材料，另一取向表面形成非外延材料并被刻蚀，以支持沟槽自下而上填充。",
-          "claims_or_embodiment_basis": "授权21项，唯一无引用独立权1要求同种单晶半导体材料上的第一/第二晶面；第一表面为Si{100}，第二表面含非Si{100}或垂直高指数晶面；循环选择性生长第一表面外延SiGe:B，并形成、刻蚀第二表面的非外延SiGe:B。权6为温度、权11为压力，权18为底部填充。权19引用权1用于源漏；当前授权不包含独立设备或系统权项。",
-          "scope_reason": "说明书及本次授权权项确认涉及Si或SiGe外延；不是仅凭标题或分类号收录。\n官方原件、技术全文与当前权利要求已核对",
-          "source_urls": [
-            "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12757647",
-            "https://patents.justia.com/patent/12757647"
-          ],
-          "source_retrieved_at": null,
-          "source_sha256": null,
-          "actual_read_spans": [],
-          "reviewer": null,
-          "reviewed_at": null,
-          "family_completion_status": "pending",
-          "figures": [
-            {
-              "source_publication_id": "US12757647B2",
-              "figure_number": "图4：用于晶面选择性生长的底部与侧壁表面",
-              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12757647",
-              "local_asset_path": "assets/figures/recovered/e5d5f61dac3d4b7a2f379004b3c3e15445c20416f436919f3615fb16546cb288.png",
-              "width": 1397,
-              "height": 1800,
-              "caption": "图4：用于晶面选择性生长的底部与侧壁表面；USPTO当前授权原图，PDF第6页。",
-              "asset_sha256": "e5d5f61dac3d4b7a2f379004b3c3e15445c20416f436919f3615fb16546cb288",
-              "source_original_sha256": "e5d5f61dac3d4b7a2f379004b3c3e15445c20416f436919f3615fb16546cb288",
-              "source_display_sha256": "e5d5f61dac3d4b7a2f379004b3c3e15445c20416f436919f3615fb16546cb288",
-              "pdf_page": 6,
-              "display_rotation": 0,
-              "source_geometry": {
-                "display_rotation": 0
-              }
-            }
-          ],
-          "change_history": [
-            {
-              "at": "2026-10-20T17:30:00+08:00",
-              "by": "baseline-import",
-              "action": "import",
-              "detail": "Imported from Dot reference report; not this team's independent discovery."
-            }
-          ],
-          "family_events": [
-            {
-              "publication_id": "US12757647B2",
-              "event_date": "2026-10-06",
-              "event_type": "grant",
-              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12757647",
-              "application_id": "US18/304,125"
-            }
-          ],
-          "id": "2026-10-US12757647B2",
-          "month": "2026-10",
-          "import_tag": "imported baseline",
-          "discovery_source": "reference_report",
-          "purpose": "提高SiGe:B在不同取向表面之间的生长选择性。",
-          "novelty": "当前权1明确区分Si{100}第一表面和非Si{100}/高指数第二表面，以及第二表面非外延SiGe:B的形成和去除。",
-          "use": "GAA器件源漏和三维开口SiGe:B填充。",
-          "event_note": "2026-10-15独立检索补充；属于既有申请的当期美国授权事件，不表示当期首次公开。",
-          "family_context": [
-            {
-              "number": "US20230352301A1",
-              "date": "2023-11-02"
-            },
-            {
-              "number": "US12757647B2",
-              "date": "2026-10-06"
-            }
-          ],
-          "verification": "官方原件、技术全文与当前权利要求已核对",
-          "category": "EPI 工艺与设备",
-          "reference_source_status": "2026-10-15取得USPTO当前授权原始PDF，核对首页、技术说明书和全部当前权利要求；与独立公开转载来源交叉核对书目信息。原图来自同一当前授权版本。未核查官方登记簿当前法律有效性。"
-        },
         {
           "publication_id": "US12765027B2",
           "jurisdiction": "US",
@@ -472,10 +308,234 @@
           "verification": "已阅读官方PDF第19–27页全文[0001]–[0120]及第27–28页20项当期权利要求；核对扉页、Si/SiGe源漏实施例、从属关系与真实附图。关键范围/单位及原文疑点结合PDF图片复核，非全套外部法律状态调查。",
           "category": "EPI 工艺",
           "reference_source_status": "USPTO原始PDF及全文OCR可达；全文已审阅，原文疑点显式保留。"
+        },
+        {
+          "publication_id": "US12757647B2",
+          "jurisdiction": "US",
+          "event_type": "grant",
+          "event_date": "2026-10-06",
+          "application_id": "US18/304,125",
+          "priority_date": "2022-04-28",
+          "family_id": "88477374",
+          "family_id_source": "reference_report",
+          "title_original": "Method of selectively forming crystalline boron-doped silicon germanium on a surface",
+          "title_zh": "利用晶面差异循环生长并刻蚀SiGe:B实现底部填充",
+          "applicant_original": null,
+          "applicant_normalized": "ASM IP Holding B.V.",
+          "scope_status": "core",
+          "technology_tags": [
+            "epi"
+          ],
+          "short_preview": "在同种单晶材料的不同晶面上循环沉积SiGe:B：Si{100}表面生长外延材料，另一取向表面形成非外延材料并被刻蚀，以支持沟槽自下而上填充。",
+          "technical_summary": "在同种单晶材料的不同晶面上循环沉积SiGe:B：Si{100}表面生长外延材料，另一取向表面形成非外延材料并被刻蚀，以支持沟槽自下而上填充。",
+          "claims_or_embodiment_basis": "授权21项，唯一无引用独立权1要求同种单晶半导体材料上的第一/第二晶面；第一表面为Si{100}，第二表面含非Si{100}或垂直高指数晶面；循环选择性生长第一表面外延SiGe:B，并形成、刻蚀第二表面的非外延SiGe:B。权6为温度、权11为压力，权18为底部填充。权19引用权1用于源漏；当前授权不包含独立设备或系统权项。",
+          "scope_reason": "说明书及本次授权权项确认涉及Si或SiGe外延；不是仅凭标题或分类号收录。\n官方原件、技术全文与当前权利要求已核对",
+          "source_urls": [
+            "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12757647",
+            "https://patents.justia.com/patent/12757647"
+          ],
+          "source_retrieved_at": null,
+          "source_sha256": null,
+          "actual_read_spans": [],
+          "reviewer": null,
+          "reviewed_at": null,
+          "family_completion_status": "pending",
+          "figures": [
+            {
+              "source_publication_id": "US12757647B2",
+              "figure_number": "图4：用于晶面选择性生长的底部与侧壁表面",
+              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12757647",
+              "local_asset_path": "assets/figures/recovered/e5d5f61dac3d4b7a2f379004b3c3e15445c20416f436919f3615fb16546cb288.png",
+              "width": 1397,
+              "height": 1800,
+              "caption": "图4：用于晶面选择性生长的底部与侧壁表面；USPTO当前授权原图，PDF第6页。",
+              "asset_sha256": "e5d5f61dac3d4b7a2f379004b3c3e15445c20416f436919f3615fb16546cb288",
+              "source_original_sha256": "e5d5f61dac3d4b7a2f379004b3c3e15445c20416f436919f3615fb16546cb288",
+              "source_display_sha256": "e5d5f61dac3d4b7a2f379004b3c3e15445c20416f436919f3615fb16546cb288",
+              "pdf_page": 6,
+              "display_rotation": 0,
+              "source_geometry": {
+                "display_rotation": 0
+              }
+            }
+          ],
+          "change_history": [
+            {
+              "at": "2026-10-20T17:30:00+08:00",
+              "by": "baseline-import",
+              "action": "import",
+              "detail": "Imported from Dot reference report; not this team's independent discovery."
+            }
+          ],
+          "family_events": [
+            {
+              "publication_id": "US12757647B2",
+              "event_date": "2026-10-06",
+              "event_type": "grant",
+              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12757647",
+              "application_id": "US18/304,125"
+            }
+          ],
+          "id": "2026-10-US12757647B2",
+          "month": "2026-10",
+          "import_tag": "imported baseline",
+          "discovery_source": "reference_report",
+          "purpose": "提高SiGe:B在不同取向表面之间的生长选择性。",
+          "novelty": "当前权1明确区分Si{100}第一表面和非Si{100}/高指数第二表面，以及第二表面非外延SiGe:B的形成和去除。",
+          "use": "GAA器件源漏和三维开口SiGe:B填充。",
+          "event_note": "2026-10-15独立检索补充；属于既有申请的当期美国授权事件，不表示当期首次公开。",
+          "family_context": [
+            {
+              "number": "US20230352301A1",
+              "date": "2023-11-02"
+            },
+            {
+              "number": "US12757647B2",
+              "date": "2026-10-06"
+            }
+          ],
+          "verification": "官方原件、技术全文与当前权利要求已核对",
+          "category": "EPI 工艺与设备",
+          "reference_source_status": "2026-10-15取得USPTO当前授权原始PDF，核对首页、技术说明书和全部当前权利要求；与独立公开转载来源交叉核对书目信息。原图来自同一当前授权版本。未核查官方登记簿当前法律有效性。"
+        },
+        {
+          "publication_id": "US12757648B2",
+          "jurisdiction": "US",
+          "event_type": "grant",
+          "event_date": "2026-10-06",
+          "application_id": null,
+          "priority_date": null,
+          "family_id": "US12757648B2",
+          "family_id_source": "sprint_gap_tel",
+          "title_original": "Substrate processing method and substrate processing apparatus",
+          "title_zh": "基板处理方法及基板处理装置（氧化物去除、Ge 预清洗与 SiGe 外延）",
+          "applicant_original": null,
+          "applicant_normalized": "Tokyo Electron Limited",
+          "scope_status": "core",
+          "technology_tags": [
+            "epi",
+            "preclean"
+          ],
+          "short_preview": "HF/碱性气体去除氧化膜、氢热处理、Ge 稀释气预清洗后 SiGe（及可选 Si）外延生长。",
+          "technical_summary": "HF/碱性气体去除氧化膜、氢热处理、Ge 稀释气预清洗后 SiGe（及可选 Si）外延生长。",
+          "claims_or_embodiment_basis": "独立方法权利要求：氧化物去除 → 氢热处理 → Ge 稀释氢气预清洗 → SiGe 外延；从属项限定 Ge 源、温度与可选 Si 外延层。",
+          "scope_reason": "Sprint gap A：2026-10 授权事件（仅当期 B2）；TEL SiGe 外延前预清洗，纳入 core。",
+          "source_urls": [
+            "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12757648",
+            "https://patents.google.com/patent/US12757648B2/en"
+          ],
+          "source_retrieved_at": null,
+          "source_sha256": null,
+          "actual_read_spans": [],
+          "reviewer": null,
+          "reviewed_at": null,
+          "family_completion_status": "open",
+          "figures": [],
+          "change_history": [
+            {
+              "at": "2026-10-20T10:37:42Z",
+              "by": "sprint-gap-a",
+              "action": "content_add",
+              "detail": "EVIDENCE-SPRINT-A / EPI-INCREMENTAL-SPRINT-gap"
+            }
+          ],
+          "family_events": [
+            {
+              "publication_id": "US12757648B2",
+              "event_date": "2026-10-06",
+              "event_type": "grant",
+              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12757648",
+              "application_id": null
+            }
+          ],
+          "id": "2026-10-US12757648B2",
+          "month": "2026-10",
+          "import_tag": null,
+          "discovery_source": "sprint_gap_tel",
+          "team_independent_read": false,
+          "event_note": "2026-10 授权公告（Sprint A 增量）；不伪造附图。",
+          "category": "EPI 工艺与设备"
+        },
+        {
+          "publication_id": "US20260304810A1",
+          "jurisdiction": "US",
+          "event_type": "publication",
+          "event_date": "2026-10-01",
+          "application_id": "US19/630,734",
+          "priority_date": "2025-04-01",
+          "family_id": "US20260304810A1",
+          "family_id_source": "reference_report",
+          "title_original": "Reduction of interface resistance between silicon nanosheets and highly doped source/drain regions in nanosheet devices",
+          "title_zh": "Si纳米片界面的刻蚀回退与掺杂外延",
+          "applicant_original": null,
+          "applicant_normalized": "ASM IP Holding B.V.",
+          "scope_status": "core",
+          "technology_tags": [
+            "epi"
+          ],
+          "short_preview": "先对 Si/SiGe 堆栈中的 Si 纳米片进行回退刻蚀，在凹口中生长掺杂材料，再形成与该材料接触的源漏外延填充。这些步骤在同一反应腔中连续完成，用于改善界面电阻。",
+          "technical_summary": "先对 Si/SiGe 堆栈中的 Si 纳米片进行回退刻蚀，在凹口中生长掺杂材料，再形成与该材料接触的源漏外延填充。这些步骤在同一反应腔中连续完成，用于改善界面电阻。",
+          "claims_or_embodiment_basis": "独立方法1要求Si/SiGe堆栈中Si纳米片凹口刻蚀、在凹口内第一次掺杂沉积、再第二次掺杂沉积形成与第一材料接触的源漏填充，且在同一反应腔内完成。19为按该刻蚀与两步沉积获得的器件主题；21为适于执行方法的反应腔主题。Cl2在从属8/9；相同温度/压力为披露实施例，不能写成独立1的必需限制。",
+          "scope_reason": "技术全文与当前权利要求已核对",
+          "source_urls": [
+            "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260304810"
+          ],
+          "source_retrieved_at": null,
+          "source_sha256": null,
+          "actual_read_spans": [],
+          "reviewer": null,
+          "reviewed_at": null,
+          "family_completion_status": "pending",
+          "figures": [
+            {
+              "source_publication_id": "US20260304810A1",
+              "figure_number": "Figs. 3A–3D",
+              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260304810",
+              "local_asset_path": "assets/figures/recovered/49bffa304669a1a82043601e23e9a25bdd457176f3d0889becd07e5515361287.webp",
+              "width": 2000,
+              "height": 983,
+              "caption": "US20260304810A1 原始专利附图，Figs. 3A–3D（原始PDF第4页）。",
+              "asset_sha256": "49bffa304669a1a82043601e23e9a25bdd457176f3d0889becd07e5515361287",
+              "source_original_sha256": "e9faf140e89d891d7b435d919b36135afc5f93980ae582da0b67b1342587c70e",
+              "source_display_sha256": "49bffa304669a1a82043601e23e9a25bdd457176f3d0889becd07e5515361287",
+              "pdf_page": 4,
+              "display_rotation": 0,
+              "source_geometry": {}
+            }
+          ],
+          "change_history": [
+            {
+              "at": "2026-10-20T17:30:00+08:00",
+              "by": "baseline-import",
+              "action": "import",
+              "detail": "Imported from Dot reference report; not this team's independent discovery."
+            }
+          ],
+          "family_events": [
+            {
+              "publication_id": "US20260304810A1",
+              "event_date": "2026-10-01",
+              "event_type": "publication",
+              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260304810",
+              "application_id": "US19/630,734"
+            }
+          ],
+          "id": "2026-10-US20260304810A1",
+          "month": "2026-10",
+          "import_tag": "imported baseline",
+          "discovery_source": "reference_report",
+          "purpose": "降低Si纳米片与高掺杂源漏区之间的界面电阻。",
+          "novelty": "在同一腔室内，依次完成 Si 纳米片回退刻蚀、凹口中的第一掺杂沉积，以及源漏的第二掺杂沉积。",
+          "use": "Si/SiGe 纳米片/GAA器件源漏外延。",
+          "event_note": null,
+          "family_context": null,
+          "verification": "技术全文与当前权利要求已核对",
+          "category": "EPI 工艺",
+          "reference_source_status": "官方当期PDF技术说明、书目及完整权利要求已核对"
         }
       ],
-      "family_count": 4,
-      "event_count": 4
+      "family_count": 5,
+      "event_count": 5
     },
     {
       "month": "2026-09",
@@ -9897,29 +9957,28 @@
       "through_date": "2025-10-31",
       "families": [
         {
-          "publication_id": "US20250324699A1",
-          "jurisdiction": "US",
+          "publication_id": "WO2025225316A1",
+          "jurisdiction": "WO",
           "event_type": "publication",
-          "event_date": "2025-10-16",
-          "application_id": "US18/632,863",
-          "priority_date": "2024-04-11",
-          "family_id": "97305113",
+          "event_date": "2025-10-30",
+          "application_id": "PCT/JP2025/013571",
+          "priority_date": "2024-04-26",
+          "family_id": "97490196",
           "family_id_source": "reference_report",
-          "title_original": "Method of low-temperature n-type selective silicon epitaxy",
-          "title_zh": "以砷／锑掺杂硅盖层拓宽低温选择性外延窗口",
+          "title_original": "Ge-containing substrate, and method for manufacturing Ge-containing substrate",
+          "title_zh": "在SiGe生长前加入碳掺杂硅外延过渡层",
           "applicant_original": null,
-          "applicant_normalized": "Applied Materials, Inc.",
+          "applicant_normalized": "Shin-Etsu Handotai Co., Ltd.",
           "scope_status": "core",
           "technology_tags": [
             "epi"
           ],
-          "short_preview": "在磷掺杂硅外延层上加入砷或锑掺杂盖层，再进行选择性刻蚀，使介质表面的非晶沉积物更易去除。",
-          "technical_summary": "在磷掺杂硅外延层上加入砷或锑掺杂盖层，再进行选择性刻蚀，使介质表面的非晶沉积物更易去除。",
-          "claims_or_embodiment_basis": "独立权1：依次形成含第一n型掺杂剂的硅层、含不同第二n型掺杂剂的硅盖层，再选择性去除两层的非晶部分并保留外延部分。权2限定P，权3限定As／Sb；从属权7限定低于约500°C、10–50 Torr。独立权10为交替两种掺杂硅外延层结构；独立权14为执行该工艺的处理系统。",
+          "short_preview": "在硅衬底与SiGe层之间形成碳掺杂单晶硅过渡层，尝试以连续外延取代剥离和键合步骤。",
+          "technical_summary": "在硅衬底与SiGe层之间形成碳掺杂单晶硅过渡层，尝试以连续外延取代剥离和键合步骤。",
+          "claims_or_embodiment_basis": "独立权1为Si衬底／碳掺杂Si外延层／SixGe1-x层（0≤x<1）结构；独立权6为先外延碳掺杂Si、再生长Ge含有层的方法。从属权项限定C浓度1×10^20–4×10^21或4×10^20–8×10^20 atoms/cm³，以及700–900°C或730–750°C生长温度；最终层可为SiGe或Ge。",
           "scope_reason": "Substantive Si/SiGe epitaxy process or equipment\n公开事件、技术全文及权项已核对",
           "source_urls": [
-            "https://patents.google.com/patent/US20250324699A1/en",
-            "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20250324699"
+            "https://patents.google.com/patent/WO2025225316A1/en"
           ],
           "source_retrieved_at": null,
           "source_sha256": null,
@@ -9929,32 +9988,36 @@
           "family_completion_status": "pending",
           "figures": [
             {
-              "source_publication_id": "US20250324699A1",
-              "figure_number": "Fig.4",
-              "source_url": "https://patents.google.com/patent/US20250324699A1/en",
-              "local_asset_path": "assets/figures/recovered/97e28a8bccb0c3636f68ea5b258c00667f38b59f721dfd68856f044cd67ea0ba.png",
-              "width": 906,
-              "height": 1202,
-              "caption": "Fig.4 · 以不同掺杂硅盖层稳定低温选择性",
-              "asset_sha256": "97e28a8bccb0c3636f68ea5b258c00667f38b59f721dfd68856f044cd67ea0ba",
-              "source_original_sha256": "97e28a8bccb0c3636f68ea5b258c00667f38b59f721dfd68856f044cd67ea0ba",
-              "source_display_sha256": "97e28a8bccb0c3636f68ea5b258c00667f38b59f721dfd68856f044cd67ea0ba",
-              "pdf_page": 4,
+              "source_publication_id": "WO2025225316A1",
+              "figure_number": "Fig.1",
+              "source_url": "https://patents.google.com/patent/WO2025225316A1/en",
+              "local_asset_path": "assets/figures/recovered/5df013ffbd66f0fdd9da8aac611321118c071897f779d4736eadb29a229816fb.png",
+              "width": 1182,
+              "height": 520,
+              "caption": "Fig.1 · 以碳掺杂硅过渡层实现顺序SiGe外延",
+              "asset_sha256": "5df013ffbd66f0fdd9da8aac611321118c071897f779d4736eadb29a229816fb",
+              "source_original_sha256": "5df013ffbd66f0fdd9da8aac611321118c071897f779d4736eadb29a229816fb",
+              "source_display_sha256": "5df013ffbd66f0fdd9da8aac611321118c071897f779d4736eadb29a229816fb",
+              "pdf_page": 17,
               "display_rotation": 0,
               "source_geometry": {
-                "original_uncropped_sha256": "6f9722041eb4310519ca559800341112f3fea3583987a1e3486d89422b21f6fd",
-                "source_dimensions": {
-                  "width": 1397,
+                "original_uncropped_dimensions": {
+                  "width": 1272,
                   "height": 1800
                 },
+                "original_uncropped_sha256": "6383362491b6e056887505d5fb21133cef452643007e6df581277d2b4b2fbce5",
+                "source_dimensions": {
+                  "width": 2066,
+                  "height": 2924
+                },
                 "crop_bbox": [
-                  233,
-                  343,
-                  1139,
-                  1545
+                  285,
+                  220,
+                  1467,
+                  740
                 ],
                 "crop_bbox_convention": "source pixel xyxy, right/bottom exclusive; no resampling",
-                "crop_source_sha256": "6f9722041eb4310519ca559800341112f3fea3583987a1e3486d89422b21f6fd"
+                "crop_source_sha256": "809f510a497473b68ab8315bb4e825fdbdf0da7331ea6708bba9a35be00095d1"
               }
             }
           ],
@@ -9968,62 +10031,54 @@
           ],
           "family_events": [
             {
-              "publication_id": "US20250324699A1",
-              "event_date": "2025-10-16",
+              "publication_id": "WO2025225316A1",
+              "event_date": "2025-10-30",
               "event_type": "publication",
-              "source_url": "https://patents.google.com/patent/US20250324699A1/en",
-              "application_id": "US18/632,863"
-            },
-            {
-              "publication_id": "WO2025216831A1",
-              "event_date": "2025-10-16",
-              "event_type": "publication",
-              "source_url": "https://patents.google.com/patent/WO2025216831A1/en",
-              "application_id": null
+              "source_url": "https://patents.google.com/patent/WO2025225316A1/en",
+              "application_id": "PCT/JP2025/013571"
             }
           ],
-          "id": "2025-10-US20250324699A1",
+          "id": "2025-10-WO2025225316A1",
           "month": "2025-10",
           "import_tag": "imported baseline",
           "discovery_source": "reference_report",
-          "purpose": "低温Si:P生长后通常需要刻蚀介质上的非晶沉积物。若磷向上方硅盖层扩散，盖层的刻蚀行为也会改变，非晶和外延材料之间的去除速率差缩小，选择性工艺窗口随之变窄。",
-          "novelty": "关键是利用不同掺杂硅盖层抑制磷扩散，同时保持n型导电性。专利将这一设计与低温沉积和选择性刻蚀结合，目的在于兼顾高掺杂、低电阻和介质表面的残留控制。",
+          "purpose": "在硅上获得低缺陷SiGe或Ge衬底，常需要缓冲、应变调节或转移工序。剥离与键合会增加步骤，也可能引入缺陷；该文献探索用可在同一外延流程内形成的中间层简化结构制备。",
+          "novelty": "核心是碳掺杂Si外延中间层，而不是SiC功率材料外延。图1中的硅衬底2、中间层3和含Ge层4清楚表达了两步生长关系；SiGe是该含Ge层范围内的具体选择。",
           "use": "硅或硅锗外延工艺与设备",
           "event_note": "按公开／授权公告日期计入2025-10；申请、优先权、缴费及其他法律事件不计作公开。",
           "family_context": [
             {
-              "number": "TW202548892A",
-              "date": "2025-12-16"
+              "number": "JP2025167643A",
+              "date": "2025-11-07"
             }
           ],
           "verification": "公开事件、技术全文及权项已核对",
           "category": "Si / SiGe 外延",
-          "reference_source_status": "当前USPTO原始PDF的完整权利要求、所选附图及引用数值已核对；其他同族公开事件不自动沿用本版本权项。"
+          "reference_source_status": "Google Patents公开事件与全文交叉核对；原始WO PDF权利要求和所选附图已逐页核对。"
         },
         {
-          "publication_id": "US12444605B2",
-          "jurisdiction": "US",
-          "event_type": "grant",
-          "event_date": "2025-10-14",
-          "application_id": "US17/573,748",
-          "priority_date": "2022-01-12",
-          "family_id": "87068944",
+          "publication_id": "WO2025222891A1",
+          "jurisdiction": "WO",
+          "event_type": "publication",
+          "event_date": "2025-10-30",
+          "application_id": "PCT/CN2024/139550",
+          "priority_date": "2024-04-25",
+          "family_id": "92004055",
           "family_id_source": "reference_report",
-          "title_original": "Epitaxial methods including a haloborane formula for growing boron-containing structures having increased boron concentrations",
-          "title_zh": "BCl3预暴露与共流实现高硼选择性Si／SiGe外延",
+          "title_original": "Base, device and method for epitaxial growth of silicon wafer, and epitaxial silicon wafer",
+          "title_zh": "用带凹坑的扇形周缘补偿硅外延晶向差异",
           "applicant_original": null,
-          "applicant_normalized": "Applied Materials, Inc.",
+          "applicant_normalized": "Xi’an ESWIN / Xinsemi Material Technology",
           "scope_status": "core",
           "technology_tags": [
             "epi"
           ],
-          "short_preview": "先用BCl3暴露晶体和介质共存的表面，再引入硅／锗前驱物，兼顾硼掺杂与选择性生长。",
-          "technical_summary": "先用BCl3暴露晶体和介质共存的表面，再引入硅／锗前驱物，兼顾硼掺杂与选择性生长。",
-          "claims_or_embodiment_basis": "授权独立权1限定先向衬底暴露BCl3，再引入含IV族元素的第二气体；BCl3流量1–100 sccm、温度≥300°C、选择性外延速率≥100 Å/min、硼浓度≥5×10^20 atoms/cm³。权5具体限定Si／Ge。独立权6限定Si／Ge晶体、300–700°C及H2／N2载气。独立权11同样限定BCl3先暴露后与IV族气体共流，前后硼气体相同、流量1–100 sccm、300–700°C、速率≥100 Å/min、硼浓度≥5×10^20 atoms/cm³。",
+          "short_preview": "把硅片<100>方向对准带阵列凹坑的基座周缘扇区，增加对应区域供气以改善边缘平坦度。",
+          "technical_summary": "把硅片<100>方向对准带阵列凹坑的基座周缘扇区，增加对应区域供气以改善边缘平坦度。",
+          "claims_or_embodiment_basis": "独立权1：圆盘承载部外延伸的环形周缘设置均布、间隔的扇环形沟槽区，各区有阵列凹坑。权2–4限定40°–60°、四区及凹坑尺寸。权5为含该基座的上下分腔设备；权6使Si片<100>方向对准沟槽轴线，并使该区硅源流量高于其余周缘；权9为按该方法制得的外延片。 权9另限定外延层≤6µm时最大ESFQR≤57.1nm；权10从属于9，3–4µm对应23–33.9nm，4–6µm对应37.4–57.1nm。",
           "scope_reason": "Substantive Si/SiGe epitaxy process or equipment\n公开事件、技术全文及权项已核对",
           "source_urls": [
-            "https://patents.google.com/patent/US12444605B2/en",
-            "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12444605"
+            "https://patents.google.com/patent/WO2025222891A1/en"
           ],
           "source_retrieved_at": null,
           "source_sha256": null,
@@ -10033,32 +10088,36 @@
           "family_completion_status": "pending",
           "figures": [
             {
-              "source_publication_id": "US12444605B2",
-              "figure_number": "Fig.1B",
-              "source_url": "https://patents.google.com/patent/US12444605B2/en",
-              "local_asset_path": "assets/figures/recovered/c1a584c978d00bd5b8a7326333f132cbf30a816df1ed9d501d46330524aa48fc.png",
-              "width": 830,
-              "height": 1011,
-              "caption": "Fig.1B · BCl3预处理配合高硼选择性外延",
-              "asset_sha256": "c1a584c978d00bd5b8a7326333f132cbf30a816df1ed9d501d46330524aa48fc",
-              "source_original_sha256": "c1a584c978d00bd5b8a7326333f132cbf30a816df1ed9d501d46330524aa48fc",
-              "source_display_sha256": "c1a584c978d00bd5b8a7326333f132cbf30a816df1ed9d501d46330524aa48fc",
-              "pdf_page": 4,
+              "source_publication_id": "WO2025222891A1",
+              "figure_number": "Fig.7/8",
+              "source_url": "https://patents.google.com/patent/WO2025222891A1/en",
+              "local_asset_path": "assets/figures/recovered/812fc1b90254d632e925c311f54c6018508ccf0c87ca21da1a6a81ff0ed5073e.png",
+              "width": 1161,
+              "height": 2189,
+              "caption": "Fig.7/8 · 按晶向布置凹坑周缘调节外延气流",
+              "asset_sha256": "812fc1b90254d632e925c311f54c6018508ccf0c87ca21da1a6a81ff0ed5073e",
+              "source_original_sha256": "812fc1b90254d632e925c311f54c6018508ccf0c87ca21da1a6a81ff0ed5073e",
+              "source_display_sha256": "812fc1b90254d632e925c311f54c6018508ccf0c87ca21da1a6a81ff0ed5073e",
+              "pdf_page": 20,
               "display_rotation": 0,
               "source_geometry": {
-                "original_uncropped_sha256": "c918f2735630197871cae51263f0c2ff00c1cb09f3c5e042ff1aaa15a1ae916e",
-                "source_dimensions": {
-                  "width": 1397,
+                "original_uncropped_dimensions": {
+                  "width": 1272,
                   "height": 1800
                 },
+                "original_uncropped_sha256": "28896f32866a6b99c5120ab33115d940174ee202294658255cad9e8c1781f04c",
+                "source_dimensions": {
+                  "width": 2066,
+                  "height": 2924
+                },
                 "crop_bbox": [
-                  271,
-                  439,
-                  1101,
-                  1450
+                  489,
+                  490,
+                  1650,
+                  2679
                 ],
                 "crop_bbox_convention": "source pixel xyxy, right/bottom exclusive; no resampling",
-                "crop_source_sha256": "c918f2735630197871cae51263f0c2ff00c1cb09f3c5e042ff1aaa15a1ae916e"
+                "crop_source_sha256": "774b5b1f3a21955cacb36e535d4f35ca313630058e00a235160e1ff2511f7db2"
               }
             }
           ],
@@ -10072,38 +10131,38 @@
           ],
           "family_events": [
             {
-              "publication_id": "US12444605B2",
-              "event_date": "2025-10-14",
-              "event_type": "grant",
-              "source_url": "https://patents.google.com/patent/US12444605B2/en",
-              "application_id": "US17/573,748"
+              "publication_id": "WO2025222891A1",
+              "event_date": "2025-10-30",
+              "event_type": "publication",
+              "source_url": "https://patents.google.com/patent/WO2025222891A1/en",
+              "application_id": "PCT/CN2024/139550"
             }
           ],
-          "id": "2025-10-US12444605B2",
+          "id": "2025-10-WO2025222891A1",
           "month": "2025-10",
           "import_tag": "imported baseline",
           "discovery_source": "reference_report",
-          "purpose": "高硼源漏外延希望同时获得较高生长速率、较高掺杂浓度和介质选择性。不同硼源可能导致介质上的寄生沉积或限制掺杂，因此前驱物类型及引入顺序成为关键变量。",
-          "novelty": "这里的技术重点是硼卤化物预暴露及随后共流，而不只是给常规SiGe外延增加硼源。说明书讨论介质表面钝化与选择性，有助于把掺杂和寄生生长控制放在同一工艺步骤内考虑。",
+          "purpose": "硅片不同晶向上的外延生长速率并不完全相同，这会造成随周向变化的边缘厚度和平坦度。仅调节总体供气或平均温度，未必能补偿与晶向绑定的四重分布。",
+          "novelty": "基座几何与晶圆方位需要配合：凹坑区提供局部气流差异，晶向定位决定补偿作用落在哪个区域。权项还覆盖相应设备和外延方法，重点是边缘均匀性而非新型外延前驱物。",
           "use": "硅或硅锗外延工艺与设备",
           "event_note": "按公开／授权公告日期计入2025-10；申请、优先权、缴费及其他法律事件不计作公开。",
           "family_context": [
             {
-              "number": "US20230223257A1",
-              "date": "2023-07-13"
+              "number": "CN118407127A",
+              "date": "2024-07-30"
             },
             {
-              "number": "WO2023136860A1",
-              "date": "2023-07-20"
+              "number": "TW202523924A",
+              "date": null
             },
             {
-              "number": "TW202328519A",
-              "date": "2023-07-16"
+              "number": "KR20260008198A",
+              "date": null
             }
           ],
           "verification": "公开事件、技术全文及权项已核对",
           "category": "Si / SiGe 外延",
-          "reference_source_status": "当前USPTO原始PDF的完整权利要求、所选附图及引用数值已核对；其他同族公开事件不自动沿用本版本权项。"
+          "reference_source_status": "Google Patents公开事件与全文交叉核对；原始WO PDF权利要求和所选附图已逐页核对。"
         },
         {
           "publication_id": "US12454769B2",
@@ -10307,108 +10366,6 @@
           "reference_source_status": "当前USPTO原始PDF的完整权利要求、所选附图及引用数值已核对；其他同族公开事件不自动沿用本版本权项。"
         },
         {
-          "publication_id": "WO2025204274A1",
-          "jurisdiction": "WO",
-          "event_type": "publication",
-          "event_date": "2025-10-02",
-          "application_id": "PCT/JP2025/005254",
-          "priority_date": "2024-03-29",
-          "family_id": "97216439",
-          "family_id_source": "reference_report",
-          "title_original": "Method for manufacturing epitaxial wafer",
-          "title_zh": "以氧原子层和低温硅外延构建近表面吸杂层",
-          "applicant_original": null,
-          "applicant_normalized": "Shin-Etsu Handotai Co., Ltd.",
-          "scope_status": "core",
-          "technology_tags": [
-            "epi"
-          ],
-          "short_preview": "清洗形成受控氧原子层后进行硅气相外延，可重复叠层，把吸杂位置放到更接近器件的区域。",
-          "technical_summary": "清洗形成受控氧原子层后进行硅气相外延，可重复叠层，把吸杂位置放到更接近器件的区域。",
-          "claims_or_embodiment_basis": "独立权1要求HF去自然氧化层、含H2O2清洗形成氧原子层、随后在其上气相外延单晶Si。权2不再减薄氧层；权3 pH 4–7；权4氧面浓度≤1×10^15 atoms/cm²；权5外延450–800°C；权7重复氧层形成与外延。",
-          "scope_reason": "Substantive Si/SiGe epitaxy process or equipment\n公开事件、技术全文及权项已核对",
-          "source_urls": [
-            "https://patents.google.com/patent/WO2025204274A1/en"
-          ],
-          "source_retrieved_at": null,
-          "source_sha256": null,
-          "actual_read_spans": [],
-          "reviewer": null,
-          "reviewed_at": null,
-          "family_completion_status": "pending",
-          "figures": [
-            {
-              "source_publication_id": "WO2025204274A1",
-              "figure_number": "Fig.1/2/3",
-              "source_url": "https://patents.google.com/patent/WO2025204274A1/en",
-              "local_asset_path": "assets/figures/recovered/488d0c0e48bd7a19188425590fcd67fd6e9b173903e3b9ebf6a75ed392a8946f.png",
-              "width": 1420,
-              "height": 2245,
-              "caption": "Fig.1/2/3 · 氧原子层与单晶硅外延交替构建吸杂结构",
-              "asset_sha256": "488d0c0e48bd7a19188425590fcd67fd6e9b173903e3b9ebf6a75ed392a8946f",
-              "source_original_sha256": "488d0c0e48bd7a19188425590fcd67fd6e9b173903e3b9ebf6a75ed392a8946f",
-              "source_display_sha256": "488d0c0e48bd7a19188425590fcd67fd6e9b173903e3b9ebf6a75ed392a8946f",
-              "pdf_page": 24,
-              "display_rotation": 0,
-              "source_geometry": {
-                "original_uncropped_dimensions": {
-                  "width": 1272,
-                  "height": 1800
-                },
-                "original_uncropped_sha256": "6b045fc18b462228b8951d5069ed211eb17d0f29c5f61407470b5974bba71169",
-                "source_dimensions": {
-                  "width": 2066,
-                  "height": 2924
-                },
-                "crop_bbox": [
-                  285,
-                  220,
-                  1705,
-                  2465
-                ],
-                "crop_bbox_convention": "source pixel xyxy, right/bottom exclusive; no resampling",
-                "crop_source_sha256": "f0cff10c92cfda51045e617575d8543625c348f145d2cc3d1c7c862193987f70"
-              }
-            }
-          ],
-          "change_history": [
-            {
-              "at": "2026-10-20T17:30:00+08:00",
-              "by": "baseline-import",
-              "action": "import",
-              "detail": "Imported from Dot reference report; not this team's independent discovery."
-            }
-          ],
-          "family_events": [
-            {
-              "publication_id": "WO2025204274A1",
-              "event_date": "2025-10-02",
-              "event_type": "publication",
-              "source_url": "https://patents.google.com/patent/WO2025204274A1/en",
-              "application_id": "PCT/JP2025/005254"
-            },
-            {
-              "publication_id": "JP2025153336A",
-              "event_date": "2025-10-10",
-              "event_type": "publication",
-              "source_url": "https://patents.google.com/patent/JP2025153336A/en",
-              "application_id": null
-            }
-          ],
-          "id": "2025-10-WO2025204274A1",
-          "month": "2025-10",
-          "import_tag": "imported baseline",
-          "discovery_source": "reference_report",
-          "purpose": "较低的后续工艺温度可能限制金属杂质向远处吸杂区扩散。该方案希望在器件附近保留氧相关吸杂位点，同时避免过厚氧化层破坏其上的单晶硅外延质量。",
-          "novelty": "纳入理由是权1明确包含单晶硅气相外延，权7进一步限定氧层／外延层重复构建，技术对象为外延吸杂结构，不是独立湿法清洗。氧层覆盖量与外延可成核性之间的平衡是工程重点。",
-          "use": "硅或硅锗外延工艺与设备",
-          "event_note": "按公开／授权公告日期计入2025-10；申请、优先权、缴费及其他法律事件不计作公开。",
-          "family_context": null,
-          "verification": "公开事件、技术全文及权项已核对",
-          "category": "Si / SiGe 外延",
-          "reference_source_status": "Google Patents公开事件与全文交叉核对；原始WO PDF权利要求和所选附图已逐页核对。"
-        },
-        {
           "publication_id": "WO2025220436A1",
           "jurisdiction": "WO",
           "event_type": "publication",
@@ -10509,214 +10466,6 @@
             {
               "number": "TW202546288A",
               "date": "2025-12-01"
-            }
-          ],
-          "verification": "公开事件、技术全文及权项已核对",
-          "category": "Si / SiGe 外延",
-          "reference_source_status": "Google Patents公开事件与全文交叉核对；原始WO PDF权利要求和所选附图已逐页核对。"
-        },
-        {
-          "publication_id": "WO2025225316A1",
-          "jurisdiction": "WO",
-          "event_type": "publication",
-          "event_date": "2025-10-30",
-          "application_id": "PCT/JP2025/013571",
-          "priority_date": "2024-04-26",
-          "family_id": "97490196",
-          "family_id_source": "reference_report",
-          "title_original": "Ge-containing substrate, and method for manufacturing Ge-containing substrate",
-          "title_zh": "在SiGe生长前加入碳掺杂硅外延过渡层",
-          "applicant_original": null,
-          "applicant_normalized": "Shin-Etsu Handotai Co., Ltd.",
-          "scope_status": "core",
-          "technology_tags": [
-            "epi"
-          ],
-          "short_preview": "在硅衬底与SiGe层之间形成碳掺杂单晶硅过渡层，尝试以连续外延取代剥离和键合步骤。",
-          "technical_summary": "在硅衬底与SiGe层之间形成碳掺杂单晶硅过渡层，尝试以连续外延取代剥离和键合步骤。",
-          "claims_or_embodiment_basis": "独立权1为Si衬底／碳掺杂Si外延层／SixGe1-x层（0≤x<1）结构；独立权6为先外延碳掺杂Si、再生长Ge含有层的方法。从属权项限定C浓度1×10^20–4×10^21或4×10^20–8×10^20 atoms/cm³，以及700–900°C或730–750°C生长温度；最终层可为SiGe或Ge。",
-          "scope_reason": "Substantive Si/SiGe epitaxy process or equipment\n公开事件、技术全文及权项已核对",
-          "source_urls": [
-            "https://patents.google.com/patent/WO2025225316A1/en"
-          ],
-          "source_retrieved_at": null,
-          "source_sha256": null,
-          "actual_read_spans": [],
-          "reviewer": null,
-          "reviewed_at": null,
-          "family_completion_status": "pending",
-          "figures": [
-            {
-              "source_publication_id": "WO2025225316A1",
-              "figure_number": "Fig.1",
-              "source_url": "https://patents.google.com/patent/WO2025225316A1/en",
-              "local_asset_path": "assets/figures/recovered/5df013ffbd66f0fdd9da8aac611321118c071897f779d4736eadb29a229816fb.png",
-              "width": 1182,
-              "height": 520,
-              "caption": "Fig.1 · 以碳掺杂硅过渡层实现顺序SiGe外延",
-              "asset_sha256": "5df013ffbd66f0fdd9da8aac611321118c071897f779d4736eadb29a229816fb",
-              "source_original_sha256": "5df013ffbd66f0fdd9da8aac611321118c071897f779d4736eadb29a229816fb",
-              "source_display_sha256": "5df013ffbd66f0fdd9da8aac611321118c071897f779d4736eadb29a229816fb",
-              "pdf_page": 17,
-              "display_rotation": 0,
-              "source_geometry": {
-                "original_uncropped_dimensions": {
-                  "width": 1272,
-                  "height": 1800
-                },
-                "original_uncropped_sha256": "6383362491b6e056887505d5fb21133cef452643007e6df581277d2b4b2fbce5",
-                "source_dimensions": {
-                  "width": 2066,
-                  "height": 2924
-                },
-                "crop_bbox": [
-                  285,
-                  220,
-                  1467,
-                  740
-                ],
-                "crop_bbox_convention": "source pixel xyxy, right/bottom exclusive; no resampling",
-                "crop_source_sha256": "809f510a497473b68ab8315bb4e825fdbdf0da7331ea6708bba9a35be00095d1"
-              }
-            }
-          ],
-          "change_history": [
-            {
-              "at": "2026-10-20T17:30:00+08:00",
-              "by": "baseline-import",
-              "action": "import",
-              "detail": "Imported from Dot reference report; not this team's independent discovery."
-            }
-          ],
-          "family_events": [
-            {
-              "publication_id": "WO2025225316A1",
-              "event_date": "2025-10-30",
-              "event_type": "publication",
-              "source_url": "https://patents.google.com/patent/WO2025225316A1/en",
-              "application_id": "PCT/JP2025/013571"
-            }
-          ],
-          "id": "2025-10-WO2025225316A1",
-          "month": "2025-10",
-          "import_tag": "imported baseline",
-          "discovery_source": "reference_report",
-          "purpose": "在硅上获得低缺陷SiGe或Ge衬底，常需要缓冲、应变调节或转移工序。剥离与键合会增加步骤，也可能引入缺陷；该文献探索用可在同一外延流程内形成的中间层简化结构制备。",
-          "novelty": "核心是碳掺杂Si外延中间层，而不是SiC功率材料外延。图1中的硅衬底2、中间层3和含Ge层4清楚表达了两步生长关系；SiGe是该含Ge层范围内的具体选择。",
-          "use": "硅或硅锗外延工艺与设备",
-          "event_note": "按公开／授权公告日期计入2025-10；申请、优先权、缴费及其他法律事件不计作公开。",
-          "family_context": [
-            {
-              "number": "JP2025167643A",
-              "date": "2025-11-07"
-            }
-          ],
-          "verification": "公开事件、技术全文及权项已核对",
-          "category": "Si / SiGe 外延",
-          "reference_source_status": "Google Patents公开事件与全文交叉核对；原始WO PDF权利要求和所选附图已逐页核对。"
-        },
-        {
-          "publication_id": "WO2025222891A1",
-          "jurisdiction": "WO",
-          "event_type": "publication",
-          "event_date": "2025-10-30",
-          "application_id": "PCT/CN2024/139550",
-          "priority_date": "2024-04-25",
-          "family_id": "92004055",
-          "family_id_source": "reference_report",
-          "title_original": "Base, device and method for epitaxial growth of silicon wafer, and epitaxial silicon wafer",
-          "title_zh": "用带凹坑的扇形周缘补偿硅外延晶向差异",
-          "applicant_original": null,
-          "applicant_normalized": "Xi’an ESWIN / Xinsemi Material Technology",
-          "scope_status": "core",
-          "technology_tags": [
-            "epi"
-          ],
-          "short_preview": "把硅片<100>方向对准带阵列凹坑的基座周缘扇区，增加对应区域供气以改善边缘平坦度。",
-          "technical_summary": "把硅片<100>方向对准带阵列凹坑的基座周缘扇区，增加对应区域供气以改善边缘平坦度。",
-          "claims_or_embodiment_basis": "独立权1：圆盘承载部外延伸的环形周缘设置均布、间隔的扇环形沟槽区，各区有阵列凹坑。权2–4限定40°–60°、四区及凹坑尺寸。权5为含该基座的上下分腔设备；权6使Si片<100>方向对准沟槽轴线，并使该区硅源流量高于其余周缘；权9为按该方法制得的外延片。 权9另限定外延层≤6µm时最大ESFQR≤57.1nm；权10从属于9，3–4µm对应23–33.9nm，4–6µm对应37.4–57.1nm。",
-          "scope_reason": "Substantive Si/SiGe epitaxy process or equipment\n公开事件、技术全文及权项已核对",
-          "source_urls": [
-            "https://patents.google.com/patent/WO2025222891A1/en"
-          ],
-          "source_retrieved_at": null,
-          "source_sha256": null,
-          "actual_read_spans": [],
-          "reviewer": null,
-          "reviewed_at": null,
-          "family_completion_status": "pending",
-          "figures": [
-            {
-              "source_publication_id": "WO2025222891A1",
-              "figure_number": "Fig.7/8",
-              "source_url": "https://patents.google.com/patent/WO2025222891A1/en",
-              "local_asset_path": "assets/figures/recovered/812fc1b90254d632e925c311f54c6018508ccf0c87ca21da1a6a81ff0ed5073e.png",
-              "width": 1161,
-              "height": 2189,
-              "caption": "Fig.7/8 · 按晶向布置凹坑周缘调节外延气流",
-              "asset_sha256": "812fc1b90254d632e925c311f54c6018508ccf0c87ca21da1a6a81ff0ed5073e",
-              "source_original_sha256": "812fc1b90254d632e925c311f54c6018508ccf0c87ca21da1a6a81ff0ed5073e",
-              "source_display_sha256": "812fc1b90254d632e925c311f54c6018508ccf0c87ca21da1a6a81ff0ed5073e",
-              "pdf_page": 20,
-              "display_rotation": 0,
-              "source_geometry": {
-                "original_uncropped_dimensions": {
-                  "width": 1272,
-                  "height": 1800
-                },
-                "original_uncropped_sha256": "28896f32866a6b99c5120ab33115d940174ee202294658255cad9e8c1781f04c",
-                "source_dimensions": {
-                  "width": 2066,
-                  "height": 2924
-                },
-                "crop_bbox": [
-                  489,
-                  490,
-                  1650,
-                  2679
-                ],
-                "crop_bbox_convention": "source pixel xyxy, right/bottom exclusive; no resampling",
-                "crop_source_sha256": "774b5b1f3a21955cacb36e535d4f35ca313630058e00a235160e1ff2511f7db2"
-              }
-            }
-          ],
-          "change_history": [
-            {
-              "at": "2026-10-20T17:30:00+08:00",
-              "by": "baseline-import",
-              "action": "import",
-              "detail": "Imported from Dot reference report; not this team's independent discovery."
-            }
-          ],
-          "family_events": [
-            {
-              "publication_id": "WO2025222891A1",
-              "event_date": "2025-10-30",
-              "event_type": "publication",
-              "source_url": "https://patents.google.com/patent/WO2025222891A1/en",
-              "application_id": "PCT/CN2024/139550"
-            }
-          ],
-          "id": "2025-10-WO2025222891A1",
-          "month": "2025-10",
-          "import_tag": "imported baseline",
-          "discovery_source": "reference_report",
-          "purpose": "硅片不同晶向上的外延生长速率并不完全相同，这会造成随周向变化的边缘厚度和平坦度。仅调节总体供气或平均温度，未必能补偿与晶向绑定的四重分布。",
-          "novelty": "基座几何与晶圆方位需要配合：凹坑区提供局部气流差异，晶向定位决定补偿作用落在哪个区域。权项还覆盖相应设备和外延方法，重点是边缘均匀性而非新型外延前驱物。",
-          "use": "硅或硅锗外延工艺与设备",
-          "event_note": "按公开／授权公告日期计入2025-10；申请、优先权、缴费及其他法律事件不计作公开。",
-          "family_context": [
-            {
-              "number": "CN118407127A",
-              "date": "2024-07-30"
-            },
-            {
-              "number": "TW202523924A",
-              "date": null
-            },
-            {
-              "number": "KR20260008198A",
-              "date": null
             }
           ],
           "verification": "公开事件、技术全文及权项已核对",
@@ -10942,31 +10691,94 @@
           "reference_source_status": "USPTO当前原PDF24页已下载，PDF23–24页全20项权项已目视核验；PDF5页图2已核验；说明书全文使用当前Justia文本核读。"
         },
         {
-          "publication_id": "JP2025533523A",
-          "jurisdiction": "JP",
+          "publication_id": "US20250327209A1",
+          "jurisdiction": "US",
           "event_type": "publication",
-          "event_date": "2025-10-07",
-          "application_id": "JP2025517252A",
-          "priority_date": "2022-09-21",
-          "family_id": "90455087",
-          "family_id_source": "reference_report",
-          "title_original": "半導体積層およびそのプロセス",
-          "title_zh": "半导体叠层的预清洗、钝化与等离子体外延",
+          "event_date": "2025-10-23",
+          "application_id": "US19/182,248",
+          "priority_date": null,
+          "family_id": "US20250327209A1",
+          "family_id_source": "independent_search",
+          "title_original": "Systems, methods, and vessels for epitaxial depositions",
+          "title_zh": "外延沉积用的系统、方法与反应器",
           "applicant_original": null,
-          "applicant_normalized": "Lam Research Corporation",
+          "applicant_normalized": "ASM IP Holding B.V.",
           "scope_status": "core",
           "technology_tags": [
-            "preclean",
-            "chamber_clean",
             "epi"
           ],
-          "short_preview": "去除氧化物并调整表面终止状态后开展等离子体辅助叠层外延，同时安排腔室清洁以控制后续沉积环境。",
-          "technical_summary": "去除氧化物并调整表面终止状态后开展等离子体辅助叠层外延，同时安排腔室清洁以控制后续沉积环境。",
-          "claims_or_embodiment_basis": "当前日本共20项权利要求，独立项1、11、12、15、19、20。权1/11分别为不同刻蚀行为两层的能量化学种辅助重复沉积方法/装置；权12为氧化物预清洗、疏水或钝化预处理、等离子体外延及上下片前后反应器清洗；权15为交替叠层流程；权19/20为真空集成预清洗与外延系统，其中20增加独立预处理腔。权13、16限定清洗试剂或等离子体，权17限定远程等离子体。",
-          "scope_reason": "Si/SiGe外延设备、材料结构或工艺。\n当前日本原PDF权项1–20及图2A已逐项视觉核读",
+          "short_preview": "围绕外延沉积反应器与工艺集成，涉及腔体、气体输送与晶圆支撑配置，用于改善外延沉积过程控制。",
+          "technical_summary": "围绕外延沉积反应器与工艺集成，涉及腔体、气体输送与晶圆支撑配置，用于改善外延沉积过程控制。",
+          "claims_or_embodiment_basis": "证据复核 r2：独立权利要求要求外延沉积反应器/方法组合，含腔体、基座与工艺气体路径；从属项限定温度、压力与材料层序。",
+          "scope_reason": "直接涉及 Si 外延沉积硬件与工艺集成，纳入核心 EPI 设备监测。",
           "source_urls": [
-            "https://patents.google.com/patent/JP2025533523A/en",
-            "https://worldwide.espacenet.com/publicationDetails/originalDocument?CC=JP&NR=2025533523A&KC=A&FT=D&ND=&date=20251007&DB=&locale="
+            "https://patents.google.com/patent/US20250327209A1/en",
+            "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20250327209"
+          ],
+          "source_retrieved_at": "2026-10-20T10:03:49Z",
+          "source_sha256": "04d83748266705e79395aab59ed1387487518cdf71a91fd5ab6db77e0ad59c69",
+          "actual_read_spans": [
+            "USPTO 公开 PDF（sha256 见 source_sha256）：独立权利要求 1–3 与方法/反应器主题",
+            "摘要与实施方式中与腔体、气体路径、基座相关的段落（目视复核）"
+          ],
+          "reviewer": "epi-evidence-review-r2",
+          "reviewed_at": "2026-10-20",
+          "family_completion_status": "open",
+          "figures": [],
+          "change_history": [
+            {
+              "at": "2026-10-20T09:31:48Z",
+              "by": "evidence-review-r2",
+              "action": "independent_add",
+              "detail": "独立检索新纳入（非基线导入）。"
+            }
+          ],
+          "family_events": [
+            {
+              "publication_id": "US20250327209A1",
+              "event_date": "2025-10-23",
+              "event_type": "publication",
+              "source_url": "https://patents.google.com/patent/US20250327209A1/en",
+              "application_id": "US19/182,248"
+            }
+          ],
+          "id": "2025-10-US20250327209A1",
+          "month": "2025-10",
+          "import_tag": null,
+          "discovery_source": "independent_search",
+          "independent_of_ref": true,
+          "family_merge_note": null,
+          "event_note": "独立检索发现",
+          "category": "EPI 设备",
+          "team_independent_read": true,
+          "read_disposition": "team_read_claims_level",
+          "read_query": "独立 EPI 检索 Gate③ r2；纳入边界=Si 外延沉积反应器/工艺。",
+          "official_source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20250327209"
+        },
+        {
+          "publication_id": "JP7757917B2",
+          "jurisdiction": "JP",
+          "event_type": "grant",
+          "event_date": "2025-10-22",
+          "application_id": "JP2022149835A",
+          "priority_date": "2021-11-04",
+          "family_id": "SUMCO-JP2021180298-carbon-epi",
+          "family_id_source": "reference_report",
+          "title_original": "Silicon wafers and epitaxial silicon wafers",
+          "title_zh": "碳掺杂与低碳表层降低硅外延缺陷",
+          "applicant_original": null,
+          "applicant_normalized": "SUMCO Corporation",
+          "scope_status": "core",
+          "technology_tags": [
+            "epi"
+          ],
+          "short_preview": "碳掺杂硅体材料与低碳表层结合，降低后续硅外延的堆垛缺陷。",
+          "technical_summary": "碳掺杂硅体材料与低碳表层结合，降低后续硅外延的堆垛缺陷。",
+          "claims_or_embodiment_basis": "授权权1、10分别为外延硅片与硅片，要求300 mm重磷掺杂硅、规定碳含量，并具有5–15 μm低碳表层，浓度不高于厚度中心的0.9倍；同月分案权1、4不含该低碳表层限定。",
+          "scope_reason": "Si/SiGe外延设备、材料结构或工艺。\n当前原始PDF完整权项已目视核验，并核验选用原图。技术说明结合此前公开全文核读。",
+          "source_urls": [
+            "https://patents.google.com/patent/JP7757917B2/en",
+            "https://worldwide.espacenet.com/publicationDetails/originalDocument?CC=JP&NR=7757917B2&KC=B2&FT=D&ND=&date=20251022&DB=&locale="
           ],
           "source_retrieved_at": null,
           "source_sha256": null,
@@ -10976,36 +10788,36 @@
           "family_completion_status": "pending",
           "figures": [
             {
-              "source_publication_id": "JP2025533523A",
-              "figure_number": "FIG. 2A / 図2A",
-              "source_url": "https://worldwide.espacenet.com/publicationDetails/originalDocument?CC=JP&NR=2025533523A&KC=A&FT=D&ND=&date=20251007&DB=&locale=",
-              "local_asset_path": "assets/figures/recovered/71c21cf2684b40fa5569837e56ceebab06efb6841ed2ad483e3e496225325539.png",
-              "width": 1157,
-              "height": 2219,
-              "caption": "图2A · 硅与硅锗叠层的交替生长流程",
-              "asset_sha256": "71c21cf2684b40fa5569837e56ceebab06efb6841ed2ad483e3e496225325539",
-              "source_original_sha256": "71c21cf2684b40fa5569837e56ceebab06efb6841ed2ad483e3e496225325539",
-              "source_display_sha256": "71c21cf2684b40fa5569837e56ceebab06efb6841ed2ad483e3e496225325539",
-              "pdf_page": 152,
+              "source_publication_id": "JP7757917B2",
+              "figure_number": "图5(a)(b)",
+              "source_url": "https://worldwide.espacenet.com/publicationDetails/originalDocument?CC=JP&NR=7757917B2&KC=B2&FT=D&ND=&date=20251022&DB=&locale=",
+              "local_asset_path": "assets/figures/recovered/6b730a5a6d1204261b2e5da3c8bb67d9523f0805fc95e6a1825ad0a908b9fb28.png",
+              "width": 1579,
+              "height": 2422,
+              "caption": "图5(a)(b)对比位错环尺寸与密度分布；原图横轴为位错环尺寸，纵轴为位错环密度。",
+              "asset_sha256": "6b730a5a6d1204261b2e5da3c8bb67d9523f0805fc95e6a1825ad0a908b9fb28",
+              "source_original_sha256": "6b730a5a6d1204261b2e5da3c8bb67d9523f0805fc95e6a1825ad0a908b9fb28",
+              "source_display_sha256": "6b730a5a6d1204261b2e5da3c8bb67d9523f0805fc95e6a1825ad0a908b9fb28",
+              "pdf_page": 23,
               "display_rotation": 0,
               "source_geometry": {
                 "original_uncropped_dimensions": {
-                  "width": 714,
-                  "height": 1011
+                  "width": 1272,
+                  "height": 1800
                 },
-                "original_uncropped_sha256": "fdcae69bb34ac637f4624358a19fa0a0b874d66b9403fecc0263d13d815c002c",
+                "original_uncropped_sha256": "b85058c154ef09a01bdb55c987aa52a8230b133882448848efb29615ff0cd34b",
                 "source_dimensions": {
                   "width": 2066,
                   "height": 2924
                 },
                 "crop_bbox": [
-                  537,
-                  322,
-                  1694,
-                  2541
+                  234,
+                  175,
+                  1813,
+                  2597
                 ],
                 "crop_bbox_convention": "source pixel xyxy, right/bottom exclusive; no resampling",
-                "crop_source_sha256": "982b01f9fb26991d2db4d378c9511fce617ec4d2d19e3e3baaeb63d257a2202d"
+                "crop_source_sha256": "72946047213d3e6e4baef0730f6b32a6a1249a07d87a854c17b84a1fc96d9d43"
               }
             }
           ],
@@ -11019,36 +10831,37 @@
           ],
           "family_events": [
             {
-              "publication_id": "JP2025533523A",
-              "event_date": "2025-10-07",
+              "publication_id": "JP7757917B2",
+              "event_date": "2025-10-22",
+              "event_type": "grant",
+              "source_url": "https://patents.google.com/patent/JP7757917B2/en",
+              "application_id": "JP2022149835A"
+            },
+            {
+              "publication_id": "JP2025157587A",
+              "event_date": "2025-10-15",
               "event_type": "publication",
-              "source_url": "https://patents.google.com/patent/JP2025533523A/en",
-              "application_id": "JP2025517252A"
+              "source_url": "https://patents.google.com/patent/JP2025157587A/en",
+              "application_id": "JP2025128738A"
             }
           ],
-          "id": "2025-10-JP2025533523A",
+          "id": "2025-10-JP7757917B2",
           "month": "2025-10",
           "import_tag": "imported baseline",
           "discovery_source": "reference_report",
-          "purpose": "Si/SiGe交替层在较高温度下容易发生原子互扩散；降低温度又使首层成核对氧化物和表面终止更加敏感。方案把晶圆表面处理与腔体环境控制放在同一外延流程中考虑。",
-          "novelty": "预清洗、表面钝化、外延沉积和腔室清洁具有不同对象与作用，不能互相替代。图2H/2I展示独立清洗或预处理腔与外延腔的组合；工艺重点是首层界面、真空转移和多层重复过程中表面状态的稳定性。",
-          "use": "Si/SiGe外延前处理与相关集成流程",
+          "purpose": "低电阻率重磷掺杂硅中的位错环可成为外延堆垛缺陷来源。",
+          "novelty": "授权明确低碳表层深度和相对浓度；同月分案提出更宽的材料组成权项。",
+          "use": "硅外延制造",
           "event_note": null,
           "family_context": [
             {
-              "number": "WO2024064161A1",
-              "date": "2024-03-28",
-              "note": "同族英文原始PCT公开；保留为补充来源，本条主图使用日本当前原件"
-            },
-            {
-              "number": "US20260090293A1",
-              "date": "2026-03-26",
-              "note": "报告既有2026年3月记录，同族但不同权项版本"
+              "number": "JP2023070067A",
+              "date": "2023-05-18"
             }
           ],
-          "verification": "当前日本原PDF权项1–20及图2A已逐项视觉核读",
-          "category": "Preclean / EPI 工艺",
-          "reference_source_status": "EPO提供的日本当前公开原PDF共183页，首页确认2025-10-07公开、Lam申请人及PCT/US2023/033175。权利要求PDF2–5页，图2A为PDF152页。"
+          "verification": "当前原始PDF完整权项已目视核验，并核验选用原图。技术说明结合此前公开全文核读。",
+          "category": "EPI 工艺与结构",
+          "reference_source_status": "EPO提供的当前事件原始PDF；完整权项及选用附图已核对。"
         },
         {
           "publication_id": "KR20250150601A",
@@ -11154,6 +10967,321 @@
           "verification": "已核对公开文本中的相关技术段落及当前权项",
           "category": "EPI 工艺与结构",
           "reference_source_status": "当前韩国公开文本已核对；另下载同族WO原始PDF并核验图示，作为明确标注的同族替代图。"
+        },
+        {
+          "publication_id": "CN120797198A",
+          "jurisdiction": "CN",
+          "event_type": "publication",
+          "event_date": "2025-10-17",
+          "application_id": "CN202511321399.8A",
+          "priority_date": "2025-09-16",
+          "family_id": "CN202511321399.8",
+          "family_id_source": "reference_report",
+          "title_original": "一种重掺硅单晶衬底制备硅外延片的方法及形成的外延片",
+          "title_zh": "碳氧共掺杂与氢气预处理抑制硅衬底外扩散",
+          "applicant_original": null,
+          "applicant_normalized": "金瑞泓微电子(嘉兴)有限公司",
+          "scope_status": "core",
+          "technology_tags": [
+            "epi"
+          ],
+          "short_preview": "把衬底碳氧浓度设计与外延前高温氢气处理结合，利用后续形成的体内缺陷结构抑制重掺杂硅的杂质外扩散。",
+          "technical_summary": "把衬底碳氧浓度设计与外延前高温氢气处理结合，利用后续形成的体内缺陷结构抑制重掺杂硅的杂质外扩散。",
+          "claims_or_embodiment_basis": "当前中文原件共10项。权1为碳氧共掺杂重硼/重磷直拉硅衬底的S1制片、S2氢烘烤和S3硅外延方法；权2→1；权3、4→1或2。权5为执行权1–3任一方法S1/S2形成的衬底；权6为依权1–4任一方法制成的外延片，或在权5衬底上生长外延层形成的外延片；权7→6；权8→7。权9为包含权6–8任一外延片和/或权5衬底的功率器件；权10→9限定MOSFET。5、6、9为跨类别引用主题，不能当成无引用的独立项或普通同类别从属项。",
+          "scope_reason": "Si/SiGe外延设备、材料结构或工艺。\n当前原始PDF完整权项已目视核验，并核验选用原图。技术说明结合此前公开全文核读。",
+          "source_urls": [
+            "https://eureka.patsnap.com/patent/CN120797198A",
+            "https://patents.google.com/patent/WO2009075257A1/en",
+            "https://patents.google.com/patent/US20090004458A1/f",
+            "https://worldwide.espacenet.com/publicationDetails/originalDocument?CC=CN&NR=120797198A&KC=A&FT=D&ND=&date=20251017&DB=&locale="
+          ],
+          "source_retrieved_at": null,
+          "source_sha256": null,
+          "actual_read_spans": [],
+          "reviewer": null,
+          "reviewed_at": null,
+          "family_completion_status": "pending",
+          "figures": [
+            {
+              "source_publication_id": "CN120797198A",
+              "figure_number": "图1、图2",
+              "source_url": "https://worldwide.espacenet.com/publicationDetails/originalDocument?CC=CN&NR=120797198A&KC=A&FT=D&ND=&date=20251017&DB=&locale=",
+              "local_asset_path": "assets/figures/recovered/325cad84fc1067272b98206c3f1154bf03a710d9ca4f2e587cc9c17c53f769e5.png",
+              "width": 1119,
+              "height": 1959,
+              "caption": "图1为实施例1、图2为对比例1在器件热过程模拟后的断面显微照片。",
+              "asset_sha256": "325cad84fc1067272b98206c3f1154bf03a710d9ca4f2e587cc9c17c53f769e5",
+              "source_original_sha256": "325cad84fc1067272b98206c3f1154bf03a710d9ca4f2e587cc9c17c53f769e5",
+              "source_display_sha256": "325cad84fc1067272b98206c3f1154bf03a710d9ca4f2e587cc9c17c53f769e5",
+              "pdf_page": 10,
+              "display_rotation": 0,
+              "source_geometry": {
+                "original_uncropped_dimensions": {
+                  "width": 1272,
+                  "height": 1800
+                },
+                "original_uncropped_sha256": "77578795e0a9470a352d2fe2877b2399785e5bc2013d6ee315bd611fe9a77b83",
+                "source_dimensions": {
+                  "width": 2066,
+                  "height": 2924
+                },
+                "crop_bbox": [
+                  474,
+                  205,
+                  1593,
+                  2164
+                ],
+                "crop_bbox_convention": "source pixel xyxy, right/bottom exclusive; no resampling",
+                "crop_source_sha256": "ee90e231a0e9f45a25dc5121a29aad7390e9a8b79f046a8c5cc75498bda02d49"
+              }
+            }
+          ],
+          "change_history": [
+            {
+              "at": "2026-10-20T17:30:00+08:00",
+              "by": "baseline-import",
+              "action": "import",
+              "detail": "Imported from Dot reference report; not this team's independent discovery."
+            }
+          ],
+          "family_events": [
+            {
+              "publication_id": "CN120797198A",
+              "event_date": "2025-10-17",
+              "event_type": "publication",
+              "source_url": "https://patents.google.com/patent/CN120797198A/en",
+              "application_id": "CN202511321399.8A"
+            }
+          ],
+          "id": "2025-10-CN120797198A",
+          "month": "2025-10",
+          "import_tag": "imported baseline",
+          "discovery_source": "reference_report",
+          "purpose": "重硼或重磷掺杂衬底可提供较低电阻率，但杂质向外延层扩散会改变器件电学分布，也影响耐压一致性。该方案同时考虑衬底内部吸杂能力，尝试在保持外延表面质量的条件下调控体内氧沉淀及相关缺陷。",
+          "novelty": "核心在于用碳促进碳氧共同析出形成特定体内缺陷，同时维持近表面的洁净区域。氢气处理不只是表面清理步骤，还参与设置后续析出与缺陷形成条件，因此应结合完整热预算评价，而不能孤立比较烘烤温度。",
+          "use": "硅外延制造",
+          "event_note": null,
+          "family_context": [
+            {
+              "number": "CN120797198B",
+              "date": "2025-12-23",
+              "event": "授权公告",
+              "evidence": "Root source retrieval worker verified EPO family/publication listing; outside October",
+              "current_grant_claims_reviewed": false
+            }
+          ],
+          "verification": "当前原始PDF完整权项已目视核验，并核验选用原图。技术说明结合此前公开全文核读。",
+          "category": "EPI 工艺与结构",
+          "reference_source_status": "EPO提供的当前事件原始PDF；完整权项及选用附图已核对。"
+        },
+        {
+          "publication_id": "US20250324699A1",
+          "jurisdiction": "US",
+          "event_type": "publication",
+          "event_date": "2025-10-16",
+          "application_id": "US18/632,863",
+          "priority_date": "2024-04-11",
+          "family_id": "97305113",
+          "family_id_source": "reference_report",
+          "title_original": "Method of low-temperature n-type selective silicon epitaxy",
+          "title_zh": "以砷／锑掺杂硅盖层拓宽低温选择性外延窗口",
+          "applicant_original": null,
+          "applicant_normalized": "Applied Materials, Inc.",
+          "scope_status": "core",
+          "technology_tags": [
+            "epi"
+          ],
+          "short_preview": "在磷掺杂硅外延层上加入砷或锑掺杂盖层，再进行选择性刻蚀，使介质表面的非晶沉积物更易去除。",
+          "technical_summary": "在磷掺杂硅外延层上加入砷或锑掺杂盖层，再进行选择性刻蚀，使介质表面的非晶沉积物更易去除。",
+          "claims_or_embodiment_basis": "独立权1：依次形成含第一n型掺杂剂的硅层、含不同第二n型掺杂剂的硅盖层，再选择性去除两层的非晶部分并保留外延部分。权2限定P，权3限定As／Sb；从属权7限定低于约500°C、10–50 Torr。独立权10为交替两种掺杂硅外延层结构；独立权14为执行该工艺的处理系统。",
+          "scope_reason": "Substantive Si/SiGe epitaxy process or equipment\n公开事件、技术全文及权项已核对",
+          "source_urls": [
+            "https://patents.google.com/patent/US20250324699A1/en",
+            "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20250324699"
+          ],
+          "source_retrieved_at": null,
+          "source_sha256": null,
+          "actual_read_spans": [],
+          "reviewer": null,
+          "reviewed_at": null,
+          "family_completion_status": "pending",
+          "figures": [
+            {
+              "source_publication_id": "US20250324699A1",
+              "figure_number": "Fig.4",
+              "source_url": "https://patents.google.com/patent/US20250324699A1/en",
+              "local_asset_path": "assets/figures/recovered/97e28a8bccb0c3636f68ea5b258c00667f38b59f721dfd68856f044cd67ea0ba.png",
+              "width": 906,
+              "height": 1202,
+              "caption": "Fig.4 · 以不同掺杂硅盖层稳定低温选择性",
+              "asset_sha256": "97e28a8bccb0c3636f68ea5b258c00667f38b59f721dfd68856f044cd67ea0ba",
+              "source_original_sha256": "97e28a8bccb0c3636f68ea5b258c00667f38b59f721dfd68856f044cd67ea0ba",
+              "source_display_sha256": "97e28a8bccb0c3636f68ea5b258c00667f38b59f721dfd68856f044cd67ea0ba",
+              "pdf_page": 4,
+              "display_rotation": 0,
+              "source_geometry": {
+                "original_uncropped_sha256": "6f9722041eb4310519ca559800341112f3fea3583987a1e3486d89422b21f6fd",
+                "source_dimensions": {
+                  "width": 1397,
+                  "height": 1800
+                },
+                "crop_bbox": [
+                  233,
+                  343,
+                  1139,
+                  1545
+                ],
+                "crop_bbox_convention": "source pixel xyxy, right/bottom exclusive; no resampling",
+                "crop_source_sha256": "6f9722041eb4310519ca559800341112f3fea3583987a1e3486d89422b21f6fd"
+              }
+            }
+          ],
+          "change_history": [
+            {
+              "at": "2026-10-20T17:30:00+08:00",
+              "by": "baseline-import",
+              "action": "import",
+              "detail": "Imported from Dot reference report; not this team's independent discovery."
+            }
+          ],
+          "family_events": [
+            {
+              "publication_id": "US20250324699A1",
+              "event_date": "2025-10-16",
+              "event_type": "publication",
+              "source_url": "https://patents.google.com/patent/US20250324699A1/en",
+              "application_id": "US18/632,863"
+            },
+            {
+              "publication_id": "WO2025216831A1",
+              "event_date": "2025-10-16",
+              "event_type": "publication",
+              "source_url": "https://patents.google.com/patent/WO2025216831A1/en",
+              "application_id": null
+            }
+          ],
+          "id": "2025-10-US20250324699A1",
+          "month": "2025-10",
+          "import_tag": "imported baseline",
+          "discovery_source": "reference_report",
+          "purpose": "低温Si:P生长后通常需要刻蚀介质上的非晶沉积物。若磷向上方硅盖层扩散，盖层的刻蚀行为也会改变，非晶和外延材料之间的去除速率差缩小，选择性工艺窗口随之变窄。",
+          "novelty": "关键是利用不同掺杂硅盖层抑制磷扩散，同时保持n型导电性。专利将这一设计与低温沉积和选择性刻蚀结合，目的在于兼顾高掺杂、低电阻和介质表面的残留控制。",
+          "use": "硅或硅锗外延工艺与设备",
+          "event_note": "按公开／授权公告日期计入2025-10；申请、优先权、缴费及其他法律事件不计作公开。",
+          "family_context": [
+            {
+              "number": "TW202548892A",
+              "date": "2025-12-16"
+            }
+          ],
+          "verification": "公开事件、技术全文及权项已核对",
+          "category": "Si / SiGe 外延",
+          "reference_source_status": "当前USPTO原始PDF的完整权利要求、所选附图及引用数值已核对；其他同族公开事件不自动沿用本版本权项。"
+        },
+        {
+          "publication_id": "US12444605B2",
+          "jurisdiction": "US",
+          "event_type": "grant",
+          "event_date": "2025-10-14",
+          "application_id": "US17/573,748",
+          "priority_date": "2022-01-12",
+          "family_id": "87068944",
+          "family_id_source": "reference_report",
+          "title_original": "Epitaxial methods including a haloborane formula for growing boron-containing structures having increased boron concentrations",
+          "title_zh": "BCl3预暴露与共流实现高硼选择性Si／SiGe外延",
+          "applicant_original": null,
+          "applicant_normalized": "Applied Materials, Inc.",
+          "scope_status": "core",
+          "technology_tags": [
+            "epi"
+          ],
+          "short_preview": "先用BCl3暴露晶体和介质共存的表面，再引入硅／锗前驱物，兼顾硼掺杂与选择性生长。",
+          "technical_summary": "先用BCl3暴露晶体和介质共存的表面，再引入硅／锗前驱物，兼顾硼掺杂与选择性生长。",
+          "claims_or_embodiment_basis": "授权独立权1限定先向衬底暴露BCl3，再引入含IV族元素的第二气体；BCl3流量1–100 sccm、温度≥300°C、选择性外延速率≥100 Å/min、硼浓度≥5×10^20 atoms/cm³。权5具体限定Si／Ge。独立权6限定Si／Ge晶体、300–700°C及H2／N2载气。独立权11同样限定BCl3先暴露后与IV族气体共流，前后硼气体相同、流量1–100 sccm、300–700°C、速率≥100 Å/min、硼浓度≥5×10^20 atoms/cm³。",
+          "scope_reason": "Substantive Si/SiGe epitaxy process or equipment\n公开事件、技术全文及权项已核对",
+          "source_urls": [
+            "https://patents.google.com/patent/US12444605B2/en",
+            "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12444605"
+          ],
+          "source_retrieved_at": null,
+          "source_sha256": null,
+          "actual_read_spans": [],
+          "reviewer": null,
+          "reviewed_at": null,
+          "family_completion_status": "pending",
+          "figures": [
+            {
+              "source_publication_id": "US12444605B2",
+              "figure_number": "Fig.1B",
+              "source_url": "https://patents.google.com/patent/US12444605B2/en",
+              "local_asset_path": "assets/figures/recovered/c1a584c978d00bd5b8a7326333f132cbf30a816df1ed9d501d46330524aa48fc.png",
+              "width": 830,
+              "height": 1011,
+              "caption": "Fig.1B · BCl3预处理配合高硼选择性外延",
+              "asset_sha256": "c1a584c978d00bd5b8a7326333f132cbf30a816df1ed9d501d46330524aa48fc",
+              "source_original_sha256": "c1a584c978d00bd5b8a7326333f132cbf30a816df1ed9d501d46330524aa48fc",
+              "source_display_sha256": "c1a584c978d00bd5b8a7326333f132cbf30a816df1ed9d501d46330524aa48fc",
+              "pdf_page": 4,
+              "display_rotation": 0,
+              "source_geometry": {
+                "original_uncropped_sha256": "c918f2735630197871cae51263f0c2ff00c1cb09f3c5e042ff1aaa15a1ae916e",
+                "source_dimensions": {
+                  "width": 1397,
+                  "height": 1800
+                },
+                "crop_bbox": [
+                  271,
+                  439,
+                  1101,
+                  1450
+                ],
+                "crop_bbox_convention": "source pixel xyxy, right/bottom exclusive; no resampling",
+                "crop_source_sha256": "c918f2735630197871cae51263f0c2ff00c1cb09f3c5e042ff1aaa15a1ae916e"
+              }
+            }
+          ],
+          "change_history": [
+            {
+              "at": "2026-10-20T17:30:00+08:00",
+              "by": "baseline-import",
+              "action": "import",
+              "detail": "Imported from Dot reference report; not this team's independent discovery."
+            }
+          ],
+          "family_events": [
+            {
+              "publication_id": "US12444605B2",
+              "event_date": "2025-10-14",
+              "event_type": "grant",
+              "source_url": "https://patents.google.com/patent/US12444605B2/en",
+              "application_id": "US17/573,748"
+            }
+          ],
+          "id": "2025-10-US12444605B2",
+          "month": "2025-10",
+          "import_tag": "imported baseline",
+          "discovery_source": "reference_report",
+          "purpose": "高硼源漏外延希望同时获得较高生长速率、较高掺杂浓度和介质选择性。不同硼源可能导致介质上的寄生沉积或限制掺杂，因此前驱物类型及引入顺序成为关键变量。",
+          "novelty": "这里的技术重点是硼卤化物预暴露及随后共流，而不只是给常规SiGe外延增加硼源。说明书讨论介质表面钝化与选择性，有助于把掺杂和寄生生长控制放在同一工艺步骤内考虑。",
+          "use": "硅或硅锗外延工艺与设备",
+          "event_note": "按公开／授权公告日期计入2025-10；申请、优先权、缴费及其他法律事件不计作公开。",
+          "family_context": [
+            {
+              "number": "US20230223257A1",
+              "date": "2023-07-13"
+            },
+            {
+              "number": "WO2023136860A1",
+              "date": "2023-07-20"
+            },
+            {
+              "number": "TW202328519A",
+              "date": "2023-07-16"
+            }
+          ],
+          "verification": "公开事件、技术全文及权项已核对",
+          "category": "Si / SiGe 外延",
+          "reference_source_status": "当前USPTO原始PDF的完整权利要求、所选附图及引用数值已核对；其他同族公开事件不自动沿用本版本权项。"
         },
         {
           "publication_id": "KR102870814B1",
@@ -11268,114 +11396,6 @@
           "reference_source_status": "当前韩国公开文本已核对；另下载同族WO原始PDF并核验图示，作为明确标注的同族替代图。"
         },
         {
-          "publication_id": "JP7757917B2",
-          "jurisdiction": "JP",
-          "event_type": "grant",
-          "event_date": "2025-10-22",
-          "application_id": "JP2022149835A",
-          "priority_date": "2021-11-04",
-          "family_id": "SUMCO-JP2021180298-carbon-epi",
-          "family_id_source": "reference_report",
-          "title_original": "Silicon wafers and epitaxial silicon wafers",
-          "title_zh": "碳掺杂与低碳表层降低硅外延缺陷",
-          "applicant_original": null,
-          "applicant_normalized": "SUMCO Corporation",
-          "scope_status": "core",
-          "technology_tags": [
-            "epi"
-          ],
-          "short_preview": "碳掺杂硅体材料与低碳表层结合，降低后续硅外延的堆垛缺陷。",
-          "technical_summary": "碳掺杂硅体材料与低碳表层结合，降低后续硅外延的堆垛缺陷。",
-          "claims_or_embodiment_basis": "授权权1、10分别为外延硅片与硅片，要求300 mm重磷掺杂硅、规定碳含量，并具有5–15 μm低碳表层，浓度不高于厚度中心的0.9倍；同月分案权1、4不含该低碳表层限定。",
-          "scope_reason": "Si/SiGe外延设备、材料结构或工艺。\n当前原始PDF完整权项已目视核验，并核验选用原图。技术说明结合此前公开全文核读。",
-          "source_urls": [
-            "https://patents.google.com/patent/JP7757917B2/en",
-            "https://worldwide.espacenet.com/publicationDetails/originalDocument?CC=JP&NR=7757917B2&KC=B2&FT=D&ND=&date=20251022&DB=&locale="
-          ],
-          "source_retrieved_at": null,
-          "source_sha256": null,
-          "actual_read_spans": [],
-          "reviewer": null,
-          "reviewed_at": null,
-          "family_completion_status": "pending",
-          "figures": [
-            {
-              "source_publication_id": "JP7757917B2",
-              "figure_number": "图5(a)(b)",
-              "source_url": "https://worldwide.espacenet.com/publicationDetails/originalDocument?CC=JP&NR=7757917B2&KC=B2&FT=D&ND=&date=20251022&DB=&locale=",
-              "local_asset_path": "assets/figures/recovered/6b730a5a6d1204261b2e5da3c8bb67d9523f0805fc95e6a1825ad0a908b9fb28.png",
-              "width": 1579,
-              "height": 2422,
-              "caption": "图5(a)(b)对比位错环尺寸与密度分布；原图横轴为位错环尺寸，纵轴为位错环密度。",
-              "asset_sha256": "6b730a5a6d1204261b2e5da3c8bb67d9523f0805fc95e6a1825ad0a908b9fb28",
-              "source_original_sha256": "6b730a5a6d1204261b2e5da3c8bb67d9523f0805fc95e6a1825ad0a908b9fb28",
-              "source_display_sha256": "6b730a5a6d1204261b2e5da3c8bb67d9523f0805fc95e6a1825ad0a908b9fb28",
-              "pdf_page": 23,
-              "display_rotation": 0,
-              "source_geometry": {
-                "original_uncropped_dimensions": {
-                  "width": 1272,
-                  "height": 1800
-                },
-                "original_uncropped_sha256": "b85058c154ef09a01bdb55c987aa52a8230b133882448848efb29615ff0cd34b",
-                "source_dimensions": {
-                  "width": 2066,
-                  "height": 2924
-                },
-                "crop_bbox": [
-                  234,
-                  175,
-                  1813,
-                  2597
-                ],
-                "crop_bbox_convention": "source pixel xyxy, right/bottom exclusive; no resampling",
-                "crop_source_sha256": "72946047213d3e6e4baef0730f6b32a6a1249a07d87a854c17b84a1fc96d9d43"
-              }
-            }
-          ],
-          "change_history": [
-            {
-              "at": "2026-10-20T17:30:00+08:00",
-              "by": "baseline-import",
-              "action": "import",
-              "detail": "Imported from Dot reference report; not this team's independent discovery."
-            }
-          ],
-          "family_events": [
-            {
-              "publication_id": "JP7757917B2",
-              "event_date": "2025-10-22",
-              "event_type": "grant",
-              "source_url": "https://patents.google.com/patent/JP7757917B2/en",
-              "application_id": "JP2022149835A"
-            },
-            {
-              "publication_id": "JP2025157587A",
-              "event_date": "2025-10-15",
-              "event_type": "publication",
-              "source_url": "https://patents.google.com/patent/JP2025157587A/en",
-              "application_id": "JP2025128738A"
-            }
-          ],
-          "id": "2025-10-JP7757917B2",
-          "month": "2025-10",
-          "import_tag": "imported baseline",
-          "discovery_source": "reference_report",
-          "purpose": "低电阻率重磷掺杂硅中的位错环可成为外延堆垛缺陷来源。",
-          "novelty": "授权明确低碳表层深度和相对浓度；同月分案提出更宽的材料组成权项。",
-          "use": "硅外延制造",
-          "event_note": null,
-          "family_context": [
-            {
-              "number": "JP2023070067A",
-              "date": "2023-05-18"
-            }
-          ],
-          "verification": "当前原始PDF完整权项已目视核验，并核验选用原图。技术说明结合此前公开全文核读。",
-          "category": "EPI 工艺与结构",
-          "reference_source_status": "EPO提供的当前事件原始PDF；完整权项及选用附图已核对。"
-        },
-        {
           "publication_id": "WO2025211045A1",
           "jurisdiction": "WO",
           "event_type": "publication",
@@ -11480,31 +11500,31 @@
           "reference_source_status": "EPO提供的当前事件原始PDF；完整权项及选用附图已核对。"
         },
         {
-          "publication_id": "CN120797198A",
-          "jurisdiction": "CN",
+          "publication_id": "JP2025533523A",
+          "jurisdiction": "JP",
           "event_type": "publication",
-          "event_date": "2025-10-17",
-          "application_id": "CN202511321399.8A",
-          "priority_date": "2025-09-16",
-          "family_id": "CN202511321399.8",
+          "event_date": "2025-10-07",
+          "application_id": "JP2025517252A",
+          "priority_date": "2022-09-21",
+          "family_id": "90455087",
           "family_id_source": "reference_report",
-          "title_original": "一种重掺硅单晶衬底制备硅外延片的方法及形成的外延片",
-          "title_zh": "碳氧共掺杂与氢气预处理抑制硅衬底外扩散",
+          "title_original": "半導体積層およびそのプロセス",
+          "title_zh": "半导体叠层的预清洗、钝化与等离子体外延",
           "applicant_original": null,
-          "applicant_normalized": "金瑞泓微电子(嘉兴)有限公司",
+          "applicant_normalized": "Lam Research Corporation",
           "scope_status": "core",
           "technology_tags": [
+            "preclean",
+            "chamber_clean",
             "epi"
           ],
-          "short_preview": "把衬底碳氧浓度设计与外延前高温氢气处理结合，利用后续形成的体内缺陷结构抑制重掺杂硅的杂质外扩散。",
-          "technical_summary": "把衬底碳氧浓度设计与外延前高温氢气处理结合，利用后续形成的体内缺陷结构抑制重掺杂硅的杂质外扩散。",
-          "claims_or_embodiment_basis": "当前中文原件共10项。权1为碳氧共掺杂重硼/重磷直拉硅衬底的S1制片、S2氢烘烤和S3硅外延方法；权2→1；权3、4→1或2。权5为执行权1–3任一方法S1/S2形成的衬底；权6为依权1–4任一方法制成的外延片，或在权5衬底上生长外延层形成的外延片；权7→6；权8→7。权9为包含权6–8任一外延片和/或权5衬底的功率器件；权10→9限定MOSFET。5、6、9为跨类别引用主题，不能当成无引用的独立项或普通同类别从属项。",
-          "scope_reason": "Si/SiGe外延设备、材料结构或工艺。\n当前原始PDF完整权项已目视核验，并核验选用原图。技术说明结合此前公开全文核读。",
+          "short_preview": "去除氧化物并调整表面终止状态后开展等离子体辅助叠层外延，同时安排腔室清洁以控制后续沉积环境。",
+          "technical_summary": "去除氧化物并调整表面终止状态后开展等离子体辅助叠层外延，同时安排腔室清洁以控制后续沉积环境。",
+          "claims_or_embodiment_basis": "当前日本共20项权利要求，独立项1、11、12、15、19、20。权1/11分别为不同刻蚀行为两层的能量化学种辅助重复沉积方法/装置；权12为氧化物预清洗、疏水或钝化预处理、等离子体外延及上下片前后反应器清洗；权15为交替叠层流程；权19/20为真空集成预清洗与外延系统，其中20增加独立预处理腔。权13、16限定清洗试剂或等离子体，权17限定远程等离子体。",
+          "scope_reason": "Si/SiGe外延设备、材料结构或工艺。\n当前日本原PDF权项1–20及图2A已逐项视觉核读",
           "source_urls": [
-            "https://eureka.patsnap.com/patent/CN120797198A",
-            "https://patents.google.com/patent/WO2009075257A1/en",
-            "https://patents.google.com/patent/US20090004458A1/f",
-            "https://worldwide.espacenet.com/publicationDetails/originalDocument?CC=CN&NR=120797198A&KC=A&FT=D&ND=&date=20251017&DB=&locale="
+            "https://patents.google.com/patent/JP2025533523A/en",
+            "https://worldwide.espacenet.com/publicationDetails/originalDocument?CC=JP&NR=2025533523A&KC=A&FT=D&ND=&date=20251007&DB=&locale="
           ],
           "source_retrieved_at": null,
           "source_sha256": null,
@@ -11514,36 +11534,36 @@
           "family_completion_status": "pending",
           "figures": [
             {
-              "source_publication_id": "CN120797198A",
-              "figure_number": "图1、图2",
-              "source_url": "https://worldwide.espacenet.com/publicationDetails/originalDocument?CC=CN&NR=120797198A&KC=A&FT=D&ND=&date=20251017&DB=&locale=",
-              "local_asset_path": "assets/figures/recovered/325cad84fc1067272b98206c3f1154bf03a710d9ca4f2e587cc9c17c53f769e5.png",
-              "width": 1119,
-              "height": 1959,
-              "caption": "图1为实施例1、图2为对比例1在器件热过程模拟后的断面显微照片。",
-              "asset_sha256": "325cad84fc1067272b98206c3f1154bf03a710d9ca4f2e587cc9c17c53f769e5",
-              "source_original_sha256": "325cad84fc1067272b98206c3f1154bf03a710d9ca4f2e587cc9c17c53f769e5",
-              "source_display_sha256": "325cad84fc1067272b98206c3f1154bf03a710d9ca4f2e587cc9c17c53f769e5",
-              "pdf_page": 10,
+              "source_publication_id": "JP2025533523A",
+              "figure_number": "FIG. 2A / 図2A",
+              "source_url": "https://worldwide.espacenet.com/publicationDetails/originalDocument?CC=JP&NR=2025533523A&KC=A&FT=D&ND=&date=20251007&DB=&locale=",
+              "local_asset_path": "assets/figures/recovered/71c21cf2684b40fa5569837e56ceebab06efb6841ed2ad483e3e496225325539.png",
+              "width": 1157,
+              "height": 2219,
+              "caption": "图2A · 硅与硅锗叠层的交替生长流程",
+              "asset_sha256": "71c21cf2684b40fa5569837e56ceebab06efb6841ed2ad483e3e496225325539",
+              "source_original_sha256": "71c21cf2684b40fa5569837e56ceebab06efb6841ed2ad483e3e496225325539",
+              "source_display_sha256": "71c21cf2684b40fa5569837e56ceebab06efb6841ed2ad483e3e496225325539",
+              "pdf_page": 152,
               "display_rotation": 0,
               "source_geometry": {
                 "original_uncropped_dimensions": {
-                  "width": 1272,
-                  "height": 1800
+                  "width": 714,
+                  "height": 1011
                 },
-                "original_uncropped_sha256": "77578795e0a9470a352d2fe2877b2399785e5bc2013d6ee315bd611fe9a77b83",
+                "original_uncropped_sha256": "fdcae69bb34ac637f4624358a19fa0a0b874d66b9403fecc0263d13d815c002c",
                 "source_dimensions": {
                   "width": 2066,
                   "height": 2924
                 },
                 "crop_bbox": [
-                  474,
-                  205,
-                  1593,
-                  2164
+                  537,
+                  322,
+                  1694,
+                  2541
                 ],
                 "crop_bbox_convention": "source pixel xyxy, right/bottom exclusive; no resampling",
-                "crop_source_sha256": "ee90e231a0e9f45a25dc5121a29aad7390e9a8b79f046a8c5cc75498bda02d49"
+                "crop_source_sha256": "982b01f9fb26991d2db4d378c9511fce617ec4d2d19e3e3baaeb63d257a2202d"
               }
             }
           ],
@@ -11557,102 +11577,200 @@
           ],
           "family_events": [
             {
-              "publication_id": "CN120797198A",
-              "event_date": "2025-10-17",
+              "publication_id": "JP2025533523A",
+              "event_date": "2025-10-07",
               "event_type": "publication",
-              "source_url": "https://patents.google.com/patent/CN120797198A/en",
-              "application_id": "CN202511321399.8A"
+              "source_url": "https://patents.google.com/patent/JP2025533523A/en",
+              "application_id": "JP2025517252A"
             }
           ],
-          "id": "2025-10-CN120797198A",
+          "id": "2025-10-JP2025533523A",
           "month": "2025-10",
           "import_tag": "imported baseline",
           "discovery_source": "reference_report",
-          "purpose": "重硼或重磷掺杂衬底可提供较低电阻率，但杂质向外延层扩散会改变器件电学分布，也影响耐压一致性。该方案同时考虑衬底内部吸杂能力，尝试在保持外延表面质量的条件下调控体内氧沉淀及相关缺陷。",
-          "novelty": "核心在于用碳促进碳氧共同析出形成特定体内缺陷，同时维持近表面的洁净区域。氢气处理不只是表面清理步骤，还参与设置后续析出与缺陷形成条件，因此应结合完整热预算评价，而不能孤立比较烘烤温度。",
-          "use": "硅外延制造",
+          "purpose": "Si/SiGe交替层在较高温度下容易发生原子互扩散；降低温度又使首层成核对氧化物和表面终止更加敏感。方案把晶圆表面处理与腔体环境控制放在同一外延流程中考虑。",
+          "novelty": "预清洗、表面钝化、外延沉积和腔室清洁具有不同对象与作用，不能互相替代。图2H/2I展示独立清洗或预处理腔与外延腔的组合；工艺重点是首层界面、真空转移和多层重复过程中表面状态的稳定性。",
+          "use": "Si/SiGe外延前处理与相关集成流程",
           "event_note": null,
           "family_context": [
             {
-              "number": "CN120797198B",
-              "date": "2025-12-23",
-              "event": "授权公告",
-              "evidence": "Root source retrieval worker verified EPO family/publication listing; outside October",
-              "current_grant_claims_reviewed": false
+              "number": "WO2024064161A1",
+              "date": "2024-03-28",
+              "note": "同族英文原始PCT公开；保留为补充来源，本条主图使用日本当前原件"
+            },
+            {
+              "number": "US20260090293A1",
+              "date": "2026-03-26",
+              "note": "报告既有2026年3月记录，同族但不同权项版本"
             }
           ],
-          "verification": "当前原始PDF完整权项已目视核验，并核验选用原图。技术说明结合此前公开全文核读。",
-          "category": "EPI 工艺与结构",
-          "reference_source_status": "EPO提供的当前事件原始PDF；完整权项及选用附图已核对。"
+          "verification": "当前日本原PDF权项1–20及图2A已逐项视觉核读",
+          "category": "Preclean / EPI 工艺",
+          "reference_source_status": "EPO提供的日本当前公开原PDF共183页，首页确认2025-10-07公开、Lam申请人及PCT/US2023/033175。权利要求PDF2–5页，图2A为PDF152页。"
         },
         {
-          "publication_id": "US20250327209A1",
-          "jurisdiction": "US",
+          "publication_id": "WO2025204274A1",
+          "jurisdiction": "WO",
           "event_type": "publication",
-          "event_date": "2025-10-23",
-          "application_id": "US19/182,248",
-          "priority_date": null,
-          "family_id": "US20250327209A1",
-          "family_id_source": "independent_search",
-          "title_original": "Systems, methods, and vessels for epitaxial depositions",
-          "title_zh": "外延沉积用的系统、方法与反应器",
+          "event_date": "2025-10-02",
+          "application_id": "PCT/JP2025/005254",
+          "priority_date": "2024-03-29",
+          "family_id": "97216439",
+          "family_id_source": "reference_report",
+          "title_original": "Method for manufacturing epitaxial wafer",
+          "title_zh": "以氧原子层和低温硅外延构建近表面吸杂层",
           "applicant_original": null,
-          "applicant_normalized": "ASM IP Holding B.V.",
+          "applicant_normalized": "Shin-Etsu Handotai Co., Ltd.",
           "scope_status": "core",
           "technology_tags": [
             "epi"
           ],
-          "short_preview": "围绕外延沉积反应器与工艺集成，涉及腔体、气体输送与晶圆支撑配置，用于改善外延沉积过程控制。",
-          "technical_summary": "围绕外延沉积反应器与工艺集成，涉及腔体、气体输送与晶圆支撑配置，用于改善外延沉积过程控制。",
-          "claims_or_embodiment_basis": "证据复核 r2：独立权利要求要求外延沉积反应器/方法组合，含腔体、基座与工艺气体路径；从属项限定温度、压力与材料层序。",
-          "scope_reason": "直接涉及 Si 外延沉积硬件与工艺集成，纳入核心 EPI 设备监测。",
+          "short_preview": "清洗形成受控氧原子层后进行硅气相外延，可重复叠层，把吸杂位置放到更接近器件的区域。",
+          "technical_summary": "清洗形成受控氧原子层后进行硅气相外延，可重复叠层，把吸杂位置放到更接近器件的区域。",
+          "claims_or_embodiment_basis": "独立权1要求HF去自然氧化层、含H2O2清洗形成氧原子层、随后在其上气相外延单晶Si。权2不再减薄氧层；权3 pH 4–7；权4氧面浓度≤1×10^15 atoms/cm²；权5外延450–800°C；权7重复氧层形成与外延。",
+          "scope_reason": "Substantive Si/SiGe epitaxy process or equipment\n公开事件、技术全文及权项已核对",
           "source_urls": [
-            "https://patents.google.com/patent/US20250327209A1/en",
-            "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20250327209"
+            "https://patents.google.com/patent/WO2025204274A1/en"
           ],
-          "source_retrieved_at": "2026-10-20T10:03:49Z",
-          "source_sha256": "04d83748266705e79395aab59ed1387487518cdf71a91fd5ab6db77e0ad59c69",
-          "actual_read_spans": [
-            "USPTO 公开 PDF（sha256 见 source_sha256）：独立权利要求 1–3 与方法/反应器主题",
-            "摘要与实施方式中与腔体、气体路径、基座相关的段落（目视复核）"
+          "source_retrieved_at": null,
+          "source_sha256": null,
+          "actual_read_spans": [],
+          "reviewer": null,
+          "reviewed_at": null,
+          "family_completion_status": "pending",
+          "figures": [
+            {
+              "source_publication_id": "WO2025204274A1",
+              "figure_number": "Fig.1/2/3",
+              "source_url": "https://patents.google.com/patent/WO2025204274A1/en",
+              "local_asset_path": "assets/figures/recovered/488d0c0e48bd7a19188425590fcd67fd6e9b173903e3b9ebf6a75ed392a8946f.png",
+              "width": 1420,
+              "height": 2245,
+              "caption": "Fig.1/2/3 · 氧原子层与单晶硅外延交替构建吸杂结构",
+              "asset_sha256": "488d0c0e48bd7a19188425590fcd67fd6e9b173903e3b9ebf6a75ed392a8946f",
+              "source_original_sha256": "488d0c0e48bd7a19188425590fcd67fd6e9b173903e3b9ebf6a75ed392a8946f",
+              "source_display_sha256": "488d0c0e48bd7a19188425590fcd67fd6e9b173903e3b9ebf6a75ed392a8946f",
+              "pdf_page": 24,
+              "display_rotation": 0,
+              "source_geometry": {
+                "original_uncropped_dimensions": {
+                  "width": 1272,
+                  "height": 1800
+                },
+                "original_uncropped_sha256": "6b045fc18b462228b8951d5069ed211eb17d0f29c5f61407470b5974bba71169",
+                "source_dimensions": {
+                  "width": 2066,
+                  "height": 2924
+                },
+                "crop_bbox": [
+                  285,
+                  220,
+                  1705,
+                  2465
+                ],
+                "crop_bbox_convention": "source pixel xyxy, right/bottom exclusive; no resampling",
+                "crop_source_sha256": "f0cff10c92cfda51045e617575d8543625c348f145d2cc3d1c7c862193987f70"
+              }
+            }
           ],
-          "reviewer": "epi-evidence-review-r2",
-          "reviewed_at": "2026-10-20",
-          "family_completion_status": "open",
-          "figures": [],
           "change_history": [
             {
-              "at": "2026-10-20T09:31:48Z",
-              "by": "evidence-review-r2",
-              "action": "independent_add",
-              "detail": "独立检索新纳入（非基线导入）。"
+              "at": "2026-10-20T17:30:00+08:00",
+              "by": "baseline-import",
+              "action": "import",
+              "detail": "Imported from Dot reference report; not this team's independent discovery."
             }
           ],
           "family_events": [
             {
-              "publication_id": "US20250327209A1",
-              "event_date": "2025-10-23",
+              "publication_id": "WO2025204274A1",
+              "event_date": "2025-10-02",
               "event_type": "publication",
-              "source_url": "https://patents.google.com/patent/US20250327209A1/en",
-              "application_id": "US19/182,248"
+              "source_url": "https://patents.google.com/patent/WO2025204274A1/en",
+              "application_id": "PCT/JP2025/005254"
+            },
+            {
+              "publication_id": "JP2025153336A",
+              "event_date": "2025-10-10",
+              "event_type": "publication",
+              "source_url": "https://patents.google.com/patent/JP2025153336A/en",
+              "application_id": null
             }
           ],
-          "id": "2025-10-US20250327209A1",
+          "id": "2025-10-WO2025204274A1",
+          "month": "2025-10",
+          "import_tag": "imported baseline",
+          "discovery_source": "reference_report",
+          "purpose": "较低的后续工艺温度可能限制金属杂质向远处吸杂区扩散。该方案希望在器件附近保留氧相关吸杂位点，同时避免过厚氧化层破坏其上的单晶硅外延质量。",
+          "novelty": "纳入理由是权1明确包含单晶硅气相外延，权7进一步限定氧层／外延层重复构建，技术对象为外延吸杂结构，不是独立湿法清洗。氧层覆盖量与外延可成核性之间的平衡是工程重点。",
+          "use": "硅或硅锗外延工艺与设备",
+          "event_note": "按公开／授权公告日期计入2025-10；申请、优先权、缴费及其他法律事件不计作公开。",
+          "family_context": null,
+          "verification": "公开事件、技术全文及权项已核对",
+          "category": "Si / SiGe 外延",
+          "reference_source_status": "Google Patents公开事件与全文交叉核对；原始WO PDF权利要求和所选附图已逐页核对。"
+        },
+        {
+          "publication_id": "US20250311241A1",
+          "jurisdiction": "US",
+          "event_type": "publication",
+          "event_date": "2025-10-02",
+          "application_id": "US18/622,764",
+          "priority_date": null,
+          "family_id": "US20250311241A1",
+          "family_id_source": "sprint_gap_tel",
+          "title_original": "Integration method of vertical DRAM with peripheral circuit",
+          "title_zh": "垂直 DRAM 与外围电路的集成方法",
+          "applicant_original": null,
+          "applicant_normalized": "Tokyo Electron Limited",
+          "scope_status": "related",
+          "technology_tags": [
+            "integration",
+            "dram"
+          ],
+          "short_preview": "TEL 垂直 DRAM 与外围电路集成路线；与 Si/SiGe 外延主线关联但非核心 EPI/preclean 纳入。",
+          "technical_summary": "TEL 垂直 DRAM 与外围电路集成路线；与 Si/SiGe 外延主线关联但非核心 EPI/preclean 纳入。",
+          "claims_or_embodiment_basis": "",
+          "scope_reason": "Sprint gap A：关联监测（DRAM 集成），不计 core。",
+          "source_urls": [
+            "https://patents.google.com/patent/US20250311241A1/en",
+            "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20250311241"
+          ],
+          "source_retrieved_at": null,
+          "source_sha256": null,
+          "actual_read_spans": [],
+          "reviewer": null,
+          "reviewed_at": null,
+          "family_completion_status": "open",
+          "figures": [],
+          "change_history": [
+            {
+              "at": "2026-10-20T10:37:42Z",
+              "by": "sprint-gap-a",
+              "action": "content_add",
+              "detail": "EVIDENCE-SPRINT-A / EPI-INCREMENTAL-SPRINT-gap"
+            }
+          ],
+          "family_events": [
+            {
+              "publication_id": "US20250311241A1",
+              "event_date": "2025-10-02",
+              "event_type": "publication",
+              "source_url": "https://patents.google.com/patent/US20250311241A1/en",
+              "application_id": "US18/622,764"
+            }
+          ],
+          "id": "2025-10-US20250311241A1",
           "month": "2025-10",
           "import_tag": null,
-          "discovery_source": "independent_search",
-          "independent_of_ref": true,
-          "family_merge_note": null,
-          "event_note": "独立检索发现",
-          "category": "EPI 设备",
-          "team_independent_read": true,
-          "read_disposition": "team_read_claims_level",
-          "read_query": "独立 EPI 检索 Gate③ r2；纳入边界=Si 外延沉积反应器/工艺。",
-          "official_source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20250327209"
+          "discovery_source": "sprint_gap_tel",
+          "team_independent_read": false,
+          "event_note": null,
+          "category": "关联集成"
         }
       ],
-      "family_count": 17,
-      "event_count": 23
+      "family_count": 18,
+      "event_count": 24
     }
   ]
 }
