@@ -47,5 +47,13 @@ python3 scripts/audit_data_integrity.py   # stamps index.html ?v=
 
 CSS-only; Gate③ WO/TW bytes + `display_rotation=0` unchanged. Month TOC / side-meta untouched.
 
-**Merge SHA:** `fe6955e` (R2 layout) + fig-grid follow-up PR  
+### R2 minor — drawer search touch target (@390)
+
+| Before | After |
+|--------|--------|
+| `#toc-search` ~31px tall (7px padding) | **`min-height: 44px`** + padding in ≤760px drawer only |
+
+Month TOC chrome unchanged; Dot benchmark ERR_TIMED_OUT from design env — no TLS change on our side.
+
+**Merge SHA:** `fe6955e` (R2 layout) + fig-grid PR #20 + drawer-search follow-up  
 **Live CSS:** bump `report.css?v=` on merge (see `index.html`)
