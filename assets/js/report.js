@@ -164,8 +164,10 @@
       if (e.key === "Escape" && shell.classList.contains("drawer-open")) setOpen(false);
     });
 
-    shell.addEventListener("click", (e) => {
-      if (e.target === shell && shell.classList.contains("drawer-open")) setOpen(false);
+    document.addEventListener("click", (e) => {
+      if (!shell.classList.contains("drawer-open")) return;
+      if (side.contains(e.target) || toggle.contains(e.target)) return;
+      setOpen(false);
     });
   }
 
@@ -223,13 +225,36 @@
     return hasIndependentIncrement(data) ? "初版 · 含独立检索增量" : "初版 · 基线导入";
   }
 
+  function formatMonthChrome(ym) {
+    if (!ym) return { label: "", year: "", mon: "" };
+    const m = String(ym).match(/^(\d{4})-(\d{2})$/);
+    if (!m) return { label: ym, year: "", mon: "" };
+    return { label: m[1] + "-" + m[2], year: m[1], mon: m[2] };
+  }
+
+  function monthStatusShort(status) {
+    if (!status) return "";
+    const part = String(status).split("｜")[0].trim();
+    return part.length > 14 ? part.slice(0, 13) + "…" : part;
+  }
+
   function renderSideMeta(data) {
     const el = $("#side-meta");
     if (!el) return;
     const through = data.research_through || "未设定";
+    const c = data.counts || {};
+    const bag = countBag(c);
+    const fig = computeFigureStats(data);
     el.innerHTML =
       "<strong class=\"side-title\">EPI / Preclean 专利监测</strong>" +
-      "<span class=\"side-dates\">截至 " + esc(through) + "</span>";
+      "<span class=\"side-edition\">" + esc(editionLabel(data)) + "</span>" +
+      "<dl class=\"side-stats\">" +
+      "<div class=\"side-stat\"><dt>截至</dt><dd>" + esc(through) + "</dd></div>" +
+      "<div class=\"side-stat\"><dt>族月条目</dt><dd>" + esc(bag.monthEntries) + "</dd></div>" +
+      "<div class=\"side-stat\"><dt>本团队已读</dt><dd>" + esc(bag.read) + "</dd></div>" +
+      "<div class=\"side-stat\"><dt>附图可载</dt><dd>" + esc(fig.loadable) + "<span class=\"side-stat-muted\">/" +
+      esc(fig.cited) + "</span></dd></div>" +
+      "</dl>";
   }
 
   const PATENT_COLGROUP =
@@ -332,8 +357,18 @@
       // Scaffold: leave all closed so empty months stay compact.
       const summary = document.createElement("summary");
       const count = (m.families || []).length;
+      const chrome = formatMonthChrome(m.month);
+      const statusShort = monthStatusShort(m.status);
       summary.innerHTML =
-        "<span>" + esc(m.month) + "</span>" +
+        "<span class=\"month-heading\">" +
+        (chrome.year
+          ? "<span class=\"month-ym\"><span class=\"month-ym-mon\">" + esc(chrome.mon) + "</span>" +
+            "<span class=\"month-ym-year\">" + esc(chrome.year) + "</span></span>"
+          : "<span class=\"month-ym-plain\">" + esc(chrome.label || m.month) + "</span>") +
+        (statusShort
+          ? "<span class=\"month-status\" title=\"" + esc(m.status || "") + "\">" + esc(statusShort) + "</span>"
+          : "") +
+        "</span>" +
         "<span class=\"month-count\">" + count + " 族" +
         (m.event_count != null ? " · " + m.event_count + " 事件" : "") +
         "</span>";
@@ -480,7 +515,7 @@
 
   function renderImages(images) {
     if (!images || !images.length) return "";
-    return images.map((img) => {
+    const blocks = images.map((img) => {
       const caption =
         img.display_caption ||
         img.caption ||
@@ -515,6 +550,12 @@
         "</figcaption></figure>"
       );
     }).join("");
+    if (images.length < 2) return blocks;
+    return (
+      "<div class=\"patent-fig-grid\" data-fig-count=\"" + images.length + "\">" +
+      blocks +
+      "</div>"
+    );
   }
 
   function renderSources(urls) {
