@@ -88,6 +88,7 @@
     const id = f.id || (month && publication_id ? month + "-" + publication_id : publication_id);
     const figures = pick(f, ["figures", "images"], []) || [];
     const mappedFigures = figures.map(function (img) {
+      const displayRotation = Number(pick(img, ["display_rotation"], 0)) || 0;
       return {
         caption: pick(img, ["caption", "display_caption"], ""),
         display_caption: pick(img, ["display_caption", "caption"], ""),
@@ -96,6 +97,7 @@
         figure_label: pick(img, ["figure_number", "figure_label"], ""),
         width: img.width,
         height: img.height,
+        display_rotation: displayRotation,
         path: pick(img, ["local_asset_path", "path"], ""),
       };
     });
@@ -220,9 +222,18 @@
       : (c.events_core != null ? c.events_core : 0);
     const families = (c.unique_families != null) ? c.unique_families
       : (c.families_core != null ? c.families_core : 0);
-    const read = (c.actually_read != null) ? c.actually_read
-      : (c.events_reviewed != null ? c.events_reviewed : 0);
+    // Locked ruling count only — never infer from independent_search row count.
+    const read = (c.actually_read != null) ? c.actually_read : 0;
     return { monthEntries: monthEntries, events: events, families: families, read: read };
+  }
+
+  function figureLabelFromCaption(caption, fallback) {
+    if (!caption) return fallback || "";
+    const m = String(caption).match(/FIGS?\.?\s*([\dA-Za-z][\dA-Za-z.\-–—]*)/i);
+    if (m) return "Fig. " + m[1].replace(/\s+/g, "");
+    const m2 = String(caption).match(/图\s*([\dA-Za-z][\dA-Za-z.\-–—]*)/);
+    if (m2) return "图" + m2[1];
+    return fallback || "";
   }
 
   function renderReportNotes(data) {
@@ -256,20 +267,20 @@
     const c = data.counts || {};
     const bag = countBag(c);
     const fig = computeFigureStats(data);
-    const statsList =
-      "<ul class=\"report-stats-list\">" +
-      "<li><span class=\"edition-tag\">" + esc(editionLabel(data)) + "</span></li>" +
-      "<li>族月条目 <strong>" + esc(bag.monthEntries) + "</strong></li>" +
-      "<li>事件 <strong>" + esc(bag.events) + "</strong></li>" +
-      "<li>族 <strong>" + esc(bag.families) + "</strong></li>" +
-      "<li>本团队已读 <strong>" + esc(bag.read) + "</strong></li>" +
-      "<li>图引用 <strong>" + esc(fig.cited) + "</strong> · 可加载 <strong>" + esc(fig.loadable) + "</strong> · 待补 <strong>" + esc(fig.pending) + "</strong></li>" +
-      "</ul>";
+    const statsBlock =
+      "<dl class=\"report-stats-dl\">" +
+      "<dt>版本</dt><dd>" + esc(editionLabel(data)) + "</dd>" +
+      "<dt>族月条目</dt><dd>" + esc(bag.monthEntries) + "</dd>" +
+      "<dt>事件（去重公开号）</dt><dd>" + esc(bag.events) + "</dd>" +
+      "<dt>族</dt><dd>" + esc(bag.families) + "</dd>" +
+      "<dt>本团队已读</dt><dd>" + esc(bag.read) + "</dd>" +
+      "<dt>附图</dt><dd>引用 " + esc(fig.cited) + " · 可加载 " + esc(fig.loadable) + " · 待补 " + esc(fig.pending) + "</dd>" +
+      "</dl>";
     el.innerHTML =
       "<details class=\"report-info\">" +
-      "<summary>报告信息</summary>" +
+      "<summary>报告信息（计数与说明，默认收起）</summary>" +
       "<div class=\"report-info-body\">" +
-      statsList +
+      statsBlock +
       renderReportNotes(data) +
       "</div></details>";
   }
@@ -372,11 +383,31 @@
     return ctx.map((c) => esc(c.number) + (c.date ? " (" + esc(c.date) + ")" : "")).join("； ");
   }
 
+  function reportDataUrl() {
+    const meta = document.querySelector('meta[name="epi-report-data"]');
+    const url = meta && meta.getAttribute("content");
+    return (url && url.trim()) ? url.trim() : "data/report.json";
+  }
+
+  /** Layout box for display_rotation (extraction_rotation already baked into file bytes). */
+  function figureLayoutDims(w, h, displayRotation) {
+    const rw = w > 0 ? w : 640;
+    const rh = h > 0 ? h : 480;
+    const rot = displayRotation % 360;
+    if (rot === 90 || rot === 270) {
+      return { layoutW: rh, layoutH: rw, rotClass: "fig-display-rot-" + rot };
+    }
+    if (rot === 180) {
+      return { layoutW: rw, layoutH: rh, rotClass: "fig-display-rot-180" };
+    }
+    return { layoutW: rw, layoutH: rh, rotClass: "" };
+  }
+
   function figureFailBox(w, h, pub, figLabel, reason) {
     const meta = [pub, figLabel].filter(Boolean).join(" · ");
     const why = reason || "真图缺失";
     return (
-      "<div class=\"fig-fail\" style=\"max-width:" + w + "px;aspect-ratio:" + w + "/" + h + "\" role=\"img\" " +
+      "<div class=\"fig-fail\" role=\"img\" " +
       "aria-label=\"图加载失败：" + esc(why) + (meta ? " " + esc(meta) : "") + "\">" +
       "<div class=\"fig-fail-title\">图加载失败 / " + esc(why) + "</div>" +
       (meta ? "<div class=\"fig-fail-meta\">" + esc(meta) + "</div>" : "") +
@@ -388,20 +419,26 @@
   function renderImages(images) {
     if (!images || !images.length) return "";
     return images.map((img) => {
-      const w = img.width || 640;
-      const h = img.height || 480;
       const caption =
         img.display_caption ||
         img.caption ||
         [img.source_publication, img.figure_label].filter(Boolean).join(" · ");
       const pub = img.source_publication || "";
-      const figLabel = img.figure_label || "";
+      const figLabel = figureLabelFromCaption(img.caption || img.display_caption, img.figure_label || "");
+      const w = img.width || 640;
+      const h = img.height || 480;
+      const layout = figureLayoutDims(w, h, img.display_rotation || 0);
+      const ar = (layout.layoutW > 0 && layout.layoutH / layout.layoutW <= 1.6)
+        ? layout.layoutW + "/" + layout.layoutH
+        : "16/10";
+      const rotClass = layout.rotClass ? " " + layout.rotClass : "";
       const src = img.path || "";
       let body;
       if (src) {
         body =
-          "<div class=\"fig-media\" style=\"aspect-ratio:" + w + "/" + h + "\">" +
-          "<img data-src=\"" + esc(src) + "\" width=\"" + w + "\" height=\"" + h +
+          "<div class=\"fig-media" + rotClass + "\" style=\"aspect-ratio:" + ar + "\">" +
+          "<img class=\"" + esc(layout.rotClass || "fig-img") + "\" data-src=\"" + esc(src) +
+          "\" width=\"" + layout.layoutW + "\" height=\"" + layout.layoutH +
           "\" alt=\"" + esc(caption) + "\" loading=\"lazy\" decoding=\"async\" " +
           "data-fig-pub=\"" + esc(pub) + "\" data-fig-label=\"" + esc(figLabel) + "\"></div>";
       } else {
@@ -434,8 +471,8 @@
     const figBlock = renderImages(f.images) || "<span class=\"subtle\">无附图（不得用生成图替代）</span>";
     return (
       "<article class=\"patent-page\" id=\"" + esc(f.id) + "\" tabindex=\"-1\" data-month=\"" + esc(f.month || "") + "\">" +
+      "<header class=\"patent-page-header\">" + titleBlock + "</header>" +
       "<table class=\"patent-table\">" + PATENT_COLGROUP +
-      "<tr><td colspan=\"2\" class=\"section-title\">" + titleBlock + "</td></tr>" +
       patentFieldRow("公开号", esc(f.publication_number || "")) +
       patentFieldRow("申请人", esc(f.applicant || "")) +
       patentFieldRow(
@@ -632,7 +669,7 @@
 
     let data;
     try {
-      const res = await fetch("data/report.json", { cache: "no-store" });
+      const res = await fetch(reportDataUrl(), { cache: "no-store" });
       if (!res.ok) throw new Error("HTTP " + res.status);
       data = await res.json();
     } catch (err) {

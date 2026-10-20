@@ -1,0 +1,75 @@
+{
+  "edition": "epi-evidence-supplement-gate3",
+  "date": "2026-10-20",
+  "read_standard": "权利要求级阅读（Gate③ EPI 证据复核）；仅下列四件计 team_read。",
+  "team_read": [
+    {
+      "publication_id": "US20250327209A1",
+      "official_source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20250327209",
+      "source_urls": [
+        "https://patents.google.com/patent/US20250327209A1/en",
+        "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20250327209"
+      ],
+      "source_retrieved_at": "2026-10-20T10:03:49Z",
+      "source_sha256": "04d83748266705e79395aab59ed1387487518cdf71a91fd5ab6db77e0ad59c69",
+      "read_query": "独立 EPI 检索 Gate③ r2；纳入边界=Si 外延沉积反应器/工艺。",
+      "actual_read_spans": [
+        "USPTO 公开 PDF（sha256 见 source_sha256）：独立权利要求 1–3 与方法/反应器主题",
+        "摘要与实施方式中与腔体、气体路径、基座相关的段落（目视复核）"
+      ],
+      "reviewed_at": "2026-10-20",
+      "reviewer": "epi-evidence-review-r2"
+    },
+    {
+      "publication_id": "US20260055532A1",
+      "official_source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260055532",
+      "source_urls": [
+        "https://patents.google.com/patent/US20260055532A1/en",
+        "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260055532"
+      ],
+      "source_retrieved_at": "2026-10-20T10:03:49Z",
+      "source_sha256": "42e816969db0d2d7402244b373944637ec21cb91bc3410bb8764b1783caaa7c6",
+      "read_query": "独立 EPI 检索 Gate③ r2；晶圆边缘膜缺陷与外延制程腔体。",
+      "actual_read_spans": [
+        "USPTO 公开 PDF：独立权利要求 1 及与边缘区域工艺相关的从属项",
+        "摘要中对 edge defect / substrate edge 的表述"
+      ],
+      "reviewed_at": "2026-10-20",
+      "reviewer": "epi-evidence-review-r2"
+    },
+    {
+      "publication_id": "US20260071979A1",
+      "official_source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260071979",
+      "source_urls": [
+        "https://patents.google.com/patent/US20260071979A1/en",
+        "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260071979"
+      ],
+      "source_retrieved_at": "2026-10-20T10:03:49Z",
+      "source_sha256": "2ee8d4206cf3f1b4a700bced605d01fe4b613382b7ba4fd6f7dbccb6d7579c2c",
+      "read_query": "独立 EPI 检索 Gate③ r2；Si/SiGe 超晶格 + XRF 工艺控制。",
+      "actual_read_spans": [
+        "USPTO 公开 PDF：独立权利要求 1 与方法步骤",
+        "权利要求中 XRF / superlattice 相关从属项"
+      ],
+      "reviewed_at": "2026-10-20",
+      "reviewer": "epi-evidence-review-r2"
+    },
+    {
+      "publication_id": "CN121693111A",
+      "official_source_url": "https://patents.google.com/patent/CN121693111A/en",
+      "source_urls": [
+        "https://patents.google.com/patent/CN121693111A/en"
+      ],
+      "source_retrieved_at": "2026-10-20T10:05:00Z",
+      "source_sha256": null,
+      "read_evidence_note": "国知局可下载 PDF 的 sha256 尚未在本仓库固化；权利要求级阅读依据 Gate③ 中文公开文本与权利要求书（Google Patents 镜像），待 CNIPA 原件哈希补齐。",
+      "read_query": "独立 EPI 检索 Gate③ r2；外延层厚度电学监测。",
+      "actual_read_spans": [
+        "公开文本权利要求 1–5（Google Patents 页面；无 PDF sha256）",
+        "摘要：电学监测外延层厚度与测试结构"
+      ],
+      "reviewed_at": "2026-10-20",
+      "reviewer": "epi-evidence-review-r2"
+    }
+  ]
+}

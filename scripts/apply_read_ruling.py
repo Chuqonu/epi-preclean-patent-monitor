@@ -33,17 +33,10 @@ def main() -> int:
                 fam["actual_read_spans"] = []
 
     sys.path.insert(0, str(ROOT / "scripts"))
-    import merge_evidence_r2 as mer
+    from report_metrics import recompute_counts
 
-    mer.recompute_counts(data)
-    got = sum(
-        1
-        for mo in data.get("months") or []
-        for fa in mo.get("families") or []
-        if fa.get("team_independent_read")
-    )
-    data["counts"]["actually_read"] = got
-    data["counts"]["events_reviewed"] = got
+    recompute_counts(data)
+    got = data["counts"]["actually_read"]
 
     if got != expected:
         print(f"ERROR team_read {got} != locked {expected}", file=sys.stderr)
