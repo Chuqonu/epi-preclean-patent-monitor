@@ -1,0 +1,271 @@
+{
+  "gate": "③",
+  "edition": "evidence-review-r2",
+  "date": "2026-10-20",
+  "method_trace": "2026-10-20.4.2-r2 + evidence-review-r2",
+  "change_summary": "Gate ③：3 条基线对照确认；9 条独立检索新纳入；4 条待核不入主表为新发现。",
+  "baseline_confirms": [
+    {
+      "publication_id": "US12526971B2",
+      "note": "独立 EPI 检索再次命中本条（2026-01 授权）。仅作对照确认，仍计为基线导入（imported baseline），不记为本团队新发现。"
+    },
+    {
+      "publication_id": "US20260136521A1",
+      "note": "独立检索对照命中。保留 reference_report 基线标记，不升级为独立新纳入。"
+    },
+    {
+      "publication_id": "US12543516B2",
+      "note": "独立检索对照命中。保留基线导入属性，仅记录对照复核。"
+    }
+  ],
+  "independent_discoveries": [
+    {
+      "publication_id": "US20250327209A1",
+      "jurisdiction": "US",
+      "event_type": "publication",
+      "event_date": "2025-10-23",
+      "application_id": "US19/182,248",
+      "family_id": "US20250327209A1",
+      "title_original": "Systems, methods, and vessels for epitaxial depositions",
+      "title_zh": "外延沉积用的系统、方法与反应器",
+      "applicant_normalized": "ASM IP Holding B.V.",
+      "technology_tags": ["epi"],
+      "scope_status": "core",
+      "category": "EPI 设备",
+      "short_preview": "围绕外延沉积反应器与工艺集成，涉及腔体、气体输送与晶圆支撑配置，用于改善外延沉积过程控制。",
+      "technical_summary": "围绕外延沉积反应器与工艺集成，涉及腔体、气体输送与晶圆支撑配置，用于改善外延沉积过程控制。",
+      "claims_or_embodiment_basis": "证据复核 r2：独立权利要求要求外延沉积反应器/方法组合，含腔体、基座与工艺气体路径；从属项限定温度、压力与材料层序。",
+      "scope_reason": "直接涉及 Si 外延沉积硬件与工艺集成，纳入核心 EPI 设备监测。"
+    },
+    {
+      "publication_id": "US20260055532A1",
+      "jurisdiction": "US",
+      "event_type": "publication",
+      "event_date": "2026-02-26",
+      "application_id": "US18/813,891",
+      "family_id": "US20260055532A1",
+      "title_original": "Chamber and method for controlling film defects at an edge area of a substrate",
+      "title_zh": "控制晶圆边缘区域膜缺陷的腔室与方法",
+      "applicant_normalized": "Applied Materials, Inc.",
+      "technology_tags": ["epi"],
+      "scope_status": "core",
+      "category": "EPI 工艺",
+      "short_preview": "在外延或薄膜工艺腔中，通过边缘区域工艺控制降低膜缺陷，与外延晶圆边缘良率相关。",
+      "technical_summary": "在外延或薄膜工艺腔中，通过边缘区域工艺控制降低膜缺陷，与外延晶圆边缘良率相关。",
+      "claims_or_embodiment_basis": "证据复核 r2：权利要求聚焦腔室边缘区域的膜生长/缺陷抑制步骤，与外延制程腔体相关。",
+      "scope_reason": "外延制程腔体缺陷控制，纳入核心 EPI 工艺监测。"
+    },
+    {
+      "publication_id": "US20260071979A1",
+      "jurisdiction": "US",
+      "event_type": "publication",
+      "event_date": "2026-03-12",
+      "application_id": "US19/321,663",
+      "family_id": "US20260071979A1",
+      "title_original": "Method of forming si/sige superlattice structures using xrf measurements and process control techniques",
+      "title_zh": "结合 XRF 计量与工艺控制的 Si/SiGe 超晶格形成方法",
+      "applicant_normalized": "Applied Materials, Inc.",
+      "technology_tags": ["epi"],
+      "scope_status": "core",
+      "category": "EPI 控制与计量",
+      "short_preview": "在 Si/SiGe 超晶格外延中引入 XRF 量测与闭环工艺控制，用于组成与厚度监控。",
+      "technical_summary": "在 Si/SiGe 超晶格外延中引入 XRF 量测与闭环工艺控制，用于组成与厚度监控。",
+      "claims_or_embodiment_basis": "证据复核 r2：方法权利要求将超晶格外延步骤与 XRF 反馈控制耦合。",
+      "scope_reason": "Si/SiGe 外延工艺与在线计量，纳入核心。"
+    },
+    {
+      "publication_id": "CN121693111A",
+      "jurisdiction": "CN",
+      "event_type": "publication",
+      "event_date": "2026-03-17",
+      "application_id": "CN202511931241.2A",
+      "family_id": "CN121693111A",
+      "title_original": "Method for electrically monitoring thickness of epitaxial layer and semiconductor test structure",
+      "title_zh": "外延层厚度电学监测方法与半导体测试结构",
+      "applicant_normalized": "浙江创芯集成电路有限公司",
+      "technology_tags": ["epi"],
+      "scope_status": "core",
+      "category": "EPI 控制与计量",
+      "short_preview": "通过测试结构电学特性监测外延层厚度，服务外延工艺过程控制。",
+      "technical_summary": "通过测试结构电学特性监测外延层厚度，服务外延工艺过程控制。",
+      "claims_or_embodiment_basis": "证据复核 r2：权利要求含外延层厚度电学监测步骤与测试结构布局。",
+      "scope_reason": "外延层厚度监测，纳入核心 EPI 计量。"
+    },
+    {
+      "publication_id": "CN122069948A",
+      "jurisdiction": "CN",
+      "event_type": "publication",
+      "event_date": "2026-05-19",
+      "application_id": "CN202610121551.6A",
+      "family_id": "CN122069948A",
+      "title_original": "Epitaxial layer forming method",
+      "title_zh": "外延层形成方法",
+      "applicant_normalized": "华虹半导体制造（无锡）有限公司",
+      "technology_tags": ["epi"],
+      "scope_status": "core",
+      "category": "EPI 工艺",
+      "short_preview": "公开外延层形成工艺步骤，涉及硅基外延层的生长条件与层结构控制。",
+      "technical_summary": "公开外延层形成工艺步骤，涉及硅基外延层的生长条件与层结构控制。",
+      "claims_or_embodiment_basis": "证据复核 r2：独立权利要求限定外延层形成工序与工艺参数窗口。",
+      "scope_reason": "硅基外延形成方法，纳入核心。"
+    },
+    {
+      "publication_id": "WO2026096517A1",
+      "jurisdiction": "WO",
+      "event_type": "publication",
+      "event_date": "2026-05-07",
+      "application_id": "PCT/US2025/052926",
+      "family_id": "FAM-merge-hybrid-preclean",
+      "family_id_source": "independent_search",
+      "family_merge_note": "FAM-merge-hybrid-preclean：与 TW202628839A 为同一 hybrid preclean 族；WO 与 TW 公开分别保留为两条族月条目。",
+      "title_original": "Hybrid preclean chamber and methods",
+      "title_zh": "混合式外延前清洗腔室及方法",
+      "applicant_normalized": "Applied Materials, Inc.",
+      "technology_tags": ["preclean"],
+      "scope_status": "core",
+      "category": "Preclean",
+      "short_preview": "混合式 preclean 腔体与工艺，在外延前去除表面氧化/污染物，并与集群工具集成。",
+      "technical_summary": "混合式 preclean 腔体与工艺，在外延前去除表面氧化/污染物，并与集群工具集成。",
+      "claims_or_embodiment_basis": "证据复核 r2：权利要求覆盖 hybrid preclean 腔体配置与等离子体/气相清洗步骤，衔接外延前表面准备。",
+      "scope_reason": "外延前 preclean 硬件与工艺，纳入核心 Preclean。",
+      "family_events": [
+        {
+          "publication_id": "WO2026096517A1",
+          "event_date": "2026-05-07",
+          "event_type": "publication",
+          "source_url": "https://patents.google.com/patent/WO2026096517A1/en",
+          "application_id": "PCT/US2025/052926"
+        },
+        {
+          "publication_id": "TW202628839A",
+          "event_date": "2026-07-01",
+          "event_type": "publication",
+          "source_url": "https://patents.google.com/patent/TW202628839A/en",
+          "application_id": "TW114142104A"
+        }
+      ]
+    },
+    {
+      "publication_id": "TW202628839A",
+      "jurisdiction": "TW",
+      "event_type": "publication",
+      "event_date": "2026-07-01",
+      "application_id": "TW114142104A",
+      "family_id": "FAM-merge-hybrid-preclean",
+      "family_id_source": "independent_search",
+      "family_merge_note": "FAM-merge-hybrid-preclean：与 WO2026096517A1 同族；台湾公开单独成卡，族键合并。",
+      "title_original": "Hybrid preclean chamber and methods",
+      "title_zh": "混合式外延前清洗腔室及方法（台湾公开）",
+      "applicant_normalized": "美商應用材料股份有限公司",
+      "technology_tags": ["preclean"],
+      "scope_status": "core",
+      "category": "Preclean",
+      "short_preview": "台湾同族公开：混合 preclean 腔体与方法，用于外延前表面清洗。",
+      "technical_summary": "台湾同族公开：混合 preclean 腔体与方法，用于外延前表面清洗。",
+      "claims_or_embodiment_basis": "证据复核 r2：与 WO 同族；台湾文本权利要求结构已对照，纳入同族监测。",
+      "scope_reason": "同族法域公开，纳入核心 Preclean 监测。",
+      "family_events": [
+        {
+          "publication_id": "WO2026096517A1",
+          "event_date": "2026-05-07",
+          "event_type": "publication",
+          "source_url": "https://patents.google.com/patent/WO2026096517A1/en",
+          "application_id": "PCT/US2025/052926"
+        },
+        {
+          "publication_id": "TW202628839A",
+          "event_date": "2026-07-01",
+          "event_type": "publication",
+          "source_url": "https://patents.google.com/patent/TW202628839A/en",
+          "application_id": "TW114142104A"
+        }
+      ]
+    },
+    {
+      "publication_id": "CN122294515A",
+      "jurisdiction": "CN",
+      "event_type": "publication",
+      "event_date": "2026-06-26",
+      "application_id": "CN202610446224.8A",
+      "family_id": "CN122294515A",
+      "title_original": "Interface treatment methods to reduce the density of selective epitaxial defects in the germanium-silicon based region of HBT",
+      "title_zh": "降低 HBT 锗硅区选择性外延缺陷的界面处理方法",
+      "applicant_normalized": "中国电子科技集团公司第二十四研究所",
+      "technology_tags": ["epi"],
+      "scope_status": "core",
+      "category": "EPI 工艺",
+      "short_preview": "在 HBT 锗硅区域选择性外延前/后进行界面处理，以降低选择性外延缺陷密度。",
+      "technical_summary": "在 HBT 锗硅区域选择性外延前/后进行界面处理，以降低选择性外延缺陷密度。",
+      "claims_or_embodiment_basis": "证据复核 r2：权利要求组合界面处理与选择性外延步骤，针对 SiGe 区域缺陷控制。",
+      "scope_reason": "SiGe 选择性外延与界面处理，纳入核心。"
+    },
+    {
+      "publication_id": "US12660522B2",
+      "jurisdiction": "US",
+      "event_type": "grant",
+      "event_date": "2026-06-16",
+      "application_id": "US17/615,877",
+      "family_id": "US12660522B2",
+      "title_original": "Anisotropic epitaxial growth of silicon germanium",
+      "title_zh": "硅锗各向异性外延生长",
+      "applicant_normalized": "Applied Materials, Inc.",
+      "technology_tags": ["epi"],
+      "scope_status": "core",
+      "category": "EPI 工艺",
+      "short_preview": "控制 SiGe 各向异性外延生长形貌与结晶取向，用于沟道/源漏外延结构。",
+      "technical_summary": "控制 SiGe 各向异性外延生长形貌与结晶取向，用于沟道/源漏外延结构。",
+      "claims_or_embodiment_basis": "证据复核 r2：授权权利要求限定各向异性 SiGe 外延生长条件与结构特征。",
+      "scope_reason": "SiGe 外延生长授权，纳入核心。"
+    }
+  ],
+  "pending": [
+    {
+      "publication_id": "US20260066234A1",
+      "jurisdiction": "US",
+      "event_date": "2026-03-05",
+      "title_zh": "等离子体增强外延沉积腔室",
+      "applicant_normalized": "Applied Materials, Inc.",
+      "pending_reason": "证据复核 r2：独立检索命中但技术边界（等离子体增强外延 vs 纯 preclean/EPI 主线）与同族引用关系待核；未升格为独立新纳入。基线条目中仅作同族附图引用，不重复升格。",
+      "discovery_source": "independent_search"
+    },
+    {
+      "publication_id": "US12757451B2",
+      "jurisdiction": "US",
+      "title_zh": "（公开文献待核实）US12757451B2",
+      "pending_reason": "证据复核 r2：独立检索列出，但公开日/全文在复核时未能从官方可访问源稳定取得（Google Patents 404）；保留待核，不入主表。",
+      "discovery_source": "independent_search"
+    },
+    {
+      "publication_id": "WO2026084898A1",
+      "jurisdiction": "WO",
+      "event_date": "2026-04-23",
+      "title_zh": "控制含硅外延材料中的自掺杂",
+      "applicant_normalized": "Applied Materials, Inc.",
+      "import_tag": "imported baseline",
+      "discovery_source": "reference_report",
+      "pending_reason": "证据复核 r2：已在基线主表（imported baseline）。独立检索侧列为待核项系同族/自掺杂边界复核，不升级为独立新发现。"
+    },
+    {
+      "publication_id": "CN122564748A",
+      "jurisdiction": "CN",
+      "event_date": "2026-08-14",
+      "title_zh": "消除外延腔首片膜厚异常的方法",
+      "applicant_normalized": "江苏天芯微半导体设备有限公司",
+      "pending_reason": "证据复核 r2：关联外延腔首片工艺，但与核心 EPI/preclean 纳入边界需补读权利要求；暂列待核，不入主表为新发现。",
+      "discovery_source": "independent_search"
+    }
+  ],
+  "report_meta_patch": {
+    "browser_title": "EPI / Preclean Patent Monitoring Report · 2025/10–2026/10 · 初版·含独立检索增量 · 截至2026-10-19",
+    "status_note": "初版：基线导入 + Gate ③ 独立检索增量（非正式交付）。基线条目仍标 imported baseline；9 条独立新纳入已证据复核阅读。",
+    "coverage_note": "在 Dot 基线（110 族月条目）上合并 2026-10-20 证据复核 r2 的 9 条独立检索纳入。3 条基线对照命中不升级为独立发现。4 条待核见「关联待核」区，其中 WO2026084898A1 仍保留基线主表呈现。不得伪称零遗漏或正式交付。",
+    "notes": [
+      "初版 = 基线 imported baseline + 独立检索增量（discovery_source=independent_search）。",
+      "基线对照命中（US12526971B2 等）仅 confirmation，不改为独立发现。",
+      "FAM-merge-hybrid-preclean：WO2026096517A1 + TW202628839A。",
+      "待核队列见 pending_or_related；不入主表为新接受的 4 条。",
+      "本团队已读仅计独立检索条目在证据复核 r2 中实际阅读者。",
+      "附图仍以真实 PNG 为准；多数引用待补 local_asset_path。"
+    ]
+  }
+}

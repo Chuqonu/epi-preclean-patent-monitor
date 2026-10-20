@@ -441,6 +441,40 @@ button { font: inherit; cursor: pointer; }
   color: var(--muted);
 }
 
+.pending-queue {
+  margin: 24px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.pending-queue summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: 550;
+  list-style: none;
+}
+
+.pending-queue summary::-webkit-details-marker { display: none; }
+
+.pending-queue-body {
+  margin-top: 10px;
+  padding: 12px 14px;
+  background: var(--paper);
+  border: 1px dashed var(--line);
+  border-radius: 6px;
+}
+
+.pending-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.pending-list li {
+  margin-bottom: 10px;
+}
+
+.pending-list li:last-child { margin-bottom: 0; }
+
 .import-tag {
   color: #8a5a00;
   font-weight: 500;
