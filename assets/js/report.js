@@ -141,6 +141,34 @@
     }
   }
 
+  function initMobileDrawer() {
+    const toggle = $("#toc-drawer-toggle");
+    const shell = $(".shell");
+    const side = $(".side");
+    if (!toggle || !shell || !side) return;
+
+    function setOpen(open) {
+      shell.classList.toggle("drawer-open", open);
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      document.body.classList.toggle("drawer-scroll-lock", open);
+    }
+
+    toggle.addEventListener("click", () => setOpen(!shell.classList.contains("drawer-open")));
+
+    side.addEventListener("click", (e) => {
+      const mini = e.target.closest(".mini");
+      if (mini && shell.classList.contains("drawer-open")) setOpen(false);
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && shell.classList.contains("drawer-open")) setOpen(false);
+    });
+
+    shell.addEventListener("click", (e) => {
+      if (e.target === shell && shell.classList.contains("drawer-open")) setOpen(false);
+    });
+  }
+
   function initResizer() {
     const handle = $("#resizer");
     if (!handle) return;
@@ -666,6 +694,7 @@
   async function main() {
     loadSidebarWidth();
     initResizer();
+    initMobileDrawer();
 
     let data;
     try {
