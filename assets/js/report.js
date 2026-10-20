@@ -417,6 +417,22 @@
     return (url && url.trim()) ? url.trim() : "data/report.json";
   }
 
+  /**
+   * Apply CSS display_rotation only when raster is landscape (w >= h).
+   * Portrait recovered bytes are already upright; legacy rot90 must not double-rotate.
+   */
+  function effectiveDisplayRotation(img) {
+    const rot = Number(img.display_rotation) || 0;
+    if (!rot) return 0;
+    const w = Number(img.width) || 0;
+    const h = Number(img.height) || 0;
+    if (w > 0 && h > 0) {
+      if ((rot === 90 || rot === 270) && h > w) return 0;
+      if ((rot === 90 || rot === 270) && w >= h) return rot;
+    }
+    return rot;
+  }
+
   /** Layout box for display_rotation (extraction_rotation already baked into file bytes). */
   function figureLayoutDims(w, h, displayRotation) {
     const rw = w > 0 ? w : 640;
@@ -455,7 +471,8 @@
       const figLabel = figureLabelFromCaption(img.caption || img.display_caption, img.figure_label || "");
       const w = img.width || 640;
       const h = img.height || 480;
-      const layout = figureLayoutDims(w, h, img.display_rotation || 0);
+      const effRot = effectiveDisplayRotation(img);
+      const layout = figureLayoutDims(w, h, effRot);
       const ar = (layout.layoutW > 0 && layout.layoutH / layout.layoutW <= 1.6)
         ? layout.layoutW + "/" + layout.layoutH
         : "16/10";

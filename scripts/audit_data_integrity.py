@@ -10,6 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 REPORT = ROOT / "data" / "report.json"
+RULING_R2 = ROOT / "docs" / "EVIDENCE-READ-RULING-COMBINED-2026-10-20-r2.json"
 RULING = ROOT / "docs" / "EVIDENCE-READ-RULING-COMBINED-2026-10-20.json"
 
 
@@ -25,8 +26,9 @@ def main() -> int:
     if dupes:
         errors.append(f"duplicate publication_id on month cards: {dupes}")
 
-    if RULING.is_file():
-        ruling = json.loads(RULING.read_text(encoding="utf-8"))
+    ruling_path = RULING_R2 if RULING_R2.is_file() else RULING
+    if ruling_path.is_file():
+        ruling = json.loads(ruling_path.read_text(encoding="utf-8"))
         locked = int(ruling["locked_team_read_total"])
         team_ids = set(ruling["team_read_publication_ids"])
         flagged = {

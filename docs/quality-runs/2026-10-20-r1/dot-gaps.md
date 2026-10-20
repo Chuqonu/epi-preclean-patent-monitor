@@ -8,7 +8,7 @@ TLS: reachable from cloud build (HTTP 200). No user action required for benchmar
 | Area | Dot | Ours (after R1) | Round |
 |------|-----|-----------------|-------|
 | First screen | Patent title + fields immediately | Title above table; stats only in collapsed「报告信息」footer | R1 ✓ |
-| Label column | Fixed narrow labels | `colgroup` ~132px desktop; ~108px mobile table | R1 ✓ |
+| Label column | Fixed narrow labels | `clamp(110px,18%,140px)` desktop; `clamp(84px,22%,100px)` mobile; nested `.events` `table-layout:auto` | R1 B ✓ |
 | Sidebar mobile | Collapsible / full-width read | Off-canvas drawer via「目录」; backdrop + Esc | R1 ✓ |
 | Asset cache | N/A (their host) | Content-hash `?v=` on CSS/JS + meta JSON URL | R1 ✓ |
 | Baseline figures | Embedded | 130/130 recovered paths live; 9× `display_rotation=90` | Done (separate PR) |
