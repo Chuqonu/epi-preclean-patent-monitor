@@ -204,17 +204,7 @@
       "scope_reason": "SiGe 外延生长授权，纳入核心。"
     }
   ],
-  "pending": [
-    {
-      "publication_id": "CN122564748A",
-      "jurisdiction": "CN",
-      "event_date": "2026-08-14",
-      "title_zh": "消除外延腔首片膜厚异常的方法",
-      "applicant_normalized": "江苏天芯微半导体设备有限公司",
-      "pending_reason": "证据复核 r2：关联外延腔首片工艺，但与核心 EPI/preclean 纳入边界需补读权利要求；暂列待核，不入主表为新发现。",
-      "discovery_source": "independent_search"
-    }
-  ],
+  "pending": [],
   "pending_archived_from_queue": [
     {
       "publication_id": "US20260066234A1",
@@ -230,9 +220,14 @@
       "publication_id": "WO2026084898A1",
       "cleared_at": "2026-10-20",
       "reason": "基线主表 retained；自 Preclean/EPI active 待核队列移除，不升级为独立新发现。"
+    },
+    {
+      "publication_id": "CN122564748A",
+      "cleared_at": "2026-10-20",
+      "reason": "裁定 exclude；自 content-pending 队列移除（见 EVIDENCE-PENDING-DISPOSITION-CN122564748A-2026-10-20.json）。"
     }
   ],
-  "pending_hygiene_note": "2026-10-20：live pending_or_related 仅保留 CN122564748A；CN 附图待补仍走 figures_pending，不计入本条 content-pending 计数。",
+  "pending_hygiene_note": "2026-10-20：CN122564748A 裁定 exclude，content-pending 队列清空（pending→0）；CN 附图不伪造。",
   "report_meta_patch": {
     "browser_title": "EPI / Preclean Patent Monitoring Report · 2025/10–2026/10 · 初版·含独立检索增量 · 截至2026-10-19",
     "status_note": "初版：基线导入 + Gate ③ 独立检索增量（非正式交付）。基线条目仍标 imported baseline；9 条独立新纳入已证据复核阅读。",

@@ -10,7 +10,7 @@
   "scope": "Si/SiGe 外延设备、工艺和具有具体生长关系的集成路线；外延前干法/等离子体 preclean；与上述场景明确相关的腔体干法清洗。",
   "excluded_scope": "暂不含仅以 SiC/GaN 为生长对象的平台、独立湿法清洗。SiC 涂层/腔体部件不是 SiC 生长；Si:C/SiCP 不是 SiC；冷却水不是湿法洗片；EPI 整体路线中带湿步骤不等于独立湿洗——上述均不能单独作为整案排除理由。",
   "count_basis": "按公开或授权公告日期（event_date）归月，按 patent family（family_id）解读；同一族可在后续月份因新国家公开、分案或授权事件再次出现。严格区分候选数、事件数、族数与已实际阅读数。WO 公开不记成授权。基线条目来自参考报告导入，不计为本团队独立发现。",
-  "coverage_note": "在 Dot 基线上合并 Gate③ 与 Sprint 增量。关联待核队列现仅 CN122564748A（见 pending_or_related）。不得伪称零遗漏或正式交付。",
+  "coverage_note": "在 Dot 基线上合并 Gate③ 与 Sprint 增量。关联待核 content-pending 队列现为空（CN122564748A exclude）。不得伪称零遗漏或正式交付。",
   "status_note": "初版：基线 + Gate③ 增量。本团队已读锁定 6（r2 ruling）。",
   "notes": [
     "本团队已读锁定 6（见 EVIDENCE-READ-RULING-COMBINED-2026-10-20-r2.json）。",
@@ -19,8 +19,8 @@
     "FAM-merge-hybrid-preclean：WO2026096517A1 + TW202628839A。",
     "附图仍以真实 PNG 为准；多数引用待补 local_asset_path。",
     "Sprint gap A（2026-10-20）：已纳入 TEL US20250311241A1（related）与 US12757648B2（core，2026-10 授权）。",
-    "关联待核（active）：仅 CN122564748A；已升格/已排除项不再列于 pending_or_related。",
-    "epi-4 实际定时触发：双轨空增量（EPI/Preclean 各 0 candidates·0 events·0 families）；research_through 2026-10-19→2026-10-20；无新专利纳入；运行日志 docs/runs/2026-10-20-epi-4-full-maintenance.md"
+    "epi-4 实际定时触发：双轨空增量（EPI/Preclean 各 0 candidates·0 events·0 families）；research_through 2026-10-19→2026-10-20；无新专利纳入；运行日志 docs/runs/2026-10-20-epi-4-full-maintenance.md",
+    "关联待核（content-pending）：无 active 行；CN122564748A 已裁定 exclude（见 EVIDENCE-PENDING-DISPOSITION-CN122564748A-2026-10-20.json）。"
   ],
   "counts": {
     "candidates_total": 122,
@@ -28,9 +28,9 @@
     "events_core": 150,
     "families_core": 108,
     "related": 1,
-    "pending": 1,
+    "pending": 0,
     "excluded": 0,
-    "figures": 130,
+    "figures": 136,
     "month_family_entries": 122,
     "publication_events": 150,
     "unique_families": 109,
@@ -38,24 +38,7 @@
     "unique_publication_ids": 150
   },
   "search_coverage": [],
-  "pending_or_related": [
-    {
-      "publication_id": "CN122564748A",
-      "jurisdiction": "CN",
-      "event_type": "publication",
-      "event_date": "2026-08-14",
-      "title_zh": "消除外延腔首片膜厚异常的方法",
-      "applicant_normalized": "江苏天芯微半导体设备有限公司",
-      "scope_status": "pending",
-      "pending_reason": "证据复核 r2：关联外延腔首片工艺，但与核心 EPI/preclean 纳入边界需补读权利要求；暂列待核，不入主表为新发现。",
-      "failure_or_pending_reason": "证据复核 r2：关联外延腔首片工艺，但与核心 EPI/preclean 纳入边界需补读权利要求；暂列待核，不入主表为新发现。",
-      "discovery_source": "independent_search",
-      "import_tag": null,
-      "on_main_month_cards": false,
-      "disposition": "pending_not_promoted",
-      "kind_verified": true
-    }
-  ],
+  "pending_or_related": [],
   "change_history": [
     {
       "at": "2026-10-20",
@@ -86,6 +69,18 @@
       "by": "epi-4-maintenance",
       "action": "empty_incremental_research_through_bump",
       "detail": "epi-4 实际定时触发 empty incremental (dual-track 0/0/0); research_through 2026-10-19→2026-10-20; team_read unchanged 6; log docs/runs/2026-10-20-epi-4-full-maintenance.md; evidence docs/EVIDENCE-DIFF-2026-10-20-epi-4.json"
+    },
+    {
+      "at": "2026-10-20T10:50:56Z",
+      "by": "preclean-figure-backfill",
+      "action": "apply_preclean_report_figures",
+      "detail": "WO/TW hybrid-preclean Gate③ figure paths from Preclean backfill manifest."
+    },
+    {
+      "at": "2026-10-20T10:50:56Z",
+      "by": "cn-pending-exclude",
+      "action": "clear_pending_or_related",
+      "detail": "Removed from queue (exclude): CN122564748A"
     }
   ],
   "months": [
@@ -2364,13 +2359,67 @@
           "reviewer": null,
           "reviewed_at": null,
           "family_completion_status": "open",
-          "figures": [],
+          "figures": [
+            {
+              "source_publication_id": "TW202628839A",
+              "figure_number": "FIG. 1",
+              "source_url": "https://patents.google.com/patent/TW202628839A/en",
+              "local_asset_path": "assets/figures/TW202628839A_fig1.png",
+              "width": 418,
+              "height": 1024,
+              "caption": "TW202628839A 原始专利附图，FIG. 1（Gate③ hybrid preclean 族；同族附图共享）。",
+              "asset_sha256": "9b8f8f838a40eba13dc9d3568f0e589ceb7baa745beb02e8e52c2598b8ee5e79",
+              "source_original_sha256": "9b8f8f838a40eba13dc9d3568f0e589ceb7baa745beb02e8e52c2598b8ee5e79",
+              "source_display_sha256": "9b8f8f838a40eba13dc9d3568f0e589ceb7baa745beb02e8e52c2598b8ee5e79",
+              "pdf_page": 2,
+              "display_rotation": 0,
+              "source_geometry": {}
+            },
+            {
+              "source_publication_id": "TW202628839A",
+              "figure_number": "FIG. 2",
+              "source_url": "https://patents.google.com/patent/TW202628839A/en",
+              "local_asset_path": "assets/figures/TW202628839A_fig2.png",
+              "width": 1024,
+              "height": 640,
+              "caption": "TW202628839A 原始专利附图，FIG. 2（Gate③ hybrid preclean 族；同族附图共享）。",
+              "asset_sha256": "435cb11626b7c8807bedebe693d4408cf28ec9ab5f99f7402bea96b52c0e9211",
+              "source_original_sha256": "435cb11626b7c8807bedebe693d4408cf28ec9ab5f99f7402bea96b52c0e9211",
+              "source_display_sha256": "435cb11626b7c8807bedebe693d4408cf28ec9ab5f99f7402bea96b52c0e9211",
+              "pdf_page": 3,
+              "display_rotation": 90,
+              "source_geometry": {
+                "display_rotation": 90
+              }
+            },
+            {
+              "source_publication_id": "TW202628839A",
+              "figure_number": "FIG. 3",
+              "source_url": "https://patents.google.com/patent/TW202628839A/en",
+              "local_asset_path": "assets/figures/TW202628839A_fig3.png",
+              "width": 390,
+              "height": 844,
+              "caption": "TW202628839A 原始专利附图，FIG. 3（Gate③ hybrid preclean 族；同族附图共享）。",
+              "asset_sha256": "d63b01b7f9a0d5f24f261f7c76512e94aee70b42552d4a4ea6b897d67a235b8d",
+              "source_original_sha256": "d63b01b7f9a0d5f24f261f7c76512e94aee70b42552d4a4ea6b897d67a235b8d",
+              "source_display_sha256": "d63b01b7f9a0d5f24f261f7c76512e94aee70b42552d4a4ea6b897d67a235b8d",
+              "pdf_page": 4,
+              "display_rotation": 0,
+              "source_geometry": {}
+            }
+          ],
           "change_history": [
             {
               "at": "2026-10-20T09:31:48Z",
               "by": "evidence-review-r2",
               "action": "independent_add",
               "detail": "独立检索新纳入（非基线导入）。"
+            },
+            {
+              "at": "2026-10-20T10:50:56Z",
+              "by": "preclean-figure-backfill",
+              "action": "attach_gate3_family_figures",
+              "detail": "Applied 3 figures from PRECLEAN-REPORT-FIGURES-BACKFILL-2026-10-20.json"
             }
           ],
           "family_events": [
@@ -3840,13 +3889,67 @@
           "reviewer": null,
           "reviewed_at": null,
           "family_completion_status": "open",
-          "figures": [],
+          "figures": [
+            {
+              "source_publication_id": "WO2026096517A1",
+              "figure_number": "FIG. 1",
+              "source_url": "https://patents.google.com/patent/WO2026096517A1/en",
+              "local_asset_path": "assets/figures/WO2026096517A1_fig1.png",
+              "width": 418,
+              "height": 1024,
+              "caption": "WO2026096517A1 原始专利附图，FIG. 1（Gate③ hybrid preclean 族；同族附图共享）。",
+              "asset_sha256": "9b8f8f838a40eba13dc9d3568f0e589ceb7baa745beb02e8e52c2598b8ee5e79",
+              "source_original_sha256": "9b8f8f838a40eba13dc9d3568f0e589ceb7baa745beb02e8e52c2598b8ee5e79",
+              "source_display_sha256": "9b8f8f838a40eba13dc9d3568f0e589ceb7baa745beb02e8e52c2598b8ee5e79",
+              "pdf_page": 2,
+              "display_rotation": 0,
+              "source_geometry": {}
+            },
+            {
+              "source_publication_id": "WO2026096517A1",
+              "figure_number": "FIG. 2",
+              "source_url": "https://patents.google.com/patent/WO2026096517A1/en",
+              "local_asset_path": "assets/figures/WO2026096517A1_fig2.png",
+              "width": 1024,
+              "height": 640,
+              "caption": "WO2026096517A1 原始专利附图，FIG. 2（Gate③ hybrid preclean 族；同族附图共享）。",
+              "asset_sha256": "435cb11626b7c8807bedebe693d4408cf28ec9ab5f99f7402bea96b52c0e9211",
+              "source_original_sha256": "435cb11626b7c8807bedebe693d4408cf28ec9ab5f99f7402bea96b52c0e9211",
+              "source_display_sha256": "435cb11626b7c8807bedebe693d4408cf28ec9ab5f99f7402bea96b52c0e9211",
+              "pdf_page": 3,
+              "display_rotation": 90,
+              "source_geometry": {
+                "display_rotation": 90
+              }
+            },
+            {
+              "source_publication_id": "WO2026096517A1",
+              "figure_number": "FIG. 3",
+              "source_url": "https://patents.google.com/patent/WO2026096517A1/en",
+              "local_asset_path": "assets/figures/WO2026096517A1_fig3.png",
+              "width": 390,
+              "height": 844,
+              "caption": "WO2026096517A1 原始专利附图，FIG. 3（Gate③ hybrid preclean 族；同族附图共享）。",
+              "asset_sha256": "d63b01b7f9a0d5f24f261f7c76512e94aee70b42552d4a4ea6b897d67a235b8d",
+              "source_original_sha256": "d63b01b7f9a0d5f24f261f7c76512e94aee70b42552d4a4ea6b897d67a235b8d",
+              "source_display_sha256": "d63b01b7f9a0d5f24f261f7c76512e94aee70b42552d4a4ea6b897d67a235b8d",
+              "pdf_page": 4,
+              "display_rotation": 0,
+              "source_geometry": {}
+            }
+          ],
           "change_history": [
             {
               "at": "2026-10-20T09:31:48Z",
               "by": "evidence-review-r2",
               "action": "independent_add",
               "detail": "独立检索新纳入（非基线导入）。"
+            },
+            {
+              "at": "2026-10-20T10:50:56Z",
+              "by": "preclean-figure-backfill",
+              "action": "attach_gate3_family_figures",
+              "detail": "Applied 3 figures from PRECLEAN-REPORT-FIGURES-BACKFILL-2026-10-20.json"
             }
           ],
           "family_events": [
