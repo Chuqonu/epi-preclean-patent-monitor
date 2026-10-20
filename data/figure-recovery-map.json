@@ -294,9 +294,9 @@
       "figure_number": "图7：选择性沉积系统、气源和控制器",
       "figure_number_basis": "reference figure_label",
       "pdf_page": 9,
-      "display_rotation": 0,
+      "display_rotation": 90,
       "source_geometry": {
-        "display_rotation": 0
+        "display_rotation": 90
       }
     },
     "[\"US12698570B2\",\"US12698570B2 原始专利附图，Fig. 2A（原始PDF第4页）。\",\"US12698570B2\"]": {
@@ -410,9 +410,9 @@
       "figure_number": "图4：底部与侧壁掺磷层上的本征盖层",
       "figure_number_basis": "reference figure_label",
       "pdf_page": 6,
-      "display_rotation": 0,
+      "display_rotation": 90,
       "source_geometry": {
-        "display_rotation": 0
+        "display_rotation": 90
       }
     },
     "[\"US20260206272A1\",\"US20260206272A1 原始专利附图，Fig. 3A（原始PDF第4页）。\",\"US20260206272A1\"]": {
@@ -621,9 +621,9 @@
       "figure_number": "FIGS. 20C–20D",
       "figure_number_basis": "reference figure_label",
       "pdf_page": 22,
-      "display_rotation": 0,
+      "display_rotation": 90,
       "source_geometry": {
-        "display_rotation": 0
+        "display_rotation": 90
       }
     },
     "[\"US12628600B2\",\"US12628600B2 原始专利附图，Fig. 2（原始PDF第4页）。\",\"US12628600B2\"]": {
@@ -737,9 +737,9 @@
       "figure_number": "图4：带硅源、掺杂源供气和控制器的外延腔室",
       "figure_number_basis": "reference figure_label",
       "pdf_page": 5,
-      "display_rotation": 0,
+      "display_rotation": 90,
       "source_geometry": {
-        "display_rotation": 0
+        "display_rotation": 90
       }
     },
     "[\"US20260092399A1\",\"US20260092399A1 原始专利附图，Fig. 3（原始PDF第4页）。\",\"US20260092399A1\"]": {
@@ -891,9 +891,9 @@
       "figure_number": "图1：多片衬底交替沉积脉冲流程",
       "figure_number_basis": "reference figure_label",
       "pdf_page": 3,
-      "display_rotation": 0,
+      "display_rotation": 90,
       "source_geometry": {
-        "display_rotation": 0
+        "display_rotation": 90
       }
     },
     "[\"US20260068564A1\",\"US20260068564A1 原始专利附图，Fig. 3（原始PDF第4页）。\",\"US20260068564A1\"]": {
@@ -1235,9 +1235,9 @@
       "figure_number": "图2–5：从衬底至SiGe:B源漏接触层结构",
       "figure_number_basis": "reference figure_label",
       "pdf_page": 3,
-      "display_rotation": 0,
+      "display_rotation": 90,
       "source_geometry": {
-        "display_rotation": 0
+        "display_rotation": 90
       }
     },
     "[\"WO2026005974A1\",\"FIG. 2、FIG. 3：可转动反射器与辐射源的加热组件。同族原图来源：US20260005044A1（公开日 2026-01-01），PDF第3页；不是本条监测文献WO2026005974A1的附图。\",\"US20260005044A1\"]": {
@@ -1427,9 +1427,9 @@
       "figure_number": "FIG. 8A",
       "figure_number_basis": "reference figure_label",
       "pdf_page": 9,
-      "display_rotation": 0,
+      "display_rotation": 90,
       "source_geometry": {
-        "display_rotation": 0
+        "display_rotation": 90
       }
     },
     "[\"US20260026275A1\",\"欠切后第二半导体外延填充；上方406为超过介电层高度后的晶面。\",\"US20260026275A1\"]": {
@@ -1448,9 +1448,9 @@
       "figure_number": "FIG. 9",
       "figure_number_basis": "reference figure_label",
       "pdf_page": 12,
-      "display_rotation": 0,
+      "display_rotation": 90,
       "source_geometry": {
-        "display_rotation": 0
+        "display_rotation": 90
       }
     },
     "[\"KR20250168533A\",\"同族原始附图：US20240327988A1（2024-10-03），FIG. 8，PDF第9页；以温度变化率和训练模型评估腔室匹配状态。该图来自不同的同族文献，并非KR20250168533A本次文本的附图；不据此替代本次权利要求。\",\"US20240327988A1\"]": {
