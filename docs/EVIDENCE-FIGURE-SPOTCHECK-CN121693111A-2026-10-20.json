@@ -1,0 +1,22 @@
+{
+  "publication_id": "CN121693111A",
+  "date": "2026-10-20",
+  "gate": "epi-gate3-cn-figure-backfill",
+  "verdict": "PASS",
+  "evidence_design_spotcheck": true,
+  "asset": {
+    "local_asset_path": "assets/figures/CN121693111A_fig1.png",
+    "width": 1240,
+    "height": 1754,
+    "sha256": "08612a81d951205d41ef731eb4fd28f9d2d1e75773c4386b108deb76446482eb",
+    "display_rotation": 0
+  },
+  "source": {
+    "system": "DEPATISnet",
+    "document": "CN000121693111A",
+    "page": "说明书附图 1/3",
+    "not_ui_screenshot": true
+  },
+  "labeling": "Mounted as 图 1 (epi cross-section). Same raster page also shows 图 2 process flow — honest caption; no false single-figure crop claim.",
+  "out_of_scope": ["CN122294515A", "CN122069948A", "WO/TW Gate③ preclean figures"]
+}
