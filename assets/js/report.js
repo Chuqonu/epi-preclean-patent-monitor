@@ -198,9 +198,19 @@
     if (!el) return;
     const through = data.research_through || "未设定";
     el.innerHTML =
-      "<strong>" + esc(editionLabel(data)) + "</strong>" +
-      esc(data.period || "") +
-      " · 截至 " + esc(through);
+      "<strong class=\"side-title\">EPI / Preclean 专利监测</strong>" +
+      "<span class=\"side-dates\">截至 " + esc(through) + "</span>";
+  }
+
+  const PATENT_COLGROUP =
+    "<colgroup><col class=\"patent-col-label\"><col class=\"patent-col-value\"></colgroup>";
+
+  function patentFieldRow(label, valueHtml, valueClass) {
+    const vc = valueClass ? " " + valueClass : "";
+    return (
+      "<tr><th scope=\"row\" class=\"patent-label\">" + esc(label) + "</th>" +
+      "<td class=\"patent-value" + vc + "\">" + valueHtml + "</td></tr>"
+    );
   }
 
   function countBag(c) {
@@ -232,7 +242,7 @@
     const read = (data.counts && data.counts.actually_read != null) ? data.counts.actually_read : 0;
     parts.push(
       "<p class=\"subtle\">初版（非正式交付）：含 Dot 基线导入与 Gate ③ 独立检索增量。" +
-      "「本团队已读」仅计独立检索条目在证据复核中实际阅读数（当前 " + esc(read) + "），基线条目仍不计入已读。</p>"
+      "「本团队已读」= 证据裁定权利要求级阅读（锁定 " + esc(read) + "，见 EVIDENCE-READ-RULING-COMBINED）；独立纳入 9 条 ≠ 已读 9。</p>"
     );
     if ((data.counts && data.counts.pending) > 0) {
       parts.push("<p class=\"subtle\">待核 " + esc(data.counts.pending) + " 条见下方「关联待核」区，未作为独立新发现纳入主表。</p>");
@@ -240,28 +250,28 @@
     return parts.join("");
   }
 
-  function renderBanner(data) {
+  function renderReportInfoFooter(data) {
     const el = $("#banner");
     if (!el) return;
     const c = data.counts || {};
     const bag = countBag(c);
     const fig = computeFigureStats(data);
+    const statsList =
+      "<ul class=\"report-stats-list\">" +
+      "<li><span class=\"edition-tag\">" + esc(editionLabel(data)) + "</span></li>" +
+      "<li>族月条目 <strong>" + esc(bag.monthEntries) + "</strong></li>" +
+      "<li>事件 <strong>" + esc(bag.events) + "</strong></li>" +
+      "<li>族 <strong>" + esc(bag.families) + "</strong></li>" +
+      "<li>本团队已读 <strong>" + esc(bag.read) + "</strong></li>" +
+      "<li>图引用 <strong>" + esc(fig.cited) + "</strong> · 可加载 <strong>" + esc(fig.loadable) + "</strong> · 待补 <strong>" + esc(fig.pending) + "</strong></li>" +
+      "</ul>";
     el.innerHTML =
-      "<div class=\"count-bar\" role=\"group\" aria-label=\"计数：族月条目、事件、族、本团队已读、附图\">" +
-      "<span class=\"edition-tag\">" + esc(editionLabel(data)) + "</span>" +
-      "<div class=\"count-item\"><span class=\"count-num\">" + esc(bag.monthEntries) + "</span><span class=\"count-label\">族月条目</span></div>" +
-      "<div class=\"count-item\"><span class=\"count-num\">" + esc(bag.events) + "</span><span class=\"count-label\">事件</span></div>" +
-      "<div class=\"count-item\"><span class=\"count-num\">" + esc(bag.families) + "</span><span class=\"count-label\">族</span></div>" +
-      "<div class=\"count-item\"><span class=\"count-num\">" + esc(bag.read) + "</span><span class=\"count-label\">本团队已读</span></div>" +
-      "<span class=\"count-divider\" aria-hidden=\"true\"></span>" +
-      "<div class=\"count-item count-item--fig\"><span class=\"count-num\">" + esc(fig.cited) + "</span><span class=\"count-label\">图引用</span></div>" +
-      "<div class=\"count-item count-item--fig\"><span class=\"count-num\">" + esc(fig.loadable) + "</span><span class=\"count-label\">可加载图</span></div>" +
-      "<div class=\"count-item count-item--fig\"><span class=\"count-num\">" + esc(fig.pending) + "</span><span class=\"count-label\">待补图</span></div>" +
-      "</div>" +
-      "<details class=\"report-notes\">" +
-      "<summary>报告说明</summary>" +
-      "<div class=\"report-notes-body\">" + renderReportNotes(data) + "</div>" +
-      "</details>";
+      "<details class=\"report-info\">" +
+      "<summary>报告信息</summary>" +
+      "<div class=\"report-info-body\">" +
+      statsList +
+      renderReportNotes(data) +
+      "</div></details>";
   }
 
 
@@ -281,8 +291,6 @@
       details.dataset.month = m.month;
       // Do not auto-open on scroll; only open newest by default if it has content, else leave closed.
       // Scaffold: leave all closed so empty months stay compact.
-      if (idx === 0 && (m.families || []).length > 0) details.open = true;
-
       const summary = document.createElement("summary");
       const count = (m.families || []).length;
       summary.innerHTML =
@@ -392,9 +400,10 @@
       let body;
       if (src) {
         body =
+          "<div class=\"fig-media\" style=\"aspect-ratio:" + w + "/" + h + "\">" +
           "<img data-src=\"" + esc(src) + "\" width=\"" + w + "\" height=\"" + h +
-          "\" alt=\"" + esc(caption) + "\" loading=\"lazy\" " +
-          "data-fig-pub=\"" + esc(pub) + "\" data-fig-label=\"" + esc(figLabel) + "\">";
+          "\" alt=\"" + esc(caption) + "\" loading=\"lazy\" decoding=\"async\" " +
+          "data-fig-pub=\"" + esc(pub) + "\" data-fig-label=\"" + esc(figLabel) + "\"></div>";
       } else {
         body = figureFailBox(w, h, pub, figLabel, "真图缺失");
       }
@@ -422,49 +431,54 @@
         ? "<span class=\"title-translation\">" + esc(f.title_original) + "</span>"
         : "");
 
+    const figBlock = renderImages(f.images) || "<span class=\"subtle\">无附图（不得用生成图替代）</span>";
     return (
       "<article class=\"patent-page\" id=\"" + esc(f.id) + "\" tabindex=\"-1\" data-month=\"" + esc(f.month || "") + "\">" +
-      "<table class=\"patent-table\">" +
+      "<table class=\"patent-table\">" + PATENT_COLGROUP +
       "<tr><td colspan=\"2\" class=\"section-title\">" + titleBlock + "</td></tr>" +
-      "<tr><th>公开号</th><td>" + esc(f.publication_number || "") + "</td></tr>" +
-      "<tr><th>申请人</th><td>" + esc(f.applicant || "") + "</td></tr>" +
-      "<tr><th>公开/授权日</th><td>" + esc(f.publication_date || "") +
-      (f.category ? " · " + esc(f.category) : "") + "</td></tr>" +
-      "<tr><th>同族 / 事件</th><td>" +
-      "<div class=\"section-label\">同族关系</div>" + renderFamilyContext(f.family_context) +
-      "<div class=\"section-label\">公开/授权事件</div>" + renderEvents(f.events) +
-      (f.event_note ? "<div class=\"subtle\">" + esc(f.event_note) + "</div>" : "") +
-      "</td></tr>" +
-      "<tr><th>中文技术简介</th><td class=\"section-body\">" + text(f.summary || f.brief || "") +
-      (f.purpose ? "<div class=\"section-label\">目的</div>" + text(f.purpose) : "") +
-      (f.novelty ? "<div class=\"section-label\">要点</div>" + text(f.novelty) : "") +
-      (f.use ? "<div class=\"section-label\">用途</div>" + text(f.use) : "") +
-      "</td></tr>" +
-      "<tr><th>关键权利要求 / 实施方式</th><td class=\"section-body claim-text\">" +
-      text(f.claims || "—") + "</td></tr>" +
-      "<tr><th>相关性</th><td>" + text(f.relevance || "") +
-      (scopeLabelZh(f.scope_status)
-        ? "<div class=\"subtle\">范围归类：" + esc(scopeLabelZh(f.scope_status)) + "</div>"
-        : "") +
-      (discoveryLabelZh(f.discovery_source)
-        ? "<div class=\"subtle\">发现来源：" + esc(discoveryLabelZh(f.discovery_source)) + "</div>"
-        : "") +
-      (importTagZh(f.import_tag)
-        ? "<div class=\"subtle import-tag\">数据性质：" + esc(importTagZh(f.import_tag)) +
-          (f.import_tag === "imported baseline" ? "（非本团队独立发现）" : "") + "</div>"
-        : "") +
-      (f.family_merge_note
-        ? "<div class=\"subtle\">同族说明：" + esc(f.family_merge_note) + "</div>"
-        : "") +
-      (f.independent_search_confirmation
-        ? "<div class=\"subtle\">对照确认：" + esc(f.independent_search_confirmation) + "</div>"
-        : "") +
-      (f.verification ? "<div class=\"subtle\">核验：" + esc(f.verification) + "</div>" : "") +
-      "</td></tr>" +
-      "<tr><th>来源链接</th><td>" + renderSources(f.source_urls) + "</td></tr>" +
-      "<tr><th>附图</th><td class=\"section-body\">" +
-      (renderImages(f.images) || "<span class=\"subtle\">无附图（不得用生成图替代）</span>") +
-      "</td></tr>" +
+      patentFieldRow("公开号", esc(f.publication_number || "")) +
+      patentFieldRow("申请人", esc(f.applicant || "")) +
+      patentFieldRow(
+        "公开/授权日",
+        esc(f.publication_date || "") + (f.category ? " · " + esc(f.category) : "")
+      ) +
+      patentFieldRow(
+        "同族 / 事件",
+        "<div class=\"section-label\">同族关系</div>" + renderFamilyContext(f.family_context) +
+        "<div class=\"section-label\">公开/授权事件</div>" + renderEvents(f.events) +
+        (f.event_note ? "<div class=\"subtle\">" + esc(f.event_note) + "</div>" : ""),
+        "section-body"
+      ) +
+      patentFieldRow(
+        "中文技术简介",
+        text(f.summary || f.brief || "") +
+        (f.purpose ? "<div class=\"section-label\">目的</div>" + text(f.purpose) : "") +
+        (f.novelty ? "<div class=\"section-label\">要点</div>" + text(f.novelty) : "") +
+        (f.use ? "<div class=\"section-label\">用途</div>" + text(f.use) : ""),
+        "section-body"
+      ) +
+      patentFieldRow("关键权利要求 / 实施方式", text(f.claims || "—"), "section-body claim-text") +
+      patentFieldRow(
+        "相关性",
+        text(f.relevance || "") +
+        (scopeLabelZh(f.scope_status)
+          ? "<div class=\"subtle\">范围：" + esc(scopeLabelZh(f.scope_status)) + "</div>"
+          : "") +
+        (discoveryLabelZh(f.discovery_source)
+          ? "<div class=\"subtle\">来源：" + esc(discoveryLabelZh(f.discovery_source)) + "</div>"
+          : "") +
+        (importTagZh(f.import_tag) && f.import_tag === "imported baseline"
+          ? "<div class=\"subtle import-tag\">基线导入（非独立发现）</div>"
+          : "") +
+        (f.family_merge_note
+          ? "<div class=\"subtle\">同族：" + esc(f.family_merge_note) + "</div>"
+          : ""),
+        "section-body"
+      ) +
+      patentFieldRow("来源链接", renderSources(f.source_urls), "section-body") +
+      "<tr class=\"patent-row-figures\"><th colspan=\"2\" class=\"patent-section-heading\">附图</th></tr>" +
+      "<tr class=\"patent-row-figures\"><td colspan=\"2\" class=\"patent-figures-cell section-body\">" +
+      figBlock + "</td></tr>" +
       "</table></article>"
     );
   }
@@ -566,6 +580,25 @@
    * Observe patent pages for active TOC highlight.
    * Intentionally does NOT open closed <details> months while scrolling.
    */
+  function initTocSearch() {
+    const input = $("#toc-search");
+    const tree = $("#tree");
+    if (!input || !tree) return;
+    input.addEventListener("input", () => {
+      const q = input.value.trim().toLowerCase();
+      tree.querySelectorAll(".mini").forEach((a) => {
+        const hay = (a.textContent || "").toLowerCase();
+        const show = !q || hay.indexOf(q) !== -1;
+        a.style.display = show ? "" : "none";
+      });
+      tree.querySelectorAll("details.month").forEach((d) => {
+        if (!q) return;
+        const any = d.querySelector('.mini:not([style*="display: none"])');
+        if (any) d.open = true;
+      });
+    });
+  }
+
   function initScrollSpy() {
     const pages = document.querySelectorAll(".patent-page");
     if (!pages.length || !("IntersectionObserver" in window)) return;
@@ -612,9 +645,10 @@
 
     document.title = data.browser_title || data.title || document.title;
     renderSideMeta(data);
-    renderBanner(data);
     renderTree(data);
     renderContent(data);
+    renderReportInfoFooter(data);
+    initTocSearch();
     initLazyImages();
     initScrollSpy();
 

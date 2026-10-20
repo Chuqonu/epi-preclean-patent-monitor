@@ -1,0 +1,41 @@
+{
+  "edition": "evidence-read-ruling-combined",
+  "date": "2026-10-20",
+  "locked_team_read_total": 4,
+  "rule": "本团队已读仅计 Gate③ 证据复核中达到权利要求级阅读的 EPI 独立纳入条目。Preclean 独立纳入与同族卡、US12660522B2 计入报告但不计 team_read。待核 4 条不计入。",
+  "team_read_publication_ids": [
+    "US20250327209A1",
+    "US20260055532A1",
+    "US20260071979A1",
+    "CN121693111A"
+  ],
+  "independent_not_team_read": [
+    {
+      "publication_id": "US12660522B2",
+      "reason": "独立纳入已展示；授权全文未在本轮计为团队权利要求级已读。"
+    },
+    {
+      "publication_id": "WO2026096517A1",
+      "reason": "Preclean 独立纳入（FAM-merge-hybrid-preclean）；不计 team_read。"
+    },
+    {
+      "publication_id": "TW202628839A",
+      "reason": "Preclean 同族台湾公开；不计 team_read。"
+    },
+    {
+      "publication_id": "CN122294515A",
+      "reason": "Preclean/EPI 边界独立纳入；本轮未计 team_read。"
+    },
+    {
+      "publication_id": "CN122069948A",
+      "reason": "Preclean/EPI 边界独立纳入；本轮未计 team_read。"
+    }
+  ],
+  "pending_excluded_from_team_read": [
+    "US20260066234A1",
+    "US12757451B2",
+    "WO2026084898A1",
+    "CN122564748A"
+  ],
+  "read_span_label": "Gate③ 证据复核：权利要求级阅读（EPI 四件）"
+}

@@ -22,7 +22,7 @@
   ],
   "counts": {
     "candidates_total": 119,
-    "events_reviewed": 9,
+    "events_reviewed": 4,
     "events_core": 150,
     "families_core": 106,
     "related": 0,
@@ -32,7 +32,7 @@
     "month_family_entries": 119,
     "publication_events": 150,
     "unique_families": 106,
-    "actually_read": 9
+    "actually_read": 4
   },
   "search_coverage": [],
   "pending_or_related": [
@@ -2175,9 +2175,7 @@
           ],
           "source_retrieved_at": null,
           "source_sha256": null,
-          "actual_read_spans": [
-            "证据复核 r2：权利要求与摘要"
-          ],
+          "actual_read_spans": [],
           "reviewer": "evidence-review-r2",
           "reviewed_at": "2026-10-20",
           "family_completion_status": "open",
@@ -2213,7 +2211,8 @@
           "independent_of_ref": true,
           "family_merge_note": "FAM-merge-hybrid-preclean：与 WO2026096517A1 同族；台湾公开单独成卡，族键合并。",
           "event_note": "独立检索发现",
-          "category": "Preclean"
+          "category": "Preclean",
+          "team_independent_read": false
         }
       ],
       "family_count": 5,
@@ -2951,9 +2950,7 @@
           ],
           "source_retrieved_at": null,
           "source_sha256": null,
-          "actual_read_spans": [
-            "证据复核 r2：权利要求与摘要"
-          ],
+          "actual_read_spans": [],
           "reviewer": "evidence-review-r2",
           "reviewed_at": "2026-10-20",
           "family_completion_status": "open",
@@ -2982,7 +2979,8 @@
           "independent_of_ref": true,
           "family_merge_note": null,
           "event_note": "独立检索发现",
-          "category": "EPI 工艺"
+          "category": "EPI 工艺",
+          "team_independent_read": false
         },
         {
           "publication_id": "US12660522B2",
@@ -3010,9 +3008,7 @@
           ],
           "source_retrieved_at": null,
           "source_sha256": null,
-          "actual_read_spans": [
-            "证据复核 r2：权利要求与摘要"
-          ],
+          "actual_read_spans": [],
           "reviewer": "evidence-review-r2",
           "reviewed_at": "2026-10-20",
           "family_completion_status": "open",
@@ -3041,7 +3037,8 @@
           "independent_of_ref": true,
           "family_merge_note": null,
           "event_note": "独立检索发现",
-          "category": "EPI 工艺"
+          "category": "EPI 工艺",
+          "team_independent_read": false
         }
       ],
       "family_count": 9,
@@ -3511,9 +3508,7 @@
           ],
           "source_retrieved_at": null,
           "source_sha256": null,
-          "actual_read_spans": [
-            "证据复核 r2：权利要求与摘要"
-          ],
+          "actual_read_spans": [],
           "reviewer": "evidence-review-r2",
           "reviewed_at": "2026-10-20",
           "family_completion_status": "open",
@@ -3542,7 +3537,8 @@
           "independent_of_ref": true,
           "family_merge_note": null,
           "event_note": "独立检索发现",
-          "category": "EPI 工艺"
+          "category": "EPI 工艺",
+          "team_independent_read": false
         },
         {
           "publication_id": "WO2026096517A1",
@@ -3570,9 +3566,7 @@
           ],
           "source_retrieved_at": null,
           "source_sha256": null,
-          "actual_read_spans": [
-            "证据复核 r2：权利要求与摘要"
-          ],
+          "actual_read_spans": [],
           "reviewer": "evidence-review-r2",
           "reviewed_at": "2026-10-20",
           "family_completion_status": "open",
@@ -3608,7 +3602,8 @@
           "independent_of_ref": true,
           "family_merge_note": "FAM-merge-hybrid-preclean：与 TW202628839A 为同一 hybrid preclean 族；WO 与 TW 公开分别保留为两条族月条目。",
           "event_note": "独立检索发现",
-          "category": "Preclean"
+          "category": "Preclean",
+          "team_independent_read": false
         }
       ],
       "family_count": 7,
@@ -4670,7 +4665,7 @@
           "source_retrieved_at": null,
           "source_sha256": null,
           "actual_read_spans": [
-            "证据复核 r2：权利要求与摘要"
+            "Gate③ 证据复核：权利要求级阅读（EPI 四件）"
           ],
           "reviewer": "evidence-review-r2",
           "reviewed_at": "2026-10-20",
@@ -4700,7 +4695,8 @@
           "independent_of_ref": true,
           "family_merge_note": null,
           "event_note": "独立检索发现",
-          "category": "EPI 控制与计量"
+          "category": "EPI 控制与计量",
+          "team_independent_read": true
         },
         {
           "publication_id": "CN121693111A",
@@ -4729,7 +4725,7 @@
           "source_retrieved_at": null,
           "source_sha256": null,
           "actual_read_spans": [
-            "证据复核 r2：权利要求与摘要"
+            "Gate③ 证据复核：权利要求级阅读（EPI 四件）"
           ],
           "reviewer": "evidence-review-r2",
           "reviewed_at": "2026-10-20",
@@ -4759,7 +4755,8 @@
           "independent_of_ref": true,
           "family_merge_note": null,
           "event_note": "独立检索发现",
-          "category": "EPI 控制与计量"
+          "category": "EPI 控制与计量",
+          "team_independent_read": true
         }
       ],
       "family_count": 8,
@@ -5625,7 +5622,7 @@
           "source_retrieved_at": null,
           "source_sha256": null,
           "actual_read_spans": [
-            "证据复核 r2：权利要求与摘要"
+            "Gate③ 证据复核：权利要求级阅读（EPI 四件）"
           ],
           "reviewer": "evidence-review-r2",
           "reviewed_at": "2026-10-20",
@@ -5655,7 +5652,8 @@
           "independent_of_ref": true,
           "family_merge_note": null,
           "event_note": "独立检索发现",
-          "category": "EPI 工艺"
+          "category": "EPI 工艺",
+          "team_independent_read": true
         }
       ],
       "family_count": 11,
@@ -10469,7 +10467,7 @@
           "source_retrieved_at": null,
           "source_sha256": null,
           "actual_read_spans": [
-            "证据复核 r2：权利要求与摘要"
+            "Gate③ 证据复核：权利要求级阅读（EPI 四件）"
           ],
           "reviewer": "evidence-review-r2",
           "reviewed_at": "2026-10-20",
@@ -10499,7 +10497,8 @@
           "independent_of_ref": true,
           "family_merge_note": null,
           "event_note": "独立检索发现",
-          "category": "EPI 设备"
+          "category": "EPI 设备",
+          "team_independent_read": true
         }
       ],
       "family_count": 17,
