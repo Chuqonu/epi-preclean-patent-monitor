@@ -10,17 +10,16 @@
   "scope": "Si/SiGe 外延设备、工艺和具有具体生长关系的集成路线；外延前干法/等离子体 preclean；与上述场景明确相关的腔体干法清洗。",
   "excluded_scope": "暂不含仅以 SiC/GaN 为生长对象的平台、独立湿法清洗。SiC 涂层/腔体部件不是 SiC 生长；Si:C/SiCP 不是 SiC；冷却水不是湿法洗片；EPI 整体路线中带湿步骤不等于独立湿洗——上述均不能单独作为整案排除理由。",
   "count_basis": "按公开或授权公告日期（event_date）归月，按 patent family（family_id）解读；同一族可在后续月份因新国家公开、分案或授权事件再次出现。严格区分候选数、事件数、族数与已实际阅读数。WO 公开不记成授权。基线条目来自参考报告导入，不计为本团队独立发现。",
-  "coverage_note": "在 Dot 基线（110 族月条目）上合并 2026-10-20 证据复核 r2 的 9 条独立检索纳入。3 条基线对照命中不升级为独立发现。4 条待核见「关联待核」区，其中 WO2026084898A1 仍保留基线主表呈现。不得伪称零遗漏或正式交付。",
+  "coverage_note": "在 Dot 基线上合并 Gate③ 与 Sprint 增量。关联待核队列现仅 CN122564748A（见 pending_or_related）。不得伪称零遗漏或正式交付。",
   "status_note": "初版：基线 + Gate③ 增量。本团队已读锁定 6（r2 ruling）。",
   "notes": [
-    "本团队已读锁定 6（见 EVIDENCE-READ-RULING-COMBINED-2026-10-20-r2.json）。",
     "本团队已读锁定 6（见 EVIDENCE-READ-RULING-COMBINED-2026-10-20-r2.json）。",
     "初版 = 基线 imported baseline + 独立检索增量（discovery_source=independent_search）。",
     "基线对照命中（US12526971B2 等）仅 confirmation，不改为独立发现。",
     "FAM-merge-hybrid-preclean：WO2026096517A1 + TW202628839A。",
-    "待核队列见 pending_or_related；不入主表为新接受的 4 条。",
     "附图仍以真实 PNG 为准；多数引用待补 local_asset_path。",
-    "Sprint gap A（2026-10-20）：已纳入 TEL US20250311241A1（related）与 US12757648B2（core，2026-10 授权）。"
+    "Sprint gap A（2026-10-20）：已纳入 TEL US20250311241A1（related）与 US12757648B2（core，2026-10 授权）。",
+    "关联待核（active）：仅 CN122564748A；已升格/已排除项不再列于 pending_or_related。"
   ],
   "counts": {
     "candidates_total": 122,
@@ -28,7 +27,7 @@
     "events_core": 150,
     "families_core": 108,
     "related": 1,
-    "pending": 4,
+    "pending": 1,
     "excluded": 0,
     "figures": 130,
     "month_family_entries": 122,
@@ -39,54 +38,6 @@
   },
   "search_coverage": [],
   "pending_or_related": [
-    {
-      "publication_id": "US20260066234A1",
-      "jurisdiction": "US",
-      "event_type": "publication",
-      "event_date": "2026-03-05",
-      "title_zh": "等离子体增强外延沉积腔室",
-      "applicant_normalized": "Applied Materials, Inc.",
-      "scope_status": "core",
-      "pending_reason": "已升格 2026-03 主表 core 并计 team_read（r2）；保留队列记录。",
-      "failure_or_pending_reason": "证据复核 r2：独立检索命中但技术边界（等离子体增强外延 vs 纯 preclean/EPI 主线）与同族引用关系待核；未升格为独立新纳入。基线条目中仅作同族附图引用，不重复升格。",
-      "discovery_source": "independent_search",
-      "import_tag": null,
-      "on_main_month_cards": true,
-      "disposition": "promoted_core_team_read",
-      "kind_verified": true
-    },
-    {
-      "publication_id": "US12757451B2",
-      "jurisdiction": "US",
-      "event_type": null,
-      "event_date": null,
-      "title_zh": "（公开文献待核实）US12757451B2",
-      "applicant_normalized": "",
-      "scope_status": "pending",
-      "pending_reason": "证据复核 r2：独立检索列出，但公开日/全文在复核时未能从官方可访问源稳定取得（Google Patents 404）；保留待核，不入主表。",
-      "failure_or_pending_reason": "公开号 kind/日期未核实；不得默认 A1 公开。",
-      "discovery_source": "independent_search",
-      "import_tag": null,
-      "on_main_month_cards": false,
-      "disposition": "pending_verify_publication",
-      "kind_verified": false
-    },
-    {
-      "publication_id": "WO2026084898A1",
-      "jurisdiction": "WO",
-      "event_type": "publication",
-      "event_date": "2026-04-23",
-      "title_zh": "控制含硅外延材料中的自掺杂",
-      "applicant_normalized": "Applied Materials, Inc.",
-      "scope_status": "pending",
-      "pending_reason": "证据复核 r2：已在基线主表（imported baseline）。独立检索侧列为待核项系同族/自掺杂边界复核，不升级为独立新发现。",
-      "failure_or_pending_reason": "证据复核 r2：已在基线主表（imported baseline）。独立检索侧列为待核项系同族/自掺杂边界复核，不升级为独立新发现。",
-      "discovery_source": "reference_report",
-      "import_tag": "imported baseline",
-      "on_main_month_cards": true,
-      "disposition": "pending_not_promoted",
-      "kind_verified": true
-    },
     {
       "publication_id": "CN122564748A",
       "jurisdiction": "CN",
@@ -122,6 +73,12 @@
       "by": "merge_evidence_r2",
       "action": "evidence_review_r2_increment",
       "detail": "Gate ③：3 条基线对照确认；9 条独立检索新纳入；4 条待核不入主表为新发现。"
+    },
+    {
+      "at": "2026-10-20T10:40:17Z",
+      "by": "pending-queue-hygiene",
+      "action": "prune_pending_or_related",
+      "detail": "Removed promoted/excluded from queue: US20260066234A1, US12757451B2, WO2026084898A1"
     }
   ],
   "months": [

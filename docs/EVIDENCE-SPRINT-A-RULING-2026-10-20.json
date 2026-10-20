@@ -10,10 +10,13 @@
     "US20260066234A1",
     "US12660522B2"
   ],
-  "pending_still_excluded": [
-    "US12757451B2",
-    "WO2026084898A1",
+  "pending_active_content": [
     "CN122564748A"
+  ],
+  "pending_cleared_from_queue": [
+    "US20260066234A1",
+    "US12757451B2",
+    "WO2026084898A1"
   ],
   "content_gap_inclusions": [
     {
