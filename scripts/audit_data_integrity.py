@@ -53,7 +53,10 @@ def main() -> int:
         for e in errors:
             print("FAIL:", e, file=sys.stderr)
         return 1
-    print("OK: dedupe + team_read + publication_events")
+    import stamp_asset_versions
+
+    stamp_asset_versions.main()
+    print("OK: dedupe + team_read + publication_events + asset stamps")
     return 0
 
 

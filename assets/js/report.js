@@ -88,6 +88,7 @@
     const id = f.id || (month && publication_id ? month + "-" + publication_id : publication_id);
     const figures = pick(f, ["figures", "images"], []) || [];
     const mappedFigures = figures.map(function (img) {
+      const displayRotation = Number(pick(img, ["display_rotation"], 0)) || 0;
       return {
         caption: pick(img, ["caption", "display_caption"], ""),
         display_caption: pick(img, ["display_caption", "caption"], ""),
@@ -96,6 +97,7 @@
         figure_label: pick(img, ["figure_number", "figure_label"], ""),
         width: img.width,
         height: img.height,
+        display_rotation: displayRotation,
         path: pick(img, ["local_asset_path", "path"], ""),
       };
     });
@@ -381,6 +383,26 @@
     return ctx.map((c) => esc(c.number) + (c.date ? " (" + esc(c.date) + ")" : "")).join("； ");
   }
 
+  function reportDataUrl() {
+    const meta = document.querySelector('meta[name="epi-report-data"]');
+    const url = meta && meta.getAttribute("content");
+    return (url && url.trim()) ? url.trim() : "data/report.json";
+  }
+
+  /** Layout box for display_rotation (extraction_rotation already baked into file bytes). */
+  function figureLayoutDims(w, h, displayRotation) {
+    const rw = w > 0 ? w : 640;
+    const rh = h > 0 ? h : 480;
+    const rot = displayRotation % 360;
+    if (rot === 90 || rot === 270) {
+      return { layoutW: rh, layoutH: rw, rotClass: "fig-display-rot-" + rot };
+    }
+    if (rot === 180) {
+      return { layoutW: rw, layoutH: rh, rotClass: "fig-display-rot-180" };
+    }
+    return { layoutW: rw, layoutH: rh, rotClass: "" };
+  }
+
   function figureFailBox(w, h, pub, figLabel, reason) {
     const meta = [pub, figLabel].filter(Boolean).join(" · ");
     const why = reason || "真图缺失";
@@ -405,13 +427,18 @@
       const figLabel = figureLabelFromCaption(img.caption || img.display_caption, img.figure_label || "");
       const w = img.width || 640;
       const h = img.height || 480;
-      const ar = (w > 0 && h / w <= 1.6) ? w + "/" + h : "16/10";
+      const layout = figureLayoutDims(w, h, img.display_rotation || 0);
+      const ar = (layout.layoutW > 0 && layout.layoutH / layout.layoutW <= 1.6)
+        ? layout.layoutW + "/" + layout.layoutH
+        : "16/10";
+      const rotClass = layout.rotClass ? " " + layout.rotClass : "";
       const src = img.path || "";
       let body;
       if (src) {
         body =
-          "<div class=\"fig-media\" style=\"aspect-ratio:" + ar + "\">" +
-          "<img data-src=\"" + esc(src) + "\" width=\"" + w + "\" height=\"" + h +
+          "<div class=\"fig-media" + rotClass + "\" style=\"aspect-ratio:" + ar + "\">" +
+          "<img class=\"" + esc(layout.rotClass || "fig-img") + "\" data-src=\"" + esc(src) +
+          "\" width=\"" + layout.layoutW + "\" height=\"" + layout.layoutH +
           "\" alt=\"" + esc(caption) + "\" loading=\"lazy\" decoding=\"async\" " +
           "data-fig-pub=\"" + esc(pub) + "\" data-fig-label=\"" + esc(figLabel) + "\"></div>";
       } else {
@@ -642,7 +669,7 @@
 
     let data;
     try {
-      const res = await fetch("data/report.json", { cache: "no-store" });
+      const res = await fetch(reportDataUrl(), { cache: "no-store" });
       if (!res.ok) throw new Error("HTTP " + res.status);
       data = await res.json();
     } catch (err) {

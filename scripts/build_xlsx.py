@@ -308,6 +308,9 @@ def build(data: dict, out_path: Path) -> None:
         f"  主表={len(main_rows)} 同族事件={len(event_rows)} "
         f"关联待核={len(pending_rows)} 检索覆盖={len(coverage_rows)} 变更={len(change_rows)}"
     )
+    import stamp_asset_versions
+
+    stamp_asset_versions.main()
 
 
 def main(argv=None):
