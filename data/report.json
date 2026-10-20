@@ -17,22 +17,23 @@
     "基线对照命中（US12526971B2 等）仅 confirmation，不改为独立发现。",
     "FAM-merge-hybrid-preclean：WO2026096517A1 + TW202628839A。",
     "待核队列见 pending_or_related；不入主表为新接受的 4 条。",
-    "本团队已读仅计独立检索条目在证据复核 r2 中实际阅读者。",
+    "本团队已读锁定 4（EPI 四件；见 EPI-EVIDENCE-SUPPLEMENT）；Preclean 五件与 US12660522B2 不计 team_read。",
     "附图仍以真实 PNG 为准；多数引用待补 local_asset_path。"
   ],
   "counts": {
     "candidates_total": 119,
-    "events_reviewed": 9,
-    "events_core": 150,
+    "events_reviewed": 4,
+    "events_core": 148,
     "families_core": 106,
     "related": 0,
     "pending": 4,
     "excluded": 0,
     "figures": 130,
     "month_family_entries": 119,
-    "publication_events": 150,
+    "publication_events": 148,
     "unique_families": 106,
-    "actually_read": 9
+    "actually_read": 4,
+    "unique_publication_ids": 148
   },
   "search_coverage": [],
   "pending_or_related": [
@@ -49,22 +50,24 @@
       "discovery_source": "independent_search",
       "import_tag": null,
       "on_main_month_cards": false,
-      "disposition": "pending_not_promoted"
+      "disposition": "pending_not_promoted",
+      "kind_verified": true
     },
     {
       "publication_id": "US12757451B2",
       "jurisdiction": "US",
-      "event_type": "publication",
+      "event_type": null,
       "event_date": null,
       "title_zh": "（公开文献待核实）US12757451B2",
       "applicant_normalized": "",
       "scope_status": "pending",
       "pending_reason": "证据复核 r2：独立检索列出，但公开日/全文在复核时未能从官方可访问源稳定取得（Google Patents 404）；保留待核，不入主表。",
-      "failure_or_pending_reason": "证据复核 r2：独立检索列出，但公开日/全文在复核时未能从官方可访问源稳定取得（Google Patents 404）；保留待核，不入主表。",
+      "failure_or_pending_reason": "公开号 kind/日期未核实；不得默认 A1 公开。",
       "discovery_source": "independent_search",
       "import_tag": null,
       "on_main_month_cards": false,
-      "disposition": "pending_not_promoted"
+      "disposition": "pending_verify_publication",
+      "kind_verified": false
     },
     {
       "publication_id": "WO2026084898A1",
@@ -79,7 +82,8 @@
       "discovery_source": "reference_report",
       "import_tag": "imported baseline",
       "on_main_month_cards": true,
-      "disposition": "pending_not_promoted"
+      "disposition": "pending_not_promoted",
+      "kind_verified": true
     },
     {
       "publication_id": "CN122564748A",
@@ -94,7 +98,8 @@
       "discovery_source": "independent_search",
       "import_tag": null,
       "on_main_month_cards": false,
-      "disposition": "pending_not_promoted"
+      "disposition": "pending_not_promoted",
+      "kind_verified": true
     }
   ],
   "change_history": [
@@ -2175,11 +2180,9 @@
           ],
           "source_retrieved_at": null,
           "source_sha256": null,
-          "actual_read_spans": [
-            "证据复核 r2：权利要求与摘要"
-          ],
-          "reviewer": "evidence-review-r2",
-          "reviewed_at": "2026-10-20",
+          "actual_read_spans": [],
+          "reviewer": null,
+          "reviewed_at": null,
           "family_completion_status": "open",
           "figures": [],
           "change_history": [
@@ -2191,13 +2194,6 @@
             }
           ],
           "family_events": [
-            {
-              "publication_id": "WO2026096517A1",
-              "event_date": "2026-05-07",
-              "event_type": "publication",
-              "source_url": "https://patents.google.com/patent/WO2026096517A1/en",
-              "application_id": "PCT/US2025/052926"
-            },
             {
               "publication_id": "TW202628839A",
               "event_date": "2026-07-01",
@@ -2213,11 +2209,14 @@
           "independent_of_ref": true,
           "family_merge_note": "FAM-merge-hybrid-preclean：与 WO2026096517A1 同族；台湾公开单独成卡，族键合并。",
           "event_note": "独立检索发现",
-          "category": "Preclean"
+          "category": "Preclean",
+          "team_independent_read": false,
+          "read_disposition": "included_not_team_read",
+          "read_status": "Preclean 同族台湾公开；未计 team_read。"
         }
       ],
       "family_count": 5,
-      "event_count": 6
+      "event_count": 5
     },
     {
       "month": "2026-06",
@@ -2951,11 +2950,9 @@
           ],
           "source_retrieved_at": null,
           "source_sha256": null,
-          "actual_read_spans": [
-            "证据复核 r2：权利要求与摘要"
-          ],
-          "reviewer": "evidence-review-r2",
-          "reviewed_at": "2026-10-20",
+          "actual_read_spans": [],
+          "reviewer": null,
+          "reviewed_at": null,
           "family_completion_status": "open",
           "figures": [],
           "change_history": [
@@ -2982,7 +2979,10 @@
           "independent_of_ref": true,
           "family_merge_note": null,
           "event_note": "独立检索发现",
-          "category": "EPI 工艺"
+          "category": "EPI 工艺",
+          "team_independent_read": false,
+          "read_disposition": "included_not_team_read",
+          "read_status": "独立纳入；HBT/SiGe 界面与选择性外延边界；未计 team_read。"
         },
         {
           "publication_id": "US12660522B2",
@@ -3010,11 +3010,9 @@
           ],
           "source_retrieved_at": null,
           "source_sha256": null,
-          "actual_read_spans": [
-            "证据复核 r2：权利要求与摘要"
-          ],
-          "reviewer": "evidence-review-r2",
-          "reviewed_at": "2026-10-20",
+          "actual_read_spans": [],
+          "reviewer": null,
+          "reviewed_at": null,
           "family_completion_status": "open",
           "figures": [],
           "change_history": [
@@ -3041,7 +3039,10 @@
           "independent_of_ref": true,
           "family_merge_note": null,
           "event_note": "独立检索发现",
-          "category": "EPI 工艺"
+          "category": "EPI 工艺",
+          "team_independent_read": false,
+          "read_disposition": "included_not_team_read",
+          "read_status": "未计团队已读：授权全文未在本轮固化 sha256/阅读跨度。"
         }
       ],
       "family_count": 9,
@@ -3511,11 +3512,9 @@
           ],
           "source_retrieved_at": null,
           "source_sha256": null,
-          "actual_read_spans": [
-            "证据复核 r2：权利要求与摘要"
-          ],
-          "reviewer": "evidence-review-r2",
-          "reviewed_at": "2026-10-20",
+          "actual_read_spans": [],
+          "reviewer": null,
+          "reviewed_at": null,
           "family_completion_status": "open",
           "figures": [],
           "change_history": [
@@ -3542,7 +3541,10 @@
           "independent_of_ref": true,
           "family_merge_note": null,
           "event_note": "独立检索发现",
-          "category": "EPI 工艺"
+          "category": "EPI 工艺",
+          "team_independent_read": false,
+          "read_disposition": "included_not_team_read",
+          "read_status": "独立纳入；外延层形成方法；未计 team_read。"
         },
         {
           "publication_id": "WO2026096517A1",
@@ -3570,11 +3572,9 @@
           ],
           "source_retrieved_at": null,
           "source_sha256": null,
-          "actual_read_spans": [
-            "证据复核 r2：权利要求与摘要"
-          ],
-          "reviewer": "evidence-review-r2",
-          "reviewed_at": "2026-10-20",
+          "actual_read_spans": [],
+          "reviewer": null,
+          "reviewed_at": null,
           "family_completion_status": "open",
           "figures": [],
           "change_history": [
@@ -3592,13 +3592,6 @@
               "event_type": "publication",
               "source_url": "https://patents.google.com/patent/WO2026096517A1/en",
               "application_id": "PCT/US2025/052926"
-            },
-            {
-              "publication_id": "TW202628839A",
-              "event_date": "2026-07-01",
-              "event_type": "publication",
-              "source_url": "https://patents.google.com/patent/TW202628839A/en",
-              "application_id": "TW114142104A"
             }
           ],
           "id": "2026-05-WO2026096517A1",
@@ -3608,11 +3601,14 @@
           "independent_of_ref": true,
           "family_merge_note": "FAM-merge-hybrid-preclean：与 TW202628839A 为同一 hybrid preclean 族；WO 与 TW 公开分别保留为两条族月条目。",
           "event_note": "独立检索发现",
-          "category": "Preclean"
+          "category": "Preclean",
+          "team_independent_read": false,
+          "read_disposition": "included_not_team_read",
+          "read_status": "Preclean 独立纳入；FAM-merge-hybrid-preclean；未计 team_read。"
         }
       ],
       "family_count": 7,
-      "event_count": 10
+      "event_count": 9
     },
     {
       "month": "2026-04",
@@ -4665,14 +4661,16 @@
           "claims_or_embodiment_basis": "证据复核 r2：方法权利要求将超晶格外延步骤与 XRF 反馈控制耦合。",
           "scope_reason": "Si/SiGe 外延工艺与在线计量，纳入核心。",
           "source_urls": [
-            "https://patents.google.com/patent/US20260071979A1/en"
+            "https://patents.google.com/patent/US20260071979A1/en",
+            "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260071979"
           ],
-          "source_retrieved_at": null,
-          "source_sha256": null,
+          "source_retrieved_at": "2026-10-20T10:03:49Z",
+          "source_sha256": "2ee8d4206cf3f1b4a700bced605d01fe4b613382b7ba4fd6f7dbccb6d7579c2c",
           "actual_read_spans": [
-            "证据复核 r2：权利要求与摘要"
+            "USPTO 公开 PDF：独立权利要求 1 与方法步骤",
+            "权利要求中 XRF / superlattice 相关从属项"
           ],
-          "reviewer": "evidence-review-r2",
+          "reviewer": "epi-evidence-review-r2",
           "reviewed_at": "2026-10-20",
           "family_completion_status": "open",
           "figures": [],
@@ -4700,7 +4698,11 @@
           "independent_of_ref": true,
           "family_merge_note": null,
           "event_note": "独立检索发现",
-          "category": "EPI 控制与计量"
+          "category": "EPI 控制与计量",
+          "team_independent_read": true,
+          "read_disposition": "team_read_claims_level",
+          "read_query": "独立 EPI 检索 Gate③ r2；Si/SiGe 超晶格 + XRF 工艺控制。",
+          "official_source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260071979"
         },
         {
           "publication_id": "CN121693111A",
@@ -4726,12 +4728,13 @@
           "source_urls": [
             "https://patents.google.com/patent/CN121693111A/en"
           ],
-          "source_retrieved_at": null,
+          "source_retrieved_at": "2026-10-20T10:05:00Z",
           "source_sha256": null,
           "actual_read_spans": [
-            "证据复核 r2：权利要求与摘要"
+            "公开文本权利要求 1–5（Google Patents 页面；无 PDF sha256）",
+            "摘要：电学监测外延层厚度与测试结构"
           ],
-          "reviewer": "evidence-review-r2",
+          "reviewer": "epi-evidence-review-r2",
           "reviewed_at": "2026-10-20",
           "family_completion_status": "open",
           "figures": [],
@@ -4759,7 +4762,12 @@
           "independent_of_ref": true,
           "family_merge_note": null,
           "event_note": "独立检索发现",
-          "category": "EPI 控制与计量"
+          "category": "EPI 控制与计量",
+          "team_independent_read": true,
+          "read_disposition": "team_read_claims_level",
+          "read_query": "独立 EPI 检索 Gate③ r2；外延层厚度电学监测。",
+          "read_evidence_note": "国知局可下载 PDF 的 sha256 尚未在本仓库固化；权利要求级阅读依据 Gate③ 中文公开文本与权利要求书（Google Patents 镜像），待 CNIPA 原件哈希补齐。",
+          "official_source_url": "https://patents.google.com/patent/CN121693111A/en"
         }
       ],
       "family_count": 8,
@@ -5620,14 +5628,16 @@
           "claims_or_embodiment_basis": "证据复核 r2：权利要求聚焦腔室边缘区域的膜生长/缺陷抑制步骤，与外延制程腔体相关。",
           "scope_reason": "外延制程腔体缺陷控制，纳入核心 EPI 工艺监测。",
           "source_urls": [
-            "https://patents.google.com/patent/US20260055532A1/en"
+            "https://patents.google.com/patent/US20260055532A1/en",
+            "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260055532"
           ],
-          "source_retrieved_at": null,
-          "source_sha256": null,
+          "source_retrieved_at": "2026-10-20T10:03:49Z",
+          "source_sha256": "42e816969db0d2d7402244b373944637ec21cb91bc3410bb8764b1783caaa7c6",
           "actual_read_spans": [
-            "证据复核 r2：权利要求与摘要"
+            "USPTO 公开 PDF：独立权利要求 1 及与边缘区域工艺相关的从属项",
+            "摘要中对 edge defect / substrate edge 的表述"
           ],
-          "reviewer": "evidence-review-r2",
+          "reviewer": "epi-evidence-review-r2",
           "reviewed_at": "2026-10-20",
           "family_completion_status": "open",
           "figures": [],
@@ -5655,7 +5665,11 @@
           "independent_of_ref": true,
           "family_merge_note": null,
           "event_note": "独立检索发现",
-          "category": "EPI 工艺"
+          "category": "EPI 工艺",
+          "team_independent_read": true,
+          "read_disposition": "team_read_claims_level",
+          "read_query": "独立 EPI 检索 Gate③ r2；晶圆边缘膜缺陷与外延制程腔体。",
+          "official_source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260055532"
         }
       ],
       "family_count": 11,
@@ -10464,14 +10478,16 @@
           "claims_or_embodiment_basis": "证据复核 r2：独立权利要求要求外延沉积反应器/方法组合，含腔体、基座与工艺气体路径；从属项限定温度、压力与材料层序。",
           "scope_reason": "直接涉及 Si 外延沉积硬件与工艺集成，纳入核心 EPI 设备监测。",
           "source_urls": [
-            "https://patents.google.com/patent/US20250327209A1/en"
+            "https://patents.google.com/patent/US20250327209A1/en",
+            "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20250327209"
           ],
-          "source_retrieved_at": null,
-          "source_sha256": null,
+          "source_retrieved_at": "2026-10-20T10:03:49Z",
+          "source_sha256": "04d83748266705e79395aab59ed1387487518cdf71a91fd5ab6db77e0ad59c69",
           "actual_read_spans": [
-            "证据复核 r2：权利要求与摘要"
+            "USPTO 公开 PDF（sha256 见 source_sha256）：独立权利要求 1–3 与方法/反应器主题",
+            "摘要与实施方式中与腔体、气体路径、基座相关的段落（目视复核）"
           ],
-          "reviewer": "evidence-review-r2",
+          "reviewer": "epi-evidence-review-r2",
           "reviewed_at": "2026-10-20",
           "family_completion_status": "open",
           "figures": [],
@@ -10499,7 +10515,11 @@
           "independent_of_ref": true,
           "family_merge_note": null,
           "event_note": "独立检索发现",
-          "category": "EPI 设备"
+          "category": "EPI 设备",
+          "team_independent_read": true,
+          "read_disposition": "team_read_claims_level",
+          "read_query": "独立 EPI 检索 Gate③ r2；纳入边界=Si 外延沉积反应器/工艺。",
+          "official_source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20250327209"
         }
       ],
       "family_count": 17,
