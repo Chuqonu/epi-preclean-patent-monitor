@@ -653,6 +653,16 @@ button { font: inherit; cursor: pointer; }
     gap: 5px 8px;
   }
 
+  .side-tools {
+    padding: 0 10px 10px;
+  }
+
+  .toc-search {
+    min-height: 44px;
+    padding: 11px 12px;
+    line-height: 1.35;
+  }
+
   .toc-drawer-toggle {
     display: inline-flex;
     align-items: center;
