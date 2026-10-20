@@ -426,11 +426,24 @@
     if (!rot) return 0;
     const w = Number(img.width) || 0;
     const h = Number(img.height) || 0;
-    if (w > 0 && h > 0) {
-      if ((rot === 90 || rot === 270) && h > w) return 0;
-      if ((rot === 90 || rot === 270) && w >= h) return rot;
+    if (rot === 90 || rot === 270) {
+      if (w <= 0 || h <= 0) return 0;
+      if (h >= w) return 0;
+      return rot;
     }
     return rot;
+  }
+
+  function stripFigureRotationIfUpright(img) {
+    const nw = img.naturalWidth;
+    const nh = img.naturalHeight;
+    if (!nw || !nh || nh < nw) return;
+    img.classList.remove("fig-display-rot-90", "fig-display-rot-270", "fig-display-rot-180");
+    img.style.transform = "none";
+    const wrap = img.closest(".fig-media");
+    if (wrap) {
+      wrap.classList.remove("fig-display-rot-90", "fig-display-rot-270");
+    }
   }
 
   /** Layout box for display_rotation (extraction_rotation already baked into file bytes). */
@@ -634,6 +647,9 @@
       }
       img.onerror = function () {
         swapImgToFail(img, "路径损坏");
+      };
+      img.onload = function () {
+        stripFigureRotationIfUpright(img);
       };
       img.src = src;
       img.removeAttribute("data-src");
