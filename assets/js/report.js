@@ -32,6 +32,50 @@
     return fallback;
   }
 
+  /** Publication/event date for within-month sort (newest first). */
+  function familySortTime(raw) {
+    const d = pick(raw, ["event_date", "publication_date", "date"], "");
+    const t = Date.parse(d);
+    return Number.isFinite(t) ? t : 0;
+  }
+
+  function familiesNewestFirst(month) {
+    return (month.families || []).slice().sort((a, b) => familySortTime(b) - familySortTime(a));
+  }
+
+  function scopeLabelZh(status) {
+    const map = {
+      core: "核心",
+      related: "关联",
+      pending: "待核",
+      excluded: "排除",
+    };
+    return map[status] || "";
+  }
+
+  function importTagZh(tag) {
+    if (!tag) return "";
+    if (tag === "imported baseline") return "基线导入";
+    return tag;
+  }
+
+  function computeFigureStats(data) {
+    let refs = 0;
+    let loadable = 0;
+    (data.months || []).forEach((m) => {
+      (m.families || []).forEach((fam) => {
+        (pick(fam, ["figures", "images"], []) || []).forEach((fig) => {
+          refs += 1;
+          const p = pick(fig, ["local_asset_path", "path"], "");
+          if (String(p).trim()) loadable += 1;
+        });
+      });
+    });
+    const cited = (data.counts && data.counts.figures != null) ? data.counts.figures : refs;
+    const pending = Math.max(0, refs - loadable);
+    return { cited: cited, refs: refs, loadable: loadable, pending: pending };
+  }
+
   function normFamily(f, monthLabel) {
     const publication_id = pick(f, ["publication_id", "publication_number"], "");
     const month = f.month || monthLabel || "";
@@ -137,27 +181,43 @@
     const el = $("#side-meta");
     if (!el) return;
     const through = data.research_through || "未设定";
-    const prepared = data.prepared_date || "—";
     el.innerHTML =
-      "<strong>" + esc(data.title || "EPI / Preclean Patent Monitoring Report") + "</strong>" +
+      "<strong>初版 · 基线导入</strong>" +
       esc(data.period || "") +
-      " · 截至 " + esc(through) +
-      " · 编制 " + esc(prepared) +
-      "<br>" + esc(data.status_note || "");
+      " · 截至 " + esc(through);
   }
 
   function countBag(c) {
-    // 候选 / 事件 / 族 / 已读 — four separate honest metrics
-    const candidates = (c.candidates_total != null) ? c.candidates_total
-      : (c.month_family_entries != null ? c.month_family_entries : 0);
-    // Prefer publication_events for 「事件」; events_reviewed is this team's read count
+    const monthEntries = (c.month_family_entries != null) ? c.month_family_entries
+      : (c.candidates_total != null ? c.candidates_total : 0);
     const events = (c.publication_events != null) ? c.publication_events
       : (c.events_core != null ? c.events_core : 0);
     const families = (c.unique_families != null) ? c.unique_families
       : (c.families_core != null ? c.families_core : 0);
     const read = (c.actually_read != null) ? c.actually_read
       : (c.events_reviewed != null ? c.events_reviewed : 0);
-    return { candidates: candidates, events: events, families: families, read: read };
+    return { monthEntries: monthEntries, events: events, families: families, read: read };
+  }
+
+  function renderReportNotes(data) {
+    const parts = [];
+    if (data.scope) {
+      parts.push("<p><strong>范围</strong> " + esc(data.scope) + "</p>");
+    }
+    if (data.excluded_scope) {
+      parts.push("<p><strong>排除</strong> " + esc(data.excluded_scope) + "</p>");
+    }
+    if (data.count_basis) {
+      parts.push("<p><strong>计数口径</strong> " + esc(data.count_basis) + "</p>");
+    }
+    if (data.coverage_note) {
+      parts.push("<p>" + esc(data.coverage_note) + "</p>");
+    }
+    parts.push(
+      "<p class=\"subtle\">本页为参考报告基线导入（初版），非正式交付，也不代表本团队已完成独立检索与逐条阅读。" +
+      "「本团队已读」为 0 表示尚未开展独立证据阅读。</p>"
+    );
+    return parts.join("");
   }
 
   function renderBanner(data) {
@@ -165,23 +225,23 @@
     if (!el) return;
     const c = data.counts || {};
     const bag = countBag(c);
+    const fig = computeFigureStats(data);
     el.innerHTML =
-      "<div class=\"count-bar\" role=\"group\" aria-label=\"诚实计数：候选 / 事件 / 族 / 已读\">" +
-      "<div class=\"count-item\"><span class=\"count-num\">" + esc(bag.candidates) + "</span><span class=\"count-label\">候选</span></div>" +
+      "<div class=\"count-bar\" role=\"group\" aria-label=\"计数：族月条目、事件、族、本团队已读、附图\">" +
+      "<span class=\"edition-tag\">初版 · 基线导入</span>" +
+      "<div class=\"count-item\"><span class=\"count-num\">" + esc(bag.monthEntries) + "</span><span class=\"count-label\">族月条目</span></div>" +
       "<div class=\"count-item\"><span class=\"count-num\">" + esc(bag.events) + "</span><span class=\"count-label\">事件</span></div>" +
       "<div class=\"count-item\"><span class=\"count-num\">" + esc(bag.families) + "</span><span class=\"count-label\">族</span></div>" +
-      "<div class=\"count-item\"><span class=\"count-num\">" + esc(bag.read) + "</span><span class=\"count-label\">已读</span></div>" +
+      "<div class=\"count-item\"><span class=\"count-num\">" + esc(bag.read) + "</span><span class=\"count-label\">本团队已读</span></div>" +
+      "<span class=\"count-divider\" aria-hidden=\"true\"></span>" +
+      "<div class=\"count-item count-item--fig\"><span class=\"count-num\">" + esc(fig.cited) + "</span><span class=\"count-label\">图引用</span></div>" +
+      "<div class=\"count-item count-item--fig\"><span class=\"count-num\">" + esc(fig.loadable) + "</span><span class=\"count-label\">可加载图</span></div>" +
+      "<div class=\"count-item count-item--fig\"><span class=\"count-num\">" + esc(fig.pending) + "</span><span class=\"count-label\">待补图</span></div>" +
       "</div>" +
-      "<div class=\"banner-meta\">" +
-      "<strong>范围</strong> " + esc(data.scope || "") +
-      "<br><strong>排除</strong> " + esc(data.excluded_scope || "") +
-      "<br><span class=\"subtle\">辅计：核心事件 " + esc(c.events_core != null ? c.events_core : 0) +
-      " · 核心族 " + esc(c.families_core != null ? c.families_core : 0) +
-      " · 待核 " + esc(c.pending != null ? c.pending : 0) +
-      " · 关联 " + esc(c.related != null ? c.related : 0) +
-      " · 图 " + esc(c.figures != null ? c.figures : 0) + "</span>" +
-      "<br>" + esc(data.coverage_note || "") +
-      "</div>";
+      "<details class=\"report-notes\">" +
+      "<summary>报告说明</summary>" +
+      "<div class=\"report-notes-body\">" + renderReportNotes(data) + "</div>" +
+      "</details>";
   }
 
 
@@ -214,7 +274,7 @@
 
       const body = document.createElement("div");
       body.className = "month-body";
-      const families = m.families || [];
+      const families = familiesNewestFirst(m);
       if (!families.length) {
         body.innerHTML =
           "<div class=\"month-empty\">" +
@@ -232,8 +292,7 @@
             "<span class=\"mini-date\">" + esc(f.publication_date || "") + "</span>" +
             "<span class=\"mini-title\">" + esc(f.title || f.publication_number || "") + "</span>" +
             "<span class=\"mini-meta\">" + esc(f.publication_number || "") +
-            (f.applicant ? " · " + esc(f.applicant) : "") +
-            (f.scope_status ? " · " + esc(f.scope_status) : "") + "</span>" +
+            (f.applicant ? " · " + esc(f.applicant) : "") + "</span>" +
             "<span class=\"mini-brief\">" + esc(f.brief || f.summary || "") + "</span>";
           a.addEventListener("click", (e) => {
             e.preventDefault();
@@ -353,7 +412,6 @@
       (f.category ? " · " + esc(f.category) : "") + "</td></tr>" +
       "<tr><th>同族 / 事件</th><td>" +
       "<div class=\"section-label\">同族关系</div>" + renderFamilyContext(f.family_context) +
-      (f.family_key ? "<div class=\"subtle\">family_key: " + esc(f.family_key) + "</div>" : "") +
       "<div class=\"section-label\">公开/授权事件</div>" + renderEvents(f.events) +
       (f.event_note ? "<div class=\"subtle\">" + esc(f.event_note) + "</div>" : "") +
       "</td></tr>" +
@@ -365,12 +423,11 @@
       "<tr><th>关键权利要求 / 实施方式</th><td class=\"section-body claim-text\">" +
       text(f.claims || "—") + "</td></tr>" +
       "<tr><th>相关性</th><td>" + text(f.relevance || "") +
-      (f.scope_status ? "<div class=\"subtle\">scope_status: " + esc(f.scope_status) + "</div>" : "") +
-      (f.family_completion_status ? "<div class=\"subtle\">family_completion_status: " + esc(f.family_completion_status) + "</div>" : "") +
-      (f.import_tag || f.discovery_source
-        ? "<div class=\"subtle import-tag\">来源标记：" + esc(f.import_tag || "") +
-          (f.discovery_source ? " · discovery_source=" + esc(f.discovery_source) : "") +
-          "（非本团队独立发现）</div>"
+      (scopeLabelZh(f.scope_status)
+        ? "<div class=\"subtle\">范围归类：" + esc(scopeLabelZh(f.scope_status)) + "</div>"
+        : "") +
+      (importTagZh(f.import_tag)
+        ? "<div class=\"subtle import-tag\">数据性质：" + esc(importTagZh(f.import_tag)) + "（非本团队独立发现）</div>"
         : "") +
       (f.verification ? "<div class=\"subtle\">核验：" + esc(f.verification) + "</div>" : "") +
       "</td></tr>" +
@@ -387,7 +444,7 @@
     if (!main) return;
     const pages = [];
     (data.months || []).forEach((m) => {
-      (m.families || []).forEach((raw) => pages.push(renderPatentPage(normFamily(raw, m.month))));
+      familiesNewestFirst(m).forEach((raw) => pages.push(renderPatentPage(normFamily(raw, m.month))));
     });
     if (!pages.length) {
       main.innerHTML =
