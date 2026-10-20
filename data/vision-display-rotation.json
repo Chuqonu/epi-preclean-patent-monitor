@@ -1,17 +1,54 @@
 {
   "version": 1,
-  "policy": "Vision-confirmed only. Add sha256 entries here; run scripts/apply_vision_display_rotation.py",
+  "policy": "Vision-locked 9 unique assets. Add sha256 here; run scripts/apply_vision_display_rotation.py",
   "display_rotation_90": [
     {
       "sha256": "e5d5f61dac3d4b7a2f379004b3c3e15445c20416f436919f3615fb16546cb288",
       "publication_id": "US12757647B2",
-      "figure_label": "Fig.4 / 图4",
-      "confirmed_at": "2026-10-20",
-      "source": "flipped-figures-audit_dd81.md"
+      "figure_label": "Fig.4 / 图4"
+    },
+    {
+      "sha256": "39e66689f3d4ed987e3f3562b40eb24e6b030314892baf2029b0f8a1cab74603",
+      "publication_id": "US12740346B2",
+      "figure_label": "Fig.7 / 图7"
+    },
+    {
+      "sha256": "22dbc8e9baf1a3e5c7e6efed68b2bc752517f8a1fe47b87a0cd020d0ece5acae",
+      "publication_id": "US12701931B2",
+      "figure_label": "Fig.4 / 图4"
+    },
+    {
+      "sha256": "d0af11401052ea68bfa12e42f563bfbb40a029ee5e09dee02c2ba60aab2ad4b0",
+      "publication_id": "US20260164725A1",
+      "figure_label": "FIGS. 20C–20D"
+    },
+    {
+      "sha256": "8533597a17f700dfd505913f5ae521fb21245098c68b10c38a4b2d7bfe6ec363",
+      "publication_id": "US20260150594A1",
+      "figure_label": "Fig.4 / 图4"
+    },
+    {
+      "sha256": "11ec9fb5bbc7be2be3301d79afb8cb1faaba6ac3c6d44dffd94c2e9efe551b9a",
+      "publication_id": "US12595587B2",
+      "figure_label": "Fig.1 / 图1"
+    },
+    {
+      "sha256": "1516cae0ee73967b9d353b67b29a75de9ddcb5f972180baf1fd1c1146609bfd8",
+      "publication_id": "US20260035835A1",
+      "figure_label": "Figs.2–5"
+    },
+    {
+      "sha256": "f77056a140d3fcb39e80b46e7015030ebcaf5b9756af42984a4dc9ee59b52443",
+      "publication_id": "US20260026275A1",
+      "figure_label": "FIG. 8A"
+    },
+    {
+      "sha256": "3f06f16dabb38600dc59c52de04efccc3277ece9207f0b8a004e0ff9abce7175",
+      "publication_id": "US20260026275A1",
+      "figure_label": "FIG. 9"
     }
   ],
   "do_not_rotate_notes": [
-    "US12740346B2 图7, US12701931B2 图4 — checked OK same sheet class",
-    "TW/WO Fig.2, US20260076125A1 Fig.1, WO2025222891A1 Fig.7/8, US20260150594A1 图4 — false positives"
+    "WO/TW Gate③ Fig.2 (77e2a152…) — upright portrait bytes, display_rotation=0"
   ]
 }

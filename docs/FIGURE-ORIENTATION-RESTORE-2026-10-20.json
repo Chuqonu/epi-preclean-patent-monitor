@@ -1,23 +1,7 @@
 {
   "date": "2026-10-20",
-  "policy": "Vision-confirmed manifest only (data/vision-display-rotation.json).",
-  "active_display_rotation_90": [
-    {
-      "publication_id": "US12757647B2",
-      "figure": "图4 / Fig.4",
-      "sha256": "e5d5f61dac3d4b7a2f379004b3c3e15445c20416f436919f3615fb16546cb288",
-      "display_rotation": 90
-    }
-  ],
-  "reverted_from_prior_bulk_merge": [
-    "US12740346B2 图7",
-    "US12701931B2 图4",
-    "US20260164725A1 FIGS.20C–20D",
-    "US20260150594A1 图4",
-    "US12595587B2 图1",
-    "US20260035835A1 图2–5",
-    "US20260026275A1 FIG.8A",
-    "US20260026275A1 FIG.9"
-  ],
-  "audit": "docs/flipped-figures-audit-vision-2026-10-20.md"
+  "policy": "Vision-locked 9 unique asset shas → display_rotation=90 (metadata only).",
+  "manifest": "data/vision-display-rotation.json",
+  "wo_tw_fig2_display_rotation": 0,
+  "locked_sha_count": 9
 }
