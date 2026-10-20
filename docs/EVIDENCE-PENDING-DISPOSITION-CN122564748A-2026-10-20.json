@@ -1,0 +1,11 @@
+{
+  "edition": "evidence-pending-disposition-cn122564748a",
+  "date": "2026-10-20",
+  "publication_id": "CN122564748A",
+  "disposition": "exclude",
+  "scope_status": "excluded",
+  "rule": "证据裁定：自 Preclean/EPI active 关联待核队列移除；不计 team_read；不升格主表为新发现。",
+  "pending_queue": "cleared",
+  "reason": "关联外延腔首片工艺边界复核后裁定 exclude；公开号保留检索记录但不再列 content-pending。",
+  "figures_policy": "none — 不得伪造 CN 附图。"
+}
