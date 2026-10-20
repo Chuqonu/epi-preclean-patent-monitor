@@ -2387,8 +2387,10 @@
               "source_original_sha256": "77e2a1525aeebf656f5b7d348a4c1c6f363d0a0cb3b5b2e4d57ec3aa7546571c",
               "source_display_sha256": "77e2a1525aeebf656f5b7d348a4c1c6f363d0a0cb3b5b2e4d57ec3aa7546571c",
               "pdf_page": 3,
-              "display_rotation": 0,
-              "source_geometry": {}
+              "display_rotation": 90,
+              "source_geometry": {
+                "display_rotation": 90
+              }
             },
             {
               "source_publication_id": "TW202628839A",
@@ -3915,8 +3917,10 @@
               "source_original_sha256": "77e2a1525aeebf656f5b7d348a4c1c6f363d0a0cb3b5b2e4d57ec3aa7546571c",
               "source_display_sha256": "77e2a1525aeebf656f5b7d348a4c1c6f363d0a0cb3b5b2e4d57ec3aa7546571c",
               "pdf_page": 3,
-              "display_rotation": 0,
-              "source_geometry": {}
+              "display_rotation": 90,
+              "source_geometry": {
+                "display_rotation": 90
+              }
             },
             {
               "source_publication_id": "WO2026096517A1",

@@ -428,13 +428,18 @@
     const h = Number(img.height) || 0;
     if (rot === 90 || rot === 270) {
       if (w <= 0 || h <= 0) return 0;
-      if (h >= w) return 0;
       return rot;
     }
     return rot;
   }
 
   function stripFigureRotationIfUpright(img) {
+    if (
+      img.classList.contains("fig-display-rot-90") ||
+      img.classList.contains("fig-display-rot-270")
+    ) {
+      return;
+    }
     const nw = img.naturalWidth;
     const nh = img.naturalHeight;
     if (!nw || !nh || nh < nw) return;

@@ -1,0 +1,32 @@
+{
+  "edition": "preclean-figure-asset-fix-gate3",
+  "date": "2026-10-20",
+  "family_id": "FAM-merge-hybrid-preclean",
+  "problem": "Live assets WO/TW fig1–3 were UI screenshots (e.g. fig2 sha256 435cb116…, 1024×640), not patent drawings.",
+  "replaced_with": "Gate③ Preclean owner–accepted official PNG bytes (uploaded, copied byte-identical).",
+  "removed_bad_sha256": {
+    "WO2026096517A1_fig2.png": "435cb11626b7c8807bedebe693d4408cf28ec9ab5f99f7402bea96b52c0e9211"
+  },
+  "true_assets": {
+    "WO2026096517A1_fig1.png": {
+      "width": 2478,
+      "height": 3506,
+      "asset_sha256": "e562f87f432a359ff929714ed066e1c540ce692899746a028fa50729db5292d6",
+      "display_rotation": 0
+    },
+    "WO2026096517A1_fig2.png": {
+      "width": 2478,
+      "height": 3506,
+      "asset_sha256": "77e2a1525aeebf656f5b7d348a4c1c6f363d0a0cb3b5b2e4d57ec3aa7546571c",
+      "display_rotation": 90
+    },
+    "WO2026096517A1_fig3.png": {
+      "width": 2477,
+      "height": 3505,
+      "asset_sha256": "2b619656eb612452b77a8876681e131b5ab717763ee8dd4e80d1fc1be894a1f5",
+      "display_rotation": 0
+    }
+  },
+  "tw_note": "TW202628839A_fig{1,2,3}.png same bytes as WO counterparts.",
+  "manifest": "docs/PRECLEAN-REPORT-FIGURES-BACKFILL-2026-10-20.json"
+}
