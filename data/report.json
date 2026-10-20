@@ -107,6 +107,18 @@
       "by": "preclean-cn-figure-stamp",
       "action": "attach_cn122_figures",
       "detail": "CN122294515A + CN122069948A ×3 PNG each; figures_available +6."
+    },
+    {
+      "at": "2026-10-20T15:38:03Z",
+      "by": "uspto-portrait-sheet-rotation-restore",
+      "action": "restore_display_rotation_90",
+      "detail": "Restored display_rotation=90 on 9 USPTO portrait-sheet figures (sideways drawing body)."
+    },
+    {
+      "at": "2026-10-20T15:40:56Z",
+      "by": "vision-locked-rotation90",
+      "action": "set_display_rotation_90_by_sha",
+      "detail": "Vision-locked 9 unique assets → 8 row updates (incl. family mirrors)."
     }
   ],
   "months": [
@@ -338,9 +350,9 @@
               "source_original_sha256": "e5d5f61dac3d4b7a2f379004b3c3e15445c20416f436919f3615fb16546cb288",
               "source_display_sha256": "e5d5f61dac3d4b7a2f379004b3c3e15445c20416f436919f3615fb16546cb288",
               "pdf_page": 6,
-              "display_rotation": 0,
+              "display_rotation": 90,
               "source_geometry": {
-                "display_rotation": 0
+                "display_rotation": 90
               }
             }
           ],
@@ -1298,9 +1310,9 @@
               "source_original_sha256": "39e66689f3d4ed987e3f3562b40eb24e6b030314892baf2029b0f8a1cab74603",
               "source_display_sha256": "39e66689f3d4ed987e3f3562b40eb24e6b030314892baf2029b0f8a1cab74603",
               "pdf_page": 9,
-              "display_rotation": 0,
+              "display_rotation": 90,
               "source_geometry": {
-                "display_rotation": 0
+                "display_rotation": 90
               }
             }
           ],
@@ -1839,9 +1851,9 @@
               "source_original_sha256": "22dbc8e9baf1a3e5c7e6efed68b2bc752517f8a1fe47b87a0cd020d0ece5acae",
               "source_display_sha256": "22dbc8e9baf1a3e5c7e6efed68b2bc752517f8a1fe47b87a0cd020d0ece5acae",
               "pdf_page": 6,
-              "display_rotation": 0,
+              "display_rotation": 90,
               "source_geometry": {
-                "display_rotation": 0
+                "display_rotation": 90
               }
             }
           ],
@@ -3269,9 +3281,9 @@
               "source_original_sha256": "d0af11401052ea68bfa12e42f563bfbb40a029ee5e09dee02c2ba60aab2ad4b0",
               "source_display_sha256": "d0af11401052ea68bfa12e42f563bfbb40a029ee5e09dee02c2ba60aab2ad4b0",
               "pdf_page": 22,
-              "display_rotation": 0,
+              "display_rotation": 90,
               "source_geometry": {
-                "display_rotation": 0
+                "display_rotation": 90
               }
             }
           ],
@@ -3968,9 +3980,9 @@
               "source_original_sha256": "8533597a17f700dfd505913f5ae521fb21245098c68b10c38a4b2d7bfe6ec363",
               "source_display_sha256": "8533597a17f700dfd505913f5ae521fb21245098c68b10c38a4b2d7bfe6ec363",
               "pdf_page": 5,
-              "display_rotation": 0,
+              "display_rotation": 90,
               "source_geometry": {
-                "display_rotation": 0
+                "display_rotation": 90
               }
             }
           ],
@@ -4778,9 +4790,9 @@
               "source_original_sha256": "11ec9fb5bbc7be2be3301d79afb8cb1faaba6ac3c6d44dffd94c2e9efe551b9a",
               "source_display_sha256": "11ec9fb5bbc7be2be3301d79afb8cb1faaba6ac3c6d44dffd94c2e9efe551b9a",
               "pdf_page": 3,
-              "display_rotation": 0,
+              "display_rotation": 90,
               "source_geometry": {
-                "display_rotation": 0
+                "display_rotation": 90
               }
             }
           ],
@@ -6480,9 +6492,9 @@
               "source_original_sha256": "1516cae0ee73967b9d353b67b29a75de9ddcb5f972180baf1fd1c1146609bfd8",
               "source_display_sha256": "1516cae0ee73967b9d353b67b29a75de9ddcb5f972180baf1fd1c1146609bfd8",
               "pdf_page": 3,
-              "display_rotation": 0,
+              "display_rotation": 90,
               "source_geometry": {
-                "display_rotation": 0
+                "display_rotation": 90
               }
             }
           ],
@@ -6938,9 +6950,9 @@
               "source_original_sha256": "f77056a140d3fcb39e80b46e7015030ebcaf5b9756af42984a4dc9ee59b52443",
               "source_display_sha256": "f77056a140d3fcb39e80b46e7015030ebcaf5b9756af42984a4dc9ee59b52443",
               "pdf_page": 9,
-              "display_rotation": 0,
+              "display_rotation": 90,
               "source_geometry": {
-                "display_rotation": 0
+                "display_rotation": 90
               }
             },
             {
@@ -6955,9 +6967,9 @@
               "source_original_sha256": "3f06f16dabb38600dc59c52de04efccc3277ece9207f0b8a004e0ff9abce7175",
               "source_display_sha256": "3f06f16dabb38600dc59c52de04efccc3277ece9207f0b8a004e0ff9abce7175",
               "pdf_page": 12,
-              "display_rotation": 0,
+              "display_rotation": 90,
               "source_geometry": {
-                "display_rotation": 0
+                "display_rotation": 90
               }
             }
           ],

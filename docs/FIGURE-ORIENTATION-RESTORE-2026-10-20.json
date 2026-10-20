@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-20",
+  "policy": "Vision-locked 9 unique asset shas; metadata display_rotation=90 only; never rotate bytes.",
+  "wo_tw_fig2_unchanged_sha": "77e2a1525aeebf656f5b7d348a4c1c6f363d0a0cb3b5b2e4d57ec3aa7546571c",
+  "locked_sha_count": 9,
+  "row_updates": [
+    {
+      "publication_id": "US12740346B2",
+      "figure_number": "图7：选择性沉积系统、气源和控制器",
+      "sha256": "39e66689f3d4ed987e3f3562b40eb24e6b030314892baf2029b0f8a1cab74603",
+      "display_rotation_before": 0,
+      "display_rotation_after": 90
+    },
+    {
+      "publication_id": "US12701931B2",
+      "figure_number": "图4：底部与侧壁掺磷层上的本征盖层",
+      "sha256": "22dbc8e9baf1a3e5c7e6efed68b2bc752517f8a1fe47b87a0cd020d0ece5acae",
+      "display_rotation_before": 0,
+      "display_rotation_after": 90
+    },
+    {
+      "publication_id": "US20260164725A1",
+      "figure_number": "FIGS. 20C–20D",
+      "sha256": "d0af11401052ea68bfa12e42f563bfbb40a029ee5e09dee02c2ba60aab2ad4b0",
+      "display_rotation_before": 0,
+      "display_rotation_after": 90
+    },
+    {
+      "publication_id": "US20260150594A1",
+      "figure_number": "图4：带硅源、掺杂源供气和控制器的外延腔室",
+      "sha256": "8533597a17f700dfd505913f5ae521fb21245098c68b10c38a4b2d7bfe6ec363",
+      "display_rotation_before": 0,
+      "display_rotation_after": 90
+    },
+    {
+      "publication_id": "US12595587B2",
+      "figure_number": "图1：多片衬底交替沉积脉冲流程",
+      "sha256": "11ec9fb5bbc7be2be3301d79afb8cb1faaba6ac3c6d44dffd94c2e9efe551b9a",
+      "display_rotation_before": 0,
+      "display_rotation_after": 90
+    },
+    {
+      "publication_id": "US20260035835A1",
+      "figure_number": "图2–5：从衬底至SiGe:B源漏接触层结构",
+      "sha256": "1516cae0ee73967b9d353b67b29a75de9ddcb5f972180baf1fd1c1146609bfd8",
+      "display_rotation_before": 0,
+      "display_rotation_after": 90
+    },
+    {
+      "publication_id": "US20260026275A1",
+      "figure_number": "FIG. 8A",
+      "sha256": "f77056a140d3fcb39e80b46e7015030ebcaf5b9756af42984a4dc9ee59b52443",
+      "display_rotation_before": 0,
+      "display_rotation_after": 90
+    },
+    {
+      "publication_id": "US20260026275A1",
+      "figure_number": "FIG. 9",
+      "sha256": "3f06f16dabb38600dc59c52de04efccc3277ece9207f0b8a004e0ff9abce7175",
+      "display_rotation_before": 0,
+      "display_rotation_after": 90
+    }
+  ],
+  "figure_recovery_map_entries": 9
+}
