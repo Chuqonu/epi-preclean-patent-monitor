@@ -4,7 +4,8 @@
   "base_commit": "fc50784",
   "issue": "fc50784/Pages 上 WO/TW 六张 assets 为站点 UI 截图（Fig.2=1024x640 sha435cb116…），非专利附图；report.json width/height/sha 随之错误。display_rotation=90 转的是错图。",
   "root_cause": "stamp 合入时用了 UI 截图覆盖闸③真图路径，而非 PRECLEAN-FIGURES-MANIFEST 中的 Lens WO page renders。",
-  "fix": "用闸③真图覆盖 assets/figures/WO2026096517A1_fig{1,2,3}.png 与 TW 同名三张；同步改 report.json figures[] 的 width/height/sha256；保留 Fig.2 display_rotation=90。",
+  "fix": "用闸③真图覆盖 assets/figures/WO2026096517A1_fig{1,2,3}.png 与 TW 同名三张；同步改 report.json figures[] 的 width/height/sha256。",
+  "display_rotation_note": "Fig.2 display_rotation corrected 90→0 (2026-10-20): true Gate③ FIG.2 PNG is portrait display-upright (2478×3506, sha 77e2a152…); rotation 90 only applied to the wrong UI screenshot asset.",
   "true_assets": {
     "WO2026096517A1_fig1.png": {
       "width": 2478,
@@ -15,7 +16,7 @@
       "width": 2478,
       "height": 3506,
       "sha256": "77e2a1525aeebf656f5b7d348a4c1c6f363d0a0cb3b5b2e4d57ec3aa7546571c",
-      "display_rotation": 90
+      "display_rotation": 0
     },
     "WO2026096517A1_fig3.png": {
       "width": 2477,
@@ -32,7 +33,7 @@
       "width": 2478,
       "height": 3506,
       "sha256": "77e2a1525aeebf656f5b7d348a4c1c6f363d0a0cb3b5b2e4d57ec3aa7546571c",
-      "display_rotation": 90,
+      "display_rotation": 0,
       "family_share_from": "WO2026096517A1"
     },
     "TW202628839A_fig3.png": {
@@ -62,5 +63,5 @@
   "do_not_solo_push": true,
   "ask": "请总经理 stamp/Pages；设计再验 WO Fig.2 正立（普通刷新）。非正式。",
   "report_figure_number_style": "Fig. N",
-  "report_display_rotation": "Fig.2=90; Fig.1/3=0"
+  "report_display_rotation": "Fig.2=0; Fig.1/3=0"
 }
