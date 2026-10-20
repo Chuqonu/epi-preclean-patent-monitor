@@ -1,0 +1,74 @@
+{
+  "document_type": "evidence_evening_intersection_diff",
+  "created_at": "2026-10-20T20:55:00+08:00",
+  "timezone": "Asia/Shanghai",
+  "inputs": {
+    "epi": "docs/EPI-INCREMENTAL-SPRINT-evening-2026-10-20-frozen.json",
+    "preclean": "docs/PRECLEAN-INCREMENTAL-SPRINT-evening-2026-10-20-frozen.json"
+  },
+  "september": "untouched",
+  "informal": true,
+  "no_zero_omission_claim": true,
+  "intersection_publication_ids": [],
+  "intersection_note": "空交集符合车道分工；未互换清单。",
+  "epi_only": {
+    "include_core_new": [
+      {
+        "publication_id": "US20260062803A1",
+        "month": "2026-03",
+        "event_date": "2026-03-05",
+        "applicant": "ASM",
+        "verified": true,
+        "in_live": false,
+        "note": "claim1 双入口+RPU；claim16 Si/SiGe 超晶格外延；sha c4b5b08a…"
+      }
+    ]
+  },
+  "preclean_only": {
+    "already_in_baseline_not_new_discovery": [
+      {
+        "publication_id": "US20260090293A1",
+        "month": "2026-03",
+        "event_date": "2026-03-26",
+        "applicant": "Lam",
+        "live_status": "core + import_tag=imported baseline（category EPI 工艺）",
+        "claims_verified": "claim12：oxide preclean + pretreat + epitaxy chamber epi + reactor clean；sha f5e0c143…",
+        "ruling": "keep_baseline；不计晚间新发现；可选补 Preclean 技术标签，不升格独立新发现计数"
+      }
+    ],
+    "include_core_new_family": [
+      {
+        "family_id": "FAM-ASM-AHF-PRECLEAN",
+        "representative": "US12660544B2",
+        "events": [
+          {"publication_id": "KR102916044B1", "event_date": "2026-01-21", "type": "grant"},
+          {"publication_id": "US12660544B2", "event_date": "2026-06-16", "type": "grant"},
+          {"publication_id": "US12757665B2", "event_date": "2026-10-06", "type": "grant"}
+        ],
+        "verified": "USPTO OG claim1 AHF+水汽 dry oxide preclean；OG sha 3ca5bc31…；live 未见",
+        "disposition": "include_core",
+        "in_live": false
+      }
+    ]
+  },
+  "counts_for_evening_warehouse_delta": {
+    "new_core_families": 2,
+    "new_core_events": 4,
+    "note": "EPI US20260062803A1（1事件）+ Preclean ASM AHF 族（3事件）；Lam US20260090293A1 不计新发现"
+  },
+  "team_actually_read": {
+    "remains": 6,
+    "not_auto_bump": "Preclean 自报已读11含 related/excluded/窗外；合并锁仍等 Codex 证据字段，不升 7"
+  },
+  "cn_figures": {
+    "CN121693111A": "stamp PASS live 5ba9d9c8a07a",
+    "CN122294515A": "仍诚实待补",
+    "CN122069948A": "仍诚实待补"
+  },
+  "failures_retained": [
+    "EPI GP xhr 500 / CPC 乱数",
+    "Preclean 近窗 10-17..20 仍 0",
+    "ASM US GP 404→OG",
+    "两 CN DEPATISnet Speichern 未落盘"
+  ]
+}

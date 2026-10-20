@@ -1,0 +1,477 @@
+{
+  "lane": "EPI",
+  "document_type": "frozen_candidates_incremental_sprint_evening",
+  "method_ref": "2026-10-20.4.2-r2",
+  "search_window": "gap_vs_baseline_2025-10_2026-10_plus_near_research_through_evening",
+  "research_through": "2026-10-20",
+  "period_start": "2025-10",
+  "period_end": "2026-10",
+  "frozen_at": "2026-10-20T20:46:52+08:00",
+  "timezone": "Asia/Shanghai",
+  "prior_freeze": "baseline-2025-10_2026-10-frozen.json",
+  "prior_incremental_C": "EPI-INCREMENTAL-2026-10-19_2026-10-20-frozen.json (empty; separate)",
+  "prior_gap_sprint": "EPI-INCREMENTAL-SPRINT-gap-2026-10-20-frozen.json (TEL 2条已纳入，本晚不重复计为新发现)",
+  "focus": "晚间A轨：缺口申请人 Lam / AMEC / NAURA / 拓荆 / ASM 变体 + CPC C30B25 / H01L21/0262 + 与 EPI 明确关联的腔体干式清洁；邻近 live research_through≈2026-10-20",
+  "queries_run": [
+    {
+      "id": "E1_asm",
+      "branch": "gap_applicant_or_keyword",
+      "query": "assignee:(\"ASM International\" OR \"ASM IP\" OR \"ASM America\") (epitax OR epitaxial OR SiGe OR \"silicon germanium\") after:2025-09-30 before:2026-10-21",
+      "source": "Google Patents xhr",
+      "result_count": null,
+      "artifact": null,
+      "sha256": null,
+      "source_retrieved_at": "2026-10-20T20:46:52+08:00",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "id": "E2_piotech",
+      "branch": "gap_applicant_or_keyword",
+      "query": "(assignee:拓荆 OR assignee:Piotech OR \"拓荆科技\") (外延 OR epitax OR SiGe OR epitaxial) after:2025-09-30 before:2026-10-21",
+      "source": "Google Patents xhr",
+      "result_count": null,
+      "artifact": null,
+      "sha256": null,
+      "source_retrieved_at": "2026-10-20T20:46:52+08:00",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "id": "E3_lam2",
+      "branch": "gap_applicant_or_keyword",
+      "query": "assignee:(\"Lam Research\") (epitax* OR SiGe OR \"silicon germanium\" OR 外延) after:2025-09-30 before:2026-10-21",
+      "source": "Google Patents xhr",
+      "result_count": null,
+      "artifact": null,
+      "sha256": null,
+      "source_retrieved_at": "2026-10-20T20:46:52+08:00",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "id": "E4_amec2",
+      "branch": "gap_applicant_or_keyword",
+      "query": "(assignee:(\"Advanced Micro-Fabrication Equipment\" OR AMEC OR 中微半导体) ) (epitax* OR SiGe OR 外延 OR EPI) after:2025-09-30 before:2026-10-21",
+      "source": "Google Patents xhr",
+      "result_count": null,
+      "artifact": null,
+      "sha256": null,
+      "source_retrieved_at": "2026-10-20T20:46:52+08:00",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "id": "E5_naura2",
+      "branch": "gap_applicant_or_keyword",
+      "query": "(assignee:(NAURA OR \"北方华创\" OR \"Beijing NAURA\")) (epitax* OR SiGe OR 外延) after:2025-09-30 before:2026-10-21",
+      "source": "Google Patents xhr",
+      "result_count": null,
+      "artifact": null,
+      "sha256": null,
+      "source_retrieved_at": "2026-10-20T20:46:52+08:00",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "id": "E6_c30b",
+      "branch": "gap_applicant_or_keyword",
+      "query": "CPC=(C30B25/02 OR C30B25/14 OR C30B25/16) (Si OR silicon OR SiGe) after:2025-09-30 before:2026-10-21",
+      "source": "Google Patents xhr",
+      "result_count": 101538,
+      "artifact": "raw/sprint-evening-2026-10-20/E6_c30b.json",
+      "sha256": "b0451b0c2786ba5ecfe819a1e6e28c566db7aebb73c445c602b96902fdd21f01",
+      "source_retrieved_at": "2026-10-20T20:46:52+08:00",
+      "error": null
+    },
+    {
+      "id": "E7_h01l",
+      "branch": "gap_applicant_or_keyword",
+      "query": "CPC=H01L21/0262 after:2025-09-30 before:2026-10-21",
+      "source": "Google Patents xhr",
+      "result_count": 101538,
+      "artifact": "raw/sprint-evening-2026-10-20/E7_h01l.json",
+      "sha256": "8c864fcb7dc629a4b0a5760f8cf31e21a5bea00670eff4b4b027d92318445783",
+      "source_retrieved_at": "2026-10-20T20:46:52+08:00",
+      "error": null
+    },
+    {
+      "id": "E8_near_oct",
+      "branch": "gap_applicant_or_keyword",
+      "query": "(epitaxial OR epitaxy OR SiGe OR \"silicon germanium\") (chamber OR reactor OR selective OR \"doped cap\" OR showerhead) after:2026-10-01 before:2026-10-21",
+      "source": "Google Patents xhr",
+      "result_count": null,
+      "artifact": null,
+      "sha256": null,
+      "source_retrieved_at": "2026-10-20T20:46:52+08:00",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "id": "E9_cn_epi",
+      "branch": "gap_applicant_or_keyword",
+      "query": "country:CN (硅锗外延 OR 选择性外延 OR 外延设备 OR 外延腔) after:2025-09-30 before:2026-10-21",
+      "source": "Google Patents xhr",
+      "result_count": null,
+      "artifact": null,
+      "sha256": null,
+      "source_retrieved_at": "2026-10-20T20:46:52+08:00",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "id": "E10_dryclean",
+      "branch": "gap_applicant_or_keyword",
+      "query": "(epitaxial OR epitaxy OR 外延) (\"chamber clean\" OR \"in-situ clean\" OR \"dry clean\" OR NF3 OR ClF3) after:2025-09-30 before:2026-10-21",
+      "source": "Google Patents xhr",
+      "result_count": null,
+      "artifact": null,
+      "sha256": null,
+      "source_retrieved_at": "2026-10-20T20:46:52+08:00",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "id": "E11_wonik_asm",
+      "branch": "gap_applicant_or_keyword",
+      "query": "(assignee:(Wonik OR \"Wonik IPS\" OR \"Eugene Technology\" OR Jusung OR \"TES Co\")) (epitax* OR SiGe) after:2025-09-30 before:2026-10-21",
+      "source": "Google Patents xhr",
+      "result_count": null,
+      "artifact": null,
+      "sha256": null,
+      "source_retrieved_at": "2026-10-20T20:46:52+08:00",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "id": "E12_sanity",
+      "branch": "direct_publication_fetch",
+      "query": "US20260066234A1",
+      "source": "Google Patents xhr",
+      "result_count": null,
+      "artifact": null,
+      "sha256": null,
+      "source_retrieved_at": "2026-10-20T20:46:52+08:00",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "id": "E20_web_lam",
+      "branch": "websearch_crosscheck",
+      "query": "Lam Research epitaxial OR SiGe OR epitaxy patent 2025 OR 2026",
+      "source": "WebSearch",
+      "result_count": "clues",
+      "note": "命中 US12550646B2（刻蚀非外延生长）等旧/非目标",
+      "source_retrieved_at": "2026-10-20T20:46:52+08:00"
+    },
+    {
+      "id": "E21_web_cn_makers",
+      "branch": "websearch_crosscheck",
+      "query": "NAURA OR 北方华创 OR AMEC OR 中微 OR 拓荆 外延 OR epitaxial OR SiGe 专利 2025 OR 2026",
+      "source": "WebSearch",
+      "result_count": "clues",
+      "note": "产品/展会线索；无可靠窗内公开号直取",
+      "source_retrieved_at": "2026-10-20T20:46:52+08:00"
+    },
+    {
+      "id": "E22_web_asm",
+      "branch": "websearch_crosscheck",
+      "query": "ASM International OR ASM IP Holding epitaxial OR SiGe patent 2025 OR 2026",
+      "source": "WebSearch",
+      "result_count": "clues",
+      "note": "线索 US20260062803A1 / 窗外 US20250084534A1 等",
+      "source_retrieved_at": "2026-10-20T20:46:52+08:00"
+    },
+    {
+      "id": "E23_web_near_oct",
+      "branch": "websearch_crosscheck",
+      "query": "TEL OR ASM OR Applied epitaxial OR SiGe October 2026 patent",
+      "source": "WebSearch",
+      "result_count": "clues",
+      "source_retrieved_at": "2026-10-20T20:46:52+08:00"
+    },
+    {
+      "id": "E24_id_US20260062803A1",
+      "branch": "direct_publication_fetch",
+      "query": "US20260062803A1",
+      "source": "Google Patents HTML",
+      "result_count": 1,
+      "artifact": "raw/sprint-evening-2026-10-20/US20260062803A1.html",
+      "sha256": "c4b5b08a3112e9eccdb45f13bb423cdb23a2350996b6f6a6a6e42bc2207d1b44",
+      "source_retrieved_at": "2026-10-20T20:46:52+08:00"
+    },
+    {
+      "id": "E25_id_US12550646B2",
+      "branch": "direct_publication_fetch",
+      "query": "US12550646B2",
+      "source": "Google Patents HTML",
+      "result_count": 1,
+      "artifact": "raw/sprint-evening-2026-10-20/US12550646B2.html",
+      "sha256": "1c5b6037fc6a2d34914c5f2ee78b24caf829a51f12cefca244d3cf28d7691a61",
+      "source_retrieved_at": "2026-10-20T20:46:52+08:00",
+      "note": "Lam SiGe 选择性刻蚀 nanowire；非外延生长主张"
+    },
+    {
+      "id": "E26_id_US20250084534A1",
+      "branch": "direct_publication_fetch",
+      "query": "US20250084534A1",
+      "source": "Google Patents HTML",
+      "result_count": 1,
+      "artifact": "raw/sprint-evening-2026-10-20/US20250084534A1.html",
+      "sha256": "559c901ccd19fcb33e67597401e59f3fe58ace7c65d9824989c7bec06790cb9c",
+      "source_retrieved_at": "2026-10-20T20:46:52+08:00",
+      "note": "公开日 2025-03-13 窗外"
+    },
+    {
+      "id": "E27_id_US20250079167A1",
+      "branch": "direct_publication_fetch",
+      "query": "US20250079167A1",
+      "source": "Google Patents HTML",
+      "result_count": 1,
+      "artifact": "raw/sprint-evening-2026-10-20/US20250079167A1.html",
+      "sha256": "6a3b2140c07ea383d6c7f5e4cc51d68df9d2cf862f856ae0265ea4c73227bd74",
+      "source_retrieved_at": "2026-10-20T20:46:52+08:00",
+      "note": "公开日 2025-03-06 窗外"
+    },
+    {
+      "id": "E28_id_CN122303841A",
+      "branch": "direct_publication_fetch",
+      "query": "CN122303841A",
+      "source": "Google Patents HTML",
+      "result_count": 1,
+      "artifact": "raw/sprint-evening-2026-10-20/CN122303841A.html",
+      "sha256": "564252bdeaa0c150ac4f094c48d3787b3520ac33c7ee285e5ba5629bfe515000",
+      "source_retrieved_at": "2026-10-20T20:46:52+08:00",
+      "note": "AMEC 双通道喷头气相沉积；正文无 epitax/外延"
+    },
+    {
+      "id": "E29_id_US12252785B2",
+      "branch": "direct_publication_fetch",
+      "query": "US12252785B2",
+      "source": "Google Patents HTML",
+      "result_count": 1,
+      "artifact": "raw/sprint-evening-2026-10-20/US12252785B2.html",
+      "sha256": "a522d6a179cd8992bf664c33a5ad2bd8e687c69a4d6299462ab031744a85c2ed",
+      "source_retrieved_at": "2026-10-20T20:46:52+08:00",
+      "note": "ASM 石英外延腔清洗；公开日 2025-03-18 窗外"
+    },
+    {
+      "id": "E30_id_US20250075317A1",
+      "branch": "direct_publication_fetch",
+      "query": "US20250075317A1",
+      "source": "Google Patents HTML",
+      "result_count": 1,
+      "artifact": "raw/sprint-evening-2026-10-20/US20250075317A1.html",
+      "sha256": "abe98235bc0f2203feff20e351b40143d68361022538774089fa18038981e779",
+      "source_retrieved_at": "2026-10-20T20:46:52+08:00",
+      "note": "ASM 腔体附积清除；公开日 2025-03-06 窗外"
+    },
+    {
+      "id": "E31_id_US12630920B2",
+      "branch": "direct_publication_fetch",
+      "query": "US12630920B2",
+      "source": "Google Patents HTML",
+      "result_count": 1,
+      "artifact": "raw/sprint-evening-2026-10-20/US12630920B2.html",
+      "sha256": "86af83ab2b4b7fa83f28668adcb737a9cdb530b899bfe1679754cc71ac9c0afe",
+      "source_retrieved_at": "2026-10-20T20:46:52+08:00",
+      "note": "AMAT 通用腔清洗；epitax=0，非 EPI 关联干洁"
+    },
+    {
+      "id": "E32_id_WO2026161221A1",
+      "branch": "direct_publication_fetch",
+      "query": "WO2026161221A1",
+      "source": "Google Patents HTML",
+      "result_count": 1,
+      "artifact": "raw/sprint-evening-2026-10-20/WO2026161221A1.html",
+      "sha256": "31b8d567c607e4cfa29fa18efd0410233d99aa982aca8a384f11a84281c556c5",
+      "source_retrieved_at": "2026-10-20T20:46:52+08:00",
+      "note": "AMAT SiGe 刻蚀凹槽；非外延生长"
+    },
+    {
+      "id": "E33_og_w39_41",
+      "branch": "USPTO_OG_index",
+      "query": "USPTO OG week39-41 2026 index scan epitax/SiGe",
+      "source": "USPTO Official Gazette HTML",
+      "result_count": 0,
+      "artifact": "raw/sprint-evening-2026-10-20/OG_w40_2026_index.html",
+      "note": "专利列表页无 epitax/SiGe 明文命中；非零遗漏证明",
+      "source_retrieved_at": "2026-10-20T20:46:52+08:00"
+    },
+    {
+      "id": "E34_web_wo193407",
+      "branch": "websearch_crosscheck",
+      "query": "WO2026193407 epitaxial deposition",
+      "source": "WebSearch",
+      "result_count": "clues",
+      "note": "声称 2026-09-17 公开；GP/Espacenet 本环境 404/403，未核读不纳入",
+      "source_retrieved_at": "2026-10-20T20:46:52+08:00"
+    },
+    {
+      "id": "E35_cpc_xhr",
+      "branch": "gap_cpc",
+      "query": "CPC=(C30B25/02 OR C30B25/14) / CPC=H01L21/0262 after:2025-09-30",
+      "source": "Google Patents xhr",
+      "result_count": "unreliable",
+      "note": "E6/E7 返回 total≈101538 且结果与查询无关（过滤器疑似失效）",
+      "source_retrieved_at": "2026-10-20T20:46:52+08:00"
+    }
+  ],
+  "sources_tried": [
+    "Google Patents xhr (assignee/keyword/CPC — 多路 500 或过滤器失效)",
+    "WebSearch cross-check",
+    "Google Patents HTML direct ID",
+    "USPTO Official Gazette week index (39–41/2026)",
+    "WIPO Patentscope (WO2026193407 尝试，正文未核通)"
+  ],
+  "limitations": [
+    "不宣称零遗漏",
+    "禁止 2025/09 作为监测起点",
+    "未读取/互换 Preclean 清单",
+    "GP xhr 本晚大量 HTTP 500；CPC 查询返回异常 total≈101538，不以 0/乱序 hits 解释真实世界",
+    "gap sprint 已纳入的 TEL US20250311241A1 / US12757648B2 不重复计为新发现",
+    "参考集 epi-known-pubs 中的 US12727402B2（ASM 选择性外延，授权 2026-09-01）不标为本晚新发现",
+    "Lam / AMEC / NAURA / 拓荆 本晚仍无窗内可核读纳入项（产品新闻≠专利公开）",
+    "WO2026193407 仅 WebSearch 线索，官方全文未核读 → 不纳入",
+    "Espacenet 高级检索本环境 403"
+  ],
+  "out_of_scope_or_sept_sightings": [
+    {
+      "publication_id": "US20250084534A1",
+      "event_date": "2025-03-13",
+      "reason_not_included": "公开日早于基线窗 2025-10；ASM 外延腔预涂/清洗相关",
+      "sha256": "559c901ccd19fcb33e67597401e59f3fe58ace7c65d9824989c7bec06790cb9c"
+    },
+    {
+      "publication_id": "US20250079167A1",
+      "event_date": "2025-03-06",
+      "reason_not_included": "公开日早于基线窗 2025-10；ASM SiGe:B 工艺",
+      "sha256": "6a3b2140c07ea383d6c7f5e4cc51d68df9d2cf862f856ae0265ea4c73227bd74"
+    },
+    {
+      "publication_id": "US12252785B2",
+      "event_date": "2025-03-18",
+      "reason_not_included": "公开日早于基线窗；虽为石英外延腔清洗（与 EPI 关联）但不计窗外事件",
+      "sha256": "a522d6a179cd8992bf664c33a5ad2bd8e687c69a4d6299462ab031744a85c2ed"
+    },
+    {
+      "publication_id": "US20250075317A1",
+      "event_date": "2025-03-06",
+      "reason_not_included": "公开日早于基线窗；ASM 腔体附积清除",
+      "sha256": "abe98235bc0f2203feff20e351b40143d68361022538774089fa18038981e779"
+    },
+    {
+      "publication_id": "US12550646B2",
+      "event_date": "2026-02-10",
+      "reason_not_included": "Lam；SiGe/Si 选择性刻蚀 nanowire，无外延生长主张",
+      "sha256": "1c5b6037fc6a2d34914c5f2ee78b24caf829a51f12cefca244d3cf28d7691a61"
+    },
+    {
+      "publication_id": "US12630920B2",
+      "event_date": "2026-05-19",
+      "reason_not_included": "AMAT 通用腔清洗；正文 epitax 计数为 0，非与 EPI 明确关联的干洁",
+      "sha256": "86af83ab2b4b7fa83f28668adcb737a9cdb530b899bfe1679754cc71ac9c0afe"
+    },
+    {
+      "publication_id": "WO2026161221A1",
+      "event_date": "2026-07-30",
+      "reason_not_included": "AMAT；外延堆叠中 SiGe 刻蚀凹槽，非外延生长设备/工艺",
+      "sha256": "31b8d567c607e4cfa29fa18efd0410233d99aa982aca8a384f11a84281c556c5"
+    },
+    {
+      "publication_id": "CN122303841A",
+      "event_date": null,
+      "reason_not_included": "AMEC 双通道喷头气相沉积；无外延主张",
+      "sha256": "564252bdeaa0c150ac4f094c48d3787b3520ac33c7ee285e5ba5629bfe515000"
+    },
+    {
+      "publication_id": "WO2026193407",
+      "event_date": "2026-09-17?",
+      "reason_not_included": "WebSearch/Patentscope 线索未核读官方全文；pending 不纳入",
+      "pending": true
+    },
+    {
+      "publication_id": "US12727402B2",
+      "event_date": "2026-09-01",
+      "reason_not_included": "已在 epi-known-pubs 参考集；本晚不标新发现；GP 直取 404",
+      "note": "参考集已收录"
+    }
+  ],
+  "already_in_prior_gap_not_recounted": [
+    {
+      "publication_id": "US20250311241A1",
+      "note": "gap sprint include_related TEL"
+    },
+    {
+      "publication_id": "US12757648B2",
+      "note": "gap sprint include_core TEL"
+    }
+  ],
+  "stats": {
+    "candidates": 1,
+    "publication_events": 1,
+    "unique_families": 1,
+    "actually_read": 1,
+    "fulltext_read": 1,
+    "pending": 0,
+    "core_events": 1,
+    "related": 0,
+    "excluded": 0,
+    "sightings_not_included": 10,
+    "already_in_prior_gap": 2
+  },
+  "candidate_count": 1,
+  "event_count": 1,
+  "family_count": 1,
+  "actually_read_count": 1,
+  "pending_count": 0,
+  "candidates": [
+    {
+      "publication_id": "US20260062803A1",
+      "jurisdiction": "US",
+      "event_type": "publication",
+      "event_date": "2026-03-05",
+      "month": "2026-03",
+      "application_id": "US19/313,558",
+      "priority_date": "2024-08-30",
+      "family_id": "FAM-ASM-PE-EPI-SUPERLATTICE-RPU",
+      "family_id_source": "title_assignee_app",
+      "title_original": "Semiconductor processing systems and associated methods for forming super-lattice structures using semiconductor processing systems",
+      "title_zh": "用于形成超晶格结构的半导体处理系统及相关方法",
+      "applicant_original": "ASM IP Holding B.V.",
+      "applicant_normalized": "ASM",
+      "scope_status": "core",
+      "technology_tags": [
+        "plasma_enhanced_epitaxy",
+        "Si_SiGe_superlattice",
+        "remote_plasma_unit",
+        "isothermal_epitaxy",
+        "chamber_dual_inlet",
+        "C30B25"
+      ],
+      "short_preview": "ASM：双入口+远程等离子体+隔离件的外延腔，等温沉积 Si/SiGe 超晶格（2026-03-05 公开；基线 ASM 缺口补强）。",
+      "technical_summary": "系统权利要求：纵流冷壁腔、第一气相入口与分离的第二等离子体反应物入口、远程等离子体单元、隔离件直至基座附近才汇合。方法权利要求：超循环交替外延 Si 层与外延 SiGe 层形成超晶格；控制器可向注入法兰供 Ge 前驱体、向 RPU 供 Si 前驱体并等温外延。",
+      "claims_or_embodiment_basis": "GP claims 1（双入口+RPU+isolating member 系统）与 claim 16（Si/SiGe 超晶格超循环外延方法）；摘要与 [0007][0016][0041] 实施方式一致。",
+      "scope_reason": "独立权利要求与实施方式明确主张 Si/SiGe 外延设备与工艺；属缺口申请人 ASM 变体窗内公开，基线/gap 未收。",
+      "disposition": "include_core",
+      "pending_reason": null,
+      "source_urls": [
+        "https://patents.google.com/patent/US20260062803A1/en"
+      ],
+      "source_retrieved_at": "2026-10-20T20:46:52+08:00",
+      "source_sha256": "c4b5b08a3112e9eccdb45f13bb423cdb23a2350996b6f6a6a6e42bc2207d1b44",
+      "actual_read_spans": [
+        "abstract",
+        "claims_1_15_system",
+        "claim_16_method_superlattice",
+        "field_summary_embodiments_0002_0041"
+      ],
+      "verification_level": "claims_and_embodiments",
+      "revalidated_read": true,
+      "family_completion_status": "open",
+      "reviewer": null,
+      "reviewed_at": null,
+      "change_history": [],
+      "search_entry": "evening_websearch_ASM_then_direct_US20260062803A1",
+      "events": [
+        {
+          "publication_id": "US20260062803A1",
+          "event_type": "publication",
+          "event_date": "2026-03-05",
+          "source_url": "https://patents.google.com/patent/US20260062803A1/en"
+        }
+      ],
+      "gap_reason": "缺口申请人 ASM 变体；基线已有 ASM US20250327209A1/US12543516B2，本条为另一族等离子体增强 Si/SiGe 超晶格外延系统，先前未收"
+    }
+  ]
+}
