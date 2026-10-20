@@ -2,19 +2,33 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
-  <meta name="epi-report-data" content="data/report.json?v=6994f2e7b5c1">
+  <meta name="epi-report-data" content="data/report.json?v=a3ea78e5c7fe">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>EPI / Preclean Patent Monitoring Report</title>
   <meta name="description" content="Independent Si/SiGe epi and preclean patent monitoring report for GitHub Pages.">
-  <link rel="stylesheet" href="assets/css/report.css?v=571f391605aa">
+  <link rel="stylesheet" href="assets/css/report.css?v=644a7472c245">
 </head>
 <body>
   <div class="shell">
     <aside class="side" id="side-panel" aria-label="检索目录">
-      <div class="side-meta" id="side-meta">加载中…</div>
-      <div class="side-tools">
-        <label class="visually-hidden" for="toc-search">搜索目录</label>
-        <input type="search" id="toc-search" class="toc-search" placeholder="搜索公开号或标题…" autocomplete="off" enterkeyhint="search">
+      <div class="side-meta" id="side-meta">
+        <a class="side-home" href="./">EPI / Preclean 专利监测</a>
+      </div>
+      <div class="side-filters" id="side-filters" aria-label="筛选">
+        <div class="chip-group" data-filter-group="domain">
+          <span class="chip-group-label">类型</span>
+          <button type="button" class="filter-chip" data-filter="hardware" aria-pressed="false">硬件</button>
+          <button type="button" class="filter-chip" data-filter="process" aria-pressed="false">工艺</button>
+        </div>
+        <div class="chip-group" data-filter-group="lane">
+          <span class="chip-group-label">领域</span>
+          <button type="button" class="filter-chip" data-filter="epi" aria-pressed="false">EPI</button>
+          <button type="button" class="filter-chip" data-filter="preclean" aria-pressed="false">Preclean</button>
+        </div>
+        <div class="filter-bar">
+          <span class="filter-count" id="filter-count" aria-live="polite"></span>
+          <button type="button" class="filter-clear" id="filter-clear" hidden>清除筛选</button>
+        </div>
       </div>
       <nav id="tree" aria-label="按月专利目录"></nav>
     </aside>
@@ -33,6 +47,11 @@
       <footer class="report-footer" id="banner" aria-label="报告信息"></footer>
     </main>
   </div>
-  <script src="assets/js/report.js?v=401c84a833ec" defer></script>
+  <div id="figure-label-popup" class="figure-label-popup" role="dialog" aria-modal="false" hidden>
+    <button type="button" class="figure-label-popup-close" aria-label="关闭">×</button>
+    <strong class="figure-label-popup-title"></strong>
+    <p class="figure-label-popup-desc"></p>
+  </div>
+  <script src="assets/js/report.js?v=5f63892fcd43" defer></script>
 </body>
 </html>

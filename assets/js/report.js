@@ -99,6 +99,9 @@
         height: img.height,
         display_rotation: displayRotation,
         path: pick(img, ["local_asset_path", "path"], ""),
+        sha256: pick(img, ["asset_sha256", "source_display_sha256", "sha256"], ""),
+        annotations: img.annotations || null,
+        annotation_coverage_status: img.annotation_coverage_status || "",
       };
     });
     const events = pick(f, ["family_events", "events"], []) || [];
@@ -225,36 +228,47 @@
     return hasIndependentIncrement(data) ? "初版 · 含独立检索增量" : "初版 · 基线导入";
   }
 
-  function formatMonthChrome(ym) {
-    if (!ym) return { label: "", year: "", mon: "" };
+  function formatMonthLabel(ym) {
+    if (!ym) return "";
     const m = String(ym).match(/^(\d{4})-(\d{2})$/);
-    if (!m) return { label: ym, year: "", mon: "" };
-    return { label: m[1] + "-" + m[2], year: m[1], mon: m[2] };
+    return m ? m[1] + "-" + m[2] : ym;
   }
 
-  function monthStatusShort(status) {
-    if (!status) return "";
-    const part = String(status).split("｜")[0].trim();
-    return part.length > 14 ? part.slice(0, 13) + "…" : part;
+  function renderSideMeta() {
+    /* Dot shell: home link only (static in index.html). */
   }
 
-  function renderSideMeta(data) {
-    const el = $("#side-meta");
-    if (!el) return;
-    const through = data.research_through || "未设定";
-    const c = data.counts || {};
-    const bag = countBag(c);
-    const fig = computeFigureStats(data);
-    el.innerHTML =
-      "<strong class=\"side-title\">EPI / Preclean 专利监测</strong>" +
-      "<span class=\"side-edition\">" + esc(editionLabel(data)) + "</span>" +
-      "<dl class=\"side-stats\">" +
-      "<div class=\"side-stat\"><dt>截至</dt><dd>" + esc(through) + "</dd></div>" +
-      "<div class=\"side-stat\"><dt>族月条目</dt><dd>" + esc(bag.monthEntries) + "</dd></div>" +
-      "<div class=\"side-stat\"><dt>本团队已读</dt><dd>" + esc(bag.read) + "</dd></div>" +
-      "<div class=\"side-stat\"><dt>附图可载</dt><dd>" + esc(fig.loadable) + "<span class=\"side-stat-muted\">/" +
-      esc(fig.cited) + "</span></dd></div>" +
-      "</dl>";
+  function classifyFamily(f) {
+    const cat = String(f.category || "");
+    const tags = (f.technology_tags || []).map((t) => String(t).toLowerCase());
+    const lane = String(f.discovery_lane || "");
+    const domains = [];
+    if (/设备|控制|计量|装置/.test(cat)) domains.push("hardware");
+    if (/工艺|外延|清洗|集成|结构|沉积|晶圆|腔室|Si\s*\/\s*SiGe/i.test(cat) || tags.includes("chamber_clean")) {
+      domains.push("process");
+    }
+    if (!domains.length) domains.push(/设备/.test(cat) ? "hardware" : "process");
+
+    const lanes = [];
+    if (tags.includes("preclean") || /preclean/i.test(cat) || lane === "Preclean") lanes.push("preclean");
+    if (tags.includes("epi") || /EPI|外延/i.test(cat) || lane === "EPI" || !lanes.length) lanes.push("epi");
+
+    return { domains: domains, lanes: lanes };
+  }
+
+  function familyPassesChipFilter(f, activeDomain, activeLane) {
+    const c = classifyFamily(f);
+    if (activeDomain.size) {
+      for (const d of activeDomain) {
+        if (c.domains.indexOf(d) === -1) return false;
+      }
+    }
+    if (activeLane.size) {
+      for (const l of activeLane) {
+        if (c.lanes.indexOf(l) === -1) return false;
+      }
+    }
+    return true;
   }
 
   const PATENT_COLGROUP =
@@ -357,21 +371,9 @@
       // Scaffold: leave all closed so empty months stay compact.
       const summary = document.createElement("summary");
       const count = (m.families || []).length;
-      const chrome = formatMonthChrome(m.month);
-      const statusShort = monthStatusShort(m.status);
       summary.innerHTML =
-        "<span class=\"month-heading\">" +
-        (chrome.year
-          ? "<span class=\"month-ym\"><span class=\"month-ym-mon\">" + esc(chrome.mon) + "</span>" +
-            "<span class=\"month-ym-year\">" + esc(chrome.year) + "</span></span>"
-          : "<span class=\"month-ym-plain\">" + esc(chrome.label || m.month) + "</span>") +
-        (statusShort
-          ? "<span class=\"month-status\" title=\"" + esc(m.status || "") + "\">" + esc(statusShort) + "</span>"
-          : "") +
-        "</span>" +
-        "<span class=\"month-count\">" + count + " 族" +
-        (m.event_count != null ? " · " + m.event_count + " 事件" : "") +
-        "</span>";
+        "<span class=\"month-label\">" + esc(formatMonthLabel(m.month)) + "</span>" +
+        "<span class=\"month-count\">" + count + " 族</span>";
       details.appendChild(summary);
 
       const body = document.createElement("div");
@@ -386,10 +388,13 @@
       } else {
         families.forEach((raw) => {
           const f = normFamily(raw, m.month);
+          const chipClass = classifyFamily(f);
           const a = document.createElement("a");
           a.className = "mini";
           a.href = "#" + encodeURIComponent(f.id);
           a.dataset.target = f.id;
+          a.dataset.filterDomain = chipClass.domains.join(" ");
+          a.dataset.filterLane = chipClass.lanes.join(" ");
           a.innerHTML =
             "<span class=\"mini-date\">" + esc(f.publication_date || "") + "</span>" +
             "<span class=\"mini-title\">" + esc(f.title || f.publication_number || "") + "</span>" +
@@ -462,16 +467,82 @@
     return rot % 360;
   }
 
+  function annotationsVerified(img) {
+    const ann = img.annotations;
+    if (!ann || ann.version !== 1 || !ann.labels || !ann.labels.length) return null;
+    const sha = img.sha256 || "";
+    if (!sha || ann.image_sha256 !== sha) return null;
+    return ann;
+  }
+
+  function labelByNumber(ann) {
+    const map = {};
+    (ann.labels || []).forEach((l) => {
+      if (l && l.number != null) map[String(l.number)] = l;
+    });
+    return map;
+  }
+
+  function renderFigureLabelList(ann) {
+    const n = (ann.labels || []).length;
+    if (!n) return "";
+    const rows = ann.labels
+      .map(
+        (l) =>
+          "<dt>" + esc(l.number) + "</dt><dd><strong>" + esc(l.display_name || "") + "</strong> " +
+          esc(l.display_description || "") + "</dd>"
+      )
+      .join("");
+    return (
+      "<details class=\"figure-label-list\">" +
+      "<summary>标号释义（" + n + "项）</summary><dl>" + rows + "</dl></details>"
+    );
+  }
+
+  function renderFigureHotspots(ann) {
+    const byNum = labelByNumber(ann);
+    const occ = ann.occurrences || [];
+    if (!occ.length) return "";
+    const buttons = occ
+      .map((o) => {
+        const box = o.box;
+        if (!box || box.length < 4) return "";
+        const lab = byNum[String(o.number)];
+        if (!lab) return "";
+        const x = box[0] * 100;
+        const y = box[1] * 100;
+        const w = box[2] * 100;
+        const h = box[3] * 100;
+        const title = lab.number + " · " + (lab.display_name || "");
+        return (
+          "<button type=\"button\" class=\"figure-label-hotspot\" " +
+          "style=\"left:" + x + "%;top:" + y + "%;width:" + w + "%;height:" + h + "%\" " +
+          "data-label-number=\"" + esc(lab.number) + "\" " +
+          "data-popup-title=\"" + esc(title) + "\" " +
+          "data-popup-desc=\"" + esc(lab.display_description || "") + "\" " +
+          "aria-label=\"" + esc(title) + "\"></button>"
+        );
+      })
+      .filter(Boolean)
+      .join("");
+    if (!buttons) return "";
+    return "<div class=\"figure-label-overlay\" aria-hidden=\"false\">" + buttons + "</div>";
+  }
+
   function stripFigureRotationIfUpright(img) {
-    const metaRot = Number(img.getAttribute("data-display-rotation") || "0") || 0;
-    if (metaRot === 90 || metaRot === 270 || metaRot === 180) return;
     const nw = img.naturalWidth;
     const nh = img.naturalHeight;
-    if (!nw || !nh || nh >= nw) return;
-    img.classList.remove("fig-display-rot-90", "fig-display-rot-270", "fig-display-rot-180");
-    img.style.transform = "none";
-    const wrap = img.closest(".fig-media");
-    if (wrap) wrap.classList.remove("fig-display-rot-90", "fig-display-rot-270", "fig-display-rot-180");
+    if (!nw || !nh) return;
+    const metaRot = Number(img.getAttribute("data-display-rotation") || "0") || 0;
+    if (metaRot) return;
+    if (nh >= nw) {
+      img.classList.remove("fig-display-rot-90", "fig-display-rot-270", "fig-display-rot-180");
+      img.style.transform = "none";
+      const wrap = img.closest(".fig-media");
+      if (wrap) wrap.classList.remove("fig-display-rot-90", "fig-display-rot-270", "fig-display-rot-180");
+      const plane = img.closest(".figure-display-plane");
+      if (plane) plane.classList.remove("fig-display-rot-90", "fig-display-rot-270", "fig-display-rot-180");
+    }
   }
 
   /** Layout box for display_rotation (extraction_rotation already baked into file bytes). */
@@ -520,20 +591,28 @@
       const rotClass = layout.rotClass ? " " + layout.rotClass : "";
       const src = img.path || "";
       let body;
+      const ann = src ? annotationsVerified(img) : null;
+      const hotspotHtml = ann ? renderFigureHotspots(ann) : "";
+      const labelListHtml = ann ? renderFigureLabelList(ann) : "";
       if (src) {
         body =
+          "<div class=\"figure-display-stage\"" + (ann ? " data-annotate=\"1\"" : "") + ">" +
           "<div class=\"fig-media" + rotClass + "\" style=\"aspect-ratio:" + ar + "\">" +
+          "<div class=\"figure-display-plane" + rotClass + "\">" +
           "<img class=\"" + esc(layout.rotClass || "fig-img") + "\" data-src=\"" + esc(src) +
           "\" width=\"" + layout.layoutW + "\" height=\"" + layout.layoutH +
           "\" alt=\"" + esc(caption) + "\" loading=\"lazy\" decoding=\"async\" " +
           "data-display-rotation=\"" + effRot + "\" " +
-          "data-fig-pub=\"" + esc(pub) + "\" data-fig-label=\"" + esc(figLabel) + "\"></div>";
+          "data-fig-pub=\"" + esc(pub) + "\" data-fig-label=\"" + esc(figLabel) + "\">" +
+          hotspotHtml +
+          "</div></div></div>";
       } else {
         body = figureFailBox(w, h, pub, figLabel, "真图缺失");
       }
       return (
         "<figure class=\"fig" + (src ? "" : " fig--missing") + "\">" +
         body +
+        labelListHtml +
         "<figcaption>" + esc(caption) +
         (img.source_url ? " · <a href=\"" + esc(img.source_url) + "\" target=\"_blank\" rel=\"noopener\">来源</a>" : "") +
         "</figcaption></figure>"
@@ -555,6 +634,7 @@
   }
 
   function renderPatentPage(f) {
+    const chipClass = classifyFamily(f);
     const titleBlock =
       "<span class=\"patent-title\">" + esc(f.title || "") + "</span>" +
       (f.title_original
@@ -563,7 +643,9 @@
 
     const figBlock = renderImages(f.images) || "<span class=\"subtle\">无附图（不得用生成图替代）</span>";
     return (
-      "<article class=\"patent-page\" id=\"" + esc(f.id) + "\" tabindex=\"-1\" data-month=\"" + esc(f.month || "") + "\">" +
+      "<article class=\"patent-page\" id=\"" + esc(f.id) + "\" tabindex=\"-1\" data-month=\"" + esc(f.month || "") + "\" " +
+      "data-filter-domain=\"" + esc(chipClass.domains.join(" ")) + "\" " +
+      "data-filter-lane=\"" + esc(chipClass.lanes.join(" ")) + "\">" +
       "<header class=\"patent-page-header\">" + titleBlock + "</header>" +
       "<table class=\"patent-table\">" + PATENT_COLGROUP +
       patentFieldRow("公开号", esc(f.publication_number || "")) +
@@ -709,27 +791,221 @@
   }
 
 
-  /**
-   * Observe patent pages for active TOC highlight.
-   * Intentionally does NOT open closed <details> months while scrolling.
-   */
-  function initTocSearch() {
-    const input = $("#toc-search");
-    const tree = $("#tree");
-    if (!input || !tree) return;
-    input.addEventListener("input", () => {
-      const q = input.value.trim().toLowerCase();
-      tree.querySelectorAll(".mini").forEach((a) => {
-        const hay = (a.textContent || "").toLowerCase();
-        const show = !q || hay.indexOf(q) !== -1;
-        a.style.display = show ? "" : "none";
+  function initChipFilters() {
+    const chips = document.querySelectorAll(".filter-chip");
+    const countEl = $("#filter-count");
+    const clearBtn = $("#filter-clear");
+    if (!chips.length) return;
+
+    const activeDomain = new Set();
+    const activeLane = new Set();
+
+    function pagePasses(page) {
+      const domains = (page.dataset.filterDomain || "").split(/\s+/).filter(Boolean);
+      const lanes = (page.dataset.filterLane || "").split(/\s+/).filter(Boolean);
+      if (activeDomain.size) {
+        for (const d of activeDomain) {
+          if (domains.indexOf(d) === -1) return false;
+        }
+      }
+      if (activeLane.size) {
+        for (const l of activeLane) {
+          if (lanes.indexOf(l) === -1) return false;
+        }
+      }
+      return true;
+    }
+
+    function applyFilter() {
+      let visible = 0;
+      document.querySelectorAll(".patent-page").forEach((page) => {
+        const show = pagePasses(page);
+        page.hidden = !show;
+        if (show) visible += 1;
       });
-      tree.querySelectorAll("details.month").forEach((d) => {
-        if (!q) return;
-        const any = d.querySelector('.mini:not([style*="display: none"])');
-        if (any) d.open = true;
+      document.querySelectorAll(".mini").forEach((mini) => {
+        const page = document.getElementById(mini.dataset.target || "");
+        mini.style.display = page && !page.hidden ? "" : "none";
+      });
+      document.querySelectorAll("details.month").forEach((month) => {
+        const any = month.querySelector('.mini:not([style*="display: none"])');
+        month.classList.toggle("month--filter-empty", !!activeDomain.size || !!activeLane.size ? !any : false);
+      });
+      const filtered = activeDomain.size > 0 || activeLane.size > 0;
+      if (countEl) countEl.textContent = filtered ? "显示 " + visible + " 族" : "";
+      if (clearBtn) clearBtn.hidden = !filtered;
+    }
+
+    chips.forEach((chip) => {
+      chip.addEventListener("click", () => {
+        const key = chip.dataset.filter;
+        const group = chip.closest("[data-filter-group]");
+        const laneGroup = group && group.dataset.filterGroup === "lane";
+        const set = laneGroup ? activeLane : activeDomain;
+        if (set.has(key)) set.delete(key);
+        else set.add(key);
+        chip.setAttribute("aria-pressed", set.has(key) ? "true" : "false");
+        applyFilter();
       });
     });
+
+    if (clearBtn) {
+      clearBtn.addEventListener("click", () => {
+        activeDomain.clear();
+        activeLane.clear();
+        chips.forEach((c) => c.setAttribute("aria-pressed", "false"));
+        applyFilter();
+      });
+    }
+    applyFilter();
+  }
+
+  function initFigureLabelUI() {
+    const popup = $("#figure-label-popup");
+    if (!popup) return;
+    const titleEl = $(".figure-label-popup-title", popup);
+    const descEl = $(".figure-label-popup-desc", popup);
+    const closeBtn = $(".figure-label-popup-close", popup);
+    const coarsePointer = window.matchMedia("(hover: none), (pointer: coarse)").matches;
+    let pinned = false;
+    let closeTimer = null;
+    let anchorBtn = null;
+
+    function clearCloseTimer() {
+      if (closeTimer) {
+        clearTimeout(closeTimer);
+        closeTimer = null;
+      }
+    }
+
+    function scheduleClose() {
+      clearCloseTimer();
+      if (pinned) return;
+      closeTimer = setTimeout(closePopup, 160);
+    }
+
+    function closePopup() {
+      pinned = false;
+      anchorBtn = null;
+      popup.hidden = true;
+      popup.removeAttribute("data-pinned");
+    }
+
+    function positionPopup() {
+      if (!anchorBtn || popup.hidden) return;
+      const r = anchorBtn.getBoundingClientRect();
+      const margin = 8;
+      let top = r.bottom + margin;
+      let left = r.left + r.width / 2;
+      popup.style.left = left + "px";
+      popup.style.top = top + "px";
+      popup.style.transform = "translate(-50%, 0)";
+      const pr = popup.getBoundingClientRect();
+      const vw = window.visualViewport ? window.visualViewport.width : window.innerWidth;
+      const vh = window.visualViewport ? window.visualViewport.height : window.innerHeight;
+      const voX = window.visualViewport ? window.visualViewport.offsetLeft : 0;
+      const voY = window.visualViewport ? window.visualViewport.offsetTop : 0;
+      if (pr.right > voX + vw - margin) {
+        left = voX + vw - margin - pr.width / 2;
+        popup.style.left = left + "px";
+      }
+      if (pr.left < voX + margin) {
+        left = voX + margin + pr.width / 2;
+        popup.style.left = left + "px";
+      }
+      if (pr.bottom > voY + vh - margin) {
+        top = r.top - margin - pr.height;
+        popup.style.top = top + "px";
+        popup.style.transform = "translate(-50%, -100%)";
+      }
+      const pr2 = popup.getBoundingClientRect();
+      if (pr2.top < voY + margin || pr2.bottom > voY + vh - margin) closePopup();
+    }
+
+    function openPopup(btn, pin) {
+      anchorBtn = btn;
+      pinned = !!pin;
+      titleEl.textContent = btn.getAttribute("data-popup-title") || "";
+      descEl.textContent = btn.getAttribute("data-popup-desc") || "";
+      popup.hidden = false;
+      if (pinned) popup.setAttribute("data-pinned", "1");
+      else popup.removeAttribute("data-pinned");
+      positionPopup();
+    }
+
+    function wireHotspot(btn) {
+      if (btn.dataset.labelWired === "1") return;
+      btn.dataset.labelWired = "1";
+      btn.addEventListener("pointerenter", () => {
+        if (coarsePointer) return;
+        clearCloseTimer();
+        openPopup(btn, false);
+      });
+      btn.addEventListener("pointerleave", () => {
+        if (coarsePointer) return;
+        scheduleClose();
+      });
+      btn.addEventListener("focus", () => openPopup(btn, false));
+      btn.addEventListener("blur", () => {
+        if (!pinned) scheduleClose();
+      });
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        if (pinned && anchorBtn === btn) closePopup();
+        else openPopup(btn, true);
+      });
+    }
+
+    function mountStage(stage) {
+      if (stage.dataset.annotMounted === "1") return;
+      stage.dataset.annotMounted = "1";
+      stage.querySelectorAll(".figure-label-hotspot").forEach(wireHotspot);
+    }
+
+    function observeStages() {
+      const stages = document.querySelectorAll(".figure-display-stage[data-annotate=\"1\"]");
+      if (!stages.length) return;
+      if (!("IntersectionObserver" in window)) {
+        stages.forEach(mountStage);
+        return;
+      }
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              mountStage(e.target);
+              io.unobserve(e.target);
+            }
+          });
+        },
+        { rootMargin: "700px 0px" }
+      );
+      stages.forEach((s) => io.observe(s));
+    }
+
+    popup.addEventListener("pointerenter", clearCloseTimer);
+    popup.addEventListener("pointerleave", scheduleClose);
+    if (closeBtn) closeBtn.addEventListener("click", closePopup);
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !popup.hidden) closePopup();
+    });
+    document.addEventListener(
+      "pointerdown",
+      (e) => {
+        if (popup.hidden) return;
+        if (popup.contains(e.target) || e.target.closest(".figure-label-hotspot")) return;
+        closePopup();
+      },
+      true
+    );
+    window.addEventListener("scroll", positionPopup, true);
+    window.addEventListener("resize", positionPopup);
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener("resize", positionPopup);
+      window.visualViewport.addEventListener("scroll", positionPopup);
+    }
+    observeStages();
   }
 
   function initScrollSpy() {
@@ -778,12 +1054,13 @@
     }
 
     document.title = data.browser_title || data.title || document.title;
-    renderSideMeta(data);
+    renderSideMeta();
     renderTree(data);
     renderContent(data);
     renderReportInfoFooter(data);
-    initTocSearch();
+    initChipFilters();
     initLazyImages();
+    initFigureLabelUI();
     initScrollSpy();
 
     if (location.hash) {
