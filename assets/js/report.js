@@ -589,6 +589,10 @@
         ? layout.layoutW + "/" + layout.layoutH
         : "16/10";
       const rotClass = layout.rotClass ? " " + layout.rotClass : "";
+      const planeAspect =
+        effRot === 90 || effRot === 270
+          ? " style=\"aspect-ratio:" + w + "/" + h + "\""
+          : "";
       const src = img.path || "";
       let body;
       const ann = src ? annotationsVerified(img) : null;
@@ -598,8 +602,8 @@
         body =
           "<div class=\"figure-display-stage\"" + (ann ? " data-annotate=\"1\"" : "") + ">" +
           "<div class=\"fig-media" + rotClass + "\" style=\"aspect-ratio:" + ar + "\">" +
-          "<div class=\"figure-display-plane" + rotClass + "\">" +
-          "<img class=\"" + esc(layout.rotClass || "fig-img") + "\" data-src=\"" + esc(src) +
+          "<div class=\"figure-display-plane" + rotClass + "\"" + planeAspect + ">" +
+          "<img class=\"fig-img\" data-src=\"" + esc(src) +
           "\" width=\"" + layout.layoutW + "\" height=\"" + layout.layoutH +
           "\" alt=\"" + esc(caption) + "\" loading=\"lazy\" decoding=\"async\" " +
           "data-display-rotation=\"" + effRot + "\" " +
