@@ -107,9 +107,27 @@ def restore(root, document, mapping):
                 before = copy.deepcopy(figure)
                 # Preserve the exact existing caption, publication/source attribution and
                 # every research/evidence field. Only restore asset provenance and dimensions.
-                for field in ("local_asset_path", "width", "height", "asset_sha256", "source_original_sha256", "source_display_sha256", "pdf_page", "display_rotation", "source_geometry"):
+                for field in (
+                    "local_asset_path",
+                    "width",
+                    "height",
+                    "asset_sha256",
+                    "source_original_sha256",
+                    "source_display_sha256",
+                    "pdf_page",
+                    "display_rotation",
+                    "source_geometry",
+                ):
                     if item.get(field) is not None:
                         figure[field] = item[field]
+                rot = figure.get("display_rotation") or 0
+                w = int(figure.get("width") or 0)
+                h = int(figure.get("height") or 0)
+                if rot in (90, 270) and w > 0 and h > w:
+                    figure["display_rotation"] = 0
+                    geom = figure.get("source_geometry")
+                    if isinstance(geom, dict):
+                        geom["display_rotation"] = 0
                 if "?" in figure.get("figure_number", "") and item.get("figure_number"):
                     figure["figure_number"] = item["figure_number"]
                     repaired_labels += 1

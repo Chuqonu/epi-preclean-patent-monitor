@@ -306,11 +306,10 @@ button { font: inherit; cursor: pointer; }
   border-collapse: collapse;
   width: 100%;
   table-layout: fixed;
-  --patent-label-col: clamp(110px, 20%, 160px);
 }
 
-.patent-table col.patent-col-label { width: var(--patent-label-col); }
-.patent-table col.patent-col-value { width: auto; }
+.patent-table col.patent-col-label { width: 19%; }
+.patent-table col.patent-col-value { width: 81%; }
 
 .patent-table th,
 .patent-table td {
@@ -324,9 +323,10 @@ button { font: inherit; cursor: pointer; }
 
 .patent-table th.patent-label {
   font-weight: 600;
-  width: var(--patent-label-col);
-  max-width: 160px;
+  width: 19%;
+  max-width: 162px;
   min-width: 110px;
+  box-sizing: border-box;
   font-size: 13px;
   line-height: 1.45;
   color: #2a3a40;
@@ -551,15 +551,12 @@ button { font: inherit; cursor: pointer; }
   .sidebar-resizer { display: none; }
   .main { padding: 16px 14px 40px; position: relative; z-index: 35; }
   .patent-page { padding: 20px 16px 14px; }
-  .patent-table {
-    table-layout: fixed;
-    width: 100%;
-    --patent-label-col: clamp(84px, 22%, 100px);
-  }
+  .patent-table col.patent-col-label { width: 26%; }
+  .patent-table col.patent-col-value { width: 74%; }
   .patent-table th.patent-label {
-    width: var(--patent-label-col);
+    width: 26%;
     max-width: 100px;
-    min-width: 84px;
+    min-width: 80px;
     vertical-align: top;
     font-size: 12px;
     padding: 8px 7px;
