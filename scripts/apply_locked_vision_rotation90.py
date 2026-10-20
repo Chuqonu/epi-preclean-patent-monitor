@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Set display_rotation=90 on vision-locked figure rows by asset sha256 (bytes unchanged)."""
+"""DEPRECATED: use data/vision-display-rotation.json + apply_vision_display_rotation.py.
+
+Historical one-shot for the 9-sha merge (#22); superseded by per-vision manifest.
+"""
 
 from __future__ import annotations
 
