@@ -1,12 +1,11 @@
 {
   "edition": "epi-gate3-cn-figures",
   "date": "2026-10-20",
-  "scope": "Gate③ EPI independent CN publications — figure asset status only",
+  "scope": "Gate③ EPI/Preclean independent CN publications — figure asset status only",
   "publications": [
     {
       "publication_id": "CN121693111A",
       "status": "ok",
-      "prior_status": "failed",
       "source": "DEPATISnet CN000121693111A — 说明书附图 1/3 (drawing page; Fig.1 epi cross-section + Fig.2 process on same page)",
       "figures": [
         {
@@ -22,13 +21,55 @@
     },
     {
       "publication_id": "CN122294515A",
-      "status": "open",
-      "note": "No asset in this PR — backfill pending"
+      "status": "ok",
+      "prior_status": "open",
+      "source": "DEPATISnet — 说明书附图 1–3/3; see docs/PRECLEAN-FIGURES-MANIFEST-2026-10-20.json",
+      "figures": [
+        {
+          "figure_number": "图 1",
+          "local_asset_path": "assets/figures/CN122294515A_fig1.png",
+          "sha256": "b5e08ea2b1286740a0025ab328431cacb6404938502009c2ae575b0534e7980e",
+          "display_rotation": 0
+        },
+        {
+          "figure_number": "图 2",
+          "local_asset_path": "assets/figures/CN122294515A_fig2.png",
+          "sha256": "fb1ea843bf1d0d8596dc0092969a91e54561c4e6bdd33b59a2a4dfad4fe6f92c",
+          "display_rotation": 0
+        },
+        {
+          "figure_number": "图 3",
+          "local_asset_path": "assets/figures/CN122294515A_fig3.png",
+          "sha256": "a27a44f6bdd4cf9526165765f8704912b385db58dcf38b66e89fcfb981c88b4b",
+          "display_rotation": 0
+        }
+      ]
     },
     {
       "publication_id": "CN122069948A",
-      "status": "open",
-      "note": "No asset in this PR — backfill pending"
+      "status": "ok",
+      "prior_status": "open",
+      "source": "DEPATISnet — 说明书附图 1–3/3 (p7–9); see docs/PRECLEAN-FIGURES-MANIFEST-2026-10-20.json",
+      "figures": [
+        {
+          "figure_number": "图 1",
+          "local_asset_path": "assets/figures/CN122069948A_fig1.png",
+          "sha256": "24483d4021f1e1e61d1e558892b76169c039b31648903798293565dcb2b5cfbb",
+          "display_rotation": 0
+        },
+        {
+          "figure_number": "图 2",
+          "local_asset_path": "assets/figures/CN122069948A_fig2.png",
+          "sha256": "d4d2ed0c65e0804217789fce0f99597479c4343dea42565c440abf25090755c1",
+          "display_rotation": 0
+        },
+        {
+          "figure_number": "图 3",
+          "local_asset_path": "assets/figures/CN122069948A_fig3.png",
+          "sha256": "d6ad243f71f207c2009aebd4ba2b927ff20753d9cededac4d869bc2f0288e9a1",
+          "display_rotation": 0
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,36 @@
+{
+  "document_type": "evidence_figure_spotcheck",
+  "created_at": "2026-10-20T20:58:30+08:00",
+  "timezone": "Asia/Shanghai",
+  "lane": "Preclean",
+  "ruling": "pass_official_drawing_sheets",
+  "publications": [
+    {
+      "publication_id": "CN122294515A",
+      "files": [
+        {"path": "assets/figures/CN122294515A_fig1.png", "wh": [1240, 1754], "sha256_prefix": "b5e08ea2", "sheet_note": "说明书附图1/3：同页图1流程+图2截面"},
+        {"path": "assets/figures/CN122294515A_fig2.png", "wh": [1240, 1754], "sha256_prefix": "fb1ea843"},
+        {"path": "assets/figures/CN122294515A_fig3.png", "wh": [1240, 1754], "sha256_prefix": "a27a44f6"}
+      ],
+      "source": "DEPATISnet 官方附图页",
+      "not_ui_screenshot": true
+    },
+    {
+      "publication_id": "CN122069948A",
+      "files": [
+        {"path": "assets/figures/CN122069948A_fig1.png", "wh": [1240, 1754], "sha256_prefix": "24483d40", "sheet_note": "说明书附图1/3：同页图1流程+图2截面"},
+        {"path": "assets/figures/CN122069948A_fig2.png", "wh": [1240, 1754], "sha256_prefix": "d4d2ed0c"},
+        {"path": "assets/figures/CN122069948A_fig3.png", "wh": [1240, 1754], "sha256_prefix": "d6ad243f"}
+      ],
+      "source": "DEPATISnet 官方附图页",
+      "not_ui_screenshot": true
+    }
+  ],
+  "stamp_notes": [
+    "display_rotation=0",
+    "挂 Fig.n 时注明整页可能含多图，参照 CN121693111A 标注写法",
+    "已在 monitor 与 -git 双树；勿用 UI 截图覆盖",
+    "CN 三无图尾巴现已齐（含 EPI CN121）"
+  ],
+  "informal": true
+}
