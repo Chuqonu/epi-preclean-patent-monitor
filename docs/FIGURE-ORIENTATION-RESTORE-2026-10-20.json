@@ -1,80 +1,23 @@
 {
   "date": "2026-10-20",
-  "rule": "display_rotation is display-only CSS; extraction_rotation never applied in renderer",
-  "wo_tw_fig2_unchanged_sha_prefix": "77e2a1525aeebf656",
+  "policy": "Vision-confirmed only. Do not bulk-apply Tesseract OSD (false positives on TW/WO Fig.2, US20260076125A1, US20260150594A1).",
+  "rule": "display_rotation is display-only CSS; extraction_rotation never applied in renderer; PNG bytes unchanged.",
   "changed": [
     {
       "publication_id": "US12757647B2",
       "figure_number": "图4：用于晶面选择性生长的底部与侧壁表面",
-      "sha256_prefix": "e5d5f61dac3d4b7a",
       "local_asset_path": "assets/figures/recovered/e5d5f61dac3d4b7a2f379004b3c3e15445c20416f436919f3615fb16546cb288.png",
-      "from": 0,
-      "to": 90
-    },
-    {
-      "publication_id": "US12740346B2",
-      "figure_number": "图7：选择性沉积系统、气源和控制器",
-      "sha256_prefix": "39e66689f3d4ed98",
-      "local_asset_path": "assets/figures/recovered/39e66689f3d4ed987e3f3562b40eb24e6b030314892baf2029b0f8a1cab74603.png",
-      "from": 0,
-      "to": 90
-    },
-    {
-      "publication_id": "US12701931B2",
-      "figure_number": "图4：底部与侧壁掺磷层上的本征盖层",
-      "sha256_prefix": "22dbc8e9baf1a3e5",
-      "local_asset_path": "assets/figures/recovered/22dbc8e9baf1a3e5c7e6efed68b2bc752517f8a1fe47b87a0cd020d0ece5acae.png",
-      "from": 0,
-      "to": 90
-    },
-    {
-      "publication_id": "US20260164725A1",
-      "figure_number": "FIGS. 20C–20D",
-      "sha256_prefix": "d0af11401052ea68",
-      "local_asset_path": "assets/figures/recovered/d0af11401052ea68bfa12e42f563bfbb40a029ee5e09dee02c2ba60aab2ad4b0.png",
-      "from": 0,
-      "to": 90
-    },
-    {
-      "publication_id": "US20260150594A1",
-      "figure_number": "图4：带硅源、掺杂源供气和控制器的外延腔室",
-      "sha256_prefix": "8533597a17f700df",
-      "local_asset_path": "assets/figures/recovered/8533597a17f700dfd505913f5ae521fb21245098c68b10c38a4b2d7bfe6ec363.png",
-      "from": 0,
-      "to": 90
-    },
-    {
-      "publication_id": "US12595587B2",
-      "figure_number": "图1：多片衬底交替沉积脉冲流程",
-      "sha256_prefix": "11ec9fb5bbc7be2b",
-      "local_asset_path": "assets/figures/recovered/11ec9fb5bbc7be2be3301d79afb8cb1faaba6ac3c6d44dffd94c2e9efe551b9a.png",
-      "from": 0,
-      "to": 90
-    },
-    {
-      "publication_id": "US20260035835A1",
-      "figure_number": "图2–5：从衬底至SiGe:B源漏接触层结构",
-      "sha256_prefix": "1516cae0ee73967b",
-      "local_asset_path": "assets/figures/recovered/1516cae0ee73967b9d353b67b29a75de9ddcb5f972180baf1fd1c1146609bfd8.png",
-      "from": 0,
-      "to": 90
-    },
-    {
-      "publication_id": "US20260026275A1",
-      "figure_number": "FIG. 8A",
-      "sha256_prefix": "f77056a140d3fcb3",
-      "local_asset_path": "assets/figures/recovered/f77056a140d3fcb39e80b46e7015030ebcaf5b9756af42984a4dc9ee59b52443.png",
-      "from": 0,
-      "to": 90
-    },
-    {
-      "publication_id": "US20260026275A1",
-      "figure_number": "FIG. 9",
-      "sha256_prefix": "3f06f16dabb38600",
-      "local_asset_path": "assets/figures/recovered/3f06f16dabb38600dc59c52de04efccc3277ece9207f0b8a004e0ff9abce7175.png",
-      "from": 0,
-      "to": 90
+      "sha256_prefix": "e5d5f61dac3d4b7a",
+      "display_rotation_before": 0,
+      "display_rotation_after": 90,
+      "evidence": "Vision: USPTO header upright; FIG.4 body and callouts 90° CCW sideways without rotation."
     }
   ],
-  "figure_recovery_map_entries_updated": 9
+  "explicitly_unchanged": [
+    "TW202628839A Fig.2 display_rotation=0 (upright)",
+    "WO2026096517A1 Fig.2 display_rotation=0 (same family art)",
+    "US20260076125A1 Fig.1 display_rotation=0",
+    "US20260150594A1 图4 display_rotation=0"
+  ],
+  "audit_uploads": "flipped-figures-audit + needs JSON (OSD review-only except US12757647B2)"
 }
