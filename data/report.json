@@ -1,11 +1,11 @@
 {
   "title": "EPI / Preclean Patent Monitoring Report",
-  "browser_title": "EPI / Preclean Patent Monitoring Report · 2025/10–2026/10 · 初版·含独立检索增量 · 截至2026-10-19",
+  "browser_title": "EPI / Preclean Patent Monitoring Report · 2025/10–2026/10 · 初版·含独立检索增量 · 截至2026-10-20",
   "period": "2025/10 至 2026/10",
   "period_start": "2025-10",
   "period_end": "2026-10",
   "prepared_date": "2026-10-20",
-  "research_through": "2026-10-19",
+  "research_through": "2026-10-20",
   "method_trace": "2026-10-20.4.2-r2 + baseline-import",
   "scope": "Si/SiGe 外延设备、工艺和具有具体生长关系的集成路线；外延前干法/等离子体 preclean；与上述场景明确相关的腔体干法清洗。",
   "excluded_scope": "暂不含仅以 SiC/GaN 为生长对象的平台、独立湿法清洗。SiC 涂层/腔体部件不是 SiC 生长；Si:C/SiCP 不是 SiC；冷却水不是湿法洗片；EPI 整体路线中带湿步骤不等于独立湿洗——上述均不能单独作为整案排除理由。",
@@ -19,7 +19,8 @@
     "FAM-merge-hybrid-preclean：WO2026096517A1 + TW202628839A。",
     "附图仍以真实 PNG 为准；多数引用待补 local_asset_path。",
     "Sprint gap A（2026-10-20）：已纳入 TEL US20250311241A1（related）与 US12757648B2（core，2026-10 授权）。",
-    "关联待核（active）：仅 CN122564748A；已升格/已排除项不再列于 pending_or_related。"
+    "关联待核（active）：仅 CN122564748A；已升格/已排除项不再列于 pending_or_related。",
+    "epi-4 实际定时触发：双轨空增量（EPI/Preclean 各 0 candidates·0 events·0 families）；research_through 2026-10-19→2026-10-20；无新专利纳入；运行日志 docs/runs/2026-10-20-epi-4-full-maintenance.md"
   ],
   "counts": {
     "candidates_total": 122,
@@ -79,13 +80,19 @@
       "by": "pending-queue-hygiene",
       "action": "prune_pending_or_related",
       "detail": "Removed promoted/excluded from queue: US20260066234A1, US12757451B2, WO2026084898A1"
+    },
+    {
+      "at": "2026-10-20T10:37:57Z",
+      "by": "epi-4-maintenance",
+      "action": "empty_incremental_research_through_bump",
+      "detail": "epi-4 实际定时触发 empty incremental (dual-track 0/0/0); research_through 2026-10-19→2026-10-20; team_read unchanged 6; log docs/runs/2026-10-20-epi-4-full-maintenance.md; evidence docs/EVIDENCE-DIFF-2026-10-20-epi-4.json"
     }
   ],
   "months": [
     {
       "month": "2026-10",
       "status": "基线已导入｜当月未完结",
-      "through_date": "2026-10-19",
+      "through_date": "2026-10-20",
       "families": [
         {
           "publication_id": "US12765027B2",

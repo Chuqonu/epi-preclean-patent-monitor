@@ -1,0 +1,70 @@
+{
+  "edition": "epi-4-full-maintenance-acceptance",
+  "label": "实际定时触发",
+  "folder_id": "epi-4",
+  "platform_run_id": "7f5c5a15-85ba-5c96-b4cd-60d1f99f3863",
+  "fired_at_utc": "2026-10-20T10:37:57.530Z",
+  "window": {
+    "from": "2026-10-16",
+    "to": "2026-10-20",
+    "research_through_before": "2026-10-19"
+  },
+  "timezone": "Asia/Shanghai",
+  "tracks": {
+    "EPI": {
+      "candidates": 0,
+      "queries": 26,
+      "counts": {
+        "candidates": 0,
+        "events": 0,
+        "families_est": 0,
+        "actually_read": 0
+      },
+      "notes": "Honest limitations — do NOT claim zero misses. 1) Google Patents xhr date-bounded queries (after:2026-10-14 before:2026-10-21) across selective-SiGe, chamber/susceptor, boron-doped SiGe, S/D epi, dry-clean, CPC C30B25/02 & H01L21/0262, assignees AMAT/ASM/TEL/TSMC/Lam, and CN/WO/JP/KR all returned total_num_results=0 (except one transient 503 on dry-clean, retry=0). 2) USPTO Official Gazette index as of search still lists Week 41 (2026-10-13) as latest 2026 issue; /week42/ patentee pages still titled October 21, 2025 — so 2026-10-20 (Tuesday) grants were not yet browsable on OG at crawl time. 3) Calendar: 2026-10-16=Friday; only US grant Tuesday in/near window is 2026-10-20 (OG not ready) and prior Tuesday 2026-10-13 (out of window). Thursday app-pub day 2026-10-15 returned 0 on GP date filter. 4) Espacenet/WIPO PATENTSCOPE blocked or empty (HTTP 403). Google Patents HTML patent pages for several known Oct-2026 IDs returned 404 via fetch provider — relied on USPTO OG HTML + Justia listing + GP xhr. 5) sort=new thematic GP queries returned many older pubs; sampled top IDs (KR/JP/CN/US/WO) had publication dates Aug 2026 or earlier — none in window. 6) Out-of-window epi-relevant grants on 2026-10-13 documented under out_of_window_sightings (US12765027B2 known; US12760442B2 and US12760441B2 appear missing from epi-known-pubs.txt). 7) actually_read=0 for in-window candidates (none). OG claim/title pages were opened for the three Oct-13 sightings only. 8) No fabricated publication IDs. Empty candidates after real multi-source search ≠ proof that no document published worldwide in-window. 9) Did not start 2025/09. Scope-out SiC/GaN growth targets and standalone wet cleans observed. Raw artifacts under /workspace/epi-acceptance-raw/2026-10-20-epi-track/."
+    },
+    "Preclean": {
+      "candidates": 0,
+      "queries": 22,
+      "counts": {
+        "candidates": 0,
+        "events": 0,
+        "families_est": 0,
+        "actually_read": 0
+      },
+      "notes": "Independent Preclean track for acceptance window 2026-10-16..2026-10-20 Asia/Shanghai. Excluded 122 publication_ids from /workspace/epi-known-pubs.txt. Did not read or copy EPI-track outputs under /workspace/epi-acceptance-raw/2026-10-20-epi-track. Google Patents XHR date-bounded queries (EN+CN; CPC H01L21/0204x, C23C16/4405/0245; SiCoNi/Selectra; HF vapor/AHF; remote plasma; NF3 chamber clean; integrated preclean) returned total_num_results=0 for 2026-10-15..2026-10-21 and for most 2026-10-01..2026-10-21 preclean+epi combinations. Espacenet web search and CNIPA-oriented web queries likewise yielded no in-window in-scope publications. USPTO OG week42 (expected ~2026-10-20 grant issue) was not available (403/404) at search time 2026-10-20 evening Asia/Shanghai; week41 (2026-10-13) inspected. Near-window but OUTSIDE this acceptance window (not listed as candidates): US12757665B2 grant 2026-10-06 ASM IP Holding — anhydrous HF + water vapor semiconductor preclean apparatus/method (USPTO OG week40 https://patentsgazette.uspto.gov/week40/OG/html/1551-1/US12757665-20261006.html); not in known-pubs list but event_date before ~2026-10-16. US12760412B2 grant 2026-10-13 Lam Research — nozzle for remote plasma cleaning of process chambers (https://patentsgazette.uspto.gov/week41/OG/html/1551-2/US12760412-20261013.html); generic chamber RPC hardware, not clearly tied to pre-epi/integrated preclean flow → scope-out / borderline. Pending already tracked — no NEW disposition-changing official evidence in this pass: CN122564748A (pub 2026-08-14, status Pending on Google Patents; epi cluster with pre-clean chamber + chamber clean chemistries including HF/NH3 or NF3/NH3) and WO2026084898A1 (pub 2026-04-23, status Pending; Applied Materials auto-doping barrier for epi Si, not a new pre-epi dry clean event). Out-of-scope noise: WO2026208761 wafer wet bevel/oxide-film wet clean (~2026-10-08); RU SiO2 nanopowder CMP purification news 2026-10-16 (CNews); packaging-substrate Ar-plasma preclean chamber-clean CN articles dated 2026-08/09. Limitations: Google Patents index lag for same-week USPTO grants is real (US12757665/US12760412 often fail direct number lookup); Espacenet and USPTO gazette week42 blocked or unpublished; CNIPA gazette day books not machine-scraped end-to-end. Zero candidates here does NOT claim zero misses globally—only that this independent query set found no verified in-window in-scope NEW publication/grant to add."
+    }
+  },
+  "intersection": [],
+  "epi_only": [],
+  "preclean_only": [],
+  "include_main": [],
+  "pending_unchanged": [
+    "WO2026084898A1",
+    "CN122564748A",
+    "US12757451B2"
+  ],
+  "excluded": [],
+  "patent_inventory_changed": false,
+  "team_read_locked": 6,
+  "ruling_ref": "docs/EVIDENCE-READ-RULING-COMBINED-2026-10-20-r2.json",
+  "backlog_out_of_window_not_this_run": [
+    {
+      "publication_id": "US12760442B2",
+      "note": "EPI track sighting event_date~2026-10-13 ASM epi temp; missing from known set; separate backlog gate"
+    },
+    {
+      "publication_id": "US12760441B2",
+      "note": "EPI track sighting event_date~2026-10-13 AMAT EPI isolation plate; missing from known set; separate backlog gate"
+    },
+    {
+      "publication_id": "US12757665B2",
+      "note": "Preclean near-window ASM AHF; already or not — verify separately; not in-window new candidate"
+    }
+  ],
+  "limitations": [
+    "Does not claim zero misses",
+    "USPTO OG week42 (2026-10-20) not browsable at search time; week41 ends 2026-10-13",
+    "Espacenet 403 on EPI track; Google Patents index lag possible",
+    "September 2025 still paused"
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "track": "Preclean",
+  "window": {
+    "from": "2026-10-16",
+    "to": "2026-10-20"
+  },
+  "queries": [
+    {
+      "q": "pre-epi plasma clean OR \"native oxide\" dry clean patent 2026",
+      "source": "other",
+      "url": "https://www.google.com/search?q=pre-epi+plasma+clean+OR+%22native+oxide%22+dry+clean+patent+2026",
+      "hit_count_approx": 5
+    },
+    {
+      "q": "\"remote plasma\" preclean epi OR epitaxial patent after:2026-10-01",
+      "source": "other",
+      "url": "https://www.google.com/search?q=%22remote+plasma%22+preclean+epi+OR+epitaxial+patent+after%3A2026-10-01",
+      "hit_count_approx": 5
+    },
+    {
+      "q": "SiCoNi OR \"NF3\" chamber clean epitaxial OR preclean patent 2026",
+      "source": "other",
+      "url": "https://www.google.com/search?q=SiCoNi+OR+NF3+chamber+clean+epitaxial+OR+preclean+patent+2026",
+      "hit_count_approx": 5
+    },
+    {
+      "q": "site:patents.google.com preclean OR \"pre-clean\" OR \"native oxide\" epitaxy OR epitaxial after:2026-10-15 before:2026-10-21",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=preclean+OR+%22pre-clean%22+OR+%22native+oxide%22+(epitax*+OR+epi)+after:2026-10-15+before:2026-10-21",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "(H01L21/02041 OR H01L21/02046 OR H01L21/02049) after:2026-10-14 before:2026-10-21",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=(H01L21/02041+OR+H01L21/02046+OR+H01L21/02049)+after:2026-10-14+before:2026-10-21",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "(C23C16/4405 OR C23C16/0245) after:2026-10-14 before:2026-10-21",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=(C23C16/4405+OR+C23C16/0245)+after:2026-10-14+before:2026-10-21",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "pre-epi plasma clean OR \"plasma preclean\" epitaxy after:2026-10-01 before:2026-10-21",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=pre-epi+plasma+clean+OR+%22plasma+preclean%22+epitaxy+after:2026-10-01+before:2026-10-21",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "\"native oxide\" (dry OR plasma OR remote) (epitax* OR epi) after:2026-10-10 before:2026-10-21",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=%22native+oxide%22+(dry+OR+plasma+OR+remote)+(epitax*+OR+epi)+after:2026-10-10+before:2026-10-21",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "\"HF vapor\" OR \"anhydrous hydrogen fluoride\" OR \"anhydrous HF\" (preclean OR oxide) after:2026-10-01 before:2026-10-21",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=%22HF+vapor%22+OR+%22anhydrous+HF%22+(preclean+OR+oxide)+after:2026-10-01+before:2026-10-21",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "\"remote plasma\" (preclean OR \"oxide removal\") (epi OR epitax*) after:2026-10-01 before:2026-10-21",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=%22remote+plasma%22+(preclean+OR+%22oxide+removal%22)+(epi+OR+epitax*)+after:2026-10-01+before:2026-10-21",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "NF3 (\"chamber clean\" OR \"chamber cleaning\") (epitax* OR epi OR preclean) after:2026-09-15 before:2026-10-21",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=NF3+(%22chamber+clean%22+OR+%22chamber+cleaning%22)+(epitax*+OR+epi+OR+preclean)+after:2026-09-15+before:2026-10-21",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "SiCoNi OR Selectra (preclean OR oxide) after:2026-10-01 before:2026-10-21",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=SiCoNi+OR+Selectra+(preclean+OR+oxide)+after:2026-10-01+before:2026-10-21",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "\"integrated preclean\" OR \"integrated epitaxy and preclean\" after:2026-10-01 before:2026-10-21",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=%22integrated+preclean%22+OR+%22integrated+epitaxy+and+preclean%22+after:2026-10-01+before:2026-10-21",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "(预清洗 OR 预清洁) (外延) (等离子体 OR 干法 OR 远程) after:2026-09-01 before:2026-10-21",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=(%E9%A2%84%E6%B8%85%E6%B4%97+OR+%E9%A2%84%E6%B8%85%E6%B4%81)+(%E5%A4%96%E5%BB%B6)+(%E7%AD%89%E7%A6%BB%E5%AD%90%E4%BD%93+OR+%E5%B9%B2%E6%B3%95+OR+%E8%BF%9C%E7%A8%8B)+after:2026-09-01+before:2026-10-21",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "(腔室清洗 OR 腔室清洁) (NF3 OR 远程等离子体) (外延 OR CVD) after:2026-09-01 before:2026-10-21",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=(%E8%85%94%E5%AE%A4%E6%B8%85%E6%B4%97+OR+%E8%85%94%E5%AE%A4%E6%B8%85%E6%B4%81)+(NF3+OR+%E8%BF%9C%E7%A8%8B%E7%AD%89%E7%A6%BB%E5%AD%90%E4%BD%93)+(%E5%A4%96%E5%BB%B6+OR+CVD)+after:2026-09-01+before:2026-10-21",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "外延 预清洗 OR 等离子体清洗 OR 干法去氧化 专利 2026年10月",
+      "source": "other",
+      "url": "https://www.google.com/search?q=%E5%A4%96%E5%BB%B6+%E9%A2%84%E6%B8%85%E6%B4%97+OR+%E7%AD%89%E7%A6%BB%E5%AD%90%E4%BD%93%E6%B8%85%E6%B4%97+OR+%E5%B9%B2%E6%B3%95%E5%8E%BB%E6%B0%A7%E5%8C%96+%E4%B8%93%E5%88%A9+2026%E5%B9%B410%E6%9C%88",
+      "hit_count_approx": 5
+    },
+    {
+      "q": "CNIPA 公开 2026-10-16 OR 2026-10-17 OR 2026-10-20 预清洗 OR 干法清洗 OR 远程等离子体 外延",
+      "source": "other",
+      "url": "https://www.google.com/search?q=CNIPA+2026-10-16+OR+2026-10-20+%E9%A2%84%E6%B8%85%E6%B4%97+%E5%A4%96%E5%BB%B6",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "Espacenet pd within 20261016:20261020 preclean OR native oxide OR H01L21/02046",
+      "source": "espacenet",
+      "url": "https://worldwide.espacenet.com/patent/search?q=pd%20within%20%2220261016%3A20261020%22%20AND%20(preclean%20OR%20%22native%20oxide%22)",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "USPTO Official Gazette week41 (2026-10-13 issue) remote plasma chamber clean / preclean scan; week42 (2026-10-20) unavailable",
+      "source": "uspto",
+      "url": "https://patentsgazette.uspto.gov/week41/OG/html/1551-2/US12760412-20261013.html",
+      "hit_count_approx": 1
+    },
+    {
+      "q": "publication_number:CN122564748A (pending disposition check)",
+      "source": "google_patents",
+      "url": "https://patents.google.com/patent/CN122564748A/en",
+      "hit_count_approx": 1
+    },
+    {
+      "q": "publication_number:WO2026084898A1 (pending disposition check)",
+      "source": "google_patents",
+      "url": "https://patents.google.com/patent/WO2026084898A1/en",
+      "hit_count_approx": 1
+    },
+    {
+      "q": "\"HF vapor\" OR \"anhydrous HF\" OR \"remote plasma\" preclean OR \"oxide removal\" patent granted:2026-10",
+      "source": "other",
+      "url": "https://www.google.com/search?q=%22anhydrous+HF%22+OR+%22remote+plasma%22+preclean+patent+granted+2026-10",
+      "hit_count_approx": 3
+    }
+  ],
+  "candidates": [],
+  "counts": {
+    "candidates": 0,
+    "events": 0,
+    "families_est": 0,
+    "actually_read": 0
+  },
+  "notes": "Independent Preclean track for acceptance window 2026-10-16..2026-10-20 Asia/Shanghai. Excluded 122 publication_ids from /workspace/epi-known-pubs.txt. Did not read or copy EPI-track outputs under /workspace/epi-acceptance-raw/2026-10-20-epi-track. Google Patents XHR date-bounded queries (EN+CN; CPC H01L21/0204x, C23C16/4405/0245; SiCoNi/Selectra; HF vapor/AHF; remote plasma; NF3 chamber clean; integrated preclean) returned total_num_results=0 for 2026-10-15..2026-10-21 and for most 2026-10-01..2026-10-21 preclean+epi combinations. Espacenet web search and CNIPA-oriented web queries likewise yielded no in-window in-scope publications. USPTO OG week42 (expected ~2026-10-20 grant issue) was not available (403/404) at search time 2026-10-20 evening Asia/Shanghai; week41 (2026-10-13) inspected. Near-window but OUTSIDE this acceptance window (not listed as candidates): US12757665B2 grant 2026-10-06 ASM IP Holding — anhydrous HF + water vapor semiconductor preclean apparatus/method (USPTO OG week40 https://patentsgazette.uspto.gov/week40/OG/html/1551-1/US12757665-20261006.html); not in known-pubs list but event_date before ~2026-10-16. US12760412B2 grant 2026-10-13 Lam Research — nozzle for remote plasma cleaning of process chambers (https://patentsgazette.uspto.gov/week41/OG/html/1551-2/US12760412-20261013.html); generic chamber RPC hardware, not clearly tied to pre-epi/integrated preclean flow → scope-out / borderline. Pending already tracked — no NEW disposition-changing official evidence in this pass: CN122564748A (pub 2026-08-14, status Pending on Google Patents; epi cluster with pre-clean chamber + chamber clean chemistries including HF/NH3 or NF3/NH3) and WO2026084898A1 (pub 2026-04-23, status Pending; Applied Materials auto-doping barrier for epi Si, not a new pre-epi dry clean event). Out-of-scope noise: WO2026208761 wafer wet bevel/oxide-film wet clean (~2026-10-08); RU SiO2 nanopowder CMP purification news 2026-10-16 (CNews); packaging-substrate Ar-plasma preclean chamber-clean CN articles dated 2026-08/09. Limitations: Google Patents index lag for same-week USPTO grants is real (US12757665/US12760412 often fail direct number lookup); Espacenet and USPTO gazette week42 blocked or unpublished; CNIPA gazette day books not machine-scraped end-to-end. Zero candidates here does NOT claim zero misses globally—only that this independent query set found no verified in-window in-scope NEW publication/grant to add.",
+  "excluded_known_pubs_count": 122,
+  "pending_checked": [
+    {
+      "publication_id": "CN122564748A",
+      "status_seen": "Pending",
+      "source_url": "https://patents.google.com/patent/CN122564748A/en",
+      "relisted": false,
+      "reason": "no new official evidence changing disposition in 2026-10-16..20"
+    },
+    {
+      "publication_id": "WO2026084898A1",
+      "status_seen": "Pending",
+      "source_url": "https://patents.google.com/patent/WO2026084898A1/en",
+      "relisted": false,
+      "reason": "no new official evidence changing disposition in 2026-10-16..20"
+    }
+  ],
+  "near_window_not_candidates": [
+    {
+      "publication_id": "US12757665B2",
+      "event_type": "grant",
+      "event_date": "2026-10-06",
+      "applicant": "ASM IP Holding B.V.",
+      "title": "Semiconductor processing preclean methods and apparatus",
+      "why_not_candidate": "grant date before acceptance window from~2026-10-16; documented for awareness only",
+      "source_url": "https://patentsgazette.uspto.gov/week40/OG/html/1551-1/US12757665-20261006.html"
+    },
+    {
+      "publication_id": "US12760412B2",
+      "event_type": "grant",
+      "event_date": "2026-10-13",
+      "applicant": "Lam Research Corporation",
+      "title": "Nozzle for remote plasma cleaning of process chambers",
+      "why_not_candidate": "date before window; chamber RPC nozzle not clearly tied to pre-epi dry/plasma preclean flow",
+      "source_url": "https://patentsgazette.uspto.gov/week41/OG/html/1551-2/US12760412-20261013.html"
+    }
+  ]
+}
