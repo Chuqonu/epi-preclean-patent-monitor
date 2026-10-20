@@ -2362,50 +2362,39 @@
           "figures": [
             {
               "source_publication_id": "TW202628839A",
-              "figure_number": "FIG. 1",
+              "figure_number": "Fig. 1",
               "source_url": "https://patents.google.com/patent/TW202628839A/en",
               "local_asset_path": "assets/figures/TW202628839A_fig1.png",
               "width": 2478,
               "height": 3506,
-              "caption": "TW202628839A 原始专利附图，FIG. 1（Gate③ hybrid preclean 族；官方原图字节，2026-10-20 替换错误 UI 截图）。",
-              "asset_sha256": "e562f87f432a359ff929714ed066e1c540ce692899746a028fa50729db5292d6",
-              "source_original_sha256": "e562f87f432a359ff929714ed066e1c540ce692899746a028fa50729db5292d6",
-              "source_display_sha256": "e562f87f432a359ff929714ed066e1c540ce692899746a028fa50729db5292d6",
-              "pdf_page": 2,
-              "display_rotation": 0,
-              "source_geometry": {}
+              "caption": "Same-family hybrid preclean Fig.1 (pixels from WO2026096517A1)",
+              "sha256": "e562f87f432a359ff929714ed066e1c540ce692899746a028fa50729db5292d6",
+              "family_share_from": "WO2026096517A1",
+              "display_rotation": 0
             },
             {
               "source_publication_id": "TW202628839A",
-              "figure_number": "FIG. 2",
+              "figure_number": "Fig. 2",
               "source_url": "https://patents.google.com/patent/TW202628839A/en",
               "local_asset_path": "assets/figures/TW202628839A_fig2.png",
               "width": 2478,
               "height": 3506,
-              "caption": "TW202628839A 原始专利附图，FIG. 2（Gate③ hybrid preclean 族；官方原图字节，2026-10-20 替换错误 UI 截图）。",
-              "asset_sha256": "77e2a1525aeebf656f5b7d348a4c1c6f363d0a0cb3b5b2e4d57ec3aa7546571c",
-              "source_original_sha256": "77e2a1525aeebf656f5b7d348a4c1c6f363d0a0cb3b5b2e4d57ec3aa7546571c",
-              "source_display_sha256": "77e2a1525aeebf656f5b7d348a4c1c6f363d0a0cb3b5b2e4d57ec3aa7546571c",
-              "pdf_page": 3,
+              "caption": "Same-family Fig.2",
+              "sha256": "77e2a1525aeebf656f5b7d348a4c1c6f363d0a0cb3b5b2e4d57ec3aa7546571c",
               "display_rotation": 90,
-              "source_geometry": {
-                "display_rotation": 90
-              }
+              "family_share_from": "WO2026096517A1"
             },
             {
               "source_publication_id": "TW202628839A",
-              "figure_number": "FIG. 3",
+              "figure_number": "Fig. 3",
               "source_url": "https://patents.google.com/patent/TW202628839A/en",
               "local_asset_path": "assets/figures/TW202628839A_fig3.png",
               "width": 2477,
               "height": 3505,
-              "caption": "TW202628839A 原始专利附图，FIG. 3（Gate③ hybrid preclean 族；官方原图字节，2026-10-20 替换错误 UI 截图）。",
-              "asset_sha256": "2b619656eb612452b77a8876681e131b5ab717763ee8dd4e80d1fc1be894a1f5",
-              "source_original_sha256": "2b619656eb612452b77a8876681e131b5ab717763ee8dd4e80d1fc1be894a1f5",
-              "source_display_sha256": "2b619656eb612452b77a8876681e131b5ab717763ee8dd4e80d1fc1be894a1f5",
-              "pdf_page": 4,
-              "display_rotation": 0,
-              "source_geometry": {}
+              "caption": "Same-family Fig.3",
+              "sha256": "2b619656eb612452b77a8876681e131b5ab717763ee8dd4e80d1fc1be894a1f5",
+              "family_share_from": "WO2026096517A1",
+              "display_rotation": 0
             }
           ],
           "change_history": [
@@ -3892,50 +3881,36 @@
           "figures": [
             {
               "source_publication_id": "WO2026096517A1",
-              "figure_number": "FIG. 1",
+              "figure_number": "Fig. 1",
               "source_url": "https://patents.google.com/patent/WO2026096517A1/en",
               "local_asset_path": "assets/figures/WO2026096517A1_fig1.png",
               "width": 2478,
               "height": 3506,
-              "caption": "WO2026096517A1 原始专利附图，FIG. 1（Gate③ hybrid preclean 族；官方原图字节，2026-10-20 替换错误 UI 截图）。",
-              "asset_sha256": "e562f87f432a359ff929714ed066e1c540ce692899746a028fa50729db5292d6",
-              "source_original_sha256": "e562f87f432a359ff929714ed066e1c540ce692899746a028fa50729db5292d6",
-              "source_display_sha256": "e562f87f432a359ff929714ed066e1c540ce692899746a028fa50729db5292d6",
-              "pdf_page": 2,
-              "display_rotation": 0,
-              "source_geometry": {}
+              "caption": "Hybrid preclean chamber cross-section (Fig.1)",
+              "sha256": "e562f87f432a359ff929714ed066e1c540ce692899746a028fa50729db5292d6",
+              "display_rotation": 0
             },
             {
               "source_publication_id": "WO2026096517A1",
-              "figure_number": "FIG. 2",
+              "figure_number": "Fig. 2",
               "source_url": "https://patents.google.com/patent/WO2026096517A1/en",
               "local_asset_path": "assets/figures/WO2026096517A1_fig2.png",
               "width": 2478,
               "height": 3506,
-              "caption": "WO2026096517A1 原始专利附图，FIG. 2（Gate③ hybrid preclean 族；官方原图字节，2026-10-20 替换错误 UI 截图）。",
-              "asset_sha256": "77e2a1525aeebf656f5b7d348a4c1c6f363d0a0cb3b5b2e4d57ec3aa7546571c",
-              "source_original_sha256": "77e2a1525aeebf656f5b7d348a4c1c6f363d0a0cb3b5b2e4d57ec3aa7546571c",
-              "source_display_sha256": "77e2a1525aeebf656f5b7d348a4c1c6f363d0a0cb3b5b2e4d57ec3aa7546571c",
-              "pdf_page": 3,
-              "display_rotation": 90,
-              "source_geometry": {
-                "display_rotation": 90
-              }
+              "caption": "Flow assembly / plasma path (Fig.2)",
+              "sha256": "77e2a1525aeebf656f5b7d348a4c1c6f363d0a0cb3b5b2e4d57ec3aa7546571c",
+              "display_rotation": 90
             },
             {
               "source_publication_id": "WO2026096517A1",
-              "figure_number": "FIG. 3",
+              "figure_number": "Fig. 3",
               "source_url": "https://patents.google.com/patent/WO2026096517A1/en",
               "local_asset_path": "assets/figures/WO2026096517A1_fig3.png",
               "width": 2477,
               "height": 3505,
-              "caption": "WO2026096517A1 原始专利附图，FIG. 3（Gate③ hybrid preclean 族；官方原图字节，2026-10-20 替换错误 UI 截图）。",
-              "asset_sha256": "2b619656eb612452b77a8876681e131b5ab717763ee8dd4e80d1fc1be894a1f5",
-              "source_original_sha256": "2b619656eb612452b77a8876681e131b5ab717763ee8dd4e80d1fc1be894a1f5",
-              "source_display_sha256": "2b619656eb612452b77a8876681e131b5ab717763ee8dd4e80d1fc1be894a1f5",
-              "pdf_page": 4,
-              "display_rotation": 0,
-              "source_geometry": {}
+              "caption": "Preclean process flow to epi (Fig.3)",
+              "sha256": "2b619656eb612452b77a8876681e131b5ab717763ee8dd4e80d1fc1be894a1f5",
+              "display_rotation": 0
             }
           ],
           "change_history": [
