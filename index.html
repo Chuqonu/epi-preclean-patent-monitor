@@ -11,6 +11,10 @@
   <div class="shell">
     <aside class="side" aria-label="检索目录">
       <div class="side-meta" id="side-meta">加载中…</div>
+      <div class="side-tools">
+        <label class="visually-hidden" for="toc-search">搜索目录</label>
+        <input type="search" id="toc-search" class="toc-search" placeholder="搜索公开号或标题…" autocomplete="off" enterkeyhint="search">
+      </div>
       <nav id="tree" aria-label="按月专利目录"></nav>
     </aside>
     <button
@@ -21,8 +25,8 @@
       title="拖动调整目录宽度"
     ></button>
     <main class="main" id="main">
-      <header class="report-header" id="banner" aria-label="报告摘要"></header>
       <div id="content" aria-live="polite"></div>
+      <footer class="report-footer" id="banner" aria-label="报告信息"></footer>
     </main>
   </div>
   <script src="assets/js/report.js" defer></script>

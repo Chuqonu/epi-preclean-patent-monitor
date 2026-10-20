@@ -71,8 +71,7 @@ def recompute_counts(data: dict) -> None:
             else:
                 pub_events += 1
                 ev_in_month += 1
-            spans = fam.get("actual_read_spans") or []
-            if spans and fam.get("discovery_source") == "independent_search":
+            if fam.get("team_independent_read"):
                 actually_read += 1
             for fig in fam.get("figures") or []:
                 figures_refs += 1
