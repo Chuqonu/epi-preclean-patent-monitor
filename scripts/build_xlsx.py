@@ -55,6 +55,14 @@ MAIN_HEADERS = [
     "figure_count",
     "import_tag",
     "discovery_source",
+    "team_independent_read",
+    "read_disposition",
+    "read_status",
+    "pending_reason",
+    "failure_or_pending_reason",
+    "disposition",
+    "read_query",
+    "official_source_url",
 ]
 
 EVENT_HEADERS = [
@@ -141,6 +149,16 @@ def normalize_record(rec: dict, month: str | None = None) -> dict:
         "figure_count": len(figs),
         "import_tag": _get(rec, "import_tag", default=""),
         "discovery_source": _get(rec, "discovery_source", default=""),
+        "team_independent_read": rec.get("team_independent_read", ""),
+        "read_disposition": _get(rec, "read_disposition", default=""),
+        "read_status": _get(rec, "read_status", default=""),
+        "pending_reason": _get(rec, "pending_reason", default=""),
+        "failure_or_pending_reason": _get(
+            rec, "failure_or_pending_reason", "failure_reason", default=""
+        ),
+        "disposition": _get(rec, "disposition", default=""),
+        "read_query": _get(rec, "read_query", default=""),
+        "official_source_url": _get(rec, "official_source_url", default=""),
         "_raw": rec,
     }
 

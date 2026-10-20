@@ -135,13 +135,6 @@
           "event_type": "publication",
           "source_url": "https://patents.google.com/patent/WO2026096517A1/en",
           "application_id": "PCT/US2025/052926"
-        },
-        {
-          "publication_id": "TW202628839A",
-          "event_date": "2026-07-01",
-          "event_type": "publication",
-          "source_url": "https://patents.google.com/patent/TW202628839A/en",
-          "application_id": "TW114142104A"
         }
       ]
     },
@@ -165,13 +158,6 @@
       "claims_or_embodiment_basis": "证据复核 r2：与 WO 同族；台湾文本权利要求结构已对照，纳入同族监测。",
       "scope_reason": "同族法域公开，纳入核心 Preclean 监测。",
       "family_events": [
-        {
-          "publication_id": "WO2026096517A1",
-          "event_date": "2026-05-07",
-          "event_type": "publication",
-          "source_url": "https://patents.google.com/patent/WO2026096517A1/en",
-          "application_id": "PCT/US2025/052926"
-        },
         {
           "publication_id": "TW202628839A",
           "event_date": "2026-07-01",
@@ -231,8 +217,13 @@
     {
       "publication_id": "US12757451B2",
       "jurisdiction": "US",
+      "event_type": null,
+      "event_date": null,
+      "kind_verified": false,
       "title_zh": "（公开文献待核实）US12757451B2",
       "pending_reason": "证据复核 r2：独立检索列出，但公开日/全文在复核时未能从官方可访问源稳定取得（Google Patents 404）；保留待核，不入主表。",
+      "failure_or_pending_reason": "公开号 kind/日期未核实；不得默认 A1 公开。",
+      "disposition": "pending_verify_publication",
       "discovery_source": "independent_search"
     },
     {

@@ -1,0 +1,40 @@
+{
+  "edition": "preclean-evidence-supplement-gate3",
+  "date": "2026-10-20",
+  "rule": "下列独立纳入展示于主表，但本轮不计 team_read（见 EVIDENCE-READ-RULING-COMBINED）。",
+  "included_not_team_read": [
+    {
+      "publication_id": "US12660522B2",
+      "disposition": "included_not_team_read",
+      "team_independent_read": false,
+      "read_status": "未计团队已读：授权全文未在本轮固化 sha256/阅读跨度。",
+      "pending_reason": null
+    },
+    {
+      "publication_id": "WO2026096517A1",
+      "disposition": "included_not_team_read",
+      "team_independent_read": false,
+      "read_status": "Preclean 独立纳入；FAM-merge-hybrid-preclean；未计 team_read。",
+      "family_merge_note": "FAM-merge-hybrid-preclean"
+    },
+    {
+      "publication_id": "TW202628839A",
+      "disposition": "included_not_team_read",
+      "team_independent_read": false,
+      "read_status": "Preclean 同族台湾公开；未计 team_read。",
+      "family_merge_note": "FAM-merge-hybrid-preclean"
+    },
+    {
+      "publication_id": "CN122294515A",
+      "disposition": "included_not_team_read",
+      "team_independent_read": false,
+      "read_status": "独立纳入；HBT/SiGe 界面与选择性外延边界；未计 team_read。"
+    },
+    {
+      "publication_id": "CN122069948A",
+      "disposition": "included_not_team_read",
+      "team_independent_read": false,
+      "read_status": "独立纳入；外延层形成方法；未计 team_read。"
+    }
+  ]
+}

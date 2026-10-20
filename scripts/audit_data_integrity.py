@@ -41,11 +41,19 @@ def main() -> int:
         if ar != locked:
             errors.append(f"counts.actually_read={ar} != locked {locked}")
 
+    sys.path.insert(0, str(ROOT / "scripts"))
+    from report_metrics import all_publication_events
+
+    unique = len(all_publication_events(data.get("months") or []))
+    pe = (data.get("counts") or {}).get("publication_events")
+    if pe != unique:
+        errors.append(f"publication_events={pe} != deduped unique pubs {unique}")
+
     if errors:
         for e in errors:
             print("FAIL:", e, file=sys.stderr)
         return 1
-    print("OK: dedupe + team_read ruling")
+    print("OK: dedupe + team_read + publication_events")
     return 0
 
 

@@ -259,6 +259,31 @@ button { font: inherit; cursor: pointer; }
   line-height: 1.45;
 }
 
+.patent-page-header {
+  text-align: center;
+  padding: 10px 12px 14px;
+  margin: 0 0 12px;
+  border-bottom: 1px solid var(--grid);
+}
+
+.report-stats-dl {
+  margin: 0 0 12px;
+  display: grid;
+  grid-template-columns: 9em 1fr;
+  gap: 4px 12px;
+  font-size: 12px;
+}
+
+.report-stats-dl dt {
+  color: var(--muted);
+  font-weight: 550;
+}
+
+.report-stats-dl dd {
+  margin: 0;
+  color: var(--ink);
+}
+
 .patent-page {
   background: var(--paper);
   color: #17191b;
@@ -588,8 +613,11 @@ button { font: inherit; cursor: pointer; }
   align-items: center;
   justify-content: center;
   width: 100%;
+  max-width: 520px;
   margin: 0 auto;
   min-height: 120px;
+  max-height: 280px;
+  aspect-ratio: 16 / 10;
   padding: 16px 12px;
   box-sizing: border-box;
   background: repeating-linear-gradient(
