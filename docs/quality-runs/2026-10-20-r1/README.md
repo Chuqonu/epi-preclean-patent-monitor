@@ -31,4 +31,4 @@ Regenerate: `python3 -m http.server 8765` then `./scripts/capture_quality_screen
 - [x] E–F layout R1 scope (drawer + colgroup + footer stats)
 - [x] G cache-bust URLs (stamp on publish)
 
-**Merge SHA:** _(set on merge)_
+**Merge SHA:** `72ff125` (feature `0e7c812`)
