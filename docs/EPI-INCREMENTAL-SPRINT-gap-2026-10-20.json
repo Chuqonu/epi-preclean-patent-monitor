@@ -1,0 +1,50 @@
+{
+  "edition": "epi-incremental-sprint-gap-a",
+  "date": "2026-10-20",
+  "source_ruling": "docs/EVIDENCE-SPRINT-A-RULING-2026-10-20.json",
+  "rule": "Sprint A content gate: add TEL monitor entries; no new figures; team_read stays locked at 6 unless ruling amended.",
+  "entries": [
+    {
+      "publication_id": "US20250311241A1",
+      "scope_status": "related",
+      "event_type": "publication",
+      "event_date": "2025-10-02",
+      "month": "2025-10",
+      "application_id": "US18/622,764",
+      "applicant_normalized": "Tokyo Electron Limited",
+      "title_original": "Integration method of vertical DRAM with peripheral circuit",
+      "title_zh": "垂直 DRAM 与外围电路的集成方法",
+      "technology_tags": ["integration", "dram"],
+      "short_preview": "TEL 垂直 DRAM 与外围电路集成路线；与 Si/SiGe 外延主线关联但非核心 EPI/preclean 纳入。",
+      "scope_reason": "Sprint gap A：关联监测（DRAM 集成），不计 core。",
+      "source_urls": [
+        "https://patents.google.com/patent/US20250311241A1/en",
+        "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20250311241"
+      ],
+      "discovery_source": "sprint_gap_tel",
+      "figures_policy": "none"
+    },
+    {
+      "publication_id": "US12757648B2",
+      "scope_status": "core",
+      "event_type": "grant",
+      "event_date": "2026-10-06",
+      "month": "2026-10",
+      "application_id": null,
+      "applicant_normalized": "Tokyo Electron Limited",
+      "title_original": "Substrate processing method and substrate processing apparatus",
+      "title_zh": "基板处理方法及基板处理装置（氧化物去除、Ge 预清洗与 SiGe 外延）",
+      "technology_tags": ["epi", "preclean"],
+      "short_preview": "HF/碱性气体去除氧化膜、氢热处理、Ge 稀释气预清洗后 SiGe（及可选 Si）外延生长。",
+      "claims_or_embodiment_basis": "独立方法权利要求：氧化物去除 → 氢热处理 → Ge 稀释氢气预清洗 → SiGe 外延；从属项限定 Ge 源、温度与可选 Si 外延层。",
+      "scope_reason": "Sprint gap A：2026-10 授权事件（仅当期 B2）；TEL SiGe 外延前预清洗，纳入 core。",
+      "source_urls": [
+        "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12757648",
+        "https://patents.google.com/patent/US12757648B2/en"
+      ],
+      "discovery_source": "sprint_gap_tel",
+      "figures_policy": "none",
+      "event_note": "2026-10 授权公告（Sprint A 增量）；不伪造附图。"
+    }
+  ]
+}
