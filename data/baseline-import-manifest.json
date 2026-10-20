@@ -1,0 +1,166 @@
+{
+  "imported_at": "2026-10-20T17:30:00+08:00",
+  "source_file": "/workspace/patent-ref-data.json",
+  "source_size_bytes": 1822811,
+  "source_sha256": "467711b9384d7628a6af139bfdb21c59f22dd8e4eb5d0fd6611b38e65cebcfd7",
+  "research_through": "2026-10-19",
+  "prepared_date_source": "2026-10-20",
+  "months_covered": [
+    "2026-10",
+    "2026-09",
+    "2026-08",
+    "2026-07",
+    "2026-06",
+    "2026-05",
+    "2026-04",
+    "2026-03",
+    "2026-02",
+    "2026-01",
+    "2025-12",
+    "2025-11",
+    "2025-10"
+  ],
+  "months_skipped": [
+    "2025-09"
+  ],
+  "counts": {
+    "month_family_entries_imported": 110,
+    "publication_events": 139,
+    "unique_families": 98,
+    "figures_metadata": 130,
+    "figures_extracted_local": 3,
+    "figures_url_only_meta": 127,
+    "scope_status_dist": {
+      "core": 110
+    }
+  },
+  "per_month": [
+    {
+      "month": "2026-10",
+      "families": 4,
+      "event_count": 4,
+      "through_date": "2026-10-19"
+    },
+    {
+      "month": "2026-09",
+      "families": 8,
+      "event_count": 9,
+      "through_date": null
+    },
+    {
+      "month": "2026-08",
+      "families": 5,
+      "event_count": 6,
+      "through_date": null
+    },
+    {
+      "month": "2026-07",
+      "families": 4,
+      "event_count": 4,
+      "through_date": null
+    },
+    {
+      "month": "2026-06",
+      "families": 7,
+      "event_count": 7,
+      "through_date": null
+    },
+    {
+      "month": "2026-05",
+      "families": 5,
+      "event_count": 7,
+      "through_date": null
+    },
+    {
+      "month": "2026-04",
+      "families": 7,
+      "event_count": 9,
+      "through_date": null
+    },
+    {
+      "month": "2026-03",
+      "families": 6,
+      "event_count": 8,
+      "through_date": null
+    },
+    {
+      "month": "2026-02",
+      "families": 10,
+      "event_count": 15,
+      "through_date": null
+    },
+    {
+      "month": "2026-01",
+      "families": 9,
+      "event_count": 12,
+      "through_date": null
+    },
+    {
+      "month": "2025-12",
+      "families": 9,
+      "event_count": 11,
+      "through_date": null
+    },
+    {
+      "month": "2025-11",
+      "families": 20,
+      "event_count": 25,
+      "through_date": null
+    },
+    {
+      "month": "2025-10",
+      "families": 16,
+      "event_count": 22,
+      "through_date": "2025-10-31"
+    }
+  ],
+  "extracted_figures": [
+    {
+      "publication_id": "US12757647B2",
+      "figure_number": "图4：用于晶面选择性生长的底部与侧壁表面",
+      "path": "assets/figures/US12757647B2___4___0.png",
+      "bytes": 25646,
+      "sha256": "e5d5f61dac3d4b7a2f379004b3c3e15445c20416f436919f3615fb16546cb288",
+      "source_sha256": "e5d5f61dac3d4b7a2f379004b3c3e15445c20416f436919f3615fb16546cb288"
+    },
+    {
+      "publication_id": "US12765027B2",
+      "figure_number": "Fig.3C/3D",
+      "path": "assets/figures/US12765027B2__Fig_3C_3D__0.png",
+      "bytes": 83389,
+      "sha256": "44ffce8ea720ae9529faf63e64841cbf3a4608eefb24b41814de335e5cd98f65",
+      "source_sha256": "44ffce8ea720ae9529faf63e64841cbf3a4608eefb24b41814de335e5cd98f65"
+    },
+    {
+      "publication_id": "US20260313994A1",
+      "figure_number": "Fig.14–16；PDF第14页（附图第13/17页）",
+      "path": "assets/figures/US20260313994A1__Fig_14_16_PDF_14_13_17___0.png",
+      "bytes": 70850,
+      "sha256": "ef5866377665bb030dd53dd2050751ce924403dca458c54afa3eeaff9dbe320e",
+      "source_sha256": "ef5866377665bb030dd53dd2050751ce924403dca458c54afa3eeaff9dbe320e"
+    }
+  ],
+  "explicit_note": "not claimed as new discovery",
+  "import_tag": "imported baseline",
+  "discovery_source": "reference_report",
+  "reference_disposition_snapshot": {
+    "current_pending": 110,
+    "current_excluded": 40,
+    "historical_exclusion_records": 44,
+    "history_reconciled_to_pending": 9,
+    "history_reconciled_to_main": 3,
+    "reconciled_on": "2026-10-16"
+  },
+  "mapping_notes": [
+    "publication_id ← publication_number",
+    "event_date ← publication_date",
+    "family_id ← family_key",
+    "title_zh ← title; applicant_normalized ← applicant",
+    "scope_status defaulted to core (reference main-report cards; no scope_status in source)",
+    "family_completion_status=pending (DOCDB not rechecked by this team)",
+    "actual_read_spans=[] / counts.actually_read=0 (this team has not independently re-read)",
+    "Empty SVG data: URIs discarded; keep source_url + caption + figure_number; local_asset_path=null",
+    "3 real PNGs extracted under assets/figures/",
+    "discovery_source field added beyond SCHEMA (required by import rules)"
+  ]
+}
