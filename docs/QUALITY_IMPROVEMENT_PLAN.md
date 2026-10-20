@@ -49,7 +49,7 @@ docs/quality-runs/YYYY-MM-DD-rN/
 | Round | Focus |
 |-------|--------|
 | **R1** (2026-10-20) | Dot vs Pages gap record; mobile drawer; colgroup; figure restore on `main`; cache stamps |
-| **R2** | Dot parity: typography, month chrome, figure grid density, perf (lazy load audit) |
+| **R2** (2026-10-20) | Month chrome, multi-fig grid, side-meta scan, mobile drawer @390px — `docs/quality-runs/2026-10-20-r2/`; Gate③ fig/rot frozen post–`5423b7abc03a` |
 | **R3** | Content delta from Track A + regression on A–G |
 | **Final** | Evening 2026-10-23 — A–G sign-off, delivery note, frozen SHAs in README |
 

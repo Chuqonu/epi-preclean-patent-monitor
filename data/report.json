@@ -81,6 +81,12 @@
       "by": "cn-pending-exclude",
       "action": "clear_pending_or_related",
       "detail": "Removed from queue (exclude): CN122564748A"
+    },
+    {
+      "at": "2026-10-20T12:45:00Z",
+      "by": "quality-r2-layout",
+      "action": "reader_ux_r2",
+      "detail": "Layout R2 (CSS/JS): month chrome, multi-figure grid, side-meta, mobile drawer. No figure bytes or display_rotation changes."
     }
   ],
   "months": [
