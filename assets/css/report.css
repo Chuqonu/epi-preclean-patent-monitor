@@ -306,9 +306,10 @@ button { font: inherit; cursor: pointer; }
   border-collapse: collapse;
   width: 100%;
   table-layout: fixed;
+  --patent-label-col: clamp(110px, 20%, 160px);
 }
 
-.patent-table col.patent-col-label { width: 132px; }
+.patent-table col.patent-col-label { width: var(--patent-label-col); }
 .patent-table col.patent-col-value { width: auto; }
 
 .patent-table th,
@@ -323,8 +324,9 @@ button { font: inherit; cursor: pointer; }
 
 .patent-table th.patent-label {
   font-weight: 600;
-  width: 132px;
-  max-width: 132px;
+  width: var(--patent-label-col);
+  max-width: 160px;
+  min-width: 110px;
   font-size: 13px;
   line-height: 1.45;
   color: #2a3a40;
@@ -392,6 +394,17 @@ button { font: inherit; cursor: pointer; }
   padding: 7px 8px;
   font-weight: 400;
   width: auto;
+  word-break: break-word;
+}
+
+.patent-table .events th:nth-child(1),
+.patent-table .events td:nth-child(1) {
+  min-width: 6.5em;
+}
+
+.patent-table .events th:nth-child(2),
+.patent-table .events td:nth-child(2) {
+  white-space: nowrap;
 }
 
 .fig {
@@ -538,12 +551,34 @@ button { font: inherit; cursor: pointer; }
   .sidebar-resizer { display: none; }
   .main { padding: 16px 14px 40px; position: relative; z-index: 35; }
   .patent-page { padding: 20px 16px 14px; }
-  .patent-table { table-layout: fixed; width: 100%; }
-  .patent-table col.patent-col-label { width: 108px; }
+  .patent-table {
+    table-layout: fixed;
+    width: 100%;
+    --patent-label-col: clamp(84px, 22%, 100px);
+  }
   .patent-table th.patent-label {
-    width: 108px;
-    max-width: 108px;
+    width: var(--patent-label-col);
+    max-width: 100px;
+    min-width: 84px;
     vertical-align: top;
+    font-size: 12px;
+    padding: 8px 7px;
+  }
+  .patent-table td.patent-value {
+    padding: 8px 9px;
+    font-size: 13px;
+  }
+  .patent-table .events {
+    font-size: 11px;
+    line-height: 1.45;
+  }
+  .patent-table .events th,
+  .patent-table .events td {
+    padding: 5px 4px;
+  }
+  .patent-table .events th:nth-child(2),
+  .patent-table .events td:nth-child(2) {
+    white-space: normal;
   }
 }
 

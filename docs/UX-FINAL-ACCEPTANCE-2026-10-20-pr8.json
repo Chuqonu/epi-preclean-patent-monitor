@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-20",
+  "baseline": "PR8 asset stamps + figure restore apply",
+  "b_track_failures": [
+    {
+      "id": "label-width",
+      "finding": "Label col ~16.5% (132/800); target ~18–20% within ~110–160px",
+      "status": "fixed",
+      "fix": "clamp(110px,20%,160px) label col (~20% at 800px)"
+    },
+    {
+      "id": "display-rotation-double",
+      "finding": "Portrait recovered bytes upright but display_rotation:90 still applies CSS rotate",
+      "status": "fixed",
+      "fix": "cleared 9 portrait flags + effectiveDisplayRotation() guard"
+    },
+    {
+      "id": "team-read-count",
+      "finding": "Collapsed 报告信息 showed 4; ruling r2 locks 6",
+      "status": "fixed",
+      "fix": "EVIDENCE-READ-RULING-COMBINED-2026-10-20-r2.json + apply_read_ruling_r2.py"
+    }
+  ],
+  "pass": [
+    "no-top-stats-strip",
+    "figure-row-colspan-full-width",
+    "mobile-no-horizontal-overflow"
+  ]
+}

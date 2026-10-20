@@ -11,31 +11,29 @@
   "excluded_scope": "暂不含仅以 SiC/GaN 为生长对象的平台、独立湿法清洗。SiC 涂层/腔体部件不是 SiC 生长；Si:C/SiCP 不是 SiC；冷却水不是湿法洗片；EPI 整体路线中带湿步骤不等于独立湿洗——上述均不能单独作为整案排除理由。",
   "count_basis": "按公开或授权公告日期（event_date）归月，按 patent family（family_id）解读；同一族可在后续月份因新国家公开、分案或授权事件再次出现。严格区分候选数、事件数、族数与已实际阅读数。WO 公开不记成授权。基线条目来自参考报告导入，不计为本团队独立发现。",
   "coverage_note": "在 Dot 基线（110 族月条目）上合并 2026-10-20 证据复核 r2 的 9 条独立检索纳入。3 条基线对照命中不升级为独立发现。4 条待核见「关联待核」区，其中 WO2026084898A1 仍保留基线主表呈现。不得伪称零遗漏或正式交付。",
-  "status_note": "初版：基线导入 + Gate ③ 独立检索增量（非正式交付）。基线条目仍标 imported baseline；9 条独立新纳入已证据复核阅读。",
+  "status_note": "初版：基线 + Gate③ 增量。本团队已读锁定 6（r2 ruling）。",
   "notes": [
+    "本团队已读锁定 6（见 EVIDENCE-READ-RULING-COMBINED-2026-10-20-r2.json）。",
     "初版 = 基线 imported baseline + 独立检索增量（discovery_source=independent_search）。",
     "基线对照命中（US12526971B2 等）仅 confirmation，不改为独立发现。",
     "FAM-merge-hybrid-preclean：WO2026096517A1 + TW202628839A。",
     "待核队列见 pending_or_related；不入主表为新接受的 4 条。",
-    "本团队已读锁定 4（EPI 四件；见 EPI-EVIDENCE-SUPPLEMENT）；Preclean 五件与 US12660522B2 不计 team_read。",
     "附图仍以真实 PNG 为准；多数引用待补 local_asset_path。"
   ],
   "counts": {
-    "candidates_total": 119,
-    "events_reviewed": 4,
+    "candidates_total": 120,
+    "events_reviewed": 6,
     "events_core": 148,
-    "families_core": 106,
+    "families_core": 107,
     "related": 0,
     "pending": 4,
     "excluded": 0,
     "figures": 130,
-    "month_family_entries": 119,
+    "month_family_entries": 120,
     "publication_events": 148,
-    "unique_families": 106,
-    "actually_read": 4,
-    "unique_publication_ids": 148,
-    "figures_available": 130,
-    "figures_pending": 0
+    "unique_families": 107,
+    "actually_read": 6,
+    "unique_publication_ids": 148
   },
   "search_coverage": [],
   "pending_or_related": [
@@ -46,13 +44,13 @@
       "event_date": "2026-03-05",
       "title_zh": "等离子体增强外延沉积腔室",
       "applicant_normalized": "Applied Materials, Inc.",
-      "scope_status": "pending",
-      "pending_reason": "证据复核 r2：独立检索命中但技术边界（等离子体增强外延 vs 纯 preclean/EPI 主线）与同族引用关系待核；未升格为独立新纳入。基线条目中仅作同族附图引用，不重复升格。",
+      "scope_status": "core",
+      "pending_reason": "已升格 2026-03 主表 core 并计 team_read（r2）；保留队列记录。",
       "failure_or_pending_reason": "证据复核 r2：独立检索命中但技术边界（等离子体增强外延 vs 纯 preclean/EPI 主线）与同族引用关系待核；未升格为独立新纳入。基线条目中仅作同族附图引用，不重复升格。",
       "discovery_source": "independent_search",
       "import_tag": null,
-      "on_main_month_cards": false,
-      "disposition": "pending_not_promoted",
+      "on_main_month_cards": true,
+      "disposition": "promoted_core_team_read",
       "kind_verified": true
     },
     {
@@ -251,9 +249,9 @@
               "source_original_sha256": "e5d5f61dac3d4b7a2f379004b3c3e15445c20416f436919f3615fb16546cb288",
               "source_display_sha256": "e5d5f61dac3d4b7a2f379004b3c3e15445c20416f436919f3615fb16546cb288",
               "pdf_page": 6,
-              "display_rotation": 90,
+              "display_rotation": 0,
               "source_geometry": {
-                "display_rotation": 90
+                "display_rotation": 0
               }
             }
           ],
@@ -1172,9 +1170,9 @@
               "source_original_sha256": "39e66689f3d4ed987e3f3562b40eb24e6b030314892baf2029b0f8a1cab74603",
               "source_display_sha256": "39e66689f3d4ed987e3f3562b40eb24e6b030314892baf2029b0f8a1cab74603",
               "pdf_page": 9,
-              "display_rotation": 90,
+              "display_rotation": 0,
               "source_geometry": {
-                "display_rotation": 90
+                "display_rotation": 0
               }
             }
           ],
@@ -1713,9 +1711,9 @@
               "source_original_sha256": "22dbc8e9baf1a3e5c7e6efed68b2bc752517f8a1fe47b87a0cd020d0ece5acae",
               "source_display_sha256": "22dbc8e9baf1a3e5c7e6efed68b2bc752517f8a1fe47b87a0cd020d0ece5acae",
               "pdf_page": 6,
-              "display_rotation": 90,
+              "display_rotation": 0,
               "source_geometry": {
-                "display_rotation": 90
+                "display_rotation": 0
               }
             }
           ],
@@ -3065,9 +3063,9 @@
               "source_original_sha256": "d0af11401052ea68bfa12e42f563bfbb40a029ee5e09dee02c2ba60aab2ad4b0",
               "source_display_sha256": "d0af11401052ea68bfa12e42f563bfbb40a029ee5e09dee02c2ba60aab2ad4b0",
               "pdf_page": 22,
-              "display_rotation": 90,
+              "display_rotation": 0,
               "source_geometry": {
-                "display_rotation": 90
+                "display_rotation": 0
               }
             }
           ],
@@ -3212,9 +3210,11 @@
           ],
           "source_retrieved_at": null,
           "source_sha256": null,
-          "actual_read_spans": [],
-          "reviewer": null,
-          "reviewed_at": null,
+          "actual_read_spans": [
+            "证据复核 r2：授权全文权利要求已读（revalidated，计 team_read r2）"
+          ],
+          "reviewer": "evidence-review-r2",
+          "reviewed_at": "2026-10-20",
           "family_completion_status": "open",
           "figures": [],
           "change_history": [
@@ -3242,8 +3242,8 @@
           "family_merge_note": null,
           "event_note": "独立检索发现",
           "category": "EPI 工艺",
-          "team_independent_read": false,
-          "read_disposition": "included_not_team_read",
+          "team_independent_read": true,
+          "read_disposition": "team_read_claims_level",
           "read_status": "未计团队已读：授权全文未在本轮固化 sha256/阅读跨度。"
         }
       ],
@@ -3675,9 +3675,9 @@
               "source_original_sha256": "8533597a17f700dfd505913f5ae521fb21245098c68b10c38a4b2d7bfe6ec363",
               "source_display_sha256": "8533597a17f700dfd505913f5ae521fb21245098c68b10c38a4b2d7bfe6ec363",
               "pdf_page": 5,
-              "display_rotation": 90,
+              "display_rotation": 0,
               "source_geometry": {
-                "display_rotation": 90
+                "display_rotation": 0
               }
             }
           ],
@@ -4405,9 +4405,9 @@
               "source_original_sha256": "11ec9fb5bbc7be2be3301d79afb8cb1faaba6ac3c6d44dffd94c2e9efe551b9a",
               "source_display_sha256": "11ec9fb5bbc7be2be3301d79afb8cb1faaba6ac3c6d44dffd94c2e9efe551b9a",
               "pdf_page": 3,
-              "display_rotation": 90,
+              "display_rotation": 0,
               "source_geometry": {
-                "display_rotation": 90
+                "display_rotation": 0
               }
             }
           ],
@@ -5100,10 +5100,66 @@
           "read_query": "独立 EPI 检索 Gate③ r2；外延层厚度电学监测。",
           "read_evidence_note": "国知局可下载 PDF 的 sha256 尚未在本仓库固化；权利要求级阅读依据 Gate③ 中文公开文本与权利要求书（Google Patents 镜像），待 CNIPA 原件哈希补齐。",
           "official_source_url": "https://patents.google.com/patent/CN121693111A/en"
+        },
+        {
+          "publication_id": "US20260066234A1",
+          "jurisdiction": "US",
+          "event_type": "publication",
+          "event_date": "2026-03-05",
+          "application_id": null,
+          "priority_date": null,
+          "family_id": "US20260066234A1",
+          "family_id_source": "baseline_claims_review",
+          "title_original": "Plasma enhanced epitaxial deposition chamber",
+          "title_zh": "等离子体增强外延沉积腔室",
+          "applicant_normalized": "Applied Materials, Inc.",
+          "scope_status": "core",
+          "technology_tags": [
+            "epi"
+          ],
+          "short_preview": "等离子体增强外延沉积腔室与工艺集成（同族 WO2026055216A1 附图来源）。",
+          "technical_summary": "等离子体增强外延沉积腔室与工艺集成。",
+          "claims_or_embodiment_basis": "基线复核：US20260066234A1 官方公开文本 22 项权利要求已复核（2026-10-15，见 WO2026055216A1 卡 reference_source_status）。",
+          "scope_reason": "等离子体增强外延沉积，升格 core 并计 team_read（ruling r2）。",
+          "source_urls": [
+            "https://patents.google.com/patent/US20260066234A1/en"
+          ],
+          "source_retrieved_at": null,
+          "source_sha256": null,
+          "actual_read_spans": [
+            "基线复核：US20260066234A1 权利要求 1–22（官方公开页，2026-10-15 记录）"
+          ],
+          "reviewer": "baseline-claims-review",
+          "reviewed_at": "2026-10-15",
+          "family_completion_status": "open",
+          "figures": [],
+          "change_history": [
+            {
+              "at": "2026-10-20T12:00:00Z",
+              "by": "read-ruling-r2",
+              "action": "promote_core_team_read",
+              "detail": "由 pending 升格 core 月卡；不计为 Gate③ 独立新发现。"
+            }
+          ],
+          "family_events": [
+            {
+              "publication_id": "US20260066234A1",
+              "event_date": "2026-03-05",
+              "event_type": "publication",
+              "source_url": "https://patents.google.com/patent/US20260066234A1/en"
+            }
+          ],
+          "id": "2026-03-US20260066234A1",
+          "month": "2026-03",
+          "import_tag": null,
+          "discovery_source": "baseline_claims_review",
+          "team_independent_read": true,
+          "read_disposition": "team_read_claims_level",
+          "category": "EPI 设备"
         }
       ],
-      "family_count": 8,
-      "event_count": 10
+      "family_count": 9,
+      "event_count": 11
     },
     {
       "month": "2026-02",
@@ -5955,9 +6011,9 @@
               "source_original_sha256": "1516cae0ee73967b9d353b67b29a75de9ddcb5f972180baf1fd1c1146609bfd8",
               "source_display_sha256": "1516cae0ee73967b9d353b67b29a75de9ddcb5f972180baf1fd1c1146609bfd8",
               "pdf_page": 3,
-              "display_rotation": 90,
+              "display_rotation": 0,
               "source_geometry": {
-                "display_rotation": 90
+                "display_rotation": 0
               }
             }
           ],
@@ -6861,9 +6917,9 @@
               "source_original_sha256": "f77056a140d3fcb39e80b46e7015030ebcaf5b9756af42984a4dc9ee59b52443",
               "source_display_sha256": "f77056a140d3fcb39e80b46e7015030ebcaf5b9756af42984a4dc9ee59b52443",
               "pdf_page": 9,
-              "display_rotation": 90,
+              "display_rotation": 0,
               "source_geometry": {
-                "display_rotation": 90
+                "display_rotation": 0
               }
             },
             {
@@ -6878,9 +6934,9 @@
               "source_original_sha256": "3f06f16dabb38600dc59c52de04efccc3277ece9207f0b8a004e0ff9abce7175",
               "source_display_sha256": "3f06f16dabb38600dc59c52de04efccc3277ece9207f0b8a004e0ff9abce7175",
               "pdf_page": 12,
-              "display_rotation": 90,
+              "display_rotation": 0,
               "source_geometry": {
-                "display_rotation": 90
+                "display_rotation": 0
               }
             }
           ],

@@ -1,0 +1,31 @@
+{
+  "edition": "evidence-read-ruling-combined-r2",
+  "date": "2026-10-20",
+  "supersedes": "docs/EVIDENCE-READ-RULING-COMBINED-2026-10-20.json",
+  "locked_team_read_total": 6,
+  "rule": "本团队已读 = Gate③/EPI 权利要求级阅读（4）+ 基线复核已读 US20260066234A1（core）+ 独立纳入 US12660522B2（revalidated 授权全文）。Preclean 独立 4 条仍不计 team_read。US12757451B2 等待核实，不计入。",
+  "team_read_publication_ids": [
+    "US20250327209A1",
+    "US20260055532A1",
+    "US20260071979A1",
+    "CN121693111A",
+    "US20260066234A1",
+    "US12660522B2"
+  ],
+  "team_read_notes": [
+    {
+      "publication_id": "US20260066234A1",
+      "basis": "基线同族 WO2026055216A1 卡 reference_source_status：US20260066234A1 官方原页 22 项权利要求已复核（2026-10-15）；升格 core 并计 team_read。"
+    },
+    {
+      "publication_id": "US12660522B2",
+      "basis": "独立纳入；证据复核 r2 授权权利要求已读，revalidated 计 team_read。"
+    }
+  ],
+  "excluded_from_team_read": [
+    "US12757451B2",
+    "WO2026084898A1",
+    "CN122564748A"
+  ],
+  "read_span_label": "Gate③ / 基线复核：权利要求级阅读"
+}
