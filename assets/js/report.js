@@ -452,38 +452,26 @@
     return (url && url.trim()) ? url.trim() : "data/report.json";
   }
 
-  /**
-   * Apply CSS display_rotation only when raster is landscape (w >= h).
-   * Portrait recovered bytes are already upright; legacy rot90 must not double-rotate.
-   */
+  /** display_rotation only — never combine with extraction_rotation (baked into bytes). */
   function effectiveDisplayRotation(img) {
     const rot = Number(img.display_rotation) || 0;
     if (!rot) return 0;
     const w = Number(img.width) || 0;
     const h = Number(img.height) || 0;
-    if (rot === 90 || rot === 270) {
-      if (w <= 0 || h <= 0) return 0;
-      return rot;
-    }
-    return rot;
+    if (w <= 0 || h <= 0) return 0;
+    return rot % 360;
   }
 
   function stripFigureRotationIfUpright(img) {
-    if (
-      img.classList.contains("fig-display-rot-90") ||
-      img.classList.contains("fig-display-rot-270")
-    ) {
-      return;
-    }
+    const metaRot = Number(img.getAttribute("data-display-rotation") || "0") || 0;
+    if (metaRot === 90 || metaRot === 270 || metaRot === 180) return;
     const nw = img.naturalWidth;
     const nh = img.naturalHeight;
-    if (!nw || !nh || nh < nw) return;
+    if (!nw || !nh || nh >= nw) return;
     img.classList.remove("fig-display-rot-90", "fig-display-rot-270", "fig-display-rot-180");
     img.style.transform = "none";
     const wrap = img.closest(".fig-media");
-    if (wrap) {
-      wrap.classList.remove("fig-display-rot-90", "fig-display-rot-270");
-    }
+    if (wrap) wrap.classList.remove("fig-display-rot-90", "fig-display-rot-270", "fig-display-rot-180");
   }
 
   /** Layout box for display_rotation (extraction_rotation already baked into file bytes). */
@@ -538,6 +526,7 @@
           "<img class=\"" + esc(layout.rotClass || "fig-img") + "\" data-src=\"" + esc(src) +
           "\" width=\"" + layout.layoutW + "\" height=\"" + layout.layoutH +
           "\" alt=\"" + esc(caption) + "\" loading=\"lazy\" decoding=\"async\" " +
+          "data-display-rotation=\"" + effRot + "\" " +
           "data-fig-pub=\"" + esc(pub) + "\" data-fig-label=\"" + esc(figLabel) + "\"></div>";
       } else {
         body = figureFailBox(w, h, pub, figLabel, "真图缺失");
