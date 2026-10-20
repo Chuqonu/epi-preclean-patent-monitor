@@ -1,0 +1,211 @@
+{
+  "track": "EPI",
+  "window": {
+    "from": "2026-10-16",
+    "to": "2026-10-20"
+  },
+  "research_through_context": "2026-10-19",
+  "label": "实际定时触发",
+  "searched_at": "2026-10-20T18:45:00+08:00",
+  "timezone": "Asia/Shanghai",
+  "exclude_file": "/workspace/epi-known-pubs.txt",
+  "exclude_count": 122,
+  "queries": [
+    {
+      "q": "(selective epitaxy OR selective epitaxial) SiGe after:2026-10-14 before:2026-10-21",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=%28selective+epitaxy+OR+selective+epitaxial%29+SiGe+after%3A2026-10-14+before%3A2026-10-21&num=100",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "(\"epi chamber\" OR \"epitaxial chamber\" OR \"epitaxy reactor\") silicon after:2026-10-14 before:2026-10-21",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=%28%22epi+chamber%22+OR+%22epitaxial+chamber%22+OR+%22epitaxy+reactor%22%29+silicon+after%3A2026-10-14+before%3A2026-10-21&num=100",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "susceptor (epitax OR epi) silicon after:2026-10-14 before:2026-10-21",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=susceptor+%28epitax+OR+epi%29+silicon+after%3A2026-10-14+before%3A2026-10-21&num=100",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "(boron OR doped) (SiGe OR \"silicon germanium\") epitax after:2026-10-14 before:2026-10-21",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=%28boron+OR+doped%29+%28SiGe+OR+%22silicon+germanium%22%29+epitax+after%3A2026-10-14+before%3A2026-10-21&num=100",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "(\"source/drain\" OR \"source drain\") epitax (SiGe OR silicon) after:2026-10-14 before:2026-10-21",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=%28%22source%2Fdrain%22+OR+%22source+drain%22%29+epitax+%28SiGe+OR+silicon%29+after%3A2026-10-14+before%3A2026-10-21&num=100",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "(\"dry clean\" OR \"chamber clean\") (epitax OR epi) (silicon OR SiGe) after:2026-10-14 before:2026-10-21",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=%28%22dry+clean%22+OR+%22chamber+clean%22%29+%28epitax+OR+epi%29+%28silicon+OR+SiGe%29+after%3A2026-10-14+before%3A2026-10-21&num=100",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "CPC/C30B25/02 after:2026-10-14 before:2026-10-21",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=CPC%2FC30B25%2F02+after%3A2026-10-14+before%3A2026-10-21&num=100",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "CPC/H01L21/0262 after:2026-10-14 before:2026-10-21",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=CPC%2FH01L21%2F0262+after%3A2026-10-14+before%3A2026-10-21&num=100",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "assignee:\"Applied Materials\" (epitax OR SiGe OR epi) after:2026-10-14 before:2026-10-21",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=assignee%3A%22Applied+Materials%22+%28epitax+OR+SiGe+OR+epi%29+after%3A2026-10-14+before%3A2026-10-21&num=100",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "assignee:\"ASM IP Holding\" (epitax OR SiGe) after:2026-10-14 before:2026-10-21",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=assignee%3A%22ASM+IP+Holding%22+%28epitax+OR+SiGe%29+after%3A2026-10-14+before%3A2026-10-21&num=100",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "assignee:\"Tokyo Electron\" (epitax OR SiGe) after:2026-10-14 before:2026-10-21",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=assignee%3A%22Tokyo+Electron%22+%28epitax+OR+SiGe%29+after%3A2026-10-14+before%3A2026-10-21&num=100",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "assignee:\"Taiwan Semiconductor\" (epitax OR SiGe) after:2026-10-14 before:2026-10-21",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=assignee%3A%22Taiwan+Semiconductor%22+%28epitax+OR+SiGe%29+after%3A2026-10-14+before%3A2026-10-21&num=100",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "assignee:\"Lam Research\" (epitax OR SiGe) after:2026-10-14 before:2026-10-21",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=assignee%3A%22Lam+Research%22+%28epitax+OR+SiGe%29+after%3A2026-10-14+before%3A2026-10-21&num=100",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "(外延 OR 硅锗 OR SiGe) (设备 OR 腔室 OR 选择性) country:CN after:2026-10-14 before:2026-10-21",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=%28%E5%A4%96%E5%BB%B6+OR+%E7%A1%85%E9%94%97+OR+SiGe%29+%28%E8%AE%BE%E5%A4%87+OR+%E8%85%94%E5%AE%A4+OR+%E9%80%89%E6%8B%A9%E6%80%A7%29+country%3ACN+after%3A2026-10-14+before%3A2026-10-21&num=100",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "(epitax OR SiGe) country:WO after:2026-10-14 before:2026-10-21",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=%28epitax+OR+SiGe%29+country%3AWO+after%3A2026-10-14+before%3A2026-10-21&num=100",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "(epitax OR SiGe OR エピタキシャル) country:JP after:2026-10-14 before:2026-10-21",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=%28epitax+OR+SiGe+OR+%E3%82%A8%E3%83%94%E3%82%BF%E3%82%AD%E3%82%B7%E3%83%A3%E3%83%AB%29+country%3AJP+after%3A2026-10-14+before%3A2026-10-21&num=100",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "(epitax OR SiGe) country:KR after:2026-10-14 before:2026-10-21",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=%28epitax+OR+SiGe%29+country%3AKR+after%3A2026-10-14+before%3A2026-10-21&num=100",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "(epitaxial OR epitaxy OR SiGe OR \"silicon germanium\") after:2026-10-14 before:2026-10-21",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=%28epitaxial+OR+epitaxy+OR+SiGe+OR+%22silicon+germanium%22%29+after%3A2026-10-14+before%3A2026-10-21&num=100",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "(epitax OR SiGe) after:2026-10-15 before:2026-10-16",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=%28epitax+OR+SiGe%29+after%3A2026-10-15+before%3A2026-10-16&num=100",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "USPTO Official Gazette notices 2026 index — latest listed Week 41 / October 13, 2026; Week 42 (expected ~Oct 20, 2026 grant day) not yet on index (week42 patentee pages still show October 21, 2025)",
+      "source": "uspto",
+      "url": "https://www.uspto.gov/learning-and-resources/official-gazette/official-gazette-notices-2026",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "week41 OG patentee + HTML for US12765027 / US12760442 / US12760441 (2026-10-13 grants; OUT of acceptance window)",
+      "source": "uspto",
+      "url": "https://patentsgazette.uspto.gov/week41/OG/patentee/alphaA.html",
+      "hit_count_approx": 3
+    },
+    {
+      "q": "site:patents.google.com / WebSearch: SiGe selective epitaxy OR epi chamber OR susceptor with dates 2026-10-16..2026-10-20",
+      "source": "other",
+      "url": "https://patents.google.com/?q=SiGe+OR+%22silicon+germanium%22+epitax*&after=publication:20261016&before=publication:20261017&num=100",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "选择性外延 OR 硅锗外延 OR 外延腔室 专利 公开日 2026年10月16日 OR 2026年10月20日",
+      "source": "other",
+      "url": "websearch://cn-epi-oct2026",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "Applied Materials Justia patent grants (newest listed = 2026-10-13; includes US12765027 selective epitaxy and US12760441 EPI isolation plate — both out of window)",
+      "source": "other",
+      "url": "https://companyprofiles.justia.com/company/applied-materials/patents/patent",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "Espacenet worldwide search pd=2026-10-16..2026-10-20 AND (epitax* OR SiGe)",
+      "source": "espacenet",
+      "url": "https://worldwide.espacenet.com/patent/search",
+      "hit_count_approx": 0
+    },
+    {
+      "q": "Google Patents xhr sort=new thematic (selective SiGe / chamber / AMAT / ASM / TEL / CN / dry-clean) — inspected top hits' publication_date; none in 2026-10-16..2026-10-20",
+      "source": "google_patents",
+      "url": "https://patents.google.com/?q=(selective+epitaxy+OR+%22SiGe+epitaxy%22)&num=100&sort=new",
+      "hit_count_approx": 0
+    }
+  ],
+  "candidates": [],
+  "counts": {
+    "candidates": 0,
+    "events": 0,
+    "families_est": 0,
+    "actually_read": 0
+  },
+  "out_of_window_sightings": [
+    {
+      "publication_id": "US12765027B2",
+      "event_type": "grant",
+      "event_date": "2026-10-13",
+      "applicant": "Applied Materials, Inc.",
+      "title": "Low-temperature selective epitaxy contact approach",
+      "why_noted": "In-scope Si selective epitaxy; already in baseline/known list; grant Tuesday before window",
+      "source_url": "https://patentsgazette.uspto.gov/week41/OG/html/1551-2/US12765027-20261013.html",
+      "already_in_baseline": true
+    },
+    {
+      "publication_id": "US12760442B2",
+      "event_type": "grant",
+      "event_date": "2026-10-13",
+      "applicant": "ASM IP Holding B.V.",
+      "title": "Wafer temperature gradient control to suppress slip formation in high-temperature epitaxial film growth",
+      "why_noted": "In-scope epi equipment/process; NOT in epi-known-pubs.txt but OUT of 2026-10-16..20 window — do not merge as this-window new",
+      "source_url": "https://patentsgazette.uspto.gov/week41/OG/html/1551-2/US12760442-20261013.html",
+      "already_in_baseline": false
+    },
+    {
+      "publication_id": "US12760441B2",
+      "event_type": "grant",
+      "event_date": "2026-10-13",
+      "applicant": "Applied Materials, Inc.",
+      "title": "EPI isolation plate with gap and angle adjustment for process tuning",
+      "why_noted": "In-scope epi chamber hardware (C30B25/14); NOT in epi-known-pubs.txt but OUT of window — backlog for separate merge, not this acceptance window",
+      "source_url": "https://patentsgazette.uspto.gov/week41/OG/html/1551-2/US12760441-20261013.html",
+      "already_in_baseline": false
+    }
+  ],
+  "notes": "Honest limitations — do NOT claim zero misses. 1) Google Patents xhr date-bounded queries (after:2026-10-14 before:2026-10-21) across selective-SiGe, chamber/susceptor, boron-doped SiGe, S/D epi, dry-clean, CPC C30B25/02 & H01L21/0262, assignees AMAT/ASM/TEL/TSMC/Lam, and CN/WO/JP/KR all returned total_num_results=0 (except one transient 503 on dry-clean, retry=0). 2) USPTO Official Gazette index as of search still lists Week 41 (2026-10-13) as latest 2026 issue; /week42/ patentee pages still titled October 21, 2025 — so 2026-10-20 (Tuesday) grants were not yet browsable on OG at crawl time. 3) Calendar: 2026-10-16=Friday; only US grant Tuesday in/near window is 2026-10-20 (OG not ready) and prior Tuesday 2026-10-13 (out of window). Thursday app-pub day 2026-10-15 returned 0 on GP date filter. 4) Espacenet/WIPO PATENTSCOPE blocked or empty (HTTP 403). Google Patents HTML patent pages for several known Oct-2026 IDs returned 404 via fetch provider — relied on USPTO OG HTML + Justia listing + GP xhr. 5) sort=new thematic GP queries returned many older pubs; sampled top IDs (KR/JP/CN/US/WO) had publication dates Aug 2026 or earlier — none in window. 6) Out-of-window epi-relevant grants on 2026-10-13 documented under out_of_window_sightings (US12765027B2 known; US12760442B2 and US12760441B2 appear missing from epi-known-pubs.txt). 7) actually_read=0 for in-window candidates (none). OG claim/title pages were opened for the three Oct-13 sightings only. 8) No fabricated publication IDs. Empty candidates after real multi-source search ≠ proof that no document published worldwide in-window. 9) Did not start 2025/09. Scope-out SiC/GaN growth targets and standalone wet cleans observed. Raw artifacts under /workspace/epi-acceptance-raw/2026-10-20-epi-track/."
+}
