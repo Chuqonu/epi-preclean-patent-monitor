@@ -59,6 +59,12 @@
     return tag;
   }
 
+  function discoveryLabelZh(src) {
+    if (src === "independent_search") return "独立检索纳入";
+    if (src === "reference_report") return "参考报告基线";
+    return "";
+  }
+
   function computeFigureStats(data) {
     let refs = 0;
     let loadable = 0;
@@ -177,12 +183,22 @@
     });
   }
 
+  function hasIndependentIncrement(data) {
+    return (data.months || []).some((m) =>
+      (m.families || []).some((f) => f.discovery_source === "independent_search")
+    );
+  }
+
+  function editionLabel(data) {
+    return hasIndependentIncrement(data) ? "初版 · 含独立检索增量" : "初版 · 基线导入";
+  }
+
   function renderSideMeta(data) {
     const el = $("#side-meta");
     if (!el) return;
     const through = data.research_through || "未设定";
     el.innerHTML =
-      "<strong>初版 · 基线导入</strong>" +
+      "<strong>" + esc(editionLabel(data)) + "</strong>" +
       esc(data.period || "") +
       " · 截至 " + esc(through);
   }
@@ -213,10 +229,14 @@
     if (data.coverage_note) {
       parts.push("<p>" + esc(data.coverage_note) + "</p>");
     }
+    const read = (data.counts && data.counts.actually_read != null) ? data.counts.actually_read : 0;
     parts.push(
-      "<p class=\"subtle\">本页为参考报告基线导入（初版），非正式交付，也不代表本团队已完成独立检索与逐条阅读。" +
-      "「本团队已读」为 0 表示尚未开展独立证据阅读。</p>"
+      "<p class=\"subtle\">初版（非正式交付）：含 Dot 基线导入与 Gate ③ 独立检索增量。" +
+      "「本团队已读」仅计独立检索条目在证据复核中实际阅读数（当前 " + esc(read) + "），基线条目仍不计入已读。</p>"
     );
+    if ((data.counts && data.counts.pending) > 0) {
+      parts.push("<p class=\"subtle\">待核 " + esc(data.counts.pending) + " 条见下方「关联待核」区，未作为独立新发现纳入主表。</p>");
+    }
     return parts.join("");
   }
 
@@ -228,7 +248,7 @@
     const fig = computeFigureStats(data);
     el.innerHTML =
       "<div class=\"count-bar\" role=\"group\" aria-label=\"计数：族月条目、事件、族、本团队已读、附图\">" +
-      "<span class=\"edition-tag\">初版 · 基线导入</span>" +
+      "<span class=\"edition-tag\">" + esc(editionLabel(data)) + "</span>" +
       "<div class=\"count-item\"><span class=\"count-num\">" + esc(bag.monthEntries) + "</span><span class=\"count-label\">族月条目</span></div>" +
       "<div class=\"count-item\"><span class=\"count-num\">" + esc(bag.events) + "</span><span class=\"count-label\">事件</span></div>" +
       "<div class=\"count-item\"><span class=\"count-num\">" + esc(bag.families) + "</span><span class=\"count-label\">族</span></div>" +
@@ -426,8 +446,18 @@
       (scopeLabelZh(f.scope_status)
         ? "<div class=\"subtle\">范围归类：" + esc(scopeLabelZh(f.scope_status)) + "</div>"
         : "") +
+      (discoveryLabelZh(f.discovery_source)
+        ? "<div class=\"subtle\">发现来源：" + esc(discoveryLabelZh(f.discovery_source)) + "</div>"
+        : "") +
       (importTagZh(f.import_tag)
-        ? "<div class=\"subtle import-tag\">数据性质：" + esc(importTagZh(f.import_tag)) + "（非本团队独立发现）</div>"
+        ? "<div class=\"subtle import-tag\">数据性质：" + esc(importTagZh(f.import_tag)) +
+          (f.import_tag === "imported baseline" ? "（非本团队独立发现）" : "") + "</div>"
+        : "") +
+      (f.family_merge_note
+        ? "<div class=\"subtle\">同族说明：" + esc(f.family_merge_note) + "</div>"
+        : "") +
+      (f.independent_search_confirmation
+        ? "<div class=\"subtle\">对照确认：" + esc(f.independent_search_confirmation) + "</div>"
         : "") +
       (f.verification ? "<div class=\"subtle\">核验：" + esc(f.verification) + "</div>" : "") +
       "</td></tr>" +
@@ -456,7 +486,31 @@
         "</div>";
       return;
     }
-    main.innerHTML = pages.join("");
+    main.innerHTML = pages.join("") + renderPendingQueue(data);
+  }
+
+  function renderPendingQueue(data) {
+    const rows = data.pending_or_related || [];
+    if (!rows.length) return "";
+    let body = "<ul class=\"pending-list\">";
+    rows.forEach((r) => {
+      const pub = r.publication_id || "—";
+      const date = r.event_date ? " · " + r.event_date : "";
+      const onMain = r.on_main_month_cards
+        ? "（基线主表已有，待核不复核升格）"
+        : "（未入主表）";
+      body +=
+        "<li><strong>" + esc(pub) + "</strong>" + esc(date) +
+        " — " + esc(r.title_zh || "") +
+        "<div class=\"subtle\">" + esc(r.pending_reason || r.failure_or_pending_reason || "") +
+        " " + esc(onMain) + "</div></li>";
+    });
+    body += "</ul>";
+    return (
+      "<details class=\"pending-queue\">" +
+      "<summary>关联待核（" + rows.length + "）</summary>" +
+      "<div class=\"pending-queue-body\">" + body + "</div></details>"
+    );
   }
 
   function swapImgToFail(img, reason) {
