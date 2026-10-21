@@ -707,7 +707,7 @@ button { font: inherit; cursor: pointer; }
     scroll-padding-top: var(--toc-drawer-clearance);
   }
 
-  /* Opaque band under fixed ☰ toggle — hash scroll can leave prior figcaption in this strip */
+  /* Visual wash in sticky band (below ☰ toggle, z-index 45 < toggle 46) */
   .shell:not(.drawer-open)::before {
     content: "";
     position: fixed;
@@ -804,6 +804,8 @@ button { font: inherit; cursor: pointer; }
   }
   .patent-page {
     padding: 20px 16px 14px;
+    /* Hash scroll applies html scroll-padding + patent scroll-margin (~2× clearance); gap must clear toggle box */
+    margin-bottom: calc(var(--toc-drawer-clearance) * 2 + 16px);
     scroll-margin-top: var(--toc-drawer-clearance);
   }
   .patent-table col.patent-col-label { width: 26%; }
