@@ -1,0 +1,396 @@
+{
+  "doc_id": "PRECLEAN-AHF-FIGURES-BACKFILL-2026-10-21",
+  "role": "Preclean检索",
+  "generated_at": "2026-10-21T09:55:33+08:00",
+  "timezone": "Asia/Shanghai",
+  "family_id": "FAM-ASM-AHF-PRECLEAN",
+  "goal": "Backfill official drawing PNGs for three figureless AHF cards; do not edit report.json / no git commit",
+  "pixel_source_pub": "US20240429038A1",
+  "pixel_source_reason": "Prior publication of Appl. 18/827,621; both US grants cite it; KR is same family with matching FIG.1–6 DOD.",
+  "drawing_pdf": {
+    "path": "/workspace/preclean-search/figures-fetch/ahf-2026-10-21/US20240429038A1_family_drawings_source.pdf",
+    "sha256": "0dcace4fb6065976fc33ccc1c345319c8e214e5d555616121f05e6c8f366018d",
+    "magic": "%PDF-1.1",
+    "pages": 22,
+    "source_url": "https://patentimages.storage.googleapis.com/28/37/35/dabb8a84a3946a/US20240429038A1.pdf"
+  },
+  "og_exemplary_gifs": {
+    "US12660544B2": {
+      "path": "/workspace/preclean-search/figures-fetch/ahf-2026-10-21/US12660544-D00000.gif",
+      "sha256": "f22e1100ed022b70458307be164d28c6b36fccf4d97cab94fec96bb478fae895",
+      "bytes": 17072,
+      "magic": "GIF89a"
+    },
+    "US12757665B2": {
+      "path": "/workspace/preclean-search/figures-fetch/ahf-2026-10-21/US12757665-D00000.gif",
+      "sha256": "f22e1100ed022b70458307be164d28c6b36fccf4d97cab94fec96bb478fae895",
+      "bytes": 17072,
+      "magic": "GIF89a"
+    }
+  },
+  "publications": [
+    {
+      "publication_id": "US12660544B2",
+      "status": "ok",
+      "family_id": "FAM-ASM-AHF-PRECLEAN",
+      "event_date": "2026-06-16",
+      "event_type": "grant",
+      "role": "family_primary_us_grant",
+      "source_url": "https://patents.google.com/patent/US20240429038A1/en",
+      "family_share_from": "US20240429038A1",
+      "family_share_reason": "Same Appl. No. 18/827,621; Prior Publication US 2024/0429038 A1 (USPTO OG). Google Patents 404 for grant itself; drawings from prior-pub official patentimages PNGs.",
+      "drawing_pdf": {
+        "path": "/workspace/preclean-search/figures-fetch/ahf-2026-10-21/US20240429038A1_family_drawings_source.pdf",
+        "sha256": "0dcace4fb6065976fc33ccc1c345319c8e214e5d555616121f05e6c8f366018d",
+        "magic": "%PDF-1.1",
+        "pages": 22,
+        "source_url": "https://patentimages.storage.googleapis.com/28/37/35/dabb8a84a3946a/US20240429038A1.pdf",
+        "note": "Full prior-publication PDF (includes spec+claims+drawings). Drawing sheets also as individual PNGs D00001–D00006."
+      },
+      "figures": [
+        {
+          "figure_number": "Fig. 1",
+          "caption": "FIG. 1 schematically depicts a semiconductor processing system for preclean, according to some embodiments.",
+          "local_asset_path": "assets/figures/US12660544B2_fig1.png",
+          "width": 1873,
+          "height": 2736,
+          "sha256": "6bdff9ceb554d5f14fbb7fa40bffec56798549afcc1d6cb772db541147cafcee",
+          "bytes": 51549,
+          "display_rotation": 0,
+          "uspto_drawing_sheet": "D00001",
+          "source_url": "https://patentimages.storage.googleapis.com/80/5e/5a/a7d174f8a9ed67/US20240429038A1-20241226-D00001.png",
+          "family_share_from": "US20240429038A1",
+          "pixel_source": "Google Patents patentimages PNG for US20240429038A1 (official USPTO drawing sheet render)"
+        },
+        {
+          "figure_number": "Fig. 2",
+          "caption": "FIG. 2 schematically depicts an anhydrous hydrogen fluoride delivery system according to some embodiments.",
+          "local_asset_path": "assets/figures/US12660544B2_fig2.png",
+          "width": 2056,
+          "height": 2806,
+          "sha256": "ffae87ab387da5ec09e65cea906a6bdd8fa1c6709cf3279e0315d8c07e1fdc5c",
+          "bytes": 68763,
+          "display_rotation": 0,
+          "uspto_drawing_sheet": "D00002",
+          "source_url": "https://patentimages.storage.googleapis.com/2e/fd/e1/03f0fe2548b9f5/US20240429038A1-20241226-D00002.png",
+          "family_share_from": "US20240429038A1",
+          "pixel_source": "Google Patents patentimages PNG for US20240429038A1 (official USPTO drawing sheet render)"
+        },
+        {
+          "figure_number": "Fig. 3",
+          "caption": "FIG. 3 schematically depicts a water vapor delivery system according to some embodiments.",
+          "local_asset_path": "assets/figures/US12660544B2_fig3.png",
+          "width": 2025,
+          "height": 2792,
+          "sha256": "69cdba4a2c12b9744337e6dd3f45ed051a61af2ea8ee3a9ff171548e6775f5ca",
+          "bytes": 66661,
+          "display_rotation": 0,
+          "uspto_drawing_sheet": "D00003",
+          "source_url": "https://patentimages.storage.googleapis.com/8c/c8/5d/91e5a82434eb2b/US20240429038A1-20241226-D00003.png",
+          "family_share_from": "US20240429038A1",
+          "pixel_source": "Google Patents patentimages PNG for US20240429038A1 (official USPTO drawing sheet render)"
+        },
+        {
+          "figure_number": "Fig. 4",
+          "caption": "FIG. 4 schematically depicts a gas delivery component passivation process according to some embodiments.",
+          "local_asset_path": "assets/figures/US12660544B2_fig4.png",
+          "width": 1300,
+          "height": 2725,
+          "sha256": "34d7d2a0f6e9ed5dac46ffe24f326561287f5d216a55e4660b0298395665a0a2",
+          "bytes": 27585,
+          "display_rotation": 0,
+          "uspto_drawing_sheet": "D00004",
+          "source_url": "https://patentimages.storage.googleapis.com/a1/9b/9b/cc872ce4a0ad50/US20240429038A1-20241226-D00004.png",
+          "family_share_from": "US20240429038A1",
+          "pixel_source": "Google Patents patentimages PNG for US20240429038A1 (official USPTO drawing sheet render)"
+        },
+        {
+          "figure_number": "Fig. 5",
+          "caption": "FIG. 5 schematically depicts a method of precleaning a substrate according to some embodiments.",
+          "local_asset_path": "assets/figures/US12660544B2_fig5.png",
+          "width": 1779,
+          "height": 2817,
+          "sha256": "a57d45d6c118962600aa68d103fa7217f7d54a069f391c48b1187951442589ec",
+          "bytes": 59910,
+          "display_rotation": 0,
+          "uspto_drawing_sheet": "D00005",
+          "source_url": "https://patentimages.storage.googleapis.com/b6/b2/ed/9ecf9891d89347/US20240429038A1-20241226-D00005.png",
+          "family_share_from": "US20240429038A1",
+          "pixel_source": "Google Patents patentimages PNG for US20240429038A1 (official USPTO drawing sheet render)"
+        },
+        {
+          "figure_number": "Fig. 6",
+          "caption": "FIG. 6 schematically depicts another method of precleaning a substrate according to some embodiments of the present disclosure.",
+          "local_asset_path": "assets/figures/US12660544B2_fig6.png",
+          "width": 1779,
+          "height": 2817,
+          "sha256": "609732f6f4c595345574a8e7416749d5a0934350019db3eee9265bc2d5ef347e",
+          "bytes": 63252,
+          "display_rotation": 0,
+          "uspto_drawing_sheet": "D00006",
+          "source_url": "https://patentimages.storage.googleapis.com/be/ea/6c/487e389abb3376/US20240429038A1-20241226-D00006.png",
+          "family_share_from": "US20240429038A1",
+          "pixel_source": "Google Patents patentimages PNG for US20240429038A1 (official USPTO drawing sheet render)"
+        }
+      ],
+      "display_rotation_default": 0,
+      "method_notes": [
+        "Direct GP grant pages US12660544B2 / US12757665B2 return 404.",
+        "DEPATISnet bibdat for US012660544B2 shows Seiten:0 (no PDF pages).",
+        "USPTO image-ppubs downloadPdf/12660544 → 404.",
+        "Succeeded via prior publication US20240429038A1 on Google Patents patentimages (official PNG sheets + PDF).",
+        "USPTO OG exemplary GIFs also retrieved (week24 / week40) as corroboration; PNG sheets preferred over OG GIF."
+      ],
+      "source_urls_checked": [
+        "https://patents.google.com/patent/US12660544B2/en (404)",
+        "https://patentsgazette.uspto.gov/week24/OG/html/1547-3/US12660544-20260616.html",
+        "https://patents.google.com/patent/US20240429038A1/en",
+        "https://depatisnet.dpma.de/DepatisNet/depatisnet?action=bibdat&docid=US012660544B2 (Seiten:0, no PDF)"
+      ],
+      "failure_reason": null
+    },
+    {
+      "publication_id": "US12757665B2",
+      "status": "ok",
+      "family_id": "FAM-ASM-AHF-PRECLEAN",
+      "event_date": "2026-10-06",
+      "event_type": "grant",
+      "role": "family_us_grant_oct",
+      "source_url": "https://patents.google.com/patent/US20240429038A1/en",
+      "family_share_from": "US20240429038A1",
+      "family_share_reason": "USPTO OG week40 lists same Appl. No. 18/827,621 and Prior Publication US 2024/0429038 A1; same title/exemplary drawing family. GP 404 for grant; share prior-pub drawing sheets.",
+      "drawing_pdf": {
+        "path": "/workspace/preclean-search/figures-fetch/ahf-2026-10-21/US20240429038A1_family_drawings_source.pdf",
+        "sha256": "0dcace4fb6065976fc33ccc1c345319c8e214e5d555616121f05e6c8f366018d",
+        "magic": "%PDF-1.1",
+        "pages": 22,
+        "source_url": "https://patentimages.storage.googleapis.com/28/37/35/dabb8a84a3946a/US20240429038A1.pdf",
+        "note": "Full prior-publication PDF (includes spec+claims+drawings). Drawing sheets also as individual PNGs D00001–D00006."
+      },
+      "figures": [
+        {
+          "figure_number": "Fig. 1",
+          "caption": "FIG. 1 schematically depicts a semiconductor processing system for preclean, according to some embodiments.",
+          "local_asset_path": "assets/figures/US12757665B2_fig1.png",
+          "width": 1873,
+          "height": 2736,
+          "sha256": "6bdff9ceb554d5f14fbb7fa40bffec56798549afcc1d6cb772db541147cafcee",
+          "bytes": 51549,
+          "display_rotation": 0,
+          "uspto_drawing_sheet": "D00001",
+          "source_url": "https://patentimages.storage.googleapis.com/80/5e/5a/a7d174f8a9ed67/US20240429038A1-20241226-D00001.png",
+          "family_share_from": "US20240429038A1",
+          "pixel_source": "Google Patents patentimages PNG for US20240429038A1 (official USPTO drawing sheet render)"
+        },
+        {
+          "figure_number": "Fig. 2",
+          "caption": "FIG. 2 schematically depicts an anhydrous hydrogen fluoride delivery system according to some embodiments.",
+          "local_asset_path": "assets/figures/US12757665B2_fig2.png",
+          "width": 2056,
+          "height": 2806,
+          "sha256": "ffae87ab387da5ec09e65cea906a6bdd8fa1c6709cf3279e0315d8c07e1fdc5c",
+          "bytes": 68763,
+          "display_rotation": 0,
+          "uspto_drawing_sheet": "D00002",
+          "source_url": "https://patentimages.storage.googleapis.com/2e/fd/e1/03f0fe2548b9f5/US20240429038A1-20241226-D00002.png",
+          "family_share_from": "US20240429038A1",
+          "pixel_source": "Google Patents patentimages PNG for US20240429038A1 (official USPTO drawing sheet render)"
+        },
+        {
+          "figure_number": "Fig. 3",
+          "caption": "FIG. 3 schematically depicts a water vapor delivery system according to some embodiments.",
+          "local_asset_path": "assets/figures/US12757665B2_fig3.png",
+          "width": 2025,
+          "height": 2792,
+          "sha256": "69cdba4a2c12b9744337e6dd3f45ed051a61af2ea8ee3a9ff171548e6775f5ca",
+          "bytes": 66661,
+          "display_rotation": 0,
+          "uspto_drawing_sheet": "D00003",
+          "source_url": "https://patentimages.storage.googleapis.com/8c/c8/5d/91e5a82434eb2b/US20240429038A1-20241226-D00003.png",
+          "family_share_from": "US20240429038A1",
+          "pixel_source": "Google Patents patentimages PNG for US20240429038A1 (official USPTO drawing sheet render)"
+        },
+        {
+          "figure_number": "Fig. 4",
+          "caption": "FIG. 4 schematically depicts a gas delivery component passivation process according to some embodiments.",
+          "local_asset_path": "assets/figures/US12757665B2_fig4.png",
+          "width": 1300,
+          "height": 2725,
+          "sha256": "34d7d2a0f6e9ed5dac46ffe24f326561287f5d216a55e4660b0298395665a0a2",
+          "bytes": 27585,
+          "display_rotation": 0,
+          "uspto_drawing_sheet": "D00004",
+          "source_url": "https://patentimages.storage.googleapis.com/a1/9b/9b/cc872ce4a0ad50/US20240429038A1-20241226-D00004.png",
+          "family_share_from": "US20240429038A1",
+          "pixel_source": "Google Patents patentimages PNG for US20240429038A1 (official USPTO drawing sheet render)"
+        },
+        {
+          "figure_number": "Fig. 5",
+          "caption": "FIG. 5 schematically depicts a method of precleaning a substrate according to some embodiments.",
+          "local_asset_path": "assets/figures/US12757665B2_fig5.png",
+          "width": 1779,
+          "height": 2817,
+          "sha256": "a57d45d6c118962600aa68d103fa7217f7d54a069f391c48b1187951442589ec",
+          "bytes": 59910,
+          "display_rotation": 0,
+          "uspto_drawing_sheet": "D00005",
+          "source_url": "https://patentimages.storage.googleapis.com/b6/b2/ed/9ecf9891d89347/US20240429038A1-20241226-D00005.png",
+          "family_share_from": "US20240429038A1",
+          "pixel_source": "Google Patents patentimages PNG for US20240429038A1 (official USPTO drawing sheet render)"
+        },
+        {
+          "figure_number": "Fig. 6",
+          "caption": "FIG. 6 schematically depicts another method of precleaning a substrate according to some embodiments of the present disclosure.",
+          "local_asset_path": "assets/figures/US12757665B2_fig6.png",
+          "width": 1779,
+          "height": 2817,
+          "sha256": "609732f6f4c595345574a8e7416749d5a0934350019db3eee9265bc2d5ef347e",
+          "bytes": 63252,
+          "display_rotation": 0,
+          "uspto_drawing_sheet": "D00006",
+          "source_url": "https://patentimages.storage.googleapis.com/be/ea/6c/487e389abb3376/US20240429038A1-20241226-D00006.png",
+          "family_share_from": "US20240429038A1",
+          "pixel_source": "Google Patents patentimages PNG for US20240429038A1 (official USPTO drawing sheet render)"
+        }
+      ],
+      "display_rotation_default": 0,
+      "method_notes": [
+        "Direct GP grant pages US12660544B2 / US12757665B2 return 404.",
+        "DEPATISnet bibdat for US012660544B2 shows Seiten:0 (no PDF pages).",
+        "USPTO image-ppubs downloadPdf/12660544 → 404.",
+        "Succeeded via prior publication US20240429038A1 on Google Patents patentimages (official PNG sheets + PDF).",
+        "USPTO OG exemplary GIFs also retrieved (week24 / week40) as corroboration; PNG sheets preferred over OG GIF."
+      ],
+      "source_urls_checked": [
+        "https://patents.google.com/patent/US12757665B2/en (404)",
+        "https://patentsgazette.uspto.gov/week40/OG/html/1551-1/US12757665-20261006.html",
+        "https://patents.google.com/patent/US20240429038A1/en"
+      ],
+      "failure_reason": null
+    },
+    {
+      "publication_id": "KR102916044B1",
+      "status": "ok",
+      "family_id": "FAM-ASM-AHF-PRECLEAN",
+      "event_date": "2026-01-21",
+      "event_type": "grant",
+      "role": "family_kr_grant",
+      "source_url": "https://patents.google.com/patent/US20240429038A1/en",
+      "family_share_from": "US20240429038A1",
+      "family_share_reason": "Same FAM-ASM-AHF-PRECLEAN; GP KR page links US20240429038A1 / US12112938B2; description-of-drawings FIG.1–6 match; GP shows patent-image-not-available for KR native images.",
+      "drawing_pdf": {
+        "path": "/workspace/preclean-search/figures-fetch/ahf-2026-10-21/US20240429038A1_family_drawings_source.pdf",
+        "sha256": "0dcace4fb6065976fc33ccc1c345319c8e214e5d555616121f05e6c8f366018d",
+        "magic": "%PDF-1.1",
+        "pages": 22,
+        "source_url": "https://patentimages.storage.googleapis.com/28/37/35/dabb8a84a3946a/US20240429038A1.pdf",
+        "note": "Full prior-publication PDF (includes spec+claims+drawings). Drawing sheets also as individual PNGs D00001–D00006."
+      },
+      "figures": [
+        {
+          "figure_number": "Fig. 1",
+          "caption": "FIG. 1 schematically depicts a semiconductor processing system for preclean, according to some embodiments.",
+          "local_asset_path": "assets/figures/KR102916044B1_fig1.png",
+          "width": 1873,
+          "height": 2736,
+          "sha256": "6bdff9ceb554d5f14fbb7fa40bffec56798549afcc1d6cb772db541147cafcee",
+          "bytes": 51549,
+          "display_rotation": 0,
+          "uspto_drawing_sheet": "D00001",
+          "source_url": "https://patentimages.storage.googleapis.com/80/5e/5a/a7d174f8a9ed67/US20240429038A1-20241226-D00001.png",
+          "family_share_from": "US20240429038A1",
+          "pixel_source": "Google Patents patentimages PNG for US20240429038A1 (official USPTO drawing sheet render)"
+        },
+        {
+          "figure_number": "Fig. 2",
+          "caption": "FIG. 2 schematically depicts an anhydrous hydrogen fluoride delivery system according to some embodiments.",
+          "local_asset_path": "assets/figures/KR102916044B1_fig2.png",
+          "width": 2056,
+          "height": 2806,
+          "sha256": "ffae87ab387da5ec09e65cea906a6bdd8fa1c6709cf3279e0315d8c07e1fdc5c",
+          "bytes": 68763,
+          "display_rotation": 0,
+          "uspto_drawing_sheet": "D00002",
+          "source_url": "https://patentimages.storage.googleapis.com/2e/fd/e1/03f0fe2548b9f5/US20240429038A1-20241226-D00002.png",
+          "family_share_from": "US20240429038A1",
+          "pixel_source": "Google Patents patentimages PNG for US20240429038A1 (official USPTO drawing sheet render)"
+        },
+        {
+          "figure_number": "Fig. 3",
+          "caption": "FIG. 3 schematically depicts a water vapor delivery system according to some embodiments.",
+          "local_asset_path": "assets/figures/KR102916044B1_fig3.png",
+          "width": 2025,
+          "height": 2792,
+          "sha256": "69cdba4a2c12b9744337e6dd3f45ed051a61af2ea8ee3a9ff171548e6775f5ca",
+          "bytes": 66661,
+          "display_rotation": 0,
+          "uspto_drawing_sheet": "D00003",
+          "source_url": "https://patentimages.storage.googleapis.com/8c/c8/5d/91e5a82434eb2b/US20240429038A1-20241226-D00003.png",
+          "family_share_from": "US20240429038A1",
+          "pixel_source": "Google Patents patentimages PNG for US20240429038A1 (official USPTO drawing sheet render)"
+        },
+        {
+          "figure_number": "Fig. 4",
+          "caption": "FIG. 4 schematically depicts a gas delivery component passivation process according to some embodiments.",
+          "local_asset_path": "assets/figures/KR102916044B1_fig4.png",
+          "width": 1300,
+          "height": 2725,
+          "sha256": "34d7d2a0f6e9ed5dac46ffe24f326561287f5d216a55e4660b0298395665a0a2",
+          "bytes": 27585,
+          "display_rotation": 0,
+          "uspto_drawing_sheet": "D00004",
+          "source_url": "https://patentimages.storage.googleapis.com/a1/9b/9b/cc872ce4a0ad50/US20240429038A1-20241226-D00004.png",
+          "family_share_from": "US20240429038A1",
+          "pixel_source": "Google Patents patentimages PNG for US20240429038A1 (official USPTO drawing sheet render)"
+        },
+        {
+          "figure_number": "Fig. 5",
+          "caption": "FIG. 5 schematically depicts a method of precleaning a substrate according to some embodiments.",
+          "local_asset_path": "assets/figures/KR102916044B1_fig5.png",
+          "width": 1779,
+          "height": 2817,
+          "sha256": "a57d45d6c118962600aa68d103fa7217f7d54a069f391c48b1187951442589ec",
+          "bytes": 59910,
+          "display_rotation": 0,
+          "uspto_drawing_sheet": "D00005",
+          "source_url": "https://patentimages.storage.googleapis.com/b6/b2/ed/9ecf9891d89347/US20240429038A1-20241226-D00005.png",
+          "family_share_from": "US20240429038A1",
+          "pixel_source": "Google Patents patentimages PNG for US20240429038A1 (official USPTO drawing sheet render)"
+        },
+        {
+          "figure_number": "Fig. 6",
+          "caption": "FIG. 6 schematically depicts another method of precleaning a substrate according to some embodiments of the present disclosure.",
+          "local_asset_path": "assets/figures/KR102916044B1_fig6.png",
+          "width": 1779,
+          "height": 2817,
+          "sha256": "609732f6f4c595345574a8e7416749d5a0934350019db3eee9265bc2d5ef347e",
+          "bytes": 63252,
+          "display_rotation": 0,
+          "uspto_drawing_sheet": "D00006",
+          "source_url": "https://patentimages.storage.googleapis.com/be/ea/6c/487e389abb3376/US20240429038A1-20241226-D00006.png",
+          "family_share_from": "US20240429038A1",
+          "pixel_source": "Google Patents patentimages PNG for US20240429038A1 (official USPTO drawing sheet render)"
+        }
+      ],
+      "display_rotation_default": 0,
+      "method_notes": [
+        "Direct GP grant pages US12660544B2 / US12757665B2 return 404.",
+        "DEPATISnet bibdat for US012660544B2 shows Seiten:0 (no PDF pages).",
+        "USPTO image-ppubs downloadPdf/12660544 → 404.",
+        "Succeeded via prior publication US20240429038A1 on Google Patents patentimages (official PNG sheets + PDF).",
+        "USPTO OG exemplary GIFs also retrieved (week24 / week40) as corroboration; PNG sheets preferred over OG GIF."
+      ],
+      "source_urls_checked": [
+        "https://patents.google.com/patent/KR102916044B1/en (HTML ok, images unavailable)",
+        "https://patents.google.com/patent/US20240429038A1/en"
+      ],
+      "failure_reason": null
+    }
+  ],
+  "assets_written_to": [
+    "/workspace/epi-preclean-patent-monitor-git/assets/figures",
+    "/workspace/epi-preclean-patent-monitor/assets/figures"
+  ],
+  "untouched_note": "Did not touch US12660522B2_fig1.png or any non-AHF assets; did not edit data/report.json; no git commit/push.",
+  "track_a_note": "Did not touch EPI team_read five figureless pubs."
+}

@@ -1,0 +1,215 @@
+{
+  "document_type": "epi_tel_gap_evidence_backfill",
+  "lane": "EPI",
+  "created_at": "2026-10-21T10:02:41+08:00",
+  "timezone": "Asia/Shanghai",
+  "purpose": "补齐 TEL gap 两案 source_sha256 + retrieved_at + actual_read_spans（总经理优先 US12757648B2；顺手 US20250311241A1）。不 solo stamp、不改 live report.json、不抬 team_read/actually_read 锁。",
+  "hard_rules": [
+    "禁 2025/09 作为监测起点事件",
+    "不编造 spans；空 spans 不冒充已读",
+    "不碰 Preclean AHF",
+    "不改 live report.json / 不 solo PR stamp",
+    "不宣称已读锁升到 7 / 不升 team_read"
+  ],
+  "method": [
+    "官方源：USPTO image-ppubs PDF（图档无文字层）",
+    "对落盘 PDF 计算 sha256；OCR（tesseract）关键页核对 abstract/claims/图说",
+    "US12757648B2：GP 全文页 404；辅源 USPTO Official Gazette claim HTML",
+    "US20250311241A1：辅源 Google Patents HTML 全文（可读 claims）",
+    "同族先公开 US20250293024A1（2025-09-18）仅作对照，不记为监测事件"
+  ],
+  "stats": {
+    "targets": 2,
+    "ok": 2,
+    "failed": 0,
+    "team_read_lock_change": "none",
+    "live_report_touched": false
+  },
+  "entries": [
+    {
+      "publication_id": "US12757648B2",
+      "status": "ok",
+      "priority": "primary_gm",
+      "scope_status_hint": "core",
+      "event_note": "grant 2026-10-06；同族 A1 US20250293024A1 pub 2025-09-18 禁止作起点事件",
+      "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12757648",
+      "source_kind": "uspto_image_ppubs_pdf",
+      "source_sha256": "3f49aacda0e96652057c1f84c5c264b08258e01112a6693cd38b295cbc6391be",
+      "source_bytes": 815674,
+      "retrieved_at": "2026-10-21T09:55:46+08:00",
+      "evidence_read_at": "2026-10-21T10:02:41+08:00",
+      "fulltext_local_path": "raw/tel-gap-evidence-2026-10-21/US12757648B2.pdf",
+      "pdf_pages": 12,
+      "pdf_text_layer": false,
+      "secondary_sources": [
+        {
+          "kind": "uspto_official_gazette_html",
+          "url": "https://patentsgazette.uspto.gov/week40/OG/html/1551-1/US12757648-20261006.html",
+          "local_path": "raw/tel-gap-evidence-2026-10-21/US12757648B2.og.html",
+          "sha256": "f3e63ea7b70e0c0f1ded6f6892dab7c7862571b8c47e48f84a3b796ded0bbdd6",
+          "bytes": 5005,
+          "note": "claim 1 全文可读；与 PDF OCR claim 1 一致（氧化物去除→氢烘→Ge 稀释预清洁→外延 SiGe）"
+        },
+        {
+          "kind": "google_patents_html",
+          "url": "https://patents.google.com/patent/US12757648B2/en",
+          "local_path": "raw/tel-gap-evidence-2026-10-21/US12757648B2.gp.html",
+          "sha256": "ab9dbab873fff677deb2cfd95ea60b9295ebd53b58ec8533e9e1110b2451e540",
+          "bytes": 1449,
+          "http_status_observed": 404,
+          "note": "GP 对本授权号返回 Error 404；不可作全文源"
+        }
+      ],
+      "ocr_local_dir": "raw/tel-gap-evidence-2026-10-21/ocr/",
+      "actual_read_spans": [
+        "USPTO_PDF_p1_abstract",
+        "USPTO_PDF_p2_fig1_sheet1of5",
+        "USPTO_PDF_p11_embodiments_to_claim1_start",
+        "USPTO_PDF_p12_claims_1-7",
+        "USPTO_OG_claim1"
+      ],
+      "actual_read_spans_detail": [
+        {
+          "span": "USPTO_PDF_p1_abstract",
+          "basis": "OCR page 1 ABSTRACT：氧化物去除 + 氢热处理 + Ge 含气体稀氢预清洁 + forming a silicon germanium film by epitaxial growth",
+          "local_ocr": "raw/tel-gap-evidence-2026-10-21/ocr/US12757648B2_p-01.txt"
+        },
+        {
+          "span": "USPTO_PDF_p2_fig1_sheet1of5",
+          "basis": "PDF page 2 = Sheet 1 of 5 设备总图（已渲 assets/figures/US12757648B2_fig1.png）；页眉 U.S. Patent Oct. 6, 2026 Sheet 1 of 5",
+          "local_ocr": "raw/tel-gap-evidence-2026-10-21/ocr/US12757648B2_p-02.txt",
+          "figure_asset": "assets/figures/US12757648B2_fig1.png"
+        },
+        {
+          "span": "USPTO_PDF_p11_embodiments_to_claim1_start",
+          "basis": "OCR p11：预清洁/SiGe 成膜实施例 + What is claimed is / claim 1 起句",
+          "local_ocr": "raw/tel-gap-evidence-2026-10-21/ocr/US12757648B2_p-11.txt"
+        },
+        {
+          "span": "USPTO_PDF_p12_claims_1-7",
+          "basis": "OCR p12：claim 1 含 epitaxial growth of silicon germanium；claim 7 另含 silicon film by epitaxial growth；共 7 claims",
+          "local_ocr": "raw/tel-gap-evidence-2026-10-21/ocr/US12757648B2_p-12.txt"
+        },
+        {
+          "span": "USPTO_OG_claim1",
+          "basis": "Official Gazette HTML claim 1 与 PDF OCR 一致（独立方法权利要求结尾外延 SiGe）",
+          "local_path": "raw/tel-gap-evidence-2026-10-21/US12757648B2.og.html"
+        }
+      ],
+      "figure_already_fetched": {
+        "local_path": "assets/figures/US12757648B2_fig1.png",
+        "asset_sha256": "73dccbb96b3d37853242a7600c6691630616f016a600d69fee31b35ebc2f9436",
+        "from_manifest": "docs/EPI-FIGURELESS-BACKFILL-wire-2026-10-21.json"
+      },
+      "notes": [
+        "source_sha256 绑定本轮 OCR 所用 PDF（与 figureless 清单 pdf_sha256 一致）",
+        "10:01 再次 curl USPTO PDF：同页数但字节流 sha 不同（USPTO 动态构建常见）；241 refetch 甚至 xref 损坏。证据以已读落盘本为准，不替换。",
+        "GP B2 页 404，故 claims 辅证走 OG HTML，不以 GP 冒充全文",
+        "不抬 actually_read / team_read；本文件只补证据字段供合入方写入"
+      ],
+      "pending_reason": null,
+      "does_not_raise_team_read": true
+    },
+    {
+      "publication_id": "US20250311241A1",
+      "status": "ok",
+      "priority": "secondary_related",
+      "scope_status_hint": "related",
+      "event_note": "publication 2025-10-02（基线窗内 TEL related）",
+      "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20250311241",
+      "source_kind": "uspto_image_ppubs_pdf",
+      "source_sha256": "e940d989b74dc3adcd7aa6c4d74c541500b2120faf21a57677e5943cd3acf215",
+      "source_bytes": 1363843,
+      "retrieved_at": "2026-10-21T09:55:46+08:00",
+      "evidence_read_at": "2026-10-21T10:02:41+08:00",
+      "fulltext_local_path": "raw/tel-gap-evidence-2026-10-21/US20250311241A1.pdf",
+      "pdf_pages": 14,
+      "pdf_text_layer": false,
+      "secondary_sources": [
+        {
+          "kind": "google_patents_html",
+          "url": "https://patents.google.com/patent/US20250311241A1/en",
+          "local_path": "raw/tel-gap-evidence-2026-10-21/US20250311241A1.gp.html",
+          "sha256": "111c4550a9847c4d2422f57b0d1e38f08921200ec3cd5ebe85a77cdd6cb65ad7",
+          "bytes": 128095,
+          "note": "可读 abstract + claims（20）；与 PDF OCR 交叉核对 first/second epitaxial layer"
+        }
+      ],
+      "ocr_local_dir": "raw/tel-gap-evidence-2026-10-21/ocr/",
+      "actual_read_spans": [
+        "USPTO_PDF_p1_abstract",
+        "USPTO_PDF_p2_fig1_sheet1of7",
+        "USPTO_PDF_p11_brief_description_fig1_and_embodiments",
+        "USPTO_PDF_p13_claims_1-19",
+        "USPTO_PDF_p14_claim_20",
+        "GP_HTML_abstract_claims"
+      ],
+      "actual_read_spans_detail": [
+        {
+          "span": "USPTO_PDF_p1_abstract",
+          "basis": "OCR p1 ABSTRACT：vertical DRAM + expose a first epitaxial layer + hybrid bonding",
+          "local_ocr": "raw/tel-gap-evidence-2026-10-21/ocr/US20250311241A1_p-01.txt"
+        },
+        {
+          "span": "USPTO_PDF_p2_fig1_sheet1of7",
+          "basis": "PDF page 2 结构剖面 Fig.1（已渲 assets/figures/US20250311241A1_fig1.png）",
+          "figure_asset": "assets/figures/US20250311241A1_fig1.png"
+        },
+        {
+          "span": "USPTO_PDF_p11_brief_description_fig1_and_embodiments",
+          "basis": "OCR p11：[0036] FIG. 1 shows a side view…；实施例提及 epitaxial layer / SiGe",
+          "local_ocr": "raw/tel-gap-evidence-2026-10-21/ocr/US20250311241A1_p-11.txt"
+        },
+        {
+          "span": "USPTO_PDF_p13_claims_1-19",
+          "basis": "OCR p13：claim 1 含 first/second epitaxial layer 交替堆叠 + etch 成 vertical channel；claim 2 buffer 含 SiGe",
+          "local_ocr": "raw/tel-gap-evidence-2026-10-21/ocr/US20250311241A1_p-13.txt"
+        },
+        {
+          "span": "USPTO_PDF_p14_claim_20",
+          "basis": "OCR p14：claim 20（bonding pad Cu/Al/W）收束",
+          "local_ocr": "raw/tel-gap-evidence-2026-10-21/ocr/US20250311241A1_p-14.txt"
+        },
+        {
+          "span": "GP_HTML_abstract_claims",
+          "basis": "Google Patents HTML abstract + Claims(20) 与 PDF OCR 对齐",
+          "local_path": "raw/tel-gap-evidence-2026-10-21/US20250311241A1.gp.html"
+        }
+      ],
+      "figure_already_fetched": {
+        "local_path": "assets/figures/US20250311241A1_fig1.png",
+        "asset_sha256": "12829f7e59438fdf6ef855ca986b13b7c9c2c1441b8454d5a72d8c9dfb8c1459",
+        "from_manifest": "docs/EPI-FIGURELESS-BACKFILL-wire-2026-10-21.json"
+      },
+      "notes": [
+        "related 范围（非 EPI 专用腔体）；补证据不等于升 core",
+        "10:01 USPTO refetch PDF xref 损坏且 sha 不同；保留已 OCR 落盘本",
+        "不抬 team_read"
+      ],
+      "pending_reason": null,
+      "does_not_raise_team_read": true
+    }
+  ],
+  "suggested_report_fields": {
+    "source_url": "entries[].source_url",
+    "source_sha256": "entries[].source_sha256",
+    "source_retrieved_at": "entries[].retrieved_at",
+    "actual_read_spans": "entries[].actual_read_spans",
+    "note": "合入方写入 report.json 时用上述字段；EPI 不 solo stamp"
+  },
+  "refetch_observation": {
+    "at": "2026-10-21T10:02:41+08:00",
+    "US12757648B2": {
+      "kept_sha256_12": "3f49aacda0e9",
+      "refetch_sha256_12": "cf06580038c2",
+      "refetch_pages": 12,
+      "action": "keep_ocr_copy"
+    },
+    "US20250311241A1": {
+      "kept_sha256_12": "e940d989b74d",
+      "refetch_sha256_12": "2ddb7279e9a1",
+      "refetch_pdfinfo": "xref_error_corrupt",
+      "action": "keep_ocr_copy"
+    }
+  }
+}
