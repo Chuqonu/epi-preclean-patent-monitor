@@ -394,24 +394,8 @@
           const domain = chipClass.domains.join(" ");
           const lane = chipClass.lanes.join(" ");
 
-          const collapsed = document.createElement("a");
-          collapsed.className = "mini mini--toc-collapsed";
-          collapsed.href = "#" + encodeURIComponent(f.id);
-          collapsed.dataset.target = f.id;
-          collapsed.dataset.filterDomain = domain;
-          collapsed.dataset.filterLane = lane;
-          collapsed.innerHTML =
-            "<span class=\"mini-collapsed-date\">" + esc(f.publication_date || "") + "</span>" +
-            "<span class=\"mini-collapsed-pub\">" + esc(f.publication_number || "") + "</span>";
-          collapsed.addEventListener("click", (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            jumpToPatent(f.id, collapsed);
-          });
-          collapsedStrip.appendChild(collapsed);
-
           const a = document.createElement("a");
-          a.className = "mini mini--toc-expanded";
+          a.className = "mini";
           a.href = "#" + encodeURIComponent(f.id);
           a.dataset.target = f.id;
           a.dataset.filterDomain = domain;
@@ -439,30 +423,39 @@
   function setActiveMini(id) {
     document.querySelectorAll(".mini.active").forEach((n) => n.classList.remove("active"));
     document.querySelectorAll(".month.month--spy-active").forEach((n) => n.classList.remove("month--spy-active"));
-    const links = document.querySelectorAll('.mini[data-target="' + CSS.escape(id) + '"]');
-    links.forEach((link) => link.classList.add("active"));
-    const month = links.length ? links[0].closest("details.month") : null;
-    if (month && !month.open) month.classList.add("month--spy-active");
+
+    const page = document.getElementById(id);
+    if (!page) return;
+
+    const monthKey = page.dataset.month || "";
+    const month = monthKey
+      ? document.querySelector('details.month[data-month="' + CSS.escape(monthKey) + '"]')
+      : null;
+    if (!month) return;
 
     const tree = $("#tree");
-    if (!tree || !links.length) return;
-    const collapsed = document.querySelector(
-      '.mini--toc-collapsed[data-target="' + CSS.escape(id) + '"]'
-    );
-    const expanded = document.querySelector(
-      '.mini--toc-expanded[data-target="' + CSS.escape(id) + '"]'
-    );
-    const scrollEl =
-      collapsed && collapsed.offsetParent !== null
-        ? collapsed
-        : expanded && expanded.offsetParent !== null
-          ? expanded
-          : collapsed || expanded;
-    if (!scrollEl) return;
-    const tRect = tree.getBoundingClientRect();
-    const eRect = scrollEl.getBoundingClientRect();
-    if (eRect.top < tRect.top + 4 || eRect.bottom > tRect.bottom - 4) {
-      scrollEl.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    const mini = month.querySelector('.mini[data-target="' + CSS.escape(id) + '"]');
+
+    if (month.open && mini) {
+      mini.classList.add("active");
+      if (tree) {
+        const tRect = tree.getBoundingClientRect();
+        const eRect = mini.getBoundingClientRect();
+        if (eRect.top < tRect.top + 4 || eRect.bottom > tRect.bottom - 4) {
+          mini.scrollIntoView({ block: "nearest", behavior: "smooth" });
+        }
+      }
+      return;
+    }
+
+    month.classList.add("month--spy-active");
+    const scrollEl = month.querySelector(".month-summary-head") || month.querySelector("summary");
+    if (tree && scrollEl) {
+      const tRect = tree.getBoundingClientRect();
+      const eRect = scrollEl.getBoundingClientRect();
+      if (eRect.top < tRect.top + 4 || eRect.bottom > tRect.bottom - 4) {
+        scrollEl.scrollIntoView({ block: "nearest", behavior: "smooth" });
+      }
     }
   }
 
