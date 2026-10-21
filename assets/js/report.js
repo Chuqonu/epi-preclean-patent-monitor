@@ -471,24 +471,6 @@
     history.replaceState(null, "", "#" + encodeURIComponent(id));
   }
 
-  function renderEvents(events) {
-    if (!events || !events.length) return "<span class=\"subtle\">—</span>";
-    let html = "<table class=\"events\"><thead><tr><th>号</th><th>日期</th><th>事件</th></tr></thead><tbody>";
-    events.forEach((ev) => {
-      const num = ev.source_url
-        ? "<a href=\"" + esc(ev.source_url) + "\" target=\"_blank\" rel=\"noopener\">" + esc(ev.number) + "</a>"
-        : esc(ev.number);
-      html += "<tr><td>" + num + "</td><td>" + esc(ev.date || "") + "</td><td>" + esc(ev.event || "") + "</td></tr>";
-    });
-    html += "</tbody></table>";
-    return html;
-  }
-
-  function renderFamilyContext(ctx) {
-    if (!ctx || !ctx.length) return "<span class=\"subtle\">—</span>";
-    return ctx.map((c) => esc(c.number) + (c.date ? " (" + esc(c.date) + ")" : "")).join("； ");
-  }
-
   function reportDataUrl() {
     const meta = document.querySelector('meta[name="epi-report-data"]');
     const url = meta && meta.getAttribute("content");
@@ -695,13 +677,6 @@
       patentFieldRow(
         "公开/授权日",
         esc(f.publication_date || "") + (f.category ? " · " + esc(f.category) : "")
-      ) +
-      patentFieldRow(
-        "同族 / 事件",
-        "<div class=\"section-label\">同族关系</div>" + renderFamilyContext(f.family_context) +
-        "<div class=\"section-label\">公开/授权事件</div>" + renderEvents(f.events) +
-        (f.event_note ? "<div class=\"subtle\">" + esc(f.event_note) + "</div>" : ""),
-        "section-body"
       ) +
       patentFieldRow(
         "中文技术简介",
