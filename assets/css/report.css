@@ -703,11 +703,7 @@ button { font: inherit; cursor: pointer; }
     );
   }
 
-  html {
-    scroll-padding-top: var(--toc-drawer-clearance);
-  }
-
-  /* Opaque band under fixed ☰ toggle — hash scroll can leave prior figcaption in this strip */
+  /* Visual wash in sticky band (below ☰ toggle, z-index 45 < toggle 46) */
   .shell:not(.drawer-open)::before {
     content: "";
     position: fixed;
@@ -803,7 +799,19 @@ button { font: inherit; cursor: pointer; }
     z-index: 1;
   }
   .patent-page {
-    padding: 20px 16px 14px;
+    padding: 20px 16px calc(var(--toc-drawer-toggle-height) + 12px);
+    /* Gap after figcaption: clearance + toggle + extra so prior summary/figcaption clears ☰ hit box on hash jump */
+    margin-bottom: max(
+      11rem,
+      calc(
+        var(--toc-drawer-clearance)
+        + var(--toc-drawer-toggle-height)
+        + var(--toc-drawer-gap)
+        + var(--toc-drawer-clearance)
+        + var(--toc-drawer-toggle-height)
+        + 24px
+      )
+    );
     scroll-margin-top: var(--toc-drawer-clearance);
   }
   .patent-table col.patent-col-label { width: 26%; }

@@ -459,7 +459,24 @@
     }
   }
 
-  function jumpToPatent(id, miniEl) {
+  let hashAnchorTimer = 0;
+
+  function anchorHashPatent() {
+    const raw = location.hash;
+    if (!raw || raw.length < 2) return;
+    const id = decodeURIComponent(raw.slice(1));
+    const page = document.getElementById(id);
+    if (!page) return;
+    page.scrollIntoView({ behavior: "auto", block: "start" });
+  }
+
+  function scheduleHashAnchor() {
+    if (!location.hash) return;
+    clearTimeout(hashAnchorTimer);
+    hashAnchorTimer = window.setTimeout(anchorHashPatent, 80);
+  }
+
+  function jumpToPatent(id, miniEl, opts) {
     const page = document.getElementById(id);
     if (!page) return;
     // Open only the month that owns this patent; do not touch other months' open state beyond ensuring target's month is open.
@@ -467,8 +484,10 @@
     if (monthDetails) monthDetails.open = true;
     setActiveMini(id);
     page.focus({ preventScroll: true });
-    page.scrollIntoView({ behavior: "smooth", block: "start" });
+    const instant = opts && opts.instant;
+    page.scrollIntoView({ behavior: instant ? "auto" : "smooth", block: "start" });
     history.replaceState(null, "", "#" + encodeURIComponent(id));
+    if (instant) scheduleHashAnchor();
   }
 
   function reportDataUrl() {
@@ -784,6 +803,7 @@
       };
       img.onload = function () {
         stripFigureRotationIfUpright(img);
+        scheduleHashAnchor();
       };
       img.src = src;
       img.removeAttribute("data-src");
@@ -1083,7 +1103,8 @@
     if (location.hash) {
       const id = decodeURIComponent(location.hash.slice(1));
       const mini = document.querySelector('.mini[data-target="' + CSS.escape(id) + '"]');
-      if (mini) jumpToPatent(id, mini);
+      if (mini) jumpToPatent(id, mini, { instant: true });
+      else scheduleHashAnchor();
     }
   }
 
