@@ -31,13 +31,12 @@
     "related": 1,
     "pending": 0,
     "excluded": 0,
-    "figures": 143,
+    "figures": 170,
     "month_family_entries": 126,
     "publication_events": 154,
     "unique_families": 111,
     "actually_read": 6,
-    "unique_publication_ids": 154,
-    "figures_available": 143
+    "unique_publication_ids": 154
   },
   "search_coverage": [],
   "pending_or_related": [],
@@ -137,6 +136,12 @@
       "by": "dot-figure-annotations",
       "action": "merge_dot_label_extract",
       "detail": "Matched 122 figures from dot-figure-annotations-extract.json by sha256."
+    },
+    {
+      "at": "2026-10-21T02:07:37Z",
+      "by": "morning-gate3-figures",
+      "action": "apply_morning_gate3_figure_backfill",
+      "detail": "EPI figureless + Preclean AHF; pubs=11; team_read lock unchanged"
     }
   ],
   "months": [
@@ -1284,19 +1289,47 @@
             "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12757648",
             "https://patents.google.com/patent/US12757648B2/en"
           ],
-          "source_retrieved_at": null,
-          "source_sha256": null,
-          "actual_read_spans": [],
+          "source_retrieved_at": "2026-10-21T09:55:46+08:00",
+          "source_sha256": "3f49aacda0e96652057c1f84c5c264b08258e01112a6693cd38b295cbc6391be",
+          "actual_read_spans": [
+            "USPTO_PDF_p1_abstract",
+            "USPTO_PDF_p2_fig1_sheet1of5",
+            "USPTO_PDF_p11_embodiments_to_claim1_start",
+            "USPTO_PDF_p12_claims_1-7",
+            "USPTO_OG_claim1"
+          ],
           "reviewer": null,
           "reviewed_at": null,
           "family_completion_status": "open",
-          "figures": [],
+          "figures": [
+            {
+              "source_publication_id": "US12757648B2",
+              "figure_number": "Fig. 1",
+              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12757648",
+              "local_asset_path": "assets/figures/US12757648B2_fig1.png",
+              "width": 5334,
+              "height": 6875,
+              "caption": "FIG. 1 — vertical semiconductor processing apparatus 100 with wafer boat, injectors, heater, exhaust, controller (USPTO PDF Sheet 1 of 5 / page 2)",
+              "asset_sha256": "73dccbb96b3d37853242a7600c6691630616f016a600d69fee31b35ebc2f9436",
+              "source_original_sha256": "73dccbb96b3d37853242a7600c6691630616f016a600d69fee31b35ebc2f9436",
+              "source_display_sha256": "73dccbb96b3d37853242a7600c6691630616f016a600d69fee31b35ebc2f9436",
+              "display_rotation": 0,
+              "source_geometry": {},
+              "pdf_page": 2
+            }
+          ],
           "change_history": [
             {
               "at": "2026-10-20T10:37:42Z",
               "by": "sprint-gap-a",
               "action": "content_add",
               "detail": "EVIDENCE-SPRINT-A / EPI-INCREMENTAL-SPRINT-gap"
+            },
+            {
+              "at": "2026-10-21T02:07:37Z",
+              "by": "morning-gate3-figures",
+              "action": "attach_gate3_family_figures",
+              "detail": "Gate③ backfill 1 figures"
             }
           ],
           "family_events": [
@@ -1354,13 +1387,110 @@
           "reviewer": null,
           "reviewed_at": null,
           "family_completion_status": "open",
-          "figures": [],
+          "figures": [
+            {
+              "source_publication_id": "US12757665B2",
+              "figure_number": "Fig. 1",
+              "source_url": "https://patentimages.storage.googleapis.com/80/5e/5a/a7d174f8a9ed67/US20240429038A1-20241226-D00001.png",
+              "local_asset_path": "assets/figures/US12757665B2_fig1.png",
+              "width": 1873,
+              "height": 2736,
+              "caption": "FIG. 1 schematically depicts a semiconductor processing system for preclean, according to some embodiments.",
+              "asset_sha256": "6bdff9ceb554d5f14fbb7fa40bffec56798549afcc1d6cb772db541147cafcee",
+              "source_original_sha256": "6bdff9ceb554d5f14fbb7fa40bffec56798549afcc1d6cb772db541147cafcee",
+              "source_display_sha256": "6bdff9ceb554d5f14fbb7fa40bffec56798549afcc1d6cb772db541147cafcee",
+              "display_rotation": 0,
+              "source_geometry": {},
+              "family_share_from": "US20240429038A1"
+            },
+            {
+              "source_publication_id": "US12757665B2",
+              "figure_number": "Fig. 2",
+              "source_url": "https://patentimages.storage.googleapis.com/2e/fd/e1/03f0fe2548b9f5/US20240429038A1-20241226-D00002.png",
+              "local_asset_path": "assets/figures/US12757665B2_fig2.png",
+              "width": 2056,
+              "height": 2806,
+              "caption": "FIG. 2 schematically depicts an anhydrous hydrogen fluoride delivery system according to some embodiments.",
+              "asset_sha256": "ffae87ab387da5ec09e65cea906a6bdd8fa1c6709cf3279e0315d8c07e1fdc5c",
+              "source_original_sha256": "ffae87ab387da5ec09e65cea906a6bdd8fa1c6709cf3279e0315d8c07e1fdc5c",
+              "source_display_sha256": "ffae87ab387da5ec09e65cea906a6bdd8fa1c6709cf3279e0315d8c07e1fdc5c",
+              "display_rotation": 0,
+              "source_geometry": {},
+              "family_share_from": "US20240429038A1"
+            },
+            {
+              "source_publication_id": "US12757665B2",
+              "figure_number": "Fig. 3",
+              "source_url": "https://patentimages.storage.googleapis.com/8c/c8/5d/91e5a82434eb2b/US20240429038A1-20241226-D00003.png",
+              "local_asset_path": "assets/figures/US12757665B2_fig3.png",
+              "width": 2025,
+              "height": 2792,
+              "caption": "FIG. 3 schematically depicts a water vapor delivery system according to some embodiments.",
+              "asset_sha256": "69cdba4a2c12b9744337e6dd3f45ed051a61af2ea8ee3a9ff171548e6775f5ca",
+              "source_original_sha256": "69cdba4a2c12b9744337e6dd3f45ed051a61af2ea8ee3a9ff171548e6775f5ca",
+              "source_display_sha256": "69cdba4a2c12b9744337e6dd3f45ed051a61af2ea8ee3a9ff171548e6775f5ca",
+              "display_rotation": 0,
+              "source_geometry": {},
+              "family_share_from": "US20240429038A1"
+            },
+            {
+              "source_publication_id": "US12757665B2",
+              "figure_number": "Fig. 4",
+              "source_url": "https://patentimages.storage.googleapis.com/a1/9b/9b/cc872ce4a0ad50/US20240429038A1-20241226-D00004.png",
+              "local_asset_path": "assets/figures/US12757665B2_fig4.png",
+              "width": 1300,
+              "height": 2725,
+              "caption": "FIG. 4 schematically depicts a gas delivery component passivation process according to some embodiments.",
+              "asset_sha256": "34d7d2a0f6e9ed5dac46ffe24f326561287f5d216a55e4660b0298395665a0a2",
+              "source_original_sha256": "34d7d2a0f6e9ed5dac46ffe24f326561287f5d216a55e4660b0298395665a0a2",
+              "source_display_sha256": "34d7d2a0f6e9ed5dac46ffe24f326561287f5d216a55e4660b0298395665a0a2",
+              "display_rotation": 0,
+              "source_geometry": {},
+              "family_share_from": "US20240429038A1"
+            },
+            {
+              "source_publication_id": "US12757665B2",
+              "figure_number": "Fig. 5",
+              "source_url": "https://patentimages.storage.googleapis.com/b6/b2/ed/9ecf9891d89347/US20240429038A1-20241226-D00005.png",
+              "local_asset_path": "assets/figures/US12757665B2_fig5.png",
+              "width": 1779,
+              "height": 2817,
+              "caption": "FIG. 5 schematically depicts a method of precleaning a substrate according to some embodiments.",
+              "asset_sha256": "a57d45d6c118962600aa68d103fa7217f7d54a069f391c48b1187951442589ec",
+              "source_original_sha256": "a57d45d6c118962600aa68d103fa7217f7d54a069f391c48b1187951442589ec",
+              "source_display_sha256": "a57d45d6c118962600aa68d103fa7217f7d54a069f391c48b1187951442589ec",
+              "display_rotation": 0,
+              "source_geometry": {},
+              "family_share_from": "US20240429038A1"
+            },
+            {
+              "source_publication_id": "US12757665B2",
+              "figure_number": "Fig. 6",
+              "source_url": "https://patentimages.storage.googleapis.com/be/ea/6c/487e389abb3376/US20240429038A1-20241226-D00006.png",
+              "local_asset_path": "assets/figures/US12757665B2_fig6.png",
+              "width": 1779,
+              "height": 2817,
+              "caption": "FIG. 6 schematically depicts another method of precleaning a substrate according to some embodiments of the present disclosure.",
+              "asset_sha256": "609732f6f4c595345574a8e7416749d5a0934350019db3eee9265bc2d5ef347e",
+              "source_original_sha256": "609732f6f4c595345574a8e7416749d5a0934350019db3eee9265bc2d5ef347e",
+              "source_display_sha256": "609732f6f4c595345574a8e7416749d5a0934350019db3eee9265bc2d5ef347e",
+              "display_rotation": 0,
+              "source_geometry": {},
+              "family_share_from": "US20240429038A1"
+            }
+          ],
           "change_history": [
             {
               "at": "2026-10-20T13:00:00Z",
               "by": "evening-incremental-sprint",
               "action": "include_core_preclean_family",
               "detail": "PRECLEAN-INCREMENTAL-SPRINT-evening-2026-10-20-frozen.json"
+            },
+            {
+              "at": "2026-10-21T02:07:37Z",
+              "by": "morning-gate3-figures",
+              "action": "attach_gate3_family_figures",
+              "detail": "Gate③ backfill 6 figures"
             }
           ],
           "family_events": [
@@ -13685,13 +13815,34 @@
           "reviewer": "evidence-review-r2",
           "reviewed_at": "2026-10-20",
           "family_completion_status": "open",
-          "figures": [],
+          "figures": [
+            {
+              "source_publication_id": "US12660522B2",
+              "figure_number": "Fig. 1",
+              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12660522",
+              "local_asset_path": "assets/figures/US12660522B2_fig1.png",
+              "width": 5334,
+              "height": 6875,
+              "caption": "FIG. 1A/1B — SiGe anisotropic epitaxial intermediate structures (USPTO PDF Sheet 1 of 6 / page 3; Fig.1 priority)",
+              "asset_sha256": "3832fb735c5ac5dce9c703f08fb4c58a8e60f21e5d3fa16ac5b78c7ad8427fe5",
+              "source_original_sha256": "3832fb735c5ac5dce9c703f08fb4c58a8e60f21e5d3fa16ac5b78c7ad8427fe5",
+              "source_display_sha256": "3832fb735c5ac5dce9c703f08fb4c58a8e60f21e5d3fa16ac5b78c7ad8427fe5",
+              "display_rotation": 90,
+              "source_geometry": {}
+            }
+          ],
           "change_history": [
             {
               "at": "2026-10-20T09:31:48Z",
               "by": "evidence-review-r2",
               "action": "independent_add",
               "detail": "独立检索新纳入（非基线导入）。"
+            },
+            {
+              "at": "2026-10-21T02:07:37Z",
+              "by": "morning-gate3-figures",
+              "action": "attach_gate3_family_figures",
+              "detail": "Gate③ backfill 1 figures"
             }
           ],
           "family_events": [
@@ -13752,13 +13903,110 @@
           "reviewer": null,
           "reviewed_at": null,
           "family_completion_status": "open",
-          "figures": [],
+          "figures": [
+            {
+              "source_publication_id": "US12660544B2",
+              "figure_number": "Fig. 1",
+              "source_url": "https://patentimages.storage.googleapis.com/80/5e/5a/a7d174f8a9ed67/US20240429038A1-20241226-D00001.png",
+              "local_asset_path": "assets/figures/US12660544B2_fig1.png",
+              "width": 1873,
+              "height": 2736,
+              "caption": "FIG. 1 schematically depicts a semiconductor processing system for preclean, according to some embodiments.",
+              "asset_sha256": "6bdff9ceb554d5f14fbb7fa40bffec56798549afcc1d6cb772db541147cafcee",
+              "source_original_sha256": "6bdff9ceb554d5f14fbb7fa40bffec56798549afcc1d6cb772db541147cafcee",
+              "source_display_sha256": "6bdff9ceb554d5f14fbb7fa40bffec56798549afcc1d6cb772db541147cafcee",
+              "display_rotation": 0,
+              "source_geometry": {},
+              "family_share_from": "US20240429038A1"
+            },
+            {
+              "source_publication_id": "US12660544B2",
+              "figure_number": "Fig. 2",
+              "source_url": "https://patentimages.storage.googleapis.com/2e/fd/e1/03f0fe2548b9f5/US20240429038A1-20241226-D00002.png",
+              "local_asset_path": "assets/figures/US12660544B2_fig2.png",
+              "width": 2056,
+              "height": 2806,
+              "caption": "FIG. 2 schematically depicts an anhydrous hydrogen fluoride delivery system according to some embodiments.",
+              "asset_sha256": "ffae87ab387da5ec09e65cea906a6bdd8fa1c6709cf3279e0315d8c07e1fdc5c",
+              "source_original_sha256": "ffae87ab387da5ec09e65cea906a6bdd8fa1c6709cf3279e0315d8c07e1fdc5c",
+              "source_display_sha256": "ffae87ab387da5ec09e65cea906a6bdd8fa1c6709cf3279e0315d8c07e1fdc5c",
+              "display_rotation": 0,
+              "source_geometry": {},
+              "family_share_from": "US20240429038A1"
+            },
+            {
+              "source_publication_id": "US12660544B2",
+              "figure_number": "Fig. 3",
+              "source_url": "https://patentimages.storage.googleapis.com/8c/c8/5d/91e5a82434eb2b/US20240429038A1-20241226-D00003.png",
+              "local_asset_path": "assets/figures/US12660544B2_fig3.png",
+              "width": 2025,
+              "height": 2792,
+              "caption": "FIG. 3 schematically depicts a water vapor delivery system according to some embodiments.",
+              "asset_sha256": "69cdba4a2c12b9744337e6dd3f45ed051a61af2ea8ee3a9ff171548e6775f5ca",
+              "source_original_sha256": "69cdba4a2c12b9744337e6dd3f45ed051a61af2ea8ee3a9ff171548e6775f5ca",
+              "source_display_sha256": "69cdba4a2c12b9744337e6dd3f45ed051a61af2ea8ee3a9ff171548e6775f5ca",
+              "display_rotation": 0,
+              "source_geometry": {},
+              "family_share_from": "US20240429038A1"
+            },
+            {
+              "source_publication_id": "US12660544B2",
+              "figure_number": "Fig. 4",
+              "source_url": "https://patentimages.storage.googleapis.com/a1/9b/9b/cc872ce4a0ad50/US20240429038A1-20241226-D00004.png",
+              "local_asset_path": "assets/figures/US12660544B2_fig4.png",
+              "width": 1300,
+              "height": 2725,
+              "caption": "FIG. 4 schematically depicts a gas delivery component passivation process according to some embodiments.",
+              "asset_sha256": "34d7d2a0f6e9ed5dac46ffe24f326561287f5d216a55e4660b0298395665a0a2",
+              "source_original_sha256": "34d7d2a0f6e9ed5dac46ffe24f326561287f5d216a55e4660b0298395665a0a2",
+              "source_display_sha256": "34d7d2a0f6e9ed5dac46ffe24f326561287f5d216a55e4660b0298395665a0a2",
+              "display_rotation": 0,
+              "source_geometry": {},
+              "family_share_from": "US20240429038A1"
+            },
+            {
+              "source_publication_id": "US12660544B2",
+              "figure_number": "Fig. 5",
+              "source_url": "https://patentimages.storage.googleapis.com/b6/b2/ed/9ecf9891d89347/US20240429038A1-20241226-D00005.png",
+              "local_asset_path": "assets/figures/US12660544B2_fig5.png",
+              "width": 1779,
+              "height": 2817,
+              "caption": "FIG. 5 schematically depicts a method of precleaning a substrate according to some embodiments.",
+              "asset_sha256": "a57d45d6c118962600aa68d103fa7217f7d54a069f391c48b1187951442589ec",
+              "source_original_sha256": "a57d45d6c118962600aa68d103fa7217f7d54a069f391c48b1187951442589ec",
+              "source_display_sha256": "a57d45d6c118962600aa68d103fa7217f7d54a069f391c48b1187951442589ec",
+              "display_rotation": 0,
+              "source_geometry": {},
+              "family_share_from": "US20240429038A1"
+            },
+            {
+              "source_publication_id": "US12660544B2",
+              "figure_number": "Fig. 6",
+              "source_url": "https://patentimages.storage.googleapis.com/be/ea/6c/487e389abb3376/US20240429038A1-20241226-D00006.png",
+              "local_asset_path": "assets/figures/US12660544B2_fig6.png",
+              "width": 1779,
+              "height": 2817,
+              "caption": "FIG. 6 schematically depicts another method of precleaning a substrate according to some embodiments of the present disclosure.",
+              "asset_sha256": "609732f6f4c595345574a8e7416749d5a0934350019db3eee9265bc2d5ef347e",
+              "source_original_sha256": "609732f6f4c595345574a8e7416749d5a0934350019db3eee9265bc2d5ef347e",
+              "source_display_sha256": "609732f6f4c595345574a8e7416749d5a0934350019db3eee9265bc2d5ef347e",
+              "display_rotation": 0,
+              "source_geometry": {},
+              "family_share_from": "US20240429038A1"
+            }
+          ],
           "change_history": [
             {
               "at": "2026-10-20T13:00:00Z",
               "by": "evening-incremental-sprint",
               "action": "include_core_preclean_family",
               "detail": "PRECLEAN-INCREMENTAL-SPRINT-evening-2026-10-20-frozen.json"
+            },
+            {
+              "at": "2026-10-21T02:07:37Z",
+              "by": "morning-gate3-figures",
+              "action": "attach_gate3_family_figures",
+              "detail": "Gate③ backfill 6 figures"
             }
           ],
           "family_events": [
@@ -25093,13 +25341,34 @@
           "reviewer": "epi-evidence-review-r2",
           "reviewed_at": "2026-10-20",
           "family_completion_status": "open",
-          "figures": [],
+          "figures": [
+            {
+              "source_publication_id": "US20260071979A1",
+              "figure_number": "Fig. 2",
+              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260071979",
+              "local_asset_path": "assets/figures/US20260071979A1_fig2.png",
+              "width": 5334,
+              "height": 6875,
+              "caption": "FIG. 2 — cross-sectional view of processing chamber with XRF measurement system (USPTO PDF Sheet 2 / page 3)",
+              "asset_sha256": "149b7cddefba6ee35788f9065b61c3ee9485fb7d6075f215785f1e951e522d9e",
+              "source_original_sha256": "149b7cddefba6ee35788f9065b61c3ee9485fb7d6075f215785f1e951e522d9e",
+              "source_display_sha256": "149b7cddefba6ee35788f9065b61c3ee9485fb7d6075f215785f1e951e522d9e",
+              "display_rotation": 0,
+              "source_geometry": {}
+            }
+          ],
           "change_history": [
             {
               "at": "2026-10-20T09:31:48Z",
               "by": "evidence-review-r2",
               "action": "independent_add",
               "detail": "独立检索新纳入（非基线导入）。"
+            },
+            {
+              "at": "2026-10-21T02:07:37Z",
+              "by": "morning-gate3-figures",
+              "action": "attach_gate3_family_figures",
+              "detail": "Gate③ backfill 1 figures"
             }
           ],
           "family_events": [
@@ -25460,13 +25729,35 @@
           "reviewer": "baseline-claims-review",
           "reviewed_at": "2026-10-15",
           "family_completion_status": "open",
-          "figures": [],
+          "figures": [
+            {
+              "source_publication_id": "US20260066234A1",
+              "figure_number": "Fig. 1A",
+              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260066234",
+              "local_asset_path": "assets/figures/US20260066234A1_fig1a.png",
+              "width": 5334,
+              "height": 6875,
+              "caption": "FIG. 1A — multi-chamber semiconductor processing system 100 plan view with transfer chamber and controller (USPTO PDF Sheet 1 of 25 / page 2)",
+              "asset_sha256": "556e55273f87bc8d393f04ae174f970ddf51089cf04c020688242d359815b4f6",
+              "source_original_sha256": "556e55273f87bc8d393f04ae174f970ddf51089cf04c020688242d359815b4f6",
+              "source_display_sha256": "556e55273f87bc8d393f04ae174f970ddf51089cf04c020688242d359815b4f6",
+              "display_rotation": 0,
+              "source_geometry": {},
+              "pdf_page": 2
+            }
+          ],
           "change_history": [
             {
               "at": "2026-10-20T12:00:00Z",
               "by": "read-ruling-r2",
               "action": "promote_core_team_read",
               "detail": "由 pending 升格 core 月卡；不计为 Gate③ 独立新发现。"
+            },
+            {
+              "at": "2026-10-21T02:07:37Z",
+              "by": "morning-gate3-figures",
+              "action": "attach_gate3_family_figures",
+              "detail": "Gate③ backfill 1 figures"
             }
           ],
           "family_events": [
@@ -25525,13 +25816,50 @@
           "reviewer": null,
           "reviewed_at": null,
           "family_completion_status": "open",
-          "figures": [],
+          "figures": [
+            {
+              "source_publication_id": "US20260062803A1",
+              "figure_number": "Fig. 1",
+              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260062803",
+              "local_asset_path": "assets/figures/US20260062803A1_fig1.png",
+              "width": 5334,
+              "height": 6875,
+              "caption": "FIG. 1 — semiconductor processing system 100 with gas sources (Si/Ge/dopant/etchant/carrier), chamber 118, exhaust/abatement 108, controller 110 (USPTO PDF Sheet 1 of 7 / page 2)",
+              "asset_sha256": "e18b76ee7bfd0824aa272ad5c775f7d5b96aff5aaea4067c5327f91ac1017d0e",
+              "source_original_sha256": "e18b76ee7bfd0824aa272ad5c775f7d5b96aff5aaea4067c5327f91ac1017d0e",
+              "source_display_sha256": "e18b76ee7bfd0824aa272ad5c775f7d5b96aff5aaea4067c5327f91ac1017d0e",
+              "display_rotation": 0,
+              "source_geometry": {},
+              "pdf_page": 2
+            },
+            {
+              "source_publication_id": "US20260062803A1",
+              "figure_number": "Fig. 2",
+              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260062803",
+              "local_asset_path": "assets/figures/US20260062803A1_fig2.png",
+              "width": 5334,
+              "height": 6875,
+              "caption": "FIG. 2 — cross-sectional view of EPI processing chamber with substrate support, gas injector, lamp array, exhaust (USPTO PDF Sheet 2 of 7 / page 3)",
+              "asset_sha256": "620d8820c836e1abdac1d96710b1a9af19803f970a5a990fd1392ab5219ac15d",
+              "source_original_sha256": "620d8820c836e1abdac1d96710b1a9af19803f970a5a990fd1392ab5219ac15d",
+              "source_display_sha256": "620d8820c836e1abdac1d96710b1a9af19803f970a5a990fd1392ab5219ac15d",
+              "display_rotation": 0,
+              "source_geometry": {},
+              "pdf_page": 3
+            }
+          ],
           "change_history": [
             {
               "at": "2026-10-20T13:00:00Z",
               "by": "evening-incremental-sprint",
               "action": "include_core_epi",
               "detail": "EPI-INCREMENTAL-SPRINT-evening-2026-10-20-frozen.json"
+            },
+            {
+              "at": "2026-10-21T02:07:37Z",
+              "by": "morning-gate3-figures",
+              "action": "attach_gate3_family_figures",
+              "detail": "Gate③ backfill 2 figures"
             }
           ],
           "family_events": [
@@ -30886,13 +31214,34 @@
           "reviewer": "epi-evidence-review-r2",
           "reviewed_at": "2026-10-20",
           "family_completion_status": "open",
-          "figures": [],
+          "figures": [
+            {
+              "source_publication_id": "US20260055532A1",
+              "figure_number": "Fig. 2",
+              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260055532",
+              "local_asset_path": "assets/figures/US20260055532A1_fig2.png",
+              "width": 5334,
+              "height": 6875,
+              "caption": "FIG. 2 — schematic cross-sectional view of EPI processing chamber (USPTO PDF Sheet 2 of 8 / page 3)",
+              "asset_sha256": "a294267d7ea5fa8224c369822c18b58418c120ae430ef5c60fa5e28be577e765",
+              "source_original_sha256": "a294267d7ea5fa8224c369822c18b58418c120ae430ef5c60fa5e28be577e765",
+              "source_display_sha256": "a294267d7ea5fa8224c369822c18b58418c120ae430ef5c60fa5e28be577e765",
+              "display_rotation": 0,
+              "source_geometry": {}
+            }
+          ],
           "change_history": [
             {
               "at": "2026-10-20T09:31:48Z",
               "by": "evidence-review-r2",
               "action": "independent_add",
               "detail": "独立检索新纳入（非基线导入）。"
+            },
+            {
+              "at": "2026-10-21T02:07:37Z",
+              "by": "morning-gate3-figures",
+              "action": "attach_gate3_family_figures",
+              "detail": "Gate③ backfill 1 figures"
             }
           ],
           "family_events": [
@@ -33218,13 +33567,110 @@
           "reviewer": null,
           "reviewed_at": null,
           "family_completion_status": "open",
-          "figures": [],
+          "figures": [
+            {
+              "source_publication_id": "KR102916044B1",
+              "figure_number": "Fig. 1",
+              "source_url": "https://patentimages.storage.googleapis.com/80/5e/5a/a7d174f8a9ed67/US20240429038A1-20241226-D00001.png",
+              "local_asset_path": "assets/figures/KR102916044B1_fig1.png",
+              "width": 1873,
+              "height": 2736,
+              "caption": "FIG. 1 schematically depicts a semiconductor processing system for preclean, according to some embodiments.",
+              "asset_sha256": "6bdff9ceb554d5f14fbb7fa40bffec56798549afcc1d6cb772db541147cafcee",
+              "source_original_sha256": "6bdff9ceb554d5f14fbb7fa40bffec56798549afcc1d6cb772db541147cafcee",
+              "source_display_sha256": "6bdff9ceb554d5f14fbb7fa40bffec56798549afcc1d6cb772db541147cafcee",
+              "display_rotation": 0,
+              "source_geometry": {},
+              "family_share_from": "US20240429038A1"
+            },
+            {
+              "source_publication_id": "KR102916044B1",
+              "figure_number": "Fig. 2",
+              "source_url": "https://patentimages.storage.googleapis.com/2e/fd/e1/03f0fe2548b9f5/US20240429038A1-20241226-D00002.png",
+              "local_asset_path": "assets/figures/KR102916044B1_fig2.png",
+              "width": 2056,
+              "height": 2806,
+              "caption": "FIG. 2 schematically depicts an anhydrous hydrogen fluoride delivery system according to some embodiments.",
+              "asset_sha256": "ffae87ab387da5ec09e65cea906a6bdd8fa1c6709cf3279e0315d8c07e1fdc5c",
+              "source_original_sha256": "ffae87ab387da5ec09e65cea906a6bdd8fa1c6709cf3279e0315d8c07e1fdc5c",
+              "source_display_sha256": "ffae87ab387da5ec09e65cea906a6bdd8fa1c6709cf3279e0315d8c07e1fdc5c",
+              "display_rotation": 0,
+              "source_geometry": {},
+              "family_share_from": "US20240429038A1"
+            },
+            {
+              "source_publication_id": "KR102916044B1",
+              "figure_number": "Fig. 3",
+              "source_url": "https://patentimages.storage.googleapis.com/8c/c8/5d/91e5a82434eb2b/US20240429038A1-20241226-D00003.png",
+              "local_asset_path": "assets/figures/KR102916044B1_fig3.png",
+              "width": 2025,
+              "height": 2792,
+              "caption": "FIG. 3 schematically depicts a water vapor delivery system according to some embodiments.",
+              "asset_sha256": "69cdba4a2c12b9744337e6dd3f45ed051a61af2ea8ee3a9ff171548e6775f5ca",
+              "source_original_sha256": "69cdba4a2c12b9744337e6dd3f45ed051a61af2ea8ee3a9ff171548e6775f5ca",
+              "source_display_sha256": "69cdba4a2c12b9744337e6dd3f45ed051a61af2ea8ee3a9ff171548e6775f5ca",
+              "display_rotation": 0,
+              "source_geometry": {},
+              "family_share_from": "US20240429038A1"
+            },
+            {
+              "source_publication_id": "KR102916044B1",
+              "figure_number": "Fig. 4",
+              "source_url": "https://patentimages.storage.googleapis.com/a1/9b/9b/cc872ce4a0ad50/US20240429038A1-20241226-D00004.png",
+              "local_asset_path": "assets/figures/KR102916044B1_fig4.png",
+              "width": 1300,
+              "height": 2725,
+              "caption": "FIG. 4 schematically depicts a gas delivery component passivation process according to some embodiments.",
+              "asset_sha256": "34d7d2a0f6e9ed5dac46ffe24f326561287f5d216a55e4660b0298395665a0a2",
+              "source_original_sha256": "34d7d2a0f6e9ed5dac46ffe24f326561287f5d216a55e4660b0298395665a0a2",
+              "source_display_sha256": "34d7d2a0f6e9ed5dac46ffe24f326561287f5d216a55e4660b0298395665a0a2",
+              "display_rotation": 0,
+              "source_geometry": {},
+              "family_share_from": "US20240429038A1"
+            },
+            {
+              "source_publication_id": "KR102916044B1",
+              "figure_number": "Fig. 5",
+              "source_url": "https://patentimages.storage.googleapis.com/b6/b2/ed/9ecf9891d89347/US20240429038A1-20241226-D00005.png",
+              "local_asset_path": "assets/figures/KR102916044B1_fig5.png",
+              "width": 1779,
+              "height": 2817,
+              "caption": "FIG. 5 schematically depicts a method of precleaning a substrate according to some embodiments.",
+              "asset_sha256": "a57d45d6c118962600aa68d103fa7217f7d54a069f391c48b1187951442589ec",
+              "source_original_sha256": "a57d45d6c118962600aa68d103fa7217f7d54a069f391c48b1187951442589ec",
+              "source_display_sha256": "a57d45d6c118962600aa68d103fa7217f7d54a069f391c48b1187951442589ec",
+              "display_rotation": 0,
+              "source_geometry": {},
+              "family_share_from": "US20240429038A1"
+            },
+            {
+              "source_publication_id": "KR102916044B1",
+              "figure_number": "Fig. 6",
+              "source_url": "https://patentimages.storage.googleapis.com/be/ea/6c/487e389abb3376/US20240429038A1-20241226-D00006.png",
+              "local_asset_path": "assets/figures/KR102916044B1_fig6.png",
+              "width": 1779,
+              "height": 2817,
+              "caption": "FIG. 6 schematically depicts another method of precleaning a substrate according to some embodiments of the present disclosure.",
+              "asset_sha256": "609732f6f4c595345574a8e7416749d5a0934350019db3eee9265bc2d5ef347e",
+              "source_original_sha256": "609732f6f4c595345574a8e7416749d5a0934350019db3eee9265bc2d5ef347e",
+              "source_display_sha256": "609732f6f4c595345574a8e7416749d5a0934350019db3eee9265bc2d5ef347e",
+              "display_rotation": 0,
+              "source_geometry": {},
+              "family_share_from": "US20240429038A1"
+            }
+          ],
           "change_history": [
             {
               "at": "2026-10-20T13:00:00Z",
               "by": "evening-incremental-sprint",
               "action": "include_core_preclean_family",
               "detail": "PRECLEAN-INCREMENTAL-SPRINT-evening-2026-10-20-frozen.json"
+            },
+            {
+              "at": "2026-10-21T02:07:37Z",
+              "by": "morning-gate3-figures",
+              "action": "attach_gate3_family_figures",
+              "detail": "Gate③ backfill 6 figures"
             }
           ],
           "family_events": [
@@ -49639,13 +50085,34 @@
           "reviewer": "epi-evidence-review-r2",
           "reviewed_at": "2026-10-20",
           "family_completion_status": "open",
-          "figures": [],
+          "figures": [
+            {
+              "source_publication_id": "US20250327209A1",
+              "figure_number": "Fig. 1",
+              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20250327209",
+              "local_asset_path": "assets/figures/US20250327209A1_fig1.png",
+              "width": 5334,
+              "height": 6875,
+              "caption": "FIG. 1 — epitaxial deposition apparatus 100 (USPTO PDF Sheet 1 of 5 / page 2)",
+              "asset_sha256": "84c6af0b9905637f62b94222fc085bce10e4b7e03780c11449d12051614bd05c",
+              "source_original_sha256": "84c6af0b9905637f62b94222fc085bce10e4b7e03780c11449d12051614bd05c",
+              "source_display_sha256": "84c6af0b9905637f62b94222fc085bce10e4b7e03780c11449d12051614bd05c",
+              "display_rotation": 0,
+              "source_geometry": {}
+            }
+          ],
           "change_history": [
             {
               "at": "2026-10-20T09:31:48Z",
               "by": "evidence-review-r2",
               "action": "independent_add",
               "detail": "独立检索新纳入（非基线导入）。"
+            },
+            {
+              "at": "2026-10-21T02:07:37Z",
+              "by": "morning-gate3-figures",
+              "action": "attach_gate3_family_figures",
+              "detail": "Gate③ backfill 1 figures"
             }
           ],
           "family_events": [
@@ -51935,19 +52402,48 @@
             "https://patents.google.com/patent/US20250311241A1/en",
             "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20250311241"
           ],
-          "source_retrieved_at": null,
-          "source_sha256": null,
-          "actual_read_spans": [],
+          "source_retrieved_at": "2026-10-21T09:55:46+08:00",
+          "source_sha256": "e940d989b74dc3adcd7aa6c4d74c541500b2120faf21a57677e5943cd3acf215",
+          "actual_read_spans": [
+            "USPTO_PDF_p1_abstract",
+            "USPTO_PDF_p2_fig1_sheet1of7",
+            "USPTO_PDF_p11_brief_description_fig1_and_embodiments",
+            "USPTO_PDF_p13_claims_1-19",
+            "USPTO_PDF_p14_claim_20",
+            "GP_HTML_abstract_claims"
+          ],
           "reviewer": null,
           "reviewed_at": null,
           "family_completion_status": "open",
-          "figures": [],
+          "figures": [
+            {
+              "source_publication_id": "US20250311241A1",
+              "figure_number": "Fig. 1",
+              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20250311241",
+              "local_asset_path": "assets/figures/US20250311241A1_fig1.png",
+              "width": 5334,
+              "height": 6875,
+              "caption": "FIG. 1 — semiconductor device structure 100 cross-section (interconnect/contact stack) (USPTO PDF Sheet 1 of 7 / page 2)",
+              "asset_sha256": "12829f7e59438fdf6ef855ca986b13b7c9c2c1441b8454d5a72d8c9dfb8c1459",
+              "source_original_sha256": "12829f7e59438fdf6ef855ca986b13b7c9c2c1441b8454d5a72d8c9dfb8c1459",
+              "source_display_sha256": "12829f7e59438fdf6ef855ca986b13b7c9c2c1441b8454d5a72d8c9dfb8c1459",
+              "display_rotation": 0,
+              "source_geometry": {},
+              "pdf_page": 2
+            }
+          ],
           "change_history": [
             {
               "at": "2026-10-20T10:37:42Z",
               "by": "sprint-gap-a",
               "action": "content_add",
               "detail": "EVIDENCE-SPRINT-A / EPI-INCREMENTAL-SPRINT-gap"
+            },
+            {
+              "at": "2026-10-21T02:07:37Z",
+              "by": "morning-gate3-figures",
+              "action": "attach_gate3_family_figures",
+              "detail": "Gate③ backfill 1 figures"
             }
           ],
           "family_events": [
