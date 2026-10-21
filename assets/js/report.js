@@ -372,9 +372,15 @@
       const summary = document.createElement("summary");
       const count = (m.families || []).length;
       summary.innerHTML =
+        "<span class=\"month-summary-head\">" +
         "<span class=\"month-label\">" + esc(formatMonthLabel(m.month)) + "</span>" +
-        "<span class=\"month-count\">" + count + " 族</span>";
+        "<span class=\"month-count\">" + count + " 族</span>" +
+        "</span>";
       details.appendChild(summary);
+
+      const collapsedStrip = document.createElement("div");
+      collapsedStrip.className = "month-collapsed-strip";
+      summary.appendChild(collapsedStrip);
 
       const body = document.createElement("div");
       body.className = "month-body";
@@ -389,12 +395,31 @@
         families.forEach((raw) => {
           const f = normFamily(raw, m.month);
           const chipClass = classifyFamily(f);
+          const domain = chipClass.domains.join(" ");
+          const lane = chipClass.lanes.join(" ");
+
+          const collapsed = document.createElement("a");
+          collapsed.className = "mini mini--toc-collapsed";
+          collapsed.href = "#" + encodeURIComponent(f.id);
+          collapsed.dataset.target = f.id;
+          collapsed.dataset.filterDomain = domain;
+          collapsed.dataset.filterLane = lane;
+          collapsed.innerHTML =
+            "<span class=\"mini-collapsed-date\">" + esc(f.publication_date || "") + "</span>" +
+            "<span class=\"mini-collapsed-pub\">" + esc(f.publication_number || "") + "</span>";
+          collapsed.addEventListener("click", (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            jumpToPatent(f.id, collapsed);
+          });
+          collapsedStrip.appendChild(collapsed);
+
           const a = document.createElement("a");
-          a.className = "mini";
+          a.className = "mini mini--toc-expanded";
           a.href = "#" + encodeURIComponent(f.id);
           a.dataset.target = f.id;
-          a.dataset.filterDomain = chipClass.domains.join(" ");
-          a.dataset.filterLane = chipClass.lanes.join(" ");
+          a.dataset.filterDomain = domain;
+          a.dataset.filterLane = lane;
           a.innerHTML =
             "<span class=\"mini-date\">" + esc(f.publication_date || "") + "</span>" +
             "<span class=\"mini-title\">" + esc(f.title || f.publication_number || "") + "</span>" +
@@ -417,8 +442,32 @@
 
   function setActiveMini(id) {
     document.querySelectorAll(".mini.active").forEach((n) => n.classList.remove("active"));
-    const link = document.querySelector('.mini[data-target="' + CSS.escape(id) + '"]');
-    if (link) link.classList.add("active");
+    document.querySelectorAll(".month.month--spy-active").forEach((n) => n.classList.remove("month--spy-active"));
+    const links = document.querySelectorAll('.mini[data-target="' + CSS.escape(id) + '"]');
+    links.forEach((link) => link.classList.add("active"));
+    const month = links.length ? links[0].closest("details.month") : null;
+    if (month && !month.open) month.classList.add("month--spy-active");
+
+    const tree = $("#tree");
+    if (!tree || !links.length) return;
+    const collapsed = document.querySelector(
+      '.mini--toc-collapsed[data-target="' + CSS.escape(id) + '"]'
+    );
+    const expanded = document.querySelector(
+      '.mini--toc-expanded[data-target="' + CSS.escape(id) + '"]'
+    );
+    const scrollEl =
+      collapsed && collapsed.offsetParent !== null
+        ? collapsed
+        : expanded && expanded.offsetParent !== null
+          ? expanded
+          : collapsed || expanded;
+    if (!scrollEl) return;
+    const tRect = tree.getBoundingClientRect();
+    const eRect = scrollEl.getBoundingClientRect();
+    if (eRect.top < tRect.top + 4 || eRect.bottom > tRect.bottom - 4) {
+      scrollEl.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    }
   }
 
   function jumpToPatent(id, miniEl) {
