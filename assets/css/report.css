@@ -183,26 +183,24 @@ button { font: inherit; cursor: pointer; }
 
 .month {
   border-bottom: 1px solid var(--line);
-  margin-bottom: 4px;
+  margin-bottom: 2px;
   background: transparent;
 }
 
 .month summary {
   list-style: none;
-  padding: 6px 4px 4px;
+  padding: 4px 4px;
   cursor: pointer;
   display: grid;
   grid-template-columns: 16px 1fr;
-  grid-template-areas:
-    "chev head"
-    "strip strip";
+  grid-template-areas: "chev head";
   column-gap: 4px;
-  row-gap: 0;
   font-size: 13px;
   font-weight: 650;
   user-select: none;
   background: transparent;
   align-items: center;
+  min-height: 30px;
 }
 
 .month-summary-head {
@@ -210,7 +208,7 @@ button { font: inherit; cursor: pointer; }
   display: flex;
   align-items: center;
   gap: 8px;
-  min-height: 32px;
+  min-height: 28px;
   width: 100%;
 }
 

@@ -378,10 +378,6 @@
         "</span>";
       details.appendChild(summary);
 
-      const collapsedStrip = document.createElement("div");
-      collapsedStrip.className = "month-collapsed-strip";
-      summary.appendChild(collapsedStrip);
-
       const body = document.createElement("div");
       body.className = "month-body";
       const families = familiesNewestFirst(m);
