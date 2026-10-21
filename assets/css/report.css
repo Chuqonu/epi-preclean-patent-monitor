@@ -707,6 +707,19 @@ button { font: inherit; cursor: pointer; }
     scroll-padding-top: var(--toc-drawer-clearance);
   }
 
+  /* Opaque band under fixed ☰ toggle — hash scroll can leave prior figcaption in this strip */
+  .shell:not(.drawer-open)::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--toc-drawer-clearance);
+    background: var(--bg);
+    z-index: 45;
+    pointer-events: none;
+  }
+
   .shell { display: block; position: relative; }
   .toc-drawer-icon {
     font-size: 16px;
