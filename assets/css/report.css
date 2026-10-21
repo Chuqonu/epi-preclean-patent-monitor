@@ -494,35 +494,6 @@ button { font: inherit; cursor: pointer; }
 .section-label { font-weight: 600; margin: 0 0 7px; font-size: 15px; }
 .claim-text { white-space: pre-line; line-height: 1.85; }
 
-.patent-table .events {
-  border-collapse: collapse;
-  table-layout: auto;
-  width: 100%;
-  max-width: 100%;
-  font-size: 13px;
-  line-height: 1.55;
-  margin: 7px 0 0;
-}
-
-.patent-table .events th,
-.patent-table .events td {
-  border: 1px solid var(--grid);
-  padding: 7px 8px;
-  font-weight: 400;
-  width: auto;
-  word-break: break-word;
-}
-
-.patent-table .events th:nth-child(1),
-.patent-table .events td:nth-child(1) {
-  min-width: 6.5em;
-}
-
-.patent-table .events th:nth-child(2),
-.patent-table .events td:nth-child(2) {
-  white-space: nowrap;
-}
-
 .fig {
   margin: 16px 0 8px;
   text-align: center;
@@ -818,18 +789,6 @@ button { font: inherit; cursor: pointer; }
   .patent-table td.patent-value {
     padding: 8px 9px;
     font-size: 13px;
-  }
-  .patent-table .events {
-    font-size: 11px;
-    line-height: 1.45;
-  }
-  .patent-table .events th,
-  .patent-table .events td {
-    padding: 5px 4px;
-  }
-  .patent-table .events th:nth-child(2),
-  .patent-table .events td:nth-child(2) {
-    white-space: normal;
   }
 }
 
