@@ -22,22 +22,23 @@
     "epi-4 实际定时触发：双轨空增量（EPI/Preclean 各 0 candidates·0 events·0 families）；research_through 2026-10-19→2026-10-20；无新专利纳入；运行日志 docs/runs/2026-10-20-epi-4-full-maintenance.md",
     "关联待核（content-pending）：无 active 行；CN122564748A 已裁定 exclude（见 EVIDENCE-PENDING-DISPOSITION-CN122564748A-2026-10-20.json）。",
     "晚间增量（informal 2026-10-20）：EPI US20260062803A1 + Preclean FAM-ASM-AHF-PRECLEAN（KR102916044B1 / US12660544B2 / US12757665B2）；Lam US20260090293A1 仅补标签，不计新发现。",
-    "早间增量（2026-10-22 PASS_INCREMENTAL）：EPI overlap_backfill US12770834B2（ASM PE epi CVD）、US12768074B2（AMAT epi chamber）；event_date=2026-10-20；research_through 保持 2026-10-20；team_read 锁 6。"
+    "早间增量（2026-10-22 PASS_INCREMENTAL）：EPI overlap_backfill US12770834B2（ASM PE epi CVD）、US12768074B2（AMAT epi chamber）；event_date=2026-10-20；research_through 保持 2026-10-20；team_read 锁 6。",
+    "晚间 R4 增量（2026-10-22 PASS_INCREMENTAL）：EPI gap core JP2026004352A、US12595560B2；Preclean related KR102920833B1（≠ KR102918757B1 族）；research_through 保持 2026-10-20；team_read 锁 6。"
   ],
   "counts": {
-    "candidates_total": 128,
+    "candidates_total": 131,
     "events_reviewed": 6,
-    "events_core": 156,
-    "families_core": 112,
-    "related": 1,
+    "events_core": 159,
+    "families_core": 114,
+    "related": 2,
     "pending": 0,
     "excluded": 0,
     "figures": 191,
-    "month_family_entries": 128,
-    "publication_events": 156,
-    "unique_families": 113,
+    "month_family_entries": 131,
+    "publication_events": 159,
+    "unique_families": 116,
     "actually_read": 6,
-    "unique_publication_ids": 156
+    "unique_publication_ids": 159
   },
   "search_coverage": [],
   "pending_or_related": [],
@@ -155,6 +156,18 @@
       "by": "evening-r4-figure-extract",
       "action": "apply_evening_r4e_uspto_figures",
       "detail": "US12770834B2+US12768074B2 drawing sheets; pubs=2; actually_read/research_through/team_read untouched by design"
+    },
+    {
+      "at": "2026-10-22T13:04:44Z",
+      "by": "evening-r4-gap-incremental",
+      "action": "evening_r4_gap_include",
+      "detail": "Added: JP2026004352A, US12595560B2, KR102920833B1. team_read locked 6; research_through 2026-10-20."
+    },
+    {
+      "at": "2026-10-22T13:04:49Z",
+      "by": "evening-r4-gap-incremental",
+      "action": "evening_r4_gap_include",
+      "detail": "Added: (none new). team_read locked 6; research_through 2026-10-20."
     }
   ],
   "months": [
@@ -20010,29 +20023,28 @@
       "through_date": null,
       "families": [
         {
-          "publication_id": "US20260092399A1",
+          "publication_id": "US20260123349A1",
           "jurisdiction": "US",
           "event_type": "publication",
-          "event_date": "2026-04-02",
-          "application_id": "US19/342,449",
-          "priority_date": "2024-09-27",
-          "family_id": "US20260092399A1",
+          "event_date": "2026-04-30",
+          "application_id": "US18/932,875",
+          "priority_date": "2024-10-31",
+          "family_id": "99550322",
           "family_id_source": "reference_report",
-          "title_original": "Method for forming an epitaxial structure onto a substrate and substrate processing apparatus",
-          "title_zh": "外延结构形成方法与基板处理装置",
+          "title_original": "Rim vented susceptor",
+          "title_zh": "带边缘排气结构的基座",
           "applicant_original": null,
-          "applicant_normalized": "ASM IP Holding B.V.",
+          "applicant_normalized": "Applied Materials, Inc.",
           "scope_status": "core",
           "technology_tags": [
             "epi"
           ],
-          "short_preview": "以低等离子体功率密度促进Si/SiGe外延，并让预清洗与外延在真空下衔接，以改善多层界面及层成分、厚度控制。",
-          "technical_summary": "以低等离子体功率密度促进Si/SiGe外延，并让预清洗与外延在真空下衔接，以改善多层界面及层成分、厚度控制。",
-          "claims_or_embodiment_basis": "当前独权1用前驱体与活性物种形成外延层，明确要求等离子体功率/暴露基板面积≤0.2 W/cm²；28为执行该方法的装置，33为程序介质。3引用1限定晶体Si；18引用17→1限定第二层SiGe；15引用1为预清洗，16引用15为真空转移；32引用28增加预清洗腔真空联接。",
+          "short_preview": "在基座边缘（rim）的周向凹槽（pocket）设置排气通路，改变边缘工艺气体和副产物的流动。说明书明确提出，这种设计用于改善硅外延生长速率的均匀性。",
+          "technical_summary": "在基座边缘（rim）的周向凹槽（pocket）设置排气通路，改变边缘工艺气体和副产物的流动。说明书明确提出，这种设计用于改善硅外延生长速率的均匀性。",
+          "claims_or_embodiment_basis": "独权1为基座支撑面、周缘rim、沿周向分布的pocket及各pocket的排气口；独权10为含该支撑结构的腔室；独权20为相应处理系统。2引用1增加互相垂直rim表面的气道开口，3/4引用2增加倾斜/径向或轴向气道。",
           "scope_reason": "技术全文与当前权利要求已核对",
           "source_urls": [
-            "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260092399",
-            "https://patents.google.com/patent/US20260092399A1/en"
+            "https://patents.google.com/patent/US20260123349A1/en"
           ],
           "source_retrieved_at": null,
           "source_sha256": null,
@@ -20042,267 +20054,585 @@
           "family_completion_status": "pending",
           "figures": [
             {
-              "source_publication_id": "US20260092399A1",
-              "figure_number": "Fig. 3",
-              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260092399",
-              "local_asset_path": "assets/figures/recovered/d88f7cdbbe20e4d36d4d97718c1f37182c76119e890a84b636d5c6776440461b.webp",
-              "width": 1480,
-              "height": 2000,
-              "caption": "US20260092399A1 原始专利附图，Fig. 3（原始PDF第4页）。",
-              "asset_sha256": "d88f7cdbbe20e4d36d4d97718c1f37182c76119e890a84b636d5c6776440461b",
-              "source_original_sha256": "5a2f4ea00411149cd70d8afcee8191058e84cd471f6fb548bccec12dcf567ea9",
-              "source_display_sha256": "d88f7cdbbe20e4d36d4d97718c1f37182c76119e890a84b636d5c6776440461b",
-              "pdf_page": 4,
+              "source_publication_id": "US20260123349A1",
+              "figure_number": "Fig. 2",
+              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260123349",
+              "local_asset_path": "assets/figures/recovered/5e513f2c2696720de06d0d376291a3c68e44eca9d7b07fd6e0c85323b67c6f4c.webp",
+              "width": 2000,
+              "height": 1712,
+              "caption": "US20260123349A1 原始专利附图，Fig. 2（原始PDF第3页）。",
+              "asset_sha256": "5e513f2c2696720de06d0d376291a3c68e44eca9d7b07fd6e0c85323b67c6f4c",
+              "source_original_sha256": "cda8e9e7256a0d48555cd119d1fc52a08ad16cbaf86b639542461365dc57b15f",
+              "source_display_sha256": "5e513f2c2696720de06d0d376291a3c68e44eca9d7b07fd6e0c85323b67c6f4c",
+              "pdf_page": 3,
               "display_rotation": 0,
               "source_geometry": {},
               "annotations": {
                 "version": 1,
-                "image_sha256": "d88f7cdbbe20e4d36d4d97718c1f37182c76119e890a84b636d5c6776440461b",
+                "image_sha256": "5e513f2c2696720de06d0d376291a3c68e44eca9d7b07fd6e0c85323b67c6f4c",
                 "coordinate_system": "normalized-original-image-xywh",
-                "scope": "US20260092399A1 Fig. 3",
+                "scope": "US20260123349A1 Fig. 2",
                 "original_language": "en",
                 "display_language": "en",
                 "labels": [
                   {
-                    "number": "27",
+                    "number": "200",
                     "kind": "component",
-                    "display_name": "substrate processing apparatus",
-                    "display_description": "Apparatus configured to form material on substrates in one or more process chambers."
+                    "display_name": "processing chamber",
+                    "display_description": "Chamber used to perform epitaxial growth."
                   },
                   {
-                    "number": "30",
+                    "number": "202",
                     "kind": "component",
-                    "display_name": "precursor source",
-                    "display_description": "Source supplying at least one precursor to the process chamber."
+                    "display_name": "chamber body",
+                    "display_description": "Body containing upper and lower processing portions."
                   },
                   {
-                    "number": "35",
+                    "number": "204",
                     "kind": "component",
-                    "display_name": "control unit",
-                    "display_description": "Controller operating the chambers, precursor source and plasma source."
+                    "display_name": "support system",
+                    "display_description": "Components used to execute and monitor chamber processes."
                   },
                   {
-                    "number": "33",
+                    "number": "206",
                     "kind": "component",
-                    "display_name": "reactant source",
-                    "display_description": "Optional source supplying one or more reactants."
+                    "display_name": "controller",
+                    "display_description": "Controls the processing chamber and support system."
                   },
                   {
-                    "number": "31",
+                    "number": "208",
                     "kind": "component",
-                    "display_name": "showerhead injector",
-                    "display_description": "Injector supplying precursor and optional reactants into the chamber."
+                    "display_name": "upper portion",
+                    "display_description": "Region between the upper dome and substrate."
                   },
                   {
-                    "number": "21",
+                    "number": "210",
                     "kind": "component",
-                    "display_name": "active species",
-                    "display_description": "Plasma-generated active species used during material formation."
+                    "display_name": "lower portion",
+                    "display_description": "Region between the lower dome and substrate underside."
                   },
                   {
-                    "number": "38",
+                    "number": "212",
                     "kind": "component",
-                    "display_name": "common frame",
-                    "display_description": "Common frame holding the process chambers."
+                    "display_name": "upper dome",
+                    "display_description": "Upper boundary above the substrate."
                   },
                   {
-                    "number": "32",
+                    "number": "214",
                     "kind": "component",
-                    "display_name": "plasma source",
-                    "display_description": "Plasma source providing active species in the process chamber."
+                    "display_name": "lower dome",
+                    "display_description": "Lower boundary transmitting lamp radiation into the chamber."
                   },
                   {
-                    "number": "20",
+                    "number": "216",
                     "kind": "component",
-                    "display_name": "precursor",
-                    "display_description": "At least one precursor used to form material on the substrate."
+                    "display_name": "lamps",
+                    "display_description": "Heat sources supplying thermal energy to chamber components."
                   },
                   {
-                    "number": "18",
+                    "number": "218",
+                    "kind": "component",
+                    "display_name": "susceptor",
+                    "display_description": "Supports the substrate during processing."
+                  },
+                  {
+                    "number": "220",
+                    "kind": "component",
+                    "display_name": "preheat ring",
+                    "display_description": "Surrounds the substrate and preheats incoming process gas."
+                  },
+                  {
+                    "number": "222",
+                    "kind": "component",
+                    "display_name": "gas sources",
+                    "display_description": "Supply carrier gas to chamber plenums."
+                  },
+                  {
+                    "number": "224",
+                    "kind": "component",
+                    "display_name": "precursor sources",
+                    "display_description": "Supply deposition and dopant gases."
+                  },
+                  {
+                    "number": "226",
+                    "kind": "component",
+                    "display_name": "first plenum",
+                    "display_description": "Introduces deposition gas into the upper portion."
+                  },
+                  {
+                    "number": "228",
+                    "kind": "component",
+                    "display_name": "deposition gas",
+                    "display_description": "Gas flowing over the substrate upper surface."
+                  },
+                  {
+                    "number": "230",
+                    "kind": "component",
+                    "display_name": "second plenum",
+                    "display_description": "Exhausts deposition gas from the upper portion."
+                  },
+                  {
+                    "number": "232",
+                    "kind": "component",
+                    "display_name": "liquid vaporizer",
+                    "display_description": "Vaporizes liquid precursors for delivery to the chamber."
+                  },
+                  {
+                    "number": "234",
+                    "kind": "component",
+                    "display_name": "liquid precursor source",
+                    "display_description": "Supplies liquid precursor to the vaporizer."
+                  },
+                  {
+                    "number": "236",
+                    "kind": "component",
+                    "display_name": "substrate support assembly",
+                    "display_description": "Supports the substrate in its processing position."
+                  },
+                  {
+                    "number": "238",
+                    "kind": "component",
+                    "display_name": "susceptor support shaft",
+                    "display_description": "Rotatable support carrying the susceptor."
+                  },
+                  {
+                    "number": "240",
+                    "kind": "component",
+                    "display_name": "shaft",
+                    "display_description": "Shaft of the susceptor support shaft inside the shroud."
+                  },
+                  {
+                    "number": "242",
+                    "kind": "component",
+                    "display_name": "shroud",
+                    "display_description": "Generally fixed enclosure around the shaft."
+                  },
+                  {
+                    "number": "244",
+                    "kind": "component",
+                    "display_name": "lift pin contacts",
+                    "display_description": "Contacts coupled to the shroud for lift-pin operation."
+                  },
+                  {
+                    "number": "246",
+                    "kind": "component",
+                    "display_name": "actuator",
+                    "display_description": "Rotates the susceptor support shaft."
+                  },
+                  {
+                    "number": "248",
+                    "kind": "component",
+                    "display_name": "support pins",
+                    "display_description": "Couple the susceptor support shaft to the susceptor."
+                  },
+                  {
+                    "number": "250",
+                    "kind": "component",
+                    "display_name": "lift pins",
+                    "display_description": "Raise the substrate from its processing position for removal."
+                  },
+                  {
+                    "number": "252",
+                    "kind": "component",
+                    "display_name": "lower liner",
+                    "display_description": "Supports the removable preheat ring."
+                  },
+                  {
+                    "number": "254",
+                    "kind": "component",
+                    "display_name": "central window portion",
+                    "display_description": "Optically transparent central part of the upper dome."
+                  },
+                  {
+                    "number": "256",
+                    "kind": "component",
+                    "display_name": "bottom portion",
+                    "display_description": "Optically transparent part of the lower dome."
+                  },
+                  {
+                    "number": "258",
+                    "kind": "component",
+                    "display_name": "peripheral flange",
+                    "display_description": "Upper-dome flange engaging its central window portion."
+                  },
+                  {
+                    "number": "260",
+                    "kind": "component",
+                    "display_name": "peripheral flange",
+                    "display_description": "Lower-dome flange engaging its bottom portion."
+                  },
+                  {
+                    "number": "262",
+                    "kind": "component",
+                    "display_name": "O-rings",
+                    "display_description": "Seals protected from direct heat radiation by peripheral flanges."
+                  },
+                  {
+                    "number": "W",
                     "kind": "component",
                     "display_name": "substrate",
-                    "display_description": "Substrate on which material is formed."
-                  },
-                  {
-                    "number": "29",
-                    "kind": "component",
-                    "display_name": "substrate holder",
-                    "display_description": "Holder supporting the substrate in the process chamber."
-                  },
-                  {
-                    "number": "37",
-                    "kind": "component",
-                    "display_name": "further substrate",
-                    "display_description": "Additional substrate processed in the further process chamber."
-                  },
-                  {
-                    "number": "28",
-                    "kind": "component",
-                    "display_name": "process chamber",
-                    "display_description": "Chamber holding the substrate during processing."
-                  },
-                  {
-                    "number": "36",
-                    "kind": "component",
-                    "display_name": "further process chamber",
-                    "display_description": "Additional chamber for concurrent processing of another substrate."
-                  },
-                  {
-                    "number": "34",
-                    "kind": "component",
-                    "display_name": "exhaust pump",
-                    "display_description": "Pump evacuating and purging the process chambers."
+                    "display_description": "Workpiece supported for epitaxial processing."
                   }
                 ],
                 "occurrences": [
                   {
-                    "figure": "Fig. 3",
-                    "number": "27",
+                    "figure": "Fig. 2",
+                    "number": "200",
                     "box": [
-                      0.914865,
-                      0.0045,
-                      0.039189,
-                      0.0235
+                      0.78534,
+                      0.008152,
+                      0.054101,
+                      0.029891
                     ]
                   },
                   {
-                    "figure": "Fig. 3",
-                    "number": "30",
+                    "figure": "Fig. 2",
+                    "number": "202",
                     "box": [
-                      0.733108,
-                      0.2075,
-                      0.037838,
-                      0.0235
+                      0.759162,
+                      0.545516,
+                      0.052356,
+                      0.028533
                     ]
                   },
                   {
-                    "figure": "Fig. 3",
-                    "number": "35",
+                    "figure": "Fig. 2",
+                    "number": "204",
                     "box": [
-                      0.211486,
-                      0.2435,
-                      0.037838,
-                      0.0235
+                      0.74171,
+                      0.754076,
+                      0.052356,
+                      0.028533
                     ]
                   },
                   {
-                    "figure": "Fig. 3",
-                    "number": "33",
+                    "figure": "Fig. 2",
+                    "number": "206",
                     "box": [
-                      0.901351,
-                      0.2855,
-                      0.037838,
-                      0.0235
+                      0.477022,
+                      0.852582,
+                      0.052356,
+                      0.029212
                     ]
                   },
                   {
-                    "figure": "Fig. 3",
-                    "number": "31",
+                    "figure": "Fig. 2",
+                    "number": "208",
                     "box": [
-                      0.283108,
-                      0.343,
-                      0.037838,
-                      0.0235
+                      0.39267,
+                      0.199728,
+                      0.052938,
+                      0.029212
                     ]
                   },
                   {
-                    "figure": "Fig. 3",
-                    "number": "21",
+                    "figure": "Fig. 2",
+                    "number": "210",
                     "box": [
-                      0.262162,
-                      0.419,
-                      0.037838,
-                      0.0235
+                      0.280396,
+                      0.369565,
+                      0.054101,
+                      0.028533
                     ]
                   },
                   {
-                    "figure": "Fig. 3",
-                    "number": "38",
+                    "figure": "Fig. 2",
+                    "number": "212",
                     "box": [
-                      0.874324,
-                      0.4175,
-                      0.037838,
-                      0.0235
+                      0.467714,
+                      0.039402,
+                      0.053519,
+                      0.029891
                     ]
                   },
                   {
-                    "figure": "Fig. 3",
-                    "number": "32",
+                    "figure": "Fig. 2",
+                    "number": "214",
                     "box": [
-                      0.030405,
-                      0.5385,
-                      0.037838,
-                      0.0235
+                      0.648051,
+                      0.461957,
+                      0.052938,
+                      0.029212
                     ]
                   },
                   {
-                    "figure": "Fig. 3",
-                    "number": "20",
+                    "figure": "Fig. 2",
+                    "number": "216",
                     "box": [
-                      0.056757,
-                      0.5875,
-                      0.039865,
-                      0.0235
+                      0.230948,
+                      0.61481,
+                      0.051774,
+                      0.028533
                     ]
                   },
                   {
-                    "figure": "Fig. 3",
-                    "number": "18",
+                    "figure": "Fig. 2",
+                    "number": "216",
                     "box": [
-                      0.268243,
-                      0.626,
-                      0.037838,
-                      0.0235
+                      0.579407,
+                      0.650815,
+                      0.052356,
+                      0.029212
                     ]
                   },
                   {
-                    "figure": "Fig. 3",
-                    "number": "29",
+                    "figure": "Fig. 2",
+                    "number": "218",
                     "box": [
-                      0.536486,
-                      0.638,
-                      0.037838,
-                      0.0235
+                      0.734148,
+                      0.30163,
+                      0.052938,
+                      0.028533
                     ]
                   },
                   {
-                    "figure": "Fig. 3",
-                    "number": "37",
+                    "figure": "Fig. 2",
+                    "number": "220",
                     "box": [
-                      0.860811,
-                      0.6205,
-                      0.037838,
-                      0.0235
+                      0.220477,
+                      0.345788,
+                      0.054101,
+                      0.029891
                     ]
                   },
                   {
-                    "figure": "Fig. 3",
-                    "number": "28",
+                    "figure": "Fig. 2",
+                    "number": "222",
                     "box": [
-                      0.208108,
-                      0.81,
-                      0.037838,
-                      0.0235
+                      0.853403,
+                      0.005435,
+                      0.052356,
+                      0.029891
                     ]
                   },
                   {
-                    "figure": "Fig. 3",
-                    "number": "36",
+                    "figure": "Fig. 2",
+                    "number": "224",
                     "box": [
-                      0.69527,
-                      0.8145,
-                      0.037838,
-                      0.0235
+                      0.944735,
+                      0.164402,
+                      0.052356,
+                      0.028533
                     ]
                   },
                   {
-                    "figure": "Fig. 3",
-                    "number": "34",
+                    "figure": "Fig. 2",
+                    "number": "226",
                     "box": [
-                      0.704054,
-                      0.9335,
-                      0.039865,
-                      0.0235
+                      0.72135,
+                      0.214674,
+                      0.052938,
+                      0.029212
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 2",
+                    "number": "228",
+                    "box": [
+                      0.243165,
+                      0.068614,
+                      0.052356,
+                      0.029891
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 2",
+                    "number": "228",
+                    "box": [
+                      0.603258,
+                      0.090353,
+                      0.052356,
+                      0.029212
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 2",
+                    "number": "230",
+                    "box": [
+                      0.004072,
+                      0.288723,
+                      0.052356,
+                      0.029212
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 2",
+                    "number": "232",
+                    "box": [
+                      0.904596,
+                      0.315897,
+                      0.052938,
+                      0.029212
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 2",
+                    "number": "234",
+                    "box": [
+                      0.904014,
+                      0.241168,
+                      0.054101,
+                      0.029891
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 2",
+                    "number": "236",
+                    "box": [
+                      0.297848,
+                      0.567935,
+                      0.054101,
+                      0.028533
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 2",
+                    "number": "238",
+                    "box": [
+                      0.547993,
+                      0.449049,
+                      0.052938,
+                      0.029212
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 2",
+                    "number": "240",
+                    "box": [
+                      0.266434,
+                      0.446332,
+                      0.052356,
+                      0.028533
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 2",
+                    "number": "242",
+                    "box": [
+                      0.52007,
+                      0.568614,
+                      0.052938,
+                      0.029212
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 2",
+                    "number": "244",
+                    "box": [
+                      0.458988,
+                      0.481658,
+                      0.052356,
+                      0.029212
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 2",
+                    "number": "246",
+                    "box": [
+                      0.260035,
+                      0.877038,
+                      0.053519,
+                      0.029212
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 2",
+                    "number": "248",
+                    "box": [
+                      0.332752,
+                      0.192935,
+                      0.052938,
+                      0.029212
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 2",
+                    "number": "248",
+                    "box": [
+                      0.443281,
+                      0.294837,
+                      0.052938,
+                      0.029212
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 2",
+                    "number": "250",
+                    "box": [
+                      0.509599,
+                      0.195652,
+                      0.052356,
+                      0.029212
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 2",
+                    "number": "252",
+                    "box": [
+                      0.555556,
+                      0.33356,
+                      0.052938,
+                      0.029212
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 2",
+                    "number": "254",
+                    "box": [
+                      0.369401,
+                      0.063859,
+                      0.053519,
+                      0.029212
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 2",
+                    "number": "256",
+                    "box": [
+                      0.144852,
+                      0.486413,
+                      0.052938,
+                      0.029212
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 2",
+                    "number": "258",
+                    "box": [
+                      0.025015,
+                      0.232337,
+                      0.052938,
+                      0.029212
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 2",
+                    "number": "260",
+                    "box": [
+                      0.01338,
+                      0.382473,
+                      0.052938,
+                      0.029212
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 2",
+                    "number": "262",
+                    "box": [
+                      0.140198,
+                      0.064538,
+                      0.052938,
+                      0.029212
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 2",
+                    "number": "W",
+                    "box": [
+                      0.457824,
+                      0.192935,
+                      0.029668,
+                      0.029891
                     ]
                   }
                 ]
@@ -20320,25 +20650,428 @@
           ],
           "family_events": [
             {
-              "publication_id": "US20260092399A1",
-              "event_date": "2026-04-02",
+              "publication_id": "US20260123349A1",
+              "event_date": "2026-04-30",
               "event_type": "publication",
-              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260092399",
-              "application_id": "US19/342,449"
+              "source_url": "https://patents.google.com/patent/US20260123349A1/en",
+              "application_id": "US18/932,875"
             }
           ],
-          "id": "2026-04-US20260092399A1",
+          "id": "2026-04-US20260123349A1",
           "month": "2026-04",
           "import_tag": "imported baseline",
           "discovery_source": "reference_report",
-          "purpose": "改善Si/SiGe多层界面质量和缺陷情况，并控制各层成分与厚度。",
-          "novelty": "将等离子体功率密度限定为≤0.2 W/cm²，并设置相应的设备控制。",
-          "use": "Si/SiGe超晶格外延设备与工艺。",
+          "purpose": "改善面内及晶圆边缘外延厚度均匀性。",
+          "novelty": "将周缘凹槽（pocket）与排气口、气道组合，利用其几何形状调整边缘流动。",
+          "use": "Si热外延腔室基座和边缘流场控制。",
           "event_note": "申请公布",
           "family_context": null,
           "verification": "技术全文与当前权利要求已核对",
-          "category": "EPI 工艺",
-          "reference_source_status": "官方USPTO当前A1原PDF已取得并全文OCR；封面和关键claim1功率单位已视觉核对。\n2026-10-15补充复核：既有技术说明核验记录保留；2026-10-15重新取得当前USPTO原始文献，逐项目视复核全部33项权利要求（PDF第17/18页），核对编号、依存关系和数值单位。本轮不代表重新阅读全文说明书、审查案卷或现时法律状态。"
+          "category": "EPI 设备",
+          "reference_source_status": "当前公开号公共全文已核查；原 HTML 下载 503，保存可读网页证据摘录。\n2026-10-15补充复核：既有技术说明核验记录保留；2026-10-15重新取得当前USPTO原始文献，逐项目视复核全部20项权利要求（PDF第31/32/33页），核对编号、依存关系和数值单位。本轮不代表重新阅读全文说明书、审查案卷或现时法律状态。"
+        },
+        {
+          "publication_id": "WO2026084898A1",
+          "jurisdiction": "WO",
+          "event_type": "publication",
+          "event_date": "2026-04-23",
+          "application_id": "PCT/US2025/049619",
+          "priority_date": "2024-10-16",
+          "family_id": "99436736",
+          "family_id_source": "reference_report",
+          "title_original": "Controlling auto-doping in epitaxially grown silicon-containing materials",
+          "title_zh": "控制含硅外延材料中的自掺杂",
+          "applicant_original": null,
+          "applicant_normalized": "Applied Materials, Inc.",
+          "scope_status": "core",
+          "technology_tags": [
+            "epi"
+          ],
+          "short_preview": "在 Si 沟道外延中，结合阻挡层和低温生长，抑制邻近高掺杂源漏造成的自掺杂。实施例中的阻挡层包括含碳 Si 层。温度条件按独立项区分：1未限温；14限定外延≤约600°C；18的≤约600°C仅限阻挡层第一温度，20依附18并要求外延第二温度更高。",
+          "technical_summary": "在 Si 沟道外延中，结合阻挡层和低温生长，抑制邻近高掺杂源漏造成的自掺杂。实施例中的阻挡层包括含碳 Si 层。温度条件按独立项区分：1未限温；14限定外延≤约600°C；18的≤约600°C仅限阻挡层第一温度，20依附18并要求外延第二温度更高。",
+          "claims_or_embodiment_basis": "当前WO及同月US独权1为在掺杂源漏上形成阻挡层后生长含Si外延材料，以减少掺杂扩散；独权14限定含Si外延生长温度≤约600°C；独权18组合V族掺杂源漏、清除腔室残余掺杂及阻挡层/外延，其中≤约600°C限于形成阻挡层的第一温度，20→18要求外延第二温度高于第一温度。12→11→1增加腔室清洁。",
+          "scope_reason": "技术全文与当前权利要求已核对",
+          "source_urls": [
+            "https://patents.google.com/patent/WO2026084898A1/en"
+          ],
+          "source_retrieved_at": null,
+          "source_sha256": null,
+          "actual_read_spans": [],
+          "reviewer": null,
+          "reviewed_at": null,
+          "family_completion_status": "pending",
+          "figures": [
+            {
+              "source_publication_id": "US20260107704A1",
+              "figure_number": "FIG. 3",
+              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260107704",
+              "local_asset_path": "assets/figures/recovered/0cbc8e1ea1003af828a0ec92a77a1fce4655c7f49a6eebc04efe0932074f5978.webp",
+              "width": 932,
+              "height": 2000,
+              "caption": "FIG. 3：阻挡层形成与含硅材料外延流程。同族原图来源：US20260107704A1（公开日 2026-04-16），PDF第4页；不是本条监测文献WO2026084898A1的附图。",
+              "asset_sha256": "0cbc8e1ea1003af828a0ec92a77a1fce4655c7f49a6eebc04efe0932074f5978",
+              "source_original_sha256": "c988430b4c411d34c4cc3bd1d9b1c2ce9b6c6ff9938cc647ed21145f074a0da3",
+              "source_display_sha256": "0cbc8e1ea1003af828a0ec92a77a1fce4655c7f49a6eebc04efe0932074f5978",
+              "pdf_page": 4,
+              "display_rotation": 0,
+              "source_geometry": {},
+              "annotations": {
+                "version": 1,
+                "image_sha256": "0cbc8e1ea1003af828a0ec92a77a1fce4655c7f49a6eebc04efe0932074f5978",
+                "coordinate_system": "normalized-original-image-xywh",
+                "scope": "US20260107704A1 Fig. 3",
+                "original_language": "en",
+                "display_language": "en",
+                "labels": [
+                  {
+                    "number": "300",
+                    "kind": "process",
+                    "display_name": "semiconductor processing method",
+                    "display_description": "The illustrated sequence for forming epitaxial silicon-containing material and optional surrounding layers."
+                  },
+                  {
+                    "number": "305",
+                    "kind": "process_operation",
+                    "display_name": "Form first source/drain material",
+                    "display_description": "Optional process step: form first source/drain material 415."
+                  },
+                  {
+                    "number": "310",
+                    "kind": "process_operation",
+                    "display_name": "Perform clean",
+                    "display_description": "Optional process step: clean before the subsequent deposition."
+                  },
+                  {
+                    "number": "315",
+                    "kind": "process_operation",
+                    "display_name": "Form first barrier layer",
+                    "display_description": "Optional process step: form barrier layer 420."
+                  },
+                  {
+                    "number": "320",
+                    "kind": "process_operation",
+                    "display_name": "Grow epitaxial silicon-containing material",
+                    "display_description": "Process step: grow epitaxial silicon-containing material 425."
+                  },
+                  {
+                    "number": "325",
+                    "kind": "process_operation",
+                    "display_name": "Form second barrier layer",
+                    "display_description": "Optional process step: form second barrier layer 430 over the epitaxial silicon-containing material."
+                  },
+                  {
+                    "number": "330",
+                    "kind": "process_operation",
+                    "display_name": "Form second source/drain material",
+                    "display_description": "Optional process step: form second source/drain material 435 over the second barrier layer."
+                  }
+                ],
+                "occurrences": [
+                  {
+                    "figure": "Fig. 3",
+                    "number": "300",
+                    "box": [
+                      0.008584,
+                      0.004,
+                      0.063305,
+                      0.0165
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 3",
+                    "number": "305",
+                    "box": [
+                      0.92382,
+                      0.118,
+                      0.06867,
+                      0.017
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 3",
+                    "number": "310",
+                    "box": [
+                      0.92382,
+                      0.265,
+                      0.06867,
+                      0.0175
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 3",
+                    "number": "315",
+                    "box": [
+                      0.922747,
+                      0.412,
+                      0.069742,
+                      0.017
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 3",
+                    "number": "320",
+                    "box": [
+                      0.92382,
+                      0.558,
+                      0.069742,
+                      0.0175
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 3",
+                    "number": "325",
+                    "box": [
+                      0.92382,
+                      0.705,
+                      0.06867,
+                      0.017
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 3",
+                    "number": "330",
+                    "box": [
+                      0.92382,
+                      0.8525,
+                      0.069742,
+                      0.017
+                    ]
+                  }
+                ]
+              },
+              "annotation_coverage_status": "verified"
+            },
+            {
+              "source_publication_id": "US20260107704A1",
+              "figure_number": "FIG. 4A–FIG. 4C",
+              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260107704",
+              "local_asset_path": "assets/figures/recovered/e1b16291c23b7a0b55933134b7fd0f838f04ed759ef6874b7092773b639b5e09.webp",
+              "width": 608,
+              "height": 2000,
+              "caption": "FIG. 4A–FIG. 4C：阻挡层与含硅外延层的叠层结构。同族原图来源：US20260107704A1（公开日 2026-04-16），PDF第5页；不是本条监测文献WO2026084898A1的附图。",
+              "asset_sha256": "e1b16291c23b7a0b55933134b7fd0f838f04ed759ef6874b7092773b639b5e09",
+              "source_original_sha256": "e865c3354d8e414ea1a83726a0d97df342d63ca31cd71573d802e973a96791ba",
+              "source_display_sha256": "e1b16291c23b7a0b55933134b7fd0f838f04ed759ef6874b7092773b639b5e09",
+              "pdf_page": 5,
+              "display_rotation": 0,
+              "source_geometry": {},
+              "annotations": {
+                "version": 1,
+                "image_sha256": "e1b16291c23b7a0b55933134b7fd0f838f04ed759ef6874b7092773b639b5e09",
+                "coordinate_system": "normalized-original-image-xywh",
+                "scope": "US20260107704A1 Figs. 4A–4C",
+                "original_language": "en",
+                "display_language": "en",
+                "labels": [
+                  {
+                    "number": "400",
+                    "kind": "component",
+                    "display_name": "structure",
+                    "display_description": "Semiconductor structure at the illustrated fabrication stages."
+                  },
+                  {
+                    "number": "415",
+                    "kind": "component",
+                    "display_name": "first source/drain material",
+                    "display_description": "Doped silicon-containing source/drain material over the first material layer."
+                  },
+                  {
+                    "number": "410",
+                    "kind": "component",
+                    "display_name": "first layer of material",
+                    "display_description": "First material layer on the substrate, which may be a sacrificial silicon-and-germanium-containing material."
+                  },
+                  {
+                    "number": "405",
+                    "kind": "component",
+                    "display_name": "substrate",
+                    "display_description": "Substrate supporting the material layers; it may comprise silicon or another semiconductor."
+                  },
+                  {
+                    "number": "420",
+                    "kind": "component",
+                    "display_name": "barrier layer",
+                    "display_description": "Layer over the source/drain material that controls dopant diffusion into subsequently formed material."
+                  },
+                  {
+                    "number": "425",
+                    "kind": "component",
+                    "display_name": "epitaxial silicon-containing material",
+                    "display_description": "Epitaxial silicon-containing material grown over the barrier layer."
+                  }
+                ],
+                "occurrences": [
+                  {
+                    "figure": "Figs. 4A–4C",
+                    "number": "400",
+                    "box": [
+                      0.009868,
+                      0.003,
+                      0.088816,
+                      0.0145
+                    ]
+                  },
+                  {
+                    "figure": "Figs. 4A–4C",
+                    "number": "415",
+                    "box": [
+                      0.899671,
+                      0.0725,
+                      0.088816,
+                      0.0145
+                    ]
+                  },
+                  {
+                    "figure": "Figs. 4A–4C",
+                    "number": "410",
+                    "box": [
+                      0.899671,
+                      0.106,
+                      0.088816,
+                      0.0145
+                    ]
+                  },
+                  {
+                    "figure": "Figs. 4A–4C",
+                    "number": "405",
+                    "box": [
+                      0.899671,
+                      0.1495,
+                      0.088816,
+                      0.0145
+                    ]
+                  },
+                  {
+                    "figure": "Figs. 4A–4C",
+                    "number": "420",
+                    "box": [
+                      0.901316,
+                      0.323,
+                      0.088816,
+                      0.0145
+                    ]
+                  },
+                  {
+                    "figure": "Figs. 4A–4C",
+                    "number": "415",
+                    "box": [
+                      0.901316,
+                      0.352,
+                      0.088816,
+                      0.0145
+                    ]
+                  },
+                  {
+                    "figure": "Figs. 4A–4C",
+                    "number": "410",
+                    "box": [
+                      0.901316,
+                      0.3865,
+                      0.088816,
+                      0.0145
+                    ]
+                  },
+                  {
+                    "figure": "Figs. 4A–4C",
+                    "number": "405",
+                    "box": [
+                      0.899671,
+                      0.43,
+                      0.088816,
+                      0.0145
+                    ]
+                  },
+                  {
+                    "figure": "Figs. 4A–4C",
+                    "number": "425",
+                    "box": [
+                      0.901316,
+                      0.6755,
+                      0.088816,
+                      0.0145
+                    ]
+                  },
+                  {
+                    "figure": "Figs. 4A–4C",
+                    "number": "420",
+                    "box": [
+                      0.899671,
+                      0.7825,
+                      0.090461,
+                      0.0145
+                    ]
+                  },
+                  {
+                    "figure": "Figs. 4A–4C",
+                    "number": "415",
+                    "box": [
+                      0.901316,
+                      0.812,
+                      0.087171,
+                      0.0145
+                    ]
+                  },
+                  {
+                    "figure": "Figs. 4A–4C",
+                    "number": "410",
+                    "box": [
+                      0.901316,
+                      0.846,
+                      0.088816,
+                      0.0145
+                    ]
+                  },
+                  {
+                    "figure": "Figs. 4A–4C",
+                    "number": "405",
+                    "box": [
+                      0.901316,
+                      0.8895,
+                      0.087171,
+                      0.015
+                    ]
+                  }
+                ]
+              },
+              "annotation_coverage_status": "verified"
+            }
+          ],
+          "change_history": [
+            {
+              "at": "2026-10-20T17:30:00+08:00",
+              "by": "baseline-import",
+              "action": "import",
+              "detail": "Imported from Dot reference report; not this team's independent discovery."
+            }
+          ],
+          "family_events": [
+            {
+              "publication_id": "US20260107704A1",
+              "event_date": "2026-04-16",
+              "event_type": "publication",
+              "source_url": "https://patents.google.com/patent/US20260107704A1/en",
+              "application_id": "US18/960,281"
+            },
+            {
+              "publication_id": "WO2026084898A1",
+              "event_date": "2026-04-23",
+              "event_type": "publication",
+              "source_url": "https://patents.google.com/patent/WO2026084898A1/en",
+              "application_id": "PCT/US2025/049619"
+            }
+          ],
+          "id": "2026-04-WO2026084898A1",
+          "month": "2026-04",
+          "import_tag": "imported baseline",
+          "discovery_source": "reference_report",
+          "purpose": "保持Si外延沟道所需掺杂分布。",
+          "novelty": "将阻挡层、低温外延和残余掺杂控制结合，以维持 Si 沟道所需的掺杂分布。",
+          "use": "Si/SiGe多层器件及3D DRAM硅沟道外延。",
+          "event_note": "申请公布",
+          "family_context": null,
+          "verification": "技术全文与当前权利要求已核对",
+          "category": "EPI 控制与计量",
+          "reference_source_status": "当前公开号公共全文已核查；原 HTML 下载 503，保存可读网页证据摘录。；US20260107704A1官方原页全部20项权利要求已复核（2026-10-15）。"
         },
         {
           "publication_id": "JP2026512448A",
@@ -21720,1057 +22453,6 @@
           "reference_source_status": "当前WO公共全文、书目及14项claims已核；保存网页读取证据。；JP2026068628A官方原页全部14项权利要求已复核（2026-10-15）。"
         },
         {
-          "publication_id": "WO2026084898A1",
-          "jurisdiction": "WO",
-          "event_type": "publication",
-          "event_date": "2026-04-23",
-          "application_id": "PCT/US2025/049619",
-          "priority_date": "2024-10-16",
-          "family_id": "99436736",
-          "family_id_source": "reference_report",
-          "title_original": "Controlling auto-doping in epitaxially grown silicon-containing materials",
-          "title_zh": "控制含硅外延材料中的自掺杂",
-          "applicant_original": null,
-          "applicant_normalized": "Applied Materials, Inc.",
-          "scope_status": "core",
-          "technology_tags": [
-            "epi"
-          ],
-          "short_preview": "在 Si 沟道外延中，结合阻挡层和低温生长，抑制邻近高掺杂源漏造成的自掺杂。实施例中的阻挡层包括含碳 Si 层。温度条件按独立项区分：1未限温；14限定外延≤约600°C；18的≤约600°C仅限阻挡层第一温度，20依附18并要求外延第二温度更高。",
-          "technical_summary": "在 Si 沟道外延中，结合阻挡层和低温生长，抑制邻近高掺杂源漏造成的自掺杂。实施例中的阻挡层包括含碳 Si 层。温度条件按独立项区分：1未限温；14限定外延≤约600°C；18的≤约600°C仅限阻挡层第一温度，20依附18并要求外延第二温度更高。",
-          "claims_or_embodiment_basis": "当前WO及同月US独权1为在掺杂源漏上形成阻挡层后生长含Si外延材料，以减少掺杂扩散；独权14限定含Si外延生长温度≤约600°C；独权18组合V族掺杂源漏、清除腔室残余掺杂及阻挡层/外延，其中≤约600°C限于形成阻挡层的第一温度，20→18要求外延第二温度高于第一温度。12→11→1增加腔室清洁。",
-          "scope_reason": "技术全文与当前权利要求已核对",
-          "source_urls": [
-            "https://patents.google.com/patent/WO2026084898A1/en"
-          ],
-          "source_retrieved_at": null,
-          "source_sha256": null,
-          "actual_read_spans": [],
-          "reviewer": null,
-          "reviewed_at": null,
-          "family_completion_status": "pending",
-          "figures": [
-            {
-              "source_publication_id": "US20260107704A1",
-              "figure_number": "FIG. 3",
-              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260107704",
-              "local_asset_path": "assets/figures/recovered/0cbc8e1ea1003af828a0ec92a77a1fce4655c7f49a6eebc04efe0932074f5978.webp",
-              "width": 932,
-              "height": 2000,
-              "caption": "FIG. 3：阻挡层形成与含硅材料外延流程。同族原图来源：US20260107704A1（公开日 2026-04-16），PDF第4页；不是本条监测文献WO2026084898A1的附图。",
-              "asset_sha256": "0cbc8e1ea1003af828a0ec92a77a1fce4655c7f49a6eebc04efe0932074f5978",
-              "source_original_sha256": "c988430b4c411d34c4cc3bd1d9b1c2ce9b6c6ff9938cc647ed21145f074a0da3",
-              "source_display_sha256": "0cbc8e1ea1003af828a0ec92a77a1fce4655c7f49a6eebc04efe0932074f5978",
-              "pdf_page": 4,
-              "display_rotation": 0,
-              "source_geometry": {},
-              "annotations": {
-                "version": 1,
-                "image_sha256": "0cbc8e1ea1003af828a0ec92a77a1fce4655c7f49a6eebc04efe0932074f5978",
-                "coordinate_system": "normalized-original-image-xywh",
-                "scope": "US20260107704A1 Fig. 3",
-                "original_language": "en",
-                "display_language": "en",
-                "labels": [
-                  {
-                    "number": "300",
-                    "kind": "process",
-                    "display_name": "semiconductor processing method",
-                    "display_description": "The illustrated sequence for forming epitaxial silicon-containing material and optional surrounding layers."
-                  },
-                  {
-                    "number": "305",
-                    "kind": "process_operation",
-                    "display_name": "Form first source/drain material",
-                    "display_description": "Optional process step: form first source/drain material 415."
-                  },
-                  {
-                    "number": "310",
-                    "kind": "process_operation",
-                    "display_name": "Perform clean",
-                    "display_description": "Optional process step: clean before the subsequent deposition."
-                  },
-                  {
-                    "number": "315",
-                    "kind": "process_operation",
-                    "display_name": "Form first barrier layer",
-                    "display_description": "Optional process step: form barrier layer 420."
-                  },
-                  {
-                    "number": "320",
-                    "kind": "process_operation",
-                    "display_name": "Grow epitaxial silicon-containing material",
-                    "display_description": "Process step: grow epitaxial silicon-containing material 425."
-                  },
-                  {
-                    "number": "325",
-                    "kind": "process_operation",
-                    "display_name": "Form second barrier layer",
-                    "display_description": "Optional process step: form second barrier layer 430 over the epitaxial silicon-containing material."
-                  },
-                  {
-                    "number": "330",
-                    "kind": "process_operation",
-                    "display_name": "Form second source/drain material",
-                    "display_description": "Optional process step: form second source/drain material 435 over the second barrier layer."
-                  }
-                ],
-                "occurrences": [
-                  {
-                    "figure": "Fig. 3",
-                    "number": "300",
-                    "box": [
-                      0.008584,
-                      0.004,
-                      0.063305,
-                      0.0165
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 3",
-                    "number": "305",
-                    "box": [
-                      0.92382,
-                      0.118,
-                      0.06867,
-                      0.017
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 3",
-                    "number": "310",
-                    "box": [
-                      0.92382,
-                      0.265,
-                      0.06867,
-                      0.0175
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 3",
-                    "number": "315",
-                    "box": [
-                      0.922747,
-                      0.412,
-                      0.069742,
-                      0.017
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 3",
-                    "number": "320",
-                    "box": [
-                      0.92382,
-                      0.558,
-                      0.069742,
-                      0.0175
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 3",
-                    "number": "325",
-                    "box": [
-                      0.92382,
-                      0.705,
-                      0.06867,
-                      0.017
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 3",
-                    "number": "330",
-                    "box": [
-                      0.92382,
-                      0.8525,
-                      0.069742,
-                      0.017
-                    ]
-                  }
-                ]
-              },
-              "annotation_coverage_status": "verified"
-            },
-            {
-              "source_publication_id": "US20260107704A1",
-              "figure_number": "FIG. 4A–FIG. 4C",
-              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260107704",
-              "local_asset_path": "assets/figures/recovered/e1b16291c23b7a0b55933134b7fd0f838f04ed759ef6874b7092773b639b5e09.webp",
-              "width": 608,
-              "height": 2000,
-              "caption": "FIG. 4A–FIG. 4C：阻挡层与含硅外延层的叠层结构。同族原图来源：US20260107704A1（公开日 2026-04-16），PDF第5页；不是本条监测文献WO2026084898A1的附图。",
-              "asset_sha256": "e1b16291c23b7a0b55933134b7fd0f838f04ed759ef6874b7092773b639b5e09",
-              "source_original_sha256": "e865c3354d8e414ea1a83726a0d97df342d63ca31cd71573d802e973a96791ba",
-              "source_display_sha256": "e1b16291c23b7a0b55933134b7fd0f838f04ed759ef6874b7092773b639b5e09",
-              "pdf_page": 5,
-              "display_rotation": 0,
-              "source_geometry": {},
-              "annotations": {
-                "version": 1,
-                "image_sha256": "e1b16291c23b7a0b55933134b7fd0f838f04ed759ef6874b7092773b639b5e09",
-                "coordinate_system": "normalized-original-image-xywh",
-                "scope": "US20260107704A1 Figs. 4A–4C",
-                "original_language": "en",
-                "display_language": "en",
-                "labels": [
-                  {
-                    "number": "400",
-                    "kind": "component",
-                    "display_name": "structure",
-                    "display_description": "Semiconductor structure at the illustrated fabrication stages."
-                  },
-                  {
-                    "number": "415",
-                    "kind": "component",
-                    "display_name": "first source/drain material",
-                    "display_description": "Doped silicon-containing source/drain material over the first material layer."
-                  },
-                  {
-                    "number": "410",
-                    "kind": "component",
-                    "display_name": "first layer of material",
-                    "display_description": "First material layer on the substrate, which may be a sacrificial silicon-and-germanium-containing material."
-                  },
-                  {
-                    "number": "405",
-                    "kind": "component",
-                    "display_name": "substrate",
-                    "display_description": "Substrate supporting the material layers; it may comprise silicon or another semiconductor."
-                  },
-                  {
-                    "number": "420",
-                    "kind": "component",
-                    "display_name": "barrier layer",
-                    "display_description": "Layer over the source/drain material that controls dopant diffusion into subsequently formed material."
-                  },
-                  {
-                    "number": "425",
-                    "kind": "component",
-                    "display_name": "epitaxial silicon-containing material",
-                    "display_description": "Epitaxial silicon-containing material grown over the barrier layer."
-                  }
-                ],
-                "occurrences": [
-                  {
-                    "figure": "Figs. 4A–4C",
-                    "number": "400",
-                    "box": [
-                      0.009868,
-                      0.003,
-                      0.088816,
-                      0.0145
-                    ]
-                  },
-                  {
-                    "figure": "Figs. 4A–4C",
-                    "number": "415",
-                    "box": [
-                      0.899671,
-                      0.0725,
-                      0.088816,
-                      0.0145
-                    ]
-                  },
-                  {
-                    "figure": "Figs. 4A–4C",
-                    "number": "410",
-                    "box": [
-                      0.899671,
-                      0.106,
-                      0.088816,
-                      0.0145
-                    ]
-                  },
-                  {
-                    "figure": "Figs. 4A–4C",
-                    "number": "405",
-                    "box": [
-                      0.899671,
-                      0.1495,
-                      0.088816,
-                      0.0145
-                    ]
-                  },
-                  {
-                    "figure": "Figs. 4A–4C",
-                    "number": "420",
-                    "box": [
-                      0.901316,
-                      0.323,
-                      0.088816,
-                      0.0145
-                    ]
-                  },
-                  {
-                    "figure": "Figs. 4A–4C",
-                    "number": "415",
-                    "box": [
-                      0.901316,
-                      0.352,
-                      0.088816,
-                      0.0145
-                    ]
-                  },
-                  {
-                    "figure": "Figs. 4A–4C",
-                    "number": "410",
-                    "box": [
-                      0.901316,
-                      0.3865,
-                      0.088816,
-                      0.0145
-                    ]
-                  },
-                  {
-                    "figure": "Figs. 4A–4C",
-                    "number": "405",
-                    "box": [
-                      0.899671,
-                      0.43,
-                      0.088816,
-                      0.0145
-                    ]
-                  },
-                  {
-                    "figure": "Figs. 4A–4C",
-                    "number": "425",
-                    "box": [
-                      0.901316,
-                      0.6755,
-                      0.088816,
-                      0.0145
-                    ]
-                  },
-                  {
-                    "figure": "Figs. 4A–4C",
-                    "number": "420",
-                    "box": [
-                      0.899671,
-                      0.7825,
-                      0.090461,
-                      0.0145
-                    ]
-                  },
-                  {
-                    "figure": "Figs. 4A–4C",
-                    "number": "415",
-                    "box": [
-                      0.901316,
-                      0.812,
-                      0.087171,
-                      0.0145
-                    ]
-                  },
-                  {
-                    "figure": "Figs. 4A–4C",
-                    "number": "410",
-                    "box": [
-                      0.901316,
-                      0.846,
-                      0.088816,
-                      0.0145
-                    ]
-                  },
-                  {
-                    "figure": "Figs. 4A–4C",
-                    "number": "405",
-                    "box": [
-                      0.901316,
-                      0.8895,
-                      0.087171,
-                      0.015
-                    ]
-                  }
-                ]
-              },
-              "annotation_coverage_status": "verified"
-            }
-          ],
-          "change_history": [
-            {
-              "at": "2026-10-20T17:30:00+08:00",
-              "by": "baseline-import",
-              "action": "import",
-              "detail": "Imported from Dot reference report; not this team's independent discovery."
-            }
-          ],
-          "family_events": [
-            {
-              "publication_id": "US20260107704A1",
-              "event_date": "2026-04-16",
-              "event_type": "publication",
-              "source_url": "https://patents.google.com/patent/US20260107704A1/en",
-              "application_id": "US18/960,281"
-            },
-            {
-              "publication_id": "WO2026084898A1",
-              "event_date": "2026-04-23",
-              "event_type": "publication",
-              "source_url": "https://patents.google.com/patent/WO2026084898A1/en",
-              "application_id": "PCT/US2025/049619"
-            }
-          ],
-          "id": "2026-04-WO2026084898A1",
-          "month": "2026-04",
-          "import_tag": "imported baseline",
-          "discovery_source": "reference_report",
-          "purpose": "保持Si外延沟道所需掺杂分布。",
-          "novelty": "将阻挡层、低温外延和残余掺杂控制结合，以维持 Si 沟道所需的掺杂分布。",
-          "use": "Si/SiGe多层器件及3D DRAM硅沟道外延。",
-          "event_note": "申请公布",
-          "family_context": null,
-          "verification": "技术全文与当前权利要求已核对",
-          "category": "EPI 控制与计量",
-          "reference_source_status": "当前公开号公共全文已核查；原 HTML 下载 503，保存可读网页证据摘录。；US20260107704A1官方原页全部20项权利要求已复核（2026-10-15）。"
-        },
-        {
-          "publication_id": "US20260123349A1",
-          "jurisdiction": "US",
-          "event_type": "publication",
-          "event_date": "2026-04-30",
-          "application_id": "US18/932,875",
-          "priority_date": "2024-10-31",
-          "family_id": "99550322",
-          "family_id_source": "reference_report",
-          "title_original": "Rim vented susceptor",
-          "title_zh": "带边缘排气结构的基座",
-          "applicant_original": null,
-          "applicant_normalized": "Applied Materials, Inc.",
-          "scope_status": "core",
-          "technology_tags": [
-            "epi"
-          ],
-          "short_preview": "在基座边缘（rim）的周向凹槽（pocket）设置排气通路，改变边缘工艺气体和副产物的流动。说明书明确提出，这种设计用于改善硅外延生长速率的均匀性。",
-          "technical_summary": "在基座边缘（rim）的周向凹槽（pocket）设置排气通路，改变边缘工艺气体和副产物的流动。说明书明确提出，这种设计用于改善硅外延生长速率的均匀性。",
-          "claims_or_embodiment_basis": "独权1为基座支撑面、周缘rim、沿周向分布的pocket及各pocket的排气口；独权10为含该支撑结构的腔室；独权20为相应处理系统。2引用1增加互相垂直rim表面的气道开口，3/4引用2增加倾斜/径向或轴向气道。",
-          "scope_reason": "技术全文与当前权利要求已核对",
-          "source_urls": [
-            "https://patents.google.com/patent/US20260123349A1/en"
-          ],
-          "source_retrieved_at": null,
-          "source_sha256": null,
-          "actual_read_spans": [],
-          "reviewer": null,
-          "reviewed_at": null,
-          "family_completion_status": "pending",
-          "figures": [
-            {
-              "source_publication_id": "US20260123349A1",
-              "figure_number": "Fig. 2",
-              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260123349",
-              "local_asset_path": "assets/figures/recovered/5e513f2c2696720de06d0d376291a3c68e44eca9d7b07fd6e0c85323b67c6f4c.webp",
-              "width": 2000,
-              "height": 1712,
-              "caption": "US20260123349A1 原始专利附图，Fig. 2（原始PDF第3页）。",
-              "asset_sha256": "5e513f2c2696720de06d0d376291a3c68e44eca9d7b07fd6e0c85323b67c6f4c",
-              "source_original_sha256": "cda8e9e7256a0d48555cd119d1fc52a08ad16cbaf86b639542461365dc57b15f",
-              "source_display_sha256": "5e513f2c2696720de06d0d376291a3c68e44eca9d7b07fd6e0c85323b67c6f4c",
-              "pdf_page": 3,
-              "display_rotation": 0,
-              "source_geometry": {},
-              "annotations": {
-                "version": 1,
-                "image_sha256": "5e513f2c2696720de06d0d376291a3c68e44eca9d7b07fd6e0c85323b67c6f4c",
-                "coordinate_system": "normalized-original-image-xywh",
-                "scope": "US20260123349A1 Fig. 2",
-                "original_language": "en",
-                "display_language": "en",
-                "labels": [
-                  {
-                    "number": "200",
-                    "kind": "component",
-                    "display_name": "processing chamber",
-                    "display_description": "Chamber used to perform epitaxial growth."
-                  },
-                  {
-                    "number": "202",
-                    "kind": "component",
-                    "display_name": "chamber body",
-                    "display_description": "Body containing upper and lower processing portions."
-                  },
-                  {
-                    "number": "204",
-                    "kind": "component",
-                    "display_name": "support system",
-                    "display_description": "Components used to execute and monitor chamber processes."
-                  },
-                  {
-                    "number": "206",
-                    "kind": "component",
-                    "display_name": "controller",
-                    "display_description": "Controls the processing chamber and support system."
-                  },
-                  {
-                    "number": "208",
-                    "kind": "component",
-                    "display_name": "upper portion",
-                    "display_description": "Region between the upper dome and substrate."
-                  },
-                  {
-                    "number": "210",
-                    "kind": "component",
-                    "display_name": "lower portion",
-                    "display_description": "Region between the lower dome and substrate underside."
-                  },
-                  {
-                    "number": "212",
-                    "kind": "component",
-                    "display_name": "upper dome",
-                    "display_description": "Upper boundary above the substrate."
-                  },
-                  {
-                    "number": "214",
-                    "kind": "component",
-                    "display_name": "lower dome",
-                    "display_description": "Lower boundary transmitting lamp radiation into the chamber."
-                  },
-                  {
-                    "number": "216",
-                    "kind": "component",
-                    "display_name": "lamps",
-                    "display_description": "Heat sources supplying thermal energy to chamber components."
-                  },
-                  {
-                    "number": "218",
-                    "kind": "component",
-                    "display_name": "susceptor",
-                    "display_description": "Supports the substrate during processing."
-                  },
-                  {
-                    "number": "220",
-                    "kind": "component",
-                    "display_name": "preheat ring",
-                    "display_description": "Surrounds the substrate and preheats incoming process gas."
-                  },
-                  {
-                    "number": "222",
-                    "kind": "component",
-                    "display_name": "gas sources",
-                    "display_description": "Supply carrier gas to chamber plenums."
-                  },
-                  {
-                    "number": "224",
-                    "kind": "component",
-                    "display_name": "precursor sources",
-                    "display_description": "Supply deposition and dopant gases."
-                  },
-                  {
-                    "number": "226",
-                    "kind": "component",
-                    "display_name": "first plenum",
-                    "display_description": "Introduces deposition gas into the upper portion."
-                  },
-                  {
-                    "number": "228",
-                    "kind": "component",
-                    "display_name": "deposition gas",
-                    "display_description": "Gas flowing over the substrate upper surface."
-                  },
-                  {
-                    "number": "230",
-                    "kind": "component",
-                    "display_name": "second plenum",
-                    "display_description": "Exhausts deposition gas from the upper portion."
-                  },
-                  {
-                    "number": "232",
-                    "kind": "component",
-                    "display_name": "liquid vaporizer",
-                    "display_description": "Vaporizes liquid precursors for delivery to the chamber."
-                  },
-                  {
-                    "number": "234",
-                    "kind": "component",
-                    "display_name": "liquid precursor source",
-                    "display_description": "Supplies liquid precursor to the vaporizer."
-                  },
-                  {
-                    "number": "236",
-                    "kind": "component",
-                    "display_name": "substrate support assembly",
-                    "display_description": "Supports the substrate in its processing position."
-                  },
-                  {
-                    "number": "238",
-                    "kind": "component",
-                    "display_name": "susceptor support shaft",
-                    "display_description": "Rotatable support carrying the susceptor."
-                  },
-                  {
-                    "number": "240",
-                    "kind": "component",
-                    "display_name": "shaft",
-                    "display_description": "Shaft of the susceptor support shaft inside the shroud."
-                  },
-                  {
-                    "number": "242",
-                    "kind": "component",
-                    "display_name": "shroud",
-                    "display_description": "Generally fixed enclosure around the shaft."
-                  },
-                  {
-                    "number": "244",
-                    "kind": "component",
-                    "display_name": "lift pin contacts",
-                    "display_description": "Contacts coupled to the shroud for lift-pin operation."
-                  },
-                  {
-                    "number": "246",
-                    "kind": "component",
-                    "display_name": "actuator",
-                    "display_description": "Rotates the susceptor support shaft."
-                  },
-                  {
-                    "number": "248",
-                    "kind": "component",
-                    "display_name": "support pins",
-                    "display_description": "Couple the susceptor support shaft to the susceptor."
-                  },
-                  {
-                    "number": "250",
-                    "kind": "component",
-                    "display_name": "lift pins",
-                    "display_description": "Raise the substrate from its processing position for removal."
-                  },
-                  {
-                    "number": "252",
-                    "kind": "component",
-                    "display_name": "lower liner",
-                    "display_description": "Supports the removable preheat ring."
-                  },
-                  {
-                    "number": "254",
-                    "kind": "component",
-                    "display_name": "central window portion",
-                    "display_description": "Optically transparent central part of the upper dome."
-                  },
-                  {
-                    "number": "256",
-                    "kind": "component",
-                    "display_name": "bottom portion",
-                    "display_description": "Optically transparent part of the lower dome."
-                  },
-                  {
-                    "number": "258",
-                    "kind": "component",
-                    "display_name": "peripheral flange",
-                    "display_description": "Upper-dome flange engaging its central window portion."
-                  },
-                  {
-                    "number": "260",
-                    "kind": "component",
-                    "display_name": "peripheral flange",
-                    "display_description": "Lower-dome flange engaging its bottom portion."
-                  },
-                  {
-                    "number": "262",
-                    "kind": "component",
-                    "display_name": "O-rings",
-                    "display_description": "Seals protected from direct heat radiation by peripheral flanges."
-                  },
-                  {
-                    "number": "W",
-                    "kind": "component",
-                    "display_name": "substrate",
-                    "display_description": "Workpiece supported for epitaxial processing."
-                  }
-                ],
-                "occurrences": [
-                  {
-                    "figure": "Fig. 2",
-                    "number": "200",
-                    "box": [
-                      0.78534,
-                      0.008152,
-                      0.054101,
-                      0.029891
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "202",
-                    "box": [
-                      0.759162,
-                      0.545516,
-                      0.052356,
-                      0.028533
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "204",
-                    "box": [
-                      0.74171,
-                      0.754076,
-                      0.052356,
-                      0.028533
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "206",
-                    "box": [
-                      0.477022,
-                      0.852582,
-                      0.052356,
-                      0.029212
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "208",
-                    "box": [
-                      0.39267,
-                      0.199728,
-                      0.052938,
-                      0.029212
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "210",
-                    "box": [
-                      0.280396,
-                      0.369565,
-                      0.054101,
-                      0.028533
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "212",
-                    "box": [
-                      0.467714,
-                      0.039402,
-                      0.053519,
-                      0.029891
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "214",
-                    "box": [
-                      0.648051,
-                      0.461957,
-                      0.052938,
-                      0.029212
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "216",
-                    "box": [
-                      0.230948,
-                      0.61481,
-                      0.051774,
-                      0.028533
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "216",
-                    "box": [
-                      0.579407,
-                      0.650815,
-                      0.052356,
-                      0.029212
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "218",
-                    "box": [
-                      0.734148,
-                      0.30163,
-                      0.052938,
-                      0.028533
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "220",
-                    "box": [
-                      0.220477,
-                      0.345788,
-                      0.054101,
-                      0.029891
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "222",
-                    "box": [
-                      0.853403,
-                      0.005435,
-                      0.052356,
-                      0.029891
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "224",
-                    "box": [
-                      0.944735,
-                      0.164402,
-                      0.052356,
-                      0.028533
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "226",
-                    "box": [
-                      0.72135,
-                      0.214674,
-                      0.052938,
-                      0.029212
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "228",
-                    "box": [
-                      0.243165,
-                      0.068614,
-                      0.052356,
-                      0.029891
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "228",
-                    "box": [
-                      0.603258,
-                      0.090353,
-                      0.052356,
-                      0.029212
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "230",
-                    "box": [
-                      0.004072,
-                      0.288723,
-                      0.052356,
-                      0.029212
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "232",
-                    "box": [
-                      0.904596,
-                      0.315897,
-                      0.052938,
-                      0.029212
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "234",
-                    "box": [
-                      0.904014,
-                      0.241168,
-                      0.054101,
-                      0.029891
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "236",
-                    "box": [
-                      0.297848,
-                      0.567935,
-                      0.054101,
-                      0.028533
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "238",
-                    "box": [
-                      0.547993,
-                      0.449049,
-                      0.052938,
-                      0.029212
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "240",
-                    "box": [
-                      0.266434,
-                      0.446332,
-                      0.052356,
-                      0.028533
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "242",
-                    "box": [
-                      0.52007,
-                      0.568614,
-                      0.052938,
-                      0.029212
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "244",
-                    "box": [
-                      0.458988,
-                      0.481658,
-                      0.052356,
-                      0.029212
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "246",
-                    "box": [
-                      0.260035,
-                      0.877038,
-                      0.053519,
-                      0.029212
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "248",
-                    "box": [
-                      0.332752,
-                      0.192935,
-                      0.052938,
-                      0.029212
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "248",
-                    "box": [
-                      0.443281,
-                      0.294837,
-                      0.052938,
-                      0.029212
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "250",
-                    "box": [
-                      0.509599,
-                      0.195652,
-                      0.052356,
-                      0.029212
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "252",
-                    "box": [
-                      0.555556,
-                      0.33356,
-                      0.052938,
-                      0.029212
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "254",
-                    "box": [
-                      0.369401,
-                      0.063859,
-                      0.053519,
-                      0.029212
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "256",
-                    "box": [
-                      0.144852,
-                      0.486413,
-                      0.052938,
-                      0.029212
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "258",
-                    "box": [
-                      0.025015,
-                      0.232337,
-                      0.052938,
-                      0.029212
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "260",
-                    "box": [
-                      0.01338,
-                      0.382473,
-                      0.052938,
-                      0.029212
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "262",
-                    "box": [
-                      0.140198,
-                      0.064538,
-                      0.052938,
-                      0.029212
-                    ]
-                  },
-                  {
-                    "figure": "Fig. 2",
-                    "number": "W",
-                    "box": [
-                      0.457824,
-                      0.192935,
-                      0.029668,
-                      0.029891
-                    ]
-                  }
-                ]
-              },
-              "annotation_coverage_status": "verified"
-            }
-          ],
-          "change_history": [
-            {
-              "at": "2026-10-20T17:30:00+08:00",
-              "by": "baseline-import",
-              "action": "import",
-              "detail": "Imported from Dot reference report; not this team's independent discovery."
-            }
-          ],
-          "family_events": [
-            {
-              "publication_id": "US20260123349A1",
-              "event_date": "2026-04-30",
-              "event_type": "publication",
-              "source_url": "https://patents.google.com/patent/US20260123349A1/en",
-              "application_id": "US18/932,875"
-            }
-          ],
-          "id": "2026-04-US20260123349A1",
-          "month": "2026-04",
-          "import_tag": "imported baseline",
-          "discovery_source": "reference_report",
-          "purpose": "改善面内及晶圆边缘外延厚度均匀性。",
-          "novelty": "将周缘凹槽（pocket）与排气口、气道组合，利用其几何形状调整边缘流动。",
-          "use": "Si热外延腔室基座和边缘流场控制。",
-          "event_note": "申请公布",
-          "family_context": null,
-          "verification": "技术全文与当前权利要求已核对",
-          "category": "EPI 设备",
-          "reference_source_status": "当前公开号公共全文已核查；原 HTML 下载 503，保存可读网页证据摘录。\n2026-10-15补充复核：既有技术说明核验记录保留；2026-10-15重新取得当前USPTO原始文献，逐项目视复核全部20项权利要求（PDF第31/32/33页），核对编号、依存关系和数值单位。本轮不代表重新阅读全文说明书、审查案卷或现时法律状态。"
-        },
-        {
           "publication_id": "US12595587B2",
           "jurisdiction": "US",
           "event_type": "grant",
@@ -22951,10 +22633,414 @@
           "verification": "官方原件、技术全文与当前权利要求已核对",
           "category": "EPI 工艺与设备",
           "reference_source_status": "2026-10-15取得USPTO当前授权原始PDF，核对首页、技术说明书和全部当前权利要求；与独立公开转载来源交叉核对书目信息。原图来自同一当前授权版本。未核查官方登记簿当前法律有效性。"
+        },
+        {
+          "publication_id": "US12595560B2",
+          "jurisdiction": "US",
+          "event_type": "grant",
+          "event_date": "2026-04-07",
+          "application_id": "US18/205,415",
+          "priority_date": "2023-06-02",
+          "family_id": "FAM-AMAT-RPS-GAS-INJECTION-ASSEMBLY",
+          "family_id_source": "title_assignee_app",
+          "title_original": "Method and apparatus for supplying improved gas flow to a processing volume of a processing chamber",
+          "title_zh": "向处理腔处理体积供应改进气流的方法与装置（远程等离子体注入组件）",
+          "applicant_original": "Applied Materials, Inc.",
+          "applicant_normalized": "Applied Materials",
+          "scope_status": "core",
+          "technology_tags": [
+            "remote_plasma_source",
+            "gas_injection_assembly",
+            "dielectric_liner",
+            "CVD_processing_chamber",
+            "radical_delivery",
+            "C23C16/452"
+          ],
+          "short_preview": "AMAT：远程等离子体源与工艺腔之间的气体注入组件，向处理体积输送活性自由基/分子种（2026-04-07 授权）。",
+          "technical_summary": "气体注入组件位于远程等离子体源与工艺腔之间：本体、介电衬套限定混合体积、双法兰连接腔体与 RPS，周向气体注入口；用于电子器件制造过程中向处理体积供应亚稳态自由基种。",
+          "claims_or_embodiment_basis": "USPTO/GP 摘要与代表权利要求：gas injection assembly between remote plasma source and process chamber；metastable radical species to processing volume。",
+          "scope_reason": "Gap 补录：独立装置权利要求主张外延/CVD 类工艺腔的气体输送与 RPS 耦合；Applied 设备缺口；非湿法独立清洗整案。",
+          "source_urls": [
+            "https://patents.google.com/patent/US12595560B2/en",
+            "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12595560"
+          ],
+          "source_retrieved_at": "2026-10-22T20:30:00+08:00",
+          "source_sha256": "3ff15e04e4df4707dc3f065d8120e487ac026c8f07412eb56beaa41f3a550ed1",
+          "actual_read_spans": [
+            "GP_abstract",
+            "GP_representative_claim_gas_injection",
+            "GP_grant_timeline"
+          ],
+          "verification_level": "claims_partial",
+          "reviewer": null,
+          "reviewed_at": null,
+          "family_completion_status": "open",
+          "figures": [],
+          "change_history": [
+            {
+              "at": "2026-10-22T13:04:44Z",
+              "by": "evening-r4-gap-incremental",
+              "action": "include_core_gap",
+              "detail": "EPI-INCREMENTAL-SPRINT-evening-2026-10-22-frozen.json"
+            }
+          ],
+          "family_events": [
+            {
+              "publication_id": "US12595560B2",
+              "event_date": "2026-04-07",
+              "event_type": "grant",
+              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12595560",
+              "application_id": "US18/205,415"
+            }
+          ],
+          "id": "2026-04-US12595560B2",
+          "month": "2026-04",
+          "import_tag": null,
+          "discovery_source": "independent_search",
+          "independent_of_ref": true,
+          "discovery_lane": "EPI",
+          "gap_backfill": true,
+          "family_merge_note": null,
+          "event_note": "晚间 R4 gap 补录（PASS_INCREMENTAL 2026-10-22）",
+          "category": "EPI 工艺与设备",
+          "team_independent_read": false,
+          "read_disposition": "included_not_team_read",
+          "read_status": "晚间 EPI gap 纳入；未计 team_read（锁 6）。"
+        },
+        {
+          "publication_id": "US20260092399A1",
+          "jurisdiction": "US",
+          "event_type": "publication",
+          "event_date": "2026-04-02",
+          "application_id": "US19/342,449",
+          "priority_date": "2024-09-27",
+          "family_id": "US20260092399A1",
+          "family_id_source": "reference_report",
+          "title_original": "Method for forming an epitaxial structure onto a substrate and substrate processing apparatus",
+          "title_zh": "外延结构形成方法与基板处理装置",
+          "applicant_original": null,
+          "applicant_normalized": "ASM IP Holding B.V.",
+          "scope_status": "core",
+          "technology_tags": [
+            "epi"
+          ],
+          "short_preview": "以低等离子体功率密度促进Si/SiGe外延，并让预清洗与外延在真空下衔接，以改善多层界面及层成分、厚度控制。",
+          "technical_summary": "以低等离子体功率密度促进Si/SiGe外延，并让预清洗与外延在真空下衔接，以改善多层界面及层成分、厚度控制。",
+          "claims_or_embodiment_basis": "当前独权1用前驱体与活性物种形成外延层，明确要求等离子体功率/暴露基板面积≤0.2 W/cm²；28为执行该方法的装置，33为程序介质。3引用1限定晶体Si；18引用17→1限定第二层SiGe；15引用1为预清洗，16引用15为真空转移；32引用28增加预清洗腔真空联接。",
+          "scope_reason": "技术全文与当前权利要求已核对",
+          "source_urls": [
+            "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260092399",
+            "https://patents.google.com/patent/US20260092399A1/en"
+          ],
+          "source_retrieved_at": null,
+          "source_sha256": null,
+          "actual_read_spans": [],
+          "reviewer": null,
+          "reviewed_at": null,
+          "family_completion_status": "pending",
+          "figures": [
+            {
+              "source_publication_id": "US20260092399A1",
+              "figure_number": "Fig. 3",
+              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260092399",
+              "local_asset_path": "assets/figures/recovered/d88f7cdbbe20e4d36d4d97718c1f37182c76119e890a84b636d5c6776440461b.webp",
+              "width": 1480,
+              "height": 2000,
+              "caption": "US20260092399A1 原始专利附图，Fig. 3（原始PDF第4页）。",
+              "asset_sha256": "d88f7cdbbe20e4d36d4d97718c1f37182c76119e890a84b636d5c6776440461b",
+              "source_original_sha256": "5a2f4ea00411149cd70d8afcee8191058e84cd471f6fb548bccec12dcf567ea9",
+              "source_display_sha256": "d88f7cdbbe20e4d36d4d97718c1f37182c76119e890a84b636d5c6776440461b",
+              "pdf_page": 4,
+              "display_rotation": 0,
+              "source_geometry": {},
+              "annotations": {
+                "version": 1,
+                "image_sha256": "d88f7cdbbe20e4d36d4d97718c1f37182c76119e890a84b636d5c6776440461b",
+                "coordinate_system": "normalized-original-image-xywh",
+                "scope": "US20260092399A1 Fig. 3",
+                "original_language": "en",
+                "display_language": "en",
+                "labels": [
+                  {
+                    "number": "27",
+                    "kind": "component",
+                    "display_name": "substrate processing apparatus",
+                    "display_description": "Apparatus configured to form material on substrates in one or more process chambers."
+                  },
+                  {
+                    "number": "30",
+                    "kind": "component",
+                    "display_name": "precursor source",
+                    "display_description": "Source supplying at least one precursor to the process chamber."
+                  },
+                  {
+                    "number": "35",
+                    "kind": "component",
+                    "display_name": "control unit",
+                    "display_description": "Controller operating the chambers, precursor source and plasma source."
+                  },
+                  {
+                    "number": "33",
+                    "kind": "component",
+                    "display_name": "reactant source",
+                    "display_description": "Optional source supplying one or more reactants."
+                  },
+                  {
+                    "number": "31",
+                    "kind": "component",
+                    "display_name": "showerhead injector",
+                    "display_description": "Injector supplying precursor and optional reactants into the chamber."
+                  },
+                  {
+                    "number": "21",
+                    "kind": "component",
+                    "display_name": "active species",
+                    "display_description": "Plasma-generated active species used during material formation."
+                  },
+                  {
+                    "number": "38",
+                    "kind": "component",
+                    "display_name": "common frame",
+                    "display_description": "Common frame holding the process chambers."
+                  },
+                  {
+                    "number": "32",
+                    "kind": "component",
+                    "display_name": "plasma source",
+                    "display_description": "Plasma source providing active species in the process chamber."
+                  },
+                  {
+                    "number": "20",
+                    "kind": "component",
+                    "display_name": "precursor",
+                    "display_description": "At least one precursor used to form material on the substrate."
+                  },
+                  {
+                    "number": "18",
+                    "kind": "component",
+                    "display_name": "substrate",
+                    "display_description": "Substrate on which material is formed."
+                  },
+                  {
+                    "number": "29",
+                    "kind": "component",
+                    "display_name": "substrate holder",
+                    "display_description": "Holder supporting the substrate in the process chamber."
+                  },
+                  {
+                    "number": "37",
+                    "kind": "component",
+                    "display_name": "further substrate",
+                    "display_description": "Additional substrate processed in the further process chamber."
+                  },
+                  {
+                    "number": "28",
+                    "kind": "component",
+                    "display_name": "process chamber",
+                    "display_description": "Chamber holding the substrate during processing."
+                  },
+                  {
+                    "number": "36",
+                    "kind": "component",
+                    "display_name": "further process chamber",
+                    "display_description": "Additional chamber for concurrent processing of another substrate."
+                  },
+                  {
+                    "number": "34",
+                    "kind": "component",
+                    "display_name": "exhaust pump",
+                    "display_description": "Pump evacuating and purging the process chambers."
+                  }
+                ],
+                "occurrences": [
+                  {
+                    "figure": "Fig. 3",
+                    "number": "27",
+                    "box": [
+                      0.914865,
+                      0.0045,
+                      0.039189,
+                      0.0235
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 3",
+                    "number": "30",
+                    "box": [
+                      0.733108,
+                      0.2075,
+                      0.037838,
+                      0.0235
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 3",
+                    "number": "35",
+                    "box": [
+                      0.211486,
+                      0.2435,
+                      0.037838,
+                      0.0235
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 3",
+                    "number": "33",
+                    "box": [
+                      0.901351,
+                      0.2855,
+                      0.037838,
+                      0.0235
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 3",
+                    "number": "31",
+                    "box": [
+                      0.283108,
+                      0.343,
+                      0.037838,
+                      0.0235
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 3",
+                    "number": "21",
+                    "box": [
+                      0.262162,
+                      0.419,
+                      0.037838,
+                      0.0235
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 3",
+                    "number": "38",
+                    "box": [
+                      0.874324,
+                      0.4175,
+                      0.037838,
+                      0.0235
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 3",
+                    "number": "32",
+                    "box": [
+                      0.030405,
+                      0.5385,
+                      0.037838,
+                      0.0235
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 3",
+                    "number": "20",
+                    "box": [
+                      0.056757,
+                      0.5875,
+                      0.039865,
+                      0.0235
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 3",
+                    "number": "18",
+                    "box": [
+                      0.268243,
+                      0.626,
+                      0.037838,
+                      0.0235
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 3",
+                    "number": "29",
+                    "box": [
+                      0.536486,
+                      0.638,
+                      0.037838,
+                      0.0235
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 3",
+                    "number": "37",
+                    "box": [
+                      0.860811,
+                      0.6205,
+                      0.037838,
+                      0.0235
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 3",
+                    "number": "28",
+                    "box": [
+                      0.208108,
+                      0.81,
+                      0.037838,
+                      0.0235
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 3",
+                    "number": "36",
+                    "box": [
+                      0.69527,
+                      0.8145,
+                      0.037838,
+                      0.0235
+                    ]
+                  },
+                  {
+                    "figure": "Fig. 3",
+                    "number": "34",
+                    "box": [
+                      0.704054,
+                      0.9335,
+                      0.039865,
+                      0.0235
+                    ]
+                  }
+                ]
+              },
+              "annotation_coverage_status": "verified"
+            }
+          ],
+          "change_history": [
+            {
+              "at": "2026-10-20T17:30:00+08:00",
+              "by": "baseline-import",
+              "action": "import",
+              "detail": "Imported from Dot reference report; not this team's independent discovery."
+            }
+          ],
+          "family_events": [
+            {
+              "publication_id": "US20260092399A1",
+              "event_date": "2026-04-02",
+              "event_type": "publication",
+              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260092399",
+              "application_id": "US19/342,449"
+            }
+          ],
+          "id": "2026-04-US20260092399A1",
+          "month": "2026-04",
+          "import_tag": "imported baseline",
+          "discovery_source": "reference_report",
+          "purpose": "改善Si/SiGe多层界面质量和缺陷情况，并控制各层成分与厚度。",
+          "novelty": "将等离子体功率密度限定为≤0.2 W/cm²，并设置相应的设备控制。",
+          "use": "Si/SiGe超晶格外延设备与工艺。",
+          "event_note": "申请公布",
+          "family_context": null,
+          "verification": "技术全文与当前权利要求已核对",
+          "category": "EPI 工艺",
+          "reference_source_status": "官方USPTO当前A1原PDF已取得并全文OCR；封面和关键claim1功率单位已视觉核对。\n2026-10-15补充复核：既有技术说明核验记录保留；2026-10-15重新取得当前USPTO原始文献，逐项目视复核全部33项权利要求（PDF第17/18页），核对编号、依存关系和数值单位。本轮不代表重新阅读全文说明书、审查案卷或现时法律状态。"
         }
       ],
-      "family_count": 7,
-      "event_count": 9
+      "family_count": 8,
+      "event_count": 10
     },
     {
       "month": "2026-03",
@@ -31768,6 +31854,77 @@
       "through_date": null,
       "families": [
         {
+          "publication_id": "KR102920833B1",
+          "jurisdiction": "KR",
+          "event_type": "grant",
+          "event_date": "2026-01-30",
+          "application_id": "KR10-2021-0028562",
+          "priority_date": "2020-03-17",
+          "family_id": "FAM-ASM-EPI-PRECOAT-MULTIWAFER-CHAMBER-CLEAN",
+          "family_id_source": "app_priority_KR1020210028562",
+          "title_original": "Method of depositing epitaxial material, structure formed using the method, and system for performing the method",
+          "title_zh": "沉积外延材料的方法、由此形成的结构及执行该方法的系统",
+          "applicant_original": "ASM IP Holding B.V.",
+          "applicant_normalized": "ASM",
+          "scope_status": "related",
+          "technology_tags": [
+            "chamber_pre_coat",
+            "multi_wafer_epi",
+            "inter_run_chamber_clean",
+            "throughput",
+            "epi_reactor"
+          ],
+          "short_preview": "ASM：反应腔预涂层 + 多片基板外延后再腔体清洗；吞吐/均匀性导向，非独立 pre-epi 去氧化主项。",
+          "technical_summary": "方法：以预涂层材料涂覆反应腔表面，在清洗前对多片基板重复提供基板并沉积外延层；预涂层含硅（可含 Ge）；强调减少每片后清洗的频率。",
+          "claims_or_embodiment_basis": "GP/KIPRIS 摘要与独立权利要求：pre-coating reaction chamber → multiple substrates epitaxial deposition → then clean；与 KR102918757B1 石英腔高温清洗族不同申请链。",
+          "scope_reason": "include_related：外延腔运行与腔壁预涂/批次清洗相关，但主项为外延沉积吞吐与腔壁管理，非 wafer 预外延去氧化 preclean 核心纳入；且与 live baseline KR102918757B1（priority-US62-859621）不同族。",
+          "source_urls": [
+            "https://patents.google.com/patent/KR102920833B1/en"
+          ],
+          "source_retrieved_at": "2026-10-22T20:30:00+08:00",
+          "source_sha256": "5843d400bbb3f25a66cae45ecb7bba540fa12f2df1abb21a445a7852cb5da154",
+          "actual_read_spans": [
+            "GP_abstract",
+            "GP_summary_independent_claims",
+            "GP_family_crosscheck_vs_KR102918757B1"
+          ],
+          "verification_level": "claims_partial",
+          "reviewer": null,
+          "reviewed_at": null,
+          "family_completion_status": "open",
+          "figures": [],
+          "change_history": [
+            {
+              "at": "2026-10-22T13:04:44Z",
+              "by": "evening-r4-gap-incremental",
+              "action": "include_related_preclean",
+              "detail": "PRECLEAN-INCREMENTAL-SPRINT-evening-2026-10-22-frozen.json; not_same_family_as KR102918757B1"
+            }
+          ],
+          "family_events": [
+            {
+              "publication_id": "KR102920833B1",
+              "event_date": "2026-01-30",
+              "event_type": "grant",
+              "source_url": "https://patents.google.com/patent/KR102920833B1/en",
+              "application_id": "KR10-2021-0028562"
+            }
+          ],
+          "id": "2026-01-KR102920833B1",
+          "month": "2026-01",
+          "import_tag": null,
+          "discovery_source": "independent_search",
+          "independent_of_ref": true,
+          "discovery_lane": "Preclean",
+          "gap_backfill": true,
+          "family_merge_note": "与 live KR102918757B1（priority-US62-859621）不同族；禁止合并或升格 core。",
+          "event_note": "晚间 R4 Preclean related（PASS_INCREMENTAL 2026-10-22）",
+          "category": "关联集成",
+          "team_independent_read": false,
+          "read_disposition": "included_not_team_read",
+          "read_status": "晚间 Preclean related 纳入；未计 team_read（锁 6）。"
+        },
+        {
           "publication_id": "WO2026024419A1",
           "jurisdiction": "WO",
           "event_type": "publication",
@@ -34404,6 +34561,78 @@
           "reference_source_status": "原文技术与当月日期已核对\n2026-10-15补充复核：既有技术说明核验记录保留；2026-10-15重新取得当前USPTO原始文献，逐项目视复核全部20项权利要求（PDF第16页），核对编号、依存关系和数值单位。本轮不代表重新阅读全文说明书、审查案卷或现时法律状态。"
         },
         {
+          "publication_id": "JP2026004352A",
+          "jurisdiction": "JP",
+          "event_type": "publication",
+          "event_date": "2026-01-14",
+          "application_id": "JP2025-154876",
+          "priority_date": null,
+          "family_id": "FAM-AMAT-CLUSTER-PRESSURE-STAB-EPI-PRECLEAN",
+          "family_id_source": "title_assignee_app",
+          "title_original": "Cluster tool, system, and method having one or more pressure stabilization chambers",
+          "title_zh": "具有一或多个压力稳定腔的集群工具、系统及方法（预清洁与常压外延堆积）",
+          "applicant_original": "Applied Materials, Inc.",
+          "applicant_normalized": "Applied Materials",
+          "scope_status": "core",
+          "technology_tags": [
+            "cluster_tool",
+            "pressure_stabilization",
+            "preclean_chamber",
+            "atmospheric_epi",
+            "epitaxial_deposition",
+            "integrated_preclean_epi"
+          ],
+          "short_preview": "AMAT：真空主框架预清洁/工艺腔与常压外延腔集群；压力稳定腔衔接以提升外延生长速率。",
+          "technical_summary": "集群工具：第一主框架上低于 700 Torr 的工艺（含洗浄/预清洁）与第二主框架上约 700–800 Torr 常压外延堆积腔；压力稳定腔促进真空段与常压外延段之间的转移与外延成膜速率。",
+          "claims_or_embodiment_basis": "GP/JPO 公开摘要与说明书 [0004]–[0005]：洗浄チャンバで第1圧力、エピタキシャル堆積チャンバで大気圧外延；クラスタツール权利要求系统架构。",
+          "scope_reason": "Gap 补录：独立权利要求/实施方式明确常压外延堆积与预清洁/洗浄集成集群；Applied 缺口申请人；生长对象为含硅外延路线，非 SiC/GaN 生长对象整案。",
+          "source_urls": [
+            "https://patents.google.com/patent/JP2026004352A/en"
+          ],
+          "source_retrieved_at": "2026-10-22T20:30:00+08:00",
+          "source_sha256": "5c825056c328210c667c1052c27cc59c8810973bba253b037dc7f60dd40ad67b",
+          "actual_read_spans": [
+            "GP_abstract",
+            "GP_description_0004_0005",
+            "GP_bibliographic_assignee"
+          ],
+          "verification_level": "claims_partial",
+          "reviewer": null,
+          "reviewed_at": null,
+          "family_completion_status": "open",
+          "figures": [],
+          "change_history": [
+            {
+              "at": "2026-10-22T13:04:44Z",
+              "by": "evening-r4-gap-incremental",
+              "action": "include_core_gap",
+              "detail": "EPI-INCREMENTAL-SPRINT-evening-2026-10-22-frozen.json"
+            }
+          ],
+          "family_events": [
+            {
+              "publication_id": "JP2026004352A",
+              "event_date": "2026-01-14",
+              "event_type": "publication",
+              "source_url": "https://patents.google.com/patent/JP2026004352A/en",
+              "application_id": "JP2025-154876"
+            }
+          ],
+          "id": "2026-01-JP2026004352A",
+          "month": "2026-01",
+          "import_tag": null,
+          "discovery_source": "independent_search",
+          "independent_of_ref": true,
+          "discovery_lane": "EPI",
+          "gap_backfill": true,
+          "family_merge_note": null,
+          "event_note": "晚间 R4 gap 补录（PASS_INCREMENTAL 2026-10-22）",
+          "category": "EPI 工艺与设备",
+          "team_independent_read": false,
+          "read_disposition": "included_not_team_read",
+          "read_status": "晚间 EPI gap 纳入；未计 team_read（锁 6）。"
+        },
+        {
           "publication_id": "US12526971B2",
           "jurisdiction": "US",
           "event_type": "grant",
@@ -35284,8 +35513,8 @@
           "reference_source_status": "原文技术与当月日期已核对；US20260005044A1官方原页全部20项权利要求已复核（2026-10-15）。\n2026-10-15补充复核：本轮以 WO2026005974A1 自身的 Google Patents 公开权项文本复核全部 20 项及引用/数值，证据级别为 public_not_native；未取得本件官方原始PDF，未以同族US或其他文献替代。技术说明、附图与既有同族核验记录沿用基线；未核查官方登记簿当前法律状态。"
         }
       ],
-      "family_count": 10,
-      "event_count": 13
+      "family_count": 12,
+      "event_count": 15
     },
     {
       "month": "2025-12",

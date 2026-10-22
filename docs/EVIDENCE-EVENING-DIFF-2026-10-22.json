@@ -1,0 +1,77 @@
+{
+  "document_type": "evidence_evening_incremental_diff",
+  "diff_id": "EVIDENCE-EVENING-DIFF-2026-10-22",
+  "created_at": "2026-10-22T20:35:00+08:00",
+  "timezone": "Asia/Shanghai",
+  "role": "证据复核",
+  "formal_delivery": false,
+  "informal": true,
+  "conclusion": "PASS_INCREMENTAL",
+  "september": "untouched",
+  "no_zero_omission_claim": true,
+  "inputs": {
+    "epi": "docs/EPI-INCREMENTAL-SPRINT-evening-2026-10-22-frozen.json",
+    "preclean": "docs/PRECLEAN-INCREMENTAL-SPRINT-evening-2026-10-22-frozen.json",
+    "epi_stats": {
+      "candidates": 2,
+      "publication_events": 2,
+      "unique_families": 2,
+      "actually_read": 2,
+      "core_events": 2,
+      "gap_backfill": 2
+    },
+    "preclean_stats": {
+      "candidates": 1,
+      "publication_events": 1,
+      "unique_families": 1,
+      "actually_read": 30,
+      "related": 1,
+      "lane_read_not_team_lock": true
+    }
+  },
+  "include_core_suggestions": [
+    {
+      "lane": "EPI",
+      "publication_id": "JP2026004352A",
+      "event_date": "2026-01-14",
+      "month": "2026-01",
+      "applicant_normalized": "Applied Materials",
+      "classification": "gap_backfill",
+      "disposition": "include_core",
+      "in_live": false
+    },
+    {
+      "lane": "EPI",
+      "publication_id": "US12595560B2",
+      "event_date": "2026-04-07",
+      "month": "2026-04",
+      "applicant_normalized": "Applied Materials",
+      "classification": "gap_backfill",
+      "disposition": "include_core",
+      "in_live": false
+    }
+  ],
+  "include_related_suggestions": [
+    {
+      "lane": "Preclean",
+      "publication_id": "KR102920833B1",
+      "event_date": "2026-01-30",
+      "month": "2026-01",
+      "applicant_normalized": "ASM",
+      "family_id": "FAM-ASM-EPI-PRECOAT-MULTIWAFER-CHAMBER-CLEAN",
+      "disposition": "include_related",
+      "not_same_family_as_live": "KR102918757B1",
+      "in_live": false,
+      "ruling": "do_not_merge_families_or_promote_to_core"
+    }
+  ],
+  "team_actually_read": {
+    "remains": 6,
+    "not_auto_bump": "Preclean lane actually_read=30 is internal; merge must not raise counts.actually_read"
+  },
+  "research_through": {
+    "live_remains": "2026-10-20",
+    "advance": false
+  },
+  "failures_retained": []
+}
