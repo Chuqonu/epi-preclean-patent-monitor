@@ -1,0 +1,601 @@
+{
+  "lane": "EPI",
+  "document_type": "frozen_candidates_incremental_sprint_morning",
+  "method_ref": "2026-10-20.4.2-r2",
+  "search_window": "2026-10-21..2026-10-22",
+  "research_through": "2026-10-22",
+  "period_start": "2025-10",
+  "period_end": "2026-10",
+  "frozen_at": "2026-10-22T09:50:00+08:00",
+  "timezone": "Asia/Shanghai",
+  "prior_freeze": "baseline-2025-10_2026-10-frozen.json",
+  "prior_incremental_C": "EPI-INCREMENTAL-2026-10-19_2026-10-20-frozen.json (empty)",
+  "prior_gap_sprint": "EPI-INCREMENTAL-SPRINT-gap-2026-10-20-frozen.json",
+  "prior_evening_sprint": "EPI-INCREMENTAL-SPRINT-evening-2026-10-20-frozen.json (含 US20260062803A1)",
+  "prior_evening_2026_10_21": "EPI-INCREMENTAL-SPRINT-evening-2026-10-21-frozen.json (窗内空；5 条窗外 sightings)",
+  "focus": "早间 R4 Track A：①核读晚间窗外 OG sightings（event_date=2026-10-20）并提升/排除；②增量窗 2026-10-21..2026-10-22（含今日周四 PGPub）；禁 2025/09；不读 Preclean；不 stamp、不升团队已读锁",
+  "queries_run": [
+    {
+      "id": "M1_day21_22",
+      "branch": "keyword_window",
+      "query": "(epitaxial OR epitaxy OR SiGe OR \"silicon germanium\") after:2026-10-20 before:2026-10-23",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-morning-2026-10-22/M1_day21_22.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T09:50:00+08:00"
+    },
+    {
+      "id": "M4_cpc",
+      "branch": "CPC",
+      "query": "CPC=(H01L21/0262 OR C30B25/14) after:2026-10-20 before:2026-10-23",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-morning-2026-10-22/M4_cpc.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T09:50:00+08:00"
+    },
+    {
+      "id": "M6_cn",
+      "branch": "jurisdiction_CN",
+      "query": "country:CN (硅锗外延 OR 选择性外延 OR 外延设备) after:2026-10-20 before:2026-10-23",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-morning-2026-10-22/M6_cn.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T09:50:00+08:00"
+    },
+    {
+      "id": "M7_dry",
+      "branch": "chamber_dry_clean_related",
+      "query": "(epitaxial OR epitaxy) (\"chamber clean\" OR \"in-situ clean\" OR NF3) after:2026-10-20 before:2026-10-23",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-morning-2026-10-22/M7_dry.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T09:50:00+08:00"
+    },
+    {
+      "id": "M8_seg",
+      "branch": "keyword_window",
+      "query": "(\"selective epitaxial\" OR SEG) (Si OR SiGe) after:2026-10-20 before:2026-10-23",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-morning-2026-10-22/M8_seg.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T09:50:00+08:00"
+    },
+    {
+      "id": "M9_pubdate22",
+      "branch": "PGPub_day",
+      "query": "PD=20261022 (epitax OR epitaxial OR SiGe OR \"silicon germanium\")",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-morning-2026-10-22/M9_pubdate.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "note": "今日周四 PGPub 日；GP 返回 0（索引可能滞后）",
+      "source_retrieved_at": "2026-10-22T09:50:00+08:00"
+    },
+    {
+      "id": "M10_pubdate21",
+      "branch": "keyword_window",
+      "query": "PD=20261021 (epitax OR epitaxial OR SiGe)",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-morning-2026-10-22/M10_pubdate21.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T09:50:00+08:00"
+    },
+    {
+      "id": "M2_assignee_syntax",
+      "branch": "applicant",
+      "query": "assignee:(ASM IP Holding | Applied Materials | Tokyo Electron)",
+      "source": "Google Patents xhr",
+      "result_count": null,
+      "error": "invalid argument: query syntax error",
+      "source_retrieved_at": "2026-10-22T09:50:00+08:00"
+    },
+    {
+      "id": "M11_og_index",
+      "branch": "USPTO_OG_index",
+      "query": "Official Gazette Patents latest week",
+      "source": "uspto.gov Official Gazette for Patents",
+      "result_count": "latest=2026-10-20_week42; next_Tue=2026-10-27_week43",
+      "artifact": "raw/sprint-morning-2026-10-22/OG_landing.html",
+      "sha256": "faaf5ab35fd5b280150bbf7a1acdba5fb85601e557254362e7b2a53ee02df326",
+      "note": "10-21/10-22 非授权日",
+      "source_retrieved_at": "2026-10-22T09:50:00+08:00"
+    },
+    {
+      "id": "M12_og_w43_probe",
+      "branch": "USPTO_OG_week43",
+      "query": "patentsgazette.uspto.gov/week43/OG/patent.html",
+      "source": "USPTO OG",
+      "result_count": "shell_present_no_week43_issue",
+      "artifact": "raw/sprint-morning-2026-10-22/OG_w43.html",
+      "sha256": "724273853cbc9b9e0e3ece7da58fe29ff7769359060e71e7778efd086226a0b3",
+      "source_retrieved_at": "2026-10-22T09:50:00+08:00"
+    },
+    {
+      "id": "M13_web_en",
+      "branch": "websearch_crosscheck",
+      "query": "patent published October 22 2026 OR 2026-10-22 epitaxial OR SiGe",
+      "source": "WebSearch",
+      "result_count": "no_in_window_verified_hits",
+      "source_retrieved_at": "2026-10-22T09:50:00+08:00"
+    },
+    {
+      "id": "M14_web_zh",
+      "branch": "websearch_crosscheck",
+      "query": "2026年10月21日 OR 2026年10月22日 专利公布 外延 OR SiGe",
+      "source": "WebSearch",
+      "result_count": "no_in_window_verified_hits",
+      "source_retrieved_at": "2026-10-22T09:50:00+08:00"
+    },
+    {
+      "id": "M15_justia",
+      "branch": "web_probe",
+      "query": "Justia patents-by-issue-date/2026/10/21|22",
+      "source": "Justia",
+      "result_count": null,
+      "error": "HTTP 403 Cloudflare",
+      "source_retrieved_at": "2026-10-22T09:50:00+08:00"
+    },
+    {
+      "id": "M16_espacenet",
+      "branch": "Espacenet",
+      "query": "pd=20261022 AND epitax*",
+      "source": "Espacenet",
+      "result_count": null,
+      "error": "HTTP 403",
+      "source_retrieved_at": "2026-10-22T09:50:00+08:00"
+    },
+    {
+      "id": "M17_sighting_834",
+      "branch": "deferred_sighting_read",
+      "query": "US12770834B2",
+      "source": "USPTO OG HTML + PDF",
+      "result_count": 1,
+      "disposition": "include_core",
+      "sha256": "b450484e367e7ffb87193cd5f9afc1c518bc3772a673237b98b5ec5a3a69e905",
+      "source_retrieved_at": "2026-10-22T09:50:00+08:00"
+    },
+    {
+      "id": "M18_sighting_074",
+      "branch": "deferred_sighting_read",
+      "query": "US12768074B2",
+      "source": "USPTO OG HTML + PDF",
+      "result_count": 1,
+      "disposition": "include_core",
+      "sha256": "1b3a430b875c535db049a337a84824e52d3b56ba4e91ef4985551a80d3975739",
+      "source_retrieved_at": "2026-10-22T09:50:00+08:00"
+    },
+    {
+      "id": "M19_sighting_522",
+      "branch": "deferred_sighting_read",
+      "query": "US12772522B2",
+      "source": "USPTO OG HTML",
+      "result_count": 1,
+      "disposition": "exclude",
+      "source_retrieved_at": "2026-10-22T09:50:00+08:00"
+    },
+    {
+      "id": "M20_sighting_611",
+      "branch": "deferred_sighting_read",
+      "query": "US12772611B2",
+      "source": "USPTO OG HTML",
+      "result_count": 1,
+      "disposition": "exclude",
+      "source_retrieved_at": "2026-10-22T09:50:00+08:00"
+    },
+    {
+      "id": "M21_sighting_073",
+      "branch": "deferred_sighting_read",
+      "query": "US12768073B2",
+      "source": "USPTO OG HTML",
+      "result_count": 1,
+      "disposition": "exclude",
+      "source_retrieved_at": "2026-10-22T09:50:00+08:00"
+    }
+  ],
+  "sources_tried": [
+    "Google Patents xhr date/CPC/CN/SEG/dry-clean（窗内 total=0；assignee 括式 syntax error）",
+    "Google Patents 直取 US12770834B2|US12768074B2（404）",
+    "WebSearch EN/ZH",
+    "USPTO OG landing（最新 week42=2026-10-20）",
+    "USPTO OG week43 probe",
+    "USPTO OG week42 grant HTML（5 sightings）",
+    "USPTO image-ppubs PDF（2 core）",
+    "Justia（403）",
+    "Espacenet（403）",
+    "IDiyas badge（书目交叉）"
+  ],
+  "limitations": [
+    "不宣称零遗漏。窗内无已核公开号 ≠ 真实世界无公开（PGPub 索引可能滞后）。",
+    "2026-10-21 非 USPTO 授权日；2026-10-22 为 PGPub 日非授权日；下一 OG 估 2026-10-27 week43。",
+    "GP assignee 括式 syntax error；两授权号 GP 直取 404。",
+    "Justia/Espacenet 403；CNIPA 未登录穷尽。",
+    "候选 2 条 event_date=2026-10-20（晚间 sighting 提升），计入 overlap_backfill，非窗 21..22 新事件。",
+    "核读层级 claims_partial（OG 代表权利要求）；PDF 影像页未 OCR 全权项。",
+    "未读 Preclean；未 stamp；未升团队 actually_read 锁（仍 6）。",
+    "禁止 2025/09 起点；禁止编造公开号。"
+  ],
+  "stats": {
+    "candidates": 2,
+    "publication_events": 2,
+    "unique_families": 2,
+    "actually_read": 2,
+    "fulltext_read": 0,
+    "pending": 0,
+    "core_events": 2,
+    "related": 0,
+    "excluded": 3,
+    "overlap_backfill": 2,
+    "in_window_new": 0,
+    "already_in_prior_freeze": 0,
+    "out_of_window_sightings_reviewed": 5
+  },
+  "candidate_count": 2,
+  "event_count": 2,
+  "publication_events": 2,
+  "family_count": 2,
+  "unique_families": 2,
+  "actually_read_count": 2,
+  "pending_count": 0,
+  "core_event_count": 2,
+  "related_count": 0,
+  "excluded_count": 3,
+  "count_basis": "窗 2026-10-21..2026-10-22 新事件=0；本冻结 2 候选均为 2026-10-20 OG 授权之晚间 sighting 提升（overlap_backfill）。excluded 3 条核读后不入候选。",
+  "actually_read_definition": "实质读过 OG 代表 claims/摘要才计入本冻结 actually_read。团队 live actually_read 锁仍 6，本文件不升。",
+  "recommend_live_research_through_advance": false,
+  "recommend_live_research_through_note": "不建议仅凭本窗空扫推进 live research_through 越过 2026-10-20：PGPub 索引可能滞后；本批为 10-20 授权补录。freeze.research_through=2026-10-22 仅覆盖声明。",
+  "candidates": [
+    {
+      "publication_id": "US12770834B2",
+      "jurisdiction": "US",
+      "event_type": "grant",
+      "event_date": "2026-10-20",
+      "month": "2026-10",
+      "application_id": "US18/620,464",
+      "priority_date": "2023-03-31",
+      "family_id": "FAM-ASM-PE-EPI-CVD-RPU-QUARTZ",
+      "family_id_source": "title_assignee_app_provisional",
+      "family_completion_status": "open",
+      "title_original": "Plasma enhanced epitaxial chemical vapor deposition system",
+      "title_zh": "等离子体增强外延化学气相沉积系统",
+      "applicant_original": "ASM IP Holding B.V.",
+      "applicant_normalized": "ASM",
+      "scope_status": "core",
+      "technology_tags": [
+        "plasma_enhanced_epitaxy",
+        "remote_plasma_unit",
+        "quartz_epi_chamber",
+        "Si_epitaxial_CVD",
+        "rotating_graphite_SiC_susceptor",
+        "optical_heater_array",
+        "H01L21/02",
+        "C23C16/24"
+      ],
+      "short_preview": "ASM：石英外延腔+远程等离子体分解含硅前驱体，沉积含硅外延层（授权 2026-10-20；晚间 sighting 今早提升）。",
+      "technical_summary": "系统权利要求：石英腔体、石墨本体+SiC 涂层可旋转基座、腔外光学加热阵列经石英耦合、远程等离子体单元分解含硅前驱体，用分解产物沉积含硅外延材料层。",
+      "claims_or_embodiment_basis": "USPTO OG week42 代表 claim 1（quartz chamber + rotating graphite/SiC support + external heater + RPU for epitaxial Si）；OG 摘要同旨。USPTO PDF 已下载（影像页）。",
+      "scope_reason": "独立权利要求明确主张 Si 外延 CVD 设备；生长对象为含硅外延层；非 SiC/GaN 生长对象。晚间仅 sighting，prior 候选未收。",
+      "disposition": "include_core",
+      "pending_reason": null,
+      "source_urls": [
+        "https://patentsgazette.uspto.gov/week42/OG/html/1551-3/US12770834-20261020.html",
+        "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12770834"
+      ],
+      "source_retrieved_at": "2026-10-22T09:50:00+08:00",
+      "source_sha256": "b450484e367e7ffb87193cd5f9afc1c518bc3772a673237b98b5ec5a3a69e905",
+      "pdf_sha256": "d005cb0f7a409747c81d294ca0f414a214cb3aa6f03b030d086648968a5cbabb",
+      "actual_read_spans": [
+        "OG_abstract",
+        "OG_representative_claim_1_system",
+        "OG_bibliographic_CPC_assignee"
+      ],
+      "verification_level": "claims_partial",
+      "revalidated_read": true,
+      "search_entry": "deferred_evening_2026-10-21_out_of_window_sighting_OG_week42",
+      "already_in_prior_freeze": false,
+      "overlap_backfill": true,
+      "overlap_note": "event_date=2026-10-20；晚间窗外 sighting 今早提升；非窗 21..22 新事件。",
+      "events": [
+        {
+          "publication_id": "US12770834B2",
+          "event_type": "grant",
+          "event_date": "2026-10-20",
+          "source_url": "https://patentsgazette.uspto.gov/week42/OG/html/1551-3/US12770834-20261020.html"
+        }
+      ],
+      "reviewer": null,
+      "reviewed_at": null,
+      "change_history": []
+    },
+    {
+      "publication_id": "US12768074B2",
+      "jurisdiction": "US",
+      "event_type": "grant",
+      "event_date": "2026-10-20",
+      "month": "2026-10",
+      "application_id": "US18/602,099",
+      "priority_date": null,
+      "family_id": "FAM-AMAT-EPI-CHAMBER-ARCH-CONT-US12060651",
+      "family_id_source": "continuation_of_US17/317,363_now_US12060651",
+      "family_completion_status": "open",
+      "title_original": "Chamber architecture for epitaxial deposition and advanced epitaxial film applications",
+      "title_zh": "外延沉积与先进外延膜应用的腔体架构",
+      "applicant_original": "Applied Materials, Inc.",
+      "applicant_normalized": "Applied Materials",
+      "scope_status": "core",
+      "technology_tags": [
+        "epi_chamber_architecture",
+        "upper_lower_lamp_modules",
+        "susceptor_assembly",
+        "inject_ring_base_ring",
+        "C30B25/14",
+        "thermal_epitaxial_deposition"
+      ],
+      "short_preview": "AMAT：外延沉积腔架构（上下灯模组、基座/注入环/基环）；续案自 US12,060,651（授权 2026-10-20；晚间 sighting 今早提升）。",
+      "technical_summary": "过程腔：上/下灯模组、基座组件、上下窗口、基环与注入环。CPC 主分 C30B25/14。续自 17/317,363（现 US12,060,651），terminal disclaimer。",
+      "claims_or_embodiment_basis": "USPTO OG week42 代表 claim 1（upper/lower lamp modules, susceptor, windows, base+inject rings）；题名与 C30B25/14。USPTO PDF 已下载。",
+      "scope_reason": "独立权利要求主张外延沉积过程腔；AMAT；非 SiC/GaN 生长对象限定。晚间仅 sighting，prior 候选未收。",
+      "disposition": "include_core",
+      "pending_reason": null,
+      "source_urls": [
+        "https://patentsgazette.uspto.gov/week42/OG/html/1551-3/US12768074-20261020.html",
+        "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12768074"
+      ],
+      "source_retrieved_at": "2026-10-22T09:50:00+08:00",
+      "source_sha256": "1b3a430b875c535db049a337a84824e52d3b56ba4e91ef4985551a80d3975739",
+      "pdf_sha256": "22ed0e6f8c0efbf8cd7815bc6c9893fbb9eb1c406f8adc66cd127f27c18d5d4d",
+      "actual_read_spans": [
+        "OG_abstract_title_CPC",
+        "OG_representative_claim_1_chamber",
+        "OG_continuation_terminal_disclaimer_note"
+      ],
+      "verification_level": "claims_partial",
+      "revalidated_read": true,
+      "search_entry": "deferred_evening_2026-10-21_out_of_window_sighting_OG_week42",
+      "already_in_prior_freeze": false,
+      "overlap_backfill": true,
+      "overlap_note": "event_date=2026-10-20；晚间窗外 sighting 今早提升；非窗 21..22 新事件。",
+      "events": [
+        {
+          "publication_id": "US12768074B2",
+          "event_type": "grant",
+          "event_date": "2026-10-20",
+          "source_url": "https://patentsgazette.uspto.gov/week42/OG/html/1551-3/US12768074-20261020.html"
+        }
+      ],
+      "reviewer": null,
+      "reviewed_at": null,
+      "change_history": []
+    }
+  ],
+  "entries": [
+    {
+      "publication_id": "US12770834B2",
+      "jurisdiction": "US",
+      "event_type": "grant",
+      "event_date": "2026-10-20",
+      "month": "2026-10",
+      "application_id": "US18/620,464",
+      "priority_date": "2023-03-31",
+      "family_id": "FAM-ASM-PE-EPI-CVD-RPU-QUARTZ",
+      "family_id_source": "title_assignee_app_provisional",
+      "family_completion_status": "open",
+      "title_original": "Plasma enhanced epitaxial chemical vapor deposition system",
+      "title_zh": "等离子体增强外延化学气相沉积系统",
+      "applicant_original": "ASM IP Holding B.V.",
+      "applicant_normalized": "ASM",
+      "scope_status": "core",
+      "technology_tags": [
+        "plasma_enhanced_epitaxy",
+        "remote_plasma_unit",
+        "quartz_epi_chamber",
+        "Si_epitaxial_CVD",
+        "rotating_graphite_SiC_susceptor",
+        "optical_heater_array",
+        "H01L21/02",
+        "C23C16/24"
+      ],
+      "short_preview": "ASM：石英外延腔+远程等离子体分解含硅前驱体，沉积含硅外延层（授权 2026-10-20；晚间 sighting 今早提升）。",
+      "technical_summary": "系统权利要求：石英腔体、石墨本体+SiC 涂层可旋转基座、腔外光学加热阵列经石英耦合、远程等离子体单元分解含硅前驱体，用分解产物沉积含硅外延材料层。",
+      "claims_or_embodiment_basis": "USPTO OG week42 代表 claim 1（quartz chamber + rotating graphite/SiC support + external heater + RPU for epitaxial Si）；OG 摘要同旨。USPTO PDF 已下载（影像页）。",
+      "scope_reason": "独立权利要求明确主张 Si 外延 CVD 设备；生长对象为含硅外延层；非 SiC/GaN 生长对象。晚间仅 sighting，prior 候选未收。",
+      "disposition": "include_core",
+      "pending_reason": null,
+      "source_urls": [
+        "https://patentsgazette.uspto.gov/week42/OG/html/1551-3/US12770834-20261020.html",
+        "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12770834"
+      ],
+      "source_retrieved_at": "2026-10-22T09:50:00+08:00",
+      "source_sha256": "b450484e367e7ffb87193cd5f9afc1c518bc3772a673237b98b5ec5a3a69e905",
+      "pdf_sha256": "d005cb0f7a409747c81d294ca0f414a214cb3aa6f03b030d086648968a5cbabb",
+      "actual_read_spans": [
+        "OG_abstract",
+        "OG_representative_claim_1_system",
+        "OG_bibliographic_CPC_assignee"
+      ],
+      "verification_level": "claims_partial",
+      "revalidated_read": true,
+      "search_entry": "deferred_evening_2026-10-21_out_of_window_sighting_OG_week42",
+      "already_in_prior_freeze": false,
+      "overlap_backfill": true,
+      "overlap_note": "event_date=2026-10-20；晚间窗外 sighting 今早提升；非窗 21..22 新事件。",
+      "events": [
+        {
+          "publication_id": "US12770834B2",
+          "event_type": "grant",
+          "event_date": "2026-10-20",
+          "source_url": "https://patentsgazette.uspto.gov/week42/OG/html/1551-3/US12770834-20261020.html"
+        }
+      ],
+      "reviewer": null,
+      "reviewed_at": null,
+      "change_history": []
+    },
+    {
+      "publication_id": "US12768074B2",
+      "jurisdiction": "US",
+      "event_type": "grant",
+      "event_date": "2026-10-20",
+      "month": "2026-10",
+      "application_id": "US18/602,099",
+      "priority_date": null,
+      "family_id": "FAM-AMAT-EPI-CHAMBER-ARCH-CONT-US12060651",
+      "family_id_source": "continuation_of_US17/317,363_now_US12060651",
+      "family_completion_status": "open",
+      "title_original": "Chamber architecture for epitaxial deposition and advanced epitaxial film applications",
+      "title_zh": "外延沉积与先进外延膜应用的腔体架构",
+      "applicant_original": "Applied Materials, Inc.",
+      "applicant_normalized": "Applied Materials",
+      "scope_status": "core",
+      "technology_tags": [
+        "epi_chamber_architecture",
+        "upper_lower_lamp_modules",
+        "susceptor_assembly",
+        "inject_ring_base_ring",
+        "C30B25/14",
+        "thermal_epitaxial_deposition"
+      ],
+      "short_preview": "AMAT：外延沉积腔架构（上下灯模组、基座/注入环/基环）；续案自 US12,060,651（授权 2026-10-20；晚间 sighting 今早提升）。",
+      "technical_summary": "过程腔：上/下灯模组、基座组件、上下窗口、基环与注入环。CPC 主分 C30B25/14。续自 17/317,363（现 US12,060,651），terminal disclaimer。",
+      "claims_or_embodiment_basis": "USPTO OG week42 代表 claim 1（upper/lower lamp modules, susceptor, windows, base+inject rings）；题名与 C30B25/14。USPTO PDF 已下载。",
+      "scope_reason": "独立权利要求主张外延沉积过程腔；AMAT；非 SiC/GaN 生长对象限定。晚间仅 sighting，prior 候选未收。",
+      "disposition": "include_core",
+      "pending_reason": null,
+      "source_urls": [
+        "https://patentsgazette.uspto.gov/week42/OG/html/1551-3/US12768074-20261020.html",
+        "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12768074"
+      ],
+      "source_retrieved_at": "2026-10-22T09:50:00+08:00",
+      "source_sha256": "1b3a430b875c535db049a337a84824e52d3b56ba4e91ef4985551a80d3975739",
+      "pdf_sha256": "22ed0e6f8c0efbf8cd7815bc6c9893fbb9eb1c406f8adc66cd127f27c18d5d4d",
+      "actual_read_spans": [
+        "OG_abstract_title_CPC",
+        "OG_representative_claim_1_chamber",
+        "OG_continuation_terminal_disclaimer_note"
+      ],
+      "verification_level": "claims_partial",
+      "revalidated_read": true,
+      "search_entry": "deferred_evening_2026-10-21_out_of_window_sighting_OG_week42",
+      "already_in_prior_freeze": false,
+      "overlap_backfill": true,
+      "overlap_note": "event_date=2026-10-20；晚间窗外 sighting 今早提升；非窗 21..22 新事件。",
+      "events": [
+        {
+          "publication_id": "US12768074B2",
+          "event_type": "grant",
+          "event_date": "2026-10-20",
+          "source_url": "https://patentsgazette.uspto.gov/week42/OG/html/1551-3/US12768074-20261020.html"
+        }
+      ],
+      "reviewer": null,
+      "reviewed_at": null,
+      "change_history": []
+    }
+  ],
+  "excluded_after_read": [
+    {
+      "publication_id": "US12772522B2",
+      "event_type": "grant",
+      "event_date": "2026-10-20",
+      "applicant_normalized": "Intel",
+      "title_original": "Formation of metal contacts to silicon germanium layers with etch resistive cap layers",
+      "scope_status": "excluded",
+      "disposition": "exclude",
+      "scope_reason": "OG claim 1：Si 衬底上 SiGe 层 + 硼盖层刻蚀部 + 金属接触；焦点接触/盖层，非外延生长设备或工艺。",
+      "already_in_prior_freeze": false,
+      "source_url": "https://patentsgazette.uspto.gov/week42/OG/html/1551-3/US12772522-20261020.html",
+      "source_sha256": "b66c6f1dd9b1c2e88c53f327838b1f4b683292a8e9824fd3ed63e0d3aab3aac2",
+      "actual_read_spans": [
+        "OG_representative_claim_1"
+      ],
+      "verification_level": "claims_partial",
+      "source_retrieved_at": "2026-10-22T09:50:00+08:00"
+    },
+    {
+      "publication_id": "US12772611B2",
+      "event_type": "grant",
+      "event_date": "2026-10-20",
+      "applicant_normalized": "GlobalWafers",
+      "title_original": "Method for epitaxy of high electron mobility transistor",
+      "scope_status": "excluded",
+      "disposition": "exclude",
+      "scope_reason": "氮化物 HEMT 外延（沟道/势垒/2DEG）；生长对象非 Si/SiGe。",
+      "already_in_prior_freeze": false,
+      "source_url": "https://patentsgazette.uspto.gov/week42/OG/html/1551-3/US12772611-20261020.html",
+      "source_sha256": "8304f402610daa788a4714b529d40a3ad26421f49a3914da7824b0160cbc4019",
+      "actual_read_spans": [
+        "OG_representative_claim_1"
+      ],
+      "verification_level": "claims_partial",
+      "source_retrieved_at": "2026-10-22T09:50:00+08:00"
+    },
+    {
+      "publication_id": "US12768073B2",
+      "event_type": "grant",
+      "event_date": "2026-10-20",
+      "applicant_normalized": "ROHM",
+      "title_original": "Fabricating apparatus of SiC epitaxial wafer and fabrication method of the SiC epitaxial wafer",
+      "scope_status": "excluded",
+      "disposition": "exclude",
+      "scope_reason": "SiC 外延晶圆设备与方法；以 SiC 为生长对象，整案排除。",
+      "already_in_prior_freeze": false,
+      "source_url": "https://patentsgazette.uspto.gov/week42/OG/html/1551-3/US12768073-20261020.html",
+      "source_sha256": "5a4871516404c4fcd14990256e97c08d0073bf0f4f5fe7c9ae4371bed7fb2d12",
+      "actual_read_spans": [
+        "OG_representative_claim_1"
+      ],
+      "verification_level": "claims_partial",
+      "source_retrieved_at": "2026-10-22T09:50:00+08:00"
+    }
+  ],
+  "out_of_window_sightings": [
+    {
+      "publication_id": "US12770834B2",
+      "event_date": "2026-10-20",
+      "note": "promoted_to_candidates_include_core",
+      "already_in_prior_freeze": false
+    },
+    {
+      "publication_id": "US12768074B2",
+      "event_date": "2026-10-20",
+      "note": "promoted_to_candidates_include_core",
+      "already_in_prior_freeze": false
+    },
+    {
+      "publication_id": "US12772522B2",
+      "event_date": "2026-10-20",
+      "note": "reviewed_exclude_contact_not_epi",
+      "already_in_prior_freeze": false
+    },
+    {
+      "publication_id": "US12772611B2",
+      "event_date": "2026-10-20",
+      "note": "reviewed_exclude_nitride_HEMT",
+      "already_in_prior_freeze": false
+    },
+    {
+      "publication_id": "US12768073B2",
+      "event_date": "2026-10-20",
+      "note": "reviewed_exclude_SiC_growth_object",
+      "already_in_prior_freeze": false
+    }
+  ],
+  "retrieval_manifest_path": "/workspace/epi-independent-search/raw/sprint-morning-2026-10-22/retrieval-manifest.json",
+  "change_history": [
+    {
+      "at": "2026-10-22T09:50:00+08:00",
+      "action": "create_morning_incremental_freeze_with_deferred_OG_promotions",
+      "by": "EPI检索"
+    }
+  ],
+  "reviewer": null,
+  "reviewed_at": null,
+  "priority_date": null,
+  "source_retrieved_at": "2026-10-22T09:50:00+08:00",
+  "source_sha256": "b90946f98041c3896a921ce80b37e70e8a70ca3eff8d87c84892599169540623"
+}
