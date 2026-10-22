@@ -1,0 +1,77 @@
+{
+  "lane": "Preclean",
+  "document_type": "frozen_candidates_incremental_sprint_evening",
+  "method_ref": "2026-10-20.4.2-r2",
+  "search_window": "gap_vs_baseline_2025-10_2026-10_plus_near_research_through_evening",
+  "research_through": "2026-10-22",
+  "period_start": "2025-10",
+  "period_end": "2026-10",
+  "frozen_at": "2026-10-22T20:30:00+08:00",
+  "timezone": "Asia/Shanghai",
+  "focus": "晚间 R4：ASM 族闭合与 gap related；KR102920833B1 与 live KR102918757B1 不同族，不得合并或升格 core",
+  "recommend_live_research_through_advance": false,
+  "stats": {
+    "candidates": 1,
+    "publication_events": 1,
+    "unique_families": 1,
+    "actually_read": 30,
+    "lane_actually_read_note": "Preclean 车道内部已读 30；不升团队锁 6",
+    "pending": 0,
+    "core_events": 0,
+    "related": 1,
+    "excluded": 0
+  },
+  "candidates": [
+    {
+      "publication_id": "KR102920833B1",
+      "jurisdiction": "KR",
+      "event_type": "grant",
+      "event_date": "2026-01-30",
+      "month": "2026-01",
+      "application_id": "KR10-2021-0028562",
+      "priority_date": "2020-03-17",
+      "family_id": "FAM-ASM-EPI-PRECOAT-MULTIWAFER-CHAMBER-CLEAN",
+      "family_id_source": "app_priority_KR1020210028562",
+      "family_completion_status": "open",
+      "title_original": "Method of depositing epitaxial material, structure formed using the method, and system for performing the method",
+      "title_zh": "沉积外延材料的方法、由此形成的结构及执行该方法的系统",
+      "applicant_original": "ASM IP Holding B.V.",
+      "applicant_normalized": "ASM",
+      "scope_status": "related",
+      "technology_tags": [
+        "chamber_pre_coat",
+        "multi_wafer_epi",
+        "inter_run_chamber_clean",
+        "throughput",
+        "epi_reactor"
+      ],
+      "short_preview": "ASM：反应腔预涂层 + 多片基板外延后再腔体清洗；吞吐/均匀性导向，非独立 pre-epi 去氧化主项。",
+      "technical_summary": "方法：以预涂层材料涂覆反应腔表面，在清洗前对多片基板重复提供基板并沉积外延层；预涂层含硅（可含 Ge）；强调减少每片后清洗的频率。",
+      "claims_or_embodiment_basis": "GP/KIPRIS 摘要与独立权利要求：pre-coating reaction chamber → multiple substrates epitaxial deposition → then clean；与 KR102918757B1 石英腔高温清洗族不同申请链。",
+      "scope_reason": "include_related：外延腔运行与腔壁预涂/批次清洗相关，但主项为外延沉积吞吐与腔壁管理，非 wafer 预外延去氧化 preclean 核心纳入；且与 live baseline KR102918757B1（priority-US62-859621）不同族。",
+      "disposition": "include_related",
+      "classification": "gap_backfill",
+      "pending_reason": null,
+      "not_same_family_as": "KR102918757B1",
+      "source_urls": [
+        "https://patents.google.com/patent/KR102920833B1/en"
+      ],
+      "source_retrieved_at": "2026-10-22T20:30:00+08:00",
+      "source_sha256": "5843d400bbb3f25a66cae45ecb7bba540fa12f2df1abb21a445a7852cb5da154",
+      "actual_read_spans": [
+        "GP_abstract",
+        "GP_summary_independent_claims",
+        "GP_family_crosscheck_vs_KR102918757B1"
+      ],
+      "verification_level": "claims_partial",
+      "events": [
+        {
+          "publication_id": "KR102920833B1",
+          "event_type": "grant",
+          "event_date": "2026-01-30",
+          "source_url": "https://patents.google.com/patent/KR102920833B1/en"
+        }
+      ]
+    }
+  ]
+}

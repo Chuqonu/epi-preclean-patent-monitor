@@ -1,0 +1,132 @@
+{
+  "lane": "EPI",
+  "document_type": "frozen_candidates_incremental_sprint_evening",
+  "method_ref": "2026-10-20.4.2-r2",
+  "search_window": "gap_vs_baseline_2025-10_2026-10_plus_near_research_through_evening",
+  "research_through": "2026-10-22",
+  "period_start": "2025-10",
+  "period_end": "2026-10",
+  "frozen_at": "2026-10-22T20:30:00+08:00",
+  "timezone": "Asia/Shanghai",
+  "focus": "晚间 R4 Track A gap：Applied Materials 申请人变体检索 + 与外延/集成腔体相关的缺口补录；禁 2025/09；不 stamp、不升团队已读锁",
+  "recommend_live_research_through_advance": false,
+  "recommend_live_research_through_note": "不建议推进 live research_through 越过 2026-10-20；本批为 gap 历史公开/授权补录。",
+  "stats": {
+    "candidates": 2,
+    "publication_events": 2,
+    "unique_families": 2,
+    "actually_read": 2,
+    "pending": 0,
+    "core_events": 2,
+    "related": 0,
+    "excluded": 0,
+    "gap_backfill": 2
+  },
+  "candidates": [
+    {
+      "publication_id": "JP2026004352A",
+      "jurisdiction": "JP",
+      "event_type": "publication",
+      "event_date": "2026-01-14",
+      "month": "2026-01",
+      "application_id": "JP2025-154876",
+      "priority_date": null,
+      "family_id": "FAM-AMAT-CLUSTER-PRESSURE-STAB-EPI-PRECLEAN",
+      "family_id_source": "title_assignee_app",
+      "family_completion_status": "open",
+      "title_original": "Cluster tool, system, and method having one or more pressure stabilization chambers",
+      "title_zh": "具有一或多个压力稳定腔的集群工具、系统及方法（预清洁与常压外延堆积）",
+      "applicant_original": "Applied Materials, Inc.",
+      "applicant_normalized": "Applied Materials",
+      "scope_status": "core",
+      "technology_tags": [
+        "cluster_tool",
+        "pressure_stabilization",
+        "preclean_chamber",
+        "atmospheric_epi",
+        "epitaxial_deposition",
+        "integrated_preclean_epi"
+      ],
+      "short_preview": "AMAT：真空主框架预清洁/工艺腔与常压外延腔集群；压力稳定腔衔接以提升外延生长速率。",
+      "technical_summary": "集群工具：第一主框架上低于 700 Torr 的工艺（含洗浄/预清洁）与第二主框架上约 700–800 Torr 常压外延堆积腔；压力稳定腔促进真空段与常压外延段之间的转移与外延成膜速率。",
+      "claims_or_embodiment_basis": "GP/JPO 公开摘要与说明书 [0004]–[0005]：洗浄チャンバで第1圧力、エピタキシャル堆積チャンバで大気圧外延；クラスタツール权利要求系统架构。",
+      "scope_reason": "Gap 补录：独立权利要求/实施方式明确常压外延堆积与预清洁/洗浄集成集群；Applied 缺口申请人；生长对象为含硅外延路线，非 SiC/GaN 生长对象整案。",
+      "disposition": "include_core",
+      "classification": "gap_backfill",
+      "pending_reason": null,
+      "source_urls": [
+        "https://patents.google.com/patent/JP2026004352A/en"
+      ],
+      "source_retrieved_at": "2026-10-22T20:30:00+08:00",
+      "source_sha256": "5c825056c328210c667c1052c27cc59c8810973bba253b037dc7f60dd40ad67b",
+      "actual_read_spans": [
+        "GP_abstract",
+        "GP_description_0004_0005",
+        "GP_bibliographic_assignee"
+      ],
+      "verification_level": "claims_partial",
+      "overlap_backfill": false,
+      "events": [
+        {
+          "publication_id": "JP2026004352A",
+          "event_type": "publication",
+          "event_date": "2026-01-14",
+          "source_url": "https://patents.google.com/patent/JP2026004352A/en"
+        }
+      ]
+    },
+    {
+      "publication_id": "US12595560B2",
+      "jurisdiction": "US",
+      "event_type": "grant",
+      "event_date": "2026-04-07",
+      "month": "2026-04",
+      "application_id": "US18/205,415",
+      "priority_date": "2023-06-02",
+      "family_id": "FAM-AMAT-RPS-GAS-INJECTION-ASSEMBLY",
+      "family_id_source": "title_assignee_app",
+      "family_completion_status": "open",
+      "title_original": "Method and apparatus for supplying improved gas flow to a processing volume of a processing chamber",
+      "title_zh": "向处理腔处理体积供应改进气流的方法与装置（远程等离子体注入组件）",
+      "applicant_original": "Applied Materials, Inc.",
+      "applicant_normalized": "Applied Materials",
+      "scope_status": "core",
+      "technology_tags": [
+        "remote_plasma_source",
+        "gas_injection_assembly",
+        "dielectric_liner",
+        "CVD_processing_chamber",
+        "radical_delivery",
+        "C23C16/452"
+      ],
+      "short_preview": "AMAT：远程等离子体源与工艺腔之间的气体注入组件，向处理体积输送活性自由基/分子种（2026-04-07 授权）。",
+      "technical_summary": "气体注入组件位于远程等离子体源与工艺腔之间：本体、介电衬套限定混合体积、双法兰连接腔体与 RPS，周向气体注入口；用于电子器件制造过程中向处理体积供应亚稳态自由基种。",
+      "claims_or_embodiment_basis": "USPTO/GP 摘要与代表权利要求：gas injection assembly between remote plasma source and process chamber；metastable radical species to processing volume。",
+      "scope_reason": "Gap 补录：独立装置权利要求主张外延/CVD 类工艺腔的气体输送与 RPS 耦合；Applied 设备缺口；非湿法独立清洗整案。",
+      "disposition": "include_core",
+      "classification": "gap_backfill",
+      "pending_reason": null,
+      "source_urls": [
+        "https://patents.google.com/patent/US12595560B2/en",
+        "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12595560"
+      ],
+      "source_retrieved_at": "2026-10-22T20:30:00+08:00",
+      "source_sha256": "3ff15e04e4df4707dc3f065d8120e487ac026c8f07412eb56beaa41f3a550ed1",
+      "actual_read_spans": [
+        "GP_abstract",
+        "GP_representative_claim_gas_injection",
+        "GP_grant_timeline"
+      ],
+      "verification_level": "claims_partial",
+      "overlap_backfill": false,
+      "events": [
+        {
+          "publication_id": "US12595560B2",
+          "event_type": "grant",
+          "event_date": "2026-04-07",
+          "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12595560"
+        }
+      ]
+    }
+  ]
+}
