@@ -21,22 +21,23 @@
     "Sprint gap A（2026-10-20）：已纳入 TEL US20250311241A1（related）与 US12757648B2（core，2026-10 授权）。",
     "epi-4 实际定时触发：双轨空增量（EPI/Preclean 各 0 candidates·0 events·0 families）；research_through 2026-10-19→2026-10-20；无新专利纳入；运行日志 docs/runs/2026-10-20-epi-4-full-maintenance.md",
     "关联待核（content-pending）：无 active 行；CN122564748A 已裁定 exclude（见 EVIDENCE-PENDING-DISPOSITION-CN122564748A-2026-10-20.json）。",
-    "晚间增量（informal 2026-10-20）：EPI US20260062803A1 + Preclean FAM-ASM-AHF-PRECLEAN（KR102916044B1 / US12660544B2 / US12757665B2）；Lam US20260090293A1 仅补标签，不计新发现。"
+    "晚间增量（informal 2026-10-20）：EPI US20260062803A1 + Preclean FAM-ASM-AHF-PRECLEAN（KR102916044B1 / US12660544B2 / US12757665B2）；Lam US20260090293A1 仅补标签，不计新发现。",
+    "早间增量（2026-10-22 PASS_INCREMENTAL）：EPI overlap_backfill US12770834B2（ASM PE epi CVD）、US12768074B2（AMAT epi chamber）；event_date=2026-10-20；research_through 保持 2026-10-20；team_read 锁 6。"
   ],
   "counts": {
-    "candidates_total": 126,
+    "candidates_total": 128,
     "events_reviewed": 6,
-    "events_core": 154,
-    "families_core": 110,
+    "events_core": 156,
+    "families_core": 112,
     "related": 1,
     "pending": 0,
     "excluded": 0,
     "figures": 170,
-    "month_family_entries": 126,
-    "publication_events": 154,
-    "unique_families": 111,
+    "month_family_entries": 128,
+    "publication_events": 156,
+    "unique_families": 113,
     "actually_read": 6,
-    "unique_publication_ids": 154
+    "unique_publication_ids": 156
   },
   "search_coverage": [],
   "pending_or_related": [],
@@ -142,6 +143,12 @@
       "by": "morning-gate3-figures",
       "action": "apply_morning_gate3_figure_backfill",
       "detail": "EPI figureless + Preclean AHF; pubs=11; team_read lock unchanged"
+    },
+    {
+      "at": "2026-10-22T01:54:01Z",
+      "by": "morning-epi-overlap-backfill",
+      "action": "morning_overlap_backfill_include_core",
+      "detail": "Added: US12770834B2, US12768074B2. research_through unchanged 2026-10-20; team_read locked 6; docs/EVIDENCE-MORNING-DIFF-2026-10-22.json"
     }
   ],
   "months": [
@@ -150,6 +157,156 @@
       "status": "基线已导入｜当月未完结",
       "through_date": "2026-10-20",
       "families": [
+        {
+          "publication_id": "US12770834B2",
+          "jurisdiction": "US",
+          "event_type": "grant",
+          "event_date": "2026-10-20",
+          "application_id": "US18/620,464",
+          "priority_date": "2023-03-31",
+          "family_id": "FAM-ASM-PE-EPI-CVD-RPU-QUARTZ",
+          "family_id_source": "title_assignee_app_provisional",
+          "title_original": "Plasma enhanced epitaxial chemical vapor deposition system",
+          "title_zh": "等离子体增强外延化学气相沉积系统",
+          "applicant_original": "ASM IP Holding B.V.",
+          "applicant_normalized": "ASM",
+          "scope_status": "core",
+          "technology_tags": [
+            "plasma_enhanced_epitaxy",
+            "remote_plasma_unit",
+            "quartz_epi_chamber",
+            "Si_epitaxial_CVD",
+            "rotating_graphite_SiC_susceptor",
+            "optical_heater_array",
+            "H01L21/02",
+            "C23C16/24"
+          ],
+          "short_preview": "ASM：石英外延腔+远程等离子体分解含硅前驱体，沉积含硅外延层（授权 2026-10-20；晚间 sighting 今早提升）。",
+          "technical_summary": "系统权利要求：石英腔体、石墨本体+SiC 涂层可旋转基座、腔外光学加热阵列经石英耦合、远程等离子体单元分解含硅前驱体，用分解产物沉积含硅外延材料层。",
+          "claims_or_embodiment_basis": "USPTO OG week42 代表 claim 1（quartz chamber + rotating graphite/SiC support + external heater + RPU for epitaxial Si）；OG 摘要同旨。USPTO PDF 已下载（影像页）。",
+          "scope_reason": "独立权利要求明确主张 Si 外延 CVD 设备；生长对象为含硅外延层；非 SiC/GaN 生长对象。晚间仅 sighting，prior 候选未收。",
+          "source_urls": [
+            "https://patentsgazette.uspto.gov/week42/OG/html/1551-3/US12770834-20261020.html",
+            "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12770834"
+          ],
+          "source_retrieved_at": "2026-10-22T09:50:00+08:00",
+          "source_sha256": "b450484e367e7ffb87193cd5f9afc1c518bc3772a673237b98b5ec5a3a69e905",
+          "actual_read_spans": [
+            "OG_abstract",
+            "OG_representative_claim_1_system",
+            "OG_bibliographic_CPC_assignee"
+          ],
+          "verification_level": "claims_partial",
+          "reviewer": null,
+          "reviewed_at": null,
+          "family_completion_status": "open",
+          "figures": [],
+          "change_history": [
+            {
+              "at": "2026-10-22T01:54:01Z",
+              "by": "morning-epi-overlap-backfill",
+              "action": "include_core_overlap_backfill",
+              "detail": "EPI-INCREMENTAL-SPRINT-morning-2026-10-22-frozen.json; EVIDENCE-MORNING-DIFF-2026-10-22 PASS_INCREMENTAL"
+            }
+          ],
+          "family_events": [
+            {
+              "publication_id": "US12770834B2",
+              "event_date": "2026-10-20",
+              "event_type": "grant",
+              "source_url": "https://patentsgazette.uspto.gov/week42/OG/html/1551-3/US12770834-20261020.html",
+              "application_id": "US18/620,464"
+            }
+          ],
+          "id": "2026-10-US12770834B2",
+          "month": "2026-10",
+          "import_tag": null,
+          "discovery_source": "independent_search",
+          "independent_of_ref": true,
+          "discovery_lane": "EPI",
+          "overlap_backfill": true,
+          "overlap_note": "event_date=2026-10-20；晚间窗外 sighting 今早提升；非窗 21..22 新事件。",
+          "family_merge_note": null,
+          "event_note": "早间 overlap_backfill：2026-10-20 USPTO OG 授权补录（非 10-21..22 窗内新事件）。",
+          "category": "EPI 工艺与设备",
+          "team_independent_read": false,
+          "read_disposition": "included_not_team_read",
+          "read_status": "早间 EPI overlap_backfill 纳入；未计 team_read（锁 6）。"
+        },
+        {
+          "publication_id": "US12768074B2",
+          "jurisdiction": "US",
+          "event_type": "grant",
+          "event_date": "2026-10-20",
+          "application_id": "US18/602,099",
+          "priority_date": null,
+          "family_id": "FAM-AMAT-EPI-CHAMBER-ARCH-CONT-US12060651",
+          "family_id_source": "continuation_of_US17/317,363_now_US12060651",
+          "title_original": "Chamber architecture for epitaxial deposition and advanced epitaxial film applications",
+          "title_zh": "外延沉积与先进外延膜应用的腔体架构",
+          "applicant_original": "Applied Materials, Inc.",
+          "applicant_normalized": "Applied Materials",
+          "scope_status": "core",
+          "technology_tags": [
+            "epi_chamber_architecture",
+            "upper_lower_lamp_modules",
+            "susceptor_assembly",
+            "inject_ring_base_ring",
+            "C30B25/14",
+            "thermal_epitaxial_deposition"
+          ],
+          "short_preview": "AMAT：外延沉积腔架构（上下灯模组、基座/注入环/基环）；续案自 US12,060,651（授权 2026-10-20；晚间 sighting 今早提升）。",
+          "technical_summary": "过程腔：上/下灯模组、基座组件、上下窗口、基环与注入环。CPC 主分 C30B25/14。续自 17/317,363（现 US12,060,651），terminal disclaimer。",
+          "claims_or_embodiment_basis": "USPTO OG week42 代表 claim 1（upper/lower lamp modules, susceptor, windows, base+inject rings）；题名与 C30B25/14。USPTO PDF 已下载。",
+          "scope_reason": "独立权利要求主张外延沉积过程腔；AMAT；非 SiC/GaN 生长对象限定。晚间仅 sighting，prior 候选未收。",
+          "source_urls": [
+            "https://patentsgazette.uspto.gov/week42/OG/html/1551-3/US12768074-20261020.html",
+            "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12768074"
+          ],
+          "source_retrieved_at": "2026-10-22T09:50:00+08:00",
+          "source_sha256": "1b3a430b875c535db049a337a84824e52d3b56ba4e91ef4985551a80d3975739",
+          "actual_read_spans": [
+            "OG_abstract_title_CPC",
+            "OG_representative_claim_1_chamber",
+            "OG_continuation_terminal_disclaimer_note"
+          ],
+          "verification_level": "claims_partial",
+          "reviewer": null,
+          "reviewed_at": null,
+          "family_completion_status": "open",
+          "figures": [],
+          "change_history": [
+            {
+              "at": "2026-10-22T01:54:01Z",
+              "by": "morning-epi-overlap-backfill",
+              "action": "include_core_overlap_backfill",
+              "detail": "EPI-INCREMENTAL-SPRINT-morning-2026-10-22-frozen.json; EVIDENCE-MORNING-DIFF-2026-10-22 PASS_INCREMENTAL"
+            }
+          ],
+          "family_events": [
+            {
+              "publication_id": "US12768074B2",
+              "event_date": "2026-10-20",
+              "event_type": "grant",
+              "source_url": "https://patentsgazette.uspto.gov/week42/OG/html/1551-3/US12768074-20261020.html",
+              "application_id": "US18/602,099"
+            }
+          ],
+          "id": "2026-10-US12768074B2",
+          "month": "2026-10",
+          "import_tag": null,
+          "discovery_source": "independent_search",
+          "independent_of_ref": true,
+          "discovery_lane": "EPI",
+          "overlap_backfill": true,
+          "overlap_note": "event_date=2026-10-20；晚间窗外 sighting 今早提升；非窗 21..22 新事件。",
+          "family_merge_note": null,
+          "event_note": "早间 overlap_backfill：2026-10-20 USPTO OG 授权补录（非 10-21..22 窗内新事件）。",
+          "category": "EPI 工艺与设备",
+          "team_independent_read": false,
+          "read_disposition": "included_not_team_read",
+          "read_status": "早间 EPI overlap_backfill 纳入；未计 team_read（锁 6）。"
+        },
         {
           "publication_id": "US12765027B2",
           "jurisdiction": "US",
@@ -1774,8 +1931,8 @@
           "reference_source_status": "官方当期PDF技术说明、书目及完整权利要求已核对"
         }
       ],
-      "family_count": 6,
-      "event_count": 6
+      "family_count": 8,
+      "event_count": 8
     },
     {
       "month": "2026-09",

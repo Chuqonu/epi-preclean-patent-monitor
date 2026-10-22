@@ -1,0 +1,346 @@
+{
+  "document_type": "evidence_morning_incremental_diff",
+  "diff_id": "EVIDENCE-MORNING-DIFF-2026-10-22",
+  "created_at": "2026-10-22T09:52:00+08:00",
+  "timezone": "Asia/Shanghai",
+  "role": "证据复核",
+  "formal_delivery": false,
+  "informal": true,
+  "september": "untouched",
+  "no_zero_omission_claim": true,
+  "inputs": {
+    "epi": "docs/EPI-INCREMENTAL-SPRINT-morning-2026-10-22-frozen.json",
+    "preclean": "docs/PRECLEAN-INCREMENTAL-SPRINT-morning-2026-10-22-frozen.json",
+    "epi_stats": {
+      "candidates": 2,
+      "publication_events": 2,
+      "unique_families": 2,
+      "actually_read": 2,
+      "fulltext_read": 0,
+      "pending": 0,
+      "core_events": 2,
+      "related": 0,
+      "excluded": 3,
+      "overlap_backfill": 2,
+      "in_window_new": 0,
+      "already_in_prior_freeze": 0,
+      "out_of_window_sightings_reviewed": 5
+    },
+    "preclean_stats": {
+      "candidates": 1,
+      "publication_events": 1,
+      "unique_families": 1,
+      "actually_read": 10,
+      "fulltext_read": 0,
+      "pending": 0,
+      "core_events": 1,
+      "related": 2,
+      "excluded": 9,
+      "same_family_sightings": 0,
+      "out_of_window_sightings": 0,
+      "queries_executed": 34,
+      "near_window_hits": 0
+    },
+    "room_claims_vs_json": "aligned — no count conflict"
+  },
+  "window_note": {
+    "epi_search_window": "2026-10-21..2026-10-22",
+    "epi_period": [
+      "2025-10",
+      "2026-10"
+    ],
+    "preclean_search_window": "gap_vs_baseline_2025-10_2026-10_plus_near_research_through_morning",
+    "preclean_period": [
+      "2025-10",
+      "2026-10"
+    ],
+    "alignment": "EPI in-window new=0; both lanes recommend NOT advancing research_through past 2026-10-20. EPI two cores are 2026-10-20 grant catch-up (overlap_backfill)."
+  },
+  "set_ops": {
+    "intersection_publication_ids": [],
+    "intersection_family_ids": [],
+    "epi_only": [
+      {
+        "publication_id": "US12770834B2",
+        "disposition": "include_core",
+        "classification": "overlap_backfill",
+        "event_date": "2026-10-20",
+        "family_id": "FAM-ASM-PE-EPI-CVD-RPU-QUARTZ",
+        "applicant_normalized": "ASM",
+        "in_live": false
+      },
+      {
+        "publication_id": "US12768074B2",
+        "disposition": "include_core",
+        "classification": "overlap_backfill",
+        "event_date": "2026-10-20",
+        "family_id": "FAM-AMAT-EPI-CHAMBER-ARCH-CONT-US12060651",
+        "applicant_normalized": "Applied Materials",
+        "in_live": false
+      }
+    ],
+    "preclean_only": [
+      {
+        "publication_id": "KR102918757B1",
+        "disposition_in_freeze": "include_core",
+        "evidence_ruling": "baseline_already_live_not_new_discovery",
+        "event_date": "2026-01-28",
+        "family_id": "FAM-ASM-QUARTZ-EPI-CHAMBER-CLEAN",
+        "applicant_normalized": "ASM",
+        "in_live": true,
+        "live_scope_status": "core",
+        "live_change_history": "baseline-import 2026-10-20"
+      },
+      {
+        "publication_id": "CN122406228A",
+        "disposition": "include_related",
+        "classification": "gap_vs_baseline_new_related",
+        "event_date": "2026-07-17",
+        "family_id": "FAM-ASM-PRECLEAN-ETCH-HT-COATING",
+        "applicant_normalized": "ASM",
+        "in_live": false
+      },
+      {
+        "publication_id": "KR20260113276A",
+        "disposition": "include_related",
+        "classification": "gap_vs_baseline_new_related",
+        "event_date": "2026-07-21",
+        "family_id": "FAM-AMAT-LOWTEMP-EPI-CHAMBER",
+        "applicant_normalized": "Applied",
+        "in_live": false
+      }
+    ],
+    "intersection_count": 0,
+    "epi_only_count": 2,
+    "preclean_only_count": 3
+  },
+  "include_core_suggestions": [
+    {
+      "lane": "EPI",
+      "publication_id": "US12770834B2",
+      "event_date": "2026-10-20",
+      "month": "2026-10",
+      "applicant_normalized": "ASM",
+      "family_id": "FAM-ASM-PE-EPI-CVD-RPU-QUARTZ",
+      "title_original": "Plasma enhanced epitaxial chemical vapor deposition system",
+      "title_zh": "等离子体增强外延化学气相沉积系统",
+      "disposition": "include_core",
+      "classification": "overlap_backfill",
+      "in_live": false,
+      "already_in_prior_freeze_as_candidate": false,
+      "prior_evening_note": "EVIDENCE-EVENING-DIFF-2026-10-21 listed as out_of_window_sighting only; not evening include",
+      "why": "OG claim1：石英腔+远程等离子体分解含硅前驱体沉积含硅外延层；非 SiC/GaN 生长对象。相对 search_window 2026-10-21..22 为 10-20 授权补录，非窗内新发现。",
+      "source_urls": [
+        "https://patentsgazette.uspto.gov/week42/OG/html/1551-3/US12770834-20261020.html",
+        "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12770834"
+      ],
+      "source_sha256": "b450484e367e7ffb87193cd5f9afc1c518bc3772a673237b98b5ec5a3a69e905"
+    },
+    {
+      "lane": "EPI",
+      "publication_id": "US12768074B2",
+      "event_date": "2026-10-20",
+      "month": "2026-10",
+      "applicant_normalized": "Applied Materials",
+      "family_id": "FAM-AMAT-EPI-CHAMBER-ARCH-CONT-US12060651",
+      "title_original": "Chamber architecture for epitaxial deposition and advanced epitaxial film applications",
+      "title_zh": "外延沉积与先进外延膜应用的腔体架构",
+      "disposition": "include_core",
+      "classification": "overlap_backfill",
+      "in_live": false,
+      "already_in_prior_freeze_as_candidate": false,
+      "prior_evening_note": "EVIDENCE-EVENING-DIFF-2026-10-21 listed as out_of_window_sighting only; not evening include",
+      "why": "OG claim1：外延沉积过程腔（灯模组/基座/注入环等）；CPC C30B25/14；非 SiC/GaN 生长对象限定。相对 search_window 为 10-20 授权补录。",
+      "source_urls": [
+        "https://patentsgazette.uspto.gov/week42/OG/html/1551-3/US12768074-20261020.html",
+        "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12768074"
+      ],
+      "source_sha256": "1b3a430b875c535db049a337a84824e52d3b56ba4e91ef4985551a80d3975739"
+    }
+  ],
+  "include_core_not_new_discovery": [
+    {
+      "lane": "Preclean",
+      "publication_id": "KR102918757B1",
+      "event_date": "2026-01-28",
+      "month": "2026-01",
+      "applicant_normalized": "ASM",
+      "family_id": "FAM-ASM-QUARTZ-EPI-CHAMBER-CLEAN",
+      "disposition_in_freeze": "include_core",
+      "evidence_ruling": "keep_baseline_already_live",
+      "classification": "baseline_already_live",
+      "in_live": true,
+      "live_scope_status": "core",
+      "why_not_new": "data/report.json months entry already core via baseline-import (change_history 2026-10-20). Preclean morning re-read is independent verification only; do NOT count as new core discovery. Not the AHF wafer-oxide preclean family.",
+      "source_url": "https://patents.google.com/patent/KR102918757B1/en",
+      "source_sha256": "37271561234c9ca5ef3ba6b861a19284bc64f9410665002d10a42dc3c06be14f",
+      "freeze_also_in_ref_flag": false,
+      "conflict_note": "Freeze marks also_in_ref_preclean_set=false / independent_of_ref=true, but live report already contains this publication_id as core — evidence rules baseline presence over freeze self-label."
+    }
+  ],
+  "include_related_suggestions": [
+    {
+      "lane": "Preclean",
+      "publication_id": "CN122406228A",
+      "event_date": "2026-07-17",
+      "month": "2026-07",
+      "applicant_normalized": "ASM",
+      "family_id": "FAM-ASM-PRECLEAN-ETCH-HT-COATING",
+      "disposition": "include_related",
+      "classification": "gap_vs_baseline_new_related",
+      "in_live": false,
+      "why": "preclean/etch 装置高温涂层（含 RPS）— 设备支撑层，非 wafer pre-epi preclean 工艺本身 → related",
+      "source_url": "https://patents.google.com/patent/CN122406228A/en",
+      "source_sha256": "6bc333bfc568c1c8ce433ce2b22d6096043d2f8cbfaa509dfecb41d96a63da45"
+    },
+    {
+      "lane": "Preclean",
+      "publication_id": "KR20260113276A",
+      "event_date": "2026-07-21",
+      "month": "2026-07",
+      "applicant_normalized": "Applied",
+      "family_id": "FAM-AMAT-LOWTEMP-EPI-CHAMBER",
+      "disposition": "include_related",
+      "classification": "gap_vs_baseline_new_related",
+      "in_live": false,
+      "why": "低温 EPI 腔硬件为主；清洁方法附带 → related（非 wafer pre-epi preclean 核心）",
+      "source_url": "https://patents.google.com/patent/KR20260113276A/en",
+      "source_sha256": "1b38038e5dbc61417723eb46b838b14b613ee7faeefa6fe617e721fb02560c05"
+    }
+  ],
+  "pending_queue": [],
+  "exclude_list": [
+    {
+      "lane": "EPI",
+      "publication_id": "US12772522B2",
+      "event_date": "2026-10-20",
+      "applicant_normalized": "Intel",
+      "reason": "OG claim1：Si 衬底上 SiGe 层 + 硼盖层刻蚀部 + 金属接触；焦点接触/盖层，非外延生长设备或工艺。",
+      "disposition": "exclude_after_read",
+      "classification": "overlap_backfill_reviewed_exclude"
+    },
+    {
+      "lane": "EPI",
+      "publication_id": "US12772611B2",
+      "event_date": "2026-10-20",
+      "applicant_normalized": "GlobalWafers",
+      "reason": "氮化物 HEMT 外延（沟道/势垒/2DEG）；生长对象非 Si/SiGe。",
+      "disposition": "exclude_after_read",
+      "classification": "overlap_backfill_reviewed_exclude"
+    },
+    {
+      "lane": "EPI",
+      "publication_id": "US12768073B2",
+      "event_date": "2026-10-20",
+      "applicant_normalized": "ROHM",
+      "reason": "SiC 外延晶圆设备与方法；以 SiC 为生长对象，整案排除。",
+      "disposition": "exclude_after_read",
+      "classification": "overlap_backfill_reviewed_exclude"
+    },
+    {
+      "lane": "Preclean",
+      "publication_id": "KR20260005972A",
+      "event_date": "2026-01-12",
+      "reason": "选择性外延接触工艺（S/D 上 epi 生长/去除），非外延前 wafer dry/plasma preclean，亦非腔体干清洁。",
+      "disposition": "exclude_after_read"
+    },
+    {
+      "lane": "Preclean",
+      "publication_id": "US12550648B2",
+      "event_date": "2026-02-10",
+      "reason": "金属氧化物等离子体辅助蚀刻（器件结构），非 pre-epi native-oxide preclean，非 epi 腔干清洁。",
+      "disposition": "exclude_after_read"
+    },
+    {
+      "lane": "Preclean",
+      "publication_id": "CN122497783A",
+      "event_date": "2026-07-31",
+      "reason": "模块化处理腔加热器/套件，未主张外延前 preclean 或 epi-linked 腔干清洁。",
+      "disposition": "exclude_after_read"
+    },
+    {
+      "lane": "Preclean",
+      "publication_id": "CN117228643B",
+      "event_date": "2025-11-07",
+      "reason": "电子级 PF3 制备工艺；AHF/气体关键词噪声，非 wafer preclean。",
+      "disposition": "exclude_after_read"
+    },
+    {
+      "lane": "Preclean",
+      "publication_id": "CN122585946A",
+      "event_date": "2026-08-18",
+      "reason": "电子级氢氟酸制备；非半导体 wafer preclean / 腔清洁。",
+      "disposition": "exclude_after_read"
+    },
+    {
+      "lane": "Preclean",
+      "publication_id": "EP3514266B1",
+      "event_date": "2025-10-15",
+      "reason": "III-V 衬底/外延层对象 → OUT（非 Si/SiGe pre-epi preclean）。",
+      "disposition": "exclude_after_read"
+    },
+    {
+      "lane": "Preclean",
+      "publication_id": "US12464863B2",
+      "event_date": "2025-11-04",
+      "reason": "α-Ga2O3 外延氧化物晶体管 → OUT（氧化物外延器件，非 Si/SiGe pre-epi preclean）。",
+      "disposition": "exclude_after_read"
+    },
+    {
+      "lane": "Preclean",
+      "publication_id": "CN114556544B",
+      "event_date": "2026-01-20",
+      "reason": "互连间隙填充沉积+退火，非 pre-epi preclean。",
+      "disposition": "exclude_after_read"
+    },
+    {
+      "lane": "Preclean",
+      "publication_id": "KR20260014686A",
+      "event_date": "2026-01-30",
+      "reason": "低温磷掺杂硅沉积（生长），非外延前表面 preclean。",
+      "disposition": "exclude_after_read"
+    }
+  ],
+  "not_recounted": {
+    "preclean_baseline_already_live": [
+      {
+        "publication_id": "KR102918757B1",
+        "note": "Already live core (baseline-import); morning freeze include_core does not create a new discovery count."
+      }
+    ],
+    "epi_evening_sightings_promoted": [
+      {
+        "publication_id": "US12770834B2",
+        "note": "Was evening-2026-10-21 out_of_window_sighting; promoted this morning to include_core as overlap_backfill — counted once here as recommendation, not as in-window new."
+      },
+      {
+        "publication_id": "US12768074B2",
+        "note": "Same as US12770834B2."
+      }
+    ]
+  },
+  "team_read_lock": {
+    "actually_read": 6,
+    "change": "none",
+    "note": "Preclean lane actually_read=10 and EPI lane actually_read=2 are lane-internal; do NOT bump team lock."
+  },
+  "research_through": {
+    "live_operational_target": "2026-10-20",
+    "report_json_value": "2026-10-19",
+    "epi_freeze_coverage_claim": "2026-10-22",
+    "preclean_freeze": "2026-10-20",
+    "recommendation": "keep_live_at_2026-10-20",
+    "advance_past_2026_10_20": false,
+    "reason": "Both lanes: no verified publication/grant event date AFTER 2026-10-20 in this morning window. EPI empty in-window; Preclean near-window 0 hits. Empty window ≠ evidence to advance. Do not invent stamp; report.json still shows 2026-10-19 — leave to stamp process."
+  },
+  "gaps_and_conflicts": [
+    "In-window / near-window empty ≠ zero omissions (index lag possible); both freezes state this.",
+    "Live pointer conflict: data/report.json research_through=2026-10-19 vs team/ops/lanes keep 2026-10-20 — no stamp invented this package.",
+    "Preclean freeze self-labels KR102918757B1 as new include_core / also_in_ref=false, but live already has it as baseline core — evidence overrides to baseline_already_live.",
+    "Preclean coverage_gaps: family completion open for KR102918757B1 / related two families; assignee/CPC exact queries often 0.",
+    "EPI GP/PGPub index lag possible for 2026-10-21..22; OG week42 still latest noted in EPI freeze.",
+    "2025-09 untouched / not started."
+  ],
+  "verdict": "PASS_INCREMENTAL",
+  "summary_zh": "交集空；EPI 建议纳入 2 条 10-20 overlap_backfill core（live 未见）；Preclean KR102918757B1 已在 live 基线不计新发现；Preclean related 2 条建议；窗内新 0；已读锁仍 6；不推 research_through 过 2026-10-20；未 stamp；正式交付仍关。"
+}
