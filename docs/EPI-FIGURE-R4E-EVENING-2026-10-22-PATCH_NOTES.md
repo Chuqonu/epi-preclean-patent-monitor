@@ -67,7 +67,7 @@ Then run `scripts/report_metrics.recompute_counts` (or equivalent) and `scripts/
 
 | figure_number | pdf_page | sheet | WxH | display_rotation | asset_sha256 (12) | local_asset_path |
 |---|---:|---|---|---:|---|---|
-| Fig. 1 | 3 | Sheet 1 of 8 | 5334×6875 | 90 | `0b17e7adebe1…` | `assets/figures/recovered/0b17e7adebe16eafdf837da0be2ae119d1dc99d7846a23b07eaed04604c56805.png` |
+| Fig. 1 | 3 | Sheet 1 of 8 | 5334×6875 | 0 | `0b17e7adebe1…` | `assets/figures/recovered/0b17e7adebe16eafdf837da0be2ae119d1dc99d7846a23b07eaed04604c56805.png` |
 | Fig. 2 | 4 | Sheet 2 of 8 | 5334×6875 | 0 | `d9b4cc35724a…` | `assets/figures/recovered/d9b4cc35724a2a6b4276890f3180df4915412f6ffb4790483d82c02693ec7f49.png` |
 | Fig. 3 | 5 | Sheet 3 of 8 | 5334×6875 | 0 | `396157ff8ed9…` | `assets/figures/recovered/396157ff8ed9a4e951779287ff1c60073778de125da45b025f31a931d75a5ee5.png` |
 | Fig. 4A | 6 | Sheet 4 of 8 | 5334×6875 | 90 | `71edce7844a5…` | `assets/figures/recovered/71edce7844a5ff9b08186ee6f3f1cf88f48a2a6214c36f2238654a92f0170546.png` |
@@ -124,7 +124,7 @@ Suggested CloudAgent reply prompt:
 > Recompute counts + stamp asset versions. Do not bump `actually_read` or `research_through`. Open PR; do not squash-merge until evidence/PM PASS.
 
 ## Rotation notes
-- US12770834B2: `display_rotation=90` on Fig.1, Fig.4A, Fig.4B (landscape bodies on portrait USPTO sheets).
+- US12770834B2: `display_rotation=90` on Fig.4A, Fig.4B (landscape bodies on portrait USPTO sheets); Fig.1 is **0** (evidence PASS: raster already upright).
 - US12768074B2: `display_rotation=90` on Fig.4B only; others 0.
 - Renderer must honor `display_rotation` and reserve swapped WxH for 90/270.
 

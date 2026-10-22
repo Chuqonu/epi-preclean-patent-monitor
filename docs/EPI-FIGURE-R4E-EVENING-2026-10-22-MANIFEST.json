@@ -46,7 +46,7 @@
           "source_original_sha256": "0b17e7adebe16eafdf837da0be2ae119d1dc99d7846a23b07eaed04604c56805",
           "source_display_sha256": "0b17e7adebe16eafdf837da0be2ae119d1dc99d7846a23b07eaed04604c56805",
           "pdf_page": 3,
-          "display_rotation": 90,
+          "display_rotation": 0,
           "source_geometry": {},
           "sheet": "Sheet 1 of 8",
           "bytes": 804297,
@@ -208,7 +208,7 @@
           "source_original_sha256": "0b17e7adebe16eafdf837da0be2ae119d1dc99d7846a23b07eaed04604c56805",
           "source_display_sha256": "0b17e7adebe16eafdf837da0be2ae119d1dc99d7846a23b07eaed04604c56805",
           "pdf_page": 3,
-          "display_rotation": 90,
+          "display_rotation": 0,
           "source_geometry": {}
         },
         {
