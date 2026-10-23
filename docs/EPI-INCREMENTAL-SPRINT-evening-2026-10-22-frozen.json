@@ -2,131 +2,567 @@
   "lane": "EPI",
   "document_type": "frozen_candidates_incremental_sprint_evening",
   "method_ref": "2026-10-20.4.2-r2",
-  "search_window": "gap_vs_baseline_2025-10_2026-10_plus_near_research_through_evening",
+  "search_window": "2026-10-21..2026-10-22",
   "research_through": "2026-10-22",
   "period_start": "2025-10",
   "period_end": "2026-10",
-  "frozen_at": "2026-10-22T20:30:00+08:00",
+  "frozen_at": "2026-10-22T21:05:00+08:00",
   "timezone": "Asia/Shanghai",
-  "focus": "晚间 R4 Track A gap：Applied Materials 申请人变体检索 + 与外延/集成腔体相关的缺口补录；禁 2025/09；不 stamp、不升团队已读锁",
-  "recommend_live_research_through_advance": false,
-  "recommend_live_research_through_note": "不建议推进 live research_through 越过 2026-10-20；本批为 gap 历史公开/授权补录。",
-  "stats": {
-    "candidates": 2,
-    "publication_events": 2,
-    "unique_families": 2,
-    "actually_read": 2,
-    "pending": 0,
-    "core_events": 2,
-    "related": 0,
-    "excluded": 0,
-    "gap_backfill": 2
-  },
-  "candidates": [
+  "prior_freeze": "baseline-2025-10_2026-10-frozen.json",
+  "prior_incremental_C": "EPI-INCREMENTAL-2026-10-19_2026-10-20-frozen.json (empty)",
+  "prior_gap_sprint": "EPI-INCREMENTAL-SPRINT-gap-2026-10-20-frozen.json",
+  "prior_evening_sprint": "EPI-INCREMENTAL-SPRINT-evening-2026-10-20-frozen.json (含 US20260062803A1)",
+  "prior_evening_2026_10_21": "EPI-INCREMENTAL-SPRINT-evening-2026-10-21-frozen.json (窗内空；5 条窗外 sightings)",
+  "prior_morning_2026_10_22": "EPI-INCREMENTAL-SPRINT-morning-2026-10-22-frozen.json (US12770834B2+US12768074B2 overlap_backfill → live PR#34 stamp 09d94cf54a4e)",
+  "focus": "晚间 R4 Track A：增量窗 2026-10-21 残差 + 2026-10-22（周四 PGPub）；多入口交叉；申请人别名 ASM/AMAT/TEL/Lam/NAURA/AMEC/拓荆/Sumco/GlobalWafers + CPC H01L21/0262/C30B25/14 + 腔体干洁；禁 2025/09；不读 Preclean；不重提早间已合两 core；不 stamp、不升团队已读锁",
+  "queries_run": [
     {
-      "publication_id": "JP2026004352A",
-      "jurisdiction": "JP",
-      "event_type": "publication",
-      "event_date": "2026-01-14",
-      "month": "2026-01",
-      "application_id": "JP2025-154876",
-      "priority_date": null,
-      "family_id": "FAM-AMAT-CLUSTER-PRESSURE-STAB-EPI-PRECLEAN",
-      "family_id_source": "title_assignee_app",
-      "family_completion_status": "open",
-      "title_original": "Cluster tool, system, and method having one or more pressure stabilization chambers",
-      "title_zh": "具有一或多个压力稳定腔的集群工具、系统及方法（预清洁与常压外延堆积）",
-      "applicant_original": "Applied Materials, Inc.",
-      "applicant_normalized": "Applied Materials",
-      "scope_status": "core",
-      "technology_tags": [
-        "cluster_tool",
-        "pressure_stabilization",
-        "preclean_chamber",
-        "atmospheric_epi",
-        "epitaxial_deposition",
-        "integrated_preclean_epi"
-      ],
-      "short_preview": "AMAT：真空主框架预清洁/工艺腔与常压外延腔集群；压力稳定腔衔接以提升外延生长速率。",
-      "technical_summary": "集群工具：第一主框架上低于 700 Torr 的工艺（含洗浄/预清洁）与第二主框架上约 700–800 Torr 常压外延堆积腔；压力稳定腔促进真空段与常压外延段之间的转移与外延成膜速率。",
-      "claims_or_embodiment_basis": "GP/JPO 公开摘要与说明书 [0004]–[0005]：洗浄チャンバで第1圧力、エピタキシャル堆積チャンバで大気圧外延；クラスタツール权利要求系统架构。",
-      "scope_reason": "Gap 补录：独立权利要求/实施方式明确常压外延堆积与预清洁/洗浄集成集群；Applied 缺口申请人；生长对象为含硅外延路线，非 SiC/GaN 生长对象整案。",
-      "disposition": "include_core",
-      "classification": "gap_backfill",
-      "pending_reason": null,
-      "source_urls": [
-        "https://patents.google.com/patent/JP2026004352A/en"
-      ],
-      "source_retrieved_at": "2026-10-22T20:30:00+08:00",
-      "source_sha256": "5c825056c328210c667c1052c27cc59c8810973bba253b037dc7f60dd40ad67b",
-      "actual_read_spans": [
-        "GP_abstract",
-        "GP_description_0004_0005",
-        "GP_bibliographic_assignee"
-      ],
-      "verification_level": "claims_partial",
-      "overlap_backfill": false,
-      "events": [
-        {
-          "publication_id": "JP2026004352A",
-          "event_type": "publication",
-          "event_date": "2026-01-14",
-          "source_url": "https://patents.google.com/patent/JP2026004352A/en"
-        }
-      ]
+      "id": "E1_day21_22",
+      "branch": "keyword_window",
+      "query": "(epitaxial OR epitaxy OR SiGe OR \"silicon germanium\") after:2026-10-20 before:2026-10-23",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-evening-2026-10-22/E1_day21_22.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
     },
     {
-      "publication_id": "US12595560B2",
-      "jurisdiction": "US",
-      "event_type": "grant",
-      "event_date": "2026-04-07",
-      "month": "2026-04",
-      "application_id": "US18/205,415",
-      "priority_date": "2023-06-02",
-      "family_id": "FAM-AMAT-RPS-GAS-INJECTION-ASSEMBLY",
-      "family_id_source": "title_assignee_app",
-      "family_completion_status": "open",
-      "title_original": "Method and apparatus for supplying improved gas flow to a processing volume of a processing chamber",
-      "title_zh": "向处理腔处理体积供应改进气流的方法与装置（远程等离子体注入组件）",
-      "applicant_original": "Applied Materials, Inc.",
-      "applicant_normalized": "Applied Materials",
-      "scope_status": "core",
-      "technology_tags": [
-        "remote_plasma_source",
-        "gas_injection_assembly",
-        "dielectric_liner",
-        "CVD_processing_chamber",
-        "radical_delivery",
-        "C23C16/452"
-      ],
-      "short_preview": "AMAT：远程等离子体源与工艺腔之间的气体注入组件，向处理体积输送活性自由基/分子种（2026-04-07 授权）。",
-      "technical_summary": "气体注入组件位于远程等离子体源与工艺腔之间：本体、介电衬套限定混合体积、双法兰连接腔体与 RPS，周向气体注入口；用于电子器件制造过程中向处理体积供应亚稳态自由基种。",
-      "claims_or_embodiment_basis": "USPTO/GP 摘要与代表权利要求：gas injection assembly between remote plasma source and process chamber；metastable radical species to processing volume。",
-      "scope_reason": "Gap 补录：独立装置权利要求主张外延/CVD 类工艺腔的气体输送与 RPS 耦合；Applied 设备缺口；非湿法独立清洗整案。",
-      "disposition": "include_core",
-      "classification": "gap_backfill",
-      "pending_reason": null,
-      "source_urls": [
-        "https://patents.google.com/patent/US12595560B2/en",
-        "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12595560"
-      ],
-      "source_retrieved_at": "2026-10-22T20:30:00+08:00",
-      "source_sha256": "3ff15e04e4df4707dc3f065d8120e487ac026c8f07412eb56beaa41f3a550ed1",
-      "actual_read_spans": [
-        "GP_abstract",
-        "GP_representative_claim_gas_injection",
-        "GP_grant_timeline"
-      ],
-      "verification_level": "claims_partial",
-      "overlap_backfill": false,
-      "events": [
-        {
-          "publication_id": "US12595560B2",
-          "event_type": "grant",
-          "event_date": "2026-04-07",
-          "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12595560"
-        }
-      ]
+      "id": "E2_cpc",
+      "branch": "CPC",
+      "query": "CPC=(H01L21/0262 OR C30B25/14) after:2026-10-20 before:2026-10-23",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-evening-2026-10-22/E2_cpc.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E3_cn",
+      "branch": "jurisdiction_CN",
+      "query": "country:CN (硅锗外延 OR 选择性外延 OR 外延设备) after:2026-10-20 before:2026-10-23",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-evening-2026-10-22/E3_cn.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E4_dry",
+      "branch": "chamber_dry_clean_related",
+      "query": "(epitaxial OR epitaxy) (\"chamber clean\" OR \"in-situ clean\" OR NF3 OR ClF3) after:2026-10-20 before:2026-10-23",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-evening-2026-10-22/E4_dry.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E5_seg",
+      "branch": "keyword_window",
+      "query": "(\"selective epitaxial\" OR SEG OR \"selective epitaxy\") (Si OR SiGe) after:2026-10-20 before:2026-10-23",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-evening-2026-10-22/E5_seg.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E6_pd22",
+      "branch": "PGPub_day",
+      "query": "PD=20261022 (epitax OR epitaxial OR SiGe OR \"silicon germanium\")",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-evening-2026-10-22/E6_pd22.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00",
+      "note": "今日周四 PGPub 日；GP 返回 0（索引滞后可能）"
+    },
+    {
+      "id": "E7_pd21",
+      "branch": "keyword_window",
+      "query": "PD=20261021 (epitax OR epitaxial OR SiGe)",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-evening-2026-10-22/E7_pd21.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E8_asm",
+      "branch": "applicant",
+      "query": "assignee:(\"ASM IP Holding\" OR \"ASM International\" OR \"ASM America\") (epitax OR epitaxial OR SiGe) after:2026-10-01 before:2026-10-23",
+      "source": "Google Patents xhr",
+      "result_count": null,
+      "artifact": "raw/sprint-evening-2026-10-22/E8_asm.json",
+      "sha256": "6e820f4031a84dbd22108903ac5ee2141cb5dab454abe628c7931318e33707f3",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00",
+      "error": "invalid argument: query syntax error"
+    },
+    {
+      "id": "E8b_asm",
+      "branch": "applicant",
+      "query": "assignee:\"ASM IP Holding\" (epitax OR epitaxial OR SiGe) after:2026-10-01 before:2026-10-23",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-evening-2026-10-22/E8b_asm.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E8c_asm",
+      "branch": "applicant",
+      "query": "assignee:\"ASM International\" (epitax OR epitaxial) after:2026-10-01 before:2026-10-23",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-evening-2026-10-22/E8c_asm.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E9_amat",
+      "branch": "applicant",
+      "query": "assignee:(\"Applied Materials\") (epitax OR epitaxial OR SiGe) after:2026-10-01 before:2026-10-23",
+      "source": "Google Patents xhr",
+      "result_count": null,
+      "artifact": "raw/sprint-evening-2026-10-22/E9_amat.json",
+      "sha256": "6e820f4031a84dbd22108903ac5ee2141cb5dab454abe628c7931318e33707f3",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00",
+      "error": "invalid argument: query syntax error"
+    },
+    {
+      "id": "E9b_amat",
+      "branch": "applicant",
+      "query": "assignee:\"Applied Materials\" (epitax OR epitaxial OR SiGe) after:2026-10-01 before:2026-10-23",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-evening-2026-10-22/E9b_amat.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E10_tel",
+      "branch": "applicant",
+      "query": "assignee:(\"Tokyo Electron\") (epitax OR epitaxial OR SiGe) after:2026-10-01 before:2026-10-23",
+      "source": "Google Patents xhr",
+      "result_count": null,
+      "artifact": "raw/sprint-evening-2026-10-22/E10_tel.json",
+      "sha256": "6e820f4031a84dbd22108903ac5ee2141cb5dab454abe628c7931318e33707f3",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00",
+      "error": "invalid argument: query syntax error"
+    },
+    {
+      "id": "E10b_tel",
+      "branch": "applicant",
+      "query": "assignee:\"Tokyo Electron\" (epitax OR epitaxial OR SiGe) after:2026-10-01 before:2026-10-23",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-evening-2026-10-22/E10b_tel.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E11b_lam",
+      "branch": "applicant",
+      "query": "assignee:\"Lam Research\" (epitax OR epitaxial OR SiGe) after:2026-10-01 before:2026-10-23",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-evening-2026-10-22/E11b_lam.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E11c_naura",
+      "branch": "applicant",
+      "query": "assignee:NAURA (epitax OR 外延 OR SiGe) after:2026-10-01 before:2026-10-23",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-evening-2026-10-22/E11c_naura.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E11d_amec",
+      "branch": "applicant",
+      "query": "assignee:AMEC (epitax OR 外延 OR SiGe) after:2026-10-01 before:2026-10-23",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-evening-2026-10-22/E11d_amec.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E11e_piotech",
+      "branch": "applicant",
+      "query": "assignee:Piotech (epitax OR 外延) after:2026-10-01 before:2026-10-23",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-evening-2026-10-22/E11e_piotech.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E13b_sumco",
+      "branch": "applicant",
+      "query": "assignee:SUMCO (epitax OR epitaxial) after:2026-10-01 before:2026-10-23",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-evening-2026-10-22/E13b_sumco.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E13c_gw",
+      "branch": "applicant",
+      "query": "assignee:\"GlobalWafers\" (epitax OR epitaxial) after:2026-10-01 before:2026-10-23",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-evening-2026-10-22/E13c_gw.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E12b_kr",
+      "branch": "jurisdiction_KR",
+      "query": "country:KR (epitax OR epitaxial OR SiGe OR 에피) after:2026-10-20 before:2026-10-23",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-evening-2026-10-22/E12b_kr.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E12c_jp",
+      "branch": "jurisdiction_JP",
+      "query": "country:JP (epitax OR epitaxial OR エピ) after:2026-10-20 before:2026-10-23",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-evening-2026-10-22/E12c_jp.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E12d_tw",
+      "branch": "jurisdiction_TW",
+      "query": "country:TW (epitax OR epitaxial OR 磊晶) after:2026-10-20 before:2026-10-23",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-evening-2026-10-22/E12d_tw.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E12e_wo",
+      "branch": "jurisdiction_WO",
+      "query": "country:WO (epitax OR epitaxial OR SiGe) after:2026-10-20 before:2026-10-23",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-evening-2026-10-22/E12e_wo.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E12f_ep",
+      "branch": "jurisdiction_EP",
+      "query": "country:EP (epitax OR epitaxial OR SiGe) after:2026-10-20 before:2026-10-23",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-evening-2026-10-22/E12f_ep.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E15_c30b",
+      "branch": "CPC",
+      "query": "CPC=C30B25/14 after:2026-10-15 before:2026-10-23",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-evening-2026-10-22/E15_c30b.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E16_h01l",
+      "branch": "CPC",
+      "query": "CPC=H01L21/0262 after:2026-10-15 before:2026-10-23",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-evening-2026-10-22/E16_h01l.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E17_pub",
+      "branch": "keyword_window",
+      "query": "after:publication:20261020 before:publication:20261023 (epitaxial OR epitaxy OR SiGe)",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-evening-2026-10-22/E17_pub.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E0_sanity",
+      "branch": "index_sanity",
+      "query": "PD=20261020 (epitax OR epitaxial OR SiGe) assignee:\"Applied Materials\"",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-evening-2026-10-22/E0_sanity.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00",
+      "note": "已知 10-20 OG 授权亦 0 → GP 近窗日期索引滞后/不全"
+    },
+    {
+      "id": "E0g_known2",
+      "branch": "index_sanity",
+      "query": "US12770834B2",
+      "source": "Google Patents xhr",
+      "result_count": 0,
+      "artifact": "raw/sprint-evening-2026-10-22/E0g_known2.json",
+      "sha256": "0627f73d461f40f48e37366f8da8a6df63f405acd40fda87cf8f030f3290d391",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00",
+      "note": "早间 core 授权号 GP 直取仍 0/404 类"
+    },
+    {
+      "id": "E20_og_landing",
+      "branch": "USPTO_OG_index",
+      "query": "Official Gazette Patents latest week",
+      "source": "uspto.gov Official Gazette for Patents",
+      "result_count": "latest=2026-10-20_week42; next_Tue≈2026-10-27; week43_label_on_landing=2025-10-28_prior_year",
+      "artifact": "raw/sprint-evening-2026-10-22/OG_landing.html",
+      "sha256": "faaf5ab35fd5b280150bbf7a1acdba5fb85601e557254362e7b2a53ee02df326",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00",
+      "note": "10-21/10-22 非授权日"
+    },
+    {
+      "id": "E21_og_w42",
+      "branch": "USPTO_OG_week42",
+      "query": "patentsgazette.uspto.gov/week42/OG/patent.html",
+      "source": "USPTO OG",
+      "result_count": "shell_present; US12770834+US12768074 still listed",
+      "artifact": "raw/sprint-evening-2026-10-22/OG_w42_patent.html",
+      "sha256": "a7a1f00c84af40691d3c056bb2c3c8b73b27d6e4072392f25de6e290b5057986",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00",
+      "note": "已合 PR#34 live；今晚不重提为新候选"
+    },
+    {
+      "id": "E22_og_w43",
+      "branch": "USPTO_OG_week43_probe",
+      "query": "patentsgazette.uspto.gov/week43/OG/patent.html + html/index",
+      "source": "USPTO OG",
+      "result_count": "shell_present_no_2026_week43_issue; index/tech0=404",
+      "artifact": "raw/sprint-evening-2026-10-22/OG_w43.html",
+      "sha256": "724273853cbc9b9e0e3ece7da58fe29ff7769359060e71e7778efd086226a0b3",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E23_web_en",
+      "branch": "websearch_crosscheck",
+      "query": "patent published October 22 2026 OR 2026-10-22 epitaxial OR SiGe",
+      "source": "WebSearch",
+      "result_count": "no_in_window_verified_hits",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E24_web_en2",
+      "branch": "websearch_crosscheck",
+      "query": "\"October 22, 2026\" OR \"Oct. 22, 2026\" (patent|PGPub) (epitaxial|epitaxy|SiGe)",
+      "source": "WebSearch",
+      "result_count": "no_in_window_verified_hits",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E25_web_en21",
+      "branch": "websearch_crosscheck",
+      "query": "\"October 21, 2026\" (patent|PGPub) (epitaxial|epitaxy|SiGe)",
+      "source": "WebSearch",
+      "result_count": "no_in_window_verified_hits",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E26_web_zh",
+      "branch": "websearch_crosscheck",
+      "query": "2026年10月22日 专利 公布 外延 OR SiGe OR 硅锗",
+      "source": "WebSearch",
+      "result_count": "no_in_window_verified_hits",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E27_web_multi",
+      "branch": "websearch_crosscheck",
+      "query": "KR/JP/CN 20261022 외연/エピ/外延",
+      "source": "WebSearch",
+      "result_count": "no_in_window_verified_hits",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E28_justia",
+      "branch": "web_probe",
+      "query": "Justia patents-by-issue-date/2026/10/21|22",
+      "source": "Justia",
+      "result_count": null,
+      "artifact": "raw/sprint-evening-2026-10-22/justia22.html",
+      "sha256": "64a06a1b4c8ad6f3b4e62f3eda009e094d73b97c3d8d905890da461f848c8ae7",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00",
+      "error": "HTTP 403 Cloudflare"
+    },
+    {
+      "id": "E29_espacenet",
+      "branch": "Espacenet",
+      "query": "pd=20261022 AND epitax*",
+      "source": "Espacenet",
+      "result_count": null,
+      "artifact": "raw/sprint-evening-2026-10-22/espacenet.html",
+      "sha256": "cdb4ee2aea69cc6a83331bbe96dc2caa9a299d21329efb0336fc02a82e1839a8",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00",
+      "error": "HTTP 403"
+    },
+    {
+      "id": "E30_lens",
+      "branch": "Lens",
+      "query": "date_published 2026-10-21..2026-10-22 epitax*",
+      "source": "lens.org",
+      "result_count": "empty_results_marker",
+      "artifact": "raw/sprint-evening-2026-10-22/lens.html",
+      "sha256": "e5fa24a70ae7b91a9a78f3266df3c1a8b4cbe5652065c90a18230ef020b8fbcd",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E31_fpo",
+      "branch": "FreePatentsOnline",
+      "query": "isd/10/22/2026 and (epitax or SiGe)",
+      "source": "freepatentsonline.com",
+      "result_count": null,
+      "artifact": "raw/sprint-evening-2026-10-22/fpo.html",
+      "sha256": "0d3e98ca727fc1201b436170af5a63f23348aaf146a3ac6234f6c4da283e8b34",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00",
+      "error": "HTTP 403"
+    },
+    {
+      "id": "E32_kipo",
+      "branch": "KIPRIS_probe",
+      "query": "kipris.or.kr main",
+      "source": "KIPRIS",
+      "result_count": null,
+      "artifact": "raw/sprint-evening-2026-10-22/kipo.html",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00",
+      "error": "TLS connect error / unexpected eof"
+    },
+    {
+      "id": "E33_jpo",
+      "branch": "JPlatPat_probe",
+      "query": "j-platpat.inpit.go.jp landing",
+      "source": "J-PlatPat",
+      "result_count": "landing_fetched_no_authenticated_exhaust",
+      "artifact": "raw/sprint-evening-2026-10-22/jpo.html",
+      "sha256": "911ecac77bb2f542cd41b01c8855a004a4b61238fc839ce243f0103e7c09cbc5",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E34_cnipa",
+      "branch": "CNIPA_probe",
+      "query": "cnipa.gov.cn landing",
+      "source": "CNIPA",
+      "result_count": "landing_fetched_no_authenticated_exhaust",
+      "artifact": "raw/sprint-evening-2026-10-22/cnipa.html",
+      "sha256": "84d983edf2724285a64251ef482c8c5a9d0b4953ba1ac3bf1bcf47558927f854",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
+    },
+    {
+      "id": "E35_ppubs",
+      "branch": "USPTO_PGPub_UI",
+      "query": "ppubs.uspto.gov/pubwebapp + patent-public-search landing",
+      "source": "USPTO Patent Public Search",
+      "result_count": "UI_fetched; no automated day dump",
+      "artifact": "raw/sprint-evening-2026-10-22/ppubs.html",
+      "sha256": "992fa7eec60a57278ac92757ed1de1401b4904a265d7bef4ae19b9059b269c7a",
+      "source_retrieved_at": "2026-10-22T21:05:00+08:00"
     }
-  ]
+  ],
+  "sources_tried": [
+    "Google Patents xhr keyword/CPC/CN/SEG/dry-clean/PD=20261021|22（窗内 total=0）",
+    "Google Patents xhr assignee 单引号式（ASM/AMAT/TEL/Lam/NAURA/AMEC/Piotech/SUMCO/GlobalWafers → 0）",
+    "Google Patents xhr KR/JP/TW/WO/EP 分辖（0）",
+    "Google Patents publication:/granted: 日期算子（0）；已知 10-20 授权 sanity 亦 0 → 近窗索引滞后",
+    "Google Patents HTML search page",
+    "WebSearch EN/ZH/多语交叉",
+    "USPTO OG landing（最新 week42=2026-10-20；下一周二≈2026-10-27）",
+    "USPTO OG week42 patent shell（确认早间两 core 仍在；不重提）",
+    "USPTO OG week43 probe（无 2026 期；html index 404）",
+    "USPTO Patent Public Search / ppubs UI 探测",
+    "Justia（403）",
+    "Espacenet（403）",
+    "Lens.org date filter（空结果标记）",
+    "FreePatentsOnline（403）",
+    "KIPRIS（TLS 失败）",
+    "J-PlatPat / CNIPA landing（未登录穷尽）"
+  ],
+  "limitations": [
+    "不宣称零遗漏。窗内无已核公开号 ≠ 真实世界无公开（PGPub 索引可能滞后）。",
+    "2026-10-21 非 USPTO 授权日；2026-10-22 为 PGPub 日非授权日；下一 OG 估 2026-10-27（2026 week43 尚未上线；landing 上 week43 标签仍指向 2025-10-28）。",
+    "GP 近窗 after:/PD=/publication: 对已知 2026-10-20 授权亦返回 0，日期索引不可作否定证据。",
+    "assignee 括式 OR 仍 syntax error；改用单 assignee 引号式后仍 0。",
+    "Justia/Espacenet/FPO 403；KIPRIS TLS 失败；CNIPA/J-PlatPat 未登录穷尽。",
+    "早间 overlap_backfill 两 core（US12770834B2 / US12768074B2）已合 live（PR#34），今晚不重列为新候选/新 sighting。",
+    "未读 Preclean；未 stamp；未升团队 actually_read 锁（仍 6）。",
+    "禁止 2025/09 起点；禁止编造公开号。"
+  ],
+  "stats": {
+    "candidates": 0,
+    "publication_events": 0,
+    "unique_families": 0,
+    "actually_read": 0,
+    "fulltext_read": 0,
+    "pending": 0,
+    "core_events": 0,
+    "related": 0,
+    "excluded": 0,
+    "overlap_backfill": 0,
+    "in_window_new": 0,
+    "already_in_prior_freeze": 0,
+    "out_of_window_sightings": 0
+  },
+  "candidate_count": 0,
+  "event_count": 0,
+  "publication_events": 0,
+  "family_count": 0,
+  "unique_families": 0,
+  "actually_read_count": 0,
+  "pending_count": 0,
+  "core_event_count": 0,
+  "related_count": 0,
+  "excluded_count": 0,
+  "count_basis": "窗 2026-10-21..2026-10-22 新事件=0；无可纳入 core/related/pending 的已核公开号。早间两 core 已 live，不重计。",
+  "actually_read_definition": "实质读过 claims/实施方式（或等价官方 claim 文本）才计入本冻结 actually_read；仅摘要/书目不计。本文件 candidates 为空故为 0。团队 live actually_read 锁仍 6，本文件不升。",
+  "recommend_live_research_through_advance": false,
+  "recommend_live_research_through": "2026-10-20",
+  "recommend_live_research_through_note": "不建议推进 live research_through 越过 2026-10-20：无已核 event_date>2026-10-20 的公开/授权；空窗≠证据；GP 近窗索引已知滞后。freeze.research_through=2026-10-22 仅覆盖声明。",
+  "already_live_do_not_repromote": [
+    {
+      "publication_id": "US12770834B2",
+      "event_date": "2026-10-20",
+      "note": "morning freeze include_core → PR#34 live stamp 09d94cf54a4e；今晚不计新"
+    },
+    {
+      "publication_id": "US12768074B2",
+      "event_date": "2026-10-20",
+      "note": "morning freeze include_core → PR#34 live stamp 09d94cf54a4e；今晚不计新"
+    }
+  ],
+  "candidates": [],
+  "entries": [],
+  "out_of_window_sightings": [],
+  "retrieval_manifest_path": "/workspace/epi-independent-search/raw/sprint-evening-2026-10-22/retrieval-manifest.json",
+  "codex_audit_fields_note": "空清单无单条 source_retrieved_at/source_sha256/actual_read_spans；查询与入口抓取哈希见 queries_run 与 retrieval-manifest.json。",
+  "change_history": [
+    {
+      "at": "2026-10-22T21:05:00+08:00",
+      "action": "create_empty_incremental_sprint_evening_freeze",
+      "by": "EPI检索"
+    }
+  ],
+  "reviewer": null,
+  "reviewed_at": null,
+  "priority_date": null,
+  "source_sha256": "ea5599b30ce0647ca55c0d39ade5f47ca5d1348a5cc3aa113a5e7e8b8383f79f",
+  "source_retrieved_at": "2026-10-22T21:05:00+08:00"
 }

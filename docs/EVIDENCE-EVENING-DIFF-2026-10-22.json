@@ -1,54 +1,194 @@
 {
   "document_type": "evidence_evening_incremental_diff",
   "diff_id": "EVIDENCE-EVENING-DIFF-2026-10-22",
-  "created_at": "2026-10-22T20:35:00+08:00",
+  "created_at": "2026-10-22T21:00:00+08:00",
   "timezone": "Asia/Shanghai",
   "role": "证据复核",
   "formal_delivery": false,
   "informal": true,
-  "conclusion": "PASS_INCREMENTAL",
   "september": "untouched",
   "no_zero_omission_claim": true,
   "inputs": {
     "epi": "docs/EPI-INCREMENTAL-SPRINT-evening-2026-10-22-frozen.json",
     "preclean": "docs/PRECLEAN-INCREMENTAL-SPRINT-evening-2026-10-22-frozen.json",
     "epi_stats": {
+      "candidates": 0,
+      "publication_events": 0,
+      "unique_families": 0,
+      "actually_read": 0,
+      "fulltext_read": 0,
+      "pending": 0,
+      "core_events": 0,
+      "related": 0,
+      "excluded": 0,
+      "overlap_backfill": 0,
+      "in_window_new": 0,
+      "already_in_prior_freeze": 0,
+      "out_of_window_sightings": 0
+    },
+    "preclean_stats": {
       "candidates": 2,
       "publication_events": 2,
       "unique_families": 2,
-      "actually_read": 2,
-      "core_events": 2,
-      "gap_backfill": 2
-    },
-    "preclean_stats": {
-      "candidates": 1,
-      "publication_events": 1,
-      "unique_families": 1,
       "actually_read": 30,
+      "fulltext_read": 0,
+      "pending": 1,
+      "core_events": 2,
       "related": 1,
-      "lane_read_not_team_lock": true
+      "excluded": 12,
+      "same_family_sightings": 0,
+      "out_of_window_sightings": 0,
+      "queries_executed": 49,
+      "near_window_hits": 0,
+      "near_window_honest_empty": true
+    },
+    "room_claims_vs_json": "aligned — EPI 0/0/0/0; Preclean 候选2｜事件2｜族2｜lane已读30; morning three not re-counted"
+  },
+  "window_note": {
+    "epi_search_window": "2026-10-21..2026-10-22",
+    "epi_period": [
+      "2025-10",
+      "2026-10"
+    ],
+    "preclean_search_window": "gap_vs_morning_2026-10-22_plus_near_research_through_evening",
+    "preclean_near_window": "20261020–20261024",
+    "preclean_period": [
+      "2025-10",
+      "2026-10"
+    ],
+    "alignment": "EPI in-window new=0; Preclean near-window honest empty (0 hits). Both lanes recommend NOT advancing research_through past 2026-10-20. Preclean cores are gap backfill (2026-01-14 / 2026-04-07), not near-window new."
+  },
+  "live_baseline_check": {
+    "source": "https://chuqonu.github.io/epi-preclean-patent-monitor/data/report.json (fetched 2026-10-22 evening)",
+    "research_through": "2026-10-20",
+    "actually_read": 6,
+    "events_reviewed": 6,
+    "counts_snapshot": {
+      "candidates_total": 128,
+      "publication_events": 156,
+      "unique_families": 113,
+      "figures": 170
+    },
+    "note": "Local workspace data/report.json is stale baseline (research_through=2026-10-19); live Pages used for in_live rulings. figures=170 reflects pre-#35 Pages; #35 figure PR not required for this diff.",
+    "pubs": {
+      "JP2026004352A": {
+        "in_live": false
+      },
+      "US12595560B2": {
+        "in_live": false
+      },
+      "KR102920833B1": {
+        "in_live": false
+      },
+      "KR102918757B1": {
+        "in_live": true,
+        "scope_status": "core",
+        "family_id": "priority-US62-859621",
+        "event_date": "2026-01-28",
+        "application_id": "KR10-2020-0063344",
+        "priority_date": "2019-06-10",
+        "change_history": "baseline-import 2026-10-20"
+      },
+      "US12770834B2": {
+        "in_live": true,
+        "scope_status": "core",
+        "note": "morning PR#34 overlap_backfill — not re-counted tonight"
+      },
+      "US12768074B2": {
+        "in_live": true,
+        "scope_status": "core",
+        "note": "morning PR#34 overlap_backfill — not re-counted tonight"
+      },
+      "CN122406228A": {
+        "in_live": false,
+        "note": "morning related — not re-counted tonight"
+      },
+      "KR20260113276A": {
+        "in_live": false,
+        "note": "morning related — not re-counted tonight"
+      }
     }
+  },
+  "set_ops": {
+    "intersection_publication_ids": [],
+    "intersection_family_ids": [],
+    "epi_only": [],
+    "preclean_only": [
+      {
+        "publication_id": "JP2026004352A",
+        "disposition": "include_core",
+        "classification": "gap_vs_morning_new_core",
+        "event_date": "2026-01-14",
+        "family_id": "JP2026004352A",
+        "applicant_normalized": "Applied",
+        "in_live": false
+      },
+      {
+        "publication_id": "US12595560B2",
+        "disposition": "include_core",
+        "classification": "gap_vs_morning_new_core",
+        "event_date": "2026-04-07",
+        "family_id": "US12595560B2",
+        "applicant_normalized": "Applied",
+        "in_live": false
+      },
+      {
+        "publication_id": "KR102920833B1",
+        "disposition": "include_related",
+        "classification": "gap_vs_morning_new_related_epi_linked_chamber_clean",
+        "event_date": "2026-01-30",
+        "family_id": "KR102920833B1",
+        "applicant_normalized": "ASM",
+        "in_live": false,
+        "family_merge_vs_KR102918757B1": "not_same_family"
+      }
+    ],
+    "intersection_count": 0,
+    "epi_only_count": 0,
+    "preclean_only_count": 3
   },
   "include_core_suggestions": [
     {
-      "lane": "EPI",
+      "lane": "Preclean",
       "publication_id": "JP2026004352A",
       "event_date": "2026-01-14",
       "month": "2026-01",
-      "applicant_normalized": "Applied Materials",
-      "classification": "gap_backfill",
+      "applicant_normalized": "Applied",
+      "family_id": "JP2026004352A",
+      "family_completion_status": "open",
+      "title_original": "Cluster tool, system, and method having one or more pressure stabilization chambers",
+      "title_zh": "具有压力稳定腔的集群工具/系统/方法（含 pre-clean 腔去自然氧化膜后进外延）",
       "disposition": "include_core",
-      "in_live": false
+      "classification": "gap_vs_morning_new_core",
+      "in_live": false,
+      "also_in_morning_freeze": false,
+      "why": "Applied 集群：清洗/pre-clean 腔低压下去 native oxide，再经压力稳定腔转入外延沉积腔；实施例含 NH3/NF3 等离子体、AHF+NH3、远程等离子体干蚀刻。明确 pre-epi wafer dry/plasma preclean + 集成。相对近窗为空；属 gap 补录，非 >2026-10-20 新事件。",
+      "source_urls": [
+        "https://patents.google.com/patent/JP2026004352A/en",
+        "https://patents.google.com/patent/JP2026004352A"
+      ],
+      "source_sha256": "5c825056c328210c667c1052c27cc59c8810973bba253b037dc7f60dd40ad67b"
     },
     {
-      "lane": "EPI",
+      "lane": "Preclean",
       "publication_id": "US12595560B2",
       "event_date": "2026-04-07",
       "month": "2026-04",
-      "applicant_normalized": "Applied Materials",
-      "classification": "gap_backfill",
+      "applicant_normalized": "Applied",
+      "family_id": "US12595560B2",
+      "family_completion_status": "open",
+      "title_original": "Method and apparatus for supplying improved gas flow to a processing volume of a processing chamber",
+      "title_zh": "向工艺腔提供改进气流（远程等离子体/亚稳态自由基气体注入组件）",
       "disposition": "include_core",
-      "in_live": false
+      "classification": "gap_vs_morning_new_core",
+      "in_live": false,
+      "also_in_morning_freeze": false,
+      "claim_scope_note": "主权利要求偏 RPS↔工艺腔气体注入硬件通用；embodiment 明确外延硅生长前用活化气体清洗并/或氢钝化 → 本晚建议 include_core；同族闭合与主权利要求边界仍 open，合入前可再压一次。",
+      "why": "Applied RPS 路径输送亚稳态自由基；说明书 embodiment：exposing substrate to activated gas cleans and/or hydrogen passivates before epitaxial growth of a silicon layer。live 未见；早间未冻结。事件日 2026-04-07，非近窗新。",
+      "source_urls": [
+        "https://patents.google.com/patent/US12595560B2/en"
+      ],
+      "source_sha256": "3ff15e04e4df4707dc3f065d8120e487ac026c8f07412eb56beaa41f3a550ed1"
     }
   ],
   "include_related_suggestions": [
@@ -58,20 +198,189 @@
       "event_date": "2026-01-30",
       "month": "2026-01",
       "applicant_normalized": "ASM",
-      "family_id": "FAM-ASM-EPI-PRECOAT-MULTIWAFER-CHAMBER-CLEAN",
+      "family_id": "KR102920833B1",
       "disposition": "include_related",
-      "not_same_family_as_live": "KR102918757B1",
+      "classification": "gap_vs_morning_new_related_epi_linked_chamber_clean",
       "in_live": false,
-      "ruling": "do_not_merge_families_or_promote_to_core"
+      "family_merge": {
+        "compared_to": "KR102918757B1",
+        "ruling": "not_same_family",
+        "not_family_share": true,
+        "evidence": {
+          "KR102918757B1": {
+            "priority_date": "2019-06-10",
+            "priority_doc": "US62/859,621",
+            "application_id": "KR10-2020-0063344",
+            "kr_publication": "KR20200141931A",
+            "live_family_id": "priority-US62-859621"
+          },
+          "KR102920833B1": {
+            "priority_date": "2020-03-17",
+            "priority_doc": "US62/990,807",
+            "application_id": "KR1020210028562A",
+            "kr_publication": "KR20210117163A",
+            "family_members_sighted": [
+              "KR102920833B1",
+              "KR20210117163A"
+            ]
+          }
+        },
+        "note": "同申请人 ASM、主题相邻（epi 关联腔清洁），但优先权/申请号/公开号均不同 → 不并族、不算 family_share；保持 related，不升 core。"
+      },
+      "why": "外延材料沉积流程含反应腔预涂 → 多片处理 → 随后清洗反应腔；属 epi-linked 腔清洁，非 wafer native-oxide preclean → related。与早间/live core KR102918757B1 非同族。",
+      "source_url": "https://patents.google.com/patent/KR102920833B1/en",
+      "source_sha256": "5843d400bbb3f25a66cae45ecb7bba540fa12f2df1abb21a445a7852cb5da154"
     }
   ],
-  "team_actually_read": {
-    "remains": 6,
-    "not_auto_bump": "Preclean lane actually_read=30 is internal; merge must not raise counts.actually_read"
+  "pending_queue": [
+    {
+      "lane": "Preclean",
+      "publication_id": "JP2026004352A",
+      "reason": "family_completion open（JP/KR/CN/US members sighted；未全量核读）— 不挡本晚 include_core 建议",
+      "blocks_include": false
+    },
+    {
+      "lane": "Preclean",
+      "publication_id": "US12595560B2",
+      "reason": "family_completion open；主权利要求硬件通用 vs embodiment pre-epi 用途钉死 — 合入前可选再压 claim 边界",
+      "blocks_include": false
+    }
+  ],
+  "exclude_list": [
+    {
+      "lane": "Preclean",
+      "publication_id": "US12463052B2",
+      "event_date": "2025-11-04",
+      "reason": "凹槽底部氧化物/结界面清洁以保护下方外延层——结/后段清洁，非外延前 wafer native-oxide preclean。",
+      "disposition": "exclude_after_read"
+    },
+    {
+      "lane": "Preclean",
+      "publication_id": "US12490508B2",
+      "event_date": "2025-12-02",
+      "reason": "器件外延层/盖层形成方法，非 pre-epi preclean。",
+      "disposition": "exclude_after_read"
+    },
+    {
+      "lane": "Preclean",
+      "publication_id": "US12477795B2",
+      "event_date": "2025-11-18",
+      "reason": "GAA 源漏外延层器件结构，非 preclean。",
+      "disposition": "exclude_after_read"
+    },
+    {
+      "lane": "Preclean",
+      "publication_id": "US20260223399A1",
+      "event_date": "2026-07-30",
+      "reason": "纳米结构晶体管外延源漏形成，非 preclean。",
+      "disposition": "exclude_after_read"
+    },
+    {
+      "lane": "Preclean",
+      "publication_id": "JP2026108675A",
+      "event_date": "2026-06-30",
+      "reason": "GaN 系外延层衬底结构 → OUT（III-N 生长对象）。",
+      "disposition": "exclude_after_read"
+    },
+    {
+      "lane": "Preclean",
+      "publication_id": "US20260217543A1",
+      "event_date": "2026-07-30",
+      "reason": "SiC 晶锭/体积形状 → OUT（非 Si/SiGe pre-epi preclean）。",
+      "disposition": "exclude_after_read"
+    },
+    {
+      "lane": "Preclean",
+      "publication_id": "US12564001B2",
+      "event_date": "2026-02-24",
+      "reason": "双光温度计温控，无主张 preclean / 腔干清洁工艺。",
+      "disposition": "exclude_after_read"
+    },
+    {
+      "lane": "Preclean",
+      "publication_id": "KR20260052075A",
+      "event_date": "2026-04-17",
+      "reason": "医药大麻提取物——assignee 宽查询噪声。",
+      "disposition": "exclude_after_read"
+    },
+    {
+      "lane": "Preclean",
+      "publication_id": "EP4702057A1",
+      "event_date": "2026-03-04",
+      "reason": "ALS 生物标志物体内成像——噪声。",
+      "disposition": "exclude_after_read"
+    },
+    {
+      "lane": "Preclean",
+      "publication_id": "WO2026096250A1",
+      "event_date": "2026-05-07",
+      "reason": "支原体核酸检测——噪声。",
+      "disposition": "exclude_after_read"
+    },
+    {
+      "lane": "Preclean",
+      "publication_id": "US12568804B2",
+      "event_date": "2026-03-03",
+      "reason": "金属 gapfill 原位去除，非 pre-epi preclean。",
+      "disposition": "exclude_after_read"
+    },
+    {
+      "lane": "Preclean",
+      "publication_id": "KR102866849B1",
+      "event_date": "2025-10-01",
+      "reason": "石墨烯 BEOL 集成沉积，非 pre-epi preclean。",
+      "disposition": "exclude_after_read"
+    }
+  ],
+  "not_recounted": {
+    "epi_morning_overlap_backfill_already_live": [
+      {
+        "publication_id": "US12770834B2",
+        "note": "Morning include_core → PR#34 live; evening EPI freeze lists under already_live_do_not_repromote; not re-counted."
+      },
+      {
+        "publication_id": "US12768074B2",
+        "note": "Same as US12770834B2."
+      }
+    ],
+    "preclean_morning_known": [
+      {
+        "publication_id": "KR102918757B1",
+        "note": "Morning/live baseline core; evening reopened only for family contrast vs KR102920833B1; NOT re-counted."
+      },
+      {
+        "publication_id": "CN122406228A",
+        "note": "Morning related — not re-counted."
+      },
+      {
+        "publication_id": "KR20260113276A",
+        "note": "Morning related — not re-counted."
+      }
+    ]
+  },
+  "team_read_lock": {
+    "actually_read": 6,
+    "change": "none",
+    "note": "Preclean lane actually_read=30 and EPI lane actually_read=0 are lane-internal; do NOT bump team lock."
   },
   "research_through": {
-    "live_remains": "2026-10-20",
-    "advance": false
+    "live_value": "2026-10-20",
+    "epi_freeze_coverage_claim": "2026-10-22",
+    "preclean_freeze": "2026-10-20",
+    "recommendation": "keep_live_at_2026-10-20",
+    "advance_past_2026_10_20": false,
+    "reason": "Both lanes: no verified publication/grant event date AFTER 2026-10-20. EPI empty in-window; Preclean near-window 0 hits. Gap cores dated 2026-01-14 / 2026-04-07 do not justify advancing the pointer. Empty window ≠ evidence to advance. Do not invent stamp."
   },
-  "failures_retained": []
+  "gaps_and_conflicts": [
+    "In-window / near-window empty ≠ zero omissions (GP near-window index lag possible); both freezes state this.",
+    "EPI GP sanity: known 2026-10-20 grants still 0 via date operators — date index not usable as negative proof.",
+    "KR102920833B1 vs KR102918757B1: room said 同族待核; evidence rules NOT same family (priority/app/KR pub differ) → related only, not family_share, not new core.",
+    "US12595560B2 claim hardware-generality vs embodiment pre-epi use — include_core suggested with open claim-boundary note.",
+    "JP2026004352A / US12595560B2 family completion still open.",
+    "Morning Preclean related CN122406228A / KR20260113276A still not in live — out of this evening package scope.",
+    "2025-09 untouched / not started.",
+    "No stamp invented this package."
+  ],
+  "verdict": "PASS_INCREMENTAL",
+  "summary_zh": "交集空；EPI 晚间 0/0/0/0（早间两 core 已 live 不重计）；Preclean 建议纳入 core 2（JP2026004352A、US12595560B2，live 未见，gap 补录）+ related 1（KR102920833B1；与 KR102918757B1 非同族）；近窗/窗内新 0；已读锁仍 6；不推 research_through 过 2026-10-20；未 stamp；正式交付仍关。"
 }
