@@ -40,7 +40,7 @@ DISPLAY_DOWNSCALE_LONG_SIDE = 2000
 
 PUBLICATIONS = {
     "JP2026004352A": {
-        "source_url": "https://www.j-platpat.inpit.go.jp/c1801/PU/JP-2026-004352/15/ja",
+        "source_url": "https://www.j-platpat.inpit.go.jp/c1801/PU/JP-2026-004352/11/ja",
         "source_pdf_sha256_prefix": "35e61ab15b65",
         "change_action": "attach_jplatpat_publication_figures",
         "change_detail": (
