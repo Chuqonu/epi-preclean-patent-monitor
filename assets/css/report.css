@@ -693,6 +693,15 @@ button { font: inherit; cursor: pointer; }
   display: none;
 }
 
+/* Narrow-tablet band: the sidebar still takes its column, so the 110px desktop
+   floor forces the label cells wider than the text needs. The 760px block below
+   keeps its own value for phone widths. */
+@media (max-width: 768px) {
+  .patent-table th.patent-label {
+    min-width: 5.5em;
+  }
+}
+
 @media (max-width: 760px) {
   :root {
     --toc-drawer-sticky-top: max(8px, env(safe-area-inset-top, 0px));
