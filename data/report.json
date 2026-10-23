@@ -33,7 +33,7 @@
     "related": 2,
     "pending": 0,
     "excluded": 0,
-    "figures": 193,
+    "figures": 195,
     "month_family_entries": 131,
     "publication_events": 159,
     "unique_families": 116,
@@ -174,6 +174,12 @@
       "by": "r5-jp-figure-extract",
       "action": "apply_r5_jp_figures",
       "detail": "JP2026004352A 図1/図4 from J-PlatPat publication gazette; actually_read/research_through/discovery_lane untouched by design"
+    },
+    {
+      "at": "2026-10-23T02:14:06Z",
+      "by": "r5-figure-extract",
+      "action": "apply_r5_figures",
+      "detail": "R5 original drawings attached for US12595560B2; actually_read/research_through/discovery_lane untouched by design"
     }
   ],
   "months": [
@@ -22681,13 +22687,50 @@
           "reviewer": null,
           "reviewed_at": null,
           "family_completion_status": "open",
-          "figures": [],
+          "figures": [
+            {
+              "source_publication_id": "US12595560B2",
+              "figure_number": "FIG. 1A",
+              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12595560",
+              "local_asset_path": "assets/figures/recovered/f663073323ca31ab77a2cc842be435e9460cd45dfcaff6e91e4d3c87afa3f485.webp",
+              "width": 2724,
+              "height": 1944,
+              "caption": "US12595560B2（授权日2026-04-07）FIG. 1A，USPTO 当前授权原件PDF第4页（原件PDF sha256 前12位 4041a61c65c8）。处理系统100原始附图：左侧为带灯管组（136/138）的工艺腔102与基板支撑，经介于两者之间的气体注入组件（125/126/140/146/163）与右侧远程等离子体源104/110 耦合；另示气源118、射频/交流电源120、真空接口与控制器180（182/184/186/188）。",
+              "asset_sha256": "f663073323ca31ab77a2cc842be435e9460cd45dfcaff6e91e4d3c87afa3f485",
+              "source_original_sha256": "a09e0e5fb06955a2dd53a09879b78d4a75c4630beec861c7f60f20439357a04a",
+              "source_display_sha256": "f663073323ca31ab77a2cc842be435e9460cd45dfcaff6e91e4d3c87afa3f485",
+              "pdf_page": 4,
+              "display_rotation": 0,
+              "source_geometry": {}
+            },
+            {
+              "source_publication_id": "US12595560B2",
+              "figure_number": "FIG. 14",
+              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12595560",
+              "local_asset_path": "assets/figures/recovered/e3720f5e86fb31ff427a885d5094a04b173eb71f4e85aa9f9a8a767720003818.webp",
+              "width": 1932,
+              "height": 2592,
+              "caption": "US12595560B2（授权日2026-04-07）FIG. 14，USPTO 当前授权原件PDF第19页（原件PDF sha256 前12位 4041a61c65c8）。方法流程1400原始附图：将基板置于经气体注入组件与远程等离子体源流体耦合的处理体积内（1405）→以远程等离子体源形成第一气体的等离子体（1410）→等离子体流入气体注入组件的混合体积（1415）→经一或多个注入口向混合体积通入含氢第二气体（1420）→将第二气体解离为含原子氢的活化气体（1425）→活化气体流入工艺腔处理体积（1430）→使基板表面暴露于活化气体（1435）。",
+              "asset_sha256": "e3720f5e86fb31ff427a885d5094a04b173eb71f4e85aa9f9a8a767720003818",
+              "source_original_sha256": "f07d74355d49d423ddab9d64f2d8c807a95d36fdaf0b318053324eee1c50abbb",
+              "source_display_sha256": "e3720f5e86fb31ff427a885d5094a04b173eb71f4e85aa9f9a8a767720003818",
+              "pdf_page": 19,
+              "display_rotation": 0,
+              "source_geometry": {}
+            }
+          ],
           "change_history": [
             {
               "at": "2026-10-22T13:04:44Z",
               "by": "evening-r4-gap-incremental",
               "action": "include_core_gap",
               "detail": "EPI-INCREMENTAL-SPRINT-evening-2026-10-22-frozen.json"
+            },
+            {
+              "at": "2026-10-23T02:14:06Z",
+              "by": "r5-figure-extract",
+              "action": "attach_uspto_drawing_sheet_figures",
+              "detail": "2 upright USPTO crops (p4 FIG. 1A / p19 FIG. 14) cropped 1:1 from the native CCITT scan of grant PDF sha256 4041a61c65c8…; display_rotation=0; discovery_lane/team_read/research_through unchanged"
             }
           ],
           "family_events": [
