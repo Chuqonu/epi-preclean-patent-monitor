@@ -33,7 +33,7 @@
     "related": 2,
     "pending": 0,
     "excluded": 0,
-    "figures": 191,
+    "figures": 195,
     "month_family_entries": 131,
     "publication_events": 159,
     "unique_families": 116,
@@ -168,6 +168,18 @@
       "by": "evening-r4-gap-incremental",
       "action": "evening_r4_gap_include",
       "detail": "Added: (none new). team_read locked 6; research_through 2026-10-20."
+    },
+    {
+      "at": "2026-10-23T02:04:24Z",
+      "by": "r5-jp-figure-extract",
+      "action": "apply_r5_jp_figures",
+      "detail": "JP2026004352A 図1/図4 from J-PlatPat publication gazette; actually_read/research_through/discovery_lane untouched by design"
+    },
+    {
+      "at": "2026-10-23T02:14:06Z",
+      "by": "r5-figure-extract",
+      "action": "apply_r5_figures",
+      "detail": "R5 original drawings attached for US12595560B2; actually_read/research_through/discovery_lane untouched by design"
     }
   ],
   "months": [
@@ -22675,13 +22687,50 @@
           "reviewer": null,
           "reviewed_at": null,
           "family_completion_status": "open",
-          "figures": [],
+          "figures": [
+            {
+              "source_publication_id": "US12595560B2",
+              "figure_number": "FIG. 1A",
+              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12595560",
+              "local_asset_path": "assets/figures/recovered/f663073323ca31ab77a2cc842be435e9460cd45dfcaff6e91e4d3c87afa3f485.webp",
+              "width": 2724,
+              "height": 1944,
+              "caption": "US12595560B2（授权日2026-04-07）FIG. 1A，USPTO 当前授权原件PDF第4页（原件PDF sha256 前12位 4041a61c65c8）。处理系统100原始附图：左侧为带灯管组（136/138）的工艺腔102与基板支撑，经介于两者之间的气体注入组件（125/126/140/146/163）与右侧远程等离子体源104/110 耦合；另示气源118、射频/交流电源120、真空接口与控制器180（182/184/186/188）。",
+              "asset_sha256": "f663073323ca31ab77a2cc842be435e9460cd45dfcaff6e91e4d3c87afa3f485",
+              "source_original_sha256": "a09e0e5fb06955a2dd53a09879b78d4a75c4630beec861c7f60f20439357a04a",
+              "source_display_sha256": "f663073323ca31ab77a2cc842be435e9460cd45dfcaff6e91e4d3c87afa3f485",
+              "pdf_page": 4,
+              "display_rotation": 0,
+              "source_geometry": {}
+            },
+            {
+              "source_publication_id": "US12595560B2",
+              "figure_number": "FIG. 14",
+              "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12595560",
+              "local_asset_path": "assets/figures/recovered/e3720f5e86fb31ff427a885d5094a04b173eb71f4e85aa9f9a8a767720003818.webp",
+              "width": 1932,
+              "height": 2592,
+              "caption": "US12595560B2（授权日2026-04-07）FIG. 14，USPTO 当前授权原件PDF第19页（原件PDF sha256 前12位 4041a61c65c8）。方法流程1400原始附图：将基板置于经气体注入组件与远程等离子体源流体耦合的处理体积内（1405）→以远程等离子体源形成第一气体的等离子体（1410）→等离子体流入气体注入组件的混合体积（1415）→经一或多个注入口向混合体积通入含氢第二气体（1420）→将第二气体解离为含原子氢的活化气体（1425）→活化气体流入工艺腔处理体积（1430）→使基板表面暴露于活化气体（1435）。",
+              "asset_sha256": "e3720f5e86fb31ff427a885d5094a04b173eb71f4e85aa9f9a8a767720003818",
+              "source_original_sha256": "f07d74355d49d423ddab9d64f2d8c807a95d36fdaf0b318053324eee1c50abbb",
+              "source_display_sha256": "e3720f5e86fb31ff427a885d5094a04b173eb71f4e85aa9f9a8a767720003818",
+              "pdf_page": 19,
+              "display_rotation": 0,
+              "source_geometry": {}
+            }
+          ],
           "change_history": [
             {
               "at": "2026-10-22T13:04:44Z",
               "by": "evening-r4-gap-incremental",
               "action": "include_core_gap",
               "detail": "EPI-INCREMENTAL-SPRINT-evening-2026-10-22-frozen.json"
+            },
+            {
+              "at": "2026-10-23T02:14:06Z",
+              "by": "r5-figure-extract",
+              "action": "attach_uspto_drawing_sheet_figures",
+              "detail": "2 upright USPTO crops (p4 FIG. 1A / p19 FIG. 14) cropped 1:1 from the native CCITT scan of grant PDF sha256 4041a61c65c8…; display_rotation=0; discovery_lane/team_read/research_through unchanged"
             }
           ],
           "family_events": [
@@ -34600,13 +34649,50 @@
           "reviewer": null,
           "reviewed_at": null,
           "family_completion_status": "open",
-          "figures": [],
+          "figures": [
+            {
+              "source_publication_id": "JP2026004352A",
+              "figure_number": "図1",
+              "source_url": "https://www.j-platpat.inpit.go.jp/c1801/PU/JP-2026-004352/11/ja",
+              "local_asset_path": "assets/figures/recovered/31ab7d533d9e70bab77c84310789035629e4ae0ff96dc5a179ce1450292c937a.webp",
+              "width": 1060,
+              "height": 1170,
+              "caption": "JP2026004352A（公开日2026-01-14）図1，J-PlatPat 公開特許公報原件第16页（公报PDF sha256 前12位 35e61ab15b65）。集群工具100俯视原始附图：上下两段主框架各设中央搬运机器人与周围多边形腔体，下部为装载腔与工厂接口102（含晶圆载具），右侧为控制器190（CPU 192、メモリ 194、サポート回路 196）。",
+              "asset_sha256": "31ab7d533d9e70bab77c84310789035629e4ae0ff96dc5a179ce1450292c937a",
+              "source_original_sha256": "4af7a32305eedafec2d606804f48b9d2adb52728c1f3a95c57d8f5f37ccc3cbf",
+              "source_display_sha256": "31ab7d533d9e70bab77c84310789035629e4ae0ff96dc5a179ce1450292c937a",
+              "pdf_page": 16,
+              "display_rotation": 0,
+              "source_geometry": {}
+            },
+            {
+              "source_publication_id": "JP2026004352A",
+              "figure_number": "図4",
+              "source_url": "https://www.j-platpat.inpit.go.jp/c1801/PU/JP-2026-004352/11/ja",
+              "local_asset_path": "assets/figures/recovered/6c17a40d1a5bd9ea41e06b84bb703a5be43611dbcb94eadaf066180d8778345c.webp",
+              "width": 1100,
+              "height": 1460,
+              "caption": "JP2026004352A（公开日2026-01-14）図4，J-PlatPat 公開特許公報原件第17页（公报PDF sha256 前12位 35e61ab15b65）。方法流程400原始附图：工厂接口放置基板（403）→送入第一腔室第一处理空间（405）→维持第一压力下处理（407）→压力安定化腔维持第一压力（409）→经第一门送入压力安定化腔（411）→关闭第一门（413）→升压至700–800 Torr大气压（415）→开启第二门（417）→送入外延堆积腔第二处理空间（419）→在大气压及摄氏400–1200度下进行外延堆积（421）。",
+              "asset_sha256": "6c17a40d1a5bd9ea41e06b84bb703a5be43611dbcb94eadaf066180d8778345c",
+              "source_original_sha256": "2574e47c0b8df65c668b9f4bbd073511762b3f2e26c8b396635c8ffc2370e9de",
+              "source_display_sha256": "6c17a40d1a5bd9ea41e06b84bb703a5be43611dbcb94eadaf066180d8778345c",
+              "pdf_page": 17,
+              "display_rotation": 0,
+              "source_geometry": {}
+            }
+          ],
           "change_history": [
             {
               "at": "2026-10-22T13:04:44Z",
               "by": "evening-r4-gap-incremental",
               "action": "include_core_gap",
               "detail": "EPI-INCREMENTAL-SPRINT-evening-2026-10-22-frozen.json"
+            },
+            {
+              "at": "2026-10-23T02:04:24Z",
+              "by": "r5-jp-figure-extract",
+              "action": "attach_jplatpat_publication_figures",
+              "detail": "2 upright J-PlatPat crops (p16 図1 / p17 図4) from 公報PDF sha256 35e61ab15b65…; display_rotation=0; discovery_lane/team_read/research_through unchanged"
             }
           ],
           "family_events": [

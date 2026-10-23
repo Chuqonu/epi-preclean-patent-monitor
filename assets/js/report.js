@@ -684,7 +684,7 @@
         ? "<span class=\"title-translation\">" + esc(f.title_original) + "</span>"
         : "");
 
-    const figBlock = renderImages(f.images) || "<span class=\"subtle\">无附图（不得用生成图替代）</span>";
+    const figBlock = renderImages(f.images) || "<span class=\"subtle\">暂无公开附图</span>";
     return (
       "<article class=\"patent-page\" id=\"" + esc(f.id) + "\" tabindex=\"-1\" data-month=\"" + esc(f.month || "") + "\" " +
       "data-filter-domain=\"" + esc(chipClass.domains.join(" ")) + "\" " +

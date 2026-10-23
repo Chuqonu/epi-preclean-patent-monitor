@@ -693,6 +693,15 @@ button { font: inherit; cursor: pointer; }
   display: none;
 }
 
+/* Narrow-tablet band: the sidebar still takes its column, so the 19% label
+   column collapses until short labels wrap mid-word. table-layout is fixed, so
+   the colgroup sets the width and a min-width on the cell is ignored. The 760px
+   block below keeps its own widths for phone widths. */
+@media (max-width: 768px) {
+  .patent-table col.patent-col-label { width: 5.5em; }
+  .patent-table col.patent-col-value { width: auto; }
+}
+
 @media (max-width: 760px) {
   :root {
     --toc-drawer-sticky-top: max(8px, env(safe-area-inset-top, 0px));
