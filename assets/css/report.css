@@ -212,10 +212,25 @@ button { font: inherit; cursor: pointer; }
   width: 100%;
 }
 
-.month.month--spy-active > summary .month-summary-head {
+/* Collapsed month scroll-spy: pill + left accent on full summary (chevron + label), not label column only */
+.month.month--spy-active > summary {
+  position: relative;
   background: var(--soft);
   border-radius: 6px;
-  box-shadow: inset 3px 0 var(--accent);
+  padding: 4px 8px 4px 7px;
+  overflow: hidden;
+}
+
+.month.month--spy-active > summary::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--accent);
+  border-radius: 6px 0 0 6px;
+  pointer-events: none;
 }
 
 .month summary::-webkit-details-marker { display: none; }
@@ -229,6 +244,8 @@ button { font: inherit; cursor: pointer; }
   transform-origin: center;
   transition: transform 0.15s;
   justify-self: center;
+  position: relative;
+  z-index: 1;
 }
 
 .month[open] summary::before { transform: rotate(90deg); }
