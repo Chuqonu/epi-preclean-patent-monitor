@@ -191,47 +191,79 @@ button { font: inherit; cursor: pointer; }
   list-style: none;
   padding: 4px 4px;
   cursor: pointer;
-  display: grid;
-  grid-template-columns: 16px 1fr;
-  grid-template-areas: "chev head";
-  column-gap: 4px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
   font-size: 13px;
   font-weight: 650;
   user-select: none;
   background: transparent;
-  align-items: center;
   min-height: 30px;
 }
 
 .month-summary-head {
-  grid-area: head;
   display: flex;
   align-items: center;
   gap: 8px;
   min-height: 28px;
   width: 100%;
+  box-sizing: border-box;
+}
+
+.month-summary-head::before {
+  content: "›";
+  flex: 0 0 16px;
+  width: 16px;
+  text-align: center;
+  color: var(--accent);
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1;
+  transform-origin: center;
+  transition: transform 0.15s;
+}
+
+/*
+ * Collapsed month scroll-spy: accent anchors to summary’s outer box; soft pill is the
+ * full-width head row (chevron ::before + label + count). WebKit often skips painting
+ * background on <summary>, so the visible pill lives on .month-summary-head at 100%.
+ */
+.month.month--spy-active > summary {
+  position: relative;
+  padding: 0;
+  background: transparent;
 }
 
 .month.month--spy-active > summary .month-summary-head {
   background: var(--soft);
   border-radius: 6px;
-  box-shadow: inset 3px 0 var(--accent);
+  padding: 4px 8px 4px 10px;
+  box-shadow: none;
+  position: relative;
+  z-index: 1;
+}
+
+.month.month--spy-active > summary::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--accent);
+  border-radius: 6px 0 0 6px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.month.month--spy-active > summary .month-summary-head::before {
+  position: relative;
+  z-index: 1;
 }
 
 .month summary::-webkit-details-marker { display: none; }
 
-.month summary::before {
-  grid-area: chev;
-  content: "›";
-  color: var(--accent);
-  font-size: 19px;
-  font-weight: 400;
-  transform-origin: center;
-  transition: transform 0.15s;
-  justify-self: center;
-}
-
-.month[open] summary::before { transform: rotate(90deg); }
+.month[open] .month-summary-head::before { transform: rotate(90deg); }
 
 .month[open] summary {
   border-bottom: 0;
