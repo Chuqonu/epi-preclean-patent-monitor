@@ -1,0 +1,422 @@
+{
+  "lane": "Preclean",
+  "role": "Preclean独立检索",
+  "document_type": "frozen_candidates_incremental_monday",
+  "method_ref": "2026-10-20.4.2-r2",
+  "run": "Monday incremental 2026-10-26 Asia/Shanghai; session executor; no platform run id",
+  "window": "2026-10-21..2026-10-26 inclusive (AFTER live research_through=2026-10-20)",
+  "period_start": "2026-10-21",
+  "period_end": "2026-10-26",
+  "research_through": "2026-10-20",
+  "research_through_recommendation": "keep 2026-10-20 until evidence+PM PASS on carry-forward core US20260327849A1, then consider bump",
+  "frozen_at": "2026-10-26T09:24:45.036887+08:00",
+  "timezone": "Asia/Shanghai",
+  "no_zero_omission_claim": true,
+  "september_2025": "paused",
+  "independence_note": "Did not read or copy EPI lane outputs under /workspace/epi-monday-2026-10-26/EPI-* or raw/epi. Shared PC_* probes used; EPI_* shared files ignored. No EPI list copy.",
+  "live_baseline": {
+    "pages": "https://chuqonu.github.io/epi-preclean-patent-monitor/",
+    "stamp_reported": "07dbc89c8c0c",
+    "research_through": "2026-10-20",
+    "local_report_copy": "/workspace/evidence/pr40-live-check/report.json",
+    "live_family_publication_ids_count": 131,
+    "US20260327849A1_on_live": false,
+    "US12772772B2_on_live": false
+  },
+  "prior_preclean_freezes_consulted": [
+    "PRECLEAN-OFFICIAL-SWEEP-2026-10-23-frozen.json (candidates US20260327849A1 core, US12772772B2 related boundary)",
+    "PRECLEAN-INCREMENTAL-SPRINT-morning-2026-10-23-frozen.json (0/0/0/0 GP empty)",
+    "PRECLEAN-INCREMENTAL-SPRINT-evening-2026-10-22-frozen.json",
+    "docs/PRECLEAN-FROZEN-2025-11_2026-10.json and incremental 10-19_10-20"
+  ],
+  "count_basis": {
+    "candidates": "In-window publication/grant events kept after triage as core|related|pending for merge consideration (includes carry-forward not yet on live).",
+    "publication_events": "Same as candidates here (one event per candidate).",
+    "unique_families": "Tentative 1:1 with candidates; family closure across offices not re-verified today.",
+    "actually_read": "Full claims+description HTML re-read today from USPTO PPUBS artifact (carried from 2026-10-23 official sweep). Title/abstract screens of GP sort:new pages and r5 query hit lists are NOT counted as actually_read."
+  },
+  "stats": {
+    "candidates": 1,
+    "publication_events": 1,
+    "unique_families": 1,
+    "actually_read": 1
+  },
+  "candidates_count": 1,
+  "events_count": 1,
+  "families_count": 1,
+  "actually_read_count": 1,
+  "include_core_new": {
+    "vs_live": [
+      "US20260327849A1"
+    ],
+    "vs_prior_preclean_freeze": [],
+    "note": "US20260327849A1 is NEW vs live Pages (absent) but already frozen in PRECLEAN-OFFICIAL-SWEEP-2026-10-23; Monday run independently re-confirmed by re-reading USPTO fulltext artifact — carry-forward for evidence/PM merge, not a second discovery."
+  },
+  "candidates": [
+    {
+      "publication_id": "US20260327849A1",
+      "jurisdiction": "US",
+      "event_type": "公开",
+      "event_date": "2026-10-22",
+      "month": "2026-10",
+      "application_id": "19/633300-class-check-pending",
+      "application_number_uspto": "from artifact applicationNumber field",
+      "priority_date": null,
+      "family_id": null,
+      "family_id_source": null,
+      "family_completion_status": "open",
+      "title_original": "METHOD OF PROCESSING SUBSTRATE, METHOD OF MANUFACTURING SEMICONDUCTOR DEVICE, RECORDING MEDIUM, AND SUBSTRATE PROCESSING APPARATUS",
+      "title_zh": "衬底处理方法 / 半导体器件制造方法（含氧化膜改性去除后外延成膜）",
+      "applicant_original": "Kokusai Electric Corporation",
+      "applicant_normalized": "Kokusai Electric",
+      "scope_status": "core",
+      "technology_tags": [
+        "preclean",
+        "native_oxide_removal",
+        "dry_preclean",
+        "fluorine_reducing_gas_cycle",
+        "sublimation",
+        "pre_epi"
+      ],
+      "short_preview": "循环通入含氟气体+还原气体改性氧化膜，升温去除改性层后生长外延膜——干法外延前 preclean。",
+      "technical_summary": "权利要求1：在第一温度对衬底表面氧化膜循环(a1)供含氟气体+(a2)供第一还原气体形成改性层；再供氟气；将衬底升至第二温度去除改性层；吹扫；更高温度供第二还原气体；再在中间温度供预定元素气体形成预定元素含有膜。说明书（FIG.4A–4E/5/6）写明去除自然氧化膜后生长外延Si膜（epitaxial film 600）。属外延前干法/热预算可控 native-oxide 去除。",
+      "claims_or_embodiment_basis": "USPTO PPUBS claimsHtml Claim 1 (a)–(f); descriptionHtml native oxide film + epitaxial film 600 / FIG.4 sequence",
+      "scope_reason": "明确 native oxide 干法去除后外延成膜，落入 pre-epi dry/plasma-thermal preclean IN 边界；非 SiC/GaN 生长对象独占；非独立湿法。",
+      "source_urls": [
+        "https://ppubs.uspto.gov/api/patents/highlight/US-20260327849-A1?source=US-PGPUB",
+        "https://patents.google.com/patent/US20260327849A1"
+      ],
+      "source_retrieved_at": "2026-10-23 (official sweep); re-read 2026-10-26 Asia/Shanghai from carried artifact",
+      "source_sha256": "a43695e7e4829f8d103809f6153d954902f113c58d9b2a7353305bf71d7faeb0",
+      "actual_read_spans": "abstractHtml + claimsHtml (full) + descriptionHtml (native-oxide / epitaxial / modified-layer passages)",
+      "search_branch": "USPTO PPUBS BRS pd=20261022 × preclean/native-oxide/CPC/assignee (r5 official); Monday GP sort:new expansion did not surface due to index lag",
+      "search_failure": null,
+      "independent_of_ref": true,
+      "also_in_ref_preclean_set": false,
+      "new_in_window": true,
+      "new_vs_live": true,
+      "new_vs_prior_preclean_freeze": false,
+      "carry_forward_from": "PRECLEAN-OFFICIAL-SWEEP-2026-10-23-frozen.json",
+      "pending": "family counterparts JP/CN/KR/TW; official PDF figures; evidence+PM gate before live stamp",
+      "pending_reason": "family + figures + evidence/PM",
+      "failure_or_pending_reason": "family + figures + evidence/PM",
+      "reviewer": null,
+      "reviewed_at": null,
+      "change_history": [
+        {
+          "at": "2026-10-23",
+          "by": "Preclean official sweep",
+          "action": "first_freeze_core"
+        },
+        {
+          "at": "2026-10-26T09:24:45.036887+08:00",
+          "by": "Preclean Monday incremental",
+          "action": "reconfirm_carry_forward_not_on_live"
+        }
+      ],
+      "figures": null,
+      "events": [
+        {
+          "publication_id": "US20260327849A1",
+          "event_type": "公开",
+          "event_date": "2026-10-22",
+          "jurisdiction": "US"
+        }
+      ]
+    }
+  ],
+  "out_of_window_sightings": [
+    {
+      "publication_id": "US12772772B2",
+      "event_date": "2026-10-20",
+      "disposition": "out_of_window_sighting",
+      "tier_if_in_window": "related (epi link pending)",
+      "why": "AMAT NF3+NH3 native-oxide / fluorosilicate residue + first-wafer-effect chamber context; no explicit epitaxy in text. Date equals live research_through, not AFTER it — outside Monday window 2026-10-21..26. Already in official-sweep freeze; not on live.",
+      "source_sha256": "25b8fe4a03a831f6c1dc2acba9be331160d4b33cd0cff87a1bf22073a9fc1e65",
+      "carry_forward_from": "PRECLEAN-OFFICIAL-SWEEP-2026-10-23-frozen.json"
+    }
+  ],
+  "excluded_samples": [
+    {
+      "publication_id": "US20260334118A1",
+      "event_date": "2026-10-22",
+      "reason": "TES SiGe lateral selective etch with N-plasma pretreatment — not pre-epi clean"
+    },
+    {
+      "publication_id": "US20260334176A1",
+      "event_date": "2026-10-22",
+      "reason": "Kokusai metal-film impurity removal"
+    },
+    {
+      "publication_id": "US20260333813A1",
+      "event_date": "2026-10-22",
+      "reason": "TEL contact metal halogen removal; epi only background"
+    },
+    {
+      "publication_id": "US20260334130A1",
+      "event_date": "2026-10-22",
+      "reason": "TEL standalone wet HF liquid clean — OUT"
+    },
+    {
+      "publication_id": "US20260334132A1",
+      "event_date": "2026-10-22",
+      "reason": "TSMC wet cleaning tool — standalone wet OUT (title screen)"
+    },
+    {
+      "publication_id": "US20260333829A1",
+      "event_date": "2026-10-22",
+      "reason": "TSMC source/drain epitaxial profiles — EPI structure, not preclean"
+    },
+    {
+      "publication_id": "US20260334174A1",
+      "event_date": "2026-10-22",
+      "reason": "Shin-Etsu SiC substrate — SiC growth-target OUT"
+    },
+    {
+      "publication_id": "EP4827304A1",
+      "event_date": "2026-10-21",
+      "reason": "SPTS SiC plasma etch — OUT"
+    },
+    {
+      "publication_id": "EP4827305A1",
+      "event_date": "2026-10-21",
+      "reason": "SCREEN chamber/jig — no pre-epi link"
+    },
+    {
+      "publication_id": "EP4159892B1",
+      "event_date": "2026-10-21",
+      "reason": "Resonac dry etch/cleaning — no epi link"
+    }
+  ],
+  "coverage_gaps": [
+    "Google Patents after:publication:20261021..20261027 returned 0 (incl. bare 'semiconductor' lag probe) — index lag; empty ≠ absence",
+    "Google Patents sort:new newest hits cluster ~2026-08 — does not yet index 2026-10 USPTO PGPub/grants",
+    "USPTO PPUBS live API today: session OK but searches/searchWithBeFamily and legacy searches/query reject payloads (400) / 404; highlight returns NOT_FOUND for US-20260327849-A1 — relied on 2026-10-23 carried fulltext JSON",
+    "No USPTO grant day inside 2026-10-21..26 after Tue 2026-10-20; next grants ~Tue 2026-10-27 (outside window). PGPub day in window was Thu 2026-10-22 only",
+    "EPO: only Wed 2026-10-21 is a publication day in window; already scanned in official sweep (6192 parsed, 0 in-scope). 2026-10-22..26 not EP pub days",
+    "J-PlatPat / CNIPA / KIPRIS / Espacenet / PATENTSCOPE: still blocked or SPA-only from box (shared jplatpat.html is shell only)",
+    "Family counterparts for US20260327849A1 not closed today"
+  ],
+  "sources": [
+    {
+      "source": "Google Patents xhr sort:new + after:publication probes",
+      "status": "OK but lag",
+      "detail": "P0–P6 preseeded; P7–P20 expanded today; 0 in-window hits"
+    },
+    {
+      "source": "USPTO PPUBS (live today)",
+      "status": "FAIL/partial",
+      "detail": "anonymous session + X-Access-Token works; search endpoints schema-changed — used r5-official carried fulltexts/q1–q4"
+    },
+    {
+      "source": "USPTO PPUBS artifacts 2026-10-23",
+      "status": "OK (re-read)",
+      "detail": "US-20260327849-A1.json + q1–q4 hit lists"
+    },
+    {
+      "source": "EPO publication server 20261021",
+      "status": "OK prior",
+      "detail": "official sweep ep_scan 6192/7; Monday did not re-download full XML dump"
+    },
+    {
+      "source": "USPTO Official Gazette week42",
+      "status": "OK index page",
+      "detail": "issue_home reachable; week42=grants around 2026-10-20"
+    },
+    {
+      "source": "J-PlatPat/CNIPA/KIPRIS/Espacenet/PATENTSCOPE",
+      "status": "FAIL",
+      "detail": "unchanged from official sweep"
+    }
+  ],
+  "queries_summary": {
+    "preseeded_raw": {
+      "P0_nodate": "8d91723b3ef2ddf6b7725932e0f647a074d2687455369175aabe99188bbe72b0",
+      "P1_kw": "d788c1f4fcffc0d8dd1ac19f3c0eadef30984b67bef7edf7fef556d7d4f63711",
+      "P2_nox": "485ab860aaca61185b91fda5d0f42b6f1a66abc78087c11e0a46407794998925",
+      "P3_cpc": "d788c1f4fcffc0d8dd1ac19f3c0eadef30984b67bef7edf7fef556d7d4f63711",
+      "P4_preepi": "57f2bb2e3a4df23484eb9ebea7e6245731d68228973408026717f3d8428d9f92",
+      "P5_us": "173a6aa093a9a877151cac841851c558c93774356c88295ad95d654ee8c84475",
+      "P6_nf3": "d788c1f4fcffc0d8dd1ac19f3c0eadef30984b67bef7edf7fef556d7d4f63711"
+    },
+    "expanded_today": [
+      {
+        "id": "P7_sortnew_nox",
+        "q": "((\"native oxide\" OR \"oxide removal\" OR Siconi OR SiCoNi OR Selectra) (plasma OR remote OR NF3 OR NH3 OR HF OR preclean OR \"pre-clean\"))",
+        "sort": "new",
+        "after": null,
+        "before": null,
+        "total": 9051,
+        "sha256": "34ee6c97d66eba80c4bf5fd1476c1531d9ad7241d9e4ca880a5ea15dae20e92b",
+        "window_hits": 0,
+        "error": null
+      },
+      {
+        "id": "P8_sortnew_preepi",
+        "q": "((preclean OR \"pre-clean\" OR \"pre clean\" OR \"pre-epitaxial\" OR \"before epitaxy\") (oxide OR plasma OR HF OR NF3 OR chamber))",
+        "sort": "new",
+        "after": null,
+        "before": null,
+        "total": 7313,
+        "sha256": "1d4f7c0e1d67244d29509301123d8864da87503d68adf9a2e19340207de084c1",
+        "window_hits": 0,
+        "error": null
+      },
+      {
+        "id": "P9_sortnew_us_assignee",
+        "q": "((\"applied materials\" OR \"tokyo electron\" OR \"lam research\" OR kokusai OR \"ASM IP\") (preclean OR \"native oxide\" OR Siconi OR \"remote plasma\" OR NF3) country:US)",
+        "sort": "new",
+        "after": null,
+        "before": null,
+        "total": 520,
+        "sha256": "93b057e15edd6f9c91c3463fd5a6d2559c10d9fa1cd9229e09a282274372522c",
+        "window_hits": 0,
+        "error": null
+      },
+      {
+        "id": "P10_sortnew_nf3_rpc",
+        "q": "((NF3 OR ClF3 OR \"remote plasma\") (chamber) (clean OR cleaning) (semiconductor OR epitaxial OR epi OR CVD OR ALD))",
+        "sort": "new",
+        "after": null,
+        "before": null,
+        "total": 7676,
+        "sha256": "6963158a4ce56a82148976bbff1c802f0cef2accf4e00e90e0be87de4f302693",
+        "window_hits": 0,
+        "error": null
+      },
+      {
+        "id": "P11_sortnew_hf_vapor",
+        "q": "((\"HF vapor\" OR AHF OR \"anhydrous hydrogen fluoride\" OR \"hydrogen fluoride vapor\") (oxide OR clean OR preclean OR semiconductor))",
+        "sort": "new",
+        "after": null,
+        "before": null,
+        "total": 7752,
+        "sha256": "fb79dd0f00b33b1a6d23510aef73806f22c8e8224d26756b6af30da8428ad2fb",
+        "window_hits": 0,
+        "error": null
+      },
+      {
+        "id": "P12_sortnew_cpc",
+        "q": "(CPC:(H01L21/02041 OR H01L21/0206 OR H01L21/02057 OR H01L21/02658 OR C23C16/4405))",
+        "sort": "new",
+        "after": null,
+        "before": null,
+        "total": null,
+        "sha256": "6e820f4031a84dbd22108903ac5ee2141cb5dab454abe628c7931318e33707f3",
+        "window_hits": 0,
+        "error": null
+      },
+      {
+        "id": "P13_sortnew_cn",
+        "q": "((预清洗 OR 原位清洗 OR 自然氧化膜 OR 干法清洗) (外延 OR 等离子体 OR 腔室) country:CN)",
+        "sort": "new",
+        "after": null,
+        "before": null,
+        "total": 37,
+        "sha256": "278d919c9fbec42f328dbd9eb72a8854f289866fdf8096f6ac2cce42db6a682f",
+        "window_hits": 0,
+        "error": null
+      },
+      {
+        "id": "P14_sortnew_jp",
+        "q": "((前洗浄 OR 自然酸化膜 OR プリクリーン OR ドライクリーニング) (エピタキシャル OR プラズマ) country:JP)",
+        "sort": "new",
+        "after": null,
+        "before": null,
+        "total": 38,
+        "sha256": "5cf0879b5a04a93c97e93b7352b05b88c7df9feb641e8a2172820afba8d8c08b",
+        "window_hits": 0,
+        "error": null
+      },
+      {
+        "id": "P15_sortnew_kr",
+        "q": "((프리클린 OR 자연산화막 OR 건식세정) (에피 OR 플라즈마 OR 챔버) country:KR)",
+        "sort": "new",
+        "after": null,
+        "before": null,
+        "total": 5141,
+        "sha256": "ea8f450fbb14ad324c71f6646ea5ce6b78f3e62886e767f4e98b8c6cd75a0c7c",
+        "window_hits": 0,
+        "error": null
+      },
+      {
+        "id": "P16_sortnew_siconi",
+        "q": "(SiCoNi OR Siconi OR Selectra OR \"ammonium fluorosilicate\" OR (NH4)2SiF6)",
+        "sort": "new",
+        "after": null,
+        "before": null,
+        "total": 4274,
+        "sha256": "346492e29018bf626523fb23344991af4a99b8d1dff7f3d9bed417641b6fba7d",
+        "window_hits": 0,
+        "error": null
+      },
+      {
+        "id": "P17_after_kw",
+        "q": "(preclean OR \"native oxide\" OR Siconi) (plasma OR oxide)",
+        "sort": null,
+        "after": "20261021",
+        "before": "20261027",
+        "total": 0,
+        "sha256": "d788c1f4fcffc0d8dd1ac19f3c0eadef30984b67bef7edf7fef556d7d4f63711",
+        "window_hits": 0,
+        "error": null
+      },
+      {
+        "id": "P18_after_cpc",
+        "q": "CPC:(H01L21/02041 OR H01L21/0206 OR C23C16/4405)",
+        "sort": null,
+        "after": "20261021",
+        "before": "20261027",
+        "total": null,
+        "sha256": "6e820f4031a84dbd22108903ac5ee2141cb5dab454abe628c7931318e33707f3",
+        "window_hits": 0,
+        "error": null
+      },
+      {
+        "id": "P19_lag_semi",
+        "q": "semiconductor",
+        "sort": null,
+        "after": "20261021",
+        "before": "20261027",
+        "total": 0,
+        "sha256": "d788c1f4fcffc0d8dd1ac19f3c0eadef30984b67bef7edf7fef556d7d4f63711",
+        "window_hits": 0,
+        "error": null
+      },
+      {
+        "id": "P20_lag_semi_oct",
+        "q": "semiconductor",
+        "sort": null,
+        "after": "20261001",
+        "before": "20261027",
+        "total": 13,
+        "sha256": "6a8e0f1987087e66abf21f3ea51070364ca2f7d863c26ebcba07d7ceb891504c",
+        "window_hits": 0,
+        "error": null
+      }
+    ],
+    "uspto_ppubs_live_attempts": "U1–U8 planned; live API 400/404 — fell back to r5carry q1–q4 (pd 20261020|20261022)"
+  },
+  "calendar_note": {
+    "2026-10-20": "Tue USPTO grants (boundary = research_through)",
+    "2026-10-21": "Wed EPO publications (scanned prior)",
+    "2026-10-22": "Thu USPTO PGPub (US20260327849A1)",
+    "2026-10-23..26": "no USPTO grant/PGPub day; no EPO pub day",
+    "next_us_grant": "~2026-10-27",
+    "next_us_pgpub": "~2026-10-29",
+    "next_ep": "~2026-10-28"
+  },
+  "not_touched": [
+    "report.json",
+    "stamp",
+    "push",
+    "VPS",
+    "2025/09",
+    "EPI lane outputs"
+  ],
+  "notes": [
+    "禁止零遗漏宣称：本冻结仅覆盖已实际查询/再读来源。",
+    "September 2025 paused.",
+    "Do not bump research_through solely on this freeze."
+  ]
+}
