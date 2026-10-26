@@ -121,6 +121,7 @@
       title: pick(f, ["title_zh", "title"], ""),
       title_original: f.title_original || null,
       applicant: pick(f, ["applicant_normalized", "applicant"], ""),
+      inventors: pick(f, ["inventors", "inventor_names"], ""),
       publication_date: pick(f, ["event_date", "publication_date"], ""),
       brief: pick(f, ["short_preview", "brief", "technical_summary", "summary"], ""),
       summary: pick(f, ["technical_summary", "summary", "short_preview"], ""),
@@ -614,10 +615,7 @@
   function renderImages(images) {
     if (!images || !images.length) return "";
     const blocks = images.map((img) => {
-      const caption =
-        img.display_caption ||
-        img.caption ||
-        [img.source_publication, img.figure_label].filter(Boolean).join(" · ");
+      const caption = readerFigureCaption(img);
       const pub = img.source_publication || "";
       const figLabel = figureLabelFromCaption(img.caption || img.display_caption, img.figure_label || "");
       const w = img.width || 640;
@@ -676,6 +674,28 @@
       "</ul>";
   }
 
+  function renderPatentBasicInfo(f) {
+    const rows = [
+      "<div class=\"patent-basic-line\"><span class=\"patent-basic-k\">公开号</span><span class=\"patent-basic-v\">" +
+        esc(f.publication_number || "—") + "</span></div>",
+      "<div class=\"patent-basic-line\"><span class=\"patent-basic-k\">申请人</span><span class=\"patent-basic-v\">" +
+        esc(f.applicant || "—") + "</span></div>",
+      "<div class=\"patent-basic-line\"><span class=\"patent-basic-k\">发明人</span><span class=\"patent-basic-v\">" +
+        esc(f.inventors || "—") + "</span></div>",
+      "<div class=\"patent-basic-line\"><span class=\"patent-basic-k\">公开/授权日</span><span class=\"patent-basic-v\">" +
+        esc(f.publication_date || "—") + "</span></div>",
+    ];
+    return "<div class=\"patent-basic-meta\">" + rows.join("") + "</div>";
+  }
+
+  function readerFigureCaption(img) {
+    return (
+      img.display_caption ||
+      img.caption ||
+      [img.source_publication, img.figure_label].filter(Boolean).join(" · ")
+    );
+  }
+
   function renderPatentPage(f) {
     const chipClass = classifyFamily(f);
     const titleBlock =
@@ -691,12 +711,7 @@
       "data-filter-lane=\"" + esc(chipClass.lanes.join(" ")) + "\">" +
       "<header class=\"patent-page-header\">" + titleBlock + "</header>" +
       "<table class=\"patent-table\">" + PATENT_COLGROUP +
-      patentFieldRow("公开号", esc(f.publication_number || "")) +
-      patentFieldRow("申请人", esc(f.applicant || "")) +
-      patentFieldRow(
-        "公开/授权日",
-        esc(f.publication_date || "") + (f.category ? " · " + esc(f.category) : "")
-      ) +
+      patentFieldRow("专利基本信息", renderPatentBasicInfo(f), "patent-basic-cell") +
       patentFieldRow(
         "中文技术简介",
         text(f.summary || f.brief || "") +
@@ -706,23 +721,6 @@
         "section-body"
       ) +
       patentFieldRow("关键权利要求 / 实施方式", text(f.claims || "—"), "section-body claim-text") +
-      patentFieldRow(
-        "相关性",
-        text(f.relevance || "") +
-        (scopeLabelZh(f.scope_status)
-          ? "<div class=\"subtle\">范围：" + esc(scopeLabelZh(f.scope_status)) + "</div>"
-          : "") +
-        (discoveryLabelZh(f.discovery_source)
-          ? "<div class=\"subtle\">来源：" + esc(discoveryLabelZh(f.discovery_source)) + "</div>"
-          : "") +
-        (importTagZh(f.import_tag) && f.import_tag === "imported baseline"
-          ? "<div class=\"subtle import-tag\">基线导入（非独立发现）</div>"
-          : "") +
-        (f.family_merge_note
-          ? "<div class=\"subtle\">同族：" + esc(f.family_merge_note) + "</div>"
-          : ""),
-        "section-body"
-      ) +
       patentFieldRow("来源链接", renderSources(f.source_urls), "section-body") +
       "<tr class=\"patent-row-figures\"><th colspan=\"2\" class=\"patent-section-heading\">附图</th></tr>" +
       "<tr class=\"patent-row-figures\"><td colspan=\"2\" class=\"patent-figures-cell section-body\">" +

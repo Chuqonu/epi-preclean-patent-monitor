@@ -186,6 +186,42 @@
       "by": "serial-quality-merge-2026-10-24",
       "action": "apply_serial_quality_merge",
       "detail": "Oct24-25 package: figure ingest {'US12770834B2': 8, 'US12768074B2': 23, 'TW202628839A': 3, 'WO2026096517A1': 3}; reader fields ['JP2026004352A', 'KR102916044B1', 'US12595560B2', 'US12660544B2', 'US12757648B2', 'US12757665B2', 'US12768074B2', 'US12770834B2', 'US20250311241A1', 'US20260062803A1', 'US20260066234A1']; locks unchanged; display_rotation=0 upright crops"
+    },
+    {
+      "at": "2026-10-26T17:20:27Z",
+      "by": "reader-layout-track",
+      "action": "reader_layout_data",
+      "detail": "dot_annotations_matched=122; display_captions_updated=205; inventors_filled=13/131; figures_verified=122/205"
+    },
+    {
+      "at": "2026-10-26T17:35:16Z",
+      "by": "reader-layout-track",
+      "action": "reader_layout_data",
+      "detail": "dot_annotations_matched=122; display_captions_updated=68; inventors_filled=13/131; figures_verified=122/205; caption_english_leaning=6"
+    },
+    {
+      "at": "2026-10-26T17:39:48Z",
+      "by": "reader-layout-track",
+      "action": "reader_layout_data",
+      "detail": "dot_annotations_matched=122; display_captions_updated=70; inventors_filled=13/131; figures_verified=122/205; caption_english_leaning=9"
+    },
+    {
+      "at": "2026-10-26T17:51:20Z",
+      "by": "reader-layout-track",
+      "action": "reader_layout_data",
+      "detail": "dot_annotations_matched=122; display_captions_updated=95; inventors_filled=13/131; figures_verified=122/205; caption_english_leaning=42"
+    },
+    {
+      "at": "2026-10-26T17:52:50Z",
+      "by": "reader-layout-track",
+      "action": "reader_layout_data",
+      "detail": "dot_annotations_matched=122; display_captions_updated=181; inventors_filled=13/131; figures_verified=122/205; caption_english_leaning=1"
+    },
+    {
+      "at": "2026-10-26T17:53:19Z",
+      "by": "reader-layout-track",
+      "action": "reader_layout_data",
+      "detail": "dot_annotations_matched=122; display_captions_updated=190; inventors_filled=13/131; figures_verified=122/205; caption_english_leaning=0"
     }
   ],
   "months": [
@@ -251,7 +287,8 @@
               "display_rotation": 0,
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12770834",
-              "pdf_page": 3
+              "pdf_page": 3,
+              "display_caption": "图1 — 包括远程等离子体单元的半导体处理系统的示意图，示出了经由所述远程等离子体单元连接到腔室布置的前体递送布置。"
             },
             {
               "source_publication_id": "US12770834B2",
@@ -266,7 +303,8 @@
               "display_rotation": 0,
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12770834",
-              "pdf_page": 4
+              "pdf_page": 4,
+              "display_caption": "图2 — 图1的半导体处理系统的示意图，示出了向腔室布置提供分解的高阶前体的远程等离子体单元。"
             },
             {
               "source_publication_id": "US12770834B2",
@@ -281,7 +319,8 @@
               "display_rotation": 0,
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12770834",
-              "pdf_page": 5
+              "pdf_page": 5,
+              "display_caption": "图3 — 图1的腔室布置的示意性侧视图。"
             },
             {
               "source_publication_id": "US12770834B2",
@@ -296,7 +335,8 @@
               "display_rotation": 0,
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12770834",
-              "pdf_page": 6
+              "pdf_page": 6,
+              "display_caption": "图4A — 例如电感耦合等离子体单元。"
             },
             {
               "source_publication_id": "US12770834B2",
@@ -311,7 +351,8 @@
               "display_rotation": 0,
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12770834",
-              "pdf_page": 7
+              "pdf_page": 7,
+              "display_caption": "图4B — 例如微波等离子体装置。"
             },
             {
               "source_publication_id": "US12770834B2",
@@ -326,7 +367,8 @@
               "display_rotation": 0,
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12770834",
-              "pdf_page": 8
+              "pdf_page": 8,
+              "display_caption": "图5 — 示例性流程图描述了材料层沉积方法的工艺。"
             },
             {
               "source_publication_id": "US12770834B2",
@@ -341,7 +383,8 @@
               "display_rotation": 0,
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12770834",
-              "pdf_page": 9
+              "pdf_page": 9,
+              "display_caption": "图6 — 特征增长率与温度曲线的示例。"
             },
             {
               "source_publication_id": "US12770834B2",
@@ -356,7 +399,8 @@
               "display_rotation": 0,
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12770834",
-              "pdf_page": 10
+              "pdf_page": 10,
+              "display_caption": "图7 — 可用于实现本公开的一个或多个方面的示例性计算设备。"
             }
           ],
           "change_history": [
@@ -398,7 +442,8 @@
           "read_status": "早间 EPI overlap_backfill 纳入；未计 team_read（锁 6）。",
           "purpose": "在外延腔中用远程等离子体分解含硅前驱体，形成含硅外延材料层。",
           "novelty": "将远程等离子体单元与石英腔、旋转石墨/SiC 基座及腔外光学加热阵列组合为系统。",
-          "use": "含硅外延 CVD / 等离子体增强外延成膜。"
+          "use": "含硅外延 CVD / 等离子体增强外延成膜。",
+          "inventors": "Yanfu Lu；Alexandros Demos"
         },
         {
           "publication_id": "US12768074B2",
@@ -456,7 +501,8 @@
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12768074",
               "pdf_page": 15,
-              "annotations": []
+              "annotations": [],
+              "display_caption": "图10A — 示出升降臂组件的图1的沉积室的示意性截面图。"
             },
             {
               "source_publication_id": "US12768074B2",
@@ -472,7 +518,8 @@
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12768074",
               "pdf_page": 16,
-              "annotations": []
+              "annotations": [],
+              "display_caption": "图10B — 升降臂总成：平面示意图。"
             },
             {
               "source_publication_id": "US12768074B2",
@@ -488,7 +535,8 @@
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12768074",
               "pdf_page": 16,
-              "annotations": []
+              "annotations": [],
+              "display_caption": "图10C — 升降臂总成：沿10C-10C的侧剖视图。"
             },
             {
               "source_publication_id": "US12768074B2",
@@ -504,7 +552,8 @@
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12768074",
               "pdf_page": 4,
-              "annotations": []
+              "annotations": [],
+              "display_caption": "图1 — 根据本公开的实施例的处理腔室的示意图。"
             },
             {
               "source_publication_id": "US12768074B2",
@@ -520,7 +569,8 @@
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12768074",
               "pdf_page": 5,
-              "annotations": []
+              "annotations": [],
+              "display_caption": "图2A — 上灯模块：底视图示意图。"
             },
             {
               "source_publication_id": "US12768074B2",
@@ -536,7 +586,8 @@
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12768074",
               "pdf_page": 5,
-              "annotations": []
+              "annotations": [],
+              "display_caption": "图2B — 上灯模块：平面图。"
             },
             {
               "source_publication_id": "US12768074B2",
@@ -552,7 +603,8 @@
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12768074",
               "pdf_page": 5,
-              "annotations": []
+              "annotations": [],
+              "display_caption": "图2C — 上灯模块：横截面通过2C—2C。"
             },
             {
               "source_publication_id": "US12768074B2",
@@ -568,7 +620,8 @@
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12768074",
               "pdf_page": 6,
-              "annotations": []
+              "annotations": [],
+              "display_caption": "图3A — 下灯模块：底视图示意图。"
             },
             {
               "source_publication_id": "US12768074B2",
@@ -584,7 +637,8 @@
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12768074",
               "pdf_page": 6,
-              "annotations": []
+              "annotations": [],
+              "display_caption": "图3B — 下灯模块：平面图。"
             },
             {
               "source_publication_id": "US12768074B2",
@@ -600,7 +654,8 @@
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12768074",
               "pdf_page": 6,
-              "annotations": []
+              "annotations": [],
+              "display_caption": "图3C — 下灯模块：横截面通过3C—3C。"
             },
             {
               "source_publication_id": "US12768074B2",
@@ -616,7 +671,8 @@
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12768074",
               "pdf_page": 7,
-              "annotations": []
+              "annotations": [],
+              "display_caption": "图4A — 腔室主体组件的示意性横截面透视图。"
             },
             {
               "source_publication_id": "US12768074B2",
@@ -632,7 +688,8 @@
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12768074",
               "pdf_page": 8,
-              "annotations": []
+              "annotations": [],
+              "display_caption": "图4B — 通过另一个平面拍摄的图4A的腔室主体组件的示意性截面图。"
             },
             {
               "source_publication_id": "US12768074B2",
@@ -648,7 +705,8 @@
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12768074",
               "pdf_page": 9,
-              "annotations": []
+              "annotations": [],
+              "display_caption": "图4C — 底环：截面示意图。"
             },
             {
               "source_publication_id": "US12768074B2",
@@ -664,7 +722,8 @@
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12768074",
               "pdf_page": 9,
-              "annotations": []
+              "annotations": [],
+              "display_caption": "图4D — 底环：平面图。"
             },
             {
               "source_publication_id": "US12768074B2",
@@ -680,7 +739,8 @@
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12768074",
               "pdf_page": 9,
-              "annotations": []
+              "annotations": [],
+              "display_caption": "图4E — 底环：横截面贯穿4E—4E。"
             },
             {
               "source_publication_id": "US12768074B2",
@@ -696,7 +756,8 @@
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12768074",
               "pdf_page": 10,
-              "annotations": []
+              "annotations": [],
+              "display_caption": "图5A — 注射环：截面示意图。"
             },
             {
               "source_publication_id": "US12768074B2",
@@ -712,7 +773,8 @@
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12768074",
               "pdf_page": 10,
-              "annotations": []
+              "annotations": [],
+              "display_caption": "图5B — 注射环：平面图。"
             },
             {
               "source_publication_id": "US12768074B2",
@@ -728,7 +790,8 @@
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12768074",
               "pdf_page": 11,
-              "annotations": []
+              "annotations": [],
+              "display_caption": "图6A — 上衬：横截面示意图。"
             },
             {
               "source_publication_id": "US12768074B2",
@@ -744,7 +807,8 @@
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12768074",
               "pdf_page": 11,
-              "annotations": []
+              "annotations": [],
+              "display_caption": "图6B — 上衬：平面图。"
             },
             {
               "source_publication_id": "US12768074B2",
@@ -760,7 +824,8 @@
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12768074",
               "pdf_page": 12,
-              "annotations": []
+              "annotations": [],
+              "display_caption": "图7 — 下衬垫的截面示意图。"
             },
             {
               "source_publication_id": "US12768074B2",
@@ -776,7 +841,8 @@
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12768074",
               "pdf_page": 13,
-              "annotations": []
+              "annotations": [],
+              "display_caption": "图8A — 下加热器：截面示意图。"
             },
             {
               "source_publication_id": "US12768074B2",
@@ -792,7 +858,8 @@
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12768074",
               "pdf_page": 13,
-              "annotations": []
+              "annotations": [],
+              "display_caption": "图8B — 下加热器：平面图。"
             },
             {
               "source_publication_id": "US12768074B2",
@@ -808,7 +875,8 @@
               "source_geometry": {},
               "source_url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12768074",
               "pdf_page": 14,
-              "annotations": []
+              "annotations": [],
+              "display_caption": "图9 — 基座和旋转组件的示意性截面图。"
             }
           ],
           "change_history": [
@@ -850,7 +918,8 @@
           "read_status": "早间 EPI overlap_backfill 纳入；未计 team_read（锁 6）。",
           "purpose": "为先进外延膜提供可配置的灯加热外延过程腔架构。",
           "novelty": "上下灯模组与基座/基环/注入环的组合腔结构（续自 US12,060,651）。",
-          "use": "硅基外延沉积腔与先进外延膜工艺。"
+          "use": "硅基外延沉积腔与先进外延膜工艺。",
+          "inventors": "Tetsuya Ishikawa；Swaminathan T. Srinivasan；Kartik Bhupendra Shah；Ala Moradian；Manjunath Subbanna；Matthias Bauer；Peter Reimer；Michael R. Rice"
         },
         {
           "publication_id": "US12765027B2",
@@ -1341,7 +1410,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "US12765027B2当前授权原始附图，图3C/3D，PDF第7页（附图Sheet5/7）：掺杂接触层与未掺杂保护帽层。"
             }
           ],
           "change_history": [
@@ -1386,7 +1456,8 @@
           ],
           "verification": "官方当前授权原件、技术说明及全部权利要求已核对",
           "category": "EPI 工艺与集成Preclean",
-          "reference_source_status": "2026-10-19下载USPTO B2原始19页PDF，封面身份、全文技术方案、全部20项权利要求及选用图3C/3D已复核；当前权7依附变化已与旧A1公开文本区分。"
+          "reference_source_status": "2026-10-19下载USPTO B2原始19页PDF，封面身份、全文技术方案、全部20项权利要求及选用图3C/3D已复核；当前权7依附变化已与旧A1公开文本区分。",
+          "inventors": "He Ren；Raman Gaire；Shi You；Pranav Ramesh；Houssam Lazkani；Shawn Thomas；Abhishek Dube；Mehul B. Naik；Songkram Sonny Srivathanakul"
         },
         {
           "publication_id": "US20260313994A1",
@@ -1708,7 +1779,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "US20260313994A1当前申请公开原始附图：图14–16；PDF第14页（附图第13/17页）"
             }
           ],
           "change_history": [
@@ -1923,7 +1995,8 @@
                 ],
                 "coverage_status": "partial_verified"
               },
-              "annotation_coverage_status": "partial_verified"
+              "annotation_coverage_status": "partial_verified",
+              "display_caption": "图4：用于晶面选择性生长的底部与侧壁表面"
             }
           ],
           "change_history": [
@@ -1963,7 +2036,8 @@
           ],
           "verification": "官方原件、技术全文与当前权利要求已核对",
           "category": "EPI 工艺与设备",
-          "reference_source_status": "2026-10-15取得USPTO当前授权原始PDF，核对首页、技术说明书和全部当前权利要求；与独立公开转载来源交叉核对书目信息。原图来自同一当前授权版本。未核查官方登记簿当前法律有效性。"
+          "reference_source_status": "2026-10-15取得USPTO当前授权原始PDF，核对首页、技术说明书和全部当前权利要求；与独立公开转载来源交叉核对书目信息。原图来自同一当前授权版本。未核查官方登记簿当前法律有效性。",
+          "inventors": "Rami Khazaka"
         },
         {
           "publication_id": "US12757648B2",
@@ -2017,7 +2091,8 @@
               "source_display_sha256": "73dccbb96b3d37853242a7600c6691630616f016a600d69fee31b35ebc2f9436",
               "display_rotation": 0,
               "source_geometry": {},
-              "pdf_page": 2
+              "pdf_page": 2,
+              "display_caption": "图1 — 垂直半导体加工设备100 ，带有晶圆舟、注射器、加热器、排气装置、控制器"
             }
           ],
           "change_history": [
@@ -2052,7 +2127,8 @@
           "category": "EPI 工艺与设备",
           "purpose": "在外延前清掉表面氧化物并活化表面，以便选择性生长 SiGe。",
           "novelty": "把氧化物去除、氢热处理、Ge 稀释气预清洗与随后的 SiGe 外延写进同一方法链。",
-          "use": "SiGe 源漏或沟槽外延前的干法预清洗与成膜衔接。"
+          "use": "SiGe 源漏或沟槽外延前的干法预清洗与成膜衔接。",
+          "inventors": "Tetsuji Ueno；Tomoya Hasegawa；Shuntaro Takahashi；Takuya Fukumoto；Junya Shinohara"
         },
         {
           "publication_id": "US12757665B2",
@@ -2106,7 +2182,8 @@
               "source_display_sha256": "6bdff9ceb554d5f14fbb7fa40bffec56798549afcc1d6cb772db541147cafcee",
               "display_rotation": 0,
               "source_geometry": {},
-              "family_share_from": "US20240429038A1"
+              "family_share_from": "US20240429038A1",
+              "display_caption": "图1 — 图1示意性地描绘了根据一些实施例的用于预清洁的半导体处理系统。"
             },
             {
               "source_publication_id": "US12757665B2",
@@ -2121,7 +2198,8 @@
               "source_display_sha256": "ffae87ab387da5ec09e65cea906a6bdd8fa1c6709cf3279e0315d8c07e1fdc5c",
               "display_rotation": 0,
               "source_geometry": {},
-              "family_share_from": "US20240429038A1"
+              "family_share_from": "US20240429038A1",
+              "display_caption": "图2 — 图2示意性地描绘了根据一些实施方案的无水氟化氢递送系统。"
             },
             {
               "source_publication_id": "US12757665B2",
@@ -2136,7 +2214,8 @@
               "source_display_sha256": "69cdba4a2c12b9744337e6dd3f45ed051a61af2ea8ee3a9ff171548e6775f5ca",
               "display_rotation": 0,
               "source_geometry": {},
-              "family_share_from": "US20240429038A1"
+              "family_share_from": "US20240429038A1",
+              "display_caption": "图3 — 图3示意性地描绘了根据一些实施方案的水蒸气输送系统。"
             },
             {
               "source_publication_id": "US12757665B2",
@@ -2151,7 +2230,8 @@
               "source_display_sha256": "34d7d2a0f6e9ed5dac46ffe24f326561287f5d216a55e4660b0298395665a0a2",
               "display_rotation": 0,
               "source_geometry": {},
-              "family_share_from": "US20240429038A1"
+              "family_share_from": "US20240429038A1",
+              "display_caption": "图4 — 图4示意性地描绘了根据一些实施例的气体输送组分钝化工艺。"
             },
             {
               "source_publication_id": "US12757665B2",
@@ -2166,7 +2246,8 @@
               "source_display_sha256": "a57d45d6c118962600aa68d103fa7217f7d54a069f391c48b1187951442589ec",
               "display_rotation": 0,
               "source_geometry": {},
-              "family_share_from": "US20240429038A1"
+              "family_share_from": "US20240429038A1",
+              "display_caption": "图5 — 图5示意性地描绘了根据一些实施方案的预清洁衬底的方法。"
             },
             {
               "source_publication_id": "US12757665B2",
@@ -2181,7 +2262,8 @@
               "source_display_sha256": "609732f6f4c595345574a8e7416749d5a0934350019db3eee9265bc2d5ef347e",
               "display_rotation": 0,
               "source_geometry": {},
-              "family_share_from": "US20240429038A1"
+              "family_share_from": "US20240429038A1",
+              "display_caption": "图6 — 图6示意性地描绘了根据本公开的一些实施方案的衬底预清洁的另一种方法。"
             }
           ],
           "change_history": [
@@ -2235,7 +2317,8 @@
           "read_status": "晚间 Preclean 纳入；未计 team_read。",
           "purpose": "在外延前以干法去掉衬底氧化物，避免湿法残留与队列打断。",
           "novelty": "无水 HF 输送链（纯化、加热夹套）与水汽路径组合，形成可重复的氧化物去除流程。",
-          "use": "Si/SiGe 外延前的 chamber 内 dry oxide preclean。"
+          "use": "Si/SiGe 外延前的 chamber 内 dry oxide preclean。",
+          "inventors": "Chuang Wei；Aditya Chaudhury；Prahlad Kulkarni；Xing Lin；Xiaoda Sun；Woo Jung Shin；Bubesh Babu Jotheeswaran；Fei Wang；Qu Jin；Aditya Walimbe；Rajeev Reddy Kosireddy；Yen Chun Fu；Amin Azimi"
         },
         {
           "publication_id": "US20260304810A1",
@@ -2448,7 +2531,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图3A–3D — 图3A–3D（原始PDF第4页）"
             }
           ],
           "change_history": [
@@ -2637,7 +2721,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图1A–1B — 图1A–1B（原始PDF第3页）"
             }
           ],
           "change_history": [
@@ -2973,7 +3058,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图2 — 图2（原始PDF第3页）"
             }
           ],
           "change_history": [
@@ -3227,7 +3313,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图1–2 — 图1–2（原始PDF第2页）"
             },
             {
               "source_publication_id": "US20260282506A1",
@@ -3609,7 +3696,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "当前US20260282506A1（公开日2026-09-17）原始FIGS. 11–12，PDF第7页：p型衬层130与n型填充140。保留原始标号；不将图示视为独立测量结果。"
             }
           ],
           "change_history": [
@@ -5539,7 +5627,8 @@
                 ],
                 "coverage_status": "partial_verified"
               },
-              "annotation_coverage_status": "partial_verified"
+              "annotation_coverage_status": "partial_verified",
+              "display_caption": "图2 — 图2（原始PDF第3页）"
             },
             {
               "source_publication_id": "US20260282793A1",
@@ -6205,7 +6294,8 @@
                 ],
                 "coverage_status": "partial_verified"
               },
-              "annotation_coverage_status": "partial_verified"
+              "annotation_coverage_status": "partial_verified",
+              "display_caption": "US20260282793A1当前申请公开原始附图：图3–4；PDF第4页（附图第3/19页）；本月同族分支文献，非本页代表文献附图。"
             }
           ],
           "change_history": [
@@ -6757,7 +6847,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图1B — 图1B（原始PDF第4页）"
             }
           ],
           "change_history": [
@@ -6998,7 +7089,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "US20260293620A1 原始附图，PDF第3页，图2：预涂抑制膜、加工外围斜面与形成硅外延层的流程截面。"
             },
             {
               "source_publication_id": "US20260293620A1",
@@ -7090,7 +7182,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "US20260293620A1 原始附图，PDF第6页，图4A：外围斜面使外延边缘缓降，抑制高台阶的实施例。"
             }
           ],
           "change_history": [
@@ -7315,7 +7408,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图4 · 贴合式双支撑臂与同轴支撑柱结构"
             }
           ],
           "change_history": [
@@ -7661,7 +7755,8 @@
                 ],
                 "coverage_status": "partial_verified"
               },
-              "annotation_coverage_status": "partial_verified"
+              "annotation_coverage_status": "partial_verified",
+              "display_caption": "图7：选择性沉积系统、气源和控制器"
             }
           ],
           "change_history": [
@@ -8067,7 +8162,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图2A — 图2A（原始PDF第4页）"
             }
           ],
           "change_history": [
@@ -8340,7 +8436,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图3 — 图3（原始PDF第5页）"
             }
           ],
           "change_history": [
@@ -8589,7 +8686,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图7A–7B — 图7A–7B（原始PDF第12页）"
             }
           ],
           "change_history": [
@@ -8873,7 +8971,8 @@
                 ],
                 "coverage_status": "partial_verified"
               },
-              "annotation_coverage_status": "partial_verified"
+              "annotation_coverage_status": "partial_verified",
+              "display_caption": "图3 — 图3/4A（原始PDF第3页）"
             },
             {
               "source_publication_id": "US20260250879A1",
@@ -9075,7 +9174,8 @@
                 ],
                 "coverage_status": "partial_verified"
               },
-              "annotation_coverage_status": "partial_verified"
+              "annotation_coverage_status": "partial_verified",
+              "display_caption": "US20260250879A1当前申请公开原始附图：图3、图4A；PDF第5页（附图第4/12页）；本月同族分支文献，非本页代表文献附图。"
             }
           ],
           "change_history": [
@@ -9252,7 +9352,8 @@
                 ],
                 "coverage_status": "partial_verified"
               },
-              "annotation_coverage_status": "partial_verified"
+              "annotation_coverage_status": "partial_verified",
+              "display_caption": "图4：底部与侧壁掺磷层上的本征盖层"
             }
           ],
           "change_history": [
@@ -9552,7 +9653,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图3A — 图3A（原始PDF第4页）"
             }
           ],
           "change_history": [
@@ -9929,7 +10031,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图2 — 图2（原始PDF第4页）"
             }
           ],
           "change_history": [
@@ -11883,7 +11986,8 @@
                 ],
                 "coverage_status": "partial_verified"
               },
-              "annotation_coverage_status": "partial_verified"
+              "annotation_coverage_status": "partial_verified",
+              "display_caption": "图2 — 图2（原始PDF第4页）"
             }
           ],
           "change_history": [
@@ -12683,7 +12787,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图1、2：可升降基座/预热环反应器与硅外延晶圆"
             }
           ],
           "change_history": [
@@ -12766,7 +12871,8 @@
               "sha256": "cf97aec6deef9240a25b0859bec3800f6210315d8726cb12d88362da13b9b16c",
               "display_rotation": 0,
               "source_url": "https://patents.google.com/patent/TW202628839A/en",
-              "family_share_from": "WO2026096517A1"
+              "family_share_from": "WO2026096517A1",
+              "display_caption": "图1 — 同族混合预清洁图1 （来自WO2026096517A1的像素）"
             },
             {
               "source_publication_id": "TW202628839A",
@@ -12778,7 +12884,8 @@
               "sha256": "d5e30e8d179f8544d19274320a6dae583cf8928d951b37c5604e158424f19512",
               "display_rotation": 0,
               "source_url": "https://patents.google.com/patent/TW202628839A/en",
-              "family_share_from": "WO2026096517A1"
+              "family_share_from": "WO2026096517A1",
+              "display_caption": "图2 — 同户图2"
             },
             {
               "source_publication_id": "TW202628839A",
@@ -12790,7 +12897,8 @@
               "sha256": "33a0004ed812ebc5dfd384ddfe8c2c59827790c07109c03305f126368ed0ccd3",
               "display_rotation": 0,
               "source_url": "https://patents.google.com/patent/TW202628839A/en",
-              "family_share_from": "WO2026096517A1"
+              "family_share_from": "WO2026096517A1",
+              "display_caption": "图3 — 同户图3"
             }
           ],
           "change_history": [
@@ -12881,7 +12989,8 @@
               "source_display_sha256": "ef178bb88a9d7b40ab0c873542e9278fa5ed7367de7d3b43de342d9dacca1852",
               "pdf_page": 1,
               "display_rotation": 0,
-              "source_geometry": {}
+              "source_geometry": {},
+              "display_caption": "图1(A)、(B)：硅单晶固化率与电阻率、氧析出核形成温度域停留时间的关系"
             }
           ],
           "change_history": [
@@ -13278,7 +13387,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图1 — 图1（原始PDF第3页）"
             }
           ],
           "change_history": [
@@ -13388,7 +13498,8 @@
               "height": 1754,
               "caption": "CN122294515A 说明书附图 1/3（DEPATISnet）：本条目挂载图1；同页亦含图2，未单独裁切。",
               "sha256": "b5e08ea2b1286740a0025ab328431cacb6404938502009c2ae575b0534e7980e",
-              "display_rotation": 0
+              "display_rotation": 0,
+              "display_caption": "图 1 — 同页亦含图2，未单独裁切。"
             },
             {
               "source_publication_id": "CN122294515A",
@@ -13399,7 +13510,8 @@
               "height": 1754,
               "caption": "CN122294515A 说明书附图 2/3（DEPATISnet）：本条目挂载图3；同页亦含图4，未单独裁切。",
               "sha256": "fb1ea843bf1d0d8596dc0092969a91e54561c4e6bdd33b59a2a4dfad4fe6f92c",
-              "display_rotation": 0
+              "display_rotation": 0,
+              "display_caption": "图 2 — 同页亦含图4，未单独裁切。"
             },
             {
               "source_publication_id": "CN122294515A",
@@ -13410,7 +13522,8 @@
               "height": 1754,
               "caption": "CN122294515A 说明书附图 3/3（DEPATISnet）：整页图5。",
               "sha256": "a27a44f6bdd4cf9526165765f8704912b385db58dcf38b66e89fcfb981c88b4b",
-              "display_rotation": 0
+              "display_rotation": 0,
+              "display_caption": "CN122294515A 说明书附图 3/3（DEPATISnet）：整页图5。"
             }
           ],
           "change_history": [
@@ -13913,7 +14026,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图1–2 — 图1–2（原始PDF第3页）"
             }
           ],
           "change_history": [
@@ -13969,7 +14083,8 @@
           ],
           "verification": "技术全文与当前权利要求已核对",
           "category": "EPI 工艺",
-          "reference_source_status": "official_public_pdf_full_text_verified"
+          "reference_source_status": "official_public_pdf_full_text_verified",
+          "inventors": "Atsushi Suzuki"
         },
         {
           "publication_id": "US12660266B2",
@@ -14421,7 +14536,8 @@
                 ],
                 "coverage_status": "partial_verified"
               },
-              "annotation_coverage_status": "partial_verified"
+              "annotation_coverage_status": "partial_verified",
+              "display_caption": "图1A — 图1A（原始PDF第3页）"
             }
           ],
           "change_history": [
@@ -14489,7 +14605,8 @@
           ],
           "verification": "技术全文与当前权利要求已核对",
           "category": "EPI 控制与计量",
-          "reference_source_status": "public_full_text_verified\n2026-10-15补充复核：此前技术全文与权项核验记录沿用基线。本轮重新取得 US12660266B2 自身 USPTO 原始图像 PDF，并以 OCR 与原图逐项复核全部 20 项当前权利要求（PDF 第 32、33 页）。其余说明书、附图及同族文献未逐页重新审查；未核查官方登记簿当前法律状态。"
+          "reference_source_status": "public_full_text_verified\n2026-10-15补充复核：此前技术全文与权项核验记录沿用基线。本轮重新取得 US12660266B2 自身 USPTO 原始图像 PDF，并以 OCR 与原图逐项复核全部 20 项当前权利要求（PDF 第 32、33 页）。其余说明书、附图及同族文献未逐页重新审查；未核查官方登记簿当前法律状态。",
+          "inventors": "Shahaji B. More；Yi Hsuan Lo"
         },
         {
           "publication_id": "US12660522B2",
@@ -14536,7 +14653,8 @@
               "source_original_sha256": "3832fb735c5ac5dce9c703f08fb4c58a8e60f21e5d3fa16ac5b78c7ad8427fe5",
               "source_display_sha256": "3832fb735c5ac5dce9c703f08fb4c58a8e60f21e5d3fa16ac5b78c7ad8427fe5",
               "display_rotation": 90,
-              "source_geometry": {}
+              "source_geometry": {},
+              "display_caption": "图1 — SiGe各向异性外延中间结构"
             }
           ],
           "change_history": [
@@ -14572,7 +14690,8 @@
           "category": "EPI 工艺",
           "team_independent_read": true,
           "read_disposition": "team_read_claims_level",
-          "read_status": "未计团队已读：授权全文未在本轮固化 sha256/阅读跨度。"
+          "read_status": "未计团队已读：授权全文未在本轮固化 sha256/阅读跨度。",
+          "inventors": "Chia Cheng Chin；Abhishek Dube；Yi-Chiau Huang；Saurabh Chopra"
         },
         {
           "publication_id": "US12660544B2",
@@ -14625,7 +14744,8 @@
               "source_display_sha256": "6bdff9ceb554d5f14fbb7fa40bffec56798549afcc1d6cb772db541147cafcee",
               "display_rotation": 0,
               "source_geometry": {},
-              "family_share_from": "US20240429038A1"
+              "family_share_from": "US20240429038A1",
+              "display_caption": "图1 — 图1示意性地描绘了根据一些实施例的用于预清洁的半导体处理系统。"
             },
             {
               "source_publication_id": "US12660544B2",
@@ -14640,7 +14760,8 @@
               "source_display_sha256": "ffae87ab387da5ec09e65cea906a6bdd8fa1c6709cf3279e0315d8c07e1fdc5c",
               "display_rotation": 0,
               "source_geometry": {},
-              "family_share_from": "US20240429038A1"
+              "family_share_from": "US20240429038A1",
+              "display_caption": "图2 — 图2示意性地描绘了根据一些实施方案的无水氟化氢递送系统。"
             },
             {
               "source_publication_id": "US12660544B2",
@@ -14655,7 +14776,8 @@
               "source_display_sha256": "69cdba4a2c12b9744337e6dd3f45ed051a61af2ea8ee3a9ff171548e6775f5ca",
               "display_rotation": 0,
               "source_geometry": {},
-              "family_share_from": "US20240429038A1"
+              "family_share_from": "US20240429038A1",
+              "display_caption": "图3 — 图3示意性地描绘了根据一些实施方案的水蒸气输送系统。"
             },
             {
               "source_publication_id": "US12660544B2",
@@ -14670,7 +14792,8 @@
               "source_display_sha256": "34d7d2a0f6e9ed5dac46ffe24f326561287f5d216a55e4660b0298395665a0a2",
               "display_rotation": 0,
               "source_geometry": {},
-              "family_share_from": "US20240429038A1"
+              "family_share_from": "US20240429038A1",
+              "display_caption": "图4 — 图4示意性地描绘了根据一些实施例的气体输送组分钝化工艺。"
             },
             {
               "source_publication_id": "US12660544B2",
@@ -14685,7 +14808,8 @@
               "source_display_sha256": "a57d45d6c118962600aa68d103fa7217f7d54a069f391c48b1187951442589ec",
               "display_rotation": 0,
               "source_geometry": {},
-              "family_share_from": "US20240429038A1"
+              "family_share_from": "US20240429038A1",
+              "display_caption": "图5 — 图5示意性地描绘了根据一些实施方案的预清洁衬底的方法。"
             },
             {
               "source_publication_id": "US12660544B2",
@@ -14700,7 +14824,8 @@
               "source_display_sha256": "609732f6f4c595345574a8e7416749d5a0934350019db3eee9265bc2d5ef347e",
               "display_rotation": 0,
               "source_geometry": {},
-              "family_share_from": "US20240429038A1"
+              "family_share_from": "US20240429038A1",
+              "display_caption": "图6 — 图6示意性地描绘了根据本公开的一些实施方案的衬底预清洁的另一种方法。"
             }
           ],
           "change_history": [
@@ -14754,7 +14879,8 @@
           "read_status": "晚间 Preclean 纳入；未计 team_read。",
           "purpose": "在外延前以干法去掉衬底氧化物，避免湿法残留与队列打断。",
           "novelty": "无水 HF 输送链（纯化、加热夹套）与水汽路径组合，形成可重复的氧化物去除流程。",
-          "use": "Si/SiGe 外延前的 chamber 内 dry oxide preclean。"
+          "use": "Si/SiGe 外延前的 chamber 内 dry oxide preclean。",
+          "inventors": "Chuang Wei；Aditya Chaudhury；Prahlad Kulkarni；Xing Lin；Xiaoda Sun；Woo Jung Shin；Bubesh Babu Jotheeswaran；Fei Wang；Qu Jin；Aditya Walimbe；Rajeev Reddy Kosireddy；Yen Chun Fu；Amin Azimi"
         },
         {
           "publication_id": "US20260164725A1",
@@ -14867,7 +14993,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "第一外延层覆盖内间隔层与片端部，以及第二层50-2、第三层50-3及位错53；层间清洗见[0091]/[0095]。"
             }
           ],
           "change_history": [
@@ -15175,7 +15302,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图3A — 图3A（原始PDF第5页）"
             }
           ],
           "change_history": [
@@ -15931,7 +16059,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图3–4 — 图3–4（原始PDF第3页）"
             }
           ],
           "change_history": [
@@ -17899,7 +18028,8 @@
                 ],
                 "coverage_status": "partial_verified"
               },
-              "annotation_coverage_status": "partial_verified"
+              "annotation_coverage_status": "partial_verified",
+              "display_caption": "图2 — 图2（原始PDF第4页）"
             }
           ],
           "change_history": [
@@ -18182,7 +18312,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图2A–2C — 图2A–2C（原始PDF第3页）"
             }
           ],
           "change_history": [
@@ -18463,7 +18594,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图1A–1B — 图1A–1B/2A（原始PDF第2页）"
             }
           ],
           "change_history": [
@@ -18891,7 +19023,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "WO2026101868A1原始公开图1；PDF第37页，图纸1/2。"
             },
             {
               "source_publication_id": "WO2026101868A1",
@@ -19247,7 +19380,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "WO2026101868A1原始公开图3；PDF第38页，图纸2/2。"
             }
           ],
           "change_history": [
@@ -19971,7 +20105,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图4：带硅源、掺杂源供气和控制器的外延腔室"
             }
           ],
           "change_history": [
@@ -20059,7 +20194,8 @@
               "height": 1754,
               "caption": "CN122069948A 说明书附图 1/3（DEPATISnet，约 p7）：本条目挂载图1；同页亦含图2，未单独裁切。",
               "sha256": "24483d4021f1e1e61d1e558892b76169c039b31648903798293565dcb2b5cfbb",
-              "display_rotation": 0
+              "display_rotation": 0,
+              "display_caption": "图 1 — 同页亦含图2，未单独裁切。"
             },
             {
               "source_publication_id": "CN122069948A",
@@ -20070,7 +20206,8 @@
               "height": 1754,
               "caption": "CN122069948A 说明书附图 2/3（DEPATISnet，约 p8）：本条目挂载图3；同页亦含图4，未单独裁切。",
               "sha256": "d4d2ed0c65e0804217789fce0f99597479c4343dea42565c440abf25090755c1",
-              "display_rotation": 0
+              "display_rotation": 0,
+              "display_caption": "图 2 — 同页亦含图4，未单独裁切。"
             },
             {
               "source_publication_id": "CN122069948A",
@@ -20081,7 +20218,8 @@
               "height": 1754,
               "caption": "CN122069948A 说明书附图 3/3（DEPATISnet，约 p9）：整页图5。",
               "sha256": "d6ad243f71f207c2009aebd4ba2b927ff20753d9cededac4d869bc2f0288e9a1",
-              "display_rotation": 0
+              "display_rotation": 0,
+              "display_caption": "CN122069948A 说明书附图 3/3（DEPATISnet，约 p9）：整页图5。"
             }
           ],
           "change_history": [
@@ -20159,7 +20297,8 @@
               "caption": "Hybrid preclean chamber cross-section (Fig.1)",
               "sha256": "cf97aec6deef9240a25b0859bec3800f6210315d8726cb12d88362da13b9b16c",
               "display_rotation": 0,
-              "source_url": "https://patents.google.com/patent/WO2026096517A1/en"
+              "source_url": "https://patents.google.com/patent/WO2026096517A1/en",
+              "display_caption": "图1 — 混合式预清洁室横截面（图1 ）"
             },
             {
               "source_publication_id": "WO2026096517A1",
@@ -20170,7 +20309,8 @@
               "caption": "Flow assembly / plasma path (Fig.2)",
               "sha256": "d5e30e8d179f8544d19274320a6dae583cf8928d951b37c5604e158424f19512",
               "display_rotation": 0,
-              "source_url": "https://patents.google.com/patent/WO2026096517A1/en"
+              "source_url": "https://patents.google.com/patent/WO2026096517A1/en",
+              "display_caption": "图2 — 流动组件/等离子体路径（图2 ）"
             },
             {
               "source_publication_id": "WO2026096517A1",
@@ -20181,7 +20321,8 @@
               "caption": "Preclean process flow to epi (Fig.3)",
               "sha256": "33a0004ed812ebc5dfd384ddfe8c2c59827790c07109c03305f126368ed0ccd3",
               "display_rotation": 0,
-              "source_url": "https://patents.google.com/patent/WO2026096517A1/en"
+              "source_url": "https://patents.google.com/patent/WO2026096517A1/en",
+              "display_caption": "图3 — 到外延的预清洁工艺流程（图3 ）"
             }
           ],
           "change_history": [
@@ -20843,7 +20984,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图2 — 图2（原始PDF第3页）"
             }
           ],
           "change_history": [
@@ -21045,7 +21187,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图3：阻挡层形成与含硅材料外延流程。同族原图"
             },
             {
               "source_publication_id": "US20260107704A1",
@@ -21239,7 +21382,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图4A–图4C：阻挡层与含硅外延层的叠层结构。同族原图"
             }
           ],
           "change_history": [
@@ -21720,7 +21864,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "同族原始附图：US20250037997A1（2025-01-30），图1a，PDF第2页；含补偿层的Si/SiGe多层叠层剖面"
             }
           ],
           "change_history": [
@@ -22415,7 +22560,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "同族原始附图：US12068155B2（2024-08-20），图3C，PDF第7页；GAA沟槽中外延生长结构的剖面"
             }
           ],
           "change_history": [
@@ -22618,7 +22764,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "同族原图（JP2026068628A，非当前国家版本附图） · 图1(a)、(b)：SiGe晶圆截面与Ge浓度分布。同族原图"
             }
           ],
           "change_history": [
@@ -22798,7 +22945,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "同族原图（US12595587B2，非当前国家版本附图） · 图1：多片衬底交替沉积脉冲流程"
             }
           ],
           "change_history": [
@@ -22895,7 +23043,8 @@
               "source_display_sha256": "f663073323ca31ab77a2cc842be435e9460cd45dfcaff6e91e4d3c87afa3f485",
               "pdf_page": 4,
               "display_rotation": 0,
-              "source_geometry": {}
+              "source_geometry": {},
+              "display_caption": "US12595560B2 图1A：工艺腔与远程等离子体源之间的气体注入组件及整体处理系统示意。"
             },
             {
               "source_publication_id": "US12595560B2",
@@ -22910,7 +23059,8 @@
               "source_display_sha256": "e3720f5e86fb31ff427a885d5094a04b173eb71f4e85aa9f9a8a767720003818",
               "pdf_page": 19,
               "display_rotation": 0,
-              "source_geometry": {}
+              "source_geometry": {},
+              "display_caption": "US12595560B2 图14：基板置于耦合处理体积 → RPS 成等离子体 → 注入组件混合并通入含氢气体 → 活化气体进入工艺腔并暴露基板表面。"
             }
           ],
           "change_history": [
@@ -23251,7 +23401,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图3 — 图3（原始PDF第4页）"
             }
           ],
           "change_history": [
@@ -23514,7 +23665,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "同族原始附图：US20240145550A1（2024-05-02），图3，PDF第4页；掺杂外延层与含碳帽层交替形成的结构"
             }
           ],
           "change_history": [
@@ -23925,7 +24077,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图1B–1C — 图1B–1C（原始PDF第3页）"
             }
           ],
           "change_history": [
@@ -24405,7 +24558,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "同族原始附图：US20250037997A1（2025-01-30），图1a，PDF第2页；含补偿层的Si/SiGe多层叠层剖面"
             }
           ],
           "change_history": [
@@ -24494,7 +24648,8 @@
               "height": 1754,
               "caption": "CN121693111A 说明书附图 1/3（DEPATISnet CN000121693111A）：本条目挂载图1 外延截面；同页亦含图2 工艺流程，未单独裁切。",
               "sha256": "08612a81d951205d41ef731eb4fd28f9d2d1e75773c4386b108deb76446482eb",
-              "display_rotation": 0
+              "display_rotation": 0,
+              "display_caption": "图 1 — 同页亦含图2 工艺流程，未单独裁切。"
             }
           ],
           "change_history": [
@@ -24671,7 +24826,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图1 — 图1（原始PDF第2页）"
             }
           ],
           "change_history": [
@@ -25173,7 +25329,8 @@
                 ],
                 "coverage_status": "partial_verified"
               },
-              "annotation_coverage_status": "partial_verified"
+              "annotation_coverage_status": "partial_verified",
+              "display_caption": "图2A：等离子体增强外延沉积腔室截面。同族原图"
             },
             {
               "source_publication_id": "US20260066234A1",
@@ -26091,7 +26248,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图2B：腔室气路、加热与射频配置。同族原图"
             }
           ],
           "change_history": [
@@ -26178,7 +26336,8 @@
               "source_original_sha256": "149b7cddefba6ee35788f9065b61c3ee9485fb7d6075f215785f1e951e522d9e",
               "source_display_sha256": "149b7cddefba6ee35788f9065b61c3ee9485fb7d6075f215785f1e951e522d9e",
               "display_rotation": 0,
-              "source_geometry": {}
+              "source_geometry": {},
+              "display_caption": "图2 — 带XRF测量系统的处理室横截面图"
             }
           ],
           "change_history": [
@@ -26482,7 +26641,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图3 — 图3（原始PDF第4页）"
             }
           ],
           "change_history": [
@@ -26567,7 +26727,8 @@
               "source_display_sha256": "556e55273f87bc8d393f04ae174f970ddf51089cf04c020688242d359815b4f6",
               "display_rotation": 0,
               "source_geometry": {},
-              "pdf_page": 2
+              "pdf_page": 2,
+              "display_caption": "图1A — 多室半导体处理系统100平面图，带传输室和控制器"
             }
           ],
           "change_history": [
@@ -26657,7 +26818,8 @@
               "source_display_sha256": "e18b76ee7bfd0824aa272ad5c775f7d5b96aff5aaea4067c5327f91ac1017d0e",
               "display_rotation": 0,
               "source_geometry": {},
-              "pdf_page": 2
+              "pdf_page": 2,
+              "display_caption": "图1 — 半导体处理系统100 ，具有气体源（ Si/Ge/掺杂剂/蚀刻剂/载体）、腔室118、排气/消除108、控制器110"
             },
             {
               "source_publication_id": "US20260062803A1",
@@ -26672,7 +26834,8 @@
               "source_display_sha256": "620d8820c836e1abdac1d96710b1a9af19803f970a5a990fd1392ab5219ac15d",
               "display_rotation": 0,
               "source_geometry": {},
-              "pdf_page": 3
+              "pdf_page": 3,
+              "display_caption": "图2 — 带有衬底支架、气体注入器、灯阵列、排气装置的EPI处理室的横截面图"
             }
           ],
           "change_history": [
@@ -28008,7 +28171,8 @@
                 ],
                 "coverage_status": "partial_verified"
               },
-              "annotation_coverage_status": "partial_verified"
+              "annotation_coverage_status": "partial_verified",
+              "display_caption": "图1 — 图1（原始PDF第3页）"
             }
           ],
           "change_history": [
@@ -28348,7 +28512,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图2 — 图2（原始PDF第3页）"
             }
           ],
           "change_history": [
@@ -28968,7 +29133,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图2 — 图2（原始PDF第3页）"
             }
           ],
           "change_history": [
@@ -29719,7 +29885,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "同族原图（WO2026035639A1，非当前国家版本附图） · WO2026035639A1原始公开图1/2；PDF第72页，图纸1/7。"
             }
           ],
           "change_history": [
@@ -29820,7 +29987,8 @@
               "source_display_sha256": "c395f81d189fba52bb8be857b08bc3b54a615f7155ef44b68eaf0c62591eb3b7",
               "pdf_page": 7,
               "display_rotation": 0,
-              "source_geometry": {}
+              "source_geometry": {},
+              "display_caption": "图1 — （公开日2026-02-13）图1，原件"
             },
             {
               "source_publication_id": "CN121519154A",
@@ -29835,7 +30003,8 @@
               "source_display_sha256": "ef57895dd71a53a421eedc1fe8f0c76220a1d02a0848ebf2280352c3b8f90f8b",
               "pdf_page": 9,
               "display_rotation": 0,
-              "source_geometry": {}
+              "source_geometry": {},
+              "display_caption": "图4 — （公开日2026-02-13）图4，原件"
             }
           ],
           "change_history": [
@@ -30665,7 +30834,8 @@
                 ],
                 "coverage_status": "partial_verified"
               },
-              "annotation_coverage_status": "partial_verified"
+              "annotation_coverage_status": "partial_verified",
+              "display_caption": "图1A — 图1A（原始PDF第3页）"
             }
           ],
           "change_history": [
@@ -31196,7 +31366,8 @@
                 ],
                 "coverage_status": "partial_verified"
               },
-              "annotation_coverage_status": "partial_verified"
+              "annotation_coverage_status": "partial_verified",
+              "display_caption": "图2 — 图2（原始PDF第3页）"
             }
           ],
           "change_history": [
@@ -31462,7 +31633,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图1 — 图1（原始PDF第3页）"
             }
           ],
           "change_history": [
@@ -31633,7 +31805,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图1：衬底、Si缓冲层与Si/SiGe叠层"
             }
           ],
           "change_history": [
@@ -31962,7 +32135,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图2–5：从衬底至SiGe:B源漏接触层结构"
             }
           ],
           "change_history": [
@@ -32057,7 +32231,8 @@
               "source_original_sha256": "a294267d7ea5fa8224c369822c18b58418c120ae430ef5c60fa5e28be577e765",
               "source_display_sha256": "a294267d7ea5fa8224c369822c18b58418c120ae430ef5c60fa5e28be577e765",
               "display_rotation": 0,
-              "source_geometry": {}
+              "source_geometry": {},
+              "display_caption": "图2 — ePI 处理室截面示意图"
             }
           ],
           "change_history": [
@@ -32822,7 +32997,8 @@
                 ],
                 "coverage_status": "partial_verified"
               },
-              "annotation_coverage_status": "partial_verified"
+              "annotation_coverage_status": "partial_verified",
+              "display_caption": "同族原图（US20260022492A1，非当前国家版本附图） · 图1：测温、膜厚监测及局部加热控制系统。同族原图"
             },
             {
               "source_publication_id": "US20260022492A1",
@@ -33042,7 +33218,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "同族原图（US20260022492A1，非当前国家版本附图） · 图11、图12：基于膜厚阈值的加热调节流程与传感位置。同族原图"
             }
           ],
           "change_history": [
@@ -33333,7 +33510,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "本次文献原始附图：KR102918757B1（2026-01-28），도면2，PDF第9页；石英外延反应腔及三路供气、排气结构"
             }
           ],
           "change_history": [
@@ -33557,7 +33735,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图4：贴合式双支撑臂与同轴支撑柱结构。同族原图"
             }
           ],
           "change_history": [
@@ -33851,7 +34030,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "基体在介电层下侧向欠切的干法热刻蚀实施例；标示欠切距离806和深度808。"
             },
             {
               "source_publication_id": "US20260026275A1",
@@ -34061,7 +34241,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "欠切后第二半导体外延填充；上方406为超过介电层高度后的晶面。"
             }
           ],
           "change_history": [
@@ -34383,7 +34564,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "本次文献原始附图：KR102915695B1（2026-01-21），도면6，PDF第16页；倾斜观察窗、观察管与基板支撑面的几何关系"
             }
           ],
           "change_history": [
@@ -34482,7 +34664,8 @@
               "source_display_sha256": "6bdff9ceb554d5f14fbb7fa40bffec56798549afcc1d6cb772db541147cafcee",
               "display_rotation": 0,
               "source_geometry": {},
-              "family_share_from": "US20240429038A1"
+              "family_share_from": "US20240429038A1",
+              "display_caption": "图1 — 图1示意性地描绘了根据一些实施例的用于预清洁的半导体处理系统。"
             },
             {
               "source_publication_id": "KR102916044B1",
@@ -34497,7 +34680,8 @@
               "source_display_sha256": "ffae87ab387da5ec09e65cea906a6bdd8fa1c6709cf3279e0315d8c07e1fdc5c",
               "display_rotation": 0,
               "source_geometry": {},
-              "family_share_from": "US20240429038A1"
+              "family_share_from": "US20240429038A1",
+              "display_caption": "图2 — 图2示意性地描绘了根据一些实施方案的无水氟化氢递送系统。"
             },
             {
               "source_publication_id": "KR102916044B1",
@@ -34512,7 +34696,8 @@
               "source_display_sha256": "69cdba4a2c12b9744337e6dd3f45ed051a61af2ea8ee3a9ff171548e6775f5ca",
               "display_rotation": 0,
               "source_geometry": {},
-              "family_share_from": "US20240429038A1"
+              "family_share_from": "US20240429038A1",
+              "display_caption": "图3 — 图3示意性地描绘了根据一些实施方案的水蒸气输送系统。"
             },
             {
               "source_publication_id": "KR102916044B1",
@@ -34527,7 +34712,8 @@
               "source_display_sha256": "34d7d2a0f6e9ed5dac46ffe24f326561287f5d216a55e4660b0298395665a0a2",
               "display_rotation": 0,
               "source_geometry": {},
-              "family_share_from": "US20240429038A1"
+              "family_share_from": "US20240429038A1",
+              "display_caption": "图4 — 图4示意性地描绘了根据一些实施例的气体输送组分钝化工艺。"
             },
             {
               "source_publication_id": "KR102916044B1",
@@ -34542,7 +34728,8 @@
               "source_display_sha256": "a57d45d6c118962600aa68d103fa7217f7d54a069f391c48b1187951442589ec",
               "display_rotation": 0,
               "source_geometry": {},
-              "family_share_from": "US20240429038A1"
+              "family_share_from": "US20240429038A1",
+              "display_caption": "图5 — 图5示意性地描绘了根据一些实施方案的预清洁衬底的方法。"
             },
             {
               "source_publication_id": "KR102916044B1",
@@ -34557,7 +34744,8 @@
               "source_display_sha256": "609732f6f4c595345574a8e7416749d5a0934350019db3eee9265bc2d5ef347e",
               "display_rotation": 0,
               "source_geometry": {},
-              "family_share_from": "US20240429038A1"
+              "family_share_from": "US20240429038A1",
+              "display_caption": "图6 — 图6示意性地描绘了根据本公开的一些实施方案的衬底预清洁的另一种方法。"
             }
           ],
           "change_history": [
@@ -34782,7 +34970,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图2 — 图2（原始PDF第3页）"
             }
           ],
           "change_history": [
@@ -34869,7 +35058,8 @@
               "source_display_sha256": "31ab7d533d9e70bab77c84310789035629e4ae0ff96dc5a179ce1450292c937a",
               "pdf_page": 16,
               "display_rotation": 0,
-              "source_geometry": {}
+              "source_geometry": {},
+              "display_caption": "JP2026004352A 図1：集群工具俯视——两段主框架、中央搬运机器人、周围工艺腔、装载/工厂接口与控制器。"
             },
             {
               "source_publication_id": "JP2026004352A",
@@ -34884,7 +35074,8 @@
               "source_display_sha256": "6c17a40d1a5bd9ea41e06b84bb703a5be43611dbcb94eadaf066180d8778345c",
               "pdf_page": 17,
               "display_rotation": 0,
-              "source_geometry": {}
+              "source_geometry": {},
+              "display_caption": "JP2026004352A 図4：基板从工厂接口进入低压第一处理 → 经压力安定化腔升压至约 700–800 Torr → 再入外延堆积腔做常压高温外延。"
             }
           ],
           "change_history": [
@@ -35168,7 +35359,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图2A–2C — 图2A–2C（原始PDF第3页）"
             }
           ],
           "change_history": [
@@ -35409,7 +35601,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图2A–2B — 图2A–2B（原始PDF第4页）"
             }
           ],
           "change_history": [
@@ -35767,7 +35960,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "同族原图（US20260005044A1，非当前国家版本附图） · 图2、图3：可转动反射器与辐射源的加热组件。同族原图"
             }
           ],
           "change_history": [
@@ -36049,7 +36243,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "同族原图（US20240327988A1，非当前国家版本附图） · 同族原始附图：US20240327988A1（2024-10-03），图8，PDF第9页；以温度变化率和训练模型评估腔室匹配状态"
             }
           ],
           "change_history": [
@@ -37288,7 +37483,8 @@
                 ],
                 "coverage_status": "partial_verified"
               },
-              "annotation_coverage_status": "partial_verified"
+              "annotation_coverage_status": "partial_verified",
+              "display_caption": "图1 — 图1（原始PDF第2页）"
             }
           ],
           "change_history": [
@@ -38137,7 +38333,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图2 — 图2（原始PDF第3页）"
             }
           ],
           "change_history": [
@@ -38342,7 +38539,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图3A–3B — 图3A–3B（原始PDF第4页）"
             }
           ],
           "change_history": [
@@ -38587,7 +38785,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图1 — 图1（原始PDF第3页）"
             }
           ],
           "change_history": [
@@ -39179,7 +39378,8 @@
                 ],
                 "coverage_status": "partial_verified"
               },
-              "annotation_coverage_status": "partial_verified"
+              "annotation_coverage_status": "partial_verified",
+              "display_caption": "同族原图（KR102904356B1，非当前国家版本附图） · 本次文献原始附图：KR102904356B1（2025-12-26），도면2，PDF第12页；高导热铝基座与层叠板件、气路和冷却结构"
             }
           ],
           "change_history": [
@@ -39523,7 +39723,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "同族原图（CN118741776A，非当前国家版本附图） · 图1：含中心透镜与环透镜的石英支撑件截面。同族原图"
             },
             {
               "source_publication_id": "CN118741776A",
@@ -39855,7 +40056,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "同族原图（CN118741776A，非当前国家版本附图） · 图8：石英支撑件在半导体工艺腔室中的布置。同族原图"
             }
           ],
           "change_history": [
@@ -40330,7 +40532,8 @@
                 ],
                 "coverage_status": "partial_verified"
               },
-              "annotation_coverage_status": "partial_verified"
+              "annotation_coverage_status": "partial_verified",
+              "display_caption": "图1 — 图1（原始PDF第2页）"
             }
           ],
           "change_history": [
@@ -40687,7 +40890,8 @@
                 ],
                 "coverage_status": "partial_verified"
               },
-              "annotation_coverage_status": "partial_verified"
+              "annotation_coverage_status": "partial_verified",
+              "display_caption": "US20250369154A1 原始附图，PDF第2页，图1：包括前驱物/刻蚀剂供给、旋转执行器及控制器的选择性沉积装置。"
             }
           ],
           "change_history": [
@@ -41088,7 +41292,8 @@
                 ],
                 "coverage_status": "partial_verified"
               },
-              "annotation_coverage_status": "partial_verified"
+              "annotation_coverage_status": "partial_verified",
+              "display_caption": "本次文献原始附图：KR102886069B1（2025-11-13），도면2, 도면3，PDF第9页；上下供气反应器及带通孔基座结构"
             }
           ],
           "change_history": [
@@ -41953,7 +42158,8 @@
                 ],
                 "coverage_status": "partial_verified"
               },
-              "annotation_coverage_status": "partial_verified"
+              "annotation_coverage_status": "partial_verified",
+              "display_caption": "图2 — 图2（原始PDF第3页）"
             }
           ],
           "change_history": [
@@ -42170,7 +42376,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "同族原图（CN118136497A，非当前国家版本附图） · 图5、图6、图7：分阶段外延与中间层补偿流程及边缘形貌。同族原图"
             },
             {
               "source_publication_id": "CN118136497A",
@@ -42312,7 +42519,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "同族原图（CN118136497A，非当前国家版本附图） · 图8、图9：中间层补偿与顶层外延后的边缘形貌。同族原图"
             }
           ],
           "change_history": [
@@ -42581,7 +42789,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "同族先前公开 US20250226202A1（2025-07-10）的 图3。该图用于理解家族技术，不是本月台湾文献的原始附图。"
             }
           ],
           "change_history": [
@@ -42718,7 +42927,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "同族原图（KR102888301B1，非当前国家版本附图） · 本次文献原始附图：KR102888301B1（2025-11-20），도면6，PDF第13页；温控部件周向宽度变化的基座俯视图"
             }
           ],
           "change_history": [
@@ -43073,7 +43283,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图4 — 图4（原始PDF第5页）"
             }
           ],
           "change_history": [
@@ -43477,7 +43688,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "CN120989593A（公开日2025-11-21）图2，原件PDF第14页、说明书附图2/5页。下灯组布局原始附图。"
             },
             {
               "source_publication_id": "CN120989593A",
@@ -43492,7 +43704,8 @@
               "source_display_sha256": "8222f5a9911012a0c8e8752eadb0a1cc19a556e29e19adf30907d3afe214777a",
               "pdf_page": 15,
               "display_rotation": 0,
-              "source_geometry": {}
+              "source_geometry": {},
+              "display_caption": "图4 — （公开日2025-11-21）图4，原件"
             }
           ],
           "change_history": [
@@ -43731,7 +43944,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图3 — 温度时间序列及变化率数据提取"
             },
             {
               "source_publication_id": "US20240327988A1",
@@ -43935,7 +44149,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图8 — 利用已训练模型表征新外延腔室"
             }
           ],
           "change_history": [
@@ -44468,7 +44683,8 @@
                 ],
                 "coverage_status": "partial_verified"
               },
-              "annotation_coverage_status": "partial_verified"
+              "annotation_coverage_status": "partial_verified",
+              "display_caption": "图2A–2F — 宏单元互连支撑网络及孔隙结构的不同配置"
             },
             {
               "source_publication_id": "US20240360588A1",
@@ -44710,7 +44926,8 @@
                 ],
                 "coverage_status": "partial_verified"
               },
-              "annotation_coverage_status": "partial_verified"
+              "annotation_coverage_status": "partial_verified",
+              "display_caption": "图6A–6B — 带宏单元结构的注入环实施例"
             }
           ],
           "change_history": [
@@ -45155,7 +45372,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "同族原图（CN121002616A，非当前国家版本附图） · CN121002616A原始图1（公布日2025-11-21，PDF第17页）：经碳掺杂SiGe/Si微型堆叠的结构示意。104为SiGe堆叠（110/120/130），140为硅膜（142种晶层、144块体层）；106为微型堆叠，108为多层外延堆叠，102为基板。示意层数不替代权利要求中的重复次数。"
             },
             {
               "source_publication_id": "CN121002616A",
@@ -45343,7 +45561,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "同族原图（CN121002616A，非当前国家版本附图） · CN121002616A原始图2（公布日2025-11-21，PDF第18页）：五层沉积及前驱物流动启停流程（202–218）。图中循环箭头表示重复沉积；退火与其数值条件见相应权利要求及说明书。"
             }
           ],
           "change_history": [
@@ -45836,7 +46055,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图1a — 含应力补偿层的Si/SiGe堆叠截面"
             },
             {
               "source_publication_id": "US20250037997A1",
@@ -45976,7 +46196,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图3 — 形成层组、补偿层及硅层后选择性移除部分层的制造流程"
             }
           ],
           "change_history": [
@@ -46141,7 +46362,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "同族原始附图：US11764101B2（2023-09-19），图3，PDF第6页；内外分体式基座及其装配结构"
             }
           ],
           "change_history": [
@@ -46337,7 +46559,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图1A — 低温选择性SiGe沉积流程"
             },
             {
               "source_publication_id": "US20200035489A1",
@@ -46481,7 +46704,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图2 — 选择性SiGe外延的鳍式场效应晶体管结构应用"
             }
           ],
           "change_history": [
@@ -46797,7 +47021,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "CN223598701U（公告日2025-11-25）图3、图4，原件PDF第10页、说明书附图2/5页。本实用新型外延基座俯视图与剖面图；图1、图2属于现有技术，未选作本案结构图。"
             },
             {
               "source_publication_id": "CN223598701U",
@@ -46905,7 +47130,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "CN223598701U（公告日2025-11-25）图5，原件PDF第11页、说明书附图3/5页。图4中A处局部放大原始附图。"
             }
           ],
           "change_history": [
@@ -47487,7 +47713,8 @@
                 ],
                 "coverage_status": "partial_verified"
               },
-              "annotation_coverage_status": "partial_verified"
+              "annotation_coverage_status": "partial_verified",
+              "display_caption": "图1A — 图1A（原始PDF第3页）"
             }
           ],
           "change_history": [
@@ -47537,7 +47764,8 @@
           ],
           "verification": "技术全文与当前权利要求已核对",
           "category": "EPI 控制与计量",
-          "reference_source_status": "Original public patent publication text checked in Google Patents HTML; current official legal status not independently checked. USPTO original publication PDF downloaded successfully, image-only PDF.\n2026-10-15补充复核：此前技术全文与权项核验记录沿用基线。本轮重新取得 US12480223B2 自身 USPTO 原始图像 PDF，并以 OCR 与原图逐项复核全部 20 项当前权利要求（PDF 第 13、14、15 页）。其余说明书、附图及同族文献未逐页重新审查；未核查官方登记簿当前法律状态。"
+          "reference_source_status": "Original public patent publication text checked in Google Patents HTML; current official legal status not independently checked. USPTO original publication PDF downloaded successfully, image-only PDF.\n2026-10-15补充复核：此前技术全文与权项核验记录沿用基线。本轮重新取得 US12480223B2 自身 USPTO 原始图像 PDF，并以 OCR 与原图逐项复核全部 20 项当前权利要求（PDF 第 13、14、15 页）。其余说明书、附图及同族文献未逐页重新审查；未核查官方登记簿当前法律状态。",
+          "inventors": "Li-Ting Wang；Jung-Jen Chen；Ming-Hua Yu；Yee-Chia Yeo"
         },
         {
           "publication_id": "US12482662B2",
@@ -47660,7 +47888,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图6 — 图6（原始PDF第8页）"
             }
           ],
           "change_history": [
@@ -47708,7 +47937,8 @@
           ],
           "verification": "技术全文与当前权利要求已核对",
           "category": "EPI 控制与计量",
-          "reference_source_status": "书目、说明书及权项沿用Google Patents公开全文核验记录。2026-10-14记录记载已取得USPTO图像型授权PDF，已发布版保留其原图Fig.6。本轮仅核对恢复图像及来源记录，未恢复原始PDF或重做全部原件审阅。未核当前法律有效性。\n2026-10-15补充复核：此前技术全文与权项核验记录沿用基线。本轮重新取得 US12482662B2 自身 USPTO 原始图像 PDF，并以 OCR 与原图逐项复核全部 20 项当前权利要求（PDF 第 20、21 页）。其余说明书、附图及同族文献未逐页重新审查；未核查官方登记簿当前法律状态。"
+          "reference_source_status": "书目、说明书及权项沿用Google Patents公开全文核验记录。2026-10-14记录记载已取得USPTO图像型授权PDF，已发布版保留其原图Fig.6。本轮仅核对恢复图像及来源记录，未恢复原始PDF或重做全部原件审阅。未核当前法律有效性。\n2026-10-15补充复核：此前技术全文与权项核验记录沿用基线。本轮重新取得 US12482662B2 自身 USPTO 原始图像 PDF，并以 OCR 与原图逐项复核全部 20 项当前权利要求（PDF 第 20、21 页）。其余说明书、附图及同族文献未逐页重新审查；未核查官方登记簿当前法律状态。",
+          "inventors": "Chih-Yuan Hsu；Chun-Chin Tu；Yau-Ching Yang；Shih-Chiang Chen"
         },
         {
           "publication_id": "US12484327B2",
@@ -47933,7 +48163,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图1 — 图1（原始PDF第3页）"
             }
           ],
           "change_history": [
@@ -47994,7 +48225,8 @@
           ],
           "verification": "技术全文与当前权利要求已核对",
           "category": "Preclean 与 EPI 集成",
-          "reference_source_status": "本轮已重新取得并逐项核对 US12484327B2 原始 USPTO PDF 第 49–50 页及 US20250366243A1 原始 USPTO PDF 第 49 页，各 20 项权利要求（图像 OCR 与原图复核）。其余技术说明与同族资料继承基线，未在本轮逐页重新核对；未核查官方登记簿当前法律状态。"
+          "reference_source_status": "本轮已重新取得并逐项核对 US12484327B2 原始 USPTO PDF 第 49–50 页及 US20250366243A1 原始 USPTO PDF 第 49 页，各 20 项权利要求（图像 OCR 与原图复核）。其余技术说明与同族资料继承基线，未在本轮逐页重新核对；未核查官方登记簿当前法律状态。",
+          "inventors": "Yu-Hung Cheng；Yu-Siang Fang；Ching I Li"
         },
         {
           "publication_id": "JP7776424B2",
@@ -48182,7 +48414,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "同族原图（US12015042B2，非当前国家版本附图） · 同族原始附图：US12015042B2（2024-06-18），图3，PDF第5页；背照式传感器沟槽预清洗和电荷层外延流程"
             }
           ],
           "change_history": [
@@ -48288,7 +48521,8 @@
               "source_display_sha256": "349bd8e1fa30685b12da5bb0ffb12f36ae1590302c670c3190583e6780319909",
               "pdf_page": 3,
               "display_rotation": 0,
-              "source_geometry": {}
+              "source_geometry": {},
+              "display_caption": "同族原始附图：US20230073641A1（2023-03-09），图2, 3，PDF第3页；Si-P缺陷随热处理时间与温度的变化及缺陷图像"
             }
           ],
           "change_history": [
@@ -48470,7 +48704,8 @@
                   }
                 ]
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "同族原图（US20250354291A1，非当前国家版本附图） · 图2：抑制剂处理与选择性外延沉积流程。同族原图"
             },
             {
               "source_publication_id": "US20250354291A1",
@@ -48485,7 +48720,8 @@
               "source_display_sha256": "36510d2a60b2fa8c188dfa59ef2b13819ffb958f4c2351bc0b2b17843b9d86a8",
               "pdf_page": 5,
               "display_rotation": 0,
-              "source_geometry": {}
+              "source_geometry": {},
+              "display_caption": "图4 — 含与不含SnCl4条件下的厚度—时间曲线（专利披露数据）。同族原图"
             }
           ],
           "change_history": [
@@ -48704,7 +48940,8 @@
                 "original_uncropped_image_sha256": "6383362491b6e056887505d5fb21133cef452643007e6df581277d2b4b2fbce5",
                 "crop_qa": "All selected figures and identifiers retained; normalized boxes checked visually on red overlay. A small number of inherited misplaced boxes were corrected to printed numerals."
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "同族原图（WO2025225316A1，非当前国家版本附图） · 图1 · 以碳掺杂硅过渡层实现顺序SiGe外延"
             }
           ],
           "change_history": [
@@ -48999,7 +49236,8 @@
                 "original_uncropped_image_sha256": "28896f32866a6b99c5120ab33115d940174ee202294658255cad9e8c1781f04c",
                 "crop_qa": "All selected figures and identifiers retained; normalized boxes checked visually on red overlay. A small number of inherited misplaced boxes were corrected to printed numerals."
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "同族原图（WO2025222891A1，非当前国家版本附图） · 图7/8 · 按晶向布置凹坑周缘调节外延气流"
             }
           ],
           "change_history": [
@@ -49550,7 +49788,8 @@
                 "original_uncropped_image_sha256": "1e533eb74c52828cc0247f4587925e95e6f76bd736f4afe818e151b4d11432c2",
                 "crop_qa": "All selected figures and identifiers retained; normalized boxes checked visually on red overlay. A small number of inherited misplaced boxes were corrected to printed numerals."
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "同族原图（US12454769B2，非当前国家版本附图） · 图3A/3B · 按气流方向主动控制上片热翘曲"
             }
           ],
           "change_history": [
@@ -50332,7 +50571,8 @@
                 "original_uncropped_image_sha256": "89af8f4197ca7eae38d18d85a23a741f60cd5ba442dc0078e95ace51917eac87",
                 "crop_qa": "All selected figures and identifiers retained; normalized boxes checked visually on red overlay. A small number of inherited misplaced boxes were corrected to printed numerals."
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图1/2 · 让SiGe外延边缘略薄以降低缺陷"
             }
           ],
           "change_history": [
@@ -50521,7 +50761,8 @@
                 "original_uncropped_image_sha256": "f83c207fa3abecbbc9d70c3972622536b34ba4b8b9384ab77a25ebf31f0cbfc9",
                 "crop_qa": "All selected figures and identifiers retained; normalized boxes checked visually on red overlay. A small number of inherited misplaced boxes were corrected to printed numerals."
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "同族原图（WO2025220436A1，非当前国家版本附图） · 图1/2 · 利用升温穿越表面重构转变改善SiGe"
             }
           ],
           "change_history": [
@@ -50830,7 +51071,8 @@
                 "original_uncropped_image_sha256": "2dae483838e860630555ac2167da9a928524766716bd7344567786441fd5ee92",
                 "crop_qa": "All selected figures and identifiers retained; normalized boxes checked visually on red overlay. A small number of inherited misplaced boxes were corrected to printed numerals."
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图3 · 预清洗、预处理与选择性外延循环"
             }
           ],
           "change_history": [
@@ -51018,7 +51260,8 @@
                 "original_uncropped_image_sha256": "5378b232830488dffa2d45448eae8fe642ad4ccab1fa0bc0868ba4cd4e105765",
                 "crop_qa": "All selected figures and identifiers retained; normalized boxes checked visually on red overlay. A small number of inherited misplaced boxes were corrected to printed numerals."
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图2 · 湿法清洗、干法清洗与烘烤的先后顺序"
             }
           ],
           "change_history": [
@@ -51114,7 +51357,8 @@
               "source_original_sha256": "84c6af0b9905637f62b94222fc085bce10e4b7e03780c11449d12051614bd05c",
               "source_display_sha256": "84c6af0b9905637f62b94222fc085bce10e4b7e03780c11449d12051614bd05c",
               "display_rotation": 0,
-              "source_geometry": {}
+              "source_geometry": {},
+              "display_caption": "图1 — 外延沉积设备100"
             }
           ],
           "change_history": [
@@ -51216,7 +51460,8 @@
                 ],
                 "crop_bbox_convention": "source pixel xyxy, right/bottom exclusive; no resampling",
                 "crop_source_sha256": "72946047213d3e6e4baef0730f6b32a6a1249a07d87a854c17b84a1fc96d9d43"
-              }
+              },
+              "display_caption": "图5(a)(b) — 原图横轴为位错环尺寸，纵轴为位错环密度。"
             }
           ],
           "change_history": [
@@ -51472,7 +51717,8 @@
                 "original_uncropped_image_sha256": "51b2c484bc11f3e72270e4521c5239f9d460357be252803e30945867739243bd",
                 "crop_qa": "All selected figures and identifiers retained; normalized boxes checked visually on red overlay. A small number of inherited misplaced boxes were corrected to printed numerals."
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "同族原图（WO2024202965A1，非当前国家版本附图） · 同族WO公开原图，非本月韩国文本原图。图1为体硅、正面外延层与背面氧化膜的截面关系。"
             }
           ],
           "change_history": [
@@ -51579,7 +51825,8 @@
                 ],
                 "crop_bbox_convention": "source pixel xyxy, right/bottom exclusive; no resampling",
                 "crop_source_sha256": "ee90e231a0e9f45a25dc5121a29aad7390e9a8b79f046a8c5cc75498bda02d49"
-              }
+              },
+              "display_caption": "图1、图2 — 图1为实施例1、图2为对比例1在器件热过程模拟后的断面显微照片。"
             }
           ],
           "change_history": [
@@ -51859,7 +52106,8 @@
                 "original_uncropped_image_sha256": "6f9722041eb4310519ca559800341112f3fea3583987a1e3486d89422b21f6fd",
                 "crop_qa": "All selected figures and identifiers retained; normalized boxes checked visually on red overlay. A small number of inherited misplaced boxes were corrected to printed numerals."
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "同族原图（US20250324699A1，非当前国家版本附图） · 图4 · 以不同掺杂硅盖层稳定低温选择性"
             }
           ],
           "change_history": [
@@ -52166,7 +52414,8 @@
                 "original_uncropped_image_sha256": "c918f2735630197871cae51263f0c2ff00c1cb09f3c5e042ff1aaa15a1ae916e",
                 "crop_qa": "All selected figures and identifiers retained; normalized boxes checked visually on red overlay. A small number of inherited misplaced boxes were corrected to printed numerals."
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "同族原图（US12444605B2，非当前国家版本附图） · 图1B · BCl3预处理配合高硼选择性外延"
             }
           ],
           "change_history": [
@@ -52385,7 +52634,8 @@
                 "original_uncropped_image_sha256": "bc62408d6a6c6621cf3d771989df403d72b557c661fb00cc98ba44a59b31380a",
                 "crop_qa": "All selected figures and identifiers retained; normalized boxes checked visually on red overlay. A small number of inherited misplaced boxes were corrected to printed numerals."
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "同族原图（WO2022164566A1，非当前国家版本附图） · 同族WO公开原图，非本月韩国文本原图。图3依次示出形成膜堆叠、沉积含锑源漏区和热处理。"
             }
           ],
           "change_history": [
@@ -52671,7 +52921,8 @@
                 "coverage_status": "partial",
                 "coverage_note": "每个已释义编号标注至少一个已核位置；重复出现的全部编号尚未逐一覆盖。"
               },
-              "annotation_coverage_status": "partial"
+              "annotation_coverage_status": "partial",
+              "display_caption": "同族原图（WO2025211045A1，非当前国家版本附图） · 图4示出高阻硅外延、多晶硅层、氧化膜形成、键合和减薄流程。"
             }
           ],
           "change_history": [
@@ -52998,7 +53249,8 @@
                 "original_uncropped_image_sha256": "fdcae69bb34ac637f4624358a19fa0a0b874d66b9403fecc0263d13d815c002c",
                 "crop_qa": "All selected figures and identifiers retained; normalized boxes checked visually on red overlay. A small number of inherited misplaced boxes were corrected to printed numerals."
               },
-              "annotation_coverage_status": "verified"
+              "annotation_coverage_status": "verified",
+              "display_caption": "图2A · 硅与硅锗叠层的交替生长流程"
             }
           ],
           "change_history": [
@@ -53352,7 +53604,8 @@
                 "coverage_status": "partial",
                 "coverage_note": "每个已释义编号标注至少一个已核位置；重复出现的全部编号尚未逐一覆盖。"
               },
-              "annotation_coverage_status": "partial"
+              "annotation_coverage_status": "partial",
+              "display_caption": "同族原图（WO2025204274A1，非当前国家版本附图） · 图1/2/3 · 氧原子层与单晶硅外延交替构建吸杂结构"
             }
           ],
           "change_history": [
@@ -53445,7 +53698,8 @@
               "source_display_sha256": "12829f7e59438fdf6ef855ca986b13b7c9c2c1441b8454d5a72d8c9dfb8c1459",
               "display_rotation": 0,
               "source_geometry": {},
-              "pdf_page": 2
+              "pdf_page": 2,
+              "display_caption": "图1 — 半导体器件结构100横截面（互连/接触堆叠）"
             }
           ],
           "change_history": [
