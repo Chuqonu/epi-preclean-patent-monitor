@@ -440,6 +440,33 @@ button { font: inherit; cursor: pointer; }
   word-break: break-word;
 }
 
+.patent-table td.patent-basic-cell {
+  padding: 10px 14px;
+}
+
+.patent-basic-meta {
+  display: grid;
+  gap: 8px;
+}
+
+.patent-basic-line {
+  display: grid;
+  grid-template-columns: 6.5em minmax(0, 1fr);
+  gap: 10px;
+  align-items: baseline;
+}
+
+.patent-basic-k {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.patent-basic-v {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .patent-table .section-title {
   text-align: center;
   font-weight: 600;
