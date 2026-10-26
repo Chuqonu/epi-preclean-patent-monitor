@@ -1,0 +1,70 @@
+{
+  "document_type": "maintenance_run_log",
+  "run_id": "monday-incremental-2026-10-26-epi",
+  "label": "实际定时触发",
+  "routine_folder": "epi",
+  "platform_automation_id": "88e01ac6-5983-5a86-880c-73681c4e7eee",
+  "timezone": "Asia/Shanghai",
+  "started_at": "2026-10-26T09:06:45+08:00",
+  "reviewed_at": "2026-10-26T09:26:30+08:00",
+  "window": {
+    "start": "2026-10-21",
+    "end": "2026-10-26",
+    "research_through_live": "2026-10-20",
+    "research_through_after": "2026-10-20"
+  },
+  "lanes": [
+    "EPI",
+    "Preclean"
+  ],
+  "serial_lock": {
+    "open_prs": [],
+    "status": "FREE",
+    "main_before": "0e2872b73ae0d74fc864a4edf3b3317ec5222d0d",
+    "live_stamp_before": "07dbc89c8c0c"
+  },
+  "outcome": "carry_forward_pending_ingest_no_pages_delta",
+  "content_changed": false,
+  "diff_package": "docs/EVIDENCE-INCREMENTAL-DIFF-MONDAY-2026-10-26.json",
+  "queries_summary": {
+    "EPI": "GP xhr E0–E8 + expanded sort:new/CPC/CN/EP/assignee; after:publication lag; USPTO OG week42 only; EPO Register pd=20261021 ASM pair; WebSearch EN/ZH",
+    "Preclean": "GP P0–P20 sort:new NF3/HF/SiCoNi/CPC/CN/JP/KR; USPTO PPUBS carry + fulltext re-read US20260327849A1; calendar 10-21 EP / 10-22 US PGPub"
+  },
+  "counts": {
+    "EPI": {
+      "candidates": 2,
+      "publication_events": 2,
+      "unique_families": 2,
+      "actually_read": 0
+    },
+    "Preclean": {
+      "candidates": 1,
+      "publication_events": 1,
+      "unique_families": 1,
+      "actually_read": 1
+    },
+    "intersection": 0,
+    "include_core_new_discovery_today": 0,
+    "include_core_carry_forward_not_on_live": 1,
+    "pending_new": 2
+  },
+  "artifacts": [
+    "docs/EPI-INCREMENTAL-MONDAY-2026-10-26-frozen.json|.md|-search-log.md",
+    "docs/PRECLEAN-INCREMENTAL-MONDAY-2026-10-26-frozen.json|.md|-search-log.md",
+    "docs/EVIDENCE-INCREMENTAL-DIFF-MONDAY-2026-10-26.json|.md",
+    "docs/MAINTENANCE-RUN-LOG-MONDAY-2026-10-26.json|.md"
+  ],
+  "backlog": [
+    "US20260327849A1 ingest after evidence+PM+figures",
+    "EP4824859A1/EP4824315A1 pending title-only"
+  ],
+  "september": "paused",
+  "dot_vps": "not touched",
+  "limitations": [
+    "Google Patents near-window date filters unusable (index lag); not negative evidence",
+    "USPTO OG week43 (2026-10-27) not published yet",
+    "Espacenet/Justia 403; CNIPA/J-PlatPat/KIPRIS not exhaustively searchable headlessly",
+    "No zero-omission claim"
+  ],
+  "automation_note": "Grok Bot routine folder epi 实际定时触发；双轨由总经理 automation 下独立 executor 执行（本 run 无 SendToAgent，未群内唤醒 EPI检索/Preclean检索会话）。"
+}

@@ -1,0 +1,105 @@
+{
+  "document_type": "evidence_incremental_diff",
+  "run": "Monday incremental 2026-10-26",
+  "label": "实际定时触发",
+  "routine_folder": "epi",
+  "platform_run_id": "88e01ac6-5983-5a86-880c-73681c4e7eee",
+  "timezone": "Asia/Shanghai",
+  "reviewed_at": "2026-10-26T09:26:30+08:00",
+  "window": {
+    "start": "2026-10-21",
+    "end": "2026-10-26",
+    "live_research_through": "2026-10-20"
+  },
+  "live_baseline": {
+    "stamp_sha12": "07dbc89c8c0c",
+    "figures": 205,
+    "actually_read": 6,
+    "main_sha": "0e2872b73ae0d74fc864a4edf3b3317ec5222d0d"
+  },
+  "inputs": {
+    "EPI_freeze": "EPI-INCREMENTAL-MONDAY-2026-10-26-frozen.json",
+    "EPI_sha12": "a64d6309895e",
+    "Preclean_freeze": "PRECLEAN-INCREMENTAL-MONDAY-2026-10-26-frozen.json",
+    "Preclean_sha12": "e9e5d1d8577e"
+  },
+  "independence": "EPI and Preclean freezes produced without reading each other; evidence reads both after freeze.",
+  "intersection": [],
+  "epi_only": [
+    {
+      "publication_id": "EP4824859A1",
+      "event_date": "2026-10-21",
+      "disposition": "pending",
+      "note": "ASM; title-only; already in EPI-OFFICIAL-SOURCE-SWEEP-2026-10-23; not on live"
+    },
+    {
+      "publication_id": "EP4824315A1",
+      "event_date": "2026-10-21",
+      "disposition": "pending",
+      "note": "ASM; title-only; already in official sweep; not on live"
+    }
+  ],
+  "preclean_only": [
+    {
+      "publication_id": "US20260327849A1",
+      "event_date": "2026-10-22",
+      "disposition": "include_core_carry_forward",
+      "note": "Kokusai dry native-oxide mod→remove→epi; Preclean Monday reconfirm + Oct23 EPI scope also core; NOT on live; needs figures+PM before Pages ingest"
+    }
+  ],
+  "out_of_window": [
+    {
+      "publication_id": "US12772772B2",
+      "event_date": "2026-10-20",
+      "disposition": "out_of_window_sighting",
+      "note": "equals research_through; AMAT; EPI Oct23 exclude; Preclean related-boundary"
+    }
+  ],
+  "families": {
+    "US20260327849A1": "open — continuation of US12692623 / Appl lineage noted in Oct23 scope check; counterparts JP/CN/KR not closed today",
+    "EP4824859A1": "open — unread",
+    "EP4824315A1": "open — unread"
+  },
+  "counts": {
+    "EPI": {
+      "candidates": 2,
+      "publication_events": 2,
+      "unique_families": 2,
+      "actually_read": 0
+    },
+    "Preclean": {
+      "candidates": 1,
+      "publication_events": 1,
+      "unique_families": 1,
+      "actually_read": 1
+    },
+    "intersection": 0,
+    "include_core_new_discovery_today": 0,
+    "include_core_carry_forward_not_on_live": 1,
+    "pending_new": 2
+  },
+  "recommend_live_research_through": "2026-10-20",
+  "pages_content_change_this_morning": false,
+  "include_for_ingest": [
+    {
+      "publication_id": "US20260327849A1",
+      "lane": "Preclean",
+      "status": "carry_forward_pending_gates",
+      "gates_required": [
+        "evidence formal PASS on ingest PR",
+        "PM reader-field PASS",
+        "design figures when available"
+      ],
+      "bump_research_through_on_merge": "optional to 2026-10-22 only if coverage note discloses USPTO-primary for 10-21..22 and EP pending remain pending"
+    }
+  ],
+  "outcome": "carry_forward_pending_ingest",
+  "outcome_note": "No brand-new core vs Oct23 freezes. Live Pages unchanged this morning. Commit Monday run artifacts only. US20260327849A1 remains backlog for gated ingest PR (not same-run silent publish).",
+  "september_2025": "paused",
+  "limitations": [
+    "Google Patents near-window date filters unusable (index lag); not negative evidence",
+    "USPTO OG week43 (2026-10-27) not published yet",
+    "Espacenet/Justia 403; CNIPA/J-PlatPat/KIPRIS not exhaustively searchable headlessly",
+    "No zero-omission claim"
+  ]
+}
