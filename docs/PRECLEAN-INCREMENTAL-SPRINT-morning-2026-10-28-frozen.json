@@ -1,0 +1,139 @@
+{
+  "lane": "Preclean",
+  "run": "morning 2026-10-28",
+  "window": "2026-10-21..2026-10-28",
+  "generated_at": "2026-10-28T09:08:22+08:00",
+  "counts": {
+    "candidates": 0,
+    "events": 0,
+    "families": 0,
+    "actually_read": 0,
+    "team_actually_read_lock": 6
+  },
+  "queries": 118,
+  "query_errors": 0,
+  "coverage": {
+    "JP": {
+      "status": "queried_zero_hits",
+      "index_lag": "Google Patents xhr returned 0 even for control 'semiconductor' in 20261021..20261029; index not reflecting post-2026-10-20 events; official J-PlatPat gazette not independently fetched"
+    },
+    "CN": {
+      "status": "queried_zero_hits",
+      "index_lag": "Google Patents xhr returned 0 even for control 'semiconductor' in near window; CNIPA gazette not independently fetched"
+    },
+    "KR": {
+      "status": "queried_zero_hits",
+      "index_lag": "Google Patents xhr returned 0 even for control 'semiconductor' in near window; KIPO gazette not independently fetched"
+    },
+    "EP": {
+      "status": "queried_zero_hits",
+      "index_lag": "Google Patents xhr returned 0 even for control 'semiconductor' in near window; EPO gazette not independently fetched"
+    },
+    "WO": {
+      "status": "queried_zero_hits",
+      "index_lag": "Google Patents xhr returned 0 even for control 'semiconductor' in near window; WIPO not independently fetched"
+    },
+    "US": {
+      "status": "queried_zero_hits",
+      "index_lag": "Google Patents xhr returned 0 even for control 'semiconductor' in near window; USPTO PPUBS/O.G. not independently fetched this run"
+    }
+  },
+  "index_lag_probe": [
+    "semiconductor 20261021 20261029 0 []",
+    "semiconductor country:US 20261021 20261029 0 []",
+    "semiconductor country:CN 20261021 20261029 0 []",
+    "semiconductor country:JP 20261021 20261029 0 []",
+    "semiconductor country:KR 20261021 20261029 0 []",
+    "semiconductor country:EP 20261021 20261029 0 []",
+    "semiconductor country:WO 20261021 20261029 0 []",
+    "semiconductor 20261014 20261021 0 []",
+    "epitaxial 20261014 20261021 0 []",
+    "semiconductor 20261001 20261014 1 ['JP2025520356A5']",
+    "semiconductor 20261008 20261014 0 []",
+    "semiconductor 20260901 20261001 0 []",
+    "semiconductor 20261021 20261026 0 []",
+    "semiconductor 20261025 20261029 0 []",
+    "(preclean OR \"pre-clean\" OR Siconi OR \"native oxide\") 20261021 20261029 0 []"
+  ],
+  "items": [],
+  "dispositions": [
+    {
+      "publication_id": "US12500077B2",
+      "disposition": "excluded_not_promoted",
+      "reason": "gap-baseline hit; title/abstract = post-epi O3/SC-1 spin wet clean of epitaxial wafer — standalone wet, out of Preclean dry/plasma pre-epi scope",
+      "source": "Google Patents HTML triage"
+    },
+    {
+      "publication_id": "US12532687B2",
+      "disposition": "excluded_not_promoted",
+      "reason": "gap-baseline hit; cleaning solution / wet wafer clean — out of scope",
+      "source": "Google Patents HTML triage"
+    },
+    {
+      "publication_id": "KR102944561B1",
+      "disposition": "not_promoted_pending_deep_read",
+      "reason": "gap-baseline selective SiOx etch tool; body mentions preclean/native oxide but not verified as wafer pre-epi dry preclean; no dated event >2026-10-20; not promoted this incremental",
+      "source": "Google Patents HTML triage"
+    }
+  ],
+  "figures": "n/a (no new items)",
+  "research_through": {
+    "decision": "keep 2026-10-20",
+    "reason": "no verified publication/grant event dated >2026-10-20; near-window + semiconductor control all 0 (index lag)"
+  },
+  "known_not_recounted": [
+    "live report unique_publication_ids (~159 events / 131 families)",
+    "KR102918757B1",
+    "CN122406228A",
+    "KR20260113276A",
+    "JP2026004352A",
+    "US12595560B2",
+    "KR102920833B1",
+    "AHF family",
+    "US20260090293A1",
+    "CN122564748A"
+  ],
+  "gap_fill_observe_only": {
+    "missing_inventors_count": 118,
+    "missing_inventors_sample": [
+      "US20260313994A1",
+      "US20260304810A1",
+      "US12727402B2",
+      "US20260275525A1",
+      "US20260282506A1",
+      "US20260282794A1",
+      "US12745604B2",
+      "US20260293620A1",
+      "TWI939895B",
+      "US12740346B2",
+      "US12698570B2",
+      "US12701762B2"
+    ],
+    "empty_annotation_pubs_count": 27,
+    "empty_annotation_pubs_sample": [
+      "CN120797198A",
+      "CN120989593A",
+      "CN121519154A",
+      "CN121693111A",
+      "CN122069948A",
+      "CN122294515A",
+      "DE112021001213B4",
+      "JP2026004352A",
+      "JP7757917B2",
+      "JP7882130B2",
+      "KR102916044B1",
+      "TW202628839A"
+    ],
+    "note": "from live report.json only; not modified. inventors filled 13/131; annotations 122 verified / 83 empty figures."
+  },
+  "gap_baseline_note": {
+    "G1_approx": 1013,
+    "G4_approx": 15925,
+    "union_new_vs_known": 164,
+    "near_window_ids": [],
+    "fresh_thematic_returned_sum": 0,
+    "triage": "spot-checked ~30 recent-ish new IDs via GP HTML titles/abstracts; none promoted as core candidates for this post-2026-10-20 incremental"
+  },
+  "zero_omission_claim": false,
+  "note": "禁止零遗漏：0 结果是 Google Patents 近窗索引滞后下的诚实空，不等于 2026-10-21..28 无公开/授权事件。官方公报未本轮独立拉取。Sept 2025 paused. Independent of EPI freeze lists."
+}

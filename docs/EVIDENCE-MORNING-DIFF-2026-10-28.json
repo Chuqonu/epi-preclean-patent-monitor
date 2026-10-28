@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-28",
+  "tz": "Asia/Shanghai",
+  "verdict": "PASS_INCREMENTAL_EMPTY_NEAR_WINDOW",
+  "live_stamp": "45e392f3e264",
+  "research_through_keep": "2026-10-20",
+  "actually_read_lock": 6,
+  "figures": 205,
+  "intersection": [],
+  "epi_only_pending": [
+    "EP4824859A1",
+    "EP4824315A1"
+  ],
+  "preclean_only": [],
+  "include_core": [],
+  "include_related": [],
+  "pending": [
+    {
+      "publication_id": "EP4824859A1",
+      "action": "keep_pending_not_ingest",
+      "read": false
+    },
+    {
+      "publication_id": "EP4824315A1",
+      "action": "keep_pending_not_ingest",
+      "read": false
+    },
+    {
+      "publication_id": "EP4829093A1",
+      "action": "pending_verify_not_final_exclude",
+      "read": false,
+      "note": "parasitic SiC chamber clean; claims unread"
+    }
+  ],
+  "excluded_confirmed": [
+    {
+      "publication_id": "EP4831366A1",
+      "reason": "SiC heteroepitaxy C30B29/36"
+    }
+  ],
+  "family": "unverified_le2_do_not_merge",
+  "inputs": {
+    "preclean_frozen_json_sha12": "e555b45466c3",
+    "epi_frozen_json_sha12": "523b848f7837"
+  },
+  "md_sha12": "4cd3e2e87447",
+  "path": "/workspace/evidence/EVIDENCE-MORNING-DIFF-2026-10-28.md"
+}
